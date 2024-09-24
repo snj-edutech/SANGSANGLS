@@ -1,0 +1,145 @@
+#wrap {
+    .section-login {
+        @include breakpoint(desktop){
+            width: 520px;
+            margin: 0 auto;
+        }
+        .desc {
+            @include rem(margin-top, 40px);
+            @include vw(22px);
+            color: #999;
+            span { display: block; }
+            @include breakpoint(desktop){
+                font-size: 18px;
+            }
+        }
+        .form-list {
+            @include rem(margin-top, 100px);
+            @include breakpoint(desktop){
+                margin-top: 80px;
+            }
+        }
+        .action {
+            // @include rem(margin-top, 40px);
+            @include breakpoint(desktop){
+                margin-top: 10px;
+                // &.find {
+                //     margin-top: 40px;
+                // }
+            }
+        }
+    }
+
+    .section-sns {
+        .sns-list {
+            @include rem(margin-top, 40px);
+            font-size: 0;
+            @include breakpoint(desktop){
+                margin-top: 36px;
+            }
+            li {
+                display: inline-block;
+                width: percent(100);
+                margin: 0 percent(15);
+                @include breakpoint(desktop){
+                    width: auto;
+                    margin: 0 12px;
+                }
+            }
+        }
+    }
+
+    .section-find {
+        h3.heading {
+            margin: 0 percent(-50);
+            @include rem(margin-top, 40px);
+            @include rem(padding, 33px 0);
+            background-color: $bg-color-1;
+            @include breakpoint(desktop){
+                width: 520px;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 20px 0;
+            }
+        }
+
+        .form-list {
+            @extend %clearfix;
+            @include breakpoint(desktop){
+                width: 520px;
+                margin: 0 auto;
+            }
+            .form-text {
+                @include rem(margin-top, 40px);
+                padding-bottom: 0;
+                &:first-child { @include rem(margin-top, 60px); }
+            }
+        }
+
+        .action {
+            @include rem(margin-top, 60px);
+            & + .heading { @include rem(margin-top, 80px); }
+        }
+    }
+
+    .section-join-title{
+        padding:0;
+        max-width:100%;
+        @include breakpoint(desktop){}
+    }
+    .section-join {
+        @include breakpoint(desktop){
+            max-width:520px; 
+            margin:0 auto;
+            @include rem(padding-bottom, 60px); 
+        }
+        .form-list {
+             text-align: left; 
+        }
+        .form-text {
+            @include rem(margin-top, 40px);
+            padding-bottom: 0;
+            &:first-child { @include rem(margin-top, 100px); }
+        }
+        .desc {
+            @include rem(margin-top, 100px);
+            @include vw(40px);
+        }
+        &.join-1 .form-text {
+            @include rem(margin-top, 100px); 
+            @include breakpoint(desktop){ @include rem(margin-top, 60px); }
+        }
+        & + .section-sns {
+            @include breakpoint(desktop){
+                max-width:520px; 
+                margin:0 auto;
+            }
+
+            @extend %clearfix;
+            h3.heading {
+               float:left;
+               font-weight: 400;
+               @include rem(margin-top, 40px);
+               @include breakpoint(desktop){
+                   margin-top:10px;
+               }
+            }
+
+            .btn.btn-sns img{max-width:60px;}
+            .sns-list {
+                float:right;
+                margin-top:0;
+
+                li {
+                    width: percent(100, 340);
+                    margin: 0 percent(5, 340);
+                    &:last-child { margin-right: 0; }
+                    @include breakpoint(desktop){
+                        width: auto;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+    <meta id="viewport" content="width=1300, user-scalable=yes" name="viewport">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="../../assets/css/web.css" />
+    <script src="../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body class="page-main">
+
+<div id="wrap">
+    <div id="header">
+        <div class="wrap">
+            <h1 class="heading">
+                <a href="javascript:;">광화문글판 아카이브</a>
+            </h1>
+            <a href="javascript:;" class="menu" data-mobile-menu><span>메뉴</span></a>
+            <div class="nav">
+                <ul>
+                    <li data-sub-menu="true">
+                        <a href="javascript:;"><span>광화문글판</span></a>
+                        <ul class="sub-list">
+                            <li><a href="javascript:;"><span>광화문글판 소개</span></a></li>
+                            <li><a href="javascript:;"><span>광화문글판 공모</span></a></li>
+                            <li><a href="javascript:;"><span>광화문글판 아카이브</span></a></li>
+                        </ul>
+                    </li>
+                    <li data-sub-menu="true">
+                        <a href="javascript:;"><span>공모전안내</span></a>
+                        <ul class="sub-list">
+                            <li><a href="javascript:;"><span>에세이 공모</span></a></li>
+                            <li><a href="javascript:;"><span>디자인 공모</span></a></li>
+                            <li><a href="javascript:;"><span>역대 수상작 보기</span></a></li>
+                        </ul>
+                    </li>
+                    <li data-sub-menu="true">
+                        <a href="javascript:;"><span>접수/확인</span></a>
+                        <ul class="sub-list">
+                            <li><a href="javascript:;"><span>공모 접수</span></a></li>
+                            <li><a href="javascript:;"><span>접수 확인</span></a></li>
+                        </ul>
+                    </li>
+                    <li data-sub-menu="true">
+                        <a href="javascript:;"><span>공지/문의</span></a>
+                        <ul class="sub-list">
+                            <li><a href="javascript:;"><span>공지사항</span></a></li>
+                            <li><a href="javascript:;"><span>1:1문의</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:;" class="login"><span>로그인</span></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="article">
+            <h1>body Class</h1>
+            <ul style="text-align: left;">
+                <li>Gate : page-gate</li>
+                <li>광화문글판_메인 : page-main</li>
+                <li>광화문글판_소개 : page-intro</li>
+                <li>광화문글판_공모 : page-contest</li>
+                <li>광화문글판_공모 : page-archive</li>
+                <li>공모전안내_에세이공모 : page-info</li>
+                <li>공모전안내_역대수상작보기 : page-generation</li>
+                <li>접수/확인_공모접수 : page-receive</li>
+                <li>접수/확인_접수확인 : page-confirm</li>
+                <li>공지/문의_공지사항 : page-notice</li>
+                <li>공지/문의_1대1문의 : page-inquiry</li>
+                <li>로그인, 아이디찾기 : page-login</li>
+                <li>회원가입 : page-join</li>
+                <li>개인정보처리방침 : page-terms</li>
+            </ul>
+        </div>
+
+        <div class="article">
+            <h1>heading : 타이틀</h1>
+            <h1 class="heading">광화문글판 아카이브</h1>
+            <h2 class="heading">로그인</h2>
+            <h3 class="heading">내가 쓰는 광화문글판</h3>
+        </div>
+
+        <div class="article" style="padding-right: 0; padding-left: 0;">
+            <h1>step</h1>
+            <div class="step">
+                <ul class="step-list">
+                    <li class="active"><a href="javascript:;"><span>로그인</span></a></li>
+                    <li><a href="javascript:;"><span>개인정보수집동의</span></a></li>
+                    <li><a href="javascript:;"><span>정보입력</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="article" style="padding-right: 0; padding-left: 0;">
+            <h1>tab-box(tab-list, tab-view)</h1>
+            <div class="tab-box">
+                <div class="tab-list">
+                    <li class="active">
+                        <a href="javascript:;">
+                            <span class="icon"><img src="../img/common/icon_gulpan_on.png" alt=""></span>
+                            <span class="text">광화문글판 공모</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span class="icon"><img src="../img/common/icon_essay_off.png" alt=""></span>
+                            <span class="text">에세이 공모</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <span class="icon"><img src="../img/common/icon_design_off.png" alt=""></span>
+                            <span class="text">디자인 공모</span>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="tab-view active">gulpan</div>
+                <div class="tab-view">essay</div>
+                <div class="tab-view">design</div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h1>box : 문단</h1>
+            <div class="box">
+                <h3 class="heading">내가 쓰는 광화문글판</h3>
+                <p class="desc">
+                    당신의 마음을 울린 한 문장을 나눠주세요.<br>
+                    선정되신 분께는 교보생명에서 준비한 소정의 상품을 드립니다.
+                </p>
+                <p class="picture">
+                    <img src="https://www.kyobostory.co.kr/resources/front/images/contents/audiotherapy/20200423/01.png" alt="">
+                </p>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="action">
+            <h1>Button : btn-primary</h1>
+                <a href="javascript:;" class="btn btn-primary"><span>로그인</span></a>
+                <h1>Button : btn-primary-round</h1>
+                <a href="javascript:;" class="btn btn-primary-round"><span>광화문글판 아카이브 회원가입</span></a>
+                <h1>Button : btn-primary-linear</h1>
+                <a href="javascript:;" class="btn btn-primary-linear"><span><em>+</em>팀원 추가</span></a>
+                <h1>Button : btn-secondary</h1>
+                <a href="javascript:;" class="btn btn-secondary"><span>저장</span></a>
+                <h1>Button : btn-info</h1>
+                <a href="javascript:;" class="btn btn-info"><span>취소</span></a>
+                <h1>Button : btn-info-linear</h1>
+                <a href="javascript:;" class="btn btn-info-linear"><span>개인정보처리방침</span></a>
+                <h1>Button : btn-kakao</h1>
+                <a href="javascript:;" class="btn btn-kakao"><span>카카오톡 실시간 채팅 상담하기</span></a>
+                <h1>Button : btn-light</h1>
+                <a href="javascript:;" class="btn btn-light"><span>취소</span></a>
+            </div>
+        </div>
+
+        <div class="article">
+            <h1>form: select</h1>
+            <div class="form-control">
+                <span class="select">
+                    <select name="" id="">
+                        <option value="">년도</option>
+                    </select>
+                </span>
+                <span class="select">
+                    <select name="" id="">
+                        <option value="">월</option>
+                    </select>
+                </span>
+                <span class="select">
+                    <select name="" id="">
+                        <option value="">일</option>
+                    </select>
+                </span>
+            </div>
+            
+            <h1>form : input[type="text"]</h1>
+            <div class="form-control">
+                <input type="text" class="text" placeholder="이메일 아이디">
+            </div>
+
+            <h1>form: input[type="checkbox"]</h1>
+            <div class="form-control">
+                <span class="fake-checkbox">
+                    <input type="checkbox" id="privacyAgree" class="checkbox" checked>
+                    <label for="privacyAgree">개인정보 수집.이용에 동의합니다.</label>
+                </span>
+                <span class="fake-checkbox">
+                    <input type="checkbox" id="privacyAgree2" class="checkbox">
+                    <label for="privacyAgree2">마케팅 활용에 동의합니다.</label>
+                </span>
+            </div>
+
+            <h1>form: input[type="radio"]</h1>
+            <div class="form-control">
+                <span class="fake-radio">
+                    <input type="radio" id="agree" class="radio" name="agreeSelect" checked>
+                    <label for="agree">동의</label>
+                </span>
+                <span class="fake-radio">
+                    <input type="radio" id="notAgree" class="radio" name="agreeSelect">
+                    <label for="notAgree">비동의</label>
+                </span>
+            </div>
+
+            <h1>form: input[type="file"]</h1>
+            <div class="form-control">
+                <div class="fake-file-box">
+                    <input type="text" class="text fake-file-name" readonly>
+                    <div class="fake-file">
+                        <input type="file" id="fileUpload" name="file"><!-- input id == label for -->
+                        <label for="fileUpload">파일첨부</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h1>pagination</h1>
+            <div class="pagination">
+                <a href="javascript:;" class="control control-prev"><span>이전페이지</span></a>
+                <a href="javascript:;" class="active"><span>1</span></a>
+                <a href="javascript:;"><span>2</span></a>
+                <a href="javascript:;"><span>3</span></a>
+                <a href="javascript:;" class="control control-next"><span>다음페이지</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <article>
+            <h1 class="logo">
+                <a href="javascript:;">
+                    <img src="../img/common/logo.png" alt="교보생명">
+                </a>
+            </h1>
+            <div class="copyright">
+                Copyright &copy; Kyobo Life Insurance Co.,LTD. ALL RIGHTS RESERVED
+            </div>
+            <div class="action">
+                <a href="javascript:;" class="btn btn-info-linear"><span>개인정보처리방침</span></a>
+            </div>
+        </article>
+    </div>
+</div>
+
+<script src="../../assets/js/script.js"></script>
+<script>
+$(window).on("resize", function(){
+    var wid = $(window).width();
+    console.log(wid);
+});
+</script>
+</body>
+</html>

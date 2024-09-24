@@ -68,6 +68,11 @@
 		float: left;
 		@include boxSizing(border-box);
 	}
+
+	.col-right {
+        float: right;
+        @include boxSizing(border-box);
+    }
 }
 
 // 테이블 작업

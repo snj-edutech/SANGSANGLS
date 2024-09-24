@@ -930,3 +930,9 @@
 	}
 	align-self: $value;
 }
+
+@mixin unifyParent($child) {
+    @at-root #{selector-unify(&, $child)} {
+        @content;
+    }
+}
