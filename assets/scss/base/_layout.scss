@@ -2,7 +2,7 @@
     &.open {
         height: 100vh;
         overflow: hidden;
-        header {
+        #header {
             &:before {
                 content: '&nbsp;';
                 @extend .dim;
@@ -13,17 +13,17 @@
                 z-index: 20;
                 background-image: url('../img/common/icon_close.png');
             }
-            nav { display: block; }
+            .nav { display: block; }
         }
     }
 
-    header {
+    #header {
         position: relative;
         text-align: center;
         vertical-align: top;
         border-bottom: 1px solid $border-color-1;
         @extend %clearfix;
-        article {
+        .article {
             position: relative;
             z-index: 101;
             padding: 0;
@@ -95,7 +95,7 @@
                 }
             }
         }
-        nav {
+        .nav {
             position: fixed;
             top: 0;
             right: 20%;
@@ -210,7 +210,7 @@
         }
     }
 
-    footer {
+    #footer {
         @include vw(padding-bottom, 40px);
         text-align: center;
         @include vw(font-size, 20px);
@@ -255,5 +255,8 @@
         }
     }
 
-    #container { @extend %clearfix; }
+    #container {
+         @extend %clearfix; 
+         @include vw(padding, 100px 0);
+    }
 }
