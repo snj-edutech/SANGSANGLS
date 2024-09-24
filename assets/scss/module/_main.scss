@@ -1,0 +1,1735 @@
+#wrap {
+	//overflow-y:auto;
+	overflow-x:hidden;
+	padding-bottom:160px;
+	background-color:#2D2D2D;
+	@include breakpoint(maxMobile) {
+		overflow-x:auto;
+		padding-bottom:0;
+		background-color:transparent;
+	}
+
+	.scrollBar { 
+		@include vw(margin-top, 25px);
+		@include breakpoint(maxMobile){
+			@include vw(margin-top, 16px);
+			
+		}
+		@include vw(padding-right, 5px);
+		height: 100vh;
+		/*
+		@include vw(min-height, 124px);
+		@include vw(max-height, 124px);
+		@include breakpoint(maxMobile) {
+			@include vw(min-height, 62px);
+			@include vw(max-height, 62px);
+		}*/
+		//overflow-y: auto;
+
+		@include vw(min-height, 300px);
+		@include vw(max-height, 300px);
+		@include breakpoint(maxMobile) {
+			@include vw(min-height, 250px);
+			@include vw(max-height, 250px);
+		}
+/*
+		&::-webkit-scrollbar {
+			@include vw(width, 10px); 
+			@include breakpoint(maxMobile) {
+				@include vw(width, 8px);
+			}
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			background: $color-pink; 
+			@include vw(border-radius, 10px);
+		}
+		
+		&::-webkit-scrollbar-track {
+			background: $color-gray;  
+			@include vw(border-radius, 10px);
+		}
+*/
+		&.type-purple{
+			&::-webkit-scrollbar-thumb {
+				background: $color-purple2; 
+			}
+			dl{
+				dd{
+					color:$color-purple2 !important;
+				}
+			}
+		}
+
+		&.scroll-short{
+			@include vw(min-height, 80px);
+			@include vw(max-height, 80px);
+			@include breakpoint(maxMobile) {
+				@include vw(min-height, 40px);
+				@include vw(max-height, 40px);
+			}
+		}
+	}
+
+
+	#scrollBar1, #scrollBar2, #scrollBar5, #scrollBar6{
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: $color-purple2;}
+		dd{color: $color-purple2;}
+	} 
+
+	#scrollBar3, #scrollBar4, #scrollBar7, #scrollBar8{
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: $color-pink;}
+	} 
+	.mCSB_scrollTools{
+		@include vw(width, 10px); 
+		@include breakpoint(maxMobile) {
+			@include vw(width, 10px);
+		}
+
+		.mCSB_draggerRail{ 
+			background: $color-gray;
+		}
+	}
+
+	.mCSB_inside>.mCSB_container{margin-right:15px;}
+
+	.radio-box{
+		.radio-button{
+			cursor: pointer;
+			position: relative;
+			@include vw(margin-left, 30px);
+			font-weight:500;
+			@include vw(padding-left, 60px);
+			@include vw(font-size, 32px);
+			@include breakpoint(maxMobile){
+				@include vw(margin-left, 30px);
+				@include vw(font-size, 16px);
+				@include vw(padding-left, 30px);
+			}
+
+			input[type="radio"] {
+				position: absolute;
+				opacity: 0;
+				height: 0;
+				width: 0;
+			}
+
+			.custom-radio {
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include vw(height, 40px);
+				@include vw(width, 40px);
+				border-radius: 50%;
+				background-color: #fff;
+				border: 1px solid rgba(126, 126, 126, 1);
+				@include breakpoint(maxMobile){
+					@include vw(height, 20px);
+					@include vw(width, 20px);
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					@include vw(width, 24px);
+					@include vw(height, 24px);
+					border-radius: 50%;
+					background: $color-lightgray;
+					@include breakpoint(maxMobile){
+						@include vw(width, 12px);
+						@include vw(height, 12px);
+					}
+				}
+			}
+
+			input[type="radio"]:checked ~ .custom-radio {
+				border: 1px solid $color-pink;
+			}
+
+			input[type="radio"]:checked ~ .custom-radio:after {
+				background-color: $color-pink;
+			}
+
+		}
+	}
+
+	.select{
+		position:relative;
+		@include vw(width, 440px);
+		
+		@include vw(margin-bottom, 20px);
+		&:first-child{	@include vw(margin-top, 10px);}
+		&:last-child{	@include vw(margin-bottom, 10px);}
+		@include breakpoint(maxMobile){
+			@include vw(width, 220px);
+			@include vw(margin-right, 10px);
+			margin-bottom:0;
+			&:first-child{	@include vw(margin-top, 0px);}
+			&:last-child{	@include vw(margin-bottom, 0px);}
+		}
+
+		select {
+			display: inline-block;
+			width:100%;
+			cursor: pointer;
+			font-family: $font-pretendard;
+			letter-spacing:-1px;
+			@include vw(height, 80px);
+			@include vw(line-height, 80px);
+			@include vw(padding, 0 24px);
+			@include vw(font-size, 32px);
+			@include vw(border-radius, 20px);
+			@include breakpoint(maxMobile){
+				@include vw(border-radius, 10px);
+				@include vw(height, 40px);
+				@include vw(line-height, 40px);
+				@include vw(padding, 0 12px);
+				@include vw(font-size, 16px);
+			}
+			font-weight:700;
+			outline: 0;
+			border: 1px solid #7E7E7E;
+			background-color:#fff;
+			
+			color: #2D2D2D;
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+
+			&::-ms-expand { display: none; }
+			&:hover,
+			&:focus {
+				color: #000;
+			}
+
+			&:disabled { background-color:#e5dfe2;pointer-events: none; color: $color-black;opacity:1;}
+		}
+
+		.select-arrow {
+			position: absolute;
+			@include vw(right, 24px);
+			top: 50%;
+			@include vw(margin-top, -10px);
+			@include vw(width, 18px);
+			@include vw(height, 18px);
+			content: '';
+			border-top: 2px solid $color-pink;
+			border-right: 2px solid $color-pink;
+			transform: rotate(135deg);
+			@include breakpoint(maxMobile){
+				@include vw(right, 12px);
+				@include vw(margin-top, -5px);
+				@include vw(width, 9px);
+				@include vw(height, 9px);
+			}
+		}
+
+		&:hover ~ .select-arrow,
+		&:focus ~ .select-arrow {
+			border-color: #000;
+		}
+		&:disabled ~ .select-arrow {
+			border-color: #999;
+		}
+	}
+
+	.fixed-banner{
+		position:fixed;
+		bottom:0;
+		left:0;
+		//height:90px;
+		z-index:1003;
+		width:100%;
+		max-height: 180px;
+		//overflow: hidden;
+		transition: all 0.4s ease-out;
+		
+		@include breakpoint(maxMobile){
+			//position:absolute;
+			//top:290px;
+
+			width:auto;
+			left:auto;
+			right:0;top:58px;
+			bottom:auto;
+			margin-left:0px;
+
+			max-height:100vh;
+				height:auto;
+		}
+
+		@include breakpoint(minDesktop){
+			margin-left:240px;
+			right:auto;
+			left:50%;
+		}
+
+
+		.fixed-banner-tab{
+			display:none;
+			@include breakpoint(maxMobile){
+				display:none;
+			}
+			position:absolute;left:0;right:0;z-index:100;
+			@include vw(top, 180px);
+			ul{
+				display:flex;
+				justify-content: center;
+				@include vw(width, 640px);
+				margin:0 auto;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				@include vw(border-width, 2px);
+				background-color:#ededed;
+				@include vw(border-radius, 40px);
+				li{
+					width:50%;
+					text-align:left;
+					
+					@include vw(border-radius, 40px);
+					a{
+						display:block;
+						@include vw(padding, 30px 20px);
+						color:rgba(45, 45, 45, 1);
+						font-weight:900;
+						@include vw(font-size, 40px);
+						line-height:1.4;
+						@include vw(border-radius, 40px);
+
+					}
+
+					&.active{
+						a{
+							position:relative;
+							color:$color-pink;
+							background-color:#fff;
+							&:after{
+								content:'';
+								position:absolute;left:0;top:0;
+								border: 4px solid $color-pink;
+								@include vw(border-width, 4px);
+								@include vw(border-radius, 40px);
+								@include vw(left, -4px);
+								@include vw(top, -4px);
+								width:100%;
+								height:100%;
+								display:inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.top-banner,.comparison-banner{
+			position:relative;
+			z-index:2;
+			@include boxSizing(border-box);
+			width:100%;	
+			background-color:#fff;
+			border:4px solid $color-pink;
+			@include vw(border-width, 4px);
+			//border-bottom:none;
+			@include vw(border-radius, 40px);
+			border-bottom-left-radius:0;
+			border-bottom-right-radius:0;
+			@include vw(padding, 38px 0 0);
+			color:$color-black;
+			
+			@include breakpoint(maxMobile){
+				background-color:$color-lightpink;
+				border:2px solid $color-pink;
+				width:266px;
+				@include vw(border-radius, 20px);
+				
+				@include vw(padding, 25px 0 0);
+				@include boxShadow(5px 5px 10px rgba(0, 0, 0, .2));
+			}
+
+			.wrapper{
+				@include vw(padding, 0 36px);
+				@include breakpoint(maxMobile){
+					@include vw(padding, 0 25px);
+				}
+			}
+		
+			.text-mobile {
+				display: none;
+				@include breakpoint(maxMobile){
+					display: none;
+				}
+			}
+
+			.banner-title{
+				@include breakpoint(maxMobile){
+					@include vw(margin-bottom,15px);
+				}
+				.gubun{
+					display:inline-block;@include vw(padding,0 10px);
+				
+					font-weight:400;
+					@include breakpoint(maxMobile){
+						@include vw(padding,0 5px);
+					}
+				}
+				strong{
+					font-weight:900;
+					@include vw(font-size, 44px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 16px);
+					}
+
+					.small{
+						display:inline-block;
+						font-weight:500;
+						@include vw(font-size, 24px);
+						//color:$color-purple;
+						@include breakpoint(maxMobile){
+							display:none;
+						}
+					}
+
+					em{
+						display:none;
+						font-weight:800;
+						@include breakpoint(maxMobile){
+							display:inline-block;
+						}
+					}
+				}
+				.device{
+					display:block;
+					margin-left:auto;
+					color:#7e7e7e;
+					font-weight:700;
+					@include vw(font-size, 24px);
+
+					@include breakpoint(maxMobile){
+						display:none;
+					}
+				}
+
+				.total-price{
+					display:block;
+					@include breakpoint(maxMobile){
+						display:none;
+					}
+					@include vw(margin-top, 20px);
+					@include vw(padding-top, 20px);
+					border-top:1px solid #7e7e7e;
+					dl{
+						margin:0;
+						dt,dd{font-weight:900;}
+						dt{
+							color:#555;
+							@include vw(font-size, 32px);
+						}
+						dd{
+							color:$color-pink;
+							@include vw(font-size, 48px);
+						}
+					}
+				}
+			}
+
+			.banner-list{
+				.banner-price-title{
+					dl{
+						display:flex;
+						align-items: center;
+						@include vw(margin-top, 30px);
+						@include breakpoint(maxMobile){
+							@include vw(margin-top, 15px);
+						}
+						dt,dd{
+							color:$color-black;
+						}
+						dt{
+							font-weight:700;
+							@include vw(font-size, 32px);
+							@include breakpoint(maxMobile){
+								@include vw(font-size, 12px);
+							}
+						}
+						dd{
+							margin-left:auto;
+							font-weight:900;
+							@include vw(font-size, 32px);
+							@include breakpoint(maxMobile){
+								@include vw(font-size, 16px);
+							}
+						}
+					}
+				}
+				.banner-price-list{
+					
+					dl{
+						display:flex;line-height:1;
+						@include vw(margin-top, 4px);
+						@include vw(padding, 1px 3px);
+						@include breakpoint(maxMobile){
+							@include vw(margin-top, 2px);
+						}
+						dt{
+							text-align:left;@include vw(font-size, 28px);font-weight:700;
+							color:#7e7e7e;@include vw(padding-left, 50px);
+							@include breakpoint(maxMobile){
+								@include vw(font-size, 11px);
+								@include vw(padding-left, 20px);
+							}
+						}
+						dd{
+							color:#555;margin-left:auto;@include vw(font-size, 28px);font-weight:700;
+							@include breakpoint(maxMobile){
+								@include vw(font-size, 11px);
+							}
+						}
+
+						&.other{
+							background-color: rgba(0, 0, 0, 0.2);
+							
+							@include vw(border-radius, 3px);
+							dt{color:#7e7e7e;}
+							dd{color:#555;}
+						}
+					}
+				}
+
+				.banner-price-notice{
+					color:rgba(126, 126, 126, 1);
+					@include vw(font-size, 24px);font-weight:500;
+					@include vw(margin-left, 5px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 10px);
+						
+					}
+				}
+			}
+
+			.text-price{
+				text-align:right;
+				color:#7e7e7e;@include vw(margin-top,20px);@include vw(font-size, 24px);font-weight:500;
+				@include breakpoint(maxMobile){
+					@include vw(font-size, 10px);
+					@include vw(margin-top,15px);
+					letter-spacing:-0.8px;
+				}
+			}
+
+			.total-price{
+				dl{
+					display:flex;
+					align-items: center;
+					@include vw(margin-top, 20px);
+					dt,dd{
+						color:$color-black;
+					}
+					dt{
+						font-weight:900;
+						@include vw(font-size, 36px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 12px);
+						}
+					}
+					dd{
+						margin-left:auto;
+						font-weight:900;
+						@include vw(font-size, 40px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 20px);
+						}
+					}
+				}
+			}
+
+			.banner-list-box{
+				display:none;
+				@include breakpoint(maxMobile){
+					display:block;
+					@include vw(padding-bottom, 20px);
+				}
+			}
+
+			.banner-price-box{
+
+			}
+
+			.num{
+				display:inline-block;
+				vertical-align:middle;
+				background-color:#000;
+				color:#fff;
+				@include vw(width, 32px);
+				@include vw(height, 32px);
+				@include vw(line-height, 32px);
+				@include vw(font-size, 20px);
+				@include breakpoint(maxMobile){
+					@include vw(width, 14px);
+					@include vw(height, 14px);
+					@include vw(line-height, 14px);
+					@include vw(font-size, 8px);
+				}
+				text-align:center;
+				border-radius:50%;
+				font-weight:400;
+				@include vw(margin,0 3px);
+			
+			}
+
+			.benefit-banner{
+				display:none;
+				background-color:$color-pink;
+				@include vw(padding, 4px 24px);
+				@include breakpoint(maxMobile){
+					display:flex;
+					align-items:center;
+					@include vw(padding, 2px 12px);
+				}
+
+				.benefit-text{
+					color:#fff;font-weight:400;@include vw(font-size, 24px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 12px);
+					}
+
+					.num-box{
+						text-align:center;
+						color:#000;
+						font-weight:700;
+						vertical-align:middle;
+
+					}
+				}
+				.benefit-price{
+					color:#fff;margin-left:auto;font-weight:700;@include vw(font-size, 40px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 20px);
+					}
+				}
+				
+			}
+
+			.benefit-price-box{
+				display:none;
+				@include breakpoint(maxMobile){
+					display:flex;
+					align-items:center;
+				}
+
+				.benefit-text{
+					color:#000;font-weight:700;@include vw(font-size, 32px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 12px);
+					}
+				}
+				.benefit-price{
+					color:$color-black;margin-left:auto;font-weight:900;@include vw(font-size, 52px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 20px);
+					}
+
+					text-decoration:line-through;
+				}
+				
+			}
+
+		}
+
+		.comparison-banner{
+			opacity:0;	
+			display:none;	
+			@include breakpoint(maxMobile){
+				display:block;
+				position:absolute;left:0;top:0;
+			}
+		}
+
+		.bottom-banner{
+			display:none;
+			position:relative;
+			@include vw(top, -30px);
+			@include boxSizing(border-box);
+			background-color:rgba(252, 248, 250, 1);
+			@include vw(padding, 80px 60px 40px);
+			border:4px solid rgba(210, 157, 183, 1);
+			@include vw(border-width, 4px);
+			border-top:none;
+			@include vw(border-bottom-left-radius, 40px);
+			@include vw(border-bottom-right-radius, 40px);
+			@include boxShadow(5px 5px 10px rgba(0, 0, 0, .2));
+			@include breakpoint(maxMobile){
+				display:block;
+				@include vw(padding, 45px 20px 20px);
+				@include vw(border-width, 2px);
+				@include vw(border-bottom-left-radius, 20px);
+				@include vw(border-bottom-right-radius, 20px);
+			}
+
+			.radio-btn{
+				@include vw(margin-bottom, 28px);
+				@include breakpoint(maxMobile){
+					@include vw(margin-bottom, 5px);
+				}
+				a{
+					cursor:default;
+					display:block;
+					text-align:center;
+					//background-color:rgba(126, 126, 126, 1);
+					color:$color-black;
+					font-weight:700;
+					@include vw(font-size, 40px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 16px);
+					}
+				}
+			}
+
+			.radio-box{
+				display:flex;
+				justify-content: center;
+
+				.radio-button{
+					@include vw(margin-left, 12px);
+					&:first-child{margin-left:0;}
+					font-weight:700;
+					padding:0;
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 13px);
+						@include vw(margin-left, 8px);
+						&:first-child{margin-left:0;}
+					}
+
+					.custom-radio {
+						position:relative;
+						display:flex;
+						justify-content: center;
+						align-items: center;
+						@include vw(height, 62px);
+						//@include vw(width, 130px);
+						@include vw(width, 90px);
+						border-radius:5px;
+						text-align:center;
+						border:none;
+						background-color:#e3e0e1;
+					
+						@include breakpoint(maxMobile){
+							@include vw(height, 26px);
+							//@include vw(width, 45px);
+							@include vw(width, 30px);
+						}
+						&:after {
+							display:none;
+							@include vw(width, 24px);
+							@include vw(height, 24px);
+							@include breakpoint(maxMobile){
+								@include vw(width, 10px);
+								@include vw(height, 10px);
+							}
+						}
+					}
+
+					input[type=radio]:checked ~ .custom-radio{
+						background-color: $color-pink;
+						color:#fff;
+					}
+					
+					
+				}
+			}
+
+			.report-box{
+				position:relative;
+				display:flex;
+				justify-content: center;
+				@include vw(padding-top,24px);
+				@include vw(margin-top,24px);
+				border-top:1px solid #e7e4e5;
+
+				@include breakpoint(maxMobile){
+					@include vw(padding-top,12px);
+					@include vw(margin-top,12px);
+				}
+				>div{
+					@include vw(font-size, 34px);
+					font-weight:700;
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 13px);
+					}
+
+					span{
+						display:inline-block;
+						@include vw(width, 36px);
+						@include vw(margin-left, 10px);
+						img{width:100%;}
+
+						@include breakpoint(maxMobile){
+							@include vw(width, 14px);
+							@include vw(margin-left, 5px);
+						}
+					}
+
+					&:first-child{
+						position:relative;
+						@include vw(padding-right, 30px);
+						@include vw(margin-right, 20px);
+						@include breakpoint(maxMobile){
+							@include vw(padding-right, 15px);
+							@include vw(margin-right, 10px);
+						}
+
+						&:after{
+							content:'';
+							background-color:#000;
+							width:1px;height:70%;
+							display:inline-block;
+							position:absolute;right:0;top:15%;
+						}
+						
+					}
+				}
+			}
+
+			.sns-layer{
+				position:absolute;left:50%;transform:translateX(-50%);
+				@include vw(bottom, -122px);
+				@include breakpoint(maxMobile){
+					@include vw(bottom, -50px);
+				}
+				width:88%;
+				display:none;
+				&.active{
+					display:block;
+				}
+				ul{
+					display:flex;
+					justify-content: center;
+					background-color:#fff;
+					border: 2px solid rgb(210, 157, 183);
+					@include vw(border-radius, 20px);
+					@include vw(padding, 30px 20px);
+					@include breakpoint(maxMobile){
+						@include vw(padding, 15px 20px);
+					}
+					li{
+						@include vw(margin-left, 60px);
+						&:first-child{margin-left:0;}
+						@include breakpoint(maxMobile){
+							@include vw(margin-left, 20px);
+							&:first-child{margin-left:0;}
+						}
+						a{
+							display:block;
+						}
+					}
+				}
+			}
+
+
+
+		
+		}
+
+		.btn-cancel{
+			display:none;
+		}
+
+		&.open{
+			.btn-cancel{
+				display:block;
+				position:absolute;
+				@include vw(width, 192px);
+				@include vw(right, 60px);
+				@include vw(top, 60px);z-index:101;
+				@include breakpoint(maxMobile){
+					@include vw(width, 42px);
+					right:auto;
+					@include vw(left, -290px);
+					@include vw(top, 32px);
+				}
+			}
+
+			.fixed-banner-tab{
+				display:block;
+				@include breakpoint(maxMobile){
+					display:none;
+				}
+			}
+
+			
+
+			.comparison-banner{
+				opacity:1;
+				//transition:all 0.5s ease;		
+				@include breakpoint(maxMobile){
+
+					@include vw(left,-266px);
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+					border-right:0;
+					@include boxShadow(0px 5px 10px 0px rgba(0, 0, 0, .2));
+				}
+	
+				&:after{
+					content:'';
+					position:absolute;right:0;
+					width:1px;
+					
+					@include vw(height,678px);
+					@include vw(top,30px);
+					border-right:1px solid rgba(126, 126, 126, 1);
+				}
+	
+
+				
+			}
+
+			.top-banner{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				border-left:0;
+				@include breakpoint(maxMobile){
+					@include boxShadow(5px 0px 10px rgba(0, 0, 0, .2));
+				}
+			}
+
+			.top-banner,.comparison-banner{
+				@include vw(padding-top, 372px);
+				@include breakpoint(maxMobile){
+					@include vw(padding-top, 30px);
+				}
+
+				.banner-title{
+					display:none;
+					@include breakpoint(maxMobile){
+						display:block;
+					}
+				}
+			}
+
+			
+		}
+
+
+		&.active{
+			bottom:0;
+			//height:auto;
+			max-height: 100vh;
+			//overflow: hidden;
+			overflow-y:auto;
+			transition: all 0.6s ease-out;
+			@include breakpoint(maxMobile){
+				bottom:auto;
+				overflow-y:unset;
+			}
+
+			.top-banner, .comparison-banner{
+				background-color:$color-lightpink;
+				border:4px solid $color-pink;
+				@include vw(border-width, 4px);		
+				@include vw(border-radius, 40px);		
+				@include breakpoint(maxMobile){
+					border:2px solid $color-pink;
+					@include vw(border-radius, 20px);	
+				}
+				.banner-title strong em{
+					display:inline-block;
+				}
+
+				.benefit-banner{
+					display:flex;
+					align-items:center;
+				}
+
+				.benefit-price-box{
+					display:flex;
+					align-items: center;
+					@include vw(margin, 20px 0);
+					@include breakpoint(maxMobile){
+						margin:0;
+					}	
+				}
+
+				.banner-title{
+					.device, .gubun{display:none;}
+					.total-price{display:none;}
+
+					.text-pc {
+						display:none;
+						@include breakpoint(maxMobile){
+							display: inline-block;
+						}
+					}
+				
+					.text-mobile {
+						display:inline-block;
+						@include breakpoint(maxMobile){
+							display: none;
+						}
+					}
+	
+					strong{
+						@include vw(font-size, 38px);
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 16px);
+						}
+					}
+				}
+
+			}
+
+	
+
+			.bottom-banner{
+				display:block;
+			}
+
+
+			
+
+			// @include vw(padding, 60px 48px);
+			// @include breakpoint(maxMobile){
+			// 	@include vw(padding, 30px);
+			// }
+
+			.banner-list-box{
+				display:block;
+				@include vw(padding-bottom, 30px);
+			}
+
+		}
+	}
+
+	.section-customer{
+		.wrap{padding:0;}
+		.customer-price{
+			background-color:$color-lightpink;
+			
+			@include vw(padding, 96px 40px);
+			font-weight:800;
+			@include vw(font-size, 48px);
+			line-height:1.5;
+			border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+			@include breakpoint(maxMobile){
+				@include vw(padding, 40px 40px);
+				@include vw(font-size, 25px);
+				@include vw(border-bottom-left-radius, 20px);
+				@include vw(border-bottom-right-radius, 20px);
+				border-bottom:0;
+			}
+
+			.select-box{
+				@include breakpoint(maxMobile){
+					display:flex;@include vw(margin, 5px 0);
+				}
+			}
+
+			input[type=text]{
+				@include boxSizing(border-box);
+				border:1.5px solid $color-pink;
+				@include vw(border-radius,20px);
+				@include vw(width, 320px);
+				@include vw(height, 72px);
+				@include vw(line-height, 72px);
+				text-align:center;
+				font-weight:700;
+				@include vw(font-size, 48px);
+				color:$color-pink;
+				@include breakpoint(maxMobile){
+					@include vw(border-radius,10px);
+					@include vw(width, 220px);
+					@include vw(height, 40px);
+					@include vw(line-height, 40px);
+					@include vw(font-size, 22px);
+				}
+
+				&::placeholder{
+					padding:0;
+					color:$color-pink;
+					@include vw(font-size, 32px);
+					font-weight:700;
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 22px);
+					}
+				}
+
+				&:disabled{
+					background-color:#e5dfe2;
+				}
+			}
+		}
+	}
+
+	.main-title{
+		@include vw(padding, 90px 0 50px);
+		text-align:left;
+		color:$color-black;
+		font-weight:800;
+		@include vw(font-size, 48px);
+		border-bottom:1px solid $color-gray;
+		@include breakpoint(maxMobile){
+			@include vw(font-size, 25px);
+			@include vw(padding, 58px 0 10px);
+		}
+
+		.sub-text{
+			font-weight:700;
+			color:$color-pink;
+			@include vw(font-size, 28px);
+			@include vw(margin-left, 20px);
+			@include breakpoint(maxMobile){
+				@include vw(font-size, 16px);
+				@include vw(margin-left, 10px);
+			}
+		}
+		
+	}
+
+	.form-field-radio2{
+		display:flex;
+		align-items:center;
+		flex-wrap:wrap;
+
+		.label {
+			width:100%;
+			@include vw(padding-left,60px);
+			@include vw(font-size,32px);
+			@include vw(margin-top,20px);
+			@include breakpoint(maxMobile){
+				@include vw(font-size,16px);
+				//@include vw(width,265px);
+				@include vw(padding-left,30px);
+				@include vw(margin-top,10px);
+			}
+
+			@include breakpoint(minDesktop){
+				@include vw(width,265px);
+			}
+			color:$color-black;
+			font-weight:500;
+			position: relative;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+
+			input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				height: 0;
+				width: 0;
+			}
+
+			.checkmark {
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include boxSizing(border-box);
+				@include vw(width,32px);
+				@include vw(height,32px);
+				@include breakpoint(maxMobile){
+					@include vw(width,19px);
+					@include vw(height,19px);
+				}
+				background-color: #fff;
+				border:1px solid $color-black;
+				border-radius:50%;
+				&:after {
+					content: "";
+					position: absolute;
+					display: none;
+					transform:translate(-50%, -50%);
+					left:50%;
+					top:50%;
+					@include vw(width,20px);
+					@include vw(height,20px);
+					@include breakpoint(maxMobile){
+						@include vw(width,13px);
+						@include vw(height,13px);
+						transform:translate(0, 0);
+						left:2px;
+						top: 2px;
+					}
+					border-radius:50%;
+					background-color: $color-pink;
+				  }
+			}
+
+			input:checked ~ .checkmark {
+				border:1px solid $color-pink;
+				&:after{
+					display: block;
+				}
+			}
+
+			&.disable{
+				input:checked ~ .checkmark {
+					border-color: #B6B6B6;
+					&:after{
+						background-color:#B6B6B6;
+					}
+				}
+			}
+		}
+	}
+
+	.flag-question{
+		position:relative;
+		top:-2px;
+		@include vw(margin-left, 5px);
+		color: #7e7e7e;
+		background: #e6e6e6;
+		@include vw(width, 28px);
+		@include vw(height, 28px);
+		@include vw(line-height, 28px);
+		@include vw(font-size, 18px);
+		border-radius:50%;
+		display:inline-block;
+		text-align:center;
+		font-weight:700;
+		@include boxSizing(border-box);
+		@include breakpoint(maxMobile){
+			@include vw(width, 14px);
+			@include vw(height, 14px);
+			@include vw(line-height, 14px);
+			@include vw(font-size, 9px);
+		}
+	}
+
+	.form-field-radio{
+		.form-field-list{
+			display:flex;
+			flex-wrap:wrap;
+			width:100%;
+			@include breakpoint(maxMobile){
+				width:70%;
+			}
+			li{
+				position:relative;
+				.end-text{
+					display:none;
+				}
+				
+				&.end{
+					.end-text{
+						display:flex;
+						justify-content: center;
+						align-items: center;
+						position:absolute;left:0;top:0;right:0;bottom:0;z-index:1;background-color:rgba(45, 45, 45, 0.6);
+						@include vw(border-radius, 20px);
+						@include breakpoint(maxMobile){
+							@include vw(border-radius, 10px);
+						}
+	
+						span{
+							opacity:0;
+							background-color:$color-pink;
+							color:#fff;
+							font-weight:700;
+							line-height:1;
+							display:inline-block;
+							@include vw(padding,14px 48px);
+							@include vw(font-size, 28px);
+							@include vw(border-radius, 20px);
+							@include breakpoint(maxMobile){
+								@include vw(border-radius, 10px);
+								@include vw(font-size, 14px);
+								@include vw(padding,7px 24px);
+							}
+						}
+					}
+
+					input[type="radio"]:checked + label{
+						border: 2px solid rgba(54, 54, 54, 0.1);
+						@include vw(border-width, 1px);
+					}
+
+
+				}
+				.flag-label{
+					display:flex;
+					justify-content: center;
+					align-items:center;
+					position:absolute;
+					border-radius:50%;
+					@include vw(top, 6px);
+					@include vw(left, 6px);
+					@include vw(width, 64px);
+					@include vw(height, 64px);
+					@include vw(font-size, 18px);
+					background-color:$color-purple;
+					color:#fff;
+					font-weight:700;
+					line-height:1.1;
+					@include boxSizing(border-box);
+
+					&.flag-black{
+						background-color:$color-black;
+					}
+
+					&.flag-pink{
+						background-color:$color-pink;
+					}
+
+					&.flag-new{
+						background-color:$color-pink;
+					}
+
+					@include breakpoint(maxMobile){
+						@include vw(top, 5px);
+						@include vw(left, 5px);
+						@include vw(width, 32px);
+						@include vw(height, 32px);
+						@include vw(font-size, 9px);
+						@include vw(padding-top, 3px);
+						
+						
+					}
+
+				}
+				width:48%;
+
+				@include breakpoint(minDesktop){
+					@include vw(width, 150px);
+				}
+
+
+				.flag-question{
+					position:absolute;
+					@include vw(top, 12px);
+					@include vw(right, 12px);
+					@include breakpoint(minDesktop){
+						@include vw(top, 6px);
+						@include vw(right, 6px);
+					}
+				}
+
+				text-align:center;
+				margin-right:4%;
+				margin-bottom:4%;
+				&:nth-child(2n){margin-right:0;}
+				@include breakpoint(minDesktop){
+					@include vw(margin-right, 13px);
+					@include vw(margin-bottom, 13px);
+					&:nth-child(2n){@include vw(margin-right, 13px);}
+					&:nth-child(3n){margin-right:0;}
+				}
+				@include breakpoint(desktop){
+					@include vw(margin-right, 20px);
+					@include vw(margin-bottom, 20px);
+					&:nth-child(2n){@include vw(margin-right, 20px);}
+					&:nth-child(3n){margin-right:0;}
+				}
+
+				input[type="radio"],input[type="checkbox"] {
+					display:none;
+				}
+				
+				input[type="radio"] + label, input[type="checkbox"] + label{
+					display:block;
+					cursor:pointer;
+					background-color:#fff;
+					border:2px solid $color-gray;
+					@include vw(border-width, 2px);
+					@include vw(border-radius, 20px);
+					@include breakpoint(maxMobile){
+						@include vw(border-width, 1px);
+						@include vw(border-radius, 10px);
+						//@include boxShadow(5px 5px 10px rgba(0, 0, 0, .2));
+					}
+					.logo-img{
+
+					}
+					.logo-desc{
+						line-height:1.2;
+						text-align:left;
+						@include vw(padding, 4px 20px);
+						background-color:$color-lightpink;
+						@include vw(border-bottom-left-radius, 20px);
+						@include vw(border-bottom-right-radius, 20px);
+						@include boxSizing(border-box);
+						@include breakpoint(maxMobile){
+							display:flex;
+							flex-wrap:wrap;
+							align-items:center;
+							@include vw(padding, 0px 12px);
+							@include vw(height, 40px);
+							@include vw(border-bottom-left-radius, 10px);
+							@include vw(border-bottom-right-radius, 10px);
+						}
+						strong{
+							width:100%;
+							display:block;
+							font-weight:700;
+							@include vw(font-size,24px);
+							@include breakpoint(maxMobile){
+								@include vw(font-size,13px);
+							}
+
+							.small{
+								@include vw(font-size,20px);
+								@include breakpoint(maxMobile){
+									@include vw(font-size,11px);
+								}
+							}
+
+							
+						}
+
+						span{
+							@include vw(font-size,23px);
+							font-weight:500;
+							@include breakpoint(maxMobile){
+								@include vw(font-size,12px);
+							}
+						}
+					}
+
+					
+				}
+				
+				input[type="radio"]:checked + label, input[type="checkbox"]:checked + label{
+					border-color:$color-pink;
+					@include vw(border-width, 4px);
+					@include breakpoint(maxMobile){
+						@include vw(border-width, 2px);
+					}
+				}
+
+				input[type="radio"]:hover + label, input[type="checkbox"]:hover + label{
+					border-color:rgba(235, 0,139,0.5);
+				}
+
+				input[type="radio"]:disabled + label, input[type="checkbox"]:disabled + label{
+					cursor:default;
+				}
+
+			}
+
+			&.type-purple{
+				li{
+					input[type="radio"]:checked + label{
+						border-color:$color-purple2;
+					}
+
+					input[type="radio"]:hover + label{
+						border-color:$color-purple2;
+					}
+				}
+			}
+		}
+	}
+
+	.form-field-number{
+		display: flex;
+		flex-wrap:wrap;
+		@include breakpoint(maxMobile){
+			@include vw(width, 590px);
+		}
+		.number-box {
+			position:relative;
+			width:48%;
+			@include breakpoint(maxMobile){
+				@include vw(width, 235px);
+			}
+			@include boxSizing(border-box);
+			@include vw(margin-left, 20px);
+			@include vw(margin-bottom, 20px);
+			&:nth-child(2n+1){margin-left:0;}
+			border:1px solid rgba(0,0,0,0.1);
+			@include vw(border-radius, 10px);
+
+			.number-top{
+				@include vw(height, 210px);
+				@include breakpoint(maxMobile){
+					@include vw(height, 100px);
+				}
+				position:relative;@include boxSizing(border-box);
+				@include vw(padding, 13px);
+				.number-text{
+					.product{
+						color:$color-pink;@include vw(font-size, 22px);font-weight:500;
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 12px);
+						}
+					}
+					.service{
+						color:$color-black;@include vw(font-size, 24px);font-weight:700;
+						@include vw(margin-top, 5px);
+
+						@include breakpoint(maxMobile){
+							@include vw(font-size, 14px);
+						}
+						span{
+							position:relative;
+							display:inline-block;
+							@include vw(padding-right, 20px);
+							&:after{
+								@include arrow(right, 8px, 8px, 1.5px, $color-black);
+								right:0;
+								@include vw(margin-top, -4px);
+							}
+
+							@include breakpoint(maxMobile){
+								@include vw(padding-right, 10px);
+								&:after{
+									@include arrow(right, 4px, 4px, 1px, $color-black);
+								right:0;
+								@include vw(margin-top, -3px);
+								}
+							}
+						}
+					}
+				}
+
+				.number-count{
+					position:absolute;
+					@include vw(right,10px);
+					@include vw(bottom,8px);
+					display: flex;
+					align-items:center;
+					justify-content: flex-end;
+					.numberDisplay {
+						display:inline-block;
+						@include vw(font-size, 36px);
+						color:#7e7e7e;
+						font-weight:700;
+						@include vw(width,60px);
+						text-align:center;
+						@include breakpoint(maxMobile){
+							@include vw(width,30px);
+							@include vw(font-size, 20px);
+						}
+					}
+					button {
+						cursor: pointer;
+						border:0;
+						background:none;
+						@include vw(width,36px);
+						@include breakpoint(maxMobile){
+							@include vw(width,24px);
+						}
+					}
+				}
+			}
+
+			.number-bottom{
+				background-color:#fdf7fe;
+				@include vw(padding,10px 10px);
+				@include breakpoint(maxMobile){
+					@include vw(padding,5px 10px);
+				}
+				text-align:right;
+				@include vw(border-radius, 10px);
+				p{
+					color:$color-black;
+					font-weight:400;
+					@include vw(font-size, 24px);
+					@include breakpoint(maxMobile){
+						@include vw(font-size, 14px);
+					}
+				}
+			}
+
+		}
+	}
+
+	.section{
+		@include vw(padding, 0 40px);
+	}
+
+	.section-banner{
+		.wrap{
+			padding:0;
+		}
+		a{
+			display:block;
+		}
+
+		@include vw(margin-top, 100px);
+		@include breakpoint(maxMobile){
+			@include vw(margin-top, 60px);
+		}
+		
+	}
+
+	.main-title + .benefit-group{
+		@include vw(margin-top, 40px);
+		@include breakpoint(maxMobile){
+			@include vw(margin-top, 50px);
+		}
+	}
+
+	.benefit-list-radio{
+		display:flex;
+		@include vw(margin-bottom, 20px);
+		@include vw(margin-top, 40px);
+		@include breakpoint(maxMobile){
+			display:flex;
+			@include vw(margin-bottom, 10px);
+			@include vw(margin-top, 20px);
+		}
+		
+		.radio-title{
+			color:$color-black;font-weight:700;
+			@include vw(font-size, 32px);
+			font-weight:700;
+
+			@include breakpoint(maxMobile){
+				@include vw(font-size, 16px);
+			}
+		}
+
+	}
+
+	.benefit-group{
+		width:100%;
+		@include vw(margin-top, 140px);
+
+		@include breakpoint(maxMobile){
+			display:flex;
+			flex-wrap:wrap;
+			@include vw(margin-top, 60px);
+			
+		}
+
+		.benefit-title{
+			font-weight:700;
+			@include vw(font-size, 36px);
+			@include breakpoint(maxMobile){
+				@include vw(font-size, 20px);
+			}
+
+			@include breakpoint(maxMobile){
+				width:20%;
+			}
+		}
+
+		.benefit-list-box{
+			position:relative;
+			@include vw(margin-top, 40px);
+			
+			@include breakpoint(maxMobile){
+				width:80%;
+				margin-top:0;
+			}
+
+			&.offclick{
+				.benefit-list-title{
+					cursor:default;
+				}
+
+				.form-field-radio .form-field-list li input[type=radio] + label .logo-desc{
+					@include breakpoint(maxMobile){
+						height:60px;
+					}
+				}
+			}
+
+			.benefit-list-title{
+				position:absolute;right:0;@include vw(top, -83px);
+				cursor:pointer;
+				font-weight:500;
+				@include vw(font-size, 32px);
+				@include breakpoint(maxMobile){
+					position:static;
+					@include vw(font-size, 16px);
+					@include vw(margin-bottom, 10px);
+				}
+
+				.icon-drop{
+					display:inline-block;
+					@include vw(width, 38px);
+					@include vw(margin-left, 5px);
+					@include breakpoint(maxMobile){
+						@include vw(width, 19px);
+					}
+				}
+
+				.icon-text{
+					opacity:0;
+					display:none;
+					color:$color-pink;
+					font-weight:700;
+					@include vw(font-size, 24px);
+					@include vw(border-radius, 54px);
+					border:1px solid $color-pink;
+					@include vw(margin-left, 10px);
+					@include vw(padding, 8px 20px);
+					@include breakpoint(maxMobile){
+						opacity:0;
+						display:inline-block;
+						@include vw(font-size, 12px);
+						@include vw(padding, 4px 10px);
+					}
+				}
+			}
+
+
+
+			&.active{
+				.benefit-list-title{
+					.icon-drop{
+						transition: all 0.5s ease;
+						transform:rotateX(-180deg);
+					}
+					.icon-text{opacity:1;}
+				}
+			}
+			.benefit-list{}
+		}
+	}
+
+
+
+
+	.section-notice{
+		@include vw(padding,60px  40px);
+		@include breakpoint(maxMobile){
+			@include vw(padding, 50px 40px);
+		}
+
+		@include breakpoint(desktop){
+			@include vw(padding, 50px 0px);
+		}
+
+		.wrap{padding:0;}
+		dl{
+			dt,dd{color:#000;}
+			dt{
+				font-weight:700;
+				@include vw(font-size, 28px);
+				@include vw(margin-bottom, 8px);
+				@include breakpoint(maxMobile){
+					@include vw(font-size, 20px);
+					@include vw(margin-bottom, 4px);
+				}
+
+			}
+			dd{
+				position:relative;
+				font-weight:500;
+				line-height:1.5;
+
+				@include vw(font-size, 24px);
+				@include vw(padding-left, 16px);
+				@include breakpoint(maxMobile){
+					@include vw(font-size, 14px);
+					@include vw(padding-left, 10px);
+				}
+
+				&:before{
+					content:'';
+					display:inline-block;
+					width:2px;height:2px;
+					border-radius:50%;
+					background-color:#000;
+					position:absolute;left:0;@include vw(top,10px);
+				}
+			}
+		}
+	}
+
+}
