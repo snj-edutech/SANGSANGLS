@@ -1,19 +1,26 @@
-$font-eduwill-R: ('EduwillBetaRegular', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-eduwill-B: ('EduwillPassBold', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
 $font-noto: ('Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-montserrat: ('Montserrat', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-lato: ('lato', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-KHNPHD: ('KHNPHD', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-reko: ('Recipekorea', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-roboto: ('Roboto', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
 $font-gmarket: ('GmarketSans', 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
 $font-verdana: (Verdana, Geneva, Tahoma, sans-serif);
 $font-pretendard: (Pretendard, 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-DWImpactamin: (DWImpactamin, 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
-$font-KoPubWorldDotum: (KoPubWorldDotum, 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Dotum', '돋움', 'Gulim', '굴림', '굴림체', Sans-Serif);
 
-// background-image: url('#{$img-pointer-path}/icon_pointer_1.png');
-$img-pointer-path: "//img.eduwill.net/Img2/Common/icon/pointer";
 $max-width: 1200;
 $min-mobile: 320;
 $max-mobile: 720;
+
+// color
+$color-1: #234c7d;
+$color-2: #458934;
+$color-3: #666;
+$color-4: #999;
+$color-5: #000;
+$color-kakao: #ffe634;
+$border-color-1: #d1d1d1;
+$bg-color-1: #f6f7f9;
+$bg-color-2: #f6f6f6;
+// z-index
+// z-index: map-get($z-index, dim);
+$z-index: (
+    close: 250,
+    layer: 200,
+    dim: 100
+);

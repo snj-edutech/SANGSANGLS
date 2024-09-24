@@ -8,13 +8,14 @@
 
 @import "base/font"; // 웹폰트
 @import "base/reset"; // 초기화
-// @import "base/common"; // 공통
-// @import "base/popup"; // 팝업
+@import "base/layout"; // 구조
+@import "base/common"; // 공통
+@import "base/popup"; // 팝업
 
-// @import "module/animate";
-// @import "module/motions";
-// @import "module/layout"; // 구조
-// @import "module/main"; // 메인
+@import "module/gate"; // 게이트
+@import "module/main"; // 메인
+// @import "module/login"; // 회원가입/로그인
+// @import "module/sub"; // 서브
 
 // @import "module/privacy"; // 개인정보처리방침
 

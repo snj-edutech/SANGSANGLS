@@ -46,13 +46,11 @@ input[type="button"],
 textarea {
     border-radius: 0;
     background-color: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
     @include boxSizing(border-box);
 }
-
-input::-ms-clear { display: none; }
 
 em, address {
     font-style: normal;
@@ -103,8 +101,4 @@ q {
         content: '';
         content: none;
     }
-}
-
-input:focus, select:focus, option:focus, textarea:focus, button:focus{
-	outline: none;
 }

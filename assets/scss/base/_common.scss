@@ -1,265 +1,308 @@
+.dim {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: map-get($z-index, dim);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
 #wrap {
     line-height: 1.4;
-    font-family: $font-pretendard;
-	font-weight: 400;
-	color:$color-black;
-	letter-spacing: -0.2px;
-	@include breakpoint(maxMobile){
-		letter-spacing: -0.5px;
-	}
+    font-family: $font-noto;
+    color: $color-5;
 
-    .wrap {
-       // max-width: 720px;
+    .gap {
+        padding-right: percent(40);
+        padding-left: percent(40);
+        @include breakpoint(desktop){
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    article {
+        @extend .gap;
+        max-width: 720px;
         margin: 0 auto;
-        text-align: left;
+        @include vw(padding-bottom, 100px);
+        text-align: center;
         @include boxSizing(border-box);
         @extend %clearfix;
-		//@include vw(padding, 0 20px);
+
         @include breakpoint(desktop){
             max-width:1000px;
-			@include vw(padding, 0 40px);
         }
     }
 
-    .pc {
-        display:none;
-        @include breakpoint(maxMobile){
-            display: block;
+    .heading {
+        font-weight: 700;
+        @include unifyParent("h1") {
+            text-align: center;
+            @include vw(font-size, 36px);
+            font-weight: 700;
+            color: $color-1;
+            @include breakpoint(desktop){
+                font-size: 18px;
+            }
+        }
+        @include unifyParent("h2") {
+            @include vw(margin-top, 100px);
+            @include vw(font-size, 50px);
+            span { display: block; }
+            @include breakpoint(desktop){
+                font-size: 44px;
+                span { display: inline-block; }
+            }
+        }
+        @include unifyParent("h3") {
+            // @include vw(margin-top, 100px);
+            @include vw(font-size,28px);
+            color: $color-5;
+            @include breakpoint(desktop){
+                font-size: 22px;
+            }
         }
     }
 
-    .mobile {
+    .box {
+        @include vw(margin-top, 40px);
+        @include vw(padding, 49px 60px);
+        @include vw(border-radius, 15px);
+        text-align: left;
+        background-color: $bg-color-1;
+        @include breakpoint(desktop){
+            padding: 40px;
+        }
+        .heading {
+            @include vw(font-size,36px);
+            color: #224c7d;
+        }
+        .heading + .desc,
+        p {
+            @include vw(margin-top, 30px);
+            &:first-child { margin-top: 0; }
+            @include breakpoint(desktop){
+                margin-top: 20px;
+            }
+        }
+        & + .picture { @include vw(margin-top, 80px); }
+    }
+
+    .desc {
+        @include vw(font-size,24px);
+        color: $color-5;
+        @include breakpoint(desktop){
+            font-size: 18px;
+        }
+    }
+
+    .notice {
+        position: relative;
+        @include vw(margin-top, 10px);
+        padding-left: 15px;
+        text-align: left;
+        @include vw(font-size,22px);
+        color: $color-4;
+        &:before {
+            content: '※';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        & + .notice { margin-top: 0; }
+        @include breakpoint(maxMobile) { 
+            font-size: 14px;
+        }
+    }
+
+    .highlight {
+        font-weight: 700;
+        color: #ff0000;
+    }
+
+    .linebreak {
         display:block;
-        @include breakpoint(maxMobile){
-            display: none;
+        @include breakpoint(desktop){
+            display:inline-block;
         }
     }
-
-	.full{width: 100% !important;}
-	.mt-0{margin-top:0 !important;}
-    .mb-0{margin-bottom:0 !important;}
-
-    .text-left{text-align:left !important;}
-    .text-center{text-align:center !important;}
-    .text-notice{
-        color:#000;@include vw(font-size, 28px);font-weight:500;
-        // @include vw(margin-top,30px);
-        @include breakpoint(maxMobile){
-            @include vw(font-size, 14px);
-			//@include vw(margin-top,15px);
-		}
-    }
-
-	.underline{text-decoration: underline;}
 
     .table-row {
-        position: relative;
-        overflow: hidden;
-        width:100%;
-        .table-scroll-wrap{
-            min-width: initial;
-            width: 100%;
-            overflow-x: auto;
-            white-space: nowrap;
-
-            table{
-                width:auto;
-				@include breakpoint(minDesktop){
-					width:100%;
-				}
-				&.auto{
-					width:auto;
-				}
-
-				&.full{
-					width:100%;
-				}
-            }
-
-			// @include breakpoint(maxMobile){
-			// 	white-space: normal;
-			// 	table{
-			// 		width:100%;
-			// 	}
-			// }
-
-          
-        }
-
+        @include vw(margin-top, 50px);
         table {
-            width:100%;
-            tr:nth-child(even) {
-				@include vw(border-radius, 6px); 
-                td {
-					background-color:#F7F7F7;
-					&:first-child{
-						@include vw(border-top-left-radius, 6px); 
-						@include vw(border-bottom-left-radius, 6px); 
-					}
-
-					&:last-child{
-						@include vw(border-top-right-radius, 6px); 
-						@include vw(border-bottom-right-radius, 6px); 
-					}
-				}
-
+            tr:last-child {
+                th,
+                td { border-bottom: none; }
             }
             th,
             td {
-                color:#000;
-                @include rem(padding, 32px 32px);
+                @include vw(padding, 30px 0);
                 text-align:left;
-				vertical-align:top;
-                @include vw(font-size, 24px);
-                @include breakpoint(maxMobile){
-                    @include vw(font-size, 14px);
-                    @include rem(padding, 16px 16px 16px 16px);
-                }
+                @include vw(font-size,24px);
+                border-bottom:1px solid $border-color-1;
                 word-break: break-all;
                 @include boxSizing(border-box);
-               
-				font-weight:500;
-				&:first-child{
-					font-weight:700;
-				}
-            }
-
-            th {
-				@include vw(font-size, 22px);
-				font-weight:700;
-				vertical-align:middle;
                 @include breakpoint(maxMobile){
-                     font-size: 12px;
+                    font-size: 18px;
                 }
             }
-
-			td{
-				&.nodata{
-					font-weight:400;
-					text-align:center;
-					color:#6C6F7E;
-					@include vw(font-size, 24px);
-					@include breakpoint(maxMobile){
-						@include vw(font-size, 12px);
-					}
-				}
-			}
+            th {
+                width:23%;
+                vertical-align:top;
+                color:$color-1;
+                @include breakpoint(desktop){
+                    width:200px;
+                    @include vw(padding-left, 40px);
+                }
+            }
+            .date { text-align: center; }
+            p {
+                @include vw(text-indent, -22px);
+                @include vw(padding-left, 22px);
+            }
         }
     }
 
-	.pagination-pc{
-        display:none;
-		text-align:center;
-		@include vw(margin-top, 32px);
-        @include breakpoint(maxMobile){
-		    display:flex;
-        }
-		align-items: center;
-		justify-content: center;
-		a{
-			font-weight:700;
-			color:#777D80;
-            @include vw(font-size, 24px);
-            @include breakpoint(maxMobile){
-			    @include vw(font-size, 14px);
+    .pagination {
+        @include vw(margin-top, 100px);
+        a {
+            display: inline-block;
+            text-align: center;
+            @include vw(width, 55px);
+            @include vw(height, 55px);
+            @include vw(margin, 0 10px);
+            @include vw(line-height, 55px);
+            @include vw(font-size,28px);
+            color: $color-5;
+            @include breakpoint(desktop){
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+                line-height: 30px;
+                font-size: 14px;
             }
-			@include vw(margin-left, 24px);
-			&:first-child{
-				margin-left:0;
-			}
-			
-
-			&.active, &:hover{
-				font-weight:700;
-				color:#1E292D;
-			}
-
-			&.paging-prev, &.paging-next{
-				@include vw(width, 32px);
-			}
-           
-		}
-
-	}
-
-    .pagination-mobile{
-		text-align:center;
-		@include vw(margin-top, 32px);
-		display:flex;
-        @include breakpoint(maxMobile){
-            display:none;
-        }
-		align-items: center;
-		justify-content: center;
-        >span{
-            @include vw(font-size, 24px);
-            @include vw(margin,0 12px);
-            font-weight:700;
-            color:#777D80;
-            @include breakpoint(maxMobile){
-			    @include vw(font-size, 14px);
+            &.active {
+                color: #fff;
+                border-radius: 50%;
+                background-color: $color-1;
             }
+            &.control {
+                position: relative;
+                // margin: 0;
+                vertical-align: top;
+                line-height: 1;
+                &-prev:after { @include arrow(left, 10px, 10px, 2px, $color-5); margin-left: 10px; }
+                &-next:after { @include arrow(right, 10px, 10px, 2px, $color-5); margin-left: 5px; }
+                span { @extend .sr-only; }
+            }
+        }
+    }
 
-            &.active, &:hover{
-				font-weight:700;
-				color:#1E292D;
-			}
+    .tab-box {
+        .tab-list {
+            margin: 0 percent(80);
+            @include vw(margin-top, 40px);
+            font-size: 0;
+            li {
+                display: inline-block;
+                width: 33.33%;
+                a { display: block; }
+                span {
+                    display: block;
+                    &.icon img {
+                        width: percent(100, 186);
+                        @include vw(max-width, 100px);
+                    }
+                    &.text {
+                        @include vw(margin-top, 20px);
+                        @include vw(font-size,22px);
+                    }
+                }
+            }
         }
 
-		a{
-			&.paging-prev, &.paging-next{
-				@include vw(width, 48px);
-			}
+        .tab-view {
+            display: none;
+            &.active { display: block; }
+        }
+    }
 
-            &.paging-prev{
-				@include vw(margin-right, 24px);
-			}
-
-            &.paging-next{
-				@include vw(margin-left, 24px);
-			}
-           
-		}
-
-	}
-
+    .step {
+        @include vw(margin-top, 40px);
+        @include vw(padding, 18px 0);
+        background-color: $bg-color-1;
+        ul {
+            display: inline-block;
+            font-size: 0;
+            li {
+                display: inline-block;
+                @include vw(font-size,24px);
+                color: $border-color-1;
+                &:last-child {
+                    a:before { display: none; }
+                }
+                &.active {
+                    font-weight: 700;
+                    color: $color-1;
+                    a:before {
+                        border-top-color: $color-1;
+                        border-right-color: $color-1;
+                    }
+                }
+            }
+            a {
+                position: relative;
+                display: block;
+                @include vw(padding, 10px 20px);
+                &:before {
+                    @include arrow(right, 5px, 5px, 2px, $border-color-1);
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
 
     .form-text {
-        @include rem(margin-top, 40px);
-        text-align:left;color:#000;
-        @include vw(font-size, 28px);
-        // @include rem(padding-bottom, 15px);
+        @include vw(margin-top, 40px);
+        text-align:left;color:$color-5;
+        @include vw(font-size,28px);
+        // @include vw(padding-bottom, 15px);
         @include breakpoint(maxMobile){
             font-size: 20px;
         }
     }
 
     .form-control {
-        @include rem(margin-top, 20px);
+        @include vw(margin-top, 20px);
         text-align: left;
-        @include breakpoint(maxMobile){
+        @include breakpoint(desktop){
             margin-top: 10px;
         }
         &:first-child { margin-top: 0; }
         .text {
             width: 100%;
-            @include rem(padding, 28px 40px);
+            @include vw(padding, 28px 40px);
             @include vw(font-size, 28px);
-            @include rem(border-width, 2px);
+            @include vw(border-width, 2px);
             border-style: solid;
-            border-color: #c0c0c0;
-            @include rem(border-radius, 5px);
+            border-color: $border-color-1;
+            @include vw(border-radius, 5px);
             background: none;
             @include boxSizing(border-box);
-            &::placeholder { color: #000; }
-            @include breakpoint(maxMobile){
+            &::placeholder { color: $color-4; }
+            @include breakpoint(desktop){
                 padding: 16px 20px;
                 font-size: 18px;
                 border-width: 1px;
             }
 
             &.disable {
-                background-color: #000;
+                background-color: $bg-color-2;
             }
         }
         input::-webkit-outer-spin-button,
@@ -271,18 +314,18 @@
         input[type="number"] { -moz-appearance: textfield; }
         .textarea {
             width: 100%;
-            @include rem(height, 300px);
-            @include rem(padding, 28px 40px);
-            @include vw(font-size, 24px);
+            @include vw(height, 300px);
+            @include vw(padding, 28px 40px);
+            @include vw(font-size,24px);
             line-height:1.5;
-            @include rem(border-width, 2px);
+            @include vw(border-width, 2px);
             border-style: solid;
-            border-color: #c0c0c0;
-            @include rem(border-radius, 5px);
+            border-color: $border-color-1;
+            @include vw(border-radius, 5px);
             resize: none;
             @include boxSizing(border-box);
             &::placeholder { color: #999; }
-            @include breakpoint(maxMobile){
+            @include breakpoint(desktop){
                 height: 200px;
                 padding: 10px 20px;
                 font-size: 16px;
@@ -294,7 +337,7 @@
             margin-left: 5px;
             font-size: 0;
             &:first-child { margin-left: 0; }
-            background: #fff url('../img/popup/icon_select_arrow.jpg') no-repeat right center;
+            background: #fff url('../img/common/icon_select_arrow.png') no-repeat right center;
             background-size: auto 100%;
             &:only-child { width: 100% }
             &:nth-child(1):nth-last-child(2),
@@ -304,18 +347,18 @@
             &:nth-child(3):nth-last-child(1) { width: calc(33.33% - 7px); }
             select {
                 width: 100%;
-                @include rem(padding, 28px 40px);
-                @include vw(font-size, 28px);
-                @include rem(border-width, 2px);
+                @include vw(padding, 28px 40px);
+                @include vw(font-size,28px);
+                @include vw(border-width, 2px);
                 border-style: solid;
-                border-color: #c0c0c0;
-                @include rem(border-radius, 5px);
+                border-color: $border-color-1;
+                @include vw(border-radius, 5px);
                 -webkit-appearance: none;
                 appearance: none;
                 @include boxSizing(border-box);
                 &::-ms-expand { display: none; }
                 &::placeholder { color: #999; }
-                @include breakpoint(maxMobile){
+                @include breakpoint(desktop){
                     padding: 17px 20px;
                     font-size: 16px;
                     border-width: 1px;
@@ -325,15 +368,12 @@
         .fake-checkbox {
             label {
                 display: inline-block;
-                @include rem(padding-left, 50px);
+                @include vw(padding-left, 60px);
                 background: url('../img/common/icon_checkbox_check.png') no-repeat left center;
                 background-size: auto 100%;
-                cursor: pointer;font-weight:700;
-                @include vw(font-size, 24px);
-                
+                cursor: pointer;
                 @include breakpoint(maxMobile){
                     padding-left: 30px;
-                    @include vw(font-size, 18px);
                 }
             }
             input {
@@ -342,119 +382,279 @@
             }
         }
         .fake-radio {
-            @include vw(margin-left, 10px);
+            @include vw(margin-left, 50px);
             &:first-child { margin-left: 0; }
             label {
                 display: inline-block;
-                background-color:#fff;
-                cursor: pointer;color:#5d5d5d;font-weight:700;
-                width: 49%;text-align:center;
-                @include rem(padding, 28px 40px);
-                @include vw(font-size, 28px);
-                @include rem(border-width, 2px);
-                border-style: solid;
-                border-color: #c0c0c0;
-                @include rem(border-radius, 5px);
-                background: none;
-                @include boxSizing(border-box);
-                &::placeholder { color: #000; }
-                @include breakpoint(maxMobile){
-                    padding: 16px 20px;
-                    font-size: 18px;
-                    border-width: 1px;
-                    width: 48.5%;
+                @include vw(padding-left, 60px);
+                background: url('../img/common/icon_radio_check.png') no-repeat left center;
+                background-size: auto 100%;
+                cursor: pointer;
+                @include breakpoint(desktop){
+                    padding-left: 30px;
                 }
             }
             input {
                 @extend .sr-only;
-                &:checked + label { background-color:#55738d;color:#fff; }
+                &:checked + label { background-image: url('../img/common/icon_radio_checked.png'); }
+
+                &.disable + label{
+                    background-image: url('../img/common/icon_radio_disable.png'); 
+                }
+            }
+        }
+        .fake-file-box {
+            @extend %clearfix;
+            @include vw(margin-top, 10px);
+            &:first-child { margin-top: 0; }
+            .fake-file-name {
+                float: left;
+                width: 75%;
+            }
+            .fake-file {
+                float: right;
+                width: calc(25% - 9px);
+                input[type="file"] { @extend .sr-only; }
+                label {
+                    display: block;
+                    @include vw(padding, 30px 0);
+                    text-align: center;
+                    @include vw(font-size,28px);
+                    color: #fff;
+                    @include vw(border-radius, 5px);
+                    background-color: $color-1;
+                    cursor: pointer;
+                    @include breakpoint(desktop){
+                        padding: 17px 0;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &-array {
+            @extend .grid;
+            .text,
+            .select {
+                @extend .col;
+                width: 74.5%;
+            }
+            a {
+                @extend .col-right;
+                width: 24.5%;
+                @include vw(padding, 28px 0);
+                @include vw(font-size,28px);
+                @include breakpoint(desktop){
+                    padding: 13px 0 14px;
+                    font-size: 20px;
+                }
             }
         }
     }
 
+    .disable{ background-color: $bg-color-2; }
+
     .form-terms {
         width: 100%;
-        background-color:#fff;
-        @include rem(height, 150px);
-        @include rem(padding, 10px);
+        @include vw(height, 200px);
+        @include vw(padding, 20px);
         text-align: left;
-        @include vw(font-size, 24px);
-        color: #000;
-        @include rem(border-width, 2px);
+        @include vw(font-size,22px);
+        color: $color-3;
+        @include vw(border-width, 2px);
         border-style: solid;
-        border-color: #c0c0c0;
-        @include rem(border-radius, 5px);
+        border-color: $border-color-1;
+        @include vw(border-radius, 5px);
         @include boxSizing(border-box);
         overflow-y: auto;
-
-        table{
-            border:1px solid #c0c0c0;margin: 10px 0;
-            th,td{border:1px solid #c0c0c0;font-size:12px;text-align:center;padding:10px 0;}
+        p { @include vw(margin, 10px  0 10px 10px); }
+        ul {
+            @include vw(margin, 10px  0 10px 10px);
+            & + p { margin-top: 40px; }
         }
         @include breakpoint(maxMobile){
-            font-size: 18px;
+            font-size: 14px;
         }
-        @include breakpoint(maxMobile){
+        @include breakpoint(desktop){
             border-width: 1px;
         }
     }
 
+    .desc + .action,
+    .form-control + .action,
+    .form-list + .action { @include vw(margin-top, 40px); }
+    .notice + .action,
+    .table-row + .action { @include vw(margin-top, 100px); }
+    .heading + .action { @include vw(margin-top, 30px); }
+    .action {
+        font-size:0;
+        a {
+            @include vw(margin-top, 10px);
+            &:first-child { margin-top: 0; }
+            @include breakpoint(desktop){
+                &:nth-child(1):nth-last-child(2),
+                &:nth-child(2):nth-last-child(1) {
+                    width:100%;
+                }
+            }
+        }
+    }
 
-	.slick-dots {
-		position:absolute;right:0;bottom:0;
-		width: 100%;
-		@include rem(right, 14px);
-		@include rem(bottom, 14px);
-		//@include rem(margin-top, 20px);
-		text-align: right;
-		li {
-			display: inline-block;
-			@include rem(margin, 0 3px);
-			button {
-				cursor: pointer;
-				text-indent: -10000em;
-				border: 0;
-				border-radius: 50%;
-				@include rem(width, 24px);
-				@include rem(height, 24px);
-				background-color: rgba(0,0,0,0.1);
-				@include breakpoint(maxMobile){
-					@include rem(width, 16px);
-					@include rem(height, 16px);
-				}
-			}
-			&.slick-active {
-				button {
-					//border-radius: 15px; @include rem(width, 60px);
-					background-color: #000;
-				}
-			}
-		}
-	}
+    .btn {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 640px;
+        @include vw(padding, 34px 0);
+        text-align: center;
+        @include vw(font-size,36px);
+        font-weight: 700;
+        @include vw(border-width, 2px);
+        border-style: solid;
+        @include vw(border-radius, 5px);
+        // background-color: #fff;
+        @include boxSizing(border-box);
+        @include breakpoint(desktop){
+            max-width: 520px;
+            padding: 18px 0;
+            font-size: 22px;
+            border-width: 1px;
+        }
+        &.btn-primary {
+            color: #fff;
+            border-color: $color-1;
+            background-color: $color-1;
+        }
+        &.btn-primary-linear {
+            @include vw(padding, 28px 40px);
+            @include vw(font-size,28px);
+            color: $color-1;
+            border-color: $color-1;
+            em {
+                display: inline-block;
+                @include vw(margin-right, 10px);
+            }
+            @include breakpoint(desktop){
+                max-width: 520px;
+                padding: 16px 0;
+                font-size: 18px;
+            }
+        }
+        &.btn-primary-round {
+            @include vw(padding, 28px 40px);
+            @include vw(font-size, 28px);
+            color: $color-1;
+            border-color: $color-1;
+            border-radius: 120px;
+            @include breakpoint(desktop){
+                max-width: 520px;
+                padding: 16px 0;
+                font-size: 18px;
+            }
+        }
+        &.btn-secondary {
+            color: #fff;
+            border-color: $color-2;
+            @include vw(border-radius, 4px);
+            background-color: $color-2;
+        }
+        &.btn-kakao {
+            color: $color-5;
+            border-color: $color-kakao;
+            @include vw(padding-left, 50px);
+            background: $color-kakao url('../img/common/icon_kakao_2.png') no-repeat 7.8125% center;
+            @include vw(background-size, 44px 41px);
+            @include breakpoint(desktop) {
+                background-position-x: 80px;
+            }
+        }
+        &.btn-info {
+            color: #fff;
+            border-color: $color-3;
+            background-color: $color-3;
+        }
 
-	.slick-arrow {
-		@extend %slick-arrow;
-		&.slick-prev {
-			border-radius:50%;
-			@include vw(left, 0px);
-			@include slideArrow(left, 40px, 40px, 2px, #B9BDBE, #F3F3F3);
-		}
-		
-		&.slick-next {
-			border-radius:50%;
-			@include vw(right, 0px);
-			@include slideArrow(right, 40px, 40px, 2px, #B9BDBE, #F3F3F3);
-		}
 
-		&:hover{
-			&:before{
-				border-color:#1E292D;
-			}
-		}
-	}
+        &.btn-info-linear {
+            width: auto;
+            max-width: none;
+            @include vw(padding, 12px 22px);
+            @include vw(font-size,20px);
+            font-weight: 400;
+            color: $color-5;
+            border-color: $border-color-1;
+            @include breakpoint(desktop){
+                padding: 9px 48px;
+                font-size: 14px;
+            }
+        }
+        &.btn-text {
+            width: auto;
+            max-width: none;
+            @include vw(font-size,28px);
+            font-weight: 400;
+            color: $color-4;
+            border: none;
+            @include breakpoint(desktop){
+                padding: 0;
+                font-size: 18px;
+            }
+        }
+        &.btn-sns {
+            width: auto;
+            max-width: none;
+            padding: 0;
+            font-size: 0;
+            border: none;
+            border-radius: 0;
+            img { max-width: 100px; }
+        }
 
+        &.btn-light {
+            color: $color-4;
+            border: none;
+        }
+    }
 
-	
-    
+    .slick-dots {
+        width: 100%;
+        @include vw(margin-top, 20px);
+        text-align: center;
+        li {
+            display: inline-block;
+            @include vw(margin, 0 6px);
+            button {
+                cursor: pointer;
+                text-indent: -10000em;
+                border: 0;
+                border-radius: 50%;
+                @include vw(width, 15px);
+                @include vw(height, 15px);
+                background-color: $color-3;
+            }
+            &.slick-active {
+                button {
+                    border-radius: 15px;
+                    background-color: $color-1;
+                }
+            }
+        }
+    }
 
+    .slick-arrow {
+        @extend %slick-arrow;
+        width: 54px;
+        height: 54px;
+        border-color: #fff;
+        margin-top:-27px;
+        &.slick-prev{
+            left: 0;
+            border-bottom-width: 2px;
+            border-left-width: 2px;
+        }
+        &.slick-next{
+            right: 10%;
+            border-top-width: 2px;
+            border-right-width: 2px;
+        }
+    }
 }
