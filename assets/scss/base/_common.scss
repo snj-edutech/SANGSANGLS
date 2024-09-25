@@ -13,11 +13,11 @@
 #wrap {
     line-height: 1.4;
     font-family: $font-noto;
-    color: $color-5;
+    color: $color-black;
 
     .gap {
-        padding-right: percent(40);
-        padding-left: percent(40);
+		@include vw( padding-right, 40px);
+		@include vw( padding-left, 40px);
         @include breakpoint(desktop){
             padding-right: 0;
             padding-left: 0;
@@ -34,7 +34,7 @@
         @extend %clearfix;
 
         @include breakpoint(desktop){
-            max-width:1000px;
+            max-width:1200px;
         }
     }
 

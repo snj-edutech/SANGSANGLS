@@ -42,8 +42,54 @@ function addEvent(){
 
     pcMenu();
     mobileMenu();
-
 }
+
+function headerTopBannerClose(){
+	$(".header-top-banner").removeClass("open");
+}
+
+function popupOpen($selector){
+	$($selector).show();
+ 
+	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
+		// 팝업이클때는 
+		var st = $(window).scrollTop()+50;
+		$($selector).addClass("wide").css({top:st});
+		$("body").append('<div class="popup-dim"></div>');
+	}else{
+		// 팝업이 작을때는
+		$($selector).removeClass("wide");
+		$($selector).css({display:"flex"});
+	}
+}
+
+
+// popupClose('#brandLayerEvent');
+function popupClose($selector){
+    //$('.slide-container').slick("unslick");
+	$($selector).hide();
+
+	if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function slickSlide(){
     if( $('#slickSlider').length > 0 ){
@@ -139,45 +185,6 @@ function formEvent(){
     });
 }
 
-// popupClose('.dimmed','popup_open');
-function popupClose($dimName, $idName){
-    var dimName = $dimName;
-    var $popupLayer = $("#"+$idName);
-    $(dimName).hide();
-    $popupLayer.hide();
-}
-
-// popupOpen('.dimmed', 'popup_open');
-function popupOpen($dimName, $idName){
-    var dimName = $dimName;
-    var $popupLayer = $("#"+$idName);
-    $(dimName).show();
-    $popupLayer.show();
-    popupPosition($popupLayer);
-    //openScalePopup($popupLayer);
-}
-
-
-function popupPosition($popupLayer) {
-    var st = $(window).scrollTop();
-    var winHeight = $(window).height();
-    var popupHeight = $popupLayer.outerHeight();
-
-    var topValue = (st + ( winHeight / 2 - popupHeight / 2 ));
-    if($(window).height() < popupHeight){
-        topValue = st;
-    }
-
-    $popupLayer.css({top:topValue});
-}
-
-
-// function openScalePopup($popupLayer){
-// 	TweenMax.killTweensOf( $popupLayer );
-// 	TweenMax.set( $popupLayer, { scale : 0.5, opacity:0});
-// 	TweenMax.to( $popupLayer, 0.4, { scale: 1, opacity:1, ease:Expo.easeInOut });
-// }
-
 function listToggle(){
     $('[data-toggle]').on('click', function(){
         var _idx = $(this).index(),
@@ -198,3 +205,5 @@ function listToggle(){
         controls.eq(_idx).children('img').attr('src', controls.eq(_idx).children('img').attr('src').replace('_off', '_on'));
     });
 }
+
+

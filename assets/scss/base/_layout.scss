@@ -1,4 +1,30 @@
 #wrap {
+
+	.header-top-banner{
+		position:relative;
+		
+
+		.banner-close{
+			@include close(50px, 50px, 1px, #000);
+			top:50%;
+			margin-top:-25px;
+		}
+	}
+
+	#header {
+        position: relative;
+        text-align: center;
+        vertical-align: top;
+		.header-util{
+			.wrap{
+				display:flex;
+				justify-content: flex-end;
+			}
+		}
+		.header-gnb{}
+    }
+
+
     &.open {
         height: 100vh;
         overflow: hidden;
@@ -17,198 +43,12 @@
         }
     }
 
-    #header {
-        position: relative;
-        text-align: center;
-        vertical-align: top;
-        border-bottom: 1px solid $border-color-1;
-        @extend %clearfix;
-        .article {
-            position: relative;
-            z-index: 101;
-            padding: 0;
-            @extend %clearfix;
-            @include breakpoint(desktop){
-                position: static;
-                text-align: right;
-            }
-        }
-        .heading {
-            position: relative;
-            z-index: 20;
-            display: inline-block;
-            @include vw(padding, 34px 0);
-            @include breakpoint(desktop){
-                float: left;
-                padding: 22px 0;
-            }
-        }
-        .menu {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: inline-block;
-            width: percent(120);
-            height: 100%;
-            background: url('../img/common/icon_menu.png') no-repeat center center;
-            background-size: 100% auto;
-            span { @extend .sr-only; }
-            @include breakpoint(desktop){
-                display: none;
-            }
-        }
-        .login {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: inline-block;
-            width: percent(120);
-            height: 100%;
-            background: url('../img/common/icon_login.png') no-repeat center center;
-            background-size: 100% auto;
-            span { @extend .sr-only; }
-            @include breakpoint(desktop){
-                position: relative;
-                float: right;
-                width: auto;
-                height: auto;
-                padding: 21px 40px 20px;
-                background: none;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    width: 1px;
-                    height: 18px;
-                    margin-top: -9px;
-                    background-color: $border-color-1;
-                }
-                span {
-                    position: static;
-                    width: auto;
-                    height: auto;
-                    font-size: 18px;
-                    font-weight: 700;
-                    color: $color-1;
-                    text-indent: 0;
-                }
-            }
-        }
-        .nav {
-            position: fixed;
-            top: 0;
-            right: 20%;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
-            // @include vw(padding, 279px 0);
-            padding: 20% 0;
-            display: none;
-            background-color: #fff;
-            @include transition(all, .3s);
-            @include breakpoint(desktop){
-                position: static;
-                top: auto;
-                right: auto;
-                bottom: auto;
-                left: auto;
-                display: inline-block;
-                margin-right: 20px;
-                padding: 0;
-            }
-            ul {
-                margin: 0 percent(120);
-                @include breakpoint(desktop){
-                    margin: 0;
-                }
-            }
-            li {
-                text-align: left;
-                border-top: 1px solid $border-color-1;
-                @include breakpoint(desktop){
-                    // position: relative;
-                    display: inline-block;
-                    border-top: 0;
-                    &:nth-child(1):nth-last-child(4) .sub-list { @include translateX(-34%); }
-                    &:nth-child(2):nth-last-child(3) .sub-list { @include translateX(-30%); }
-                }
-                &:first-child { border-top: 0; }
-                &.unfold {
-                    @include breakpoint(desktop){
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            top: 101%;
-                            right: 0;
-                            left: 0;
-                            width: 100vw;
-                            height: 70px;
-                            background-color: $bg-color-1;
-                        }
-                    }
-                    .sub-list {
-                        display: block;
-                        @include breakpoint(desktop){
-                            display: inline-block;
-                        }
-                    }
-                    a:after { @include rotate(225deg); }
-                }
-                a {
-                    position: relative;
-                    display: block;
-                    @include vw(padding, 50px 0);
-                    @include vw(font-size, 40px);
-                    font-weight: 700;
-                    &:after {
-                        @include arrow(bottom, 8px, 8px, 2px, $color-5);
-                        @include transition(all, .3s);
-                        right: 0;
-                        @include breakpoint(desktop){
-                            display: none;
-                        }
-                    }
-                    @include breakpoint(desktop){
-                        padding: 22px;
-                        font-size: 18px;
-                    }
-                }
-                .sub-list {
-                    display: none;
-                    margin: 0;
-                    @include vw(padding-bottom, 50px);
-                    @include breakpoint(desktop){
-                        position: absolute;
-                        top: 100%;
-                        z-index: 10;
-                        padding-bottom: 0;
-                        text-align: center;
-                        white-space: nowrap;
-                        @include translateX(-20%);
-                    }
-                    li {
-                        border-top: none;
-                        @include breakpoint(desktop){
-                            &:after { display: none; }
-                        }
-                    }
-                    a {
-                        @include vw(padding, 20px 0);
-                        @include vw(font-size,28px);
-                        font-weight: 500;
-                        color: $color-3;
-                        @include breakpoint(desktop){
-                            padding: 23px 20px;
-                            font-size: 16px;
-                            font-weight: 400;
-                        }
-                        &:after { display: none; }
-                    }
-                }
-            }
-        }
-    }
+
+
+	#contents {
+		@extend %clearfix; 
+		@include vw(padding, 100px 0);
+   }
 
     #footer {
         @include vw(padding-bottom, 40px);
@@ -255,8 +95,5 @@
         }
     }
 
-    #container {
-         @extend %clearfix; 
-         @include vw(padding, 100px 0);
-    }
+
 }
