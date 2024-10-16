@@ -15,7 +15,7 @@
 	display:none;
 	justify-content: center;
 	align-items: center;
-	background-color:rgba(0,0,0,0.8);
+	background-color:rgba(0,0,0,0.6);
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -28,26 +28,15 @@
 	&-wrap{
 		position:relative;
 		width:100%;
-		@include vw(width,640px);
-		@include vw(padding,30px);
-		background-color:#fff;
-		@include vw(border-radius,20px);
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-		border: 2px solid rgba(235, 0, 139, 1);
-		@include boxSizing(border-box);
-		@include breakpoint(maxMobile){
-			@include vw(width,490px);
-		}
+		background-color:$color-white;
+		@include vw(max-width,600px);
 	}
 
 	&-close{
-		@include close(40px, 40px, 2px, rgba(235, 0, 139, 1));font-size:0;
-		@include vw(top,15px);
-		@include vw(right,15px);
-		@include breakpoint(MaxMobile){
-			@include close(60px, 60px, 2px, $color-pink);
-			top: 0px;right: 0px;
-		}
+		@include close(40px, 40px, 1px, $color-black);font-size:0;
+		@include vw(top,5px);
+		@include vw(right,10px);
+		
 	
 		z-index: 10002;
 		&.white{
@@ -82,42 +71,81 @@
 	}
 
 	&-title{
-		@include vw(padding-top,40px);
-		color:#1E292D;
-		@include vw(font-size, 24px);
-		font-weight:700;
-		text-align:center;
+		@include vw(padding,12px 24px);
+		color:$color-black;
+		@include vw(font-size, 16px);
+		@include vw(line-height, 27.2px);
+		font-weight:600;
+		text-align:left;
+		background-color:$color-light-brown2;
+		border-bottom:1px solid $color-light-brown;
 
 	}
 
 	&-cont{
-		background-color:#fff;
+		color:$color-black;
+		@include vw(font-size,16px);
+		@include vw(line-height,27.2px);
+		text-align:center;
+		font-weight:400;
+		font-family: $font-pretendard;
+		@include vw(width,376px);
+		@include vw(padding,36px);
 		@include boxSizing(border-box);
-		@include vw(padding,24px 40px 0);
+		@include vw(border-radius,8px);
 	}
 
-	&-btn{
-		@include vw(margin-top,40px);
-		text-align:center;
+
+	&-scroll{
+		@include vw(padding,24px);
+		@include boxSizing(border-box);
+		@include vw(max-height,600px);
+		overflow-y:auto;
+		
+		&::-webkit-scrollbar { width: 8px; height: 8px; }
+		&::-webkit-scrollbar-button:start:decrement,
+		&::-webkit-scrollbar-button:end:increment { display: block; width: 0; height: 0; background-color: #EAEAF4; }
+		&::-webkit-scrollbar-track { background-color: #fff; border-radius: 4px;}
+		&::-webkit-scrollbar-thumb {border-radius: 4px;  background-color: #EAEAF4; }
+	}
+
+	&-text{
+		color:$color-black;
+		@include vw(font-size,14px);
+		@include vw(line-height,23.8px);
+		text-align:left;
+		font-weight:400;
+		font-family: $font-pretendard;
+		.border-line{
+			@include vw(padding-bottom,20px);
+			@include vw(margin-bottom,40px);
+			border-bottom:1px solid $color-light-brown;
+		}
+		h3{@include vw(margin-bottom,20px);	@include vw(font-size,16px);font-weight:600;line-height:1;}
+		p{
+			@include vw(margin-bottom,60px);
+			&:last-child{margin-bottom:0;}
+		}
+	}
+
+	&-action{
+		@include vw(margin-top,24px);
+		justify-content: center;
 		display:flex;
 		a {
-			display: inline-block;
+			display:flex;
+			justify-content: center;
+			align-items: center;
 			@include vw(font-size, 14px);
-			@extend %variable;
-			&:first-child{
-				@include vw(border-bottom-left-radius,15px);
+			@include vw(border-radius,2px);	
+			@include vw(width, 73px);
+			@include vw(height, 40px);
+			color:$color-white;
+			background-color:$color-brown;
+			@include vw(margin,0 4px);	
+			&.popup-cancel{
+				background-color:$color-light-gray;
 			}
-
-			&:last-child{
-				@include vw(border-bottom-right-radius,15px);
-			}
-			
-			@include vw(padding, 16px 0);
-			margin: 0 auto;
-			font-weight: 700;
-			text-align: center;
-			color: #fff;
-			background-color: #29272b;
 		 }
 	}
 
