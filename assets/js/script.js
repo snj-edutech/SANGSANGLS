@@ -85,9 +85,25 @@ function searchOpen(){
 }
 
 function searchClose(){
-	$(".section-search").hide();
+	$(".section-search").slideUp();
 	$("#wrap").removeClass('page-search');
 }
+
+function tabEvent($selector){
+    $($selector).find('.tab-list').children('li').on('click', function(){
+        var _idx = $(this).index(),
+            tabList = $($selector).find('.tab-list').children('li');
+
+        tabList.each(function(){
+            $(this).children().find('img').attr('src', $(this).children().find('img').attr('src').replace('_on', '_off'));
+        });
+        tabList.eq(_idx).children().find('img').attr('src', tabList.eq(_idx).children().find('img').attr('src').replace('_off', '_on'));
+
+        $($selector).find('.tab-view').removeClass('active');
+        $($selector).find('.tab-view').eq(_idx).addClass('active');
+    });
+}
+
 
 function popupOpen($selector){
 	$($selector).show();
@@ -199,20 +215,7 @@ function pcMenu(){
     });
 }
 
-function tabEvent($selector){
-    $($selector).find('.tab-list').children('li').on('click', function(){
-        var _idx = $(this).index(),
-            tabList = $($selector).find('.tab-list').children('li');
 
-        tabList.each(function(){
-            $(this).children().find('img').attr('src', $(this).children().find('img').attr('src').replace('_on', '_off'));
-        });
-        tabList.eq(_idx).children().find('img').attr('src', tabList.eq(_idx).children().find('img').attr('src').replace('_off', '_on'));
-
-        $($selector).find('.tab-view').removeClass('active');
-        $($selector).find('.tab-view').eq(_idx).addClass('active');
-    });
-}
 
 function formEvent(){
     var fileTarget = $('.form-control #fileUpload');

@@ -1,20 +1,9 @@
 #wrap {
-	&.page-search{
-		#header{
-			.header-gnb{
-				.wrap{
-					border-bottom:none;
-				}
-			}
-		}		
-	}
-
 	.wrap {
 		position:relative;
 		width:1200px;
 		margin:0 auto;
     }
-
 
 	.header-top-banner{
 		position:relative;
@@ -138,9 +127,56 @@
     }
 
 
+	.section-search{
+		display:none;
+		background-color:$color-light-brown2;
+		padding:60px 0;
+		.search-box{
+			width:788px;
+			margin:0 auto;
+			.search-text{
+				position:relative;
+				input[type=text]{
+					width:100%;
+					border:none;
+					border-bottom:1px solid $color-gray;
+					height:40px;@include boxSizing(border-box);
+					padding:0 32px 0 48px;
+					color:$color-black;
+					font-size:24px;
+					font-weight:600;
+					&::placeholder{
+						color:$color-light-gray;
+						font-size:24px;
+						font-weight:400;
+					}
+				}
+
+				.search-action{
+					position:absolute;left:0;top:0;z-index:10;
+				}
+				.search-cancel{
+					position:absolute;right:0;top:50%;z-index:9;
+					transform: translateY(-50%);
+				}
+			}
+
+			.action{
+				margin-top:16px;
+				.btn{@include vw(width, 65px);@include vw(height, 30px);margin-left:8px;}
+			}
+		}
+
+		.search-close{
+			@include close(50px, 50px, 1px, #000);
+			top:-50px;
+		}
+	}
+
 	#contents {
 		@extend %clearfix; 
-		min-height: 50vh;
+		padding:80px 0 200px;
+		@include boxSizing(border-box);
    }
 
     #footer {

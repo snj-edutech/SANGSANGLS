@@ -1,0 +1,16 @@
+#wrap{
+	.lecture-box{
+		.lecture-view{
+			padding:40px;
+			border:1px solid $color-light-brown;
+			border-bottom:none;
+			background-color:$color-light-brown2;
+		}
+		.lecture-list{
+			padding:32px 40px;
+			border:1px solid $color-light-brown;
+		}
+
+		.action{margin-top:20px;}
+	}
+}
