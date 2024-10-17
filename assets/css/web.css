@@ -2471,6 +2471,9 @@ q:before, q:after {
   font-weight: 400;
   line-height: 27.2px;
 }
+#wrap #contents .section-search-data {
+  padding-bottom: 200px;
+}
 #wrap #contents .section-search-data .search-data-title {
   color: #A07D3B;
   font-size: 24px;
@@ -2524,6 +2527,9 @@ q:before, q:after {
 }
 #wrap #contents .section-search-data .search-data-list {
   margin-bottom: 120px;
+}
+#wrap #contents .section-search-data .search-data-list:last-child {
+  margin-bottom: 0;
 }
 #wrap #contents .section-search-data .search-data-list .lecture-list .subject, #wrap #contents .section-search-data .search-data-list .book-list .subject {
   width: 120px;
