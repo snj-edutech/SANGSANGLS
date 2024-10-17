@@ -33,12 +33,12 @@
 	}
 
 	&-close{
-		@include close(40px, 40px, 1px, $color-black);font-size:0;
+		@include close(40px, 40px, 1px, $color-black);
+		font-size:0;
 		@include vw(top,5px);
 		@include vw(right,10px);
-		
-	
 		z-index: 10002;
+
 		&.white{
 			&:before, &:after{background-color:#fff;}
 		}
@@ -122,9 +122,13 @@
 			border-bottom:1px solid $color-light-brown;
 		}
 		h3{@include vw(margin-bottom,20px);	@include vw(font-size,16px);font-weight:600;line-height:1;}
-		p{
+		.box{
 			@include vw(margin-bottom,60px);
 			&:last-child{margin-bottom:0;}
+
+			.table-row+p{
+				@include vw(margin-top, 20px);
+			}
 		}
 	}
 

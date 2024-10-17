@@ -70,29 +70,29 @@
         }
     }
 
-    .box {
-        @include vw(margin-top, 40px);
-        @include vw(padding, 49px 60px);
-        @include vw(border-radius, 15px);
-        text-align: left;
-        background-color: $bg-color-1;
-        @include breakpoint(desktop){
-            padding: 40px;
-        }
-        .heading {
-            @include vw(font-size,36px);
-            color: #224c7d;
-        }
-        .heading + .desc,
-        p {
-            @include vw(margin-top, 30px);
-            &:first-child { margin-top: 0; }
-            @include breakpoint(desktop){
-                margin-top: 20px;
-            }
-        }
-        & + .picture { @include vw(margin-top, 80px); }
-    }
+    // .box {
+    //     @include vw(margin-top, 40px);
+    //     @include vw(padding, 49px 60px);
+    //     @include vw(border-radius, 15px);
+    //     text-align: left;
+    //     background-color: $bg-color-1;
+    //     @include breakpoint(desktop){
+    //         padding: 40px;
+    //     }
+    //     .heading {
+    //         @include vw(font-size,36px);
+    //         color: #224c7d;
+    //     }
+    //     .heading + .desc,
+    //     p {
+    //         @include vw(margin-top, 30px);
+    //         &:first-child { margin-top: 0; }
+    //         @include breakpoint(desktop){
+    //             margin-top: 20px;
+    //         }
+    //     }
+    //     & + .picture { @include vw(margin-top, 80px); }
+    // }
 
     .desc {
         @include vw(font-size,24px);
@@ -133,41 +133,41 @@
         }
     }
 
-    .table-row {
-        @include vw(margin-top, 50px);
-        table {
-            tr:last-child {
-                th,
-                td { border-bottom: none; }
-            }
-            th,
-            td {
-                @include vw(padding, 30px 0);
-                text-align:left;
-                @include vw(font-size,24px);
-                border-bottom:1px solid $border-color-1;
-                word-break: break-all;
-                @include boxSizing(border-box);
-                @include breakpoint(maxMobile){
-                    font-size: 18px;
-                }
-            }
-            th {
-                width:23%;
-                vertical-align:top;
-                color:$color-1;
-                @include breakpoint(desktop){
-                    width:200px;
-                    @include vw(padding-left, 40px);
-                }
-            }
-            .date { text-align: center; }
-            p {
-                @include vw(text-indent, -22px);
-                @include vw(padding-left, 22px);
-            }
-        }
-    }
+    // .table-row {
+    //     @include vw(margin-top, 50px);
+    //     table {
+    //         tr:last-child {
+    //             th,
+    //             td { border-bottom: none; }
+    //         }
+    //         th,
+    //         td {
+    //             @include vw(padding, 30px 0);
+    //             text-align:left;
+    //             @include vw(font-size,24px);
+    //             border-bottom:1px solid $border-color-1;
+    //             word-break: break-all;
+    //             @include boxSizing(border-box);
+    //             @include breakpoint(maxMobile){
+    //                 font-size: 18px;
+    //             }
+    //         }
+    //         th {
+    //             width:23%;
+    //             vertical-align:top;
+    //             color:$color-1;
+    //             @include breakpoint(desktop){
+    //                 width:200px;
+    //                 @include vw(padding-left, 40px);
+    //             }
+    //         }
+    //         .date { text-align: center; }
+    //         p {
+    //             @include vw(text-indent, -22px);
+    //             @include vw(padding-left, 22px);
+    //         }
+    //     }
+    // }
 
     .pagination {
         @include vw(margin-top, 100px);
@@ -487,135 +487,19 @@
     .notice + .action,
     .table-row + .action { @include vw(margin-top, 100px); }
     .heading + .action { @include vw(margin-top, 30px); }
-    .action {
-        font-size:0;
-        a {
-            @include vw(margin-top, 10px);
-            &:first-child { margin-top: 0; }
-            @include breakpoint(desktop){
-                &:nth-child(1):nth-last-child(2),
-                &:nth-child(2):nth-last-child(1) {
-                    width:100%;
-                }
-            }
-        }
-    }
-
-    .btn {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        max-width: 640px;
-        @include vw(padding, 34px 0);
-        text-align: center;
-        @include vw(font-size,36px);
-        font-weight: 700;
-        @include vw(border-width, 2px);
-        border-style: solid;
-        @include vw(border-radius, 5px);
-        // background-color: #fff;
-        @include boxSizing(border-box);
-        @include breakpoint(desktop){
-            max-width: 520px;
-            padding: 18px 0;
-            font-size: 22px;
-            border-width: 1px;
-        }
-        &.btn-primary {
-            color: #fff;
-            border-color: $color-1;
-            background-color: $color-1;
-        }
-        &.btn-primary-linear {
-            @include vw(padding, 28px 40px);
-            @include vw(font-size,28px);
-            color: $color-1;
-            border-color: $color-1;
-            em {
-                display: inline-block;
-                @include vw(margin-right, 10px);
-            }
-            @include breakpoint(desktop){
-                max-width: 520px;
-                padding: 16px 0;
-                font-size: 18px;
-            }
-        }
-        &.btn-primary-round {
-            @include vw(padding, 28px 40px);
-            @include vw(font-size, 28px);
-            color: $color-1;
-            border-color: $color-1;
-            border-radius: 120px;
-            @include breakpoint(desktop){
-                max-width: 520px;
-                padding: 16px 0;
-                font-size: 18px;
-            }
-        }
-        &.btn-secondary {
-            color: #fff;
-            border-color: $color-2;
-            @include vw(border-radius, 4px);
-            background-color: $color-2;
-        }
-        &.btn-kakao {
-            color: $color-5;
-            border-color: $color-kakao;
-            @include vw(padding-left, 50px);
-            background: $color-kakao url('../img/common/icon_kakao_2.png') no-repeat 7.8125% center;
-            @include vw(background-size, 44px 41px);
-            @include breakpoint(desktop) {
-                background-position-x: 80px;
-            }
-        }
-        &.btn-info {
-            color: #fff;
-            border-color: $color-3;
-            background-color: $color-3;
-        }
-
-
-        &.btn-info-linear {
-            width: auto;
-            max-width: none;
-            @include vw(padding, 12px 22px);
-            @include vw(font-size,20px);
-            font-weight: 400;
-            color: $color-5;
-            border-color: $border-color-1;
-            @include breakpoint(desktop){
-                padding: 9px 48px;
-                font-size: 14px;
-            }
-        }
-        &.btn-text {
-            width: auto;
-            max-width: none;
-            @include vw(font-size,28px);
-            font-weight: 400;
-            color: $color-4;
-            border: none;
-            @include breakpoint(desktop){
-                padding: 0;
-                font-size: 18px;
-            }
-        }
-        &.btn-sns {
-            width: auto;
-            max-width: none;
-            padding: 0;
-            font-size: 0;
-            border: none;
-            border-radius: 0;
-            img { max-width: 100px; }
-        }
-
-        &.btn-light {
-            color: $color-4;
-            border: none;
-        }
-    }
+    // .action {
+    //     font-size:0;
+    //     a {
+    //         @include vw(margin-top, 10px);
+    //         &:first-child { margin-top: 0; }
+    //         @include breakpoint(desktop){
+    //             &:nth-child(1):nth-last-child(2),
+    //             &:nth-child(2):nth-last-child(1) {
+    //                 width:100%;
+    //             }
+    //         }
+    //     }
+    // }
 
     .slick-dots {
         width: 100%;
@@ -659,4 +543,157 @@
             border-right-width: 2px;
         }
     }
+
+
+	/* 여기부터 */
+	.table-row{
+		@include vw(margin-top, 20px);
+		width:100%;
+		border-top:1px solid $color-light-brown;
+		tr{
+			border-bottom:1px solid $color-light-brown;
+			th,td{
+				@include vw(padding, 8px 12px);
+				text-align:center;
+				color:$color-black;
+				@include vw(font-size,13px);
+				@include vw(line-height,22.1px);
+				font-weight:400;
+			}
+
+			th{background-color:$color-light-brown2;font-weight:600;}
+			td{
+
+			}
+		}
+
+	}
+
+	.btn {
+        position: relative;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		width:100%;
+		height:100%;
+        @include vw(font-size,13px);
+		line-height:1;
+        font-weight: 600;
+        @include vw(border-width, 1px);
+        border-style: solid;
+        @include vw(border-radius, 2px);
+        background-color: $color-white;
+        @include boxSizing(border-box);
+		color:$color-black;
+		border-color:$color-light-brown;
+		@include vw(margin-left, 8px);
+		&:first-child{margin-left:0;}
+		&.btn-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
+		&.btn-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
+		&.btn-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
+		
+		// &.btn-small{@include vw(font-size,14px);font-weight:400;@include vw(width, 46px);@include vw(height, 26px);}
+		// &.btn-middle{@include vw(width, 85px);@include vw(height, 40px);}
+		// &.btn-large{@include vw(width, 117px);@include vw(height, 56px);}
+/*
+        &.btn-primary {
+            color: #fff;
+            border-color: $color-1;
+            background-color: $color-1;
+        }
+        &.btn-primary-linear {
+            @include vw(padding, 28px 40px);
+            @include vw(font-size,28px);
+            color: $color-1;
+            border-color: $color-1;
+            em {
+                display: inline-block;
+                @include vw(margin-right, 10px);
+            }
+            @include breakpoint(desktop){
+                max-width: 520px;
+                padding: 16px 0;
+                font-size: 18px;
+            }
+        }
+        &.btn-primary-round {
+            @include vw(padding, 28px 40px);
+            @include vw(font-size, 28px);
+            color: $color-1;
+            border-color: $color-1;
+            border-radius: 120px;
+            @include breakpoint(desktop){
+                max-width: 520px;
+                padding: 16px 0;
+                font-size: 18px;
+            }
+        }
+        
+        &.btn-kakao {
+            color: $color-5;
+            border-color: $color-kakao;
+            @include vw(padding-left, 50px);
+            background: $color-kakao url('../img/common/icon_kakao_2.png') no-repeat 7.8125% center;
+            @include vw(background-size, 44px 41px);
+            @include breakpoint(desktop) {
+                background-position-x: 80px;
+            }
+        }
+        &.btn-info {
+            color: #fff;
+            border-color: $color-3;
+            background-color: $color-3;
+        }
+
+        &.btn-info-linear {
+            width: auto;
+            max-width: none;
+            @include vw(padding, 12px 22px);
+            @include vw(font-size,20px);
+            font-weight: 400;
+            color: $color-5;
+            border-color: $border-color-1;
+            @include breakpoint(desktop){
+                padding: 9px 48px;
+                font-size: 14px;
+            }
+        }
+        &.btn-text {
+            width: auto;
+            max-width: none;
+            @include vw(font-size,28px);
+            font-weight: 400;
+            color: $color-4;
+            border: none;
+            @include breakpoint(desktop){
+                padding: 0;
+                font-size: 18px;
+            }
+        }
+        &.btn-sns {
+            width: auto;
+            max-width: none;
+            padding: 0;
+            font-size: 0;
+            border: none;
+            border-radius: 0;
+            img { max-width: 100px; }
+        }
+
+        &.btn-light {
+            color: $color-4;
+            border: none;
+        }
+			*/
+    }
+
+
+	.action{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		&.flex-start{justify-content: flex-start;}
+		&.flex-end{justify-content: flex-end;}
+	}
+
 }

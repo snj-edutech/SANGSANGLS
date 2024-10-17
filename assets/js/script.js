@@ -79,6 +79,16 @@ function headerEvent(){
     });
 }
 
+function searchOpen(){
+	$(".section-search").show();
+	$("#wrap").addClass('page-search');
+}
+
+function searchClose(){
+	$(".section-search").hide();
+	$("#wrap").removeClass('page-search');
+}
+
 function popupOpen($selector){
 	$($selector).show();
  

@@ -1,4 +1,13 @@
 #wrap {
+	&.page-search{
+		#header{
+			.header-gnb{
+				.wrap{
+					border-bottom:none;
+				}
+			}
+		}		
+	}
 
 	.wrap {
 		position:relative;
@@ -8,6 +17,7 @@
 
 
 	.header-top-banner{
+		position:relative;
 		display:none;
 		&.active{
 			display:block;
@@ -55,7 +65,7 @@
 					position:absolute;right:0;top:32px;display:none;
 					z-index:10;
 					.util-list{
-						width:118px;
+						width:120px;
 						padding:16px 20px;
 						background-color:$color-white;
 						border:1px solid $color-light-brown;
@@ -130,7 +140,59 @@
 
 	#contents {
 		@extend %clearfix; 
-		@include vw(padding, 100px 0);
+		min-height: 50vh;
+
+		.section-search{
+			display:none;
+			background-color:$color-light-brown2;
+			padding:60px 0;
+			.search-box{
+				width:788px;
+				margin:0 auto;
+				.search-text{
+					position:relative;
+					input[type=text]{
+						width:100%;
+						border:none;
+						border-bottom:1px solid $color-gray;
+						height:40px;@include boxSizing(border-box);
+						padding:0 32px 0 48px;
+						color:$color-black;
+						font-size:24px;
+						font-weight:600;
+						&::placeholder{
+							color:$color-light-gray;
+							font-size:24px;
+							font-weight:400;
+						}
+					}
+
+					.search-action{
+						position:absolute;left:0;top:0;z-index:10;
+					}
+					.search-cancel{
+						position:absolute;right:0;top:50%;z-index:10;
+						transform: translateY(-50%);
+					}
+				}
+
+				.action{
+					margin-top:16px;
+					.btn{@include vw(width, 65px);@include vw(height, 30px);font-weight:400;}
+				}
+			}
+
+
+
+
+			.search-close{
+				@include close(50px, 50px, 1px, #000);
+				top:-50px;
+			}
+		}
+
+
+		
    }
 
     #footer {
@@ -171,9 +233,14 @@
 			.footer-site{
 				display:flex;
 				align-items: center;
+				
 				a{
 					display:inline-block;font-weight:600;color:$color-gray;font-size:13px;
 					margin-left:36px;
+
+					&.btn-ssmockexam{
+						position:relative;top:-3px;
+					}
 				}
 			}
 		}
