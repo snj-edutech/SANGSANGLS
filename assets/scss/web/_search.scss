@@ -1,0 +1,219 @@
+#wrap{
+	#contents {
+		.section-search{
+			display:none;
+			background-color:$color-light-brown2;
+			padding:60px 0;
+			.search-box{
+				width:788px;
+				margin:0 auto;
+				.search-text{
+					position:relative;
+					input[type=text]{
+						width:100%;
+						border:none;
+						border-bottom:1px solid $color-gray;
+						height:40px;@include boxSizing(border-box);
+						padding:0 32px 0 48px;
+						color:$color-black;
+						font-size:24px;
+						font-weight:600;
+						&::placeholder{
+							color:$color-light-gray;
+							font-size:24px;
+							font-weight:400;
+						}
+					}
+
+					.search-action{
+						position:absolute;left:0;top:0;z-index:10;
+					}
+					.search-cancel{
+						position:absolute;right:0;top:50%;z-index:9;
+						transform: translateY(-50%);
+					}
+				}
+
+				.action{
+					margin-top:16px;
+					.btn{@include vw(width, 65px);@include vw(height, 30px);margin-left:8px;}
+				}
+			}
+
+			.search-close{
+				@include close(50px, 50px, 1px, #000);
+				top:-50px;
+			}
+		}
+
+		h3{
+			padding:80px 0 60px;
+			color:$color-black;
+			font-size:28px;
+			font-weight:600;
+			text-align:center;
+			strong{
+				font-weight:600;
+			}
+		}
+
+		.section-search-nodata{
+			padding-bottom:200px;
+			
+
+			.search-nodata-box{
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				background-color:$color-light-beige;
+				height:480px;
+				text-align:center;
+				p{
+					margin-top:16px;
+					color:$color-gray;
+					font-size:16px;
+					font-weight:400;
+					line-height:27.2px;
+				}
+			}
+		}
+
+		.section-search-data{
+			.search-data-title{
+				color:$color-brown;
+				font-size:24px;
+				padding-right:28px;
+				@include arrow(right, 10px, 10px, 1px, $color-brown);
+				margin-bottom:20px;
+				&:before{
+					right:0;
+				}
+			}
+
+			.search-data-list{
+				margin-bottom:120px;
+				.lecture-list, .book-list{
+					.subject{
+						width:120px;
+					}
+					.desc-box{
+						display:flex;
+						align-items:center;
+						justify-content: space-between;
+						width:910px;
+					
+						
+						.t-img{
+							display:flex;
+							justify-content:center;
+							align-items: center;
+							background-color:$color-light-brown2;
+							@include vw(width, 72px);@include vw(height, 72px);
+							overflow:hidden;
+							
+							img{
+								width:100%;
+								height:100%;
+							}
+
+							&+.t-desc{margin-left:20px;}
+						}
+
+
+
+						.t-desc{
+							text-align:left;
+							.desc-title{
+								position:relative;
+								display:inline-block;
+								font-size:18px;
+								color:$color-black;
+								font-weight:600;
+								line-height:27px;
+								
+
+								&:hover{
+									a{
+										border-bottom:2px solid $color-black;
+									}
+								}
+							}
+
+							.desc-text{
+								font-size:13px;
+								color:$color-black;
+								line-height:22.1px;
+								display:flex;
+								p{
+									margin-top:4px;
+									position:relative;
+									display:inline-block;
+									padding-right:8px;
+									margin-right:8px;
+									vertical-align:middle;
+									strong{
+										display:inline-block;
+										font-weight:600;
+										color:$color-brown;
+										margin-left:4px;
+									}
+									&:after{
+										content:'';
+										width:1px;
+										height:12px;
+										background-color:$color-light-brown;
+										position:absolute;right:0;top:50%;margin-top:-6px;
+			
+									}
+									
+									&:last-child{
+										&:after{display:none;}
+									}
+								}
+							}
+
+							.desc-btn{
+								margin-top:8px;display:flex;
+							}
+
+							.desc-lecture{
+								margin-top:20px;
+								p{
+									font-size:13px;
+									line-height:22.1px;
+								}
+							}
+						}
+
+						.t-name{
+							width:80px;
+							margin-left:auto;
+						}
+						.t-schedule{
+							width:160px;
+							margin-left:auto;
+						}
+
+					}
+
+
+
+					.action{
+						width:170px;
+					}
+					
+				}
+
+				.book-list{
+					.desc-box{
+						justify-content: flex-start;
+
+						.t-img{
+							@include vw(width, 168px);@include vw(height, 168px);
+						}
+					}
+				}
+			}
+		}
+	}
+}

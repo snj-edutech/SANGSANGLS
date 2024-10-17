@@ -126,8 +126,15 @@
 			@include vw(margin-bottom,60px);
 			&:last-child{margin-bottom:0;}
 
-			.table-row+p{
-				@include vw(margin-top, 20px);
+			.table-row{
+				th,td{
+					@include vw(padding, 8px 12px);
+					@include vw(font-size,13px);
+					@include vw(line-height,22.1px);
+				}
+				&+p{
+					@include vw(margin-top, 20px);
+				}
 			}
 		}
 	}

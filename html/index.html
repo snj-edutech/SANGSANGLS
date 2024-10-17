@@ -18,197 +18,6 @@
 	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
 	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-	<style>
-		*{margin:0;padding:0;}
-		ul,li{list-style:none;}
-		legend, caption {font-size:0;}
-
-		.publish-gate-content {
-			width: 1600px;
-			margin: 0 auto;
-		}
-
-		@media (max-width: 1620px) {
-			.publish-gate-content {
-				width: 100%;
-				padding: 0 12px;
-			}
-		}
-
-		.publish-gate-content h1 {
-			margin: 20px 0;
-			text-align: center;
-			font-size: 42px;
-			font-weight: bold;
-		}
-
-		.publish-gate-content .component-item+.component-item {
-			margin-top: 40px;
-		}
-
-		.publish-gate-content .content-title {
-			margin-bottom: 20px;
-			padding-left: 10px;
-			position: relative;
-			font-weight: bold;
-			font-size: 24px;
-		}
-
-		.publish-gate-content .content-title:before {
-			display: block;
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 0;
-			width: 3px;
-			height: 15px;
-			-webkit-transform: translateY(-50%);
-			transform: translateY(-50%);
-			background-color: #000;
-		}
-
-		.publish-gate-content .notice-list {
-			padding: 18px;
-			background-color: #f1f1f1;
-		}
-
-		.publish-gate-content .notice-list li {
-			font-size: 14px;
-		}
-
-		.publish-gate-content .table-wrapper {
-			overflow: auto;
-		}
-
-		.publish-gate-content .table-wrapper .link {
-			color: #009aff;
-			border-bottom: 1px solid #009aff;
-		}
-
-		.publish-gate-content .project-config-list table {
-			width: 100%;
-			min-width: 600px;
-			table-layout: fixed;
-		}
-
-		.publish-gate-content .project-config-list table th,
-		.publish-gate-content .project-config-list table td {
-			padding: 8px 10px;
-			font-size: 13px;
-			border: 1px solid #eee;
-		}
-
-		.publish-gate-content .project-config-list table th {
-			font-weight: bold;
-			background-color: #f1f1f1;
-		}
-
-		.publish-gate-content .project-file-list .table-wrapper {
-			margin-top: 12px;
-		}
-
-		.publish-gate-content .project-file-list table {
-			width: 100%;
-			min-width: 900px;
-			table-layout: fixed;
-		}
-
-		.publish-gate-content .project-file-list table th,
-		.publish-gate-content .project-file-list table td {
-			padding: 8px 10px;
-			font-size: 15px;
-			border: 1px solid #eee;
-		}
-
-		.publish-gate-content .project-file-list table th {
-			text-align: center;
-			background-color: #222;
-			color: #fff;
-		}
-
-		.publish-gate-content .project-file-list table td {
-			text-align: center;
-			min-height: 46.5px;
-		}
-
-		.publish-gate-content .project-file-list table td:nth-child(2){
-			text-align:left;
-			
-		}
-		.publish-gate-content .project-file-list table td:last-child{
-			font-weight:bold;
-		}
-
-		.publish-gate-content .project-file-list table td.left {
-			text-align: left;
-		}
-
-		.publish-gate-content .project-file-list table td.description {
-			font-weight: bold;
-			font-size: 13px;
-		}
-
-		.publish-gate-content .project-file-list table td.description span {
-			color: #ee4811;
-		}
-
-		.publish-gate-content .project-file-list table td.depth-01 {
-			font-weight: bold;
-		}
-
-		.publish-gate-content .project-file-list table .file-link {
-			text-decoration: underline;
-			color: #009aff;
-			font-size: 14px;
-		}
-
-		.publish-gate-content .project-file-list table .file-status {
-			display: inline-block;
-			padding: 5px 0;
-			width: 66px;
-			text-align: center;
-			font-size: 13px;
-		}
-
-		.publish-gate-content .project-file-list table .file-status.ready {
-			background-color: #f1f1f1;
-		}
-
-		.publish-gate-content .project-file-list table .file-status.ing {
-			background-color: #ee4811;
-			color: #fff;
-		}
-
-		.publish-gate-content .project-file-list table .file-status.end {
-			background-color: #009aff;
-			color: #fff;
-		}
-
-		.publish-gate-content .status-area {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
-			-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
-			justify-content: space-between;
-			margin-top: 30px;
-		}
-
-		.publish-gate-content .status-area>div {
-			font-size: 14px;
-		}
-
-		.publish-gate-content .font-point {
-			color: #009aff;
-		}
-
-		.publish-gate-content .font-class {
-			color: #de3394;
-		}
-	</style>
 </head>
 
 <body>
@@ -328,7 +137,7 @@
 							<td class="depth-01"></td>
 							<td>검색결과_없음</td>
 							<td><a href="web/검색/검색결과_없음.html" class="file-link" target="_blank">검색결과_없음.html</a></td>
-							<td><span class="file-status">작업중</span></td>
+							<td><span class="file-status">작업완료</span></td>
 							<td class="description left"></td>
 							<td>24.10.17 ~ 24.10.18</td>
 						</tr>
@@ -711,5 +520,197 @@
 			$('.status-area').find('.percent').text(`${percent}%`);
 		});
 	</script>
+
+<style>
+	*{margin:0;padding:0;}
+	ul,li{list-style:none;}
+	legend, caption {font-size:0;}
+
+	.publish-gate-content {
+		width: 1600px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 1620px) {
+		.publish-gate-content {
+			width: 100%;
+			padding: 0 12px;
+		}
+	}
+
+	.publish-gate-content h1 {
+		margin: 20px 0;
+		text-align: center;
+		font-size: 42px;
+		font-weight: bold;
+	}
+
+	.publish-gate-content .component-item+.component-item {
+		margin-top: 40px;
+	}
+
+	.publish-gate-content .content-title {
+		margin-bottom: 20px;
+		padding-left: 10px;
+		position: relative;
+		font-weight: bold;
+		font-size: 24px;
+	}
+
+	.publish-gate-content .content-title:before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 3px;
+		height: 15px;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		background-color: #000;
+	}
+
+	.publish-gate-content .notice-list {
+		padding: 18px;
+		background-color: #f1f1f1;
+	}
+
+	.publish-gate-content .notice-list li {
+		font-size: 14px;
+	}
+
+	.publish-gate-content .table-wrapper {
+		overflow: auto;
+	}
+
+	.publish-gate-content .table-wrapper .link {
+		color: #009aff;
+		border-bottom: 1px solid #009aff;
+	}
+
+	.publish-gate-content .project-config-list table {
+		width: 100%;
+		min-width: 600px;
+		table-layout: fixed;
+	}
+
+	.publish-gate-content .project-config-list table th,
+	.publish-gate-content .project-config-list table td {
+		padding: 8px 10px;
+		font-size: 13px;
+		border: 1px solid #eee;
+	}
+
+	.publish-gate-content .project-config-list table th {
+		font-weight: bold;
+		background-color: #f1f1f1;
+	}
+
+	.publish-gate-content .project-file-list .table-wrapper {
+		margin-top: 12px;
+	}
+
+	.publish-gate-content .project-file-list table {
+		width: 100%;
+		min-width: 900px;
+		table-layout: fixed;
+	}
+
+	.publish-gate-content .project-file-list table th,
+	.publish-gate-content .project-file-list table td {
+		padding: 8px 10px;
+		font-size: 15px;
+		border: 1px solid #eee;
+	}
+
+	.publish-gate-content .project-file-list table th {
+		text-align: center;
+		background-color: #222;
+		color: #fff;
+	}
+
+	.publish-gate-content .project-file-list table td {
+		text-align: center;
+		min-height: 46.5px;
+	}
+
+	.publish-gate-content .project-file-list table td:nth-child(2){
+		text-align:left;
+		
+	}
+	.publish-gate-content .project-file-list table td:last-child{
+		font-weight:bold;
+	}
+
+	.publish-gate-content .project-file-list table td.left {
+		text-align: left;
+	}
+
+	.publish-gate-content .project-file-list table td.description {
+		font-weight: bold;
+		font-size: 13px;
+	}
+
+	.publish-gate-content .project-file-list table td.description span {
+		color: #ee4811;
+	}
+
+	.publish-gate-content .project-file-list table td.depth-01 {
+		font-weight: bold;
+	}
+
+	.publish-gate-content .project-file-list table .file-link {
+		text-decoration: underline;
+		color: #009aff;
+		font-size: 14px;
+	}
+
+	.publish-gate-content .project-file-list table .file-status {
+		display: inline-block;
+		padding: 5px 0;
+		width: 66px;
+		text-align: center;
+		font-size: 13px;
+	}
+
+	.publish-gate-content .project-file-list table .file-status.ready {
+		background-color: #f1f1f1;
+	}
+
+	.publish-gate-content .project-file-list table .file-status.ing {
+		background-color: #ee4811;
+		color: #fff;
+	}
+
+	.publish-gate-content .project-file-list table .file-status.end {
+		background-color: #009aff;
+		color: #fff;
+	}
+
+	.publish-gate-content .status-area {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+
+	.publish-gate-content .status-area>div {
+		font-size: 14px;
+	}
+
+	.publish-gate-content .font-point {
+		color: #009aff;
+	}
+
+	.publish-gate-content .font-class {
+		color: #de3394;
+	}
+</style>
 </body>
 </html>

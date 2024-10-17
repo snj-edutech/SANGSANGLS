@@ -121,10 +121,7 @@
         }
     }
 
-    .highlight {
-        font-weight: 700;
-        color: #ff0000;
-    }
+
 
     .linebreak {
         display:block;
@@ -546,6 +543,10 @@
 
 
 	/* 여기부터 */
+	.highlight {
+        color: $color-brown;
+    }
+
 	.table-row{
 		@include vw(margin-top, 20px);
 		width:100%;
@@ -553,11 +554,11 @@
 		tr{
 			border-bottom:1px solid $color-light-brown;
 			th,td{
-				@include vw(padding, 8px 12px);
+				@include vw(padding, 32px 20px);
 				text-align:center;
 				color:$color-black;
-				@include vw(font-size,13px);
-				@include vw(line-height,22.1px);
+				@include vw(font-size,14px);
+				@include vw(line-height,23.8px);
 				font-weight:400;
 			}
 
@@ -569,6 +570,47 @@
 
 	}
 
+	.grid{
+		width:100%;
+		display:flex;
+		justify-content: flex-start;
+		align-items: center;
+		
+		border-bottom:1px solid $color-light-brown;
+		&:first-child{
+			border-top:1px solid $color-light-brown;
+		}
+		.col{
+			@include vw(padding, 32px 20px);
+			text-align:center;
+			color:$color-black;
+			@include vw(font-size,14px);
+			@include vw(line-height,23.8px);
+			font-weight:400;
+			@include boxSizing(border-box);
+			
+		}
+	}
+
+	.tag{
+		@include vw(font-size,11px);
+		@include vw(padding, 2px 4px);
+		display:inline-block;
+		@include vw(border-width, 1px);
+        border-style: solid;
+        @include vw(border-radius, 2px);
+        background-color: $color-white;
+        @include boxSizing(border-box);
+		color:$color-black;
+		border-color:$color-light-brown;
+		line-height:1;
+		font-weight:600;
+		&.tag-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
+		&.tag-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
+
+		&+p{  @include vw(margin-top, 8px);}
+	}
+
 	.btn {
         position: relative;
 		display:flex;
@@ -578,7 +620,7 @@
 		height:100%;
         @include vw(font-size,13px);
 		line-height:1;
-        font-weight: 600;
+        font-weight: 400;
         @include vw(border-width, 1px);
         border-style: solid;
         @include vw(border-radius, 2px);
@@ -586,11 +628,15 @@
         @include boxSizing(border-box);
 		color:$color-black;
 		border-color:$color-light-brown;
-		@include vw(margin-left, 8px);
+		@include vw(margin-left, 5px);
 		&:first-child{margin-left:0;}
 		&.btn-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
 		&.btn-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
 		&.btn-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
+
+		&.small{@include vw(width, 57px);@include vw(height, 26px);}
+		&.middle{@include vw(width, 65px);@include vw(height, 30px);}
+		&.large{@include vw(width, 129px);@include vw(height, 56px); @include vw(font-size,14px);}
 		
 		// &.btn-small{@include vw(font-size,14px);font-weight:400;@include vw(width, 46px);@include vw(height, 26px);}
 		// &.btn-middle{@include vw(width, 85px);@include vw(height, 40px);}
