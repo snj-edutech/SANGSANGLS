@@ -94,6 +94,13 @@
 				padding-bottom:24px;
 				border-bottom:1px solid $color-light-brown;
 			}
+
+			&.border-none{
+				.wrap{
+					border-bottom:none;
+				}
+			}
+			
 			.header-logo{}
 			.header-menu{
 				margin-left:auto;

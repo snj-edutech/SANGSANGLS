@@ -165,70 +165,7 @@
     //         }
     //     }
     // }
-
-    .pagination {
-        @include vw(margin-top, 100px);
-        a {
-            display: inline-block;
-            text-align: center;
-            @include vw(width, 55px);
-            @include vw(height, 55px);
-            @include vw(margin, 0 10px);
-            @include vw(line-height, 55px);
-            @include vw(font-size,28px);
-            color: $color-5;
-            @include breakpoint(desktop){
-                width: 30px;
-                height: 30px;
-                margin: 0 5px;
-                line-height: 30px;
-                font-size: 14px;
-            }
-            &.active {
-                color: #fff;
-                border-radius: 50%;
-                background-color: $color-1;
-            }
-            &.control {
-                position: relative;
-                // margin: 0;
-                vertical-align: top;
-                line-height: 1;
-                &-prev:after { @include arrow(left, 10px, 10px, 2px, $color-5); margin-left: 10px; }
-                &-next:after { @include arrow(right, 10px, 10px, 2px, $color-5); margin-left: 5px; }
-                span { @extend .sr-only; }
-            }
-        }
-    }
-
-    .tab-box {
-        .tab-list {
-            margin: 0 percent(80);
-            @include vw(margin-top, 40px);
-            font-size: 0;
-            li {
-                display: inline-block;
-                width: 33.33%;
-                a { display: block; }
-                span {
-                    display: block;
-                    &.icon img {
-                        width: percent(100, 186);
-                        @include vw(max-width, 100px);
-                    }
-                    &.text {
-                        @include vw(margin-top, 20px);
-                        @include vw(font-size,22px);
-                    }
-                }
-            }
-        }
-
-        .tab-view {
-            display: none;
-            &.active { display: block; }
-        }
-    }
+ 
 
     .step {
         @include vw(margin-top, 40px);
@@ -547,6 +484,194 @@
         color: $color-brown;
     }
 
+	.badge{
+		@include vw(font-size,11px);
+		@include vw(padding, 2px 4px);
+		display:inline-block;
+		@include vw(border-width, 1px);
+        border-style: solid;
+        @include vw(border-radius, 2px);
+        background-color: $color-white;
+        @include boxSizing(border-box);
+		color:$color-black;
+		border-color:$color-light-brown;
+		line-height:1;
+		font-weight:600;
+		&.badge-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
+		&.badge-gray{border-color:$color-light-brown2;background-color: $color-light-brown2;}
+		&.badge-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
+		&.badge-light-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
+
+		&+p{  @include vw(margin-top, 8px);}
+	}
+
+	.pagination {
+        @include vw(margin-top, 60px);
+		display:flex;
+		justify-content: center;
+        a {
+            display: inline-block;
+            text-align: center;
+            @include vw(width, 34px);
+            @include vw(height, 34px);
+			@include vw(line-height, 34px);
+            @include vw(margin, 0 2px);
+			@include vw(font-size,13px);
+			color: $color-black;
+			font-weight:400;
+			background-color:$color-white;
+			border:1px solid $color-light-brown;
+			@include vw(border-radius,2px);
+            &.active {
+              border-color:$color-black;
+            }
+            &.control {
+                position: relative;
+                border:none;
+                vertical-align: top;
+                line-height: 1;
+                &-prev{ @include arrow(left, 10px, 10px, 1.5px, $color-black); margin-right:14px;}
+                &-next{ @include arrow(right, 10px, 10px, 1.5px, $color-black); margin-left:14px;}
+                span { @extend .sr-only; }
+            }
+        }
+    }
+
+	.count-box {
+		display:flex;
+		width: 102px;
+		overflow: hidden;
+		border: 1px solid $color-light-brown;
+		background-color: $color-white;
+
+		.number {
+			width: 38px;
+			text-align: center;
+			line-height: 30px;
+			font-size: 13px;
+			font-weight: 400;
+			color:$color-black;
+
+		}
+
+		button {
+			border:none;
+			width: 32px;
+			height: 32px;
+			background-color: $color-white;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 32px;
+			text-align:center;
+			cursor:pointer;
+			&.btn-minus {
+				background-image: url("../images/web/icon_minus.png");
+				border-right: 1px solid $color-light-brown;
+			}
+			&.btn-plus {
+				border-left: 1px solid $color-light-brown;
+				background-image: url("../images/web/icon_plus.png");
+			}
+		}
+	}
+
+	.price-box{
+		display:flex;
+		justify-content: flex-end;
+		align-items: center;
+		.price-subject{color:$color-black;font-size:16px;font-weight:600;margin-right:24px;}
+		.price-before{color:$color-light-brown;font-size:16px;font-weight:400;text-decoration: line-through;}
+		.price-after{color:$color-brown;font-size:18px;font-weight:600;margin-left:8px;}
+		&.total{
+			.price-before{}
+			.price-after{font-size:24px;}
+		}
+	}
+
+	.tab-box {
+        .tab-list, .tab-menu {
+			display:flex;
+            li {
+				&:nth-child(1):nth-last-child(7),
+				&:nth-child(2):nth-last-child(6),
+				&:nth-child(3):nth-last-child(5),
+				&:nth-child(4):nth-last-child(4),
+				&:nth-child(5):nth-last-child(3),
+				&:nth-child(6):nth-last-child(2),
+				&:nth-child(7):nth-last-child(1){ width: 14.28%;}
+	
+				&:nth-child(1):nth-last-child(6),
+				&:nth-child(2):nth-last-child(5),
+				&:nth-child(3):nth-last-child(4),
+				&:nth-child(4):nth-last-child(3),
+				&:nth-child(5):nth-last-child(2),
+				&:nth-child(6):nth-last-child(1){ width: 16.66%;}
+	
+				&:nth-child(1):nth-last-child(5),
+				&:nth-child(2):nth-last-child(4),
+				&:nth-child(3):nth-last-child(3),
+				&:nth-child(4):nth-last-child(2),
+				&:nth-child(5):nth-last-child(1){ width: 20%;}
+	
+				&:nth-child(1):nth-last-child(4),
+				&:nth-child(2):nth-last-child(3),
+				&:nth-child(3):nth-last-child(2),
+				&:nth-child(4):nth-last-child(1){ width: 25%;}
+	
+				&:nth-child(1):nth-last-child(3),
+				&:nth-child(2):nth-last-child(2),
+				&:nth-child(3):nth-last-child(1){ width: 33.333%;}
+	
+				&:nth-child(1):nth-last-child(2),
+				&:nth-child(2):nth-last-child(1) { width: 50%; }
+	
+				&:nth-child(1):nth-last-child(1) { width: 100%; }
+	
+                a { 
+					display:flex;
+					justify-content: center;
+					align-items: center;
+					height:67px;
+					border:1px solid $color-light-brown;
+					background-color:$color-white;
+					font-weight:600;
+					font-size:18px;
+					color:$color-black;
+				}
+
+				&.active, &:hover{
+					a{
+						background-color:$color-light-brown2;
+					}
+				}
+            }
+        }
+
+		.tab-menu{
+			background-color:none;
+			li{
+				a{
+					border:none;
+					border-bottom:1px solid $color-light-brown;
+				}
+
+				&.active, &:hover{
+					a{
+						background-color:transparent;
+						border-bottom:2px solid $color-black;
+					}
+				}
+			}
+		}
+
+        .tab-view {
+            display: none;
+            &.active { display: block; }
+        }
+    }
+
+
+
 	.table-row{
 		@include vw(margin-top, 20px);
 		width:100%;
@@ -592,25 +717,7 @@
 		}
 	}
 
-	.tag{
-		@include vw(font-size,11px);
-		@include vw(padding, 2px 4px);
-		display:inline-block;
-		@include vw(border-width, 1px);
-        border-style: solid;
-        @include vw(border-radius, 2px);
-        background-color: $color-white;
-        @include boxSizing(border-box);
-		color:$color-black;
-		border-color:$color-light-brown;
-		line-height:1;
-		font-weight:600;
-		&.tag-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
-		&.tag-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
-		&.tag-gray{border-color:$color-light-brown2;background-color: $color-light-brown2;}
 
-		&+p{  @include vw(margin-top, 8px);}
-	}
 
 	.btn {
         position: relative;
@@ -631,6 +738,8 @@
 		border-color:$color-light-brown;
 		@include vw(margin-left, 8px);
 		&:first-child{margin-left:0;}
+		strong{font-weight:600;}
+
 		&.btn-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
 		&.btn-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
 		&.btn-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
@@ -638,10 +747,7 @@
 		&.small{@include vw(width, 57px);@include vw(height, 26px);}
 		&.middle{@include vw(width, 65px);@include vw(height, 30px);}
 		&.large{@include vw(width, 129px);@include vw(height, 56px); @include vw(font-size,14px);}
-		
-		// &.btn-small{@include vw(font-size,14px);font-weight:400;@include vw(width, 46px);@include vw(height, 26px);}
-		// &.btn-middle{@include vw(width, 85px);@include vw(height, 40px);}
-		// &.btn-large{@include vw(width, 117px);@include vw(height, 56px);}
+
 /*
         &.btn-primary {
             color: #fff;
@@ -737,9 +843,10 @@
 
 	.action{
 		display:flex;
-		justify-content: center;
+		justify-content:  flex-end;
 		align-items: center;
 		&.flex-start{justify-content: flex-start;}
+		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
 	}
 

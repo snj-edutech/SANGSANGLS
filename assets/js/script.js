@@ -45,6 +45,7 @@ function addEvent(){
 
 
 	headerEvent();
+
 }
 
 function headerTopBannerClose(){
@@ -81,27 +82,63 @@ function headerEvent(){
 
 function searchOpen(){
 	$(".section-search").show();
-	$("#wrap").addClass('page-search');
+	$(".header-gnb").addClass('border-none');
 }
 
 function searchClose(){
 	$(".section-search").slideUp();
-	$("#wrap").removeClass('page-search');
+	$(".header-gnb").removeClass('border-none');
 }
 
-function tabEvent($selector){
-    $($selector).find('.tab-list').children('li').on('click', function(){
-        var _idx = $(this).index(),
-            tabList = $($selector).find('.tab-list').children('li');
 
-        tabList.each(function(){
-            $(this).children().find('img').attr('src', $(this).children().find('img').attr('src').replace('_on', '_off'));
-        });
-        tabList.eq(_idx).children().find('img').attr('src', tabList.eq(_idx).children().find('img').attr('src').replace('_off', '_on'));
+function tabMenuEvent($selector){
+	$($selector).find('.tab-menu').children('li').on('click', function(){
+		var idx = $(this).index();
+		var tabList = $($selector).find('.tab-menu').children('li');
 
-        $($selector).find('.tab-view').removeClass('active');
-        $($selector).find('.tab-view').eq(_idx).addClass('active');
+		if(tabList.children('img').length > 0){
+			tabList.each(function(){
+				$(this).children('img').attr('src', $(this).children('img').attr('src').replace('_on','_off'));
+			});
+			tabList.eq(idx).children('img').attr('src', tabList.eq(idx).children('img').attr('src').replace('_off','_on'));
+		}
+
+		tabList.removeClass("active");
+		tabList.eq(idx).addClass("active");
+
     });
+}
+function tabEvent($selector){
+	$($selector).find('.tab-list').children('li').on('click', function(){
+		var idx = $(this).index();
+		var tabList = $($selector).find('.tab-list').children('li');
+
+		if(tabList.children('img').length > 0){
+			tabList.each(function(){
+				$(this).children('img').attr('src', $(this).children('img').attr('src').replace('_on','_off'));
+			});
+			tabList.eq(idx).children('img').attr('src', tabList.eq(idx).children('img').attr('src').replace('_off','_on'));
+		}
+
+		tabList.removeClass("active");
+		tabList.eq(idx).addClass("active");
+
+		$($selector).find('.tab-view').removeClass('active');
+		$($selector).find('.tab-view').eq(idx).addClass('active');
+    });
+}
+
+//button event 함수를 만들고
+//파라미터로 type을 줍니다 plus 와 minus 구분하기위해서
+function countEvent(type) {
+	const Result = document.getElementById("result");
+	let number = Result.innerText;
+	if (type === "plus") {
+		number = parseInt(number) + 1;
+	} else if (type === "minus") {
+		number = parseInt(number < 1 ? number : number - 1);
+	}
+	Result.innerText = number;
 }
 
 
