@@ -213,179 +213,7 @@
         }
     }
 
-    .form-control {
-        @include vw(margin-top, 20px);
-        text-align: left;
-        @include breakpoint(desktop){
-            margin-top: 10px;
-        }
-        &:first-child { margin-top: 0; }
-        .text {
-            width: 100%;
-            @include vw(padding, 28px 40px);
-            @include vw(font-size, 28px);
-            @include vw(border-width, 2px);
-            border-style: solid;
-            border-color: $border-color-1;
-            @include vw(border-radius, 5px);
-            background: none;
-            @include boxSizing(border-box);
-            &::placeholder { color: $color-4; }
-            @include breakpoint(desktop){
-                padding: 16px 20px;
-                font-size: 18px;
-                border-width: 1px;
-            }
 
-            &.disable {
-                background-color: $bg-color-2;
-            }
-        }
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            margin: 0;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-        input[type="number"] { -moz-appearance: textfield; }
-        .textarea {
-            width: 100%;
-            @include vw(height, 300px);
-            @include vw(padding, 28px 40px);
-            @include vw(font-size,24px);
-            line-height:1.5;
-            @include vw(border-width, 2px);
-            border-style: solid;
-            border-color: $border-color-1;
-            @include vw(border-radius, 5px);
-            resize: none;
-            @include boxSizing(border-box);
-            &::placeholder { color: #999; }
-            @include breakpoint(desktop){
-                height: 200px;
-                padding: 10px 20px;
-                font-size: 16px;
-                border-width: 1px;
-            }
-        }
-        .select {
-            display: inline-block;
-            margin-left: 5px;
-            font-size: 0;
-            &:first-child { margin-left: 0; }
-            background: #fff url('../img/common/icon_select_arrow.png') no-repeat right center;
-            background-size: auto 100%;
-            &:only-child { width: 100% }
-            &:nth-child(1):nth-last-child(2),
-            &:nth-child(2):nth-last-child(1) { width: calc(50% - 7px); }
-            &:nth-child(1):nth-last-child(3),
-            &:nth-child(2):nth-last-child(2),
-            &:nth-child(3):nth-last-child(1) { width: calc(33.33% - 7px); }
-            select {
-                width: 100%;
-                @include vw(padding, 28px 40px);
-                @include vw(font-size,28px);
-                @include vw(border-width, 2px);
-                border-style: solid;
-                border-color: $border-color-1;
-                @include vw(border-radius, 5px);
-                -webkit-appearance: none;
-                appearance: none;
-                @include boxSizing(border-box);
-                &::-ms-expand { display: none; }
-                &::placeholder { color: #999; }
-                @include breakpoint(desktop){
-                    padding: 17px 20px;
-                    font-size: 16px;
-                    border-width: 1px;
-                }
-            }
-        }
-        .fake-checkbox {
-            label {
-                display: inline-block;
-                @include vw(padding-left, 60px);
-                background: url('../img/common/icon_checkbox_check.png') no-repeat left center;
-                background-size: auto 100%;
-                cursor: pointer;
-                @include breakpoint(maxMobile){
-                    padding-left: 30px;
-                }
-            }
-            input {
-                @extend .sr-only;
-                &:checked + label { background-image: url('../img/common/icon_checkbox_checked.png'); }
-            }
-        }
-        .fake-radio {
-            @include vw(margin-left, 50px);
-            &:first-child { margin-left: 0; }
-            label {
-                display: inline-block;
-                @include vw(padding-left, 60px);
-                background: url('../img/common/icon_radio_check.png') no-repeat left center;
-                background-size: auto 100%;
-                cursor: pointer;
-                @include breakpoint(desktop){
-                    padding-left: 30px;
-                }
-            }
-            input {
-                @extend .sr-only;
-                &:checked + label { background-image: url('../img/common/icon_radio_checked.png'); }
-
-                &.disable + label{
-                    background-image: url('../img/common/icon_radio_disable.png'); 
-                }
-            }
-        }
-        .fake-file-box {
-            @extend %clearfix;
-            @include vw(margin-top, 10px);
-            &:first-child { margin-top: 0; }
-            .fake-file-name {
-                float: left;
-                width: 75%;
-            }
-            .fake-file {
-                float: right;
-                width: calc(25% - 9px);
-                input[type="file"] { @extend .sr-only; }
-                label {
-                    display: block;
-                    @include vw(padding, 30px 0);
-                    text-align: center;
-                    @include vw(font-size,28px);
-                    color: #fff;
-                    @include vw(border-radius, 5px);
-                    background-color: $color-1;
-                    cursor: pointer;
-                    @include breakpoint(desktop){
-                        padding: 17px 0;
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-        &-array {
-            @extend .grid;
-            .text,
-            .select {
-                @extend .col;
-                width: 74.5%;
-            }
-            a {
-                @extend .col-right;
-                width: 24.5%;
-                @include vw(padding, 28px 0);
-                @include vw(font-size,28px);
-                @include breakpoint(desktop){
-                    padding: 13px 0 14px;
-                    font-size: 20px;
-                }
-            }
-        }
-    }
 
     .disable{ background-color: $bg-color-2; }
 
@@ -522,7 +350,7 @@
 			background-color:$color-white;
 			border:1px solid $color-light-brown;
 			@include vw(border-radius,2px);
-            &.active {
+            &.active, &:hover {
               border-color:$color-black;
             }
             &.control {
@@ -565,12 +393,12 @@
 			text-align:center;
 			cursor:pointer;
 			&.btn-minus {
-				background-image: url("../images/web/icon_minus.png");
+				background-image: url("../images/icon_minus.png");
 				border-right: 1px solid $color-light-brown;
 			}
 			&.btn-plus {
 				border-left: 1px solid $color-light-brown;
-				background-image: url("../images/web/icon_plus.png");
+				background-image: url("../images/icon_plus.png");
 			}
 		}
 	}
@@ -649,6 +477,12 @@
 
 		.tab-menu{
 			background-color:none;
+			position:static;
+			&.fixed{
+				position:fixed;left:50%;right:0;top:0;z-index:10;
+				transform:translateX(-50%);
+				width:1200px;
+			}
 			li{
 				a{
 					border:none;
@@ -657,7 +491,7 @@
 
 				&.active, &:hover{
 					a{
-						background-color:transparent;
+						background-color:$color-white;
 						border-bottom:2px solid $color-black;
 					}
 				}
@@ -666,11 +500,185 @@
 
         .tab-view {
             display: none;
+			padding-top:60px;
             &.active { display: block; }
         }
     }
 
+	.form-control {
+        .fake-checkbox {
+			margin-top:8px;
+			&:first-child{margin-top:0;}
+            label {
+                display: inline-block;
+                @include vw(padding-left, 30px);
+                background: url('../images/icon_checkbox_check.svg') no-repeat left center;
+                background-size: auto 100%;
+                cursor: pointer;
+				font-weight:400;
+				font-size:14px;
 
+            }
+            input {
+                @extend .sr-only;
+                &:checked + label { background-image: url('../images/icon_checkbox_checked.svg'); }
+            }
+        }
+
+
+        .text {
+            width: 100%;
+            @include vw(padding, 28px 40px);
+            @include vw(font-size, 28px);
+            @include vw(border-width, 2px);
+            border-style: solid;
+            border-color: $border-color-1;
+            @include vw(border-radius, 5px);
+            background: none;
+            @include boxSizing(border-box);
+            &::placeholder { color: $color-4; }
+            @include breakpoint(desktop){
+                padding: 16px 20px;
+                font-size: 18px;
+                border-width: 1px;
+            }
+
+            &.disable {
+                background-color: $bg-color-2;
+            }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            margin: 0;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        input[type="number"] { -moz-appearance: textfield; }
+        .textarea {
+            width: 100%;
+            @include vw(height, 300px);
+            @include vw(padding, 28px 40px);
+            @include vw(font-size,24px);
+            line-height:1.5;
+            @include vw(border-width, 2px);
+            border-style: solid;
+            border-color: $border-color-1;
+            @include vw(border-radius, 5px);
+            resize: none;
+            @include boxSizing(border-box);
+            &::placeholder { color: #999; }
+            @include breakpoint(desktop){
+                height: 200px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-width: 1px;
+            }
+        }
+        .select {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 0;
+            &:first-child { margin-left: 0; }
+            background: #fff url('../img/common/icon_select_arrow.png') no-repeat right center;
+            background-size: auto 100%;
+            &:only-child { width: 100% }
+            &:nth-child(1):nth-last-child(2),
+            &:nth-child(2):nth-last-child(1) { width: calc(50% - 7px); }
+            &:nth-child(1):nth-last-child(3),
+            &:nth-child(2):nth-last-child(2),
+            &:nth-child(3):nth-last-child(1) { width: calc(33.33% - 7px); }
+            select {
+                width: 100%;
+                @include vw(padding, 28px 40px);
+                @include vw(font-size,28px);
+                @include vw(border-width, 2px);
+                border-style: solid;
+                border-color: $border-color-1;
+                @include vw(border-radius, 5px);
+                -webkit-appearance: none;
+                appearance: none;
+                @include boxSizing(border-box);
+                &::-ms-expand { display: none; }
+                &::placeholder { color: #999; }
+                @include breakpoint(desktop){
+                    padding: 17px 20px;
+                    font-size: 16px;
+                    border-width: 1px;
+                }
+            }
+        }
+
+
+
+        .fake-radio {
+            @include vw(margin-left, 50px);
+            &:first-child { margin-left: 0; }
+            label {
+                display: inline-block;
+                @include vw(padding-left, 60px);
+                background: url('../img/common/icon_radio_check.png') no-repeat left center;
+                background-size: auto 100%;
+                cursor: pointer;
+                @include breakpoint(desktop){
+                    padding-left: 30px;
+                }
+            }
+            input {
+                @extend .sr-only;
+                &:checked + label { background-image: url('../img/common/icon_radio_checked.png'); }
+
+                &.disable + label{
+                    background-image: url('../img/common/icon_radio_disable.png'); 
+                }
+            }
+        }
+        .fake-file-box {
+            @extend %clearfix;
+            @include vw(margin-top, 10px);
+            &:first-child { margin-top: 0; }
+            .fake-file-name {
+                float: left;
+                width: 75%;
+            }
+            .fake-file {
+                float: right;
+                width: calc(25% - 9px);
+                input[type="file"] { @extend .sr-only; }
+                label {
+                    display: block;
+                    @include vw(padding, 30px 0);
+                    text-align: center;
+                    @include vw(font-size,28px);
+                    color: #fff;
+                    @include vw(border-radius, 5px);
+                    background-color: $color-1;
+                    cursor: pointer;
+                    @include breakpoint(desktop){
+                        padding: 17px 0;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &-array {
+            @extend .grid;
+            .text,
+            .select {
+                @extend .col;
+                width: 74.5%;
+            }
+            a {
+                @extend .col-right;
+                width: 24.5%;
+                @include vw(padding, 28px 0);
+                @include vw(font-size,28px);
+                @include breakpoint(desktop){
+                    padding: 13px 0 14px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 
 	.table-row{
 		@include vw(margin-top, 20px);
@@ -747,6 +755,12 @@
 		&.small{@include vw(width, 57px);@include vw(height, 26px);}
 		&.middle{@include vw(width, 65px);@include vw(height, 30px);}
 		&.large{@include vw(width, 129px);@include vw(height, 56px); @include vw(font-size,14px);}
+
+		&.btn-video{
+			background: url('../images/icon_play_arrow.svg') no-repeat left center;
+			@include vw(width, 87px);@include vw(height, 38px); 
+			padding-left:24px;
+		}
 
 /*
         &.btn-primary {

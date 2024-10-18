@@ -45,7 +45,47 @@ function addEvent(){
 
 
 	headerEvent();
+	pageMove('.page-move');
 
+	_w.on("scroll", scrollEvent);
+	scrollEvent();
+}
+
+function scrollEvent(){
+	var wt = $(window).scrollTop();
+	var scrollTop = $('#sectionMenu').offset().top;
+	//var _bookBottom = $('[data-eduwill-eco-content="647"]').offset().top - ($(window).height() / 3);
+
+	//if( wt >= scrollTop && wt <= _bookBottom ){
+	if( wt >= scrollTop ){
+		$('#sectionMenu .tab-menu').addClass('fixed');
+	} else {
+		$('#sectionMenu .tab-menu').removeClass('fixed');
+	}
+}
+
+function pageMove($selector, $position){
+	if($position == undefined) $position = 0;
+
+	var selector = $selector;
+	$(selector).on('click', function (e) {
+		e.preventDefault();
+
+		var _top = $($(this).attr('href'));
+		if (typeof (_top) != 'undefined' && typeof (_top.offset()) != 'undefined') { // 대상 체크
+			var $target = _top.offset().top;
+
+			$('html,body').animate({
+				scrollTop: $target+$position
+			}, 500);
+		}
+	});
+}
+
+function pageTopMove(){
+	$('html,body').animate({
+		scrollTop: 0
+	}, 500);
 }
 
 function headerTopBannerClose(){
@@ -129,7 +169,6 @@ function tabEvent($selector){
 }
 
 //button event 함수를 만들고
-//파라미터로 type을 줍니다 plus 와 minus 구분하기위해서
 function countEvent(type) {
 	const Result = document.getElementById("result");
 	let number = Result.innerText;
