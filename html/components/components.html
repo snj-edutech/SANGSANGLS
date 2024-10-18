@@ -59,6 +59,9 @@
 
 						<script>
 							tabEvent('.section-tab');
+
+							$(window).on("scroll", scrollMenuEvent);
+							scrollMenuEvent();
 						</script>
 
 					</div>
@@ -68,18 +71,20 @@
 					<h2 class="component-title">tab-menu</h2>
 					<div class="component-body">
 						<div class="section-menu" id="sectionMenu">
-							<div class="tab-box">
-								<ul class="tab-menu">
-									<li class="active"><a href="javascript:;">탭1</a></li>
-									<li><a href="javascript:;">탭2</a></li>
-									<li><a href="javascript:;">탭3</a></li>
-									<li><a href="javascript:;">탭4</a></li>
-								</ul>
+							<div class="wrap">
+								<div class="tab-box">
+									<ul class="tab-menu">
+										<li class="active"><a href="javascript:;">탭1</a></li>
+										<li><a href="javascript:;">탭2</a></li>
+										<li><a href="javascript:;">탭3</a></li>
+										<li><a href="javascript:;">탭4</a></li>
+									</ul>
 
-								<div class="tab-view active">
-									tab-view
+									<div class="tab-view active">
+										tab-view
+									</div>
+
 								</div>
-
 							</div>
 						</div>
 
@@ -130,9 +135,9 @@
 					<h2 class="component-title">count</h2>
 					<div class="component-body">
 						<div class="count-box">
-							<button type="button" class="btn-minus" onclick="countEvent('minus')"><span class="sr-only">감소</span></button>
-							<span id="result" class="number">1</span>
-							<button type="button" class="btn-plus" onclick="countEvent('plus')"><span class="sr-only">증가</span></button>
+							<button type="button" class="btn-minus" onclick="countEvent(this, 'minus')"><span class="sr-only">감소</span></button>
+							<span class="result number">1</span>
+							<button type="button" class="btn-plus" onclick="countEvent(this, 'plus')"><span class="sr-only">증가</span></button>
 						</div>
 					</div>
 				</div>

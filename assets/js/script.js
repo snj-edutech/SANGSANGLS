@@ -46,22 +46,26 @@ function addEvent(){
 
 	headerEvent();
 	pageMove('.page-move');
-
-	_w.on("scroll", scrollEvent);
-	scrollEvent();
+	
 }
 
-function scrollEvent(){
+function scrollMenuEvent(){
 	var wt = $(window).scrollTop();
 	var scrollTop = $('#sectionMenu').offset().top;
-	//var _bookBottom = $('[data-eduwill-eco-content="647"]').offset().top - ($(window).height() / 3);
 
-	//if( wt >= scrollTop && wt <= _bookBottom ){
 	if( wt >= scrollTop ){
 		$('#sectionMenu .tab-menu').addClass('fixed');
 	} else {
 		$('#sectionMenu .tab-menu').removeClass('fixed');
 	}
+
+	$('#sectionMenu .lecture-content').each(function (index, value) {
+		if ($(window).scrollTop() > ($('#' + value.id).offset().top) - 200) {
+			$('#sectionMenu .tab-menu li').eq(index).addClass('active').siblings('li').removeClass('active');
+		}
+	});
+
+
 }
 
 function pageMove($selector, $position){
@@ -169,15 +173,18 @@ function tabEvent($selector){
 }
 
 //button event 함수를 만들고
-function countEvent(type) {
-	const Result = document.getElementById("result");
-	let number = Result.innerText;
+function countEvent(button, type) {
+	const countBox = button.closest(".count-box");
+	const resultSpan = countBox.querySelector(".result");
+	let number = parseInt(resultSpan.innerText);
+
 	if (type === "plus") {
-		number = parseInt(number) + 1;
+		number++;
 	} else if (type === "minus") {
-		number = parseInt(number < 1 ? number : number - 1);
+		number = number > 0 ? number - 1 : 0;
 	}
-	Result.innerText = number;
+
+	resultSpan.innerText = number;
 }
 
 

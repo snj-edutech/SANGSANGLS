@@ -10,6 +10,12 @@
   clear: both;
 }
 
+#wrap .section-menu .lecture-content .lecture-review .review-list .review-info dl dd {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .hidden,
 .sr_only,
 .sr-only,
@@ -73,6 +79,37 @@
   -webkit-transform: rotate(45deg) translateY(-50%);
   -ms-transform: rotate(45deg) translateY(-50%);
   transform: rotate(45deg) translateY(-50%);
+}
+
+#wrap .tab-box .tab-list li:only-child, #wrap .tab-box .tab-menu li:only-child, #wrap .tab-box .tab-list li:nth-child(1):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(1) {
+  width: 100%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(1) {
+  width: 50%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(1) {
+  width: 33.333%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(1) {
+  width: 25%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(1) {
+  width: 20%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(6), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(6), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(6):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(6):nth-last-child(1) {
+  width: 16.66%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(7), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(7), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(6), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(6), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(6):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(6):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(7):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(7):nth-last-child(1) {
+  width: 14.28571%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(8), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(8), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(7), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(7), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(6), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(6), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(6):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(6):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(7):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(7):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(8):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(8):nth-last-child(1) {
+  width: 12.5%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(9), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(9), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(8), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(8), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(7), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(7), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(6), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(6), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(6):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(6):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(7):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(7):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(8):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(8):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(9):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(9):nth-last-child(1) {
+  width: 11.11%;
+}
+#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(10), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(10), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(9), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(9), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(8), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(8), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(7), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(7), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(6), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(6), #wrap .tab-box .tab-list li:nth-child(6):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(6):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(7):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(7):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(8):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(8):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(9):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(9):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(10):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(10):nth-last-child(1) {
+  width: 10%;
 }
 
 .effect-bounce-diagonal {
@@ -816,6 +853,15 @@ q:before, q:after {
 #wrap .highlight {
   color: #A07D3B;
 }
+#wrap .text-left {
+  text-align: left;
+}
+#wrap .text-center {
+  text-align: center;
+}
+#wrap .text-right {
+  text-align: right;
+}
 #wrap .badge {
   font-size: 1.5277777778vw;
   padding: 0.2777777778vw 0.5555555556vw;
@@ -1094,27 +1140,6 @@ q:before, q:after {
 #wrap .tab-box .tab-list, #wrap .tab-box .tab-menu {
   display: flex;
 }
-#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(7), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(6), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(6):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(7):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(7), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(6), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(6):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(7):nth-last-child(1) {
-  width: 14.28%;
-}
-#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(6), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(6):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(6), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(6):nth-last-child(1) {
-  width: 16.66%;
-}
-#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(5), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(5):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(5), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(5):nth-last-child(1) {
-  width: 20%;
-}
-#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(4), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(4):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(4), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(4):nth-last-child(1) {
-  width: 25%;
-}
-#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(3), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(3):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(3), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(3):nth-last-child(1) {
-  width: 33.333%;
-}
-#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(2), #wrap .tab-box .tab-list li:nth-child(2):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(2), #wrap .tab-box .tab-menu li:nth-child(2):nth-last-child(1) {
-  width: 50%;
-}
-#wrap .tab-box .tab-list li:nth-child(1):nth-last-child(1), #wrap .tab-box .tab-menu li:nth-child(1):nth-last-child(1) {
-  width: 100%;
-}
 #wrap .tab-box .tab-list li a, #wrap .tab-box .tab-menu li a {
   display: flex;
   justify-content: center;
@@ -1132,6 +1157,7 @@ q:before, q:after {
 #wrap .tab-box .tab-menu {
   background-color: none;
   position: static;
+  margin-top: 60px;
 }
 #wrap .tab-box .tab-menu.fixed {
   position: fixed;
@@ -1139,6 +1165,7 @@ q:before, q:after {
   right: 0;
   top: 0;
   z-index: 10;
+  margin-top: 0;
   transform: translateX(-50%);
   width: 1200px;
 }
@@ -1688,6 +1715,20 @@ q:before, q:after {
   background-color: #2C2923;
   color: #FFFFFC;
 }
+#wrap .btn.x-small {
+  width: 6.3888888889vw;
+  height: 3.6111111111vw;
+}
+@media screen and (min-width: 720px) {
+  #wrap .btn.x-small {
+    width: 46px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .btn.x-small {
+    height: 26px;
+  }
+}
 #wrap .btn.small {
   width: 7.9166666667vw;
   height: 3.6111111111vw;
@@ -1736,11 +1777,35 @@ q:before, q:after {
     font-size: 14px;
   }
 }
+#wrap .btn.x-large {
+  width: 20.1388888889vw;
+  height: 7.7777777778vw;
+  font-size: 1.9444444444vw;
+}
+@media screen and (min-width: 720px) {
+  #wrap .btn.x-large {
+    width: 145px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .btn.x-large {
+    height: 56px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .btn.x-large {
+    font-size: 14px;
+  }
+}
 #wrap .btn.btn-video {
-  background: url("../images/icon_play_arrow.svg") no-repeat left center;
+  display: block;
+  background: #FFFFFC url("../images/icon_play_arrow.svg") no-repeat 8px center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 12.0833333333vw;
   height: 5.2777777778vw;
-  padding-left: 24px;
+  line-height: 5.2777777778vw;
+  padding-left: 4.4444444444vw;
 }
 @media screen and (min-width: 720px) {
   #wrap .btn.btn-video {
@@ -1752,10 +1817,21 @@ q:before, q:after {
     height: 38px;
   }
 }
+@media screen and (min-width: 720px) {
+  #wrap .btn.btn-video {
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .btn.btn-video {
+    padding-left: 32px;
+  }
+}
 #wrap .action {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 20px;
 }
 #wrap .action.flex-start {
   justify-content: flex-start;
@@ -2789,16 +2865,323 @@ q:before, q:after {
   }
 }
 
-#wrap .lecture-box .lecture-view {
+#wrap .section-lecture .lecture-box .lecture-view {
   padding: 40px;
   border: 1px solid #E4DED3;
   border-bottom: none;
   background-color: #F2EFE7;
+  display: flex;
 }
-#wrap .lecture-box .lecture-list {
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left {
+  width: 748px;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl {
+  display: flex;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dt {
+  width: 200px;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dt img {
+  width: 100%;
+  height: 100%;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dd {
+  margin-left: 36px;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dd .lecture-subject {
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dd .lecture-name {
+  display: flex;
+  margin-top: 20px;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dd .lecture-name strong {
+  display: inline-block;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27.22px;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-right {
+  width: 352px;
+  margin-left: 20px;
+  border-left: 1px solid #BEBEBC;
+  padding-left: 36px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-right dl {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-right dl:first-child {
+  margin-top: 0;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-right dl dt, #wrap .section-lecture .lecture-box .lecture-view .lecture-right dl dd {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+#wrap .section-lecture .lecture-box .lecture-view .lecture-right dl dd {
+  font-weight: 600;
+}
+#wrap .section-lecture .lecture-box .lecture-view .btn-help:hover + .layer-box {
+  display: block;
+}
+#wrap .section-lecture .lecture-box .lecture-view .layer-box {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 27px;
+  z-index: 11;
+  background-color: #FFFFFC;
+  padding: 24px;
+  border: 1px solid #E4DED3;
+  width: 520px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrap .section-lecture .lecture-box .lecture-view .layer-box .layer-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #A07D3B;
+}
+#wrap .section-lecture .lecture-box .lecture-view .layer-box .layer-list li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2C2923;
+  line-height: 23.8px;
+}
+#wrap .section-lecture .lecture-box .lecture-list {
   padding: 32px 40px;
   border: 1px solid #E4DED3;
 }
-#wrap .lecture-box .action {
+#wrap .section-lecture .lecture-box .lecture-list .check-list {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
+}
+#wrap .section-lecture .lecture-box .lecture-list .check-list:first-child {
+  margin-top: 0;
+}
+#wrap .section-lecture .lecture-box .lecture-list .check-list .form-control .fake-checkbox label {
+  font-size: 16px;
+}
+#wrap .section-lecture .lecture-box .lecture-list .check-list .form-control .fake-checkbox label .badge {
+  margin-right: 8px;
+}
+#wrap .section-lecture .lecture-box .lecture-list .check-list .check-control {
+  margin-left: auto;
+  display: flex;
+}
+#wrap .section-lecture .lecture-box .lecture-list .check-list .check-control .price-box {
+  margin-left: 36px;
+}
+#wrap .section-lecture .lecture-box .lecture-list .total-box {
+  border-top: 1px solid #E4DED3;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#wrap .section-lecture .lecture-box .action {
+  margin-top: 20px;
+}
+#wrap .section-menu .lecture-content {
+  margin-top: 120px;
+}
+#wrap .section-menu .lecture-content:first-child {
+  margin-top: 0;
+}
+#wrap .section-menu .lecture-content .lecture-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #A07D3B;
+  padding-bottom: 20px;
+}
+#wrap .section-menu .lecture-content .lecture-desc {
+  border-top: 1px solid #E4DED3;
+}
+#wrap .section-menu .lecture-content .lecture-desc dl {
+  padding-top: 40px;
+}
+#wrap .section-menu .lecture-content .lecture-desc dl:first-child {
+  padding-top: 20px;
+}
+#wrap .section-menu .lecture-content .lecture-desc dl dt, #wrap .section-menu .lecture-content .lecture-desc dl dd {
+  font-size: 16px;
+  line-height: 27.2px;
+}
+#wrap .section-menu .lecture-content .lecture-desc dl dt {
+  font-weight: 600;
+}
+#wrap .section-menu .lecture-content .lecture-desc dl dd {
+  font-weight: 400;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .subject {
+  width: 120px;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2EFE7;
+  width: 23.3333333333vw;
+  height: 23.3333333333vw;
+  overflow: hidden;
+}
+@media screen and (min-width: 720px) {
+  #wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-img {
+    width: 168px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-img {
+    height: 168px;
+  }
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-img img {
+  width: 100%;
+  height: 100%;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-img + .t-desc {
+  margin-left: 20px;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc {
+  text-align: left;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc .desc-title {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #2C2923;
+  font-weight: 600;
+  line-height: 27px;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc .desc-title:hover a {
+  border-bottom: 2px solid #2C2923;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc .desc-info {
+  font-size: 14px;
+  color: #2C2923;
+  line-height: 23.8px;
+  margin-top: 20px;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc .desc-info p {
+  margin-top: 4px;
+  font-weight: 400;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc .desc-info p:first-child {
+  margin-top: 0;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc .desc-info p span {
+  display: inline-block;
+  width: 40px;
+  text-align: left;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-desc .desc-info p strong {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 24px;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-price {
+  width: 280px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-price .price-box {
+  margin-left: auto;
+}
+#wrap .section-menu .lecture-content .lecture-book-list .book-list .desc-box .t-price .price-box .badge {
+  margin-right: 8px;
+  padding: 4px 4px;
+}
+#wrap .section-menu .lecture-content .lecture-table .table-row {
+  margin-top: 0;
+}
+#wrap .section-menu .lecture-content .lecture-table .table-row tr th {
+  padding: 16px 20px;
+}
+#wrap .section-menu .lecture-content .lecture-table .table-row tr td {
+  padding: 20px;
+}
+#wrap .section-menu .lecture-content .lecture-table .table-row tr td.lecture-link {
+  text-align: left;
+}
+#wrap .section-menu .lecture-content .lecture-table .table-row tr td.lecture-link a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+}
+#wrap .section-menu .lecture-content .lecture-table .table-row tr td.lecture-link a:hover {
+  border-bottom: 2px solid #2C2923;
+}
+#wrap .section-menu .lecture-content .lecture-review {
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list {
+  margin-left: 36px;
+  margin-top: 36px;
+  width: 376px;
+  height: 319px;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list:nth-child(3n+1) {
+  margin-left: 0;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list:nth-child(1), #wrap .section-menu .lecture-content .lecture-review .review-list:nth-child(2), #wrap .section-menu .lecture-content .lecture-review .review-list:nth-child(3) {
+  margin-top: 0;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list a {
+  display: block;
+  padding: 30px;
+  background-color: #FFFFFC;
+  border: 1px solid #E4DED3;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list a:hover {
+  background-color: #F2EFE7;
+  border-color: #A07D3B;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list .review-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  height: 160px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  margin-bottom: 30px;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list .review-info {
+  padding-top: 20px;
+  border-top: 1px solid #E4DED3;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list .review-info dl {
+  display: flex;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list .review-info dl dt, #wrap .section-menu .lecture-content .lecture-review .review-list .review-info dl dd {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list .review-info dl dt {
+  width: 48px;
+}
+#wrap .section-menu .lecture-content .lecture-review .review-list .review-info dl dd {
+  margin-left: 20px;
 }/*# sourceMappingURL=web.css.map */

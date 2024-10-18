@@ -312,6 +312,10 @@
         color: $color-brown;
     }
 
+	.text-left{text-align:left;}
+	.text-center{text-align:center;}
+	.text-right{text-align:right;}
+
 	.badge{
 		@include vw(font-size,11px);
 		@include vw(padding, 2px 4px);
@@ -325,6 +329,7 @@
 		border-color:$color-light-brown;
 		line-height:1;
 		font-weight:600;
+
 		&.badge-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
 		&.badge-gray{border-color:$color-light-brown2;background-color: $color-light-brown2;}
 		&.badge-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
@@ -420,41 +425,8 @@
         .tab-list, .tab-menu {
 			display:flex;
             li {
-				&:nth-child(1):nth-last-child(7),
-				&:nth-child(2):nth-last-child(6),
-				&:nth-child(3):nth-last-child(5),
-				&:nth-child(4):nth-last-child(4),
-				&:nth-child(5):nth-last-child(3),
-				&:nth-child(6):nth-last-child(2),
-				&:nth-child(7):nth-last-child(1){ width: 14.28%;}
-	
-				&:nth-child(1):nth-last-child(6),
-				&:nth-child(2):nth-last-child(5),
-				&:nth-child(3):nth-last-child(4),
-				&:nth-child(4):nth-last-child(3),
-				&:nth-child(5):nth-last-child(2),
-				&:nth-child(6):nth-last-child(1){ width: 16.66%;}
-	
-				&:nth-child(1):nth-last-child(5),
-				&:nth-child(2):nth-last-child(4),
-				&:nth-child(3):nth-last-child(3),
-				&:nth-child(4):nth-last-child(2),
-				&:nth-child(5):nth-last-child(1){ width: 20%;}
-	
-				&:nth-child(1):nth-last-child(4),
-				&:nth-child(2):nth-last-child(3),
-				&:nth-child(3):nth-last-child(2),
-				&:nth-child(4):nth-last-child(1){ width: 25%;}
-	
-				&:nth-child(1):nth-last-child(3),
-				&:nth-child(2):nth-last-child(2),
-				&:nth-child(3):nth-last-child(1){ width: 33.333%;}
-	
-				&:nth-child(1):nth-last-child(2),
-				&:nth-child(2):nth-last-child(1) { width: 50%; }
-	
-				&:nth-child(1):nth-last-child(1) { width: 100%; }
-	
+				@extend %variable;
+					
                 a { 
 					display:flex;
 					justify-content: center;
@@ -478,8 +450,10 @@
 		.tab-menu{
 			background-color:none;
 			position:static;
+			margin-top:60px;
 			&.fixed{
 				position:fixed;left:50%;right:0;top:0;z-index:10;
+				margin-top:0;
 				transform:translateX(-50%);
 				width:1200px;
 			}
@@ -752,14 +726,18 @@
 		&.btn-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
 		&.btn-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
 
+		&.x-small{@include vw(width, 46px);@include vw(height, 26px);}
 		&.small{@include vw(width, 57px);@include vw(height, 26px);}
 		&.middle{@include vw(width, 65px);@include vw(height, 30px);}
 		&.large{@include vw(width, 129px);@include vw(height, 56px); @include vw(font-size,14px);}
-
+		&.x-large{@include vw(width, 145px);@include vw(height, 56px); @include vw(font-size,14px);}
 		&.btn-video{
-			background: url('../images/icon_play_arrow.svg') no-repeat left center;
+			display:block;
+			background: $color-white url('../images/icon_play_arrow.svg') no-repeat 8px center;
+			@include boxSizing(border-box);
 			@include vw(width, 87px);@include vw(height, 38px); 
-			padding-left:24px;
+			@include vw(line-height, 38px); 
+			@include vw(padding-left,32px);
 		}
 
 /*
@@ -859,6 +837,7 @@
 		display:flex;
 		justify-content:  flex-end;
 		align-items: center;
+		margin-top:20px;
 		&.flex-start{justify-content: flex-start;}
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}

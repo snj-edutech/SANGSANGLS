@@ -1,16 +1,290 @@
 #wrap{
-	.lecture-box{
-		.lecture-view{
-			padding:40px;
-			border:1px solid $color-light-brown;
-			border-bottom:none;
-			background-color:$color-light-brown2;
-		}
-		.lecture-list{
-			padding:32px 40px;
-			border:1px solid $color-light-brown;
-		}
+	.section-lecture{
+		.lecture-box{
+			.lecture-view{
+				padding:40px;
+				border:1px solid $color-light-brown;
+				border-bottom:none;
+				background-color:$color-light-brown2;
+				display:flex;
+				.lecture-left{
+					width:748px;
+					dl{
+						display:flex;
+						dt{
+							width:200px;
+							img{width:100%;height:100%;}
+						}
+						dd{
+							margin-left:36px;
+							.lecture-subject{color:$color-black;font-weight:600;font-size:28px;line-height:42px;}
+							.lecture-name{
+								display:flex;
+								margin-top:20px;
+								strong{
+									display:inline-block;
+									color:$color-black;font-weight:600;font-size:16px;line-height:27.22px;
+								}
+							}
+						}
+					}
+				}
 
-		.action{margin-top:20px;}
+				.lecture-right{
+					width:352px;
+					margin-left:20px;
+					border-left:1px solid $color-light-gray;
+					padding-left:36px;
+					@include boxSizing(border-box);
+					dl{
+						position:relative;
+						display:flex;
+						align-items:center;
+						margin-top:16px;
+						&:first-child{margin-top:0;}
+						dt,dd{width:50%;font-size:16px;font-weight:400;text-align:left;}
+						dt{}
+						dd{font-weight:600;}
+					}
+
+				}
+
+				.btn-help:hover{
+					& + .layer-box{display:block;}
+				}
+
+				.layer-box{
+					display:none;
+					position:absolute;right:50px;top:27px;z-index:11;
+					background-color:$color-white;
+					padding:24px;
+					border:1px solid $color-light-brown;
+					width:520px;@include boxSizing(border-box);
+					.layer-title{margin-bottom:8px;font-size:14px;font-weight:600;color:$color-brown;}
+					.layer-list{
+						li{font-size:14px;font-weight:400;color:$color-black;line-height:23.8px;}
+					}
+				}
+				
+			}
+			.lecture-list{
+				padding:32px 40px;
+				border:1px solid $color-light-brown;
+
+				
+
+				.check-list{
+					display:flex;
+					align-items: center;
+					margin-top:20px;
+					&:first-child{margin-top:0;}
+
+					.form-control{
+						.fake-checkbox{
+							label{
+								.badge{
+									margin-right:8px;
+								}
+								font-size:16px;
+							}
+						}
+					}
+
+					.check-control{
+						margin-left:auto;
+						display:flex;
+						.price-box{
+							margin-left:36px;
+						}
+					}
+				}
+
+				.total-box{
+					border-top:1px solid $color-light-brown;
+					margin-top:20px;
+					padding-top:20px;
+				}
+
+			}
+
+			.action{margin-top:20px;}
+		}
 	}
+
+	.section-menu{
+		.lecture-content{
+			margin-top:120px;
+			&:first-child{margin-top:0;}
+			.lecture-title{font-size:24px;font-weight:600;color:$color-brown;padding-bottom:20px;}
+			.lecture-desc{
+				border-top:1px solid $color-light-brown;
+				dl{
+					padding-top:40px;
+					&:first-child{padding-top:20px;}
+
+					dt,dd{font-size:16px;line-height:27.2px;}
+					dt{font-weight:600;}
+					dd{font-weight:400;}
+
+				}
+
+			}
+
+			.lecture-book-list{
+				.book-list{
+					.subject{
+						width:120px;
+					}
+					.desc-box{
+						display:flex;
+						align-items:center;
+						justify-content: flex-start;
+						width:100%;
+					
+						.t-img{
+							display:flex;
+							justify-content:center;
+							align-items: center;
+							background-color:$color-light-brown2;
+							@include vw(width, 168px);@include vw(height, 168px);
+							overflow:hidden;
+							
+							img{
+								width:100%;
+								height:100%;
+							}
+	
+							&+.t-desc{margin-left:20px;}
+						}
+		
+						.t-desc{
+							text-align:left;
+							.desc-title{
+								position:relative;
+								display:inline-block;
+								font-size:18px;
+								color:$color-black;
+								font-weight:600;
+								line-height:27px;
+								
+	
+								&:hover{
+									a{
+										border-bottom:2px solid $color-black;
+									}
+								}
+							}
+	
+							.desc-info{
+								font-size:14px;
+								color:$color-black;
+								line-height:23.8px;
+								margin-top:20px;
+								p{
+									margin-top:4px;
+									font-weight:400;
+									&:first-child{margin-top:0;}
+									span{
+										display:inline-block;
+										width:40px;
+										text-align:left;
+									}
+									strong{
+										display:inline-block;
+										font-weight:600;
+										margin-left:24px;
+									}
+								}
+							}
+	
+
+						}
+	
+						.t-price{
+							width:280px;
+							margin-left:auto;
+							display:flex;
+							justify-content: space-between;
+							.price-subject{}
+							.price-box{
+								margin-left:auto;
+								.badge{margin-right:8px;padding: 4px 4px;}
+							}
+						}
+					}
+					
+				}
+			}
+
+			.lecture-table{
+				.table-row{
+					margin-top:0;
+					tr{
+						th{padding:16px 20px;}
+						td{
+							padding:20px;
+							
+							&.lecture-link{
+								text-align:left;
+								a{
+									display:inline-block;
+									font-weight:600;font-size:16px;
+									border-bottom:2px solid transparent;
+									&:hover{
+										border-bottom:2px solid $color-black;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.lecture-review{
+				display:flex;
+				flex-wrap:wrap;
+				.review-list{
+					margin-left:36px;
+					margin-top:36px;
+					width:376px;
+					height:319px;
+					&:nth-child(3n+1){margin-left:0;}
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3){margin-top:0;}
+					a{
+						display:block;
+						padding:30px;
+						background-color:$color-white;
+						border:1px solid $color-light-brown;
+						&:hover{
+							background-color:$color-light-brown2;
+							border-color:$color-brown;
+						}
+					}
+					.review-desc{
+						font-size:16px;font-weight:400;line-height:27.2px;height:160px;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 6;margin-bottom:30px;
+					}
+					.review-info{
+						padding-top:20px;
+						border-top:1px solid $color-light-brown;
+						dl{
+							display:flex;
+							dt,dd{font-size:14px;font-weight:400;line-height:23.8px;}
+							dt{width:48px;}
+							dd{margin-left:20px; @extend %textEllipsis;}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	
 }
