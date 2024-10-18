@@ -79,6 +79,12 @@
 			text-align:left;
 			background-color:$color-light-brown2;
 			border-bottom:1px solid $color-light-brown;
+			dl{
+				display:flex;
+				dt,dd{@include vw(font-size, 14px);	@include vw(line-height, 23.8px);font-weight:400;}
+				dt{@include vw(width,48px);font-weight:600;}
+				dd{@include vw(margin-left,20px);}
+			}
 
 		}
 

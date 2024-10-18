@@ -1927,6 +1927,41 @@ q:before, q:after {
     line-height: 27.2px;
   }
 }
+#wrap .popup-title dl {
+  display: flex;
+}
+#wrap .popup-title dl dt, #wrap .popup-title dl dd {
+  font-size: 1.9444444444vw;
+  line-height: 3.3055555556vw;
+  font-weight: 400;
+}
+@media screen and (min-width: 720px) {
+  #wrap .popup-title dl dt, #wrap .popup-title dl dd {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .popup-title dl dt, #wrap .popup-title dl dd {
+    line-height: 23.8px;
+  }
+}
+#wrap .popup-title dl dt {
+  width: 6.6666666667vw;
+  font-weight: 600;
+}
+@media screen and (min-width: 720px) {
+  #wrap .popup-title dl dt {
+    width: 48px;
+  }
+}
+#wrap .popup-title dl dd {
+  margin-left: 2.7777777778vw;
+}
+@media screen and (min-width: 720px) {
+  #wrap .popup-title dl dd {
+    margin-left: 20px;
+  }
+}
 #wrap .popup-text {
   color: #2C2923;
   font-size: 2.2222222222vw;
