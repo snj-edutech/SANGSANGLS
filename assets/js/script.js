@@ -153,6 +153,7 @@ function tabMenuEvent($selector){
 
     });
 }
+
 function tabEvent($selector){
 	$($selector).find('.tab-list').children('li').on('click', function(){
 		var idx = $(this).index();
@@ -215,6 +216,37 @@ function popupClose($selector){
 	}
 }
 
+// layer video
+// <link rel="stylesheet" href="//img.eduwill.net/eduwill/dev/css/common/eduf.css">
+// edufLayerVideoOpen($url, "autoplay loop controls muted");
+// edufLayerVideoOpen($url, "shorts");
+function edufLayerVideoOpen($url, $options){
+	if(typeof $options == "undefined"){
+		$options = "autoplay loop controls";
+	}
+
+	var _body = $("body");
+	_body.append('<div class="eduf-layer" id="edufLayerVideo"><div class="eduf-layer-wrap"><a href="javascript:edufLayerVideoClose();" class="eduf-layer-close"></a><div class="eduf-layer-content"></div></div></div>');
+
+	var _edufLayerContent = $("#edufLayerVideo .eduf-layer-content");
+    if ($url.indexOf('.mp4') != -1) {
+        _edufLayerContent.html('<video playsinline="" controlslist="nodownload" '+$options+'><source src="'+$url+'" type="video/mp4"></video>');
+    }else{
+        _edufLayerContent.html('<iframe src="'+$url+'" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen></iframe>');
+    }
+  
+
+	if($options == "shorts"){
+		$("#edufLayerVideo").addClass(' show shorts');
+		$options = "";
+	}else{
+		$("#edufLayerVideo").addClass('show');
+	}
+}
+
+function edufLayerVideoClose(){
+	$("#edufLayerVideo").remove();
+}
 
 
 
