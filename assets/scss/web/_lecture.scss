@@ -4,29 +4,86 @@
 			.lecture-view{
 				padding:40px;
 				border:1px solid $color-light-brown;
-				border-bottom:none;
+				
 				background-color:$color-light-brown2;
 				display:flex;
-				.lecture-left{
+				.lecture-left, .lecture-wide{
 					width:748px;
+					.lecture-subject{
+						color:$color-black;font-weight:600;font-size:28px;line-height:42px;
+					}
+
+					
+					.lecture-desc{
+						margin-top:4px;	color:$color-black;font-size:16px;font-weight:400;
+					}
+
+					.lecture-text{
+						margin-top:20px;
+						font-weight:400;
+						font-size:13px;
+						color:$color-black;
+						line-height:23.8px;
+						display:flex;
+						p{
+							
+							position:relative;
+							display:inline-block;
+							padding-right:8px;
+							margin-right:8px;
+							vertical-align:middle;
+							strong{
+								display:inline-block;
+								font-weight:600;
+								color:$color-brown;
+								margin-left:4px;
+							}
+							&:after{
+								content:'';
+								width:1px;
+								height:12px;
+								background-color:$color-light-brown;
+								position:absolute;right:0;top:50%;margin-top:-6px;
+	
+							}
+							
+							&:last-child{
+								&:after{display:none;}
+							}
+						}
+					}
+
+					.lecture-name{
+						display:flex;
+						margin-top:20px;
+						strong{
+							display:inline-block;
+							color:$color-black;font-weight:600;font-size:16px;line-height:27.22px;
+						}
+					}
+
 					dl{
 						display:flex;
 						dt{
-							width:200px;
-							img{width:100%;height:100%;}
+							&.thumbnail{
+								background-color:$color-light-brown;
+								width:200px;
+								height:200px;overflow:hidden;
+								img{width:100%;height:100%;}
+							}
 						}
 						dd{
 							margin-left:36px;
-							.lecture-subject{color:$color-black;font-weight:600;font-size:28px;line-height:42px;}
-							.lecture-name{
-								display:flex;
-								margin-top:20px;
-								strong{
-									display:inline-block;
-									color:$color-black;font-weight:600;font-size:16px;line-height:27.22px;
-								}
-							}
+							width:512px;
 						}
+					}
+				}
+
+				.lecture-wide{
+					width:100%;
+					dl{
+						dt{}
+						dd{width:884px;}
 					}
 				}
 
@@ -70,9 +127,8 @@
 			.lecture-list{
 				padding:32px 40px;
 				border:1px solid $color-light-brown;
-
+				border-top:none;
 				
-
 				.check-list{
 					display:flex;
 					align-items: center;
@@ -116,11 +172,14 @@
 			margin-top:120px;
 			&:first-child{margin-top:0;}
 			.lecture-title{font-size:24px;font-weight:600;color:$color-brown;padding-bottom:20px;}
-			.lecture-desc{
+			.lecture-intro{
+				padding-top:20px;
 				border-top:1px solid $color-light-brown;
+				font-size:16px;font-weight:400;line-height:27.2px;
+				strong{font-weight:600;}
 				dl{
-					padding-top:40px;
-					&:first-child{padding-top:20px;}
+					margin-bottom:40px;
+					&:last-child{margin-bottom:0px;}
 
 					dt,dd{font-size:16px;line-height:27.2px;}
 					dt{font-weight:600;}
@@ -128,10 +187,12 @@
 
 				}
 
+				.img{margin-top:20px;}
+
 			}
 
-			.lecture-book-list{
-				.book-list{
+			.lecture-data-list{
+				.book-list, .course-list{
 					.subject{
 						width:120px;
 					}
@@ -139,7 +200,7 @@
 						display:flex;
 						align-items:center;
 						justify-content: flex-start;
-						width:100%;
+						width:880px;
 					
 						.t-img{
 							display:flex;
@@ -196,23 +257,78 @@
 									}
 								}
 							}
+
+							.desc-text{
+								font-size:13px;
+								color:$color-black;
+								line-height:22.1px;
+								display:flex;
+								p{
+									margin-top:4px;
+									position:relative;
+									display:inline-block;
+									padding-right:8px;
+									margin-right:8px;
+									vertical-align:middle;
+									strong{
+										display:inline-block;
+										font-weight:600;
+										color:$color-brown;
+										margin-left:4px;
+									}
+									&:after{
+										content:'';
+										width:1px;
+										height:12px;
+										background-color:$color-light-brown;
+										position:absolute;right:0;top:50%;margin-top:-6px;
+			
+									}
+									
+									&:last-child{
+										&:after{display:none;}
+									}
+								}
+							}
+	
+							.desc-btn{
+								margin-top:8px;display:flex;
+								.btn{
+									@include vw(margin-left, 5px);
+									&:first-child{margin-left:0;}
+								}
+							}
 	
 
 						}
-	
-						.t-price{
-							width:280px;
+
+						.t-name{
+							width:80px;
 							margin-left:auto;
-							display:flex;
-							justify-content: space-between;
-							.price-subject{}
-							.price-box{
-								margin-left:auto;
-								.badge{margin-right:8px;padding: 4px 4px;}
-							}
+						}
+					}
+
+					.price{
+						width:320px;
+						display:flex;
+						align-items: center;
+						.price-subject{width:40px;font-size:14px;}
+						.price-box{
+							margin-left:auto;
+							.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
+							.price-before, .price-after{font-size:14px;}
 						}
 					}
 					
+				}
+
+				.course-list{
+					.desc-box{
+						width:760px;
+						.t-img{
+							@include vw(width, 72px);@include vw(height, 72px);
+						}
+					}
 				}
 			}
 
@@ -234,6 +350,10 @@
 										border-bottom:2px solid $color-black;
 									}
 								}
+							}
+
+							&.lecture-time{
+								color:$color-gray;
 							}
 						}
 					}
@@ -279,6 +399,159 @@
 							dt{width:48px;}
 							dd{margin-left:20px; @extend %textEllipsis;}
 						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-package{
+		.lecture-data-list{
+			margin-top:60px;
+			.book-list, .course-list{
+				.subject{
+					width:120px;
+				}
+				.desc-box{
+					display:flex;
+					align-items:center;
+					justify-content: flex-start;
+					width:880px;
+				
+					.t-img{
+						display:flex;
+						justify-content:center;
+						align-items: center;
+						background-color:$color-light-brown2;
+						@include vw(width, 168px);@include vw(height, 168px);
+						overflow:hidden;
+						
+						img{
+							width:100%;
+							height:100%;
+						}
+
+						&+.t-desc{margin-left:20px;}
+					}
+	
+					.t-desc{
+						text-align:left;
+						.desc-title{
+							position:relative;
+							display:inline-block;
+							font-size:18px;
+							color:$color-black;
+							font-weight:600;
+							line-height:27px;
+							
+
+							&:hover{
+								a{
+									border-bottom:2px solid $color-black;
+								}
+							}
+						}
+
+						.desc-info{
+							font-size:14px;
+							color:$color-black;
+							line-height:23.8px;
+							margin-top:20px;
+							p{
+								margin-top:4px;
+								font-weight:400;
+								&:first-child{margin-top:0;}
+								span{
+									display:inline-block;
+									width:40px;
+									text-align:left;
+								}
+								strong{
+									display:inline-block;
+									font-weight:600;
+									margin-left:24px;
+								}
+							}
+						}
+
+						.desc-text{
+							font-size:13px;
+							color:$color-black;
+							line-height:22.1px;
+							display:flex;
+							p{
+								margin-top:4px;
+								position:relative;
+								display:inline-block;
+								padding-right:8px;
+								margin-right:8px;
+								vertical-align:middle;
+								strong{
+									display:inline-block;
+									font-weight:600;
+									color:$color-brown;
+									margin-left:4px;
+								}
+								&:after{
+									content:'';
+									width:1px;
+									height:12px;
+									background-color:$color-light-brown;
+									position:absolute;right:0;top:50%;margin-top:-6px;
+		
+								}
+								
+								&:last-child{
+									&:after{display:none;}
+								}
+							}
+						}
+
+						.desc-btn{
+							margin-top:8px;display:flex;
+							.btn{
+								@include vw(margin-left, 5px);
+								&:first-child{margin-left:0;}
+							}
+						}
+
+
+					}
+
+					.t-name{
+						width:80px;
+						margin-left:auto;
+					}
+				}
+
+				.price{
+					width:320px;
+					display:flex;
+					align-items: center;
+					flex-wrap:wrap;
+					>div{
+						width:100%;
+						display:flex;
+						align-items: center;
+						margin-top:8px;
+						&:first-child{margin-top:0;}
+
+						.price-subject{width:40px;font-size:14px;}
+						.price-box{
+							margin-left:auto;
+							.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
+							.price-before, .price-after{font-size:14px;}
+						}
+					}
+				}
+				
+			}
+
+			.course-list{
+				.desc-box{
+					width:760px;
+					.t-img{
+						@include vw(width, 72px);@include vw(height, 72px);
 					}
 				}
 			}

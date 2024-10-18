@@ -46,6 +46,7 @@ function addEvent(){
 
 	headerEvent();
 	pageMove('.page-move');
+    pageMove('.page-move2', -100);
 	
 }
 
@@ -54,9 +55,9 @@ function scrollMenuEvent(){
 	var scrollTop = $('#sectionMenu').offset().top;
 
 	if( wt >= scrollTop ){
-		$('#sectionMenu .tab-menu').addClass('fixed');
+		$('#sectionMenu .tab-menu ul').addClass('fixed');
 	} else {
-		$('#sectionMenu .tab-menu').removeClass('fixed');
+		$('#sectionMenu .tab-menu ul').removeClass('fixed');
 	}
 
 	$('#sectionMenu .lecture-content').each(function (index, value) {
@@ -136,9 +137,9 @@ function searchClose(){
 
 
 function tabMenuEvent($selector){
-	$($selector).find('.tab-menu').children('li').on('click', function(){
+	$($selector).find('.tab-menu').find('li').on('click', function(){
 		var idx = $(this).index();
-		var tabList = $($selector).find('.tab-menu').children('li');
+		var tabList = $($selector).find('.tab-menu').find('li');
 
 		if(tabList.children('img').length > 0){
 			tabList.each(function(){
