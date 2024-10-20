@@ -509,6 +509,10 @@ q:before, q:after {
   z-index: 10;
 }
 
+#wrap .holder + .holder {
+  margin-top: 120px;
+}
+
 #wrap .highlight {
   color: #A07D3B;
 }

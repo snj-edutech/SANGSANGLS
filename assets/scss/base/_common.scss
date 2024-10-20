@@ -39,6 +39,10 @@
         }
     }
 
+    .holder{
+        &+.holder{margin-top:120px;}
+    }
+
 	.highlight {
         color: $color-brown;
     }
