@@ -46,6 +46,7 @@ function addEvent(){
 
 	headerEvent();
 	pageMove('.page-move');
+    pageMove('.page-move2', -100);
 	
 }
 
@@ -54,9 +55,9 @@ function scrollMenuEvent(){
 	var scrollTop = $('#sectionMenu').offset().top;
 
 	if( wt >= scrollTop ){
-		$('#sectionMenu .tab-menu').addClass('fixed');
+		$('#sectionMenu .tab-menu ul').addClass('fixed');
 	} else {
-		$('#sectionMenu .tab-menu').removeClass('fixed');
+		$('#sectionMenu .tab-menu ul').removeClass('fixed');
 	}
 
 	$('#sectionMenu .lecture-content').each(function (index, value) {
@@ -124,21 +125,30 @@ function headerEvent(){
     });
 }
 
-function searchOpen(){
-	$(".section-search").show();
-	$(".header-gnb").addClass('border-none');
+function headerSearchOpen(){
+	$(".header-search").show();
+    $("body").append('<div class="popup-dim"></div>');
+    $("body .popup-dim").css({top: $(".header-search").offset().top});
+}
+
+function headerSearchClose(){
+	$(".header-search").hide();
+    if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
+        $("body .popup-dim").css({top: 0});
+	}
 }
 
 function searchClose(){
-	$(".section-search").slideUp();
-	$(".header-gnb").removeClass('border-none');
+	$(".section-search").hide();
+   
 }
 
 
 function tabMenuEvent($selector){
-	$($selector).find('.tab-menu').children('li').on('click', function(){
+	$($selector).find('.tab-menu').find('li').on('click', function(){
 		var idx = $(this).index();
-		var tabList = $($selector).find('.tab-menu').children('li');
+		var tabList = $($selector).find('.tab-menu').find('li');
 
 		if(tabList.children('img').length > 0){
 			tabList.each(function(){
@@ -150,12 +160,20 @@ function tabMenuEvent($selector){
 		tabList.removeClass("active");
 		tabList.eq(idx).addClass("active");
 
+        console.log($($selector).find('.tab-view').length);
+
+        if($($selector).find('.tab-view').length > 1){
+            $($selector).find('.tab-view').removeClass('active');
+            $($selector).find('.tab-view').eq(idx).addClass('active');
+        }
+
     });
 }
+
 function tabEvent($selector){
-	$($selector).find('.tab-list').children('li').on('click', function(){
+	$($selector).find('.tab-list').find('li').on('click', function(){
 		var idx = $(this).index();
-		var tabList = $($selector).find('.tab-list').children('li');
+		var tabList = $($selector).find('.tab-list').find('li');
 
 		if(tabList.children('img').length > 0){
 			tabList.each(function(){
@@ -171,6 +189,49 @@ function tabEvent($selector){
 		$($selector).find('.tab-view').eq(idx).addClass('active');
     });
 }
+
+function tabSlideEvent($selector){
+    $($selector).find('.tab-menu-slide').find('li').on('click', function(){
+		var idx = $(this).index();
+		var navList = $($selector).find('.tab-menu-slide').find('li');
+
+		navList.removeClass("active");
+		navList.eq(idx).addClass("active");
+
+        $($selector).find('.tab-view').removeClass('active');
+		$($selector).find('.tab-view').eq(idx).addClass('active');
+
+        $(".slider").slick("refresh");
+    });
+}
+
+function slideEvent() {
+	$('.slider').each(function(key, item){
+		var sliderIdName = 'slider' + key;
+			this.id = sliderIdName;
+		var sliderId = '#' + sliderIdName;
+		var _data = $(sliderId).data('slide');
+		var _options;
+
+		if(_data == 'onlineSlider'){
+			_options = {
+				autoplay: true,
+                autoplaySpeed: 2000,
+				dots: false,
+				arrows: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+				centerMode: false,
+				variableWidth: true,
+                
+			};
+		}
+
+		$(sliderId).slick(_options);
+	});
+
+};
 
 //button event 함수를 만들고
 function countEvent(button, type) {
@@ -214,38 +275,55 @@ function popupClose($selector){
 	}
 }
 
+// layer video
+// <link rel="stylesheet" href="//img.eduwill.net/eduwill/dev/css/common/eduf.css">
+// edufLayerVideoOpen($url, "autoplay loop controls muted");
+// edufLayerVideoOpen($url, "shorts");
+function edufLayerVideoOpen($url, $options){
+	if(typeof $options == "undefined"){
+		$options = "autoplay loop controls";
+	}
 
+	var _body = $("body");
+	_body.append('<div class="eduf-layer" id="edufLayerVideo"><div class="eduf-layer-wrap"><a href="javascript:edufLayerVideoClose();" class="eduf-layer-close"></a><div class="eduf-layer-content"></div></div></div>');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function slickSlide(){
-    if( $('#slickSlider').length > 0 ){
-        $('#slickSlider').slick({
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed: 800,
-            infinite: true,
-            arrows: false,
-            dots: true,
-            cssEase: 'linear',
-            pauseOnHover: false,
-            pauseOnFocus: false,
-        });
+	var _edufLayerContent = $("#edufLayerVideo .eduf-layer-content");
+    if ($url.indexOf('.mp4') != -1) {
+        _edufLayerContent.html('<video playsinline="" controlslist="nodownload" '+$options+'><source src="'+$url+'" type="video/mp4"></video>');
+    }else{
+        _edufLayerContent.html('<iframe src="'+$url+'" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen></iframe>');
     }
+  
+
+	if($options == "shorts"){
+		$("#edufLayerVideo").addClass(' show shorts');
+		$options = "";
+	}else{
+		$("#edufLayerVideo").addClass('show');
+	}
 }
+
+function edufLayerVideoClose(){
+	$("#edufLayerVideo").remove();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function resizeEvent(){
     _wid = _w.width();

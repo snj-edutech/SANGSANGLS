@@ -53,7 +53,7 @@
                         </div>
 					</div>
 					<a href="javascript:;">고객센터</a>
-					<a href="javascript:searchOpen();"><img src="../../../assets/images/btn_search.svg" alt="검색" /></a>
+					<a href="javascript:headerSearchOpen();"><img src="../../../assets/images/btn_search.svg" alt="검색" /></a>
 				</div>
 			</div>
 			<div class="header-gnb">
@@ -83,25 +83,25 @@
 					</div>
 				</div>
 			</div>
-		</header>
-		<div class="section-search">
-			<div class="wrap">
-				<a href="javascript:searchClose();" class="search-close"><span class="sr-only">닫기</span></a>
-				<div class="search-box">
-					<div class="search-text">
-						<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
-						<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" value="" placeholder="검색어를 입력해주세요" />
-						<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
-						
-					</div> 
-					<div class="action">
-						<a href="javascript:;" class="btn">전체 강좌</a>
-						<a href="javascript:;" class="btn">전체 교재</a>
+			<div class="header-search">
+				<div class="wrap">
+					<a href="javascript:headerSearchClose();" class="header-search-close"><span class="sr-only">닫기</span></a>
+					<div class="search-box">
+						<div class="search-text">
+							<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
+							<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
+							<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
+							
+						</div> 
+						<div class="action">
+							<a href="javascript:;" class="btn">전체 강좌</a>
+							<a href="javascript:;" class="btn">전체 교재</a>
+						</div>
 					</div>
+	
 				</div>
-
 			</div>
-		</div>
+		</header>
 		<div id="contents">
 			<div class="section-lecture">
 				<div class="wrap">
@@ -240,19 +240,21 @@
 			<div class="section-menu" id="sectionMenu">
 				<div class="wrap">
 					<div class="tab-box">
-						<ul class="tab-menu">
-							<li class="active"><a href="#tabView1" class="page-move">강좌정보</a></li>
-							<li><a href="#tabView2" class="page-move">교재소개</a></li>
-							<li><a href="#tabView3" class="page-move">강의구성</a></li>
-							<li><a href="#tabView4" class="page-move">수강후기</a></li>
-						</ul>
+						<div class="tab-menu">
+							<ul>
+								<li class="active"><a href="#tabView1" class="page-move2">강좌정보</a></li>
+								<li><a href="#tabView2" class="page-move2">교재소개</a></li>
+								<li><a href="#tabView3" class="page-move2">강의구성</a></li>
+								<li><a href="#tabView4" class="page-move2">수강후기</a></li>
+							</ul>
+						</div>
 
 						<div class="tab-view active">
 							<div class="lecture-content" id="tabView1">
-								<div class="lecture-title">
+								<h3 class="lecture-title">
 									강좌정보
-								</div>
-								<div class="lecture-desc">
+								</h3>
+								<div class="lecture-intro">
 									<dl>
 										<dt>강좌 범위</dt>
 										<dd>추리논증 전 범위</dd>
@@ -278,10 +280,10 @@
 							</div>
 
 							<div class="lecture-content" id="tabView2">
-								<div class="lecture-title">
+								<h3 class="lecture-title">
 									교재소개
-								</div>
-								<div class="lecture-book-list">
+								</h3>
+								<div class="lecture-data-list">
 									
 									<div class="grid book-list">
 										<div class="col desc-box">
@@ -293,7 +295,9 @@
 													<p><span>출판사</span><strong>(주)북포레</strong></p>
 												</div>
 											</div>
-											<div class="t-price">
+										</div>
+										<div class="col price">
+											<div>
 												<div class="price-subject">판매가</div>
 												<div class="price-box">
 													<span class="badge badge-brown">30% 할인</span>	
@@ -302,8 +306,6 @@
 												</div>
 											</div>
 										</div>
-										
-
 									</div>
 									<div class="grid book-list">
 										<div class="col desc-box">
@@ -315,15 +317,18 @@
 													<p><span>출판사</span><strong>(주)북포레</strong></p>
 												</div>
 											</div>
-											<div class="t-price">
+											
+										</div>
+										<div class="col price">
+											<div>
 												<div class="price-subject">판매가</div>
 												<div class="price-box">
-
-													<div class="price-after">8,400원</div>
+													<!-- <span class="badge badge-brown">30% 할인</span>	
+													<div class="price-before">999,999원</div> -->
+													<div class="price-after">999,999원</div>
 												</div>
 											</div>
 										</div>
-										
 
 									</div>
 								
@@ -331,9 +336,9 @@
 							</div>
 
 							<div class="lecture-content" id="tabView3">
-								<div class="lecture-title">
+								<h3 class="lecture-title">
 									개설강좌
-								</div>
+								</h3>
 								<div class="lecture-table">
 									<table class="table-row ">
 										<colgroup>
@@ -350,72 +355,72 @@
 										</tr>
 										<tr>
 											<td>1강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>2강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>1강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>2강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>1강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>2강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>1강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>2강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>1강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 										<tr>
 											<td>2강</td>
-											<td class="lecture-link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
+											<td class="link"><a href="javscript:;"  >[1-2] Part1. 추리논증 일반</a></td>
 											<td></td>
-											<td>58분</td>											
+											<td class="highlight">58분</td>											
 										</tr>
 									</table>
 								</div>
 							</div>
 
 							<div class="lecture-content" id="tabView4">
-								<div class="lecture-title">
+								<h3 class="lecture-title">
 									수강후기
-								</div>
+								</h3>
 								<div class="lecture-review">
 
 									<div class="review-list">

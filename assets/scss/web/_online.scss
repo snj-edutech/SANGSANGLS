@@ -1,0 +1,35 @@
+#wrap{
+    // LEFT 인강
+	.section-online{
+        .tab-view{
+            .lecture-data-list{margin-top:40px;}
+        }
+
+        .tab-box + .lecture-data-list{margin-top:80px;}
+    }
+
+    // 온라인 서점
+    .section-online-bookstore{
+        .tab-box .tab-menu{margin-top:0;}
+
+        .lecture-data-list{
+            .course-list{
+                .desc-box{
+                    width:725px;
+                    .t-img{width:168px;height:168px;}
+                }
+
+                .price{width:355px;}
+            }
+           
+        }
+
+        .tab-slide{
+            .slick-slide{
+                margin:0 18px;
+                width:273px;height:320px;
+                img{width:100%;height:100%;}
+            }
+        }
+    }
+}
