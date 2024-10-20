@@ -47,6 +47,17 @@
         color: $color-brown;
     }
 
+    .icon-new{
+        display:inline-block;
+        background: rgba(160, 125, 59, 1);
+        color:#fff;
+        border-radius:4px;
+        padding:2.5px 4px 1.5px;
+        line-height:1;
+        font-size:12px;
+        margin-left:4px;
+    }
+
 	.text-left{text-align:left;}
 	.text-center{text-align:center;}
 	.text-right{text-align:right;}
@@ -85,19 +96,15 @@
 
     .slick-arrow {
         @extend %slick-arrow;
-        width: 54px;
-        height: 54px;
-        border-color: #fff;
-        margin-top:-27px;
+        border-radius:50%;
+        
         &.slick-prev{
-            left: 0;
-            border-bottom-width: 2px;
-            border-left-width: 2px;
+            @include slideArrow(left, 64px, 64px, 1px, $color-black, $color-light-beige, $margin: 635px);
+            &:before{width:8px;height:8px;}
         }
         &.slick-next{
-            right: 10%;
-            border-top-width: 2px;
-            border-right-width: 2px;
+           @include slideArrow(right, 64px, 64px, 1px, $color-black,$color-light-beige, $margin: 635px);
+           &:before{width:8px;height:8px;}
         }
     }
 
@@ -115,7 +122,7 @@
 
 	.badge{
 		@include vw(font-size,11px);
-		@include vw(padding, 2px 4px);
+		@include vw(padding, 3.5px 3.5px 2.5px);
 		display:inline-block;
 		@include vw(border-width, 1px);
         border-style: solid;
@@ -315,12 +322,10 @@
             display: none;
             &.active { display: block; }
         }
-    }
 
-    .nav-box{
-        .nav-menu{
+        .tab-menu-small{
             display:flex;justify-content: center;align-items:center;
-            .nav-title{ margin-left:40px;margin-right:16px;color:$color-brown;font-size:20px;font-weight:600;}
+            .menu-title{ margin-left:40px;margin-right:16px;color:$color-brown;font-size:20px;font-weight:600;}
             ul{
                 text-align:center;
                 li {
@@ -345,6 +350,50 @@
                     }
                 }
             }
+        }
+
+        &.tab-slide{
+            .tab-menu-slide{
+                margin-top:56px;
+                margin-bottom:20px;
+                ul{
+                    display:flex;
+                    justify-content: flex-start;
+                    li {
+                        a { 
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight:600;
+                            font-size:24px;
+                            color:$color-light-gray;
+                            
+                        }
+
+                        position:relative;
+                        margin-right:20px;padding-right:20px;
+                        &:after{
+                            content:'';
+                            width:1px;
+                            height:24px;
+                            background-color:$color-light-brown;
+                            position:absolute;right:0;top:50%;margin-top:-12px;
+
+                        }
+                        
+                        &:last-child{
+                            &:after{display:none;}
+                        }
+    
+                        &.active{
+                            a{
+                                color:$color-brown;
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
     }
 
@@ -567,7 +616,7 @@
 			th{background-color:$color-light-brown2;font-weight:600;}
 			td{
                 padding:20px;
-                &.lecture-link{
+                &.link{
                     text-align:left;
                     a{
                         display:inline-block;
@@ -577,10 +626,6 @@
                             border-bottom:2px solid $color-black;
                         }
                     }
-                }
-
-                &.lecture-time{
-                    color:$color-gray;
                 }
 			}
 		}

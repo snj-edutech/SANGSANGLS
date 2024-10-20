@@ -190,15 +190,48 @@ function tabEvent($selector){
     });
 }
 
-function navEvent($selector){
-    $($selector).find('.nav-list').find('li').on('click', function(){
+function tabSlideEvent($selector){
+    $($selector).find('.tab-menu-slide').find('li').on('click', function(){
 		var idx = $(this).index();
-		var navList = $($selector).find('.nav-list').find('li');
+		var navList = $($selector).find('.tab-menu-slide').find('li');
 
 		navList.removeClass("active");
 		navList.eq(idx).addClass("active");
+
+        $($selector).find('.tab-view').removeClass('active');
+		$($selector).find('.tab-view').eq(idx).addClass('active');
+
+        $(".slider").slick("refresh");
     });
 }
+
+function slideEvent() {
+	$('.slider').each(function(key, item){
+		var sliderIdName = 'slider' + key;
+			this.id = sliderIdName;
+		var sliderId = '#' + sliderIdName;
+		var _data = $(sliderId).data('slide');
+		var _options;
+
+		if(_data == 'onlineSlider'){
+			_options = {
+				autoplay: true,
+                autoplaySpeed: 2000,
+				dots: false,
+				arrows: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+				centerMode: false,
+				variableWidth: true,
+                
+			};
+		}
+
+		$(sliderId).slick(_options);
+	});
+
+};
 
 //button event 함수를 만들고
 function countEvent(button, type) {
@@ -290,21 +323,7 @@ function edufLayerVideoClose(){
 
 
 
-function slickSlide(){
-    if( $('#slickSlider').length > 0 ){
-        $('#slickSlider').slick({
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed: 800,
-            infinite: true,
-            arrows: false,
-            dots: true,
-            cssEase: 'linear',
-            pauseOnHover: false,
-            pauseOnFocus: false,
-        });
-    }
-}
+
 
 function resizeEvent(){
     _wid = _w.width();
