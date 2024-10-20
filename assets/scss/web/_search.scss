@@ -183,6 +183,9 @@
 							p{
 								font-size:13px;
 								line-height:22.1px;
+								a{
+									&:hover{border-bottom:1px solid $color-black;}
+								}
 							}
 						}
 					}

@@ -485,12 +485,28 @@ q:before, q:after {
 }
 
 #wrap h2 {
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 60px;
   color: #2C2923;
   text-align: center;
   line-height: 90px;
   margin-bottom: 24px;
+}
+
+#wrap h3 {
+  position: relative;
+  font-weight: 600;
+  font-size: 24px;
+  color: #A07D3B;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+#wrap h3 .search-input-box {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  z-index: 10;
 }
 
 #wrap .highlight {
@@ -895,6 +911,88 @@ q:before, q:after {
   background-image: url("../images/icon_plus.png");
 }
 
+#wrap .search-input-box {
+  width: 160px;
+  margin: 0 auto;
+}
+
+#wrap .search-input-box .search-text {
+  position: relative;
+}
+
+#wrap .search-input-box .search-text input[type=text] {
+  width: 100%;
+  border: 1px solid #E4DED3;
+  height: 48px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 42px 0 16px;
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#wrap .search-input-box .search-text input[type=text]::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap .search-input-box .search-text input[type=text]:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap .search-input-box .search-text input[type=text]::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap .search-input-box .search-text input[type=text]::placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap .search-input-box .search-text .search-input-action {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+}
+
+#wrap .search-input-box .search-text .search-input-action img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap .search-input-box .action {
+  margin-top: 16px;
+}
+
+#wrap .search-input-box .action .btn {
+  width: 9.02778vw;
+  height: 4.16667vw;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .search-input-box .action .btn {
+    width: 65px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .search-input-box .action .btn {
+    height: 30px;
+  }
+}
+
 #wrap .price-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1047,6 +1145,7 @@ q:before, q:after {
 }
 
 #wrap .category-box {
+  background-color: #FBFAF6;
   padding: 40px 40px 32px;
 }
 
@@ -1444,12 +1543,16 @@ q:before, q:after {
 }
 
 #wrap .select-box {
+  background-color: #FBFAF6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px 40px 40px;
 }
 
@@ -1470,16 +1573,23 @@ q:before, q:after {
   }
 }
 
-#wrap .table-row {
-  margin-top: 2.77778vw;
-  width: 100%;
-  border-top: 1px solid #E4DED3;
+#wrap .select-box .select-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2C2923;
 }
 
-@media screen and (min-width: 720px) {
-  #wrap .table-row {
-    margin-top: 20px;
-  }
+#wrap .select-box.flex-end {
+  padding: 20px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: transparent;
+}
+
+#wrap .table-row {
+  width: 100%;
+  border-top: 1px solid #E4DED3;
 }
 
 #wrap .table-row tr {
@@ -1487,18 +1597,12 @@ q:before, q:after {
 }
 
 #wrap .table-row tr th, #wrap .table-row tr td {
-  padding: 4.44444vw 2.77778vw;
+  padding: 16px 20px;
   text-align: center;
   color: #2C2923;
   font-size: 1.94444vw;
   line-height: 3.30556vw;
   font-weight: 400;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .table-row tr th, #wrap .table-row tr td {
-    padding: 32px 20px;
-  }
 }
 
 @media screen and (min-width: 720px) {
@@ -1516,6 +1620,29 @@ q:before, q:after {
 #wrap .table-row tr th {
   background-color: #F2EFE7;
   font-weight: 600;
+}
+
+#wrap .table-row tr td {
+  padding: 20px;
+}
+
+#wrap .table-row tr td.lecture-link {
+  text-align: left;
+}
+
+#wrap .table-row tr td.lecture-link a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+}
+
+#wrap .table-row tr td.lecture-link a:hover {
+  border-bottom: 2px solid #2C2923;
+}
+
+#wrap .table-row tr td.lecture-time {
+  color: #7A746A;
 }
 
 #wrap .grid, #wrap .form-control-array {
@@ -3303,6 +3430,10 @@ q:before, q:after {
   line-height: 22.1px;
 }
 
+#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-lecture p a:hover, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-lecture p a:hover {
+  border-bottom: 1px solid #2C2923;
+}
+
 #wrap .section-search-data .search-data-list .search-list .desc-box .t-name, #wrap .section-search-data .search-data-list .book-list .desc-box .t-name {
   width: 80px;
   margin-left: auto;
@@ -3337,6 +3468,251 @@ q:before, q:after {
 @media screen and (min-width: 720px) {
   #wrap .section-search-data .search-data-list .book-list .desc-box .t-img {
     height: 168px;
+  }
+}
+
+#wrap .lecture-data-list .book-list .subject, #wrap .lecture-data-list .course-list .subject {
+  width: 120px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box, #wrap .lecture-data-list .course-list .desc-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 880px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-img, #wrap .lecture-data-list .course-list .desc-box .t-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2EFE7;
+  width: 23.33333vw;
+  height: 23.33333vw;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .lecture-data-list .book-list .desc-box .t-img, #wrap .lecture-data-list .course-list .desc-box .t-img {
+    width: 168px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .lecture-data-list .book-list .desc-box .t-img, #wrap .lecture-data-list .course-list .desc-box .t-img {
+    height: 168px;
+  }
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-img img, #wrap .lecture-data-list .course-list .desc-box .t-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-img + .t-desc, #wrap .lecture-data-list .course-list .desc-box .t-img + .t-desc {
+  margin-left: 20px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc, #wrap .lecture-data-list .course-list .desc-box .t-desc {
+  text-align: left;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-title, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-title {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #2C2923;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-title:hover a, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-title:hover a {
+  border-bottom: 2px solid #2C2923;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-info, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-info {
+  font-size: 14px;
+  color: #2C2923;
+  line-height: 23.8px;
+  margin-top: 20px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-info p, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-info p {
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-info p:first-child, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-info p:first-child {
+  margin-top: 0;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-info p span, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-info p span {
+  display: inline-block;
+  width: 40px;
+  text-align: left;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-info p strong, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-info p strong {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 24px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-text, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-text {
+  font-size: 13px;
+  color: #2C2923;
+  line-height: 22.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-text p, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-text p {
+  margin-top: 4px;
+  position: relative;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-text p strong, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-text p strong {
+  display: inline-block;
+  font-weight: 600;
+  color: #A07D3B;
+  margin-left: 4px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-text p:after, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-text p:after {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #E4DED3;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -6px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-text p:last-child:after, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-text p:last-child:after {
+  display: none;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-btn, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-btn {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
+  margin-left: 0.69444vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
+    margin-left: 5px;
+  }
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn:first-child, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn:first-child {
+  margin-left: 0;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-lecture, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-lecture {
+  margin-top: 20px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-lecture p, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-lecture p {
+  font-size: 13px;
+  line-height: 22.1px;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-desc .desc-lecture p a:hover, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-lecture p a:hover {
+  border-bottom: 1px solid #2C2923;
+}
+
+#wrap .lecture-data-list .book-list .desc-box .t-name, #wrap .lecture-data-list .course-list .desc-box .t-name {
+  width: 80px;
+  margin-left: auto;
+}
+
+#wrap .lecture-data-list .book-list .price, #wrap .lecture-data-list .course-list .price {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#wrap .lecture-data-list .book-list .price > div, #wrap .lecture-data-list .course-list .price > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px;
+}
+
+#wrap .lecture-data-list .book-list .price > div:first-child, #wrap .lecture-data-list .course-list .price > div:first-child {
+  margin-top: 0;
+}
+
+#wrap .lecture-data-list .book-list .price > div .price-subject, #wrap .lecture-data-list .course-list .price > div .price-subject {
+  width: 40px;
+  font-size: 14px;
+}
+
+#wrap .lecture-data-list .book-list .price > div .price-box, #wrap .lecture-data-list .course-list .price > div .price-box {
+  margin-left: auto;
+}
+
+#wrap .lecture-data-list .book-list .price > div .price-box .badge, #wrap .lecture-data-list .course-list .price > div .price-box .badge {
+  margin-right: 8px;
+  padding: 3px 4px;
+  font-size: 11px;
+}
+
+#wrap .lecture-data-list .book-list .price > div .price-box .price-before, #wrap .lecture-data-list .book-list .price > div .price-box .price-after, #wrap .lecture-data-list .course-list .price > div .price-box .price-before, #wrap .lecture-data-list .course-list .price > div .price-box .price-after {
+  font-size: 14px;
+}
+
+#wrap .lecture-data-list .course-list .desc-box {
+  width: 760px;
+}
+
+#wrap .lecture-data-list .course-list .desc-box .t-img {
+  width: 10vw;
+  height: 10vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .lecture-data-list .course-list .desc-box .t-img {
+    width: 72px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .lecture-data-list .course-list .desc-box .t-img {
+    height: 72px;
   }
 }
 
@@ -3841,37 +4217,6 @@ q:before, q:after {
   }
 }
 
-#wrap .section-menu .lecture-content .lecture-table .table-row {
-  margin-top: 0;
-}
-
-#wrap .section-menu .lecture-content .lecture-table .table-row tr th {
-  padding: 16px 20px;
-}
-
-#wrap .section-menu .lecture-content .lecture-table .table-row tr td {
-  padding: 20px;
-}
-
-#wrap .section-menu .lecture-content .lecture-table .table-row tr td.lecture-link {
-  text-align: left;
-}
-
-#wrap .section-menu .lecture-content .lecture-table .table-row tr td.lecture-link a {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 16px;
-  border-bottom: 2px solid transparent;
-}
-
-#wrap .section-menu .lecture-content .lecture-table .table-row tr td.lecture-link a:hover {
-  border-bottom: 2px solid #2C2923;
-}
-
-#wrap .section-menu .lecture-content .lecture-table .table-row tr td.lecture-time {
-  color: #7A746A;
-}
-
 #wrap .section-menu .lecture-content .lecture-review {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3949,239 +4294,28 @@ q:before, q:after {
   margin-top: 60px;
 }
 
-#wrap .section-package .lecture-data-list .book-list .subject, #wrap .section-package .lecture-data-list .course-list .subject {
-  width: 120px;
+#wrap .section-online .tab-view .lecture-data-list {
+  margin-top: 40px;
 }
 
-#wrap .section-package .lecture-data-list .book-list .desc-box, #wrap .section-package .lecture-data-list .course-list .desc-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 880px;
+#wrap .section-online .nav-box + .lecture-data-list {
+  margin-top: 80px;
 }
 
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-img, #wrap .section-package .lecture-data-list .course-list .desc-box .t-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F2EFE7;
-  width: 23.33333vw;
-  height: 23.33333vw;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .section-package .lecture-data-list .book-list .desc-box .t-img, #wrap .section-package .lecture-data-list .course-list .desc-box .t-img {
-    width: 168px;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .section-package .lecture-data-list .book-list .desc-box .t-img, #wrap .section-package .lecture-data-list .course-list .desc-box .t-img {
-    height: 168px;
-  }
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-img img, #wrap .section-package .lecture-data-list .course-list .desc-box .t-img img {
-  width: 100%;
-  height: 100%;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-img + .t-desc, #wrap .section-package .lecture-data-list .course-list .desc-box .t-img + .t-desc {
-  margin-left: 20px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc {
-  text-align: left;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-title, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-title {
-  position: relative;
-  display: inline-block;
-  font-size: 18px;
-  color: #2C2923;
-  font-weight: 600;
-  line-height: 27px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-title:hover a, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-title:hover a {
-  border-bottom: 2px solid #2C2923;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-info, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-info {
-  font-size: 14px;
-  color: #2C2923;
-  line-height: 23.8px;
-  margin-top: 20px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-info p, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-info p {
-  margin-top: 4px;
-  font-weight: 400;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-info p:first-child, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-info p:first-child {
+#wrap .section-online-bookstore .tab-box .tab-menu {
   margin-top: 0;
 }
 
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-info p span, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-info p span {
-  display: inline-block;
-  width: 40px;
-  text-align: left;
+#wrap .section-online-bookstore .lecture-data-list .course-list .desc-box {
+  width: 725px;
 }
 
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-info p strong, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-info p strong {
-  display: inline-block;
-  font-weight: 600;
-  margin-left: 24px;
+#wrap .section-online-bookstore .lecture-data-list .course-list .desc-box .t-img {
+  width: 168px;
+  height: 168px;
 }
 
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-text, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-text {
-  font-size: 13px;
-  color: #2C2923;
-  line-height: 22.1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-text p, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-text p {
-  margin-top: 4px;
-  position: relative;
-  display: inline-block;
-  padding-right: 8px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-text p strong, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-text p strong {
-  display: inline-block;
-  font-weight: 600;
-  color: #A07D3B;
-  margin-left: 4px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-text p:after, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-text p:after {
-  content: '';
-  width: 1px;
-  height: 12px;
-  background-color: #E4DED3;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -6px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-text p:last-child:after, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-text p:last-child:after {
-  display: none;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-btn, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-btn {
-  margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
-  margin-left: 0.69444vw;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
-    margin-left: 5px;
-  }
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn:first-child, #wrap .section-package .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn:first-child {
-  margin-left: 0;
-}
-
-#wrap .section-package .lecture-data-list .book-list .desc-box .t-name, #wrap .section-package .lecture-data-list .course-list .desc-box .t-name {
-  width: 80px;
-  margin-left: auto;
-}
-
-#wrap .section-package .lecture-data-list .book-list .price, #wrap .section-package .lecture-data-list .course-list .price {
-  width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#wrap .section-package .lecture-data-list .book-list .price > div, #wrap .section-package .lecture-data-list .course-list .price > div {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 8px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .price > div:first-child, #wrap .section-package .lecture-data-list .course-list .price > div:first-child {
-  margin-top: 0;
-}
-
-#wrap .section-package .lecture-data-list .book-list .price > div .price-subject, #wrap .section-package .lecture-data-list .course-list .price > div .price-subject {
-  width: 40px;
-  font-size: 14px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .price > div .price-box, #wrap .section-package .lecture-data-list .course-list .price > div .price-box {
-  margin-left: auto;
-}
-
-#wrap .section-package .lecture-data-list .book-list .price > div .price-box .badge, #wrap .section-package .lecture-data-list .course-list .price > div .price-box .badge {
-  margin-right: 8px;
-  padding: 3px 4px;
-  font-size: 11px;
-}
-
-#wrap .section-package .lecture-data-list .book-list .price > div .price-box .price-before, #wrap .section-package .lecture-data-list .book-list .price > div .price-box .price-after, #wrap .section-package .lecture-data-list .course-list .price > div .price-box .price-before, #wrap .section-package .lecture-data-list .course-list .price > div .price-box .price-after {
-  font-size: 14px;
-}
-
-#wrap .section-package .lecture-data-list .course-list .desc-box {
-  width: 760px;
-}
-
-#wrap .section-package .lecture-data-list .course-list .desc-box .t-img {
-  width: 10vw;
-  height: 10vw;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .section-package .lecture-data-list .course-list .desc-box .t-img {
-    width: 72px;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .section-package .lecture-data-list .course-list .desc-box .t-img {
-    height: 72px;
-  }
-}
-
-#wrap .section-online .category-box, #wrap .section-online .select-box {
-  background-color: #FBFAF6;
+#wrap .section-online-bookstore .lecture-data-list .course-list .price {
+  width: 355px;
 }
 /*# sourceMappingURL=web.css.map */

@@ -1,7 +1,27 @@
 #wrap{
+    // LEFT 인강
 	.section-online{
-        .category-box, .select-box{
-            background-color:$color-light-beige;
+        .tab-view{
+            .lecture-data-list{margin-top:40px;}
+        }
+
+        .nav-box + .lecture-data-list{margin-top:80px;}
+    }
+
+    // 온라인 서점
+    .section-online-bookstore{
+        .tab-box .tab-menu{margin-top:0;}
+
+        .lecture-data-list{
+            .course-list{
+                .desc-box{
+                    width:725px;
+                    .t-img{width:168px;height:168px;}
+                }
+
+                .price{width:355px;}
+            }
+           
         }
     }
 }
