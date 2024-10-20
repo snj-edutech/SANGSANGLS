@@ -31,7 +31,7 @@
 		<div class="component-content">
 			<div class="wrap">
 				<div class="component-item">
-					<h2 class="component-title">tab-list</h2>
+					<div class="component-title">tab-list</div>
 					<div class="component-body">
 						<div class="section-tab">
 							<div class="tab-box">
@@ -61,16 +61,13 @@
 
 						<script>
 							tabEvent('.section-tab');
-
-							$(window).on("scroll", scrollMenuEvent);
-							scrollMenuEvent();
 						</script>
 
 					</div>
 				</div>
 
 				<div class="component-item">
-					<h2 class="component-title">tab-menu</h2>
+					<div class="component-title">tab-menu</div>
 					<div class="component-body">
 						<div class="section-menu" id="sectionMenu">
 							<div class="wrap">
@@ -94,12 +91,73 @@
 
 						<script>
 								tabMenuEvent('.section-menu');
+
+								$(window).on("scroll", scrollMenuEvent);
+								scrollMenuEvent();
 						</script>
 					</div>
 				</div>
 
 				<div class="component-item">
-					<h2 class="component-title">Badge</h2>
+					<div class="component-title">Category</div>
+					<div class="component-body">
+						<div class="section-category">
+							<div class="category-box">
+								<div class="category-list">
+									<ul>
+										<li class="active"><a href="javascript:;">전체</a></li>
+										<li><a href="javascript:;">언어이해</a></li>
+										<li><a href="javascript:;">추리논증</a></li>
+										<li><a href="javascript:;">논술</a></li>
+										<li><a href="javascript:;">자기소개서</a></li>
+										<li><a href="javascript:;">자기소개서+온라인첨삭</a></li>
+										<li><a href="javascript:;">면접</a></li>
+										<li><a href="javascript:;">언어이해</a></li>
+										<li><a href="javascript:;">추리논증</a></li>
+										<li><a href="javascript:;">논술</a></li>
+										<li><a href="javascript:;">자기소개서</a></li>
+										<li><a href="javascript:;">자기소개서+온라인첨삭</a></li>
+										<li><a href="javascript:;">면접</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<script>
+							//navEvent('.section-nav');
+						</script>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">nav-menu</div>
+					<div class="component-body">
+						<div class="section-nav">
+							<div class="nav-box">
+								<div class="nav-menu">
+									<div class="nav-title">LEFT</div>
+									<ul>
+										<li class="active"><a href="javascript:;">네비1</a></li>
+										<li><a href="javascript:;">네비2</a></li>
+										<li><a href="javascript:;">네비3</a></li>
+										<li><a href="javascript:;">네비4</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<script>
+							//navEvent('.section-nav');
+						</script>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">Badge</div>
 					<div class="component-body">
 						<div class="component-result">
 							<span class="badge">뱃지</span>
@@ -115,7 +173,7 @@
 				</div>
 
 				<div class="component-item">
-					<h2 class="component-title">pagination</h2>
+					<div class="component-title">pagination</div>
 					<div class="component-body">
 						<div class="pagination">
 							<a href="javascript:;" class="control control-prev"><span>이전페이지</span></a>
@@ -136,7 +194,7 @@
 
 
 				<div class="component-item">
-					<h2 class="component-title">count</h2>
+					<div class="component-title">count</div>
 					<div class="component-body">
 						<div class="count-box">
 							<button type="button" class="btn-minus" onclick="countEvent(this, 'minus')"><span class="sr-only">감소</span></button>
@@ -147,7 +205,7 @@
 				</div>
 
 				<div class="component-item">
-					<h2 class="component-title">price</h2>
+					<div class="component-title">price</div>
 					<div class="component-body">
 						<div class="price-box">
 							<div class="price-subject">총 결제금액</div>
@@ -158,7 +216,43 @@
 				</div>
 
 				<div class="component-item">
-					<h2 class="component-title">form: input[type="checkbox"]</h2>
+					<div class="component-title">form : select</div>
+					<div class="component-body">
+						<div class="select-box">
+							<div class="form-control">
+								<span class="select">
+									<select name="" id="">
+										<option value="">과목 선택</option>
+									</select>
+								</span>
+								<span class="select">
+									<select name="" id="">
+										<option value="">교수 선택</option>
+									</select>
+								</span>
+							</div>
+							<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
+						</div>
+
+						<div class="select-box">
+							<div class="form-control">
+								<span class="select small">
+									<select name="" id="">
+										<option value="">전체 선택</option>
+									</select>
+								</span>
+							</div>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="검색어를 입력하세요" />
+							</div>
+							<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form: input[type="checkbox"]</div>
 					<div class="component-body">
 						<div class="form-control">
 							<div class="fake-checkbox">
@@ -184,7 +278,7 @@
         <!-- <div class="article">
             <h1>heading : 타이틀</h1>
             <h1 class="heading">광화문글판 아카이브</h1>
-            <h2 class="heading">로그인</h2>
+            <h2 class="heading">로그인</div>
             <h3 class="heading">내가 쓰는 광화문글판</h3>
         </div>
 
@@ -341,7 +435,7 @@
 		position: relative;
 		font-weight: bold;
 		font-size: 40px;
-		color: #009aff;
+		color: #A07D3B;
 	}
 
 	.publish-gate-content .component-item+.component-item {

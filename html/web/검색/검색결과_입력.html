@@ -53,7 +53,7 @@
                         </div>
 					</div>
 					<a href="javascript:;">고객센터</a>
-					<a href="javascript:searchOpen();"><img src="../../../assets/images/btn_search.svg" alt="검색" /></a>
+					<a href="javascript:headerSearchOpen();"><img src="../../../assets/images/btn_search.svg" alt="검색" /></a>
 				</div>
 			</div>
 			<div class="header-gnb">
@@ -83,29 +83,45 @@
 					</div>
 				</div>
 			</div>
+			<div class="header-search">
+				<div class="wrap">
+					<a href="javascript:headerSearchClose();" class="header-search-close"><span class="sr-only">닫기</span></a>
+					<div class="search-box">
+						<div class="search-text">
+							<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
+							<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
+							<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
+							
+						</div> 
+						<div class="action">
+							<a href="javascript:;" class="btn">전체 강좌</a>
+							<a href="javascript:;" class="btn">전체 교재</a>
+						</div>
+					</div>
+	
+				</div>
+			</div>
 		</header>
 
-		<div class="section-search">
-			<div class="wrap">
-				<a href="javascript:searchClose();" class="search-close"><span class="sr-only">닫기</span></a>
-				<div class="search-box">
-					<div class="search-text">
-						<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
-						<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
-						<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
-						
-					</div> 
-					<div class="action">
-						<a href="javascript:;" class="btn">전체 강좌</a>
-						<a href="javascript:;" class="btn">전체 교재</a>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
 		<div id="contents">
-
+			<div class="section-search">
+				<div class="wrap">
+					<a href="javascript:searchClose();" class="search-close"><span class="sr-only">닫기</span></a>
+					<div class="search-box">
+						<div class="search-text">
+							<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
+							<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
+							<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
+							
+						</div> 
+						<div class="action">
+							<a href="javascript:;" class="btn">전체 강좌</a>
+							<a href="javascript:;" class="btn">전체 교재</a>
+						</div>
+					</div>
+	
+				</div>
+			</div>
 		</div>
 
 		<footer id="footer">
@@ -612,7 +628,7 @@
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
-		searchOpen();
+
 	});
 </script>
 </body>
