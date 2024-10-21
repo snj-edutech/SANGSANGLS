@@ -97,14 +97,24 @@
     .slick-arrow {
         @extend %slick-arrow;
         border-radius:50%;
-        
+
         &.slick-prev{
             @include slideArrow(left, 64px, 64px, 1px, $color-black, $color-light-beige, $margin: 635px);
-            &:before{width:8px;height:8px;}
+            &:before{
+				width:8px;height:8px;
+			}
+
+			top:128px;
+			transform: translateY(0);
         }
         &.slick-next{
            @include slideArrow(right, 64px, 64px, 1px, $color-black,$color-light-beige, $margin: 635px);
-           &:before{width:8px;height:8px;}
+           &:before{
+				width:8px;height:8px;
+			}
+
+			top:128px;
+			transform: translateY(0);
         }
     }
 

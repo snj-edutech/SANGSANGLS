@@ -201,7 +201,7 @@ function tabSlideEvent($selector){
         $($selector).find('.tab-view').removeClass('active');
 		$($selector).find('.tab-view').eq(idx).addClass('active');
 
-        $(".slider").slick("refresh");
+        $(".slider").slick('setPosition');
     });
 }
 
