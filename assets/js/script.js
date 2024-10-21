@@ -175,8 +175,20 @@ function tabMenuClickEvent($selector){
 		var idx = $(this).index();
 		var tabList = $($selector).find('.tab-menu-small').find('li');
 
+		// 클릭된 li가 속한 ul의 이전에 있는 ul의 li 개수를 모두 더해서 인덱스를 보정
+		var prevLis = $(this).closest('ul').prevAll('ul').find('li').length;
+		var adjustedIdx = idx + prevLis;  // 이전 ul의 li 개수를 더한 인덱스
+
+		// 모든 li에서 active 클래스 제거 후 클릭된 li에 추가
 		tabList.removeClass("active");
-		tabList.eq(idx).addClass("active");
+		$(this).addClass('active');
+
+		// 모든 tab-view에서 active 클래스 제거 후 해당 인덱스에 active 추가
+		if($($selector).find('.tab-view').length > 1){
+			$('.tab-view').removeClass('active');
+			$('.tab-view').eq(adjustedIdx).addClass("active");
+		}
+
 	});
 }
 

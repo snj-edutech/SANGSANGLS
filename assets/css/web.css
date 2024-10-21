@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap");
 #wrap #contents, #wrap .form-control .fake-file-box, .grid, #wrap .form-control-array {
   *zoom: 1;
 }
@@ -3680,4 +3681,55 @@ q:before, q:after {
 }
 #wrap .section-online-bookstore .tab-slide .online-slider .list .book-desc .desc-text p:last-child:after {
   display: none;
+}
+
+#wrap .professor-gate-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap .professor-gate-list .list {
+  margin-top: 60px;
+  margin-left: 36px;
+}
+#wrap .professor-gate-list .list:nth-child(3n+1) {
+  margin-left: 0;
+}
+#wrap .professor-gate-list .list a {
+  display: block;
+}
+#wrap .professor-gate-list .list .professor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2EFE7;
+  width: 376px;
+  height: 420px;
+  overflow: hidden;
+}
+#wrap .professor-gate-list .list .professor-img img {
+  width: 100%;
+  height: 100%;
+}
+#wrap .professor-gate-list .list:hover .professor-img {
+  background-color: #E4DED3;
+}
+#wrap .professor-gate-list .list .professor-desc {
+  margin-top: 20px;
+}
+#wrap .professor-gate-list .list .professor-desc .desc-name {
+  color: #2C2923;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40.8px;
+}
+#wrap .professor-gate-list .list .professor-desc .desc-name strong {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: 600;
+}
+#wrap .professor-gate-list .list .professor-desc .desc-subject {
+  font-weight: 300;
+  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  color: #A07D3B;
+  font-size: 20px;
 }/*# sourceMappingURL=web.css.map */
