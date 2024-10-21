@@ -451,6 +451,7 @@ q:before, q:after {
   font-size: 24px;
   color: #A07D3B;
   text-align: left;
+  line-height: 40.8px;
   padding-bottom: 20px;
 }
 #wrap h3 .search-input-box {
@@ -1030,6 +1031,8 @@ q:before, q:after {
   font-weight: 600;
   font-size: 18px;
   color: #2C2923;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 #wrap .tab-box .tab-list ul li.active a, #wrap .tab-box .tab-list ul li:hover a, #wrap .tab-box .tab-menu ul li.active a, #wrap .tab-box .tab-menu ul li:hover a {
   background-color: #F2EFE7;
@@ -1499,13 +1502,15 @@ q:before, q:after {
   text-align: left;
 }
 #wrap .table-row tr td.link a {
+  position: relative;
   display: inline-block;
   font-weight: 600;
   font-size: 16px;
-  border-bottom: 2px solid transparent;
+  line-height: 27.2px;
 }
 #wrap .table-row tr td.link a:hover {
-  border-bottom: 2px solid #2C2923;
+  text-underline-offset: 5px;
+  text-decoration: underline solid 2px;
 }
 #wrap .grid, #wrap .form-control-array {
   width: 100%;
@@ -3593,6 +3598,10 @@ q:before, q:after {
 }
 #wrap .section-online-bookstore .tab-box .tab-menu {
   margin-top: 0;
+  height: 35px;
+}
+#wrap .section-online-bookstore .tab-box .tab-menu ul li a {
+  height: 35px;
 }
 #wrap .section-online-bookstore .lecture-data-list .course-list .desc-box {
   width: 725px;

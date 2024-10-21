@@ -10,7 +10,14 @@
 
     // 온라인 서점
     .section-online-bookstore{
-        .tab-box .tab-menu{margin-top:0;}
+        .tab-box .tab-menu{
+			margin-top:0;height:35px;
+			ul{
+				li{
+					a{height:35px;}
+				}
+			}
+		}
 
         .lecture-data-list{
             .course-list{
