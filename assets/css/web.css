@@ -3590,11 +3590,11 @@ q:before, q:after {
   margin-top: 60px;
 }
 
-#wrap .section-online .tab-view .lecture-data-list {
-  margin-top: 40px;
-}
-#wrap .section-online .tab-box + .lecture-data-list {
+#wrap .section-online-course .lecture-data-list {
   margin-top: 80px;
+}
+#wrap .section-online-course .tab-view .lecture-data-list {
+  margin-top: 40px;
 }
 #wrap .section-online-bookstore .tab-box .tab-menu {
   margin-top: 0;

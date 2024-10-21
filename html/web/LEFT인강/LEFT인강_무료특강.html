@@ -103,7 +103,7 @@
 			</div>
 		</header>
 		<div id="contents">
-			<div class="section-online">
+			<div class="section-online-tab">
 				<div class="wrap">
 					<h2>LEET 인강</h2>
 					<div class="tab-box">
@@ -116,7 +116,10 @@
 							</ul>
 						</div>
 					</div>
-
+				</div>
+			</div>
+			<div class="section-online-course">
+				<div class="wrap">
 					<div class="lecture-data-list">
 						<div class="grid course-list">
 							<div class="col subject">신전문풀</div>
@@ -849,7 +852,8 @@
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
-		tabMenuEvent('.section-online')
+		tabMenuEvent('.section-online-course');
+		tabMenuClickEvent('.section-online-tab');
 	});
 </script>
 </body>

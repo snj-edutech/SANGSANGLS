@@ -160,7 +160,7 @@ function tabMenuEvent($selector){
 		tabList.removeClass("active");
 		tabList.eq(idx).addClass("active");
 
-        console.log($($selector).find('.tab-view').length);
+        //console.log($($selector).find('.tab-view').length);
 
         if($($selector).find('.tab-view').length > 1){
             $($selector).find('.tab-view').removeClass('active');
@@ -168,6 +168,16 @@ function tabMenuEvent($selector){
         }
 
     });
+}
+
+function tabMenuClickEvent($selector){
+	$($selector).find('.tab-menu-small').find('li').on('click', function(){
+		var idx = $(this).index();
+		var tabList = $($selector).find('.tab-menu-small').find('li');
+
+		tabList.removeClass("active");
+		tabList.eq(idx).addClass("active");
+	});
 }
 
 function tabEvent($selector){

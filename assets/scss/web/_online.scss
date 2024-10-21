@@ -1,11 +1,10 @@
 #wrap{
     // LEFT 인강
-	.section-online{
+	.section-online-course{
+		.lecture-data-list{margin-top:80px;}
         .tab-view{
             .lecture-data-list{margin-top:40px;}
         }
-
-        .tab-box + .lecture-data-list{margin-top:80px;}
     }
 
     // 온라인 서점
