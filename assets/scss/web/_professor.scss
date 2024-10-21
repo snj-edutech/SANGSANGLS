@@ -41,4 +41,60 @@
 			}
 		}
 	}
+
+	.section-professor-home{
+		overflow:hidden;
+		position:relative;top:-80px;
+		background-color:$color-light-brown2;
+		.professor-desc{
+			text-align:center;
+			padding-top:60px;
+			margin-bottom:24px;
+			.desc-name{
+				color:$color-black;font-size:40px;font-weight:600;line-height:40.8px;
+			}
+			.desc-subject{font-weight:300;font-family:$font-notoSerifKr;color:$color-brown;font-size:20px;line-height:34px;}
+		}
+
+		.professor-profile{
+			position:absolute;left:50%;top:0;width:50%;height:100%;margin-left:350px;
+			background-color:$color-light-brown;
+			padding-top:98px;
+			padding-left:40px;
+			@include boxSizing(border-box);
+			.profile-content{
+				width:168px;
+
+				.btn-profile{border:1px solid $color-gray;font-size:13px;font-weight:400;height:38px;display:flex;justify-content:center;align-items:center;color:$color-black;}
+				.profile-video-title{font-size:14px;font-weight:600;margin-bottom:8px;line-height:23.8px;margin-top:24px;color:$color-black;}
+				.profile-video{
+					position:relative;
+					background-size:cover;
+					background-repeat:no-repeat;
+					width:100%;
+					height:96px;
+
+					.btn-play{
+						position:absolute;
+						left:0;top:0;
+						width:100%;height:100%;display:flex;justify-content:center;align-items:center;
+						
+					}
+				}
+			}
+		}
+	}
+
+	.section-professor-home + .section-menu{
+		.tab-menu{
+			margin-top:-48px; // 80px -32px
+		}
+	}
+
+	.professor-content{
+		h3{padding-bottom:40px;}
+		.upload-img{
+			img{width:100%;}
+		}
+	}
 }

@@ -46,7 +46,7 @@ function addEvent(){
 
 	headerEvent();
 	pageMove('.page-move');
-    pageMove('.page-move2', -100);
+    pageMove('.page-move2', -50);
 	
 }
 
@@ -298,35 +298,35 @@ function popupClose($selector){
 }
 
 // layer video
-// <link rel="stylesheet" href="//img.eduwill.net/eduwill/dev/css/common/eduf.css">
-// edufLayerVideoOpen($url, "autoplay loop controls muted");
-// edufLayerVideoOpen($url, "shorts");
-function edufLayerVideoOpen($url, $options){
+// <link rel="stylesheet" href="//img.eduwill.net/eduwill/dev/css/common/popup.css">
+// popupLayerVideoOpen($url, "autoplay loop controls muted");
+// popupLayerVideoOpen($url, "shorts");
+function layerVideoOpen($url, $options){
 	if(typeof $options == "undefined"){
 		$options = "autoplay loop controls";
 	}
 
 	var _body = $("body");
-	_body.append('<div class="eduf-layer" id="edufLayerVideo"><div class="eduf-layer-wrap"><a href="javascript:edufLayerVideoClose();" class="eduf-layer-close"></a><div class="eduf-layer-content"></div></div></div>');
+	_body.append('<div class="popup" id="popupLayerVideo"><div class="popup-wrap"><a href="javascript:layerVideoClose();" class="popup-close"></a><div class="popup-content"></div></div></div>');
 
-	var _edufLayerContent = $("#edufLayerVideo .eduf-layer-content");
+	var _popupLayerContent = $("#popupLayerVideo .popup-content");
     if ($url.indexOf('.mp4') != -1) {
-        _edufLayerContent.html('<video playsinline="" controlslist="nodownload" '+$options+'><source src="'+$url+'" type="video/mp4"></video>');
+        _popupLayerContent.html('<video playsinline="" controlslist="nodownload" '+$options+'><source src="'+$url+'" type="video/mp4"></video>');
     }else{
-        _edufLayerContent.html('<iframe src="'+$url+'" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen></iframe>');
+        _popupLayerContent.html('<iframe src="'+$url+'" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen></iframe>');
     }
   
 
 	if($options == "shorts"){
-		$("#edufLayerVideo").addClass(' show shorts');
+		$("#popupLayerVideo").addClass(' show shorts');
 		$options = "";
 	}else{
-		$("#edufLayerVideo").addClass('show');
+		$("#popupLayerVideo").addClass('show');
 	}
 }
 
-function edufLayerVideoClose(){
-	$("#edufLayerVideo").remove();
+function layerVideoClose(){
+	$("#popupLayerVideo").remove();
 }
 
 
