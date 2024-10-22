@@ -92,9 +92,13 @@
 	}
 
 	.professor-content{
-		h3{padding-bottom:40px;}
 		.upload-img{
 			img{width:100%;}
 		}
+
+		h3+.holder{margin-top:10px;}
+
 	}
+
+	
 }
