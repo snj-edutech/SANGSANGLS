@@ -766,9 +766,14 @@ q:before, q:after {
   background-color: #A07D3B;
   color: #FFFFFC;
 }
-#wrap .badge.badge-gray {
+#wrap .badge.badge-light-brown {
   border-color: #F2EFE7;
   background-color: #F2EFE7;
+}
+#wrap .badge.badge-gray {
+  border-color: #7A746A;
+  background-color: #7A746A;
+  color: #FFFFFC;
 }
 #wrap .badge.badge-black {
   border-color: #2C2923;
@@ -1511,6 +1516,25 @@ q:before, q:after {
   #wrap .checkbox-box .fake-checkbox {
     margin-right: 36px;
   }
+}
+#wrap .toggle-box dl {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+#wrap .toggle-box dl dt {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+#wrap .toggle-box dl dd {
+  display: none;
+}
+#wrap .toggle-box dl.unfold dt {
+  color: #f00;
+}
+#wrap .toggle-box dl.unfold dd {
+  display: block;
 }
 #wrap .form-text {
   font-size: 14px;
@@ -4121,4 +4145,8 @@ q:before, q:after {
 }
 #wrap .professor-content h3 + .holder {
   margin-top: 10px;
+}
+
+#wrap .section-notice-list {
+  margin-top: 60px;
 }/*# sourceMappingURL=web.css.map */

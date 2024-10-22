@@ -161,7 +161,8 @@
 		font-weight:600;
 
 		&.badge-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
-		&.badge-gray{border-color:$color-light-brown2;background-color: $color-light-brown2;}
+		&.badge-light-brown{border-color:$color-light-brown2;background-color: $color-light-brown2;}
+		&.badge-gray{border-color:$color-gray;background-color: $color-gray;color:$color-white;}
 		&.badge-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
 		&.badge-light-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
 
@@ -650,6 +651,19 @@
 		display:flex;align-items:center;
 		.fake-checkbox{margin-top:0; @include vw(margin-right, 36px);}
 	}
+
+	.toggle-box{
+		dl{
+			width:500px;margin:0 auto;text-align:left;
+			dt{cursor:pointer;position:relative;z-index:2;}
+			dd{display:none;}
+			&.unfold{
+				dt{color:#f00;}
+				dd{display:block;}
+			}
+		}
+	}
+
 
 	.form-text{ font-size:14px;font-weight:400;color:$color-gray;}
 

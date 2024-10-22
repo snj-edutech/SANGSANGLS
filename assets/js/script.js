@@ -48,6 +48,7 @@ function addEvent(){
 	pageMove('.page-move');
     pageMove('.page-move2', -50);
 	fileUploadEvent();
+	toggleEvent();
 	
 }
 
@@ -270,6 +271,8 @@ function countEvent(button, type) {
 }
 
 function popupOpen($selector){
+	popupReset();
+
 	$($selector).show();
  
 	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
@@ -281,6 +284,13 @@ function popupOpen($selector){
 		// 팝업이 작을때는
 		$($selector).removeClass("wide");
 		$($selector).css({display:"flex"});
+	}
+}
+
+function popupReset(){
+	$('.popup').hide();
+	if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
 	}
 }
 
@@ -338,6 +348,13 @@ function fileUploadEvent(){
 }
 
 
+function toggleEvent(){
+    $('[data-toggle]').on('click', function(){
+        var $this = $(this);
+
+        $this.parents('dl').toggleClass('unfold').siblings().removeClass('unfold');
+    });
+}
 
 
 
@@ -405,6 +422,7 @@ function pcMenu(){
         $(this).removeClass('unfold');
     });
 }
+
 
 
 
