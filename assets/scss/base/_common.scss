@@ -582,6 +582,11 @@
         }
     }
 
+	.file-list-box{
+		display:flex;
+		align-items: center;
+	}
+
     .select-box{
         background-color:$color-light-beige;
         display:flex;

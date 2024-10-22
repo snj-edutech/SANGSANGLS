@@ -1389,6 +1389,10 @@ q:before, q:after {
     font-size: 13px;
   }
 }
+#wrap .file-list-box {
+  display: flex;
+  align-items: center;
+}
 #wrap .select-box {
   background-color: #FBFAF6;
   display: flex;
