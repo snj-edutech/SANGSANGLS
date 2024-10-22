@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap");
-#wrap #contents, .grid {
+#wrap #contents, #wrap .form-control .fake-file-box, .grid {
   *zoom: 1;
 }
-#wrap #contents::before, .grid::before, #wrap #contents::after, .grid::after {
+#wrap #contents::before, #wrap .form-control .fake-file-box::before, .grid::before, #wrap #contents::after, #wrap .form-control .fake-file-box::after, .grid::after {
   content: "";
   display: table;
 }
-#wrap #contents::after, .grid::after {
+#wrap #contents::after, #wrap .form-control .fake-file-box::after, .grid::after {
   clear: both;
 }
 
@@ -20,6 +20,8 @@
 .hidden,
 .sr_only,
 .sr-only,
+#wrap .form-control .fake-file-box .fake-file input[type=file],
+#wrap .form-control .fake-radio input,
 #wrap .form-control .fake-checkbox input,
 #wrap .pagination a.control span {
   position: absolute;
@@ -1182,80 +1184,7 @@ q:before, q:after {
   border-color: #A07D3B;
 }
 #wrap .form-control {
-  margin-left: 8px;
-  /*
-          .fake-radio {
-              @include vw(margin-left, 50px);
-              &:first-child { margin-left: 0; }
-              label {
-                  display: inline-block;
-                  @include vw(padding-left, 60px);
-                  background: url('../img/common/icon_radio_check.png') no-repeat left center;
-                  background-size: auto 100%;
-                  cursor: pointer;
-                  @include breakpoint(desktop){
-                      padding-left: 30px;
-                  }
-              }
-              input {
-                  @extend .sr-only;
-                  &:checked + label { background-image: url('../img/common/icon_radio_checked.png'); }
-
-                  &.disable + label{
-                      background-image: url('../img/common/icon_radio_disable.png'); 
-                  }
-              }
-          }
-          .fake-file-box {
-              @extend %clearfix;
-              @include vw(margin-top, 10px);
-              &:first-child { margin-top: 0; }
-              .fake-file-name {
-                  float: left;
-                  width: 75%;
-              }
-              .fake-file {
-                  float: right;
-                  width: calc(25% - 9px);
-                  input[type="file"] { @extend .sr-only; }
-                  label {
-                      display: block;
-                      @include vw(padding, 30px 0);
-                      text-align: center;
-                      @include vw(font-size,28px);
-                      color: #fff;
-                      @include vw(border-radius, 5px);
-                      background-color: $color-1;
-                      cursor: pointer;
-                      @include breakpoint(desktop){
-                          padding: 17px 0;
-                          font-size: 18px;
-                      }
-                  }
-              }
-          }
-          &-array {
-              @extend .grid;
-              .text,
-              .select {
-                  @extend .col;
-                  width: 74.5%;
-              }
-              a {
-                  @extend .col-right;
-                  width: 24.5%;
-                  @include vw(padding, 28px 0);
-                  @include vw(font-size,28px);
-                  @include breakpoint(desktop){
-                      padding: 13px 0 14px;
-                      font-size: 20px;
-                  }
-              }
-          }
-              */
-}
-#wrap .form-control:first-child {
-  margin-left: 0;
+  font-size: 0;
 }
 #wrap .form-control input::-webkit-outer-spin-button,
 #wrap .form-control input::-webkit-inner-spin-button {
@@ -1265,12 +1194,6 @@ q:before, q:after {
 }
 #wrap .form-control input[type=number] {
   -moz-appearance: textfield;
-}
-#wrap .form-control .fake-checkbox {
-  margin-top: 8px;
-}
-#wrap .form-control .fake-checkbox:first-child {
-  margin-top: 0;
 }
 #wrap .form-control .fake-checkbox label {
   display: inline-block;
@@ -1289,16 +1212,37 @@ q:before, q:after {
 #wrap .form-control .fake-checkbox input:checked + label {
   background-image: url("../images/icon_checkbox_checked.svg");
 }
+#wrap .form-control .fake-radio {
+  margin-right: 5vw;
+}
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-radio {
+    margin-right: 36px;
+  }
+}
+#wrap .form-control .fake-radio label {
+  display: inline-block;
+  padding-left: 4.1666666667vw;
+  background: url("../images/icon_radio_check.svg") no-repeat left center;
+  background-size: auto 100%;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+}
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-radio label {
+    padding-left: 30px;
+  }
+}
+#wrap .form-control .fake-radio input:checked + label {
+  background-image: url("../images/icon_radio_checked.svg");
+}
 #wrap .form-control .select {
   display: inline-block;
-  margin-left: 8px;
   font-size: 0;
   background: #fff url("../images/icon_select_arrow.svg") no-repeat 97% center;
   background-size: 24px 24px;
   width: 100%;
-}
-#wrap .form-control .select:first-child {
-  margin-left: 0;
 }
 #wrap .form-control .select select {
   width: 100%;
@@ -1406,6 +1350,45 @@ q:before, q:after {
     font-size: 14px;
   }
 }
+#wrap .form-control .fake-file-box {
+  position: relative;
+  width: 360px;
+}
+#wrap .form-control .fake-file-box .fake-file-name {
+  width: 100%;
+  border: 1px solid #E4DED3;
+  padding: 1.25vw 11.1111111111vw 1.25vw 2.2222222222vw;
+}
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-file-box .fake-file-name {
+    padding: 9px 80px 9px 16px;
+  }
+}
+#wrap .form-control .fake-file-box .fake-file {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+}
+#wrap .form-control .fake-file-box .fake-file label {
+  display: inline-block;
+  padding: 0.2777777778vw 0.8333333333vw;
+  text-align: center;
+  font-size: 1.8055555556vw;
+  color: #2C2923;
+  border: 1px solid #E4DED3;
+  cursor: pointer;
+  font-weight: 400;
+}
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-file-box .fake-file label {
+    padding: 2px 6px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-file-box .fake-file label {
+    font-size: 13px;
+  }
+}
 #wrap .select-box {
   background-color: #FBFAF6;
   display: flex;
@@ -1429,19 +1412,46 @@ q:before, q:after {
 }
 #wrap .select-box .select {
   width: 280px;
+  margin-right: 8px;
 }
 #wrap .select-box .select.small {
   width: 160px;
+}
+#wrap .select-box .select:last-child {
+  margin-right: 0;
 }
 #wrap .select-box .select-text {
   font-size: 14px;
   font-weight: 400;
   color: #2C2923;
+  margin-right: 8px;
 }
 #wrap .select-box.flex-end {
   padding: 20px 0;
   justify-content: flex-end;
   background-color: transparent;
+}
+#wrap .radio-box {
+  display: flex;
+  align-items: center;
+}
+#wrap .checkbox-box {
+  display: flex;
+  align-items: center;
+}
+#wrap .checkbox-box .fake-checkbox {
+  margin-top: 0;
+  margin-right: 5vw;
+}
+@media screen and (min-width: 720px) {
+  #wrap .checkbox-box .fake-checkbox {
+    margin-right: 36px;
+  }
+}
+#wrap .form-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7A746A;
 }
 #wrap .table-row {
   width: 100%;

@@ -445,9 +445,9 @@
     }
 
 	.form-control {
-        margin-left: 8px;
-        &:first-child { margin-left: 0; }
-
+        // margin-left: 8px;
+        // &:first-child { margin-left: 0; }
+		font-size:0;
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
             margin: 0;
@@ -457,8 +457,8 @@
         input[type="number"] { -moz-appearance: textfield; }
 
         .fake-checkbox {
-			margin-top:8px;
-			&:first-child{margin-top:0;}
+			// margin-top:8px;
+			// &:first-child{margin-top:0;}
             label {
                 display: inline-block;
                 @include vw(padding-left, 30px);
@@ -475,11 +475,33 @@
             }
         }
 
+		.fake-radio {
+            @include vw(margin-right, 36px);
+            label {
+				display: inline-block;
+                @include vw(padding-left, 30px);
+                background: url('../images/icon_radio_check.svg') no-repeat left center;
+                background-size: auto 100%;
+                cursor: pointer;
+				font-weight:400;
+				font-size:14px;
+
+            }
+            input {
+                @extend .sr-only;
+                &:checked + label { background-image: url('../images/icon_radio_checked.svg'); }
+
+                // &.disable + label{
+                //     background-image: url('../img/common/icon_radio_disable.png'); 
+                // }
+            }
+        }
+
         .select {
             display: inline-block;
-            margin-left: 8px;
             font-size: 0;
-            &:first-child { margin-left: 0; }
+			// margin-left: 8px;
+            // &:first-child { margin-left: 0; }
             background: #fff url('../images/icon_select_arrow.svg') no-repeat 97% center;
             background-size: 24px 24px;
             width:100%;
@@ -531,79 +553,33 @@
             &::placeholder { color: $color-light-gray;@include vw(font-size,14px);font-weight:400; }
            
         }
-
-
-
-/*
-        .fake-radio {
-            @include vw(margin-left, 50px);
-            &:first-child { margin-left: 0; }
-            label {
-                display: inline-block;
-                @include vw(padding-left, 60px);
-                background: url('../img/common/icon_radio_check.png') no-repeat left center;
-                background-size: auto 100%;
-                cursor: pointer;
-                @include breakpoint(desktop){
-                    padding-left: 30px;
-                }
-            }
-            input {
-                @extend .sr-only;
-                &:checked + label { background-image: url('../img/common/icon_radio_checked.png'); }
-
-                &.disable + label{
-                    background-image: url('../img/common/icon_radio_disable.png'); 
-                }
-            }
-        }
+		
         .fake-file-box {
             @extend %clearfix;
-            @include vw(margin-top, 10px);
-            &:first-child { margin-top: 0; }
+			position:relative;
+			width:360px;
             .fake-file-name {
-                float: left;
-                width: 75%;
+				width:100%;
+				border:1px solid $color-light-brown;
+				@include vw(padding, 9px 80px 9px 16px);
             }
             .fake-file {
-                float: right;
-                width: calc(25% - 9px);
+				position:absolute;right:16px;top:8px;
+				
                 input[type="file"] { @extend .sr-only; }
                 label {
-                    display: block;
-                    @include vw(padding, 30px 0);
+					display:inline-block;
+                    @include vw(padding, 2px 6px);
                     text-align: center;
-                    @include vw(font-size,28px);
-                    color: #fff;
-                    @include vw(border-radius, 5px);
-                    background-color: $color-1;
+                    @include vw(font-size,13px);
+                    color: $color-black;
+					border:1px solid $color-light-brown;
                     cursor: pointer;
-                    @include breakpoint(desktop){
-                        padding: 17px 0;
-                        font-size: 18px;
-                    }
+					font-weight:400;
+                   
                 }
             }
         }
-        &-array {
-            @extend .grid;
-            .text,
-            .select {
-                @extend .col;
-                width: 74.5%;
-            }
-            a {
-                @extend .col-right;
-                width: 24.5%;
-                @include vw(padding, 28px 0);
-                @include vw(font-size,28px);
-                @include breakpoint(desktop){
-                    padding: 13px 0 14px;
-                    font-size: 20px;
-                }
-            }
-        }
-            */
     }
 
     .select-box{
@@ -619,14 +595,30 @@
         .select{
             width: 280px;
             &.small{width:160px;}
+
+			margin-right:8px;
+			&:last-child{margin-right:0;}
         }
 
         .select-text{
             font-size:14px;font-weight:400;color:$color-black;
+			margin-right:8px;
         }
         
         &.flex-end{padding:20px 0;justify-content: flex-end;background-color:transparent;}
+
     }
+
+	.radio-box{
+		display:flex;align-items:center;
+	}
+
+	.checkbox-box{
+		display:flex;align-items:center;
+		.fake-checkbox{margin-top:0; @include vw(margin-right, 36px);}
+	}
+
+	.form-text{ font-size:14px;font-weight:400;color:$color-gray;}
 
 	.table-row{
 		width:100%;

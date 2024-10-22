@@ -47,6 +47,7 @@ function addEvent(){
 	headerEvent();
 	pageMove('.page-move');
     pageMove('.page-move2', -50);
+	fileUploadEvent();
 	
 }
 
@@ -65,8 +66,6 @@ function scrollMenuEvent(){
 			$('#sectionMenu .tab-menu li').eq(index).addClass('active').siblings('li').removeClass('active');
 		}
 	});
-
-
 }
 
 function pageMove($selector, $position){
@@ -270,7 +269,6 @@ function countEvent(button, type) {
 	resultSpan.innerText = number;
 }
 
-
 function popupOpen($selector){
 	$($selector).show();
  
@@ -286,7 +284,6 @@ function popupOpen($selector){
 	}
 }
 
-
 // popupClose('#brandLayerEvent');
 function popupClose($selector){
     //$('.slide-container').slick("unslick");
@@ -298,7 +295,6 @@ function popupClose($selector){
 }
 
 // layer video
-// <link rel="stylesheet" href="//img.eduwill.net/eduwill/dev/css/common/popup.css">
 // popupLayerVideoOpen($url, "autoplay loop controls muted");
 // popupLayerVideoOpen($url, "shorts");
 function layerVideoOpen($url, $options){
@@ -327,6 +323,18 @@ function layerVideoOpen($url, $options){
 
 function layerVideoClose(){
 	$("#popupLayerVideo").remove();
+}
+
+function fileUploadEvent(){
+    var fileTarget = $('.form-control #fileUpload');
+    fileTarget.on('change', function(){
+        if(window.FileReader){
+            var filename = $(this)[0].files[0].name;
+        } else {
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        }
+        $(this).parent().siblings('.fake-file-name').val(filename);
+    });
 }
 
 
@@ -400,17 +408,7 @@ function pcMenu(){
 
 
 
-function formEvent(){
-    var fileTarget = $('.form-control #fileUpload');
-    fileTarget.on('change', function(){
-        if(window.FileReader){
-            var filename = $(this)[0].files[0].name;
-        } else {
-            var filename = $(this).val().split('/').pop().split('\\').pop();
-        }
-        $(this).parent().siblings('.fake-file-name').val(filename);
-    });
-}
+
 
 function listToggle(){
     $('[data-toggle]').on('click', function(){

@@ -428,8 +428,7 @@
 										<option value="">전체 선택</option>
 									</select>
 								</span>
-							</div>
-							<div class="form-control">
+		
 								<input type="text" class="text" placeholder="검색어를 입력하세요" />
 							</div>
 							<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
@@ -458,20 +457,84 @@
 				<div class="component-item">
 					<div class="component-title">form: input[type="checkbox"]</div>
 					<div class="component-body">
+						<div class="checkbox-box">
+							<div class="form-control">
+								<span class="fake-checkbox">
+									<input type="checkbox" id="privacyAgree" class="checkbox" checked>
+									<label for="privacyAgree">강좌</label>
+								</span>
+								<span class="fake-checkbox">
+									<input type="checkbox" id="privacyAgree2" class="checkbox">
+									<label for="privacyAgree2">교재</label>
+								</span>
+							</div>
+						</div>
+
 						<div class="form-control">
 							<div class="fake-checkbox">
-								<input type="checkbox" id="privacyAgree" class="checkbox" checked>
-								<label for="privacyAgree">강좌</label>
+								<input type="checkbox" id="privacyAgree3" class="checkbox" checked>
+								<label for="privacyAgree3">강좌</label>
 							</div>
 							<div class="fake-checkbox">
-								<input type="checkbox" id="privacyAgree2" class="checkbox">
-								<label for="privacyAgree2">교재</label>
+								<input type="checkbox" id="privacyAgree4" class="checkbox" checked>
+								<label for="privacyAgree4">교재</label>
 							</div>
 						</div>
 					</div>
 				</div>
 
 
+				<div class="component-item">
+					<div class="component-title">form: input[type="radio"]</div>
+					<div class="component-body">
+						<div class="radio-box">
+							<div class="form-control">
+								<span class="fake-radio">
+									<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
+									<label for="radioType1">인강</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType2" class="radio" name="radioSelect">
+									<label for="radioType2">교재</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType3" class="radio" name="radioSelect" >
+									<label for="radioType3">학원강좌</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType4" class="radio" name="radioSelect">
+									<label for="radioType4">기타</label>
+								</span>
+							</div>
+							<p class="form-text">* 강좌, 교재 문의는 수강중인 강좌에 대해서만 가능합니다.</p>
+						</div>
+						<div class="form-control">
+							<span class="fake-radio">
+								<input type="radio" id="agree" class="radio" name="agreeSelect" checked>
+								<label for="agree">동의</label>
+							</span>
+							<span class="fake-radio">
+								<input type="radio" id="notAgree" class="radio" name="agreeSelect">
+								<label for="notAgree">비동의</label>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form: input[type="file"]</div>
+					<div class="component-body">
+						<div class="form-control">
+							<div class="fake-file-box">
+								<input type="text" class="text fake-file-name" readonly>
+								<div class="fake-file">
+									<input type="file" id="fileUpload" name="file">
+									<label for="fileUpload">찾아보기</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
