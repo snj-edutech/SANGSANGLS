@@ -232,6 +232,30 @@
   }
 }
 
+.popup-scroll, #wrap .editor-box {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.popup-scroll::-webkit-scrollbar, #wrap .editor-box::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .editor-box::-webkit-scrollbar-button:start:decrement, .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .editor-box::-webkit-scrollbar-button:end:increment {
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: #F2EFE7;
+}
+.popup-scroll::-webkit-scrollbar-track, #wrap .editor-box::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 4px;
+}
+.popup-scroll::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb {
+  background-color: #F2EFE7;
+  border-radius: 4px;
+}
 @font-face {
   font-family: "GmarketSans";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
@@ -1240,7 +1264,7 @@ q:before, q:after {
 #wrap .form-control .select {
   display: inline-block;
   font-size: 0;
-  background: #fff url("../images/icon_select_arrow.svg") no-repeat 97% center;
+  background: #fff url("../images/icon_select_arrow.svg") no-repeat 98% center;
   background-size: 24px 24px;
   width: 100%;
 }
@@ -1276,7 +1300,7 @@ q:before, q:after {
 }
 #wrap .form-control .text {
   display: inline-block;
-  width: 280px;
+  width: 100%;
   padding: 1.1111111111vw 1.1111111111vw 1.1111111111vw 2.2222222222vw;
   font-size: 1.9444444444vw;
   border: 1px solid rgb(228, 222, 211);
@@ -1367,7 +1391,8 @@ q:before, q:after {
 #wrap .form-control .fake-file-box .fake-file {
   position: absolute;
   right: 16px;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-45%);
 }
 #wrap .form-control .fake-file-box .fake-file label {
   display: inline-block;
@@ -1378,6 +1403,7 @@ q:before, q:after {
   border: 1px solid #E4DED3;
   cursor: pointer;
   font-weight: 400;
+  border-radius: 2px;
 }
 @media screen and (min-width: 720px) {
   #wrap .form-control .fake-file-box .fake-file label {
@@ -1392,6 +1418,9 @@ q:before, q:after {
 #wrap .file-list-box {
   display: flex;
   align-items: center;
+}
+#wrap .file-list-box .btn.btn-down {
+  margin-bottom: 0;
 }
 #wrap .select-box {
   background-color: #FBFAF6;
@@ -1415,6 +1444,7 @@ q:before, q:after {
   }
 }
 #wrap .select-box .select {
+  background-position: 97% center;
   width: 280px;
   margin-right: 8px;
 }
@@ -1423,6 +1453,9 @@ q:before, q:after {
 }
 #wrap .select-box .select:last-child {
   margin-right: 0;
+}
+#wrap .select-box .text {
+  width: 280px;
 }
 #wrap .select-box .select-text {
   font-size: 14px;
@@ -1435,9 +1468,36 @@ q:before, q:after {
   justify-content: flex-end;
   background-color: transparent;
 }
+#wrap .input-box {
+  display: flex;
+  align-items: center;
+}
+#wrap .input-box .text {
+  width: 280px;
+}
+#wrap .input-box .form-control + .form-control {
+  margin-left: 20px;
+}
+#wrap .input-box + .input-box {
+  margin-top: 10px;
+}
+#wrap .file-box {
+  display: flex;
+  align-items: center;
+}
+#wrap .file-box .form-text {
+  margin-left: 20px;
+}
+#wrap .file-box + .file-list-box {
+  margin-top: 20px;
+}
 #wrap .radio-box {
   display: flex;
   align-items: center;
+}
+#wrap .editor-box {
+  height: 480px;
+  overflow-y: auto;
 }
 #wrap .checkbox-box {
   display: flex;
@@ -1550,42 +1610,42 @@ q:before, q:after {
 #wrap .notice-view-table .table-row td {
   font-weight: 600;
 }
-#wrap .notice-view-table .table-row td.editer {
+#wrap .notice-view-table .table-row td.editor {
   padding: 40px 20px;
   font-size: 16px;
   line-height: 27.2px;
   font-weight: 400;
 }
-#wrap .notice-view-table .table-row td.editer .study-info {
+#wrap .notice-view-table .table-row td.editor .study-info {
   padding-bottom: 20px;
   margin-bottom: 36px;
   border-bottom: 1px solid #E4DED3;
 }
-#wrap .notice-view-table .table-row td.editer .study-info dl {
+#wrap .notice-view-table .table-row td.editor .study-info dl {
   display: flex;
   margin-top: 8px;
 }
-#wrap .notice-view-table .table-row td.editer .study-info dl:first-child {
+#wrap .notice-view-table .table-row td.editor .study-info dl:first-child {
   margin-top: 0;
 }
-#wrap .notice-view-table .table-row td.editer .study-info dl dt, #wrap .notice-view-table .table-row td.editer .study-info dl dd {
+#wrap .notice-view-table .table-row td.editor .study-info dl dt, #wrap .notice-view-table .table-row td.editor .study-info dl dd {
   font-weight: 400;
   font-size: 13px;
   line-height: 22.1px;
 }
-#wrap .notice-view-table .table-row td.editer .study-info dl dt {
+#wrap .notice-view-table .table-row td.editor .study-info dl dt {
   width: 64px;
 }
-#wrap .notice-view-table .table-row td.editer .study-info dl dd {
+#wrap .notice-view-table .table-row td.editor .study-info dl dd {
   font-weight: 600;
   color: #A07D3B;
 }
-#wrap .notice-view-table .table-row td.editer .study-info dl dd + dt {
+#wrap .notice-view-table .table-row td.editor .study-info dl dd + dt {
   position: relative;
   padding-left: 16px;
   margin-left: 16px;
 }
-#wrap .notice-view-table .table-row td.editer .study-info dl dd + dt:after {
+#wrap .notice-view-table .table-row td.editor .study-info dl dd + dt:after {
   content: "";
   width: 1px;
   height: 12px;
@@ -1597,6 +1657,17 @@ q:before, q:after {
 }
 #wrap .notice-view-table .table-row td.download {
   padding: 20px 20px 12px;
+}
+#wrap .notice-input-table .table-row th, #wrap .notice-input-table .table-row td {
+  text-align: left;
+  padding: 20px;
+}
+#wrap .notice-input-table .table-row .select {
+  width: 600px;
+  background-color: transparent;
+}
+#wrap .notice-input-table .table-row .text {
+  background-color: transparent;
 }
 #wrap .answer-table {
   margin-top: 60px;
@@ -1825,30 +1896,6 @@ q:before, q:after {
   justify-content: flex-end;
 }
 
-.popup-scroll {
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-.popup-scroll::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-.popup-scroll::-webkit-scrollbar-button:start:decrement, .popup-scroll::-webkit-scrollbar-button:end:increment {
-  display: block;
-  width: 0;
-  height: 0;
-  background-color: #F2EFE7;
-}
-.popup-scroll::-webkit-scrollbar-track {
-  background: #fff;
-  border-radius: 4px;
-}
-.popup-scroll::-webkit-scrollbar-thumb {
-  background-color: #F2EFE7;
-  border-radius: 4px;
-}
 .popup-dim {
   position: fixed;
   top: 0;
@@ -2476,7 +2523,6 @@ q:before, q:after {
 
 #popupReviewWrite .form-control .select {
   margin-bottom: 20px;
-  background-position: 98% center;
 }
 #popupReviewWrite .notice + .action {
   margin-top: 0px;

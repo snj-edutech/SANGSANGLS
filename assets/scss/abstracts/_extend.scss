@@ -324,3 +324,30 @@
 	}
 }
 
+%scrollBar{
+	/* width */
+	&::-webkit-scrollbar {
+		width: 8px; height: 8px; 
+	}
+	
+	&::-webkit-scrollbar-button:start:decrement,
+	&::-webkit-scrollbar-button:end:increment { display: block; width: 0; height: 0; background-color: #F2EFE7; }
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #fff;
+		border-radius: 4px;
+	}
+	
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background-color: #F2EFE7; 
+		border-radius: 4px;
+	}
+	
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		//background: #555;
+	}
+}
+

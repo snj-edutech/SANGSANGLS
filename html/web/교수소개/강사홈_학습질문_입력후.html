@@ -142,59 +142,146 @@
 						<div class="tab-view active">
 							<div class="professor-content" id="tabView3">	
 								<h3>학습질문</h3>
-								<div class="notice-view-table">
+								<div class="notice-input-table">
 									<table class="table-row ">
 										<colgroup>
-											<col style="width:90px">
+											<col style="width:170px">
 											<col style="width:auto">
-											<col style="width:140px">
-											<col style="width:120px">
 										</colgroup>
 										<tr>
-											<th colspan="2" class="title">29번 질문드립니다.</th>
-											<th class="date">YYYY-MM-DD</th> 
-											<th class="reply">답변대기</th>
-										</tr>
-										<tr>
-											<td colspan="4" class="editor">
-												<div class="study-info">
-													<dl>
-														<dt>과목</dt>
-														<dd>추리논증</dd>
-														<dt>교수</dt>
-														<dd>김재형</dd>
-													</dl>
-													<dl>
-														<dt>강좌명</dt>
-														<dd>[2025] RAINMAKER 김재형 추리논증 기본이론 + 최근 7개년도 기출특</dd>
-													</dl>
-													<dl>
-														<dt>강의명</dt>
-														<dd>[6-1] 논증분석 - 암묵적 가정</dd>
-													</dl>
+											<th>구분</th>
+											<td>
+												<div class="radio-box">
+													<div class="form-control">
+														<span class="fake-radio">
+															<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
+															<label for="radioType1">인강</label>
+														</span>
+														<span class="fake-radio">
+															<input type="radio" id="radioType2" class="radio" name="radioSelect">
+															<label for="radioType2">교재</label>
+														</span>
+														<span class="fake-radio">
+															<input type="radio" id="radioType3" class="radio" name="radioSelect" >
+															<label for="radioType3">학원강좌</label>
+														</span>
+														<span class="fake-radio">
+															<input type="radio" id="radioType4" class="radio" name="radioSelect">
+															<label for="radioType4">기타</label>
+														</span>
+													</div>
+													<p class="form-text">* 강좌, 교재 문의는 수강중인 강좌에 대해서만 가능합니다.</p>
 												</div>
-												안녕하십니까 교수님, 아샷추 217번 3번 문제 관련, 'ㄱ'번이 잘 이해가 되질 않습니다. 
-												교수님 설명대로라면 전체 범죄에서 암수 범죄의 비율을 알 수 없기 때문에 전체 범죄 수가 증가하였는지 여부를 알 수가 없다고 하였는데, 
-												전체 범죄 = (신고범죄+암수범죄)라고 가정하고, 신고범죄가 늘었고, 암수범죄도 늘었다고 가정한다면 전체 범죄에서 암수범죄의 비율을 모르더라도, 신고범죄가 늘었고, 암수범죄도 일정하게 늘었다면 전체 범죄가 늘었다고 봐야 하는 것이 아닌가요? 
-												가령, 지문대로 신고범죄수가 2010년 100건에서 2011년 130건이 되었다면, 암수범죄의 비중이 전체 범죄에서 크든 작든 일정 비율로 늘었다면(1에서 2건이 되든, 10에서 20건이 되든) 전체 범죄수도 증가하였다고 판단할 수 있는 것이 아닌가요?
-											</td>									
+											</td>
 										</tr>
 										<tr>
-											<td>첨부파일</td>
-											<td colspan="2" class="download">
-												<a href="javascript:;" class="btn btn-down">파일명.png<span class="icon-down"><img src="../../../assets/images/icon_download.svg" alt="" /></span></a>
-												<a href="javascript:;" class="btn btn-down">파일명.png<span class="icon-down"><img src="../../../assets/images/icon_download.svg" alt="" /></span></a>
-												<a href="javascript:;" class="btn btn-down">파일명파일명파일명.png<span class="icon-down"><img src="../../../assets/images/icon_download.svg" alt="" /></span></a>
-												<a href="javascript:;" class="btn btn-down">파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명파일명.png<span class="icon-down"><img src="../../../assets/images/icon_download.svg" alt="" /></span></a>
+											<th>강좌</th>
+											<td>
+												<div class="form-control">
+													<div class="select">
+														<select name="" id="">
+															<option value="">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</option>
+														</select>
+													</div>
+												</div>
 											</td>
-
 										</tr>
-										
+										<tr>
+											<th>강의</th>
+											<td>
+												<div class="form-control">
+													<div class="select">
+														<select name="" id="">
+															<option value="">[2-1] 연역논리 - 명제 논리 (1)추리논증 일반</option>
+														</select>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>제목</th>
+											<td>
+												<div class="form-control">
+													<input type="text" class="text" placeholder="문의 제목을 입력하세요." value="29번 질문드립니다." />
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>답변 알림</th>
+											<td>
+												<div class="input-box">
+													<div class="form-control">
+														<input type="text" class="text" placeholder="이메일을 입력하세요" value="sangsang@naver.com" />
+													</div>
+						
+													<div class="form-control">
+														<div class="fake-checkbox">
+															<input type="checkbox" id="agreeCheck1" class="checkbox" checked>
+															<label for="agreeCheck1">받기</label>
+														</div>
+													</div>
+						
+												</div>
+												<div class="input-box">
+													<div class="form-control">
+														<input type="text" class="text" placeholder="휴대폰 번호를 ‘-’ 없이 입력하세요"  value="01234567890"/>
+													</div>
+						
+													<div class="form-control">
+														<div class="fake-checkbox">
+															<input type="checkbox" id="agreeCheck2" class="checkbox" checked>
+															<label for="agreeCheck2">받기</label>
+														</div>
+													</div>
+						
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>공개여부</th>
+											<td>
+												<div class="form-control">
+													<div class="fake-checkbox">
+														<input type="checkbox" id="openCheck" class="checkbox" checked>
+														<label for="openCheck">공개</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>내용</th>
+											<td>
+												<div class="editor-box">
+													에디터 영역
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>파일첨부</th>
+											<td>
+												<div class="file-box">
+													<div class="form-control">
+														<div class="fake-file-box">
+															<input type="text" class="text fake-file-name" readonly>
+															<div class="fake-file">
+																<input type="file" id="fileUpload" name="file">
+																<label for="fileUpload">찾아보기</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-text"> * 파일크기는 10M를 초과하여서는 안됩니다.</div>
+												</div>
+												<div class="file-list-box">
+													<a href="javascript:;" class="btn btn-down">파일명.png<span class="icon-down"><img src="../../../assets/images/icon_download.svg" alt="" /></span></a><a href="javascript:;" class="btn-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소"></a>
+												</div>
+											</td>
+										</tr>
 									</table>
 								</div>
 		
 								<div class="action">
-									<a href="javascript:;" class="btn large">목록</a>
+									<a href="javascript:;" class="btn large btn-gray">취소</a>
+									<a href="javascript:;" class="btn large btn-brown">등록</a>
 								</div>
 								
 							</div>

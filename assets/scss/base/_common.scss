@@ -502,7 +502,7 @@
             font-size: 0;
 			// margin-left: 8px;
             // &:first-child { margin-left: 0; }
-            background: #fff url('../images/icon_select_arrow.svg') no-repeat 97% center;
+            background: #fff url('../images/icon_select_arrow.svg') no-repeat 98% center;
             background-size: 24px 24px;
             width:100%;
             select {
@@ -525,7 +525,7 @@
 
         .text {
             display:inline-block;
-            width: 280px;
+			width:100%;
             @include vw(padding, 8px 8px 8px 16px);
             @include vw(font-size, 14px);
             border: 1px solid rgba(228, 222, 211, 1);
@@ -564,8 +564,9 @@
 				@include vw(padding, 9px 80px 9px 16px);
             }
             .fake-file {
-				position:absolute;right:16px;top:8px;
-				
+				position:absolute;right:16px;
+				top: 50%;
+				transform: translateY(-45%);
                 input[type="file"] { @extend .sr-only; }
                 label {
 					display:inline-block;
@@ -576,6 +577,7 @@
 					border:1px solid $color-light-brown;
                     cursor: pointer;
 					font-weight:400;
+					border-radius:2px;
                    
                 }
             }
@@ -585,6 +587,7 @@
 	.file-list-box{
 		display:flex;
 		align-items: center;
+		.btn.btn-down{margin-bottom:0;}
 	}
 
     .select-box{
@@ -598,12 +601,17 @@
         }
 
         .select{
+			background-position:97% center;
             width: 280px;
             &.small{width:160px;}
 
 			margin-right:8px;
 			&:last-child{margin-right:0;}
         }
+
+		.text {
+			width: 280px;
+		}
 
         .select-text{
             font-size:14px;font-weight:400;color:$color-black;
@@ -614,8 +622,28 @@
 
     }
 
+	.input-box{
+		display:flex;align-items:center;
+		.text {width: 280px;}
+		.form-control + .form-control{margin-left:20px;}
+		&+.input-box{margin-top:10px;}
+	}
+
+	.file-box{
+		display:flex;align-items:center;
+		.form-text{margin-left:20px;}
+
+		&+.file-list-box{margin-top:20px;}
+	}
+
 	.radio-box{
 		display:flex;align-items:center;
+	}
+
+	.editor-box{
+		height:480px;
+		overflow-y:auto;
+		@extend %scrollBar;
 	}
 
 	.checkbox-box{
@@ -711,7 +739,7 @@
 
             td{
                 font-weight:600;
-                &.editer{
+                &.editor{
                     padding:40px 20px;
                     font-size:16px;line-height:27.2px;
                     font-weight:400;
@@ -755,6 +783,14 @@
 
         
     }
+
+	.notice-input-table{
+		.table-row{
+            th,td{text-align:left;padding:20px;}
+            .select{width:600px;background-color:transparent;}
+			.text{background-color:transparent;}
+		}
+	}
 
     .answer-table{
         margin-top:60px;
