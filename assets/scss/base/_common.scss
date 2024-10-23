@@ -43,11 +43,37 @@
 	h4{
         position:relative;
         font-weight:600;
-        font-size:24px;
-        color:$color-black;
+        font-size:20px;
+        color:$color-brown;
         text-align:left;
-		line-height:40.8px;
+		line-height:34px;
         padding-bottom: 20px;
+    }
+
+	h5{
+        position:relative;
+        font-weight:600;
+        font-size:18px;
+        color:$color-brown;
+        text-align:left;
+		line-height:1;
+		margin-bottom:20px;
+		&.dot{
+			position: relative;
+			@include vw(padding-left, 26px);
+			text-align: left;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 4px;
+				margin-top:-4px;
+				display: inline-block;
+				width:8px;height:8px;
+				background-color:$color-brown;
+				border-radius:50%;
+			}
+		}
     }
 
     .holder{
@@ -84,6 +110,10 @@
             display:inline-block;
         }
     }
+
+	.upload-img{
+		img{max-width:100%;}
+	}
 
     .slick-dots {
         width: 100%;
@@ -588,7 +618,7 @@
 	.file-list-box{
 		display:flex;
 		align-items: center;
-		.btn.btn-down{margin-bottom:0;}
+		.btn.btn-file{margin-bottom:0;}
 	}
 
     .select-box{
@@ -645,6 +675,7 @@
 		height:480px;
 		overflow-y:auto;
 		@extend %scrollBar;
+		img{max-width:100%;}
 	}
 
 	.checkbox-box{
@@ -738,6 +769,21 @@
             line-height:23.8px;
         }
     }
+	
+	.notice-title{
+		color:$color-black;
+		font-size:16px;
+		font-weight:600;
+		line-height:27.2px;
+		margin-bottom:10px;
+	}
+
+	.notice-text{
+		color:$color-black;
+		font-size:16px;
+		font-weight:400;
+		line-height:27.2px;
+	}
 
     .notice-list-table{
         .table-row{
@@ -765,6 +811,13 @@
 
     .notice-view-table{
         .table-row{
+			&.table-row-center{
+				th,td{
+					text-align:center;border-left:1px solid $color-light-brown;
+					&:first-child{border-left:none;}
+				}
+			}
+
             th,td{text-align:left;}
             th{
                 padding:20px;font-weight:400;color:$color-gray;
@@ -788,7 +841,7 @@
                     padding:40px 20px;
                     font-size:16px;line-height:27.2px;
                     font-weight:400;
-
+					img{max-width:100%;}
                     .study-info{
                         padding-bottom:20px;
                         margin-bottom:36px;
@@ -895,6 +948,11 @@
 
 		&.large{width:auto;@include vw(padding,0 40px);@include vw(height, 56px); @include vw(font-size,14px);}
 
+		&.btn-link{
+			display:inline-block;@include vw(margin-left, 8px);
+			@include vw(padding,0 16px);@include vw(height, 38px);@include vw(line-height, 38px);
+		}
+
 		&.btn-video{
 			display:block;
 			background: $color-white url('../images/icon_play_arrow.svg') no-repeat 8px center;
@@ -904,7 +962,7 @@
 			@include vw(padding-left,32px);
 		}
 
-        &.btn-down{
+        &.btn-file{
 			display:inline-block;
 			background: $color-light-beige;
 			@include boxSizing(border-box);
@@ -914,6 +972,22 @@
             margin-left:0;
 			@include vw(margin-right, 8px);
             @include vw(margin-bottom, 8px);
+            .icon-down{
+                display:inline-block;
+                position:relative;top:9px;
+                margin-left:4px;
+            }
+		}
+
+		&.btn-down{
+			display:inline-block;
+			background: $color-brown;
+			@include boxSizing(border-box);
+			width:auto;@include vw(height, 38px); 
+			@include vw(line-height, 38px); 
+            @include vw(padding,0 12px);
+            margin-left:0;
+			color:$color-white;
             .icon-down{
                 display:inline-block;
                 position:relative;top:9px;

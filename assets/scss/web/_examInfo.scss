@@ -1,0 +1,121 @@
+#wrap{
+	.section-exam-info{
+		margin-bottom:80px;
+	}
+
+	.examInfo-univ-list{
+		display:flex;
+		flex-wrap:wrap;
+		.univ-list{
+			margin-left:36px;
+			margin-top:36px;
+			width:273px;
+			height:312px;
+			&:nth-child(4n+1){margin-left:0;}
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4){margin-top:0;}
+			a{
+				display:block;
+				padding:30px;
+				background-color:$color-white;
+				border:1px solid $color-light-brown;
+				&:hover{
+					background-color:$color-light-brown2;
+					border-color:$color-brown;
+				}
+			}
+			.univ-name{
+				text-align:center;
+
+				.univ-logo{
+					display:inline-block;
+					width:100px;
+					height:100px;
+					img{width:100%;}
+				}
+				p{
+					font-size:24px;font-weight:600;margin-top:20px;
+				}
+			}
+			.univ-info{
+				margin-top:20px;
+				padding-top:20px;
+				border-top:1px solid $color-light-brown;
+				dl{
+					display:flex;
+					justify-content: space-around;
+					dt{font-size:14px;font-weight:400;}
+					dd{
+						margin-left:auto;
+						display:flex;
+						>div{
+							width:52px;margin-left:20px;
+							.text{font-size:14px;font-weight:600;line-height:23.8px;color:$color-black;}
+							.rate{font-size:18px;font-weight:600;line-height:27px;color:$color-brown;}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.examInfo-univ-view+.examInfo-univ-view{margin-top:80px;}
+
+	.examInfo-univ-view{
+		.notice-view-table{
+			.table-row{
+				th{
+					font-weight:600;
+					font-size:16px;
+					color:$color-black;
+				}
+
+				td{
+					font-size:16px;
+					font-weight:400;
+				}
+			}
+		}
+		.tab-box{
+			.tab-menu{
+				margin-top:0;
+				height:27px;
+				ul li{
+					a{font-weight:400;font-size:16px;height:27px;}
+					&.active{
+						a{font-weight:600;}
+					}
+				}
+			}
+
+			.tab-view{
+				padding-top:40px;
+
+				.holder{
+					&+.holder{margin-top:80px;}
+				}
+
+				.notice-view-table + .notice-text{margin-top:10px;}
+			}
+
+		}
+	}
+
+	.examInfo-univ-title{
+		margin-bottom:40px;
+		text-align:center;
+		border:1px solid $color-light-brown;
+		padding:64px;
+		.univ-logo{
+			display:inline-block;
+			width:80px;
+			height:80px;
+			img{width:100%;}
+		}
+		p{
+			font-size:40px;font-weight:600;margin-top:20px;line-height:60px;
+		}
+	}
+}
