@@ -207,8 +207,10 @@ function tabEvent($selector){
 		tabList.removeClass("active");
 		tabList.eq(idx).addClass("active");
 
-		$($selector).find('.tab-view').removeClass('active');
-		$($selector).find('.tab-view').eq(idx).addClass('active');
+		if($($selector).find('.tab-view').length > 1){
+			$($selector).find('.tab-view').removeClass('active');
+			$($selector).find('.tab-view').eq(idx).addClass('active');
+		}
     });
 }
 

@@ -510,6 +510,7 @@
             @include vw(margin-right, 36px);
             label {
 				display: inline-block;
+				vertical-align:middle;
                 @include vw(padding-left, 30px);
                 background: url('../images/icon_radio_check.svg') no-repeat left center;
                 background-size: auto 100%;
@@ -533,7 +534,7 @@
             font-size: 0;
 			// margin-left: 8px;
             // &:first-child { margin-left: 0; }
-            background: #fff url('../images/icon_select_arrow.svg') no-repeat 98% center;
+            background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
             background-size: 24px 24px;
             width:100%;
             select {
@@ -601,7 +602,7 @@
                 input[type="file"] { @extend .sr-only; }
                 label {
 					display:inline-block;
-                    @include vw(padding, 2px 6px);
+                    @include vw(padding,5.5px 5px);
                     text-align: center;
                     @include vw(font-size,13px);
                     color: $color-black;
@@ -609,6 +610,7 @@
                     cursor: pointer;
 					font-weight:400;
 					border-radius:2px;
+					line-height:1;
                    
                 }
             }
@@ -633,9 +635,9 @@
 
         .select{
 			background-position:97% center;
+			background-color:#fff;
             width: 280px;
-            &.small{width:160px;}
-
+			&.small{width:160px;}
 			margin-right:8px;
 			&:last-child{margin-right:0;}
         }
@@ -647,9 +649,11 @@
         .select-text{
             font-size:14px;font-weight:400;color:$color-black;
 			margin-right:8px;
+			&+.form-control .select{background-color:transparent;}
         }
         
         &.flex-end{padding:20px 0;justify-content: flex-end;background-color:transparent;}
+		&.flex-start{padding:0;justify-content: flex-start;background-color:transparent;}
 
     }
 
@@ -658,6 +662,20 @@
 		.text {width: 280px;}
 		.form-control + .form-control{margin-left:20px;}
 		&+.input-box{margin-top:10px;}
+
+		.input-text-start{
+			font-size:14px;
+			font-weight:400;
+			color:$color-black;
+			margin-right:20px;
+		}
+
+		.input-text-end{
+			font-size:14px;
+			font-weight:400;
+			color:$color-black;
+			margin-left:10px;
+		}
 	}
 
 	.file-box{
@@ -667,8 +685,30 @@
 		&+.file-list-box{margin-top:20px;}
 	}
 
+	.box-group{
+		display:flex;align-items:center;
+	}
+
 	.radio-box{
 		display:flex;align-items:center;
+	}
+
+	.agree-check-box{
+		margin-top:20px;
+		&:first-child{margin-top:0;}
+		.agree-box{
+			height:120px;
+			overflow-y:auto;
+			@extend %scrollBar;
+			padding:20px;
+			@include boxSizing(border-box);
+			color:$color-black;
+			font-size:14px;
+			font-weight:400;
+			line-height:23.8px;
+			margin-bottom:10px;
+			border:1px solid $color-light-brown;
+		}
 	}
 
 	.editor-box{
@@ -801,12 +841,6 @@
                 }
             }
         }
-
-        .action{
-            position:absolute;right:0;bottom:0; z-index:10;  
-            margin-top:0;
-        }
-
     }
 
     .notice-view-table{
@@ -885,6 +919,7 @@
 	.notice-input-table{
 		.table-row{
             th,td{text-align:left;padding:20px;}
+			td{border-left: 1px solid #E4DED3;}
             .select{width:600px;background-color:transparent;}
 			.text{background-color:transparent;}
 		}
@@ -1004,6 +1039,11 @@
 		&.flex-start{justify-content: flex-start;}
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
+
+		&.fly{
+			display:inline-block;
+			position:absolute;right:0;bottom:-10px; z-index:10;  
+		}
 	}
 
 }
