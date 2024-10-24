@@ -4497,6 +4497,7 @@ q:before, q:after {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 40px;
 }
 #wrap .section-examInfo-content .select-pass-box .select-text {
   color: #7A746A;
@@ -4599,6 +4600,7 @@ q:before, q:after {
   display: inline-block;
   width: 80px;
   height: 80px;
+  margin-bottom: 20px;
 }
 #wrap .section-examInfo-content .examInfo-univ-title .univ-logo img {
   width: 100%;
@@ -4606,7 +4608,6 @@ q:before, q:after {
 #wrap .section-examInfo-content .examInfo-univ-title p {
   font-size: 40px;
   font-weight: 600;
-  margin-top: 20px;
   line-height: 60px;
 }
 #wrap .section-examInfo-content .examInfo-univ-view .notice-view-table .table-row th {
@@ -4660,7 +4661,7 @@ q:before, q:after {
   margin-left: 0;
 }
 #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(1), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(2), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(3), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(4), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(1), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(2), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(3), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(4) {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 #wrap .section-examInfo-content .examInfo-pass-list .pass-list a, #wrap .section-examInfo-content .examInfo-pass-list .review-list a {
   display: block;
@@ -4796,6 +4797,9 @@ q:before, q:after {
 }
 #wrap .section-examInfo-content .examInfo-univ-input .notice-input-table.review-input-table .text {
   width: 280px;
+}
+#wrap .section-examInfo-content .examInfo-univ-input .notice-input-table.review-input-table .text.wide {
+  width: 100%;
 }
 #wrap .section-examInfo-content .examInfo-guide-view .box {
   padding: 40px 0;
@@ -5010,4 +5014,8 @@ q:before, q:after {
   width: 100%;
   height: 240px;
   margin: 120px 0;
+}
+#wrap .section-examInfo-content .notice-list-table .table-row + .notice-text {
+  margin-top: 20px;
+  color: #7A746A;
 }/*# sourceMappingURL=web.css.map */
