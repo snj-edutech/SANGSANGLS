@@ -13,10 +13,20 @@
 		&.active{
 			display:block;
 		}
+
+		background-color:#e4ded3;
+		color:$color-black;
+		font-size:14px;
+		font-weight:400;
+		padding:14px 0;
+		text-align:center;
+
+		a{display:inline-block;}
+
 		.banner-close{
-			@include close(50px, 50px, 1px, #000);
+			@include close(30px, 30px, 0.5px,$color-black);
 			top:50%;
-			margin-top:-25px;
+			margin-top:-15px;
 			margin-left:500px;
 		}
 	}
@@ -31,14 +41,20 @@
 				justify-content: flex-end;
 				align-items: center;
 				padding-top:8px;
-				a{display:inline-block;color:$color-gray;margin-left:20px;font-size:13px;}
+				height:32px;
+				a{
+					display:inline-block;color:$color-gray;margin-left:20px;font-size:13px;vertical-align:middle;height:24px;line-height:24px;
+					&.btn-header-search{height:32px;line-height:32px;}
+				}
 			}
+
+			
 
 			.login{
 				position:relative;
-
-				.icon-arrow{
-					position:relative;top:-2px;
+				line-height:1;
+				.icon-new{
+					position:relative;top:-1px;
 				}
 
 				.header-layer{
@@ -56,7 +72,7 @@
 							margin-top:8px;
 							&:first-child{margin-top:0;}
 							a{
-								margin-left:0;
+								margin-left:0;line-height:1;height:auto;
 								span{display:inline-block;color:$color-brown;font-size:14px;text-align:right;width:20px;}
 							}
 						}
@@ -220,6 +236,9 @@
 				a{
 					display:inline-block;font-weight:600;color:$color-gray;font-size:13px;
 					margin-left:36px;
+					&:first-child{
+						cursor:default;
+					}
 
 					&.btn-ssmockexam{
 						position:relative;top:-3px;
