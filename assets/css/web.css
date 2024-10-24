@@ -2376,6 +2376,9 @@ q:before, q:after {
   color: #A07D3B;
   font-weight: 600;
 }
+#wrap .border-left-line {
+  border-left: 1px solid #E4DED3;
+}
 #wrap .notice-view-table .table-row.table-row-center th, #wrap .notice-view-table .table-row.table-row-center td {
   text-align: center;
   border-left: 1px solid #E4DED3;
@@ -4615,6 +4618,10 @@ q:before, q:after {
   font-size: 16px;
   font-weight: 400;
 }
+#wrap .section-examInfo-content .examInfo-univ-view .notice-view-table .table-row td .type {
+  font-weight: 600;
+  margin-right: 10px;
+}
 #wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-menu {
   margin-top: 0;
   height: 27px;
@@ -4643,56 +4650,42 @@ q:before, q:after {
   display: flex;
   flex-wrap: wrap;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list, #wrap .section-examInfo-content .examInfo-pass-list .review-list {
   margin-left: 36px;
   margin-top: 36px;
   width: 273px;
   height: 322px;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(4n+1) {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(4n+1), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(4n+1) {
   margin-left: 0;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(1), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(2), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(3), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(4) {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(1), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(2), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(3), #wrap .section-examInfo-content .examInfo-pass-list .pass-list:nth-child(4), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(1), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(2), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(3), #wrap .section-examInfo-content .examInfo-pass-list .review-list:nth-child(4) {
   margin-top: 40px;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list a {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list a, #wrap .section-examInfo-content .examInfo-pass-list .review-list a {
   display: block;
   text-align: center;
   padding: 40px 30px;
   background-color: #FFFFFC;
   border: 1px solid #E4DED3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list a:hover {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list a:hover, #wrap .section-examInfo-content .examInfo-pass-list .review-list a:hover {
   background-color: #F2EFE7;
   border-color: #A07D3B;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-logo-box {
-  display: flex;
-  justify-content: center;
-}
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-logo-box .univ-logo {
-  width: 80px;
-  height: 80px;
-  margin: 0 6px;
-}
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-logo-box .univ-logo:first-child {
-  margin-left: 0;
-}
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-logo-box .univ-logo img {
-  width: 100%;
-  height: 100%;
-}
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-subject {
-  margin-top: 16px;
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-subject, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-subject {
+  margin-top: 14px;
   font-size: 24px;
   font-weight: 600;
   line-height: 31.2px;
   color: #2C2923;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-desc {
   margin-top: 8px;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-desc span {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -4702,7 +4695,7 @@ q:before, q:after {
   padding-left: 6px;
   margin-left: 6px;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span:after {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span:after, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-desc span:after {
   content: "";
   width: 1px;
   height: 12px;
@@ -4712,19 +4705,40 @@ q:before, q:after {
   top: 50%;
   margin-top: -6px;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span:first-child {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span:first-child, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-desc span:first-child {
   padding-left: 0;
   margin-left: 0;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span:first-child:after {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-desc span:first-child:after, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-desc span:first-child:after {
   display: none;
 }
-#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-name {
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-score, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-score {
+  margin-top: 14px;
+  display: inline-block;
+  padding: 4px 16px;
+  background-color: #F2EFE7;
+  color: #2C2923;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-score strong, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-score strong {
+  font-weight: 600;
+}
+#wrap .section-examInfo-content .examInfo-pass-list .pass-list .pass-name, #wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-name {
   margin-top: 8px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 23.8px;
+  line-height: 22.1px;
   color: #7A746A;
+}
+#wrap .section-examInfo-content .examInfo-pass-list .review-list {
+  height: 318px;
+}
+#wrap .section-examInfo-content .examInfo-pass-list .review-list a {
+  padding: 28px 24px 24px;
+}
+#wrap .section-examInfo-content .examInfo-pass-list .review-list .pass-subject {
+  margin-top: 12px;
 }
 #wrap .section-examInfo-content .examInfo-univ-input {
   margin-bottom: 40px;
@@ -4732,8 +4746,14 @@ q:before, q:after {
 #wrap .section-examInfo-content .examInfo-univ-input h3 {
   color: #2C2923;
 }
+#wrap .section-examInfo-content .examInfo-univ-input .notice-input-table .w-160 {
+  width: 160px !important;
+}
+#wrap .section-examInfo-content .examInfo-univ-input .notice-input-table .w-280 {
+  width: 280px !important;
+}
 #wrap .section-examInfo-content .examInfo-univ-input .notice-input-table .select {
-  width: 133px;
+  width: 280px;
 }
 #wrap .section-examInfo-content .examInfo-univ-input .notice-input-table .select.univ {
   width: 133px;
@@ -4762,8 +4782,20 @@ q:before, q:after {
 #wrap .section-examInfo-content .examInfo-univ-input .notice-input-table .select-box .select-text {
   margin-right: 36px;
 }
+#wrap .section-examInfo-content .examInfo-univ-input .notice-input-table .select-box + .select-box {
+  margin-left: 36px;
+}
 #wrap .section-examInfo-content .examInfo-univ-input .notice-input-table .file-box .fake-file-box .text {
   width: 360px;
+}
+#wrap .section-examInfo-content .examInfo-univ-input .notice-input-table.review-input-table .select {
+  width: 160px;
+}
+#wrap .section-examInfo-content .examInfo-univ-input .notice-input-table.review-input-table .select.univ {
+  width: 280px;
+}
+#wrap .section-examInfo-content .examInfo-univ-input .notice-input-table.review-input-table .text {
+  width: 280px;
 }
 #wrap .section-examInfo-content .examInfo-guide-view .box {
   padding: 40px 0;
@@ -4956,6 +4988,22 @@ q:before, q:after {
   margin-top: 20px;
   font-size: 13px;
   line-height: 22px;
+}
+#wrap .section-examInfo-content .logo-box {
+  display: flex;
+  justify-content: center;
+}
+#wrap .section-examInfo-content .logo-box .univ-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 6px;
+}
+#wrap .section-examInfo-content .logo-box .univ-logo:first-child {
+  margin-left: 0;
+}
+#wrap .section-examInfo-content .logo-box .univ-logo img {
+  width: 100%;
+  height: 100%;
 }
 #wrap .section-examInfo-content .bar {
   background: url("../images/bg_guide.jpg") no-repeat center center;

@@ -850,6 +850,10 @@
         }
     }
 
+	.border-left-line{
+		border-left:1px solid $color-light-brown;
+	}
+
     .notice-view-table{
         .table-row{
 			&.table-row-center{
