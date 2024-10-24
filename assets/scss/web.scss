@@ -5,13 +5,12 @@
 @import "abstracts/mixins";
 @import "abstracts/extend";
 
-
 @import "base/font"; // 웹폰트
 @import "base/reset"; // 초기화
-@import "base/common"; // 공통
 @import "base/popup"; // 팝업
 
 
+@import "web/common"; // 공통
 @import "web/layout"; // 웹
 @import "web/search"; // 검색
 @import "web/list"; // 리스트 공통

@@ -58,23 +58,25 @@
         text-align:left;
 		line-height:1;
 		margin-bottom:20px;
-		&.dot{
-			position: relative;
-			@include vw(padding-left, 26px);
-			text-align: left;
-			&::before {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 4px;
-				margin-top:-4px;
-				display: inline-block;
-				width:8px;height:8px;
-				background-color:$color-brown;
-				border-radius:50%;
-			}
-		}
+		
     }
+
+	.dot{
+		position: relative;
+		@include vw(padding-left, 26px);
+		text-align: left;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 4px;
+			margin-top:-4px;
+			display: inline-block;
+			width:8px;height:8px;
+			background-color:$color-brown;
+			border-radius:50%;
+		}
+	}
 
     .holder{
         &+.holder{margin-top:120px;}
@@ -86,13 +88,18 @@
 
     .icon-new{
         display:inline-block;
-        background: rgba(160, 125, 59, 1);
-        color:#fff;
-        border-radius:4px;
-        padding:2.5px 4px 1.5px;
-        line-height:1;
-        font-size:12px;
+        // background: rgba(160, 125, 59, 1);
+        // color:#fff;
+        // border-radius:4px;
+        // padding:2.5px 4px 1.5px;
+        // font-size:12px;
+		 line-height:1;
         margin-left:4px;
+		background: url('../images/icon_new.svg') no-repeat center top;
+		width:16px;
+		height:16px;
+		font-size:0;
+		vertical-align:middle;
     }
 
     .icon-lock{
