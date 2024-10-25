@@ -2100,6 +2100,93 @@ q:before, q:after {
     font-size: 13px;
   }
 }
+#wrap .custom-select {
+  position: relative;
+  display: inline-block;
+  width: 600px;
+  border: 1px solid #E4DED3;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrap .custom-select .selected {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1111111111vw 2.2222222222vw 1.1111111111vw 2.2222222222vw;
+  font-size: 1.9444444444vw;
+  font-weight: 400;
+  color: #2C2923;
+  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 720px) {
+  #wrap .custom-select .selected {
+    padding: 8px 16px 8px 16px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .custom-select .selected {
+    font-size: 14px;
+  }
+}
+#wrap .custom-select .selected .arrow {
+  background: url("../images/icon_select_arrow.svg") no-repeat 98% center;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+#wrap .custom-select .selected .selected-value {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#wrap .custom-select ul {
+  width: 100%;
+  border: 1px solid #E4DED3;
+  display: none;
+  position: absolute;
+  border-top: none;
+  margin: 1px 0 0 0;
+  background-color: #FFFFFC;
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px 0;
+}
+#wrap .custom-select ul li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5555555556vw 2.2222222222vw;
+  font-size: 1.9444444444vw;
+  font-weight: 400;
+  color: #2C2923;
+  line-height: 23.8px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 720px) {
+  #wrap .custom-select ul li {
+    padding: 4px 16px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .custom-select ul li {
+    font-size: 14px;
+  }
+}
+#wrap .custom-select ul li:first-child {
+  margin-top: 0;
+}
+#wrap .custom-select ul li:hover {
+  background: #F2EFE7;
+}
+#wrap .custom-select.active ul {
+  display: initial;
+}
 #wrap .file-list-box {
   display: flex;
   align-items: center;

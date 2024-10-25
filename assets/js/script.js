@@ -49,6 +49,7 @@ function addEvent(){
     pageMove('.page-move2', -50);
 	fileUploadEvent();
 	toggleEvent();
+	selectEvent();
 	
 }
 
@@ -358,6 +359,48 @@ function toggleEvent(){
     });
 }
 
+
+function selectEvent(){
+	const selectBoxElements = document.querySelectorAll(".custom-select");
+
+	function toggleSelectBox(selectBox) {
+		selectBox.classList.toggle("active");
+	}
+
+	function selectOption(optionElement) {
+		const selectBox = optionElement.closest(".custom-select");
+		const selectedElement = selectBox.querySelector(".selected-value");
+		selectedElement.textContent = optionElement.textContent;
+	}
+
+	selectBoxElements.forEach(selectBoxElement => {
+		selectBoxElement.addEventListener("click", function (e) {
+			const targetElement = e.target;
+			const isOptionElement = targetElement.classList.contains("option");
+
+			if (isOptionElement) {
+				selectOption(targetElement);
+			}
+
+			toggleSelectBox(selectBoxElement);
+		});
+	});
+
+	document.addEventListener("click", function (e) {
+		const targetElement = e.target;
+		const isSelect = targetElement.classList.contains("select") || targetElement.closest(".custom-select");
+
+		if (isSelect) {
+			return;
+		}
+
+		const allSelectBoxElements = document.querySelectorAll(".custom-select");
+
+		allSelectBoxElements.forEach(boxElement => {
+			boxElement.classList.remove("active");
+		});
+	});
+}
 
 
 
