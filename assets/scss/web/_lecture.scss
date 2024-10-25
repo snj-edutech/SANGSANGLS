@@ -100,8 +100,11 @@
 						margin-top:16px;
 						&:first-child{margin-top:0;}
 						dt,dd{width:50%;font-size:16px;font-weight:400;text-align:left;}
-						dt{}
-						dd{font-weight:600;}
+						dt{color:$color-gray;}
+						dd{
+							font-weight:600;
+							
+						}
 					}
 
 				}
@@ -151,6 +154,7 @@
 						display:flex;
 						.price-box{
 							margin-left:36px;
+							width:223px;
 						}
 					}
 				}
@@ -220,7 +224,7 @@
 								height:100%;
 							}
 	
-							&+.t-desc{margin-left:20px;}
+							&+.t-desc{margin-left:36px;}
 						}
 		
 						.t-desc{
@@ -320,7 +324,7 @@
 						.price-subject{width:40px;font-size:14px;}
 						.price-box{
 							margin-left:auto;
-							.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
+							.badge{margin-right:8px;padding: 0 4px;font-size:11px;}
 							.price-before, .price-after{font-size:14px;}
 						}
 						// >div{width:auto;}

@@ -185,7 +185,8 @@
 
 	.badge{
 		@include vw(font-size,11px);
-		@include vw(padding, 3.5px 3.5px 2.5px);
+		@include vw(padding, 0 3.5px);
+		@include vw(height, 19px);
 		display:inline-block;
 		@include vw(border-width, 1px);
         border-style: solid;
@@ -194,7 +195,7 @@
         @include boxSizing(border-box);
 		color:$color-black;
 		border-color:$color-light-brown;
-		line-height:1;
+		line-height:19px;
 		font-weight:600;
 
 		&.badge-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
@@ -362,19 +363,22 @@
                 background-color:transparent;
                 position:absolute;left:50%;right:0;top:0;z-index:10;
                 transform:translateX(-50%); width:1200px;
-               
                 &.fixed{
                     position:fixed;
+					padding-top:8px;
                 }
 
                 li{
                     a{
                         border:none;height:35px;
                         border-bottom:1px solid $color-light-brown;
+						font-size:16px;font-weight:400;
                     }
 
                     &.active, &:hover{
                         a{
+
+							font-weight:600;
                             background-color:$color-white;
                             border-bottom:2px solid $color-black;
                         }
@@ -502,7 +506,7 @@
                 @include vw(padding-left, 30px);
                 background: url('../images/icon_checkbox_check.svg') no-repeat left center;
                 background-size: auto 100%;
-                cursor: pointer;
+                //cursor: pointer;
 				font-weight:400;
 				font-size:14px;
 
@@ -510,6 +514,10 @@
             input {
                 @extend .sr-only;
                 &:checked + label { background-image: url('../images/icon_checkbox_checked.svg'); }
+
+				 &.disable + label{
+                    background-image: url('../images/icon_check_disable.svg'); 
+                }
             }
         }
 
@@ -642,6 +650,7 @@
 			color: $color-black; 
 			font-family:$font-pretendard;
 			@include boxSizing(border-box);
+			background-color:$color-white;
 			.arrow {
 				background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
 				background-size: 24px 24px;
@@ -708,7 +717,7 @@
             @include vw(width, 55px);@include vw(height, 40px);
         }
 
-        .select{
+        .select, .custom-select{
 			background-position:97% center;
 			background-color:#fff;
             width: 280px;
@@ -832,7 +841,7 @@
 		}
 	}
 
-
+	.space{display:inline-block;padding:0 3px;}
 	.form-text{ font-size:14px;font-weight:400;color:$color-gray;}
 
 	.table-row{
@@ -854,6 +863,8 @@
                 padding:20px;
                 &.link{
                     text-align:left;
+					font-weight:600;font-size:16px;
+					line-height:27.2px;
                     a{
 						position:relative;
                         display:inline-block;

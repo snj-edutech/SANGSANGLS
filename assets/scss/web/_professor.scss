@@ -44,7 +44,7 @@
 
 	.section-professor-home{
 		overflow:hidden;
-		position:relative;top:-80px;
+		position:relative;top:-81px;
 		background-color:$color-light-brown2;
 		.professor-desc{
 			text-align:center;
@@ -53,7 +53,7 @@
 			.desc-name{
 				color:$color-black;font-size:40px;font-weight:600;line-height:40.8px;
 			}
-			.desc-subject{font-weight:300;font-family:$font-notoSerifKr;color:$color-brown;font-size:20px;line-height:34px;}
+			.desc-subject{font-weight:300;font-family:$font-notoSerifKr;color:$color-gray;font-size:20px;line-height:34px;margin-top:8px;}
 		}
 
 		.professor-profile{

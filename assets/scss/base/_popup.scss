@@ -288,6 +288,7 @@
 
 		.book-desc{
 			text-align:left;
+			@include vw(width, 364px);
 			.desc-title{
 				position:relative;
 				display:inline-block;
@@ -327,6 +328,12 @@
 					.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
 					.price-before, .price-after{font-size:14px;}
 				}
+
+				.price-before, .price-sale, .price-after{font-size:14px;font-weight:600;}
+				.price-before{font-weight:400;color:$color-light-gray;margin-right:8px;}
+				.price-sale{margin-right:8px;color:$color-brown;}
+				.price-after{color:$color-black;}
+				
 			}
 		}
 
@@ -337,7 +344,7 @@
 
 #popupReviewWrite{
 	.form-control{
-		.select{margin-bottom:20px;}
+		.select, .custom-select{margin-bottom:20px;width:552px;}
 	}
 
 	.notice + .action{margin-top:0px;}
@@ -356,5 +363,6 @@
 
 	.form-control{
 		.textarea{height:294px;}
+		.select, .custom-select{width:552px;}
 	}
 }

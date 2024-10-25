@@ -1022,6 +1022,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #popupBookInfo .desc-box .book-desc {
   text-align: left;
+  width: 50.5555555556vw;
+}
+@media screen and (min-width: 720px) {
+  #popupBookInfo .desc-box .book-desc {
+    width: 364px;
+  }
 }
 #popupBookInfo .desc-box .book-desc .desc-title {
   position: relative;
@@ -1070,9 +1076,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #popupBookInfo .desc-box .book-desc .desc-price .price-box .price-before, #popupBookInfo .desc-box .book-desc .desc-price .price-box .price-after {
   font-size: 14px;
 }
+#popupBookInfo .desc-box .book-desc .desc-price .price-before, #popupBookInfo .desc-box .book-desc .desc-price .price-sale, #popupBookInfo .desc-box .book-desc .desc-price .price-after {
+  font-size: 14px;
+  font-weight: 600;
+}
+#popupBookInfo .desc-box .book-desc .desc-price .price-before {
+  font-weight: 400;
+  color: #BEBEBC;
+  margin-right: 8px;
+}
+#popupBookInfo .desc-box .book-desc .desc-price .price-sale {
+  margin-right: 8px;
+  color: #A07D3B;
+}
+#popupBookInfo .desc-box .book-desc .desc-price .price-after {
+  color: #2C2923;
+}
 
-#popupReviewWrite .form-control .select {
+#popupReviewWrite .form-control .select, #popupReviewWrite .form-control .custom-select {
   margin-bottom: 20px;
+  width: 552px;
 }
 #popupReviewWrite .notice + .action {
   margin-top: 0px;
@@ -1088,6 +1111,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #popupRevieUpdate .form-control .textarea, #popupReviewSuccess .form-control .textarea {
   height: 294px;
+}
+#popupRevieUpdate .form-control .select, #popupRevieUpdate .form-control .custom-select, #popupReviewSuccess .form-control .select, #popupReviewSuccess .form-control .custom-select {
+  width: 552px;
 }
 
 .dim {
@@ -1410,7 +1436,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .badge {
   font-size: 1.5277777778vw;
-  padding: 0.4861111111vw 0.4861111111vw 0.3472222222vw;
+  padding: 0 0.4861111111vw;
+  height: 2.6388888889vw;
   display: inline-block;
   border-width: 0.1388888889vw;
   border-style: solid;
@@ -1420,7 +1447,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
   color: #2C2923;
   border-color: #E4DED3;
-  line-height: 1;
+  line-height: 19px;
   font-weight: 600;
 }
 @media screen and (min-width: 720px) {
@@ -1430,7 +1457,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 720px) {
   #wrap .badge {
-    padding: 3.5px 3.5px 2.5px;
+    padding: 0 3.5px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .badge {
+    height: 19px;
   }
 }
 @media screen and (min-width: 720px) {
@@ -1777,13 +1809,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .tab-box .tab-menu ul.fixed {
   position: fixed;
+  padding-top: 8px;
 }
 #wrap .tab-box .tab-menu ul li a {
   border: none;
   height: 35px;
   border-bottom: 1px solid #E4DED3;
+  font-size: 16px;
+  font-weight: 400;
 }
 #wrap .tab-box .tab-menu ul li.active a, #wrap .tab-box .tab-menu ul li:hover a {
+  font-weight: 600;
   background-color: #FFFFFC;
   border-bottom: 2px solid #2C2923;
 }
@@ -1911,7 +1947,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-left: 4.1666666667vw;
   background: url("../images/icon_checkbox_check.svg") no-repeat left center;
   background-size: auto 100%;
-  cursor: pointer;
   font-weight: 400;
   font-size: 14px;
 }
@@ -1922,6 +1957,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .form-control .fake-checkbox input:checked + label {
   background-image: url("../images/icon_checkbox_checked.svg");
+}
+#wrap .form-control .fake-checkbox input.disable + label {
+  background-image: url("../images/icon_check_disable.svg");
 }
 #wrap .form-control .fake-radio {
   margin-right: 5vw;
@@ -2123,6 +2161,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: #FFFFFC;
 }
 @media screen and (min-width: 720px) {
   #wrap .custom-select .selected {
@@ -2219,16 +2258,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     height: 40px;
   }
 }
-#wrap .select-box .select {
+#wrap .select-box .select, #wrap .select-box .custom-select {
   background-position: 97% center;
   background-color: #fff;
   width: 280px;
   margin-right: 8px;
 }
-#wrap .select-box .select.small {
+#wrap .select-box .select.small, #wrap .select-box .custom-select.small {
   width: 160px;
 }
-#wrap .select-box .select:last-child {
+#wrap .select-box .select:last-child, #wrap .select-box .custom-select:last-child {
   margin-right: 0;
 }
 #wrap .select-box .text {
@@ -2383,6 +2422,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .toggle-box dl.unfold dd {
   display: block;
 }
+#wrap .space {
+  display: inline-block;
+  padding: 0 3px;
+}
 #wrap .form-text {
   font-size: 14px;
   font-weight: 400;
@@ -2422,6 +2465,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .table-row tr td.link {
   text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27.2px;
 }
 #wrap .table-row tr td.link a {
   position: relative;
@@ -3661,7 +3707,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 100%;
 }
 #wrap .lecture-data-list .book-list .desc-box .t-img + .t-desc, #wrap .lecture-data-list .course-list .desc-box .t-img + .t-desc {
-  margin-left: 20px;
+  margin-left: 36px;
 }
 #wrap .lecture-data-list .book-list .desc-box .t-desc, #wrap .lecture-data-list .course-list .desc-box .t-desc {
   text-align: left;
@@ -3790,8 +3836,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 3px 4px;
   font-size: 11px;
 }
-#wrap .lecture-data-list .book-list .price > div .price-box .price-before, #wrap .lecture-data-list .book-list .price > div .price-box .price-after, #wrap .lecture-data-list .course-list .price > div .price-box .price-before, #wrap .lecture-data-list .course-list .price > div .price-box .price-after {
+#wrap .lecture-data-list .book-list .price > div .price-box .price-before, #wrap .lecture-data-list .book-list .price > div .price-box .price-sale, #wrap .lecture-data-list .book-list .price > div .price-box .price-after, #wrap .lecture-data-list .course-list .price > div .price-box .price-before, #wrap .lecture-data-list .course-list .price > div .price-box .price-sale, #wrap .lecture-data-list .course-list .price > div .price-box .price-after {
   font-size: 14px;
+  font-weight: 600;
+}
+#wrap .lecture-data-list .book-list .price > div .price-box .price-before, #wrap .lecture-data-list .course-list .price > div .price-box .price-before {
+  font-weight: 400;
+}
+#wrap .lecture-data-list .book-list .price > div .price-box .price-sale, #wrap .lecture-data-list .course-list .price > div .price-box .price-sale {
+  margin-right: 8px;
+  color: #A07D3B;
+}
+#wrap .lecture-data-list .book-list .price > div .price-box .price-after, #wrap .lecture-data-list .course-list .price > div .price-box .price-after {
+  color: #2C2923;
 }
 #wrap .lecture-data-list .course-list .desc-box {
   width: 760px;
@@ -3865,6 +3922,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .lecture-review-list .review-list .review-info dl dd {
   margin-left: 20px;
+  width: 248px;
 }
 #wrap .lecture-review-list .action {
   position: absolute;
@@ -3986,6 +4044,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
   text-align: left;
 }
+#wrap .section-lecture .lecture-box .lecture-view .lecture-right dl dt {
+  color: #7A746A;
+}
 #wrap .section-lecture .lecture-box .lecture-view .lecture-right dl dd {
   font-weight: 600;
 }
@@ -4042,6 +4103,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-lecture .lecture-box .lecture-list .check-list .check-control .price-box {
   margin-left: 36px;
+  width: 223px;
 }
 #wrap .section-lecture .lecture-box .lecture-list .total-box {
   border-top: 1px solid #E4DED3;
@@ -4131,7 +4193,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 100%;
 }
 #wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-img + .t-desc, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img + .t-desc {
-  margin-left: 20px;
+  margin-left: 36px;
 }
 #wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc {
   text-align: left;
@@ -4236,7 +4298,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-box .badge, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-box .badge {
   margin-right: 8px;
-  padding: 3px 4px;
+  padding: 0 4px;
   font-size: 11px;
 }
 #wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-box .price-before, #wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-box .price-after, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-box .price-before, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-box .price-after {
@@ -4265,6 +4327,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-online-course .lecture-data-list {
   margin-top: 80px;
+}
+#wrap .section-online-course .lecture-data-list + .action {
+  margin-top: 40px;
 }
 #wrap .section-online-course .tab-view .lecture-data-list {
   margin-top: 40px;
@@ -4404,7 +4469,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-professor-home {
   overflow: hidden;
   position: relative;
-  top: -80px;
+  top: -81px;
   background-color: #F2EFE7;
 }
 #wrap .section-professor-home .professor-desc {
@@ -4421,9 +4486,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-professor-home .professor-desc .desc-subject {
   font-weight: 300;
   font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
-  color: #A07D3B;
+  color: #7A746A;
   font-size: 20px;
   line-height: 34px;
+  margin-top: 8px;
 }
 #wrap .section-professor-home .professor-profile {
   position: absolute;

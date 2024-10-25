@@ -33,7 +33,7 @@
 						height:100%;
 					}
 
-					&+.t-desc{margin-left:20px;}
+					&+.t-desc{margin-left:36px;}
 				}
 
 				.t-desc{
@@ -152,7 +152,11 @@
 					.price-box{
 						margin-left:auto;
 						.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
-						.price-before, .price-after{font-size:14px;}
+						.price-before, .price-sale, .price-after{font-size:14px;font-weight:600;}
+						.price-before{font-weight:400;}
+						.price-sale{margin-right:8px;color:$color-brown;}
+						.price-after{color:$color-black;}
+
 					}
 				}
 			}
@@ -206,7 +210,10 @@
 					display:flex;
 					dt,dd{font-size:14px;font-weight:400;line-height:23.8px;}
 					dt{width:48px;}
-					dd{margin-left:20px; @extend %textEllipsis;}
+					dd{
+						margin-left:20px; @extend %textEllipsis;
+						width:248px;
+					}
 				}
 			}
 		}

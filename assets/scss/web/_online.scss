@@ -1,7 +1,10 @@
 #wrap{
     // LEFT 인강
 	.section-online-course{
-		.lecture-data-list{margin-top:80px;}
+		.lecture-data-list{
+			margin-top:80px;
+			&+.action{margin-top:40px;}
+		}
         .tab-view{
             .lecture-data-list{margin-top:40px;}
         }
@@ -26,7 +29,6 @@
 
                 .price{width:355px;}
             }
-           
         }
 
         .tab-slide{
