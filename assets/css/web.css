@@ -442,6 +442,10 @@ q:before, q:after {
   content: none;
 }
 
+input:focus, select:focus, option:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
 .popup-dim {
   position: fixed;
   top: 0;
@@ -2608,6 +2612,9 @@ q:before, q:after {
     line-height: 23.8px;
   }
 }
+#wrap .grid .col.action {
+  margin-top: 0;
+}
 #wrap .btn {
   position: relative;
   display: flex;
@@ -3096,6 +3103,7 @@ q:before, q:after {
   top: 50%;
   z-index: 9;
   transform: translateY(-50%);
+  display: none;
 }
 #wrap #header .header-search .search-box .action {
   margin-top: 16px;
@@ -3314,6 +3322,7 @@ q:before, q:after {
   top: 50%;
   z-index: 9;
   transform: translateY(-50%);
+  display: none;
 }
 #wrap .section-search .search-box .action {
   margin-top: 16px;
@@ -3416,14 +3425,18 @@ q:before, q:after {
 #wrap .section-search-data .search-data-title {
   color: #A07D3B;
   font-size: 24px;
-  padding-right: 28px;
   margin-bottom: 20px;
 }
-#wrap .section-search-data .search-data-title {
+#wrap .section-search-data .search-data-title a {
+  color: #A07D3B;
+  font-size: 24px;
+  padding-right: 28px;
+}
+#wrap .section-search-data .search-data-title a {
   position: relative;
   display: inline-block;
 }
-#wrap .section-search-data .search-data-title::before {
+#wrap .section-search-data .search-data-title a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -3442,26 +3455,26 @@ q:before, q:after {
   border-right-width: 1px;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title::before {
+  #wrap .section-search-data .search-data-title a::before {
     width: 10px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title::before {
+  #wrap .section-search-data .search-data-title a::before {
     height: 10px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title::before {
+  #wrap .section-search-data .search-data-title a::before {
     margin-top: -5px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title::before {
+  #wrap .section-search-data .search-data-title a::before {
     right: 20px;
   }
 }
-#wrap .section-search-data .search-data-title:before {
+#wrap .section-search-data .search-data-title a:before {
   right: 0;
 }
 #wrap .section-search-data .search-data-list {
@@ -3503,7 +3516,7 @@ q:before, q:after {
   height: 100%;
 }
 #wrap .section-search-data .search-data-list .search-list .desc-box .t-img + .t-desc, #wrap .section-search-data .search-data-list .book-list .desc-box .t-img + .t-desc {
-  margin-left: 20px;
+  margin-left: 36px;
 }
 #wrap .section-search-data .search-data-list .search-list .desc-box .t-desc, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc {
   text-align: left;

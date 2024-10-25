@@ -30,6 +30,7 @@
 				.search-cancel{
 					position:absolute;right:0;top:50%;z-index:9;
 					transform: translateY(-50%);
+					display:none;
 				}
 			}
 
@@ -79,11 +80,16 @@
 		.search-data-title{
 			color:$color-brown;
 			font-size:24px;
-			padding-right:28px;
-			@include arrow(right, 10px, 10px, 1px, $color-brown);
 			margin-bottom:20px;
-			&:before{
-				right:0;
+
+			a{
+				color:$color-brown;
+				font-size:24px;
+				padding-right:28px;
+				@include arrow(right, 10px, 10px, 1px, $color-brown);
+				&:before{
+					right:0;
+				}
 			}
 		}
 
@@ -114,7 +120,7 @@
 							height:100%;
 						}
 
-						&+.t-desc{margin-left:20px;}
+						&+.t-desc{margin-left:36px;}
 					}
 
 

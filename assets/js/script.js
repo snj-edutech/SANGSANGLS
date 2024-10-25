@@ -50,7 +50,30 @@ function addEvent(){
 	fileUploadEvent();
 	toggleEvent();
 	selectEvent();
+
+	searchValueEvent('.header-search');
 	
+}
+
+function searchValueEvent($selector){
+	const $input = $($selector).find('input');
+    const $cancelBtn = $($selector).find(".search-cancel");
+
+    $input.on('input', toggleCancelBtn);
+	toggleCancelBtn();
+
+	function toggleCancelBtn(){
+		if ($input.val() === '') {
+            $cancelBtn.hide();
+        } else {
+            $cancelBtn.show();
+        }
+	}
+
+    $cancelBtn.on('click', function() {
+        $input.val('').focus();
+        $(this).hide();
+    });
 }
 
 function scrollMenuEvent(){

@@ -102,3 +102,7 @@ q {
         content: none;
     }
 }
+
+input:focus, select:focus, option:focus, textarea:focus, button:focus{
+	outline: none;
+}

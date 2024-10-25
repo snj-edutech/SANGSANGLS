@@ -113,7 +113,7 @@
 					<div class="search-box">
 						<div class="search-text">
 							<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
-							<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
+							<input type="text" id="pageSearchKeyword" name="pageSearchKeyword" placeholder="검색어를 입력해주세요" value="ㅇㅇㅇ"/>
 							<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
 							
 						</div> 
@@ -644,6 +644,7 @@
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
+		searchValueEvent('.section-search');
 	});
 </script>
 </body>
