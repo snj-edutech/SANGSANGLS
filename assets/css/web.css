@@ -4382,6 +4382,12 @@ q:before, q:after {
 #wrap .professor-content h3 + .holder {
   margin-top: 10px;
 }
+#wrap .professor-content .radio-select {
+  display: none;
+}
+#wrap .professor-content .radio-select.radio-select-1 {
+  display: table-row;
+}
 
 #wrap .section-customer-center .service-box {
   margin-bottom: 60px;

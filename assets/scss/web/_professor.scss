@@ -95,5 +95,10 @@
 		h3+.holder{
 			margin-top:10px;
 		}
+
+		.radio-select{
+			display:none;
+			&.radio-select-1{display:table-row;}
+		}
 	}
 }
