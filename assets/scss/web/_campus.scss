@@ -1,19 +1,7 @@
 #wrap{
 	.section-campus-content{
-		.lecture-data-list{
-			margin-top:80px;
-			&+.action{margin-top:40px;}
-		}
-		.tab-view{
-			.lecture-data-list{margin-top:40px;}
-			
-		}
-
-		.campusInfo-input{
+		.campus-reservation{
 			margin-top:40px;
-			h3{
-				padding-bottom:0;
-			}
 
 			.notice-text{
 				margin-top:10px;
@@ -21,8 +9,50 @@
 				strong{font-weight:600;}
 			}
 
-			.notice-input-table{
+			.campus-input-table{
 				margin-top:40px;
+				.table-row{
+					tr{
+						th{vertical-align:top;}
+						td{
+							.text{
+								margin:10px 0;
+								&.wide{width:280px;}
+							}
+
+							.input-box{
+								.form-control{
+									&+ .form-control{margin-left:8px;}
+								}
+			
+								.input-text-start{width:80px;margin:0;}
+								.text, .select{
+									width:120px;margin:0;
+								}
+			
+								.select{
+									&.wide{
+										width:160px;
+									}
+								}
+			
+								.text{
+									&.medium{width:160px;}
+								}
+								
+								
+							}
+			
+							.flex-group{
+								.input-box{
+									margin-top:0;margin-right:36px;
+									.input-text-start{width:auto;margin-right:8px;}
+			
+								}
+							}
+						}
+					}
+				}
 			}
 
 			.action{
@@ -32,13 +62,55 @@
 					position:absolute;left:0;top:0;
 				}
 			}
+
+			.notice-list-table{
+				.table-row{
+					tr{
+						th{font-weight:400;}
+						td{
+							.btn-reservation{
+								font-weight:400;font-size:13px;margin-left:20px;
+								&:hover{text-decoration:none;}
+							}
+							.reply{
+								display:flex;
+								justify-content: center;
+								.status{display:inline-block;width:77px;color:$color-brown;margin-right:8px;font-weight:600;}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.campus-reservation-result{
+			margin-top:40px;
+			background-color:$color-light-beige;
+			height:480px;
+			text-align:center;
+			padding:128px 0;
+			@include boxSizing(border-box);
+
+			.result-text{font-size:24px;margin-bottom:20px;}
+			.reservation-result-table{
+				width:600px;margin:0 auto;
+				th{text-align:left;}
+				td{
+					background-color:$color-white;text-align:left;
+					span{display:inline-block;margin-right:20px;}
+				}
+
+				&+.action{margin-top:40px;}
+			}
+
+
 		}
 
 		.campus-data-list{
 			margin-top:80px;
 		}
 
-		.campusInfo-guide-view{
+		.campus-guide-view{
 			margin-top:80px;
 			.box{
 				padding:40px 0;
@@ -63,7 +135,7 @@
 			}
 		}
 
-		.campusInfo-map{
+		.campus-map{
 			padding-top:120px;
 			border-top:1px solid $color-light-brown;
 

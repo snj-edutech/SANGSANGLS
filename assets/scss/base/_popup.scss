@@ -366,3 +366,20 @@
 		.select, .custom-select{width:552px;}
 	}
 }
+
+#popupReservation{
+	.table-row{
+		tr{
+			th,td{text-align:left !important;font-size:16px !important;}
+			td{
+				border-left: 1px solid $color-light-brown;
+			}
+
+			th{
+				&.border-left-line{
+					border-left: 1px solid $color-light-brown;
+				}
+			}
+		}
+	}
+}

@@ -1116,6 +1116,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 552px;
 }
 
+#popupReservation .table-row tr th, #popupReservation .table-row tr td {
+  text-align: left !important;
+  font-size: 16px !important;
+}
+#popupReservation .table-row tr td {
+  border-left: 1px solid #E4DED3;
+}
+#popupReservation .table-row tr th.border-left-line {
+  border-left: 1px solid #E4DED3;
+}
+
 .dim {
   position: fixed;
   top: 0;
@@ -2333,6 +2344,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   align-items: center;
 }
 #wrap .radio-box {
+  display: flex;
+  align-items: center;
+}
+#wrap .flex-group {
   display: flex;
   align-items: center;
 }
@@ -5200,65 +5215,140 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #7A746A;
 }
 
-#wrap .section-campus-content .lecture-data-list {
-  margin-top: 80px;
-}
-#wrap .section-campus-content .lecture-data-list + .action {
+#wrap .section-campus-content .campus-reservation {
   margin-top: 40px;
 }
-#wrap .section-campus-content .tab-view .lecture-data-list {
-  margin-top: 40px;
-}
-#wrap .section-campus-content .campusInfo-input {
-  margin-top: 40px;
-}
-#wrap .section-campus-content .campusInfo-input h3 {
-  padding-bottom: 0;
-}
-#wrap .section-campus-content .campusInfo-input .notice-text {
+#wrap .section-campus-content .campus-reservation .notice-text {
   margin-top: 10px;
   font-size: 14px;
   line-height: 23.8px;
   color: #2C2923;
   font-weight: 400;
 }
-#wrap .section-campus-content .campusInfo-input .notice-text strong {
+#wrap .section-campus-content .campus-reservation .notice-text strong {
   font-weight: 600;
 }
-#wrap .section-campus-content .campusInfo-input .notice-input-table {
+#wrap .section-campus-content .campus-reservation .campus-input-table {
   margin-top: 40px;
 }
-#wrap .section-campus-content .campusInfo-input .action {
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr th {
+  vertical-align: top;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .text {
+  margin: 10px 0;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .text.wide {
+  width: 280px;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .form-control + .form-control {
+  margin-left: 8px;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .input-text-start {
+  width: 80px;
+  margin: 0;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .text, #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .select {
+  width: 120px;
+  margin: 0;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .select.wide {
+  width: 160px;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .text.medium {
+  width: 160px;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .flex-group .input-box {
+  margin-top: 0;
+  margin-right: 36px;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .flex-group .input-box .input-text-start {
+  width: auto;
+  margin-right: 8px;
+}
+#wrap .section-campus-content .campus-reservation .action {
   position: relative;
   margin-top: 40px;
 }
-#wrap .section-campus-content .campusInfo-input .action .btn-online {
+#wrap .section-campus-content .campus-reservation .action .btn-online {
   position: absolute;
   left: 0;
   top: 0;
 }
+#wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr th {
+  font-weight: 400;
+}
+#wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr td .btn-reservation {
+  font-weight: 400;
+  font-size: 13px;
+  margin-left: 20px;
+}
+#wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr td .btn-reservation:hover {
+  text-decoration: none;
+}
+#wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr td .reply {
+  display: flex;
+  justify-content: center;
+}
+#wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr td .reply .status {
+  display: inline-block;
+  width: 77px;
+  color: #A07D3B;
+  margin-right: 8px;
+  font-weight: 600;
+}
+#wrap .section-campus-content .campus-reservation-result {
+  margin-top: 40px;
+  background-color: #FBFAF6;
+  height: 480px;
+  text-align: center;
+  padding: 128px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrap .section-campus-content .campus-reservation-result .result-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#wrap .section-campus-content .campus-reservation-result .reservation-result-table {
+  width: 600px;
+  margin: 0 auto;
+}
+#wrap .section-campus-content .campus-reservation-result .reservation-result-table th {
+  text-align: left;
+}
+#wrap .section-campus-content .campus-reservation-result .reservation-result-table td {
+  background-color: #FFFFFC;
+  text-align: left;
+}
+#wrap .section-campus-content .campus-reservation-result .reservation-result-table td span {
+  display: inline-block;
+  margin-right: 20px;
+}
+#wrap .section-campus-content .campus-reservation-result .reservation-result-table + .action {
+  margin-top: 40px;
+}
 #wrap .section-campus-content .campus-data-list {
   margin-top: 80px;
 }
-#wrap .section-campus-content .campusInfo-guide-view {
+#wrap .section-campus-content .campus-guide-view {
   margin-top: 80px;
 }
-#wrap .section-campus-content .campusInfo-guide-view .box {
+#wrap .section-campus-content .campus-guide-view .box {
   padding: 40px 0;
   border-top: 1px solid #E4DED3;
   display: flex;
   flex-wrap: wrap;
 }
-#wrap .section-campus-content .campusInfo-guide-view .box .subject {
+#wrap .section-campus-content .campus-guide-view .box .subject {
   width: 270px;
 }
-#wrap .section-campus-content .campusInfo-guide-view .box .subject p {
+#wrap .section-campus-content .campus-guide-view .box .subject p {
   font-size: 16px;
   font-weight: 400;
   line-height: 27.24px;
   color: #2C2923;
 }
-#wrap .section-campus-content .campusInfo-guide-view .box .subject strong {
+#wrap .section-campus-content .campus-guide-view .box .subject strong {
   display: block;
   font-size: 24px;
   line-height: 40.8px;
@@ -5266,71 +5356,71 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 10px;
   color: #A07D3B;
 }
-#wrap .section-campus-content .campusInfo-guide-view .box .desc {
+#wrap .section-campus-content .campus-guide-view .box .desc {
   width: 788px;
   margin-left: auto;
 }
-#wrap .section-campus-content .campusInfo-map {
+#wrap .section-campus-content .campus-map {
   padding-top: 120px;
   border-top: 1px solid #E4DED3;
 }
-#wrap .section-campus-content .campusInfo-map .map-info {
+#wrap .section-campus-content .campus-map .map-info {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport {
+#wrap .section-campus-content .campus-map .map-info .transport {
   width: 582px;
   display: flex;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl {
+#wrap .section-campus-content .campus-map .map-info .transport dl {
   display: flex;
   margin-left: 36px;
   padding-right: 34px;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl:first-child {
+#wrap .section-campus-content .campus-map .map-info .transport dl:first-child {
   margin-left: 0;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dt {
+#wrap .section-campus-content .campus-map .map-info .transport dl dt {
   width: 60px;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd {
   width: 159px;
   margin-left: 20px;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd strong {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd strong {
   font-weight: 600;
   color: #2C2923;
   font-size: 16px;
   line-height: 27.2px;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd strong.exit {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd strong.exit {
   font-size: 14px;
   line-height: 23.8px;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd p {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd p {
   margin-bottom: 8px;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd > div {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd > div {
   display: flex;
   font-size: 14px;
   line-height: 23.8px;
   font-weight: 400;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd > div .badge {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd > div .badge {
   color: #FFFFFC;
   border: none;
   margin-right: 8px;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd > div .badge.pink {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd > div .badge.pink {
   background-color: #F6607B;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd > div .badge.green {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd > div .badge.green {
   background: #61A855;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd > div .badge.blue {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd > div .badge.blue {
   background: #2B7DDD;
 }
-#wrap .section-campus-content .campusInfo-map .map-info .transport dl dd > div .badge.red {
+#wrap .section-campus-content .campus-map .map-info .transport dl dd > div .badge.red {
   background: #EB5252;
 }/*# sourceMappingURL=web.css.map */
