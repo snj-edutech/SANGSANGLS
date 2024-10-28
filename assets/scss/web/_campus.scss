@@ -6,13 +6,39 @@
 		}
 		.tab-view{
 			.lecture-data-list{margin-top:40px;}
+			
+		}
+
+		.campusInfo-input{
+			margin-top:40px;
+			h3{
+				padding-bottom:0;
+			}
+
+			.notice-text{
+				margin-top:10px;
+				font-size:14px;line-height:23.8px;color:$color-black;font-weight:400;
+				strong{font-weight:600;}
+			}
+
+			.notice-input-table{
+				margin-top:40px;
+			}
+
+			.action{
+				position:relative;
+				margin-top:40px;
+				.btn-online{
+					position:absolute;left:0;top:0;
+				}
+			}
 		}
 
 		.campus-data-list{
 			margin-top:80px;
 		}
 
-		.campusInfo-view{
+		.campusInfo-guide-view{
 			margin-top:80px;
 			.box{
 				padding:40px 0;

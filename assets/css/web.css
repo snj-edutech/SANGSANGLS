@@ -5209,28 +5209,56 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-campus-content .tab-view .lecture-data-list {
   margin-top: 40px;
 }
+#wrap .section-campus-content .campusInfo-input {
+  margin-top: 40px;
+}
+#wrap .section-campus-content .campusInfo-input h3 {
+  padding-bottom: 0;
+}
+#wrap .section-campus-content .campusInfo-input .notice-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 23.8px;
+  color: #2C2923;
+  font-weight: 400;
+}
+#wrap .section-campus-content .campusInfo-input .notice-text strong {
+  font-weight: 600;
+}
+#wrap .section-campus-content .campusInfo-input .notice-input-table {
+  margin-top: 40px;
+}
+#wrap .section-campus-content .campusInfo-input .action {
+  position: relative;
+  margin-top: 40px;
+}
+#wrap .section-campus-content .campusInfo-input .action .btn-online {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 #wrap .section-campus-content .campus-data-list {
   margin-top: 80px;
 }
-#wrap .section-campus-content .campusInfo-view {
+#wrap .section-campus-content .campusInfo-guide-view {
   margin-top: 80px;
 }
-#wrap .section-campus-content .campusInfo-view .box {
+#wrap .section-campus-content .campusInfo-guide-view .box {
   padding: 40px 0;
   border-top: 1px solid #E4DED3;
   display: flex;
   flex-wrap: wrap;
 }
-#wrap .section-campus-content .campusInfo-view .box .subject {
+#wrap .section-campus-content .campusInfo-guide-view .box .subject {
   width: 270px;
 }
-#wrap .section-campus-content .campusInfo-view .box .subject p {
+#wrap .section-campus-content .campusInfo-guide-view .box .subject p {
   font-size: 16px;
   font-weight: 400;
   line-height: 27.24px;
   color: #2C2923;
 }
-#wrap .section-campus-content .campusInfo-view .box .subject strong {
+#wrap .section-campus-content .campusInfo-guide-view .box .subject strong {
   display: block;
   font-size: 24px;
   line-height: 40.8px;
@@ -5238,7 +5266,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 10px;
   color: #A07D3B;
 }
-#wrap .section-campus-content .campusInfo-view .box .desc {
+#wrap .section-campus-content .campusInfo-guide-view .box .desc {
   width: 788px;
   margin-left: auto;
 }
