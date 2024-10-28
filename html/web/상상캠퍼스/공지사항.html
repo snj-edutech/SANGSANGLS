@@ -114,8 +114,8 @@
 						<div class="tab-menu-small">
 							<ul>
 								<li><a href="javascript:;">홈</a></li>
-								<li class="active"><a href="javascript:;">학원시간표</a></li>
-								<li><a href="javascript:;">공지사항</a></li>
+								<li><a href="javascript:;">학원시간표</a></li>
+								<li  class="active"><a href="javascript:;">공지사항</a></li>
 								<li><a href="javascript:;">배치상담예약</a></li>
 								<li><a href="javascript:;">방문상담예약</a></li>
 								<li><a href="javascript:;">캠퍼스정보</a></li>
@@ -126,834 +126,108 @@
 			</div>
 			<div class="section-campus-content">
 				<div class="wrap">
-					<div class="tab-box">
-						<div class="tab-menu">
-							<ul>
-								<li class="active"><a href="javascript:;">전체</a></li>
-								<li><a href="javascript:;">프로그램</a></li>
-								<li><a href="javascript:;">LEET</a></li>
-								<li><a href="javascript:;">POST-LEET</a></li>
-								<li><a href="javascript:;">특강</a></li>
-							</ul>
+					<div class="campus-data-list">
+						<h3>
+							공지사항
+							<div class="search-input-box">
+								<div class="search-text">
+									<input type="text" id="txtSearch" name="txtSearch" placeholder="검색">
+									<a href="javascript:;" class="search-input-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색"></a>
+								</div> 
+							</div>
+						</h3>
+
+						<div class="notice-list-table">
+							<table class="table-row ">
+								<colgroup>
+									<col style="width:80px">
+									<col style="width:auto">
+									<col style="width:120px">
+									<col style="width:140px">
+								</colgroup>
+								<tr>
+									<th>번호</th>
+									<th>제목</th>
+									<th>첨부파일</th>
+									<th>작성일</th>
+								</tr>
+								<tr>
+									<td><span class="badge badge-brown">중요</span></td>
+									<td class="link"><a href="javscript:;"  >[공지] 2023년 5월 김재형 교수님 학습Q&A 답변 지연 안내</a></td>
+									<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
+									<td class="date">YYYY-MM-DD</td>											
+								</tr>
+								<tr>
+									<td><span class="badge badge-brown">중요</span></td>
+									<td class="link"><a href="javscript:;"  >[공지] 2023 김재형T LEET 추리논증 기출개론 강좌 휴강 일정 안내</a></td>
+									<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
+									<td class="date">YYYY-MM-DD</td>											
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >[EVENT] 김재형교수님 기출해설 무료특강 안내(호버시)<span class="icon-new">N</span></a></td>
+									<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
+									<td class="date">YYYY-MM-DD</td>										
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >[EVENT] 이론강좌 수강생_전개년 기출특강 30% 할인<span class="icon-new">N</span></a></td>
+									<td></td>
+									<td class="date">YYYY-MM-DD</td>										
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >[25대비] 김재형 교수님 기본과정 교재 안내<span class="icon-new">N</span></a></td>
+									<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
+									<td class="date">YYYY-MM-DD</td>										
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >김재형 교수님 적용 강좌 업로드일정</a></td>
+									<td></td>
+									<td class="date">YYYY-MM-DD</td>										
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >김재형 교수님 적용 강좌 업로드일정</a></td>
+									<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
+									<td class="date">YYYY-MM-DD</td>										
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >김재형 교수님 적용 강좌 업로드일정</a></td>
+									<td></td>
+									<td class="date">YYYY-MM-DD</td>										
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >김재형 교수님 적용 강좌 업로드일정</a></td>
+									<td><a href="javscript:;"><img src="../../../assets/images/btn_file.svg" alt="강의자료" /></a></td>
+									<td class="date">YYYY-MM-DD</td>											
+								</tr>
+								<tr>
+									<td>9,999</td>
+									<td class="link"><a href="javscript:;"  >김재형 교수님 적용 강좌 업로드일정</a></td>
+									<td></td>
+									<td class="date">YYYY-MM-DD</td>											
+								</tr>
+							</table>
 						</div>
 
-						<div class="tab-view active">
-							<div class="select-box">
-								<div class="custom-select small">
-									<div class="selected">
-									  <div class="selected-value">전체</div>
-									  <div class="arrow"></div>
-									</div>
-									<ul>
-									  <li class="option">선택1</li>
-									  <li class="option">선택2</li>
-									  <li class="option">선택3</li>
-									  <li class="option">선택4</li>
-									</ul>
-								</div>
-								<div class="form-control">
-									<input type="text" class="text" placeholder="검색어를 입력하세요" />
-								</div>
-								<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
-							</div>
-
-							<div class="lecture-data-list">
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>LEET 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge">접수대기</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_1" class="checkbox">
-													<label for="checkboxA1_1">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>면접 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-brown">접수중</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_2" class="checkbox">
-													<label for="checkboxA1_2">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-black">마감임박</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_3" class="checkbox">
-													<label for="checkboxA1_3">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-light-gray">마감</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_4" class="checkbox">
-													<label for="checkboxA1_4">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-		
-							<div class="action">
-								<a href="javascript:;" class="btn large">장바구니</a>
-								<a href="javascript:;" class="btn large btn-brown">바로결제</a>
-							</div>
+						<div class="pagination">
+							<a href="javascript:;" class="control control-prev"><span>이전페이지</span></a>
+							<a href="javascript:;" class="active"><span>1</span></a>
+							<a href="javascript:;"><span>2</span></a>
+							<a href="javascript:;"><span>3</span></a>
+							<a href="javascript:;"><span>4</span></a>
+							<a href="javascript:;"><span>5</span></a>
+							<a href="javascript:;"><span>6</span></a>
+							<a href="javascript:;"><span>7</span></a>
+							<a href="javascript:;"><span>8</span></a>
+							<a href="javascript:;"><span>9</span></a>
+							<a href="javascript:;"><span>10</span></a>
+							<a href="javascript:;" class="control control-next"><span>다음페이지</span></a>
 						</div>
-
-						<div class="tab-view">
-							<div class="lecture-data-list">
-								<div class="grid course-list">
-									<div class="col subject">프로그램</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)[25대비] Post-LEET 자기소개서반 (시간개별협의)[25대비] Post-LEET 자기소개서반 (시간개별협의)[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>LEET 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge">접수대기</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_1" class="checkbox">
-													<label for="checkboxA1_1">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">프로그램</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>면접 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-brown">접수중</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_2" class="checkbox">
-													<label for="checkboxA1_2">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">프로그램</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-black">마감임박</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_3" class="checkbox">
-													<label for="checkboxA1_3">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">프로그램</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-light-gray">마감</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_4" class="checkbox">
-													<label for="checkboxA1_4">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-		
-							<div class="action">
-								<a href="javascript:;" class="btn large">장바구니</a>
-								<a href="javascript:;" class="btn large btn-brown">바로결제</a>
-							</div>
-						</div>
-
-						<div class="tab-view ">
-							<div class="category-box">
-								<div class="category-list">
-									<ul>
-										<li class="active"><a href="javascript:;">전체</a></li>
-										<li><a href="javascript:;">언어이해</a></li>
-										<li><a href="javascript:;">추리논증</a></li>
-										<li><a href="javascript:;">논술</a></li>
-										<li><a href="javascript:;">상상법학관</a></li>
-									</ul>
-								</div>
-		
-							</div>
-
-							<div class="lecture-data-list">
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>LEET 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge">접수대기</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_1" class="checkbox">
-													<label for="checkboxA1_1">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>면접 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-brown">접수중</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_2" class="checkbox">
-													<label for="checkboxA1_2">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-black">마감임박</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_3" class="checkbox">
-													<label for="checkboxA1_3">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-light-gray">마감</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_4" class="checkbox">
-													<label for="checkboxA1_4">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-		
-							<div class="action">
-								<a href="javascript:;" class="btn large">장바구니</a>
-								<a href="javascript:;" class="btn large btn-brown">바로결제</a>
-							</div>
-
-						</div>
-
-						<div class="tab-view ">
-							<div class="category-box">
-								<div class="category-list">
-									<ul>
-										<li class="active"><a href="javascript:;">전체</a></li>
-										<li><a href="javascript:;">LEET대비 법학</a></li>
-										<li><a href="javascript:;">자기소개서</a></li>
-										<li><a href="javascript:;">면접</a></li>
-										<li><a href="javascript:;">로스쿨 선행</a></li>
-									</ul>
-								</div>
-		
-							</div>
-
-							<div class="lecture-data-list">
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>LEET 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge">접수대기</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_1" class="checkbox">
-													<label for="checkboxA1_1">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>면접 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-brown">접수중</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_2" class="checkbox">
-													<label for="checkboxA1_2">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-black">마감임박</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_3" class="checkbox">
-													<label for="checkboxA1_3">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">LEET</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-light-gray">마감</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_4" class="checkbox">
-													<label for="checkboxA1_4">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-		
-							<div class="action">
-								<a href="javascript:;" class="btn large">장바구니</a>
-								<a href="javascript:;" class="btn large btn-brown">바로결제</a>
-							</div>
-
-						</div>
-
-						<div class="tab-view">
-							<div class="lecture-data-list">
-								<div class="grid course-list">
-									<div class="col subject">특강</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>LEET 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge">접수대기</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_1" class="checkbox">
-													<label for="checkboxA1_1">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">특강</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>면접 김재형</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-brown">접수중</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_2" class="checkbox">
-													<label for="checkboxA1_2">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<div class="price-before">99,999,999원</div>
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">특강</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-black">마감임박</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_3" class="checkbox">
-													<label for="checkboxA1_3">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="grid course-list">
-									<div class="col subject">특강</div>
-									<div class="col desc-box">
-										<div class="t-desc">
-											<div class="desc-title"><a href="javascript:;" >[25대비] Post-LEET 자기소개서반 (시간개별협의)</a></div>     
-											<div class="desc-text">
-												<p>프로그램</p>
-											</div>
-											<div class="desc-btn">
-												<a href="javascript:;" class="btn">강좌정보</a>
-											</div>
-										</div>
-										<div class="t-schedule">
-											<span class="badge badge-light-gray">마감</span>
-											<p>
-												월,화,수,목,금<br/>
-												07.29(월) ~ 09.27(금)
-											</p>
-										</div>
-									</div>
-									<div class="col price">
-										<div>
-											<div class="form-control">
-												<div class="fake-checkbox">
-													<input type="checkbox" id="checkboxA1_4" class="checkbox">
-													<label for="checkboxA1_4">수강료</label>
-												</div>
-											</div>
-											<div class="price-box">
-												<!-- <div class="price-before">999,999원</div> -->
-												<div class="price-after">99,999,999원</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-		
-							<div class="action">
-								<a href="javascript:;" class="btn large">장바구니</a>
-								<a href="javascript:;" class="btn large btn-brown">바로결제</a>
-							</div>
-						</div>
-
 					</div>
 				</div>
 			</div>

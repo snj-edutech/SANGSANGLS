@@ -32,18 +32,6 @@ function create(){
 }
 
 function addEvent(){
-    // _w.on("resize", resizeEvent);
-    // resizeEvent();
-    // //menuEvent();
-    // formEvent();
-    // listToggle();
-    // slickSlide();
-    // tabEvent('.tab-box');
-
-    // pcMenu();
-    // mobileMenu();
-
-
 	headerEvent();
 	pageMove('.page-move');
     pageMove('.page-move2', -50);
@@ -52,6 +40,7 @@ function addEvent(){
 	selectEvent();
 
 	searchValueEvent('.header-search');
+	categoryListEvent();
 	
 }
 
@@ -426,95 +415,9 @@ function selectEvent(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function resizeEvent(){
-    _wid = _w.width();
-
-    resetMenu();
-
-    $('.responsive').each(function() {
-        var $src = $(this).attr("src");
-        var val = (_wid > _breakpoint) ? $src.replace('mobile', 'pc') : $src.replace('pc', 'mobile');
-
-        $(this).attr("src", val);
-    });
+function categoryListEvent(){
+	$(".category-list").find("li").on("click", function(){
+		$(this).toggleClass('active');
+	});
+	
 }
-
-function resetMenu(){
-    _wrap.removeClass('open');
-}
-
-function menuEvent($wid){
-    var deskStart = $wid > _breakpointDesktop;
-
-    if ( !isMobile && deskStart ) {
-        // console.log('pc');
-        pcMenu();
-    } else {
-        // console.log('mobile');
-        mobileMenu();
-    }
-}
-
-function mobileMenu(){
-    $('[data-mobile-menu]').on('click', function(e){
-        e.preventDefault();
-        _wrap.toggleClass('open');
-    });
-
-    $('[data-sub-menu] > a').on('click', function(e){
-        var _target =  $(this).parent();
-
-        e.preventDefault();
-        _target.toggleClass('unfold').siblings().removeClass('unfold');
-    });
-}
-
-function pcMenu(){
-    $('[data-sub-menu]').on('mouseenter', function(){
-        $(this).addClass('unfold').siblings().removeClass('unfold');
-    }).on('mouseleave', function(){
-        $(this).removeClass('unfold');
-    });
-}
-
-
-
-
-
-
-function listToggle(){
-    $('[data-toggle]').on('click', function(){
-        var _idx = $(this).index(),
-             controls = $('.util-control').children('a'),
-             _data = $(this).data('toggle');
-
-        // console.log(_idx, _data);
-
-        if( _data == 'thumb' ){
-            $('.board-list').addClass('board-list-thumb');
-        } else {
-            $('.board-list').removeClass('board-list-thumb');
-        }
-
-        controls.each(function(){
-            $(this).children('img').attr('src', $(this).children('img').attr('src').replace('_on', '_off'));
-        });
-        controls.eq(_idx).children('img').attr('src', controls.eq(_idx).children('img').attr('src').replace('_off', '_on'));
-    });
-}
-
-
