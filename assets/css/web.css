@@ -1810,6 +1810,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .tab-box .tab-menu ul.fixed {
   position: fixed;
   padding-top: 8px;
+  background-color: #FFFFFC;
 }
 #wrap .tab-box .tab-menu ul li a {
   border: none;
@@ -3443,46 +3444,31 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 0;
   text-indent: -9999px;
 }
-#wrap .section-search-result {
+#wrap .section-search-content .search-data-result {
   padding: 0px 0 60px;
   color: #2C2923;
   font-size: 28px;
   font-weight: 600;
   text-align: center;
 }
-#wrap .section-search-result strong {
+#wrap .section-search-content .search-data-result strong {
   font-weight: 600;
 }
-#wrap .section-search-nodata .search-nodata-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FBFAF6;
-  height: 480px;
-  text-align: center;
-}
-#wrap .section-search-nodata .search-nodata-box p {
-  margin-top: 16px;
-  color: #7A746A;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27.2px;
-}
-#wrap .section-search-data .search-data-title {
+#wrap .section-search-content .search-data-title {
   color: #A07D3B;
   font-size: 24px;
   margin-bottom: 20px;
 }
-#wrap .section-search-data .search-data-title a {
+#wrap .section-search-content .search-data-title a {
   color: #A07D3B;
   font-size: 24px;
   padding-right: 28px;
 }
-#wrap .section-search-data .search-data-title a {
+#wrap .section-search-content .search-data-title a {
   position: relative;
   display: inline-block;
 }
-#wrap .section-search-data .search-data-title a::before {
+#wrap .section-search-content .search-data-title a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -3501,44 +3487,44 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-right-width: 1px;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title a::before {
+  #wrap .section-search-content .search-data-title a::before {
     width: 10px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title a::before {
+  #wrap .section-search-content .search-data-title a::before {
     height: 10px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title a::before {
+  #wrap .section-search-content .search-data-title a::before {
     margin-top: -5px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-title a::before {
+  #wrap .section-search-content .search-data-title a::before {
     right: 20px;
   }
 }
-#wrap .section-search-data .search-data-title a:before {
+#wrap .section-search-content .search-data-title a:before {
   right: 0;
 }
-#wrap .section-search-data .search-data-list {
+#wrap .section-search-content .search-data-list {
   margin-bottom: 120px;
 }
-#wrap .section-search-data .search-data-list:last-child {
+#wrap .section-search-content .search-data-list:last-child {
   margin-bottom: 0;
 }
-#wrap .section-search-data .search-data-list .search-list .subject, #wrap .section-search-data .search-data-list .book-list .subject {
+#wrap .section-search-content .search-data-list .search-list .subject, #wrap .section-search-content .search-data-list .book-list .subject {
   width: 120px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box, #wrap .section-search-data .search-data-list .book-list .desc-box {
+#wrap .section-search-content .search-data-list .search-list .desc-box, #wrap .section-search-content .search-data-list .book-list .desc-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 910px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-img, #wrap .section-search-data .search-data-list .book-list .desc-box .t-img {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-img, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3548,26 +3534,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   overflow: hidden;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-list .search-list .desc-box .t-img, #wrap .section-search-data .search-data-list .book-list .desc-box .t-img {
+  #wrap .section-search-content .search-data-list .search-list .desc-box .t-img, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
     width: 72px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-list .search-list .desc-box .t-img, #wrap .section-search-data .search-data-list .book-list .desc-box .t-img {
+  #wrap .section-search-content .search-data-list .search-list .desc-box .t-img, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
     height: 72px;
   }
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-img img, #wrap .section-search-data .search-data-list .book-list .desc-box .t-img img {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-img img, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img img {
   width: 100%;
   height: 100%;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-img + .t-desc, #wrap .section-search-data .search-data-list .book-list .desc-box .t-img + .t-desc {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-img + .t-desc, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img + .t-desc {
   margin-left: 36px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc {
   text-align: left;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-title, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-title {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-title, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-title {
   position: relative;
   display: inline-block;
   font-size: 18px;
@@ -3575,16 +3561,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
   line-height: 27px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-title:hover a, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-title:hover a {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-title:hover a, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-title:hover a {
   border-bottom: 2px solid #2C2923;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-text, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-text {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-text, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-text {
   font-size: 13px;
   color: #2C2923;
   line-height: 22.1px;
   display: flex;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-text p, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-text p {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-text p, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-text p {
   margin-top: 4px;
   position: relative;
   display: inline-block;
@@ -3592,13 +3578,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-right: 8px;
   vertical-align: middle;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-text p strong, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-text p strong {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-text p strong, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-text p strong {
   display: inline-block;
   font-weight: 600;
   color: #A07D3B;
   margin-left: 4px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-text p:after, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-text p:after {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-text p:after, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-text p:after {
   content: "";
   width: 1px;
   height: 12px;
@@ -3608,61 +3594,76 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   margin-top: -6px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-text p:last-child:after, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-text p:last-child:after {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-text p:last-child:after, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-text p:last-child:after {
   display: none;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-btn, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-btn {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-btn, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-btn {
   margin-top: 8px;
   display: flex;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-btn .btn, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-btn .btn {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-btn .btn, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-btn .btn {
   margin-left: 0.6944444444vw;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-btn .btn, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-btn .btn {
+  #wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-btn .btn, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-btn .btn {
     margin-left: 5px;
   }
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-btn .btn:first-child, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-btn .btn:first-child {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-btn .btn:first-child, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-btn .btn:first-child {
   margin-left: 0;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-lecture, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-lecture {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-lecture, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-lecture {
   margin-top: 20px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-lecture p, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-lecture p {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-lecture p, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-lecture p {
   font-size: 13px;
   line-height: 22.1px;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-desc .desc-lecture p a:hover, #wrap .section-search-data .search-data-list .book-list .desc-box .t-desc .desc-lecture p a:hover {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-lecture p a:hover, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-lecture p a:hover {
   border-bottom: 1px solid #2C2923;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-name, #wrap .section-search-data .search-data-list .book-list .desc-box .t-name {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-name, #wrap .section-search-content .search-data-list .book-list .desc-box .t-name {
   width: 80px;
   margin-left: auto;
 }
-#wrap .section-search-data .search-data-list .search-list .desc-box .t-schedule, #wrap .section-search-data .search-data-list .book-list .desc-box .t-schedule {
+#wrap .section-search-content .search-data-list .search-list .desc-box .t-schedule, #wrap .section-search-content .search-data-list .book-list .desc-box .t-schedule {
   width: 160px;
   margin-left: auto;
 }
-#wrap .section-search-data .search-data-list .search-list .action, #wrap .section-search-data .search-data-list .book-list .action {
+#wrap .section-search-content .search-data-list .search-list .action, #wrap .section-search-content .search-data-list .book-list .action {
   width: 171px;
 }
-#wrap .section-search-data .search-data-list .book-list .desc-box {
+#wrap .section-search-content .search-data-list .book-list .desc-box {
   justify-content: flex-start;
 }
-#wrap .section-search-data .search-data-list .book-list .desc-box .t-img {
+#wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
   width: 23.3333333333vw;
   height: 23.3333333333vw;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-list .book-list .desc-box .t-img {
+  #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
     width: 168px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-search-data .search-data-list .book-list .desc-box .t-img {
+  #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
     height: 168px;
   }
+}
+#wrap .section-search-content .search-nodata-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBFAF6;
+  height: 480px;
+  text-align: center;
+}
+#wrap .section-search-content .search-nodata-box p {
+  margin-top: 16px;
+  color: #7A746A;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
 }
 
 #wrap .lecture-data-title {
@@ -4116,60 +4117,60 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-lecture .action {
   padding-bottom: 12px;
 }
-#wrap .section-menu .tab-view {
+#wrap .section-lecture-content .tab-view {
   padding-top: 60px;
 }
-#wrap .section-menu .lecture-content {
+#wrap .section-lecture-content .lecture-content {
   margin-top: 120px;
 }
-#wrap .section-menu .lecture-content:first-child {
+#wrap .section-lecture-content .lecture-content:first-child {
   margin-top: 0;
 }
-#wrap .section-menu .lecture-content .lecture-title {
+#wrap .section-lecture-content .lecture-content .lecture-title {
   font-size: 24px;
   font-weight: 600;
   color: #A07D3B;
   padding-bottom: 20px;
 }
-#wrap .section-menu .lecture-content .lecture-intro {
+#wrap .section-lecture-content .lecture-content .lecture-intro {
   padding-top: 20px;
   border-top: 1px solid #E4DED3;
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
 }
-#wrap .section-menu .lecture-content .lecture-intro strong {
+#wrap .section-lecture-content .lecture-content .lecture-intro strong {
   font-weight: 600;
 }
-#wrap .section-menu .lecture-content .lecture-intro dl {
+#wrap .section-lecture-content .lecture-content .lecture-intro dl {
   margin-bottom: 40px;
 }
-#wrap .section-menu .lecture-content .lecture-intro dl:last-child {
+#wrap .section-lecture-content .lecture-content .lecture-intro dl:last-child {
   margin-bottom: 0px;
 }
-#wrap .section-menu .lecture-content .lecture-intro dl dt, #wrap .section-menu .lecture-content .lecture-intro dl dd {
+#wrap .section-lecture-content .lecture-content .lecture-intro dl dt, #wrap .section-lecture-content .lecture-content .lecture-intro dl dd {
   font-size: 16px;
   line-height: 27.2px;
 }
-#wrap .section-menu .lecture-content .lecture-intro dl dt {
+#wrap .section-lecture-content .lecture-content .lecture-intro dl dt {
   font-weight: 600;
 }
-#wrap .section-menu .lecture-content .lecture-intro dl dd {
+#wrap .section-lecture-content .lecture-content .lecture-intro dl dd {
   font-weight: 400;
 }
-#wrap .section-menu .lecture-content .lecture-intro .img {
+#wrap .section-lecture-content .lecture-content .lecture-intro .img {
   margin-top: 20px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .subject, #wrap .section-menu .lecture-content .lecture-data-list .course-list .subject {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .subject, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .subject {
   width: 120px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 880px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4179,26 +4180,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   overflow: hidden;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img {
+  #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     width: 168px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img {
+  #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     height: 168px;
   }
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-img img, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img img {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img img, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img img {
   width: 100%;
   height: 100%;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-img + .t-desc, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img + .t-desc {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img + .t-desc, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img + .t-desc {
   margin-left: 36px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc {
   text-align: left;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-title, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-title {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-title, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-title {
   position: relative;
   display: inline-block;
   font-size: 18px;
@@ -4206,39 +4207,39 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
   line-height: 27px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-title:hover a, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-title:hover a {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-title:hover a, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-title:hover a {
   border-bottom: 2px solid #2C2923;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info {
   font-size: 14px;
   color: #2C2923;
   line-height: 23.8px;
   margin-top: 20px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p {
   margin-top: 4px;
   font-weight: 400;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p:first-child, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p:first-child {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p:first-child, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p:first-child {
   margin-top: 0;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p span, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p span {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p span, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p span {
   display: inline-block;
   width: 40px;
   text-align: left;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p strong, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p strong {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-info p strong, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-info p strong {
   display: inline-block;
   font-weight: 600;
   margin-left: 24px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text {
   font-size: 13px;
   color: #2C2923;
   line-height: 22.1px;
   display: flex;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p {
   margin-top: 4px;
   position: relative;
   display: inline-block;
@@ -4246,13 +4247,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-right: 8px;
   vertical-align: middle;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p strong, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p strong {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p strong, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p strong {
   display: inline-block;
   font-weight: 600;
   color: #A07D3B;
   margin-left: 4px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p:after, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p:after {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p:after, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p:after {
   content: "";
   width: 1px;
   height: 12px;
@@ -4262,76 +4263,76 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   margin-top: -6px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p:last-child:after, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p:last-child:after {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-text p:last-child:after, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-text p:last-child:after {
   display: none;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn {
   margin-top: 8px;
   display: flex;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
   margin-left: 0.6944444444vw;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
+  #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
     margin-left: 5px;
   }
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn:first-child, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn:first-child {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn:first-child, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn:first-child {
   margin-left: 0;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .desc-box .t-name, #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-name {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-name, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-name {
   width: 80px;
   margin-left: auto;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .price, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price {
   width: 320px;
   display: flex;
   align-items: center;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-subject, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-subject {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-subject, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-subject {
   width: 40px;
   font-size: 14px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-box, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-box {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box {
   margin-left: auto;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-box .badge, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-box .badge {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .badge, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .badge {
   margin-right: 8px;
   padding: 0 4px;
   font-size: 11px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-box .price-before, #wrap .section-menu .lecture-content .lecture-data-list .book-list .price .price-box .price-after, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-box .price-before, #wrap .section-menu .lecture-content .lecture-data-list .course-list .price .price-box .price-after {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-before, #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-after, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-before, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-after {
   font-size: 14px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box {
   width: 760px;
 }
-#wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
   width: 10vw;
   height: 10vw;
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img {
+  #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     width: 72px;
   }
 }
 @media screen and (min-width: 720px) {
-  #wrap .section-menu .lecture-content .lecture-data-list .course-list .desc-box .t-img {
+  #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     height: 72px;
   }
 }
-#wrap .section-package .lecture-data-list {
+#wrap .section-lecture-content .package-content .lecture-data-list {
   margin-top: 60px;
 }
 
-#wrap .section-online-course .lecture-data-list {
+#wrap .section-online-content .lecture-data-list {
   margin-top: 80px;
 }
-#wrap .section-online-course .lecture-data-list + .action {
+#wrap .section-online-content .lecture-data-list + .action {
   margin-top: 40px;
 }
-#wrap .section-online-course .tab-view .lecture-data-list {
+#wrap .section-online-content .tab-view .lecture-data-list {
   margin-top: 40px;
 }
 #wrap .section-online-bookstore .tab-box .tab-menu {
@@ -4542,8 +4543,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: center;
   align-items: center;
 }
-#wrap .section-professor-home + .section-menu .tab-menu {
+#wrap .section-professor-home + .section-professor-content .tab-menu {
   margin-top: -48px;
+}
+#wrap .professor-content {
+  padding-top: 60px;
 }
 #wrap .professor-content h3 + .holder {
   margin-top: 10px;
@@ -4555,52 +4559,52 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: table-row;
 }
 
-#wrap .section-customer-center .service-box {
+#wrap .section-customer-title .service-box {
   margin-bottom: 60px;
   margin-top: 80px;
   display: flex;
   padding: 32px 40px;
   background-color: #FBFAF6;
 }
-#wrap .section-customer-center .service-box .service-info .service-title {
+#wrap .section-customer-title .service-box .service-info .service-title {
   font-size: 16px;
   font-weight: 600;
   color: #2C2923;
 }
-#wrap .section-customer-center .service-box .service-info .service-desc {
+#wrap .section-customer-title .service-box .service-info .service-desc {
   display: flex;
   align-items: center;
   margin-top: 12px;
 }
-#wrap .section-customer-center .service-box .service-info .service-desc .tel {
+#wrap .section-customer-title .service-box .service-info .service-desc .tel {
   font-size: 28px;
   font-weight: 600;
   color: #2C2923;
 }
-#wrap .section-customer-center .service-box .service-info .service-desc .tel .icon {
+#wrap .section-customer-title .service-box .service-info .service-desc .tel .icon {
   display: inline-block;
   margin-right: 16px;
 }
-#wrap .section-customer-center .service-box .service-info .service-desc .time {
+#wrap .section-customer-title .service-box .service-info .service-desc .time {
   margin-left: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 23.8px;
 }
-#wrap .section-customer-center .service-box .service-info .service-desc .mail {
+#wrap .section-customer-title .service-box .service-info .service-desc .mail {
   margin-left: 40px;
   font-size: 20px;
   font-weight: 600;
 }
-#wrap .section-customer-center .service-box .service-info .service-desc .mail .icon {
+#wrap .section-customer-title .service-box .service-info .service-desc .mail .icon {
   display: inline-block;
   margin-right: 16px;
 }
-#wrap .section-customer-center .service-box .service-btn {
+#wrap .section-customer-title .service-box .service-btn {
   margin-left: auto;
   display: flex;
 }
-#wrap .section-customer-center .service-box .service-btn a {
+#wrap .section-customer-title .service-box .service-btn a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4614,24 +4618,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 12px;
   text-align: center;
 }
-#wrap .section-customer-center .service-box .service-btn a:first-child {
+#wrap .section-customer-title .service-box .service-btn a:first-child {
   margin-left: 0;
 }
-#wrap .section-faq-list .tab-box .tab-menu {
+#wrap .section-customer-content .tab-box .tab-menu {
   margin-top: 0;
 }
-#wrap .section-faq-list .tab-box .tab-view {
+#wrap .section-customer-content .tab-box .tab-view {
   padding-top: 60px;
 }
-#wrap .section-program-download .program-box .program-info-list li {
+#wrap .section-customer-content .program-box .program-info-list li {
   color: #7A746A;
 }
-#wrap .section-program-download .program-box .program-down-list {
+#wrap .section-customer-content .program-box .program-down-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
 }
-#wrap .section-program-download .program-box .program-down-list a {
+#wrap .section-customer-content .program-box .program-down-list a {
   position: relative;
   display: flex;
   align-items: center;
@@ -4648,14 +4652,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 36px;
   margin-bottom: 18px;
 }
-#wrap .section-program-download .program-box .program-down-list a .icon-logo {
+#wrap .section-customer-content .program-box .program-down-list a .icon-logo {
   display: inline-block;
   margin-right: 12px;
 }
-#wrap .section-program-download .program-box .program-down-list a:nth-child(3n+1) {
+#wrap .section-customer-content .program-box .program-down-list a:nth-child(3n+1) {
   margin-left: 0;
 }
-#wrap .section-program-download .program-box .program-down-list a:hover {
+#wrap .section-customer-content .program-box .program-down-list a:hover {
   background-color: #E4DED3;
 }
 

@@ -175,7 +175,7 @@
 		}
 	}
 
-	.section-menu{
+	.section-lecture-content{
 		.tab-view{padding-top:60px;}
 		.lecture-content{
 			margin-top:120px;
@@ -341,13 +341,12 @@
 					}
 				}
 			}
-		
+		}
 
-
+		.package-content{
+			.lecture-data-list{margin-top:60px;}
 		}
 	}
 
-	.section-package{
-		.lecture-data-list{margin-top:60px;}
-	}
+
 }

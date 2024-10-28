@@ -85,13 +85,14 @@
 		}
 	}
 
-	.section-professor-home + .section-menu{
+	.section-professor-home + .section-professor-content{
 		.tab-menu{
 			margin-top:-48px; // 80px -32px
 		}
 	}
 
 	.professor-content{
+		padding-top:60px;
 		h3+.holder{
 			margin-top:10px;
 		}

@@ -1,0 +1,11 @@
+#wrap{
+	.section-campus-content{
+		.lecture-data-list{
+			margin-top:80px;
+			&+.action{margin-top:40px;}
+		}
+		.tab-view{
+			.lecture-data-list{margin-top:40px;}
+		}
+	}
+}
