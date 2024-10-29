@@ -60,17 +60,33 @@
 		margin-bottom:20px;
 		
     }
-
-	.total{
-		font-size:16px;
-		font-weight:400;
-		color:$color-black;
+	.total-box{
+		display:flex;
+		justify-content: space-between;
 		margin-bottom:20px;
-		strong{
-			font-weight:600;
-			color:$color-brown;
-			display:inline-block;
-			margin-left:3px;
+		.total{
+			font-size:16px;
+			font-weight:400;
+			color:$color-black;
+		
+			strong{
+				font-weight:600;
+				color:$color-brown;
+				display:inline-block;
+				margin-left:3px;
+			}
+		}
+
+		.device{
+			display:flex;
+			align-items: center;
+			font-size:13px;
+			font-weight:400;
+			color:$color-black;
+			.icon{
+				display:inline-block;
+				margin-right:4px;
+			}
 		}
 	}
 
@@ -97,6 +113,10 @@
 
 	.highlight {
         color: $color-brown !important;
+    }
+
+	.color-point {
+        color: #E50000 !important;
     }
 
     .icon-new{
@@ -149,12 +169,12 @@
                 border-radius: 50%;
                 @include vw(width, 15px);
                 @include vw(height, 15px);
-                background-color: $color-3;
+                background-color: #666;
             }
             &.slick-active {
                 button {
                     border-radius: 15px;
-                    background-color: $color-1;
+                    background-color: $color-brown;
                 }
             }
         }
@@ -1091,7 +1111,8 @@
 		&.btn-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
 		&.btn-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
 		&.btn-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
-
+		&.btn-light-brown{border-color:$color-light-brown;background-color: $color-light-brown;}
+		
 		&.large{width:auto;@include vw(padding,0 40px);@include vw(height, 56px); @include vw(font-size,14px);}
 
 		&.btn-link{

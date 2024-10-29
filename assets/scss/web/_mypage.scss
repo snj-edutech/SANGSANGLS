@@ -32,15 +32,53 @@
 			.content{
 				margin-left:35px;width:891px;
 				h3{color:$color-black;padding-bottom:40px;padding-top:10px;}
+				.tab-box{
+					.tab-menu{
+						margin-top:0;
+						ul{
+							position:static;
+							width:100%;
+							transform:translateX(0);
+						}
+					}
+
+					.tab-view{
+						padding-top:40px;
+					}
+				}
 
 				.lecture-data-list{
 					.course-list {
-						.desc-box{width:600px;}
-						.action{
-							.btn-print{width:120px;height:30px;}
+						.col{
+							padding:20px;
+							&:first-child{padding-right:0;}
+							&:last-child{padding-left:0;margin-left:auto;}
+						}
+
+						.subject{
+							width:80px;
+						}
+						.desc-box{
+							width:auto;
+							.t-img + .t-desc{
+								margin-left:24px;
+							}
+
+							.t-desc .desc-title{
+								width:519px;
+							}
+						}
+						.action-box{
+							.btn{
+								width:128px;margin-top:8px;
+								margin-left:0;padding:0;
+								&:first-child{margin-top:0;}
+							}
 						}
 					}
 				}
+
+				
 			}
 		}
 	}

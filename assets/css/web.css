@@ -1421,17 +1421,32 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 1;
   margin-bottom: 20px;
 }
-#wrap .total {
+#wrap .total-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#wrap .total-box .total {
   font-size: 16px;
   font-weight: 400;
   color: #2C2923;
-  margin-bottom: 20px;
 }
-#wrap .total strong {
+#wrap .total-box .total strong {
   font-weight: 600;
   color: #A07D3B;
   display: inline-block;
   margin-left: 3px;
+}
+#wrap .total-box .device {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #2C2923;
+}
+#wrap .total-box .device .icon {
+  display: inline-block;
+  margin-right: 4px;
 }
 #wrap .dot {
   position: relative;
@@ -1460,6 +1475,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .highlight {
   color: #A07D3B !important;
+}
+#wrap .color-point {
+  color: #E50000 !important;
 }
 #wrap .icon-new {
   display: inline-block;
@@ -1535,7 +1553,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .slick-dots li.slick-active button {
   border-radius: 15px;
-  background-color: #234c7d;
+  background-color: #A07D3B;
 }
 #wrap .slick-arrow {
   border-radius: 50%;
@@ -2995,6 +3013,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #2C2923;
   color: #FFFFFC;
 }
+#wrap .btn.btn-light-brown {
+  border-color: #E4DED3;
+  background-color: #E4DED3;
+}
 #wrap .btn.large {
   width: auto;
   padding: 0 5.5555555556vw;
@@ -4115,6 +4137,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .lecture-data-list .book-list .price > div .price-box .price-after, #wrap .lecture-data-list .course-list .price > div .price-box .price-after {
   color: #2C2923;
+}
+#wrap .lecture-data-list .book-list .action, #wrap .lecture-data-list .course-list .action {
+  width: 168px;
 }
 #wrap .lecture-data-list .course-list .desc-box {
   width: 760px;
@@ -5731,10 +5756,45 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-bottom: 40px;
   padding-top: 10px;
 }
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .desc-box {
-  width: 600px;
+#wrap .section-mypage .wrap .content .tab-box .tab-menu {
+  margin-top: 0;
 }
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .action .btn-print {
-  width: 120px;
-  height: 30px;
+#wrap .section-mypage .wrap .content .tab-box .tab-menu ul {
+  position: static;
+  width: 100%;
+  transform: translateX(0);
+}
+#wrap .section-mypage .wrap .content .tab-box .tab-view {
+  padding-top: 40px;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .col {
+  padding: 20px;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .col:first-child {
+  padding-right: 0;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .col:last-child {
+  padding-left: 0;
+  margin-left: auto;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .subject {
+  width: 80px;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .desc-box {
+  width: auto;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc {
+  margin-left: 24px;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .desc-box .t-desc .desc-title {
+  width: 519px;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .action-box .btn {
+  width: 128px;
+  margin-top: 8px;
+  margin-left: 0;
+  padding: 0;
+}
+#wrap .section-mypage .wrap .content .lecture-data-list .course-list .action-box .btn:first-child {
+  margin-top: 0;
 }/*# sourceMappingURL=web.css.map */
