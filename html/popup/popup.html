@@ -108,8 +108,12 @@
 						<button type="button" class="btn small primary" onclick="popupOpen('#popupSchedule')">확인</button>
 					</div>
 					<div class="list-row">
-						<div class="name">나의 예약 확인</div>
-						<button type="button" class="btn small primary" onclick="popupOpen('#popupReservation')">확인</button>
+						<div class="name">배치상담 - 나의 예약 확인</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupReservation1')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">방문상담 - 나의 예약 확인</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupReservation2')">확인</button>
 					</div>
 				</div>
 
@@ -942,9 +946,9 @@
 			</div>
 		</div>
 
-		<div class="popup" id="popupReservation">
+		<div class="popup popup-reservation" id="popupReservation1">
 			<div class="popup-wrap">
-				<a href="javascript:popupClose('#popupReservation');"  class="popup-close">팝업닫기</a>
+				<a href="javascript:popupClose('#popupReservation1');"  class="popup-close">팝업닫기</a>
 				<div class="popup-title">
 					나의 예약 확인
 				</div>
@@ -952,8 +956,112 @@
 	
 					<table class="table-row">
 						<colgroup>
-							<col style="width:68px;" />
-							<col style="width:104px;" />
+							<col style="width:80px;" />
+							<col style="width:110px;" />
+							<col style="width:auto;" />
+						</colgroup>
+						<tr>
+							<th colspan="2">이름</th>
+							<td>홍길동</td>
+						</tr>
+						<tr>
+							<th colspan="2">연락처</th>
+							<td>01012345678</td>
+						</tr>
+						<tr>
+							<th rowspan="7">학사<br/>정보</th>
+							<th class="border-left-line">학사정보</th>
+							<td>졸업</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">학년</th>
+							<td>4학년</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">졸업년도</th>
+							<td>9999</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">전공계열</th>
+							<td>전공계열</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">전공명</th>
+							<td>법학과</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">GPA</th>
+							<td>999</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">평점</th>
+							<td>999</td>
+						</tr>
+	
+						<tr>
+							<th rowspan="3">LEET<br/>점수</th>
+							<th class="border-left-line">LEET 총점</th>
+							<td>표준점수 : 123 / 백분위 123</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">언어이해</th>
+							<td>표준점수 : 123 / 백분위 123</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">추리논증</th>
+							<td>표준점수 : 123 / 백분위 123</td>
+						</tr>
+	
+						<tr>
+							<th rowspan="3">공인<br/>영어<br/>성적</th>
+							<th class="border-left-line">TOEIC</th>
+							<td>123</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">TOEFL</th>
+							<td>123</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">TEPS</th>
+							<td>123</td>
+						</tr>
+	
+						<tr>
+							<th rowspan="2">지원<br/>로스쿨</th>
+							<th class="border-left-line">가군</th>
+							<td>중앙대</td>
+						</tr>
+						<tr>
+							<th class="border-left-line">나군</th>
+							<td>이화여대</td>
+						</tr>
+						<tr>
+							<th colspan="2">LEET 응시 경험</th>
+							<td>초시</td>
+						</tr>
+						<tr>
+							<th colspan="2">상담희망일자</th>
+							<td>0000-00-00 00:00</td>
+						</tr>
+	
+					</table>
+	
+				</div>
+			</div>
+		</div>
+
+		<div class="popup popup-reservation" id="popupReservation2">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupReservation2');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					나의 예약 확인
+				</div>
+				<div class="popup-cont popup-scroll">
+	
+					<table class="table-row">
+						<colgroup>
+							<col style="width:80px;" />
+							<col style="width:110px;" />
 							<col style="width:auto;" />
 						</colgroup>
 						<tr>
@@ -1008,7 +1116,7 @@
 						</tr>
 						<tr>
 							<th colspan="2">상담 희망 내용</th>
-							<td>에디터 영역</td>
+							<td>내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
 						</tr>
 					</table>
 	

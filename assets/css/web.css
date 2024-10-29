@@ -1116,14 +1116,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 552px;
 }
 
-#popupReservation .table-row tr th, #popupReservation .table-row tr td {
+.popup-reservation .table-row tr th, .popup-reservation .table-row tr td {
   text-align: left !important;
   font-size: 16px !important;
 }
-#popupReservation .table-row tr td {
+.popup-reservation .table-row tr td {
   border-left: 1px solid #E4DED3;
 }
-#popupReservation .table-row tr th.border-left-line {
+.popup-reservation .table-row tr th.border-left-line {
   border-left: 1px solid #E4DED3;
 }
 
@@ -5525,7 +5525,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr td .reply .status {
   display: inline-block;
-  width: 77px;
+  width: 75px;
   color: #A07D3B;
   margin-right: 8px;
   font-weight: 600;

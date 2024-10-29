@@ -157,7 +157,63 @@
 						</div>
 
 						<div class="tab-view">
-							tab-view2
+							<div class="campus-reservation">
+								<h3>
+									나의 예약 확인
+
+									<p class="notice-text">
+										방문 상담 예약 내용은 수정이 불가능합니다. 변경이 필요하면 취소 후 다시 예약해 주세요.
+									</p>
+								</h3>
+
+								<div class="notice-list-table">
+									<table class="table-row ">
+										<colgroup>
+											<col style="width:80px">
+											<col style="width:auto">
+											<col style="width:140px">
+											<col style="width:167px">
+										</colgroup>
+										<tr>
+											<th>번호</th>
+											<th>방문 상담 예약 일시</th>
+											<th>작성일</th>
+											<th>답변</th>
+										</tr>
+										<tr>
+											<td>9,999</td>
+											<td class="link"><strong>YYYY-MM-DD 00:00~00:00</strong><a href="javascript:popupOpen('#popupReservation1');" class="btn btn-reservation" >예약 상세보기</a></td>
+											<td class="date">YYYY-MM-DD</td>	
+											<td ><div class="reply"><strong class="status">예약중</strong><a href="javscript:;" class="btn btn-gray" >취소</a></div></td>										
+										</tr>
+										<tr>
+											<td>9,999</td>
+											<td class="link"><strong>YYYY-MM-DD 00:00~00:00</strong><a href="javascript:popupOpen('#popupReservation1');" class="btn btn-reservation" >예약 상세보기</a></td>
+											<td class="date">YYYY-MM-DD</td>	
+											<td ><div class="reply"><strong class="status">예약중</strong><a href="javscript:;" class="btn btn-gray" >취소</a></div></td>											
+										</tr>
+										<tr>
+											<td>9,999</td>
+											<td class="link"><strong>YYYY-MM-DD 00:00~00:00</strong><a href="javascript:popupOpen('#popupReservation1');" class="btn btn-reservation" >예약 상세보기</a></td>
+											<td class="date">YYYY-MM-DD</td>	
+											<td ><div class="reply"><strong class="status">예약중</strong><a href="javscript:;" class="btn btn-gray" >취소</a></div></td>										
+										</tr>
+										<tr>
+											<td>9,999</td>
+											<td class="link"><strong>YYYY-MM-DD 00:00~00:00</strong><a href="javascript:popupOpen('#popupReservation1');" class="btn btn-reservation" >예약 상세보기</a></td>
+											<td class="date">YYYY-MM-DD</td>	
+											<td ><div class="reply"><strong class="status">예약중</strong><a href="javscript:;" class="btn btn-gray" >취소</a></div></td>								
+										</tr>
+										<tr>
+											<td>9,999</td>
+											<td class="link"><strong>YYYY-MM-DD 00:00~00:00</strong><a href="javascript:popupOpen('#popupReservation1');" class="btn btn-reservation" >예약 상세보기</a></td>
+											<td class="date">YYYY-MM-DD</td>	
+											<td ><div class="reply"><strong class="status">예약중</strong><a href="javscript:;" class="btn btn-gray" >취소</a></div></td>									
+										</tr>
+									</table>
+								</div>
+
+							</div>
 						</div>
 
 					</div>
@@ -659,6 +715,110 @@
 						- 개인정보처리방침 시행 일자 : 2022년 11월 1일
 					</p>
 				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-reservation" id="popupReservation1">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupReservation1');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				나의 예약 확인
+			</div>
+			<div class="popup-cont popup-scroll">
+
+				<table class="table-row">
+					<colgroup>
+						<col style="width:80px;" />
+						<col style="width:110px;" />
+						<col style="width:auto;" />
+					</colgroup>
+					<tr>
+						<th colspan="2">이름</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th colspan="2">연락처</th>
+						<td>01012345678</td>
+					</tr>
+					<tr>
+						<th rowspan="7">학사<br/>정보</th>
+						<th class="border-left-line">학사정보</th>
+						<td>졸업</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">학년</th>
+						<td>4학년</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">졸업년도</th>
+						<td>9999</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">전공계열</th>
+						<td>전공계열</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">전공명</th>
+						<td>법학과</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">GPA</th>
+						<td>999</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">평점</th>
+						<td>999</td>
+					</tr>
+
+					<tr>
+						<th rowspan="3">LEET<br/>점수</th>
+						<th class="border-left-line">LEET 총점</th>
+						<td>표준점수 : 123 / 백분위 123</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">언어이해</th>
+						<td>표준점수 : 123 / 백분위 123</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">추리논증</th>
+						<td>표준점수 : 123 / 백분위 123</td>
+					</tr>
+
+					<tr>
+						<th rowspan="3">공인<br/>영어<br/>성적</th>
+						<th class="border-left-line">TOEIC</th>
+						<td>123</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">TOEFL</th>
+						<td>123</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">TEPS</th>
+						<td>123</td>
+					</tr>
+
+					<tr>
+						<th rowspan="2">지원<br/>로스쿨</th>
+						<th class="border-left-line">가군</th>
+						<td>중앙대</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">나군</th>
+						<td>이화여대</td>
+					</tr>
+					<tr>
+						<th colspan="2">LEET 응시 경험</th>
+						<td>초시</td>
+					</tr>
+					<tr>
+						<th colspan="2">상담희망일자</th>
+						<td>0000-00-00 00:00</td>
+					</tr>
+
+				</table>
 
 			</div>
 		</div>
