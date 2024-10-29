@@ -1084,6 +1084,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
   color: #BEBEBC;
   margin-right: 8px;
+  text-decoration: line-through;
 }
 #popupBookInfo .desc-box .book-desc .desc-price .price-sale {
   margin-right: 8px;
@@ -2404,12 +2405,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: relative;
   display: inline-block;
   width: 600px;
-  border: 1px solid #E4DED3;
   cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 #wrap .custom-select .selected {
+  border: 1px solid #E4DED3;
   display: flex;
   justify-content: space-between;
   padding: 1.1111111111vw 2.2222222222vw 1.1111111111vw 2.2222222222vw;
@@ -2449,7 +2450,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: none;
   position: absolute;
   border-top: none;
-  margin: 1px 0 0 0;
   background-color: #FFFFFC;
   z-index: 10;
   -webkit-box-sizing: border-box;
@@ -4076,7 +4076,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: auto;
 }
 #wrap .lecture-data-list .book-list .price, #wrap .lecture-data-list .course-list .price {
-  width: 320px;
+  width: 300px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -4551,7 +4551,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: auto;
 }
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price {
-  width: 320px;
+  width: 300px;
   display: flex;
   align-items: center;
 }
@@ -4564,11 +4564,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .badge, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .badge {
   margin-right: 8px;
-  padding: 0 4px;
+  padding: 3px 4px;
   font-size: 11px;
 }
-#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-before, #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-after, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-before, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-after {
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-before, #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-sale, #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-after, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-before, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-sale, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-after {
   font-size: 14px;
+  font-weight: 600;
+}
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-before, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-before {
+  font-weight: 400;
+}
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-sale, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-sale {
+  margin-right: 8px;
+  color: #A07D3B;
+}
+#wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-box .price-after, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-box .price-after {
+  color: #2C2923;
 }
 #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box {
   width: 760px;

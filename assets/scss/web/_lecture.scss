@@ -318,14 +318,17 @@
 					}
 
 					.price{
-						width:320px;
+						width:300px;
 						display:flex;
 						align-items: center;
 						.price-subject{width:40px;font-size:14px;}
 						.price-box{
 							margin-left:auto;
-							.badge{margin-right:8px;padding: 0 4px;font-size:11px;}
-							.price-before, .price-after{font-size:14px;}
+							.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
+							.price-before, .price-sale, .price-after{font-size:14px;font-weight:600;}
+							.price-before{font-weight:400;}
+							.price-sale{margin-right:8px;color:$color-brown;}
+							.price-after{color:$color-black;}
 						}
 						// >div{width:auto;}
 					}

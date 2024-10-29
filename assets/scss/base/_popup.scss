@@ -330,7 +330,7 @@
 				}
 
 				.price-before, .price-sale, .price-after{font-size:14px;font-weight:600;}
-				.price-before{font-weight:400;color:$color-light-gray;margin-right:8px;}
+				.price-before{font-weight:400;color:$color-light-gray;margin-right:8px;    text-decoration: line-through;}
 				.price-sale{margin-right:8px;color:$color-brown;}
 				.price-after{color:$color-black;}
 				

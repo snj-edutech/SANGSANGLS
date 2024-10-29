@@ -653,10 +653,11 @@
 		position:relative;
 		display: inline-block;
 		width:600px;
-		border: 1px solid $color-light-brown;
+		
 		cursor: pointer;
 		@include boxSizing(border-box);
 		.selected {
+			border: 1px solid $color-light-brown;
 			display: flex;
 			justify-content: space-between;
 			@include vw(padding, 8px 16px 8px 16px);
@@ -686,7 +687,6 @@
 			display: none;
 			position: absolute;
 			border-top: none;
-			margin: 1px 0 0 0;
 			background-color:$color-white;
 			z-index:10;
 			@include boxSizing(border-box);
