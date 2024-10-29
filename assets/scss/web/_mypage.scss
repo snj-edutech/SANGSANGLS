@@ -1,0 +1,47 @@
+#wrap{
+	.section-mypage{
+		.wrap{
+			display:flex;
+			width:1200px;
+			margin:0 auto;
+			.sidebar{
+				width:274px;
+				a{display:inline-block;}
+
+				.menu-title{font-size:40px;font-weight:600;color:$color-black;}
+				.menu-item{
+					margin-top:40px;
+					>a{font-size:20px;font-weight:600;color:$color-black;}
+					.submenu{
+						.submenu-item{
+							a{font-size:16px;font-weight:400;color:$color-gray;line-height:27.2px;}
+							margin-top:8px;
+							&:first-child{margin-top:16px;}
+							&:hover, &.active{
+								a{
+									color:$color-brown;
+									font-weight:600;
+								}
+							}
+
+						}
+					}
+				}
+
+			}
+			.content{
+				margin-left:35px;width:891px;
+				h3{color:$color-black;padding-bottom:40px;padding-top:10px;}
+
+				.lecture-data-list{
+					.course-list {
+						.desc-box{width:600px;}
+						.action{
+							.btn-print{width:120px;height:30px;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
