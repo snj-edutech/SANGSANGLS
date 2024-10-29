@@ -195,8 +195,9 @@
         @include boxSizing(border-box);
 		color:$color-black;
 		border-color:$color-light-brown;
-		line-height:19px;
+		line-height:18.6px;
 		font-weight:600;
+		vertical-align:middle;
 
 		&.badge-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
 		&.badge-light-brown{border-color:$color-light-brown2;background-color: $color-light-brown2;}

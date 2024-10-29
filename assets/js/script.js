@@ -263,6 +263,17 @@ function slideEvent() {
 				variableWidth: true,
                 
 			};
+		} else if(_data == 'calenderSlider'){
+			_options = {
+				dots: false,
+				arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+				centerMode: false,
+				variableWidth: false,
+                
+			};
 		}
 
 		$(sliderId).slick(_options);
@@ -289,7 +300,11 @@ function popupOpen($selector){
 	popupReset();
 
 	$($selector).show();
- 
+
+	if($selector == "#popupSchedule"){
+		$('.slider').slick('setPosition');
+	}
+
 	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
 		// 팝업이클때는 
 		var st = $(window).scrollTop()+50;
