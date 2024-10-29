@@ -4098,7 +4098,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: auto;
 }
 #wrap .lecture-data-list .book-list .price, #wrap .lecture-data-list .course-list .price {
-  width: 300px;
+  width: 340px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -4576,7 +4576,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: auto;
 }
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price {
-  width: 300px;
+  width: 340px;
   display: flex;
   align-items: center;
 }
