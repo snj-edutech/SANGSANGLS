@@ -1185,32 +1185,128 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   opacity: 0.5;
   cursor: default;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .month {
+#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev {
+  position: relative;
+  display: inline-block;
+}
+#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 1.3888888889vw;
+  height: 1.3888888889vw;
+  margin-top: -0.6944444444vw;
+  border-width: 0;
+  border-style: solid;
+  border-color: #A07D3B;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 2.7777777778vw;
+  border-bottom-width: 1.5px;
+  border-left-width: 1.5px;
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+    width: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+    height: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+    margin-top: -5px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+    left: 20px;
+  }
+}
+#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev:before {
+  margin-top: -12px;
+  left: -20px;
+}
+#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next {
+  position: relative;
+  display: inline-block;
+}
+#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 1.3888888889vw;
+  height: 1.3888888889vw;
+  margin-top: -0.6944444444vw;
+  border-width: 0;
+  border-style: solid;
+  border-color: #A07D3B;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 2.7777777778vw;
+  border-top-width: 1.5px;
+  border-right-width: 1.5px;
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+    width: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+    height: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+    margin-top: -5px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+    right: 20px;
+  }
+}
+#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next:before {
+  margin-top: -12px;
+  right: -20px;
+}
+#popupSchedule .step-box .step.step-1 .calender-box .month-box {
+  position: relative;
   text-align: center;
+}
+#popupSchedule .step-box .step.step-1 .calender-box .month-box .month {
+  font-weight: 600;
   font-size: 20px;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table {
+#popupSchedule .step-box .step.step-1 .calender-box .calender-table {
   margin-top: 16px;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table .table-row {
+#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row {
   border-top: 0;
   width: 100%;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table .table-row tr:last-child {
+#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr:last-child {
   border-bottom: none;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table .table-row tr th {
+#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr th {
   background: transparent;
   padding: 0;
   height: 28px;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table .table-row tr td {
+#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td {
   position: relative;
   padding: 8px 4px 16px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table .table-row tr td .day {
+#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td .day {
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -1218,7 +1314,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 8px;
   line-height: 19px;
 }
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table .table-row tr td:hover, #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .calender-table .table-row tr td.active {
+#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td:hover, #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td.active {
   background: #F2EFE7;
 }
 #popupSchedule .step-box .step.step-2 {

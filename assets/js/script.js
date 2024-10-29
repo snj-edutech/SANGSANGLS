@@ -301,9 +301,9 @@ function popupOpen($selector){
 
 	$($selector).show();
 
-	if($selector == "#popupSchedule"){
-		$('.slider').slick('setPosition');
-	}
+	// if($selector == "#popupSchedule"){
+	// 	$('.slider').slick('setPosition');
+	// }
 
 	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
 		// 팝업이클때는 
