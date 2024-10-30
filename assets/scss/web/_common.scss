@@ -87,6 +87,10 @@
         color: $color-brown !important;
     }
 
+    .color-black {
+        color: $color-black !important;
+    }
+
 	.color-point {
         color: #E50000 !important;
     }
@@ -511,7 +515,7 @@
             label {
                 display: inline-block;
                 @include vw(padding-left, 30px);
-                background: url('../images/icon_checkbox_check.svg') no-repeat left center;
+                background: url('../images/icon_checkbox_check.svg') no-repeat left top;
                 background-size: 24px 24px;
                 //cursor: pointer;
 				font-weight:400;
@@ -881,7 +885,10 @@
 	}
 
 	.space{display:inline-block;padding:0 3px;}
-	.form-text{ font-size:14px;font-weight:400;color:$color-gray;}
+	.form-text{
+         font-size:14px;font-weight:400;color:$color-gray;
+         strong{display:inline-block;margin-right:8px;font-weight:600;color:$color-black;}
+    }
 
 	.table-row{
 		width:100%;
@@ -956,7 +963,7 @@
                 .icon-lock, .icon-new{position:relative;top:-2px;}
                 .icon-new{margin-left:8px;}
 
-                &.date, &.reply, &.time{
+                &.date, &.reply, &.time, &.percent{
                     color:$color-gray;
                 }
 
@@ -1126,7 +1133,16 @@
 			@include boxSizing(border-box);
 			@include vw(width, 87px);@include vw(height, 38px); 
 			@include vw(line-height, 38px); 
-			@include vw(padding-left,32px);
+			@include vw(padding-left,26px);
+		}
+
+        &.btn-download{
+			display:block;
+			background: $color-white url('../images/icon_down_brown.svg') no-repeat 8px center;
+			@include boxSizing(border-box);
+			@include vw(width, 87px);@include vw(height, 38px); 
+			@include vw(line-height, 38px); 
+			@include vw(padding-left,26px);
 		}
 
         &.btn-file{

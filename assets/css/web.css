@@ -1799,6 +1799,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #A07D3B !important;
 }
 
+#wrap .color-black {
+  color: #2C2923 !important;
+}
+
 #wrap .color-point {
   color: #E50000 !important;
 }
@@ -2730,7 +2734,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .fake-checkbox label {
   display: inline-block;
   padding-left: 4.16667vw;
-  background: url("../images/icon_checkbox_check.svg") no-repeat left center;
+  background: url("../images/icon_checkbox_check.svg") no-repeat left top;
   background-size: 24px 24px;
   font-weight: 400;
   font-size: 14px;
@@ -3457,6 +3461,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #7A746A;
 }
 
+#wrap .form-text strong {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #2C2923;
+}
+
 #wrap .table-row {
   width: 100%;
   border-top: 1px solid #E4DED3;
@@ -3548,7 +3559,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 8px;
 }
 
-#wrap .notice-list-table .table-row td.date, #wrap .notice-list-table .table-row td.reply, #wrap .notice-list-table .table-row td.time {
+#wrap .notice-list-table .table-row td.date, #wrap .notice-list-table .table-row td.reply, #wrap .notice-list-table .table-row td.time, #wrap .notice-list-table .table-row td.percent {
   color: #7A746A;
 }
 
@@ -3908,7 +3919,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 12.08333vw;
   height: 5.27778vw;
   line-height: 5.27778vw;
-  padding-left: 4.44444vw;
+  padding-left: 3.61111vw;
 }
 
 @media screen and (min-width: 720px) {
@@ -3931,7 +3942,42 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 @media screen and (min-width: 720px) {
   #wrap .btn.btn-video {
-    padding-left: 32px;
+    padding-left: 26px;
+  }
+}
+
+#wrap .btn.btn-download {
+  display: block;
+  background: #FFFFFC url("../images/icon_down_brown.svg") no-repeat 8px center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12.08333vw;
+  height: 5.27778vw;
+  line-height: 5.27778vw;
+  padding-left: 3.61111vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .btn.btn-download {
+    width: 87px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .btn.btn-download {
+    height: 38px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .btn.btn-download {
+    line-height: 38px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .btn.btn-download {
+    padding-left: 26px;
   }
 }
 
@@ -5478,6 +5524,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 27.22px;
 }
 
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left .lecture-btn, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide .lecture-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left dl, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5564,6 +5617,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 520px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  text-align: left;
 }
 
 #wrap .section-lecture .lecture-box .lecture-view .layer-box .layer-title {
@@ -7340,7 +7394,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: #EB5252;
 }
 
-#wrap .section-mypage .wrap {
+#wrap .section-mypage-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7348,62 +7402,62 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin: 0 auto;
 }
 
-#wrap .section-mypage .wrap .sidebar {
+#wrap .section-mypage-wrap .sidebar {
   width: 274px;
 }
 
-#wrap .section-mypage .wrap .sidebar a {
+#wrap .section-mypage-wrap .sidebar a {
   display: inline-block;
 }
 
-#wrap .section-mypage .wrap .sidebar .menu-title {
+#wrap .section-mypage-wrap .sidebar .menu-title {
   font-size: 40px;
   font-weight: 600;
   color: #2C2923;
 }
 
-#wrap .section-mypage .wrap .sidebar .menu-item {
+#wrap .section-mypage-wrap .sidebar .menu-item {
   margin-top: 40px;
 }
 
-#wrap .section-mypage .wrap .sidebar .menu-item > a {
+#wrap .section-mypage-wrap .sidebar .menu-item > p {
   font-size: 20px;
   font-weight: 600;
   color: #2C2923;
 }
 
-#wrap .section-mypage .wrap .sidebar .menu-item .submenu .submenu-item {
+#wrap .section-mypage-wrap .sidebar .menu-item .submenu .submenu-item {
   margin-top: 8px;
 }
 
-#wrap .section-mypage .wrap .sidebar .menu-item .submenu .submenu-item a {
+#wrap .section-mypage-wrap .sidebar .menu-item .submenu .submenu-item a {
   font-size: 16px;
   font-weight: 400;
   color: #7A746A;
   line-height: 27.2px;
 }
 
-#wrap .section-mypage .wrap .sidebar .menu-item .submenu .submenu-item:first-child {
+#wrap .section-mypage-wrap .sidebar .menu-item .submenu .submenu-item:first-child {
   margin-top: 16px;
 }
 
-#wrap .section-mypage .wrap .sidebar .menu-item .submenu .submenu-item:hover a, #wrap .section-mypage .wrap .sidebar .menu-item .submenu .submenu-item.active a {
+#wrap .section-mypage-wrap .sidebar .menu-item .submenu .submenu-item:hover a, #wrap .section-mypage-wrap .sidebar .menu-item .submenu .submenu-item.active a {
   color: #A07D3B;
   font-weight: 600;
 }
 
-#wrap .section-mypage .wrap .content {
+#wrap .section-mypage-wrap .content {
   margin-left: 35px;
   width: 891px;
 }
 
-#wrap .section-mypage .wrap .content h3 {
+#wrap .section-mypage-wrap .content > h3 {
   color: #2C2923;
   padding-bottom: 40px;
   padding-top: 10px;
 }
 
-#wrap .section-mypage .wrap .content .total-number-box {
+#wrap .section-mypage-wrap .content .total-number-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7413,20 +7467,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 20px;
 }
 
-#wrap .section-mypage .wrap .content .total-number-box .total {
+#wrap .section-mypage-wrap .content .total-number-box .total {
   font-size: 16px;
   font-weight: 400;
   color: #2C2923;
 }
 
-#wrap .section-mypage .wrap .content .total-number-box .total strong {
+#wrap .section-mypage-wrap .content .total-number-box .total strong {
   font-weight: 600;
   color: #A07D3B;
   display: inline-block;
   margin-left: 3px;
 }
 
-#wrap .section-mypage .wrap .content .total-number-box .device a {
+#wrap .section-mypage-wrap .content .total-number-box .device a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7438,63 +7492,197 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
 }
 
-#wrap .section-mypage .wrap .content .total-number-box .device .icon {
+#wrap .section-mypage-wrap .content .total-number-box .device .icon {
   display: inline-block;
   margin-right: 4px;
 }
 
-#wrap .section-mypage .wrap .content .tab-box .tab-menu {
+#wrap .section-mypage-wrap .content .tab-box .tab-menu {
   margin-top: 0;
 }
 
-#wrap .section-mypage .wrap .content .tab-box .tab-menu ul {
+#wrap .section-mypage-wrap .content .tab-box .tab-menu ul {
   position: static;
   width: 100%;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-#wrap .section-mypage .wrap .content .tab-box .tab-view {
+#wrap .section-mypage-wrap .content .tab-box .tab-view {
   padding-top: 40px;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .col {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .col {
   padding: 20px;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .col:first-child {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .col:first-child {
   padding-right: 0;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .col:last-child {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .col:last-child {
   padding-left: 0;
   margin-left: auto;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .subject {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject {
   width: 80px;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .desc-box {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box {
   width: auto;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc {
   margin-left: 24px;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .desc-box .t-desc .desc-title {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-desc .desc-title {
   width: 519px;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .action-box .btn {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn {
   width: 128px;
   margin-top: 8px;
   margin-left: 0;
   padding: 0;
 }
 
-#wrap .section-mypage .wrap .content .lecture-data-list .course-list .action-box .btn:first-child {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn:first-child {
   margin-top: 0;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list:hover {
+  background-color: #F2EFE7;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list .desc-box .t-desc .desc-title {
+  width: 687px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list .subject + .desc-box .t-desc .desc-title {
+  width: 571px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-left {
+  width: 100%;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-left .lecture-subject {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-left .lecture-name {
+  margin-top: 8px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-left .lecture-name strong {
+  font-size: 14px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-left dl dt.thumbnail {
+  width: 160px;
+  height: 160px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right {
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  border-left: 0;
+  margin-top: 36px;
+  border-top: 1px solid #BEBEBC;
+  padding-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right dl {
+  margin-top: 12px;
+  width: 50%;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right dl dt {
+  width: 80px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right dl dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  margin-left: 20px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right dl dd strong {
+  display: inline-block;
+  width: 48px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right dl dd a {
+  margin-left: 12px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture .action {
+  padding-bottom: 40px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr th {
+  position: relative;
+  font-weight: 400;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr th, #wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr td {
+  padding: 20px 12px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr th:first-child, #wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr td:first-child {
+  padding-left: 20px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr th:last-child, #wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr td:last-child {
+  padding-right: 20px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .btn-help:hover + .layer-box {
+  display: block;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .layer-box {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 67px;
+  z-index: 11;
+  background-color: #FFFFFC;
+  padding: 24px;
+  text-align: left;
+  border: 1px solid #E4DED3;
+  width: 520px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .layer-box .layer-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #A07D3B;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture-content .layer-box .layer-list li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2C2923;
+  line-height: 23.8px;
 }
 /*# sourceMappingURL=web.css.map */
