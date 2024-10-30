@@ -32,6 +32,37 @@
 			.content{
 				margin-left:35px;width:891px;
 				h3{color:$color-black;padding-bottom:40px;padding-top:10px;}
+
+				.total-number-box{
+					display:flex;
+					justify-content: space-between;
+					margin-bottom:20px;
+					.total{
+						font-size:16px;
+						font-weight:400;
+						color:$color-black;
+					
+						strong{
+							font-weight:600;
+							color:$color-brown;
+							display:inline-block;
+							margin-left:3px;
+						}
+					}
+			
+					.device{
+						display:flex;
+						align-items: center;
+						font-size:13px;
+						font-weight:400;
+						color:$color-black;
+						.icon{
+							display:inline-block;
+							margin-right:4px;
+						}
+					}
+				}
+
 				.tab-box{
 					.tab-menu{
 						margin-top:0;
