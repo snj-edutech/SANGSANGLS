@@ -100,6 +100,18 @@
 		}
 	}
 
+	&-notice{
+		background-color:$color-light-beige;
+		padding:16px;margin-top:20px;
+		color:$color-black;
+		@include vw(font-size,16px);
+		@include vw(line-height,27.2px);
+		font-weight:400;
+		font-family: $font-pretendard;
+		@include boxSizing(border-box);
+		
+	}
+
 
 	&-scroll{
 		@include boxSizing(border-box);
@@ -351,7 +363,8 @@
 
 }
 
-#popupRevieUpdate, #popupReviewSuccess{
+#popupReviewUpdate, #popupReviewSuccess,
+#popupMypageReviewUpdate, #popupMypageReviewWrite{
 	.course-title{
 		font-weight:600;
 		font-size:20px;
@@ -362,9 +375,19 @@
 	}
 
 	.form-control{
-		.textarea{height:294px;}
+		.textarea{height:294px !important;}
 		.select, .custom-select{width:552px;}
 	}
+}
+
+#popupMypageReviewUpdate, #popupMypageReviewWrite{
+	.course-title{
+		margin-top:0;
+	}
+	.form-control{
+		.textarea{height:368px !important;}
+	}
+	.action{margin-top:8px !important;}
 }
 
 .popup-reservation{
@@ -555,5 +578,47 @@
 				}
 			}
 		}
+	}
+}
+
+#popupDevice{
+	.popup-wrap{
+		width:1200px;
+	}
+
+	.device-title{
+		display:flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom:20px;
+		p{
+			font-size:16px;line-height:27.2px;font-weight:400;
+			strong{font-size:20px;font-weight:600;line-height:34px;}
+		}
+
+		.device-count{
+			font-size:14px;padding:0 16px;line-height:30px;
+			border:1px solid $color-light-brown;height:32px;
+			font-weight:400;
+			strong{
+				color:$color-brown;
+				display:inline-block;
+				margin-left:5px;
+				font-weight:600;
+			}
+		}
+	}
+
+	.device-table{
+		.table-row{
+			tr{
+				th,td{}
+				th{}
+				td{font-size:16px;line-height:27.2px;font-weight:600;word-break: break-all;}
+			}
+		}
+
+
+		.btn-edit, .btn-delete{margin-left:20px;}
 	}
 }

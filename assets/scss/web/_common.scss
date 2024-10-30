@@ -639,6 +639,34 @@
                 }
             }
         }
+
+        .fake-save-box{
+            position:relative;
+            .fake-input {
+				width:100%;
+				border:1px solid $color-light-brown;
+				@include vw(padding, 9px 70px 9px 8px);
+            }
+
+            .fake-btn {
+				position:absolute;right:8px;
+				top: 50%;
+				transform: translateY(-45%);
+                label {
+					display:inline-block;
+                    @include vw(padding,5.5px 5px);
+                    text-align: center;
+                    @include vw(font-size,13px);
+                    color: $color-black;
+					border:1px solid $color-light-brown;
+                    cursor: pointer;
+					font-weight:400;
+					border-radius:2px;
+					line-height:1;
+                   
+                }
+            }
+        }
     }
 
 	.custom-select {

@@ -51,11 +51,13 @@
 					}
 			
 					.device{
-						display:flex;
-						align-items: center;
-						font-size:13px;
-						font-weight:400;
-						color:$color-black;
+						a{
+							display:flex;
+							align-items: center;
+							font-size:13px;
+							font-weight:400;
+							color:$color-black;
+						}
 						.icon{
 							display:inline-block;
 							margin-right:4px;

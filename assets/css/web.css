@@ -749,6 +749,31 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+.popup-notice {
+  background-color: #FBFAF6;
+  padding: 16px;
+  margin-top: 20px;
+  color: #2C2923;
+  font-size: 2.22222vw;
+  line-height: 3.77778vw;
+  font-weight: 400;
+  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 720px) {
+  .popup-notice {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .popup-notice {
+    line-height: 27.2px;
+  }
+}
+
 .popup-scroll {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1291,7 +1316,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 0px;
 }
 
-#popupRevieUpdate .course-title, #popupReviewSuccess .course-title {
+#popupReviewUpdate .course-title, #popupReviewSuccess .course-title,
+#popupMypageReviewUpdate .course-title, #popupMypageReviewWrite .course-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 34px;
@@ -1300,12 +1326,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
 }
 
-#popupRevieUpdate .form-control .textarea, #popupReviewSuccess .form-control .textarea {
-  height: 294px;
+#popupReviewUpdate .form-control .textarea, #popupReviewSuccess .form-control .textarea,
+#popupMypageReviewUpdate .form-control .textarea, #popupMypageReviewWrite .form-control .textarea {
+  height: 294px !important;
 }
 
-#popupRevieUpdate .form-control .select, #popupRevieUpdate .form-control .custom-select, #popupReviewSuccess .form-control .select, #popupReviewSuccess .form-control .custom-select {
+#popupReviewUpdate .form-control .select, #popupReviewUpdate .form-control .custom-select, #popupReviewSuccess .form-control .select, #popupReviewSuccess .form-control .custom-select,
+#popupMypageReviewUpdate .form-control .select,
+#popupMypageReviewUpdate .form-control .custom-select, #popupMypageReviewWrite .form-control .select, #popupMypageReviewWrite .form-control .custom-select {
   width: 552px;
+}
+
+#popupMypageReviewUpdate .course-title, #popupMypageReviewWrite .course-title {
+  margin-top: 0;
+}
+
+#popupMypageReviewUpdate .form-control .textarea, #popupMypageReviewWrite .form-control .textarea {
+  height: 368px !important;
+}
+
+#popupMypageReviewUpdate .action, #popupMypageReviewWrite .action {
+  margin-top: 8px !important;
 }
 
 .popup-reservation .table-row tr th, .popup-reservation .table-row tr td {
@@ -1601,6 +1642,62 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #popupSchedule .step-box .step.step-2 .timetable-box .timetable-action {
   margin-top: 20px;
+}
+
+#popupDevice .popup-wrap {
+  width: 1200px;
+}
+
+#popupDevice .device-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+#popupDevice .device-title p {
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 400;
+}
+
+#popupDevice .device-title p strong {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+#popupDevice .device-title .device-count {
+  font-size: 14px;
+  padding: 0 16px;
+  line-height: 30px;
+  border: 1px solid #E4DED3;
+  height: 32px;
+  font-weight: 400;
+}
+
+#popupDevice .device-title .device-count strong {
+  color: #A07D3B;
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+#popupDevice .device-table .table-row tr td {
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+#popupDevice .device-table .btn-edit, #popupDevice .device-table .btn-delete {
+  margin-left: 20px;
 }
 
 .dim {
@@ -2913,6 +3010,55 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 @media screen and (min-width: 720px) {
   #wrap .form-control .fake-file-box .fake-file label {
+    font-size: 13px;
+  }
+}
+
+#wrap .form-control .fake-save-box {
+  position: relative;
+}
+
+#wrap .form-control .fake-save-box .fake-input {
+  width: 100%;
+  border: 1px solid #E4DED3;
+  padding: 1.25vw 9.72222vw 1.25vw 1.11111vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-save-box .fake-input {
+    padding: 9px 70px 9px 8px;
+  }
+}
+
+#wrap .form-control .fake-save-box .fake-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+}
+
+#wrap .form-control .fake-save-box .fake-btn label {
+  display: inline-block;
+  padding: 0.76389vw 0.69444vw;
+  text-align: center;
+  font-size: 1.80556vw;
+  color: #2C2923;
+  border: 1px solid #E4DED3;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 2px;
+  line-height: 1;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-save-box .fake-btn label {
+    padding: 5.5px 5px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .form-control .fake-save-box .fake-btn label {
     font-size: 13px;
   }
 }
@@ -7280,7 +7426,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 3px;
 }
 
-#wrap .section-mypage .wrap .content .total-number-box .device {
+#wrap .section-mypage .wrap .content .total-number-box .device a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
