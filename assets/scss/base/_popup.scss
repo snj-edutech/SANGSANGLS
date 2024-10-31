@@ -10,596 +10,200 @@
     background-color: rgba( 0, 0, 0, .6);
 }
 
-.popup{
-	display:none;
-	justify-content: center;
-	align-items: center;
-	background-color:rgba(0,0,0,0.6);
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 1003;
-	font-family: $font-pretendard;
-	&.show{display:flex;}
-
-
-	&-wrap{
-		position:relative;
-		background-color:$color-white;
-		@include vw(width,600px);
-
-	}
-
-	&-close{
-		@include close(40px, 40px, 1px, $color-black);
-		font-size:0;
-		@include vw(top,5px);
-		@include vw(right,10px);
-		z-index: 10002;
-
-		&.white{
-			&:before, &:after{background-color:#fff;}
-		}
-	}	
-
-	&.wide{
+#wrap{
+	.popup{
 		display:none;
-		position: absolute;
-		right:auto;
-		left: 50%;
+		justify-content: center;
+		align-items: center;
+		background-color:rgba(0,0,0,0.6);
+		position: fixed;
 		top: 0;
-		bottom:auto;
-		z-index: 300;
-		width: 90%;
-		max-width: 600px;
-		margin: 0 auto;
-		font-family: $font-noto;
-		@include translateX(-50%);
-		@include boxSizing(border-box);
+		right: 0;
+		bottom: 0;
+		left: 0;
 		z-index: 1003;
-		border-radius: 30px;
-			
-		@include breakpoint(minDesktop){
-			width:auto;
-			max-width: 100%;
-			border-radius: 38px;
+		font-family: $font-pretendard;
+		&.show{display:flex;}
+
+
+		&-wrap{
+			position:relative;
+			background-color:$color-white;
+			@include vw(width,600px);
+
 		}
 
+		&-close{
+			@include close(40px, 40px, 1px, $color-black);
+			font-size:0;
+			@include vw(top,5px);
+			@include vw(right,10px);
+			z-index: 10002;
 
-	}
+			&.white{
+				&:before, &:after{background-color:#fff;}
+			}
+		}	
 
-	&-title{
-		@include vw(padding,12px 24px);
-		color:$color-black;
-		@include vw(font-size, 16px);
-		@include vw(line-height, 27.2px);
-		font-weight:600;
-		text-align:left;
-		background-color:$color-light-brown2;
-		border-bottom:1px solid $color-light-brown;
-		dl{
-			display:flex;
-			dt,dd{@include vw(font-size, 14px);	@include vw(line-height, 23.8px);font-weight:400;}
-			dt{@include vw(width,48px);font-weight:600;}
-			dd{@include vw(margin-left,20px);}
+		&.wide{
+			display:none;
+			position: absolute;
+			right:auto;
+			left: 50%;
+			top: 0;
+			bottom:auto;
+			z-index: 300;
+			width: 90%;
+			max-width: 600px;
+			margin: 0 auto;
+			font-family: $font-noto;
+			@include translateX(-50%);
+			@include boxSizing(border-box);
+			z-index: 1003;
+			border-radius: 30px;
+				
+			@include breakpoint(minDesktop){
+				width:auto;
+				max-width: 100%;
+				border-radius: 38px;
+			}
+
+
 		}
 
-	}
+		&-title{
+			@include vw(padding,12px 24px);
+			color:$color-black;
+			@include vw(font-size, 16px);
+			@include vw(line-height, 27.2px);
+			font-weight:600;
+			text-align:left;
+			background-color:$color-light-brown2;
+			border-bottom:1px solid $color-light-brown;
+			dl{
+				display:flex;
+				dt,dd{@include vw(font-size, 14px);	@include vw(line-height, 23.8px);font-weight:400;}
+				dt{@include vw(width,48px);font-weight:600;}
+				dd{@include vw(margin-left,20px);}
+			}
 
-	&-text{
-		p{
+		}
+
+		&-text{
+			p{
+				color:$color-black;
+				@include vw(font-size,16px);
+				@include vw(line-height,27.2px);
+				text-align:center;
+				font-weight:400;
+				font-family: $font-pretendard;
+				@include boxSizing(border-box);
+			}
+		}
+
+		&-notice{
+			background-color:$color-light-beige;
+			padding:16px;margin-top:20px;
 			color:$color-black;
 			@include vw(font-size,16px);
 			@include vw(line-height,27.2px);
-			text-align:center;
 			font-weight:400;
 			font-family: $font-pretendard;
 			@include boxSizing(border-box);
-		}
-	}
-
-	&-notice{
-		background-color:$color-light-beige;
-		padding:16px;margin-top:20px;
-		color:$color-black;
-		@include vw(font-size,16px);
-		@include vw(line-height,27.2px);
-		font-weight:400;
-		font-family: $font-pretendard;
-		@include boxSizing(border-box);
-		
-	}
-
-
-	&-scroll{
-		@include boxSizing(border-box);
-		@include vw(max-height,600px);
-		overflow-y:auto;
-
-		@extend %scrollBar;
-	}
-
-	&-cont{
-		@include vw(padding,24px);
-		p{
-			color:$color-black;
-			@include vw(font-size,14px);
-			@include vw(line-height,23.8px);
-			text-align:left;
-			font-weight:400;
-			font-family: $font-pretendard;
-		}
-		.box{
-			@include vw(margin-bottom,60px);
-			&:last-child{margin-bottom:0;}
-
-			.table-row{
-				margin-top:20px;
-				th,td{
-					padding: 8px 12px !important;
-					@include vw(font-size,13px);
-					@include vw(line-height,22.1px);
-				}
-				&+p{
-					@include vw(margin-top, 20px);
-				}
-			}
-
-			.upload-img{
-				margin-top:20px;
-				margin-bottom:20px;
-				img{
-					width:100%;
-				}
-			}
-		}
-		.heading{@include vw(margin-bottom,20px);	@include vw(font-size,16px);font-weight:600;line-height:1;}
-		.border-line{
-			@include vw(padding-bottom,20px);
-			@include vw(margin-bottom,40px);
-			border-bottom:1px solid $color-light-brown;
-		}
-
-		.notice{
-			color:$color-gray;font-size:14px;font-weight:400;margin-top:8px;
-		}
-	}
-
-	&-action{
-		@include vw(margin-top,24px);
-		justify-content: center;
-		display:flex;
-		a {
-			display:flex;
-			justify-content: center;
-			align-items: center;
-			@include vw(font-size, 14px);
-			@include vw(border-radius,2px);	
-			@include vw(width, 73px);
-			@include vw(height, 40px);
-			color:$color-white;
-			background-color:$color-brown;
-			@include vw(margin,0 4px);	
-			&.popup-cancel{
-				background-color:$color-light-gray;
-			}
-		}
-	}
-
-}
-
-#popupAlert1, #popupAlert2{
-	.popup-wrap{
-		@include vw(border-radius,8px);
-		@include vw(width,376px);
-		@include vw(padding,36px);
-		@include boxSizing(border-box);
-	}
-}
-
-
-#popupLayerVideo{
-	.popup{
-		&-wrap{
-			width:100%;
-			max-width:720px;
-			@include breakpoint(maxMobile){
-				width:100%;
-				max-width:720px;
-			}
-		}
-		&-close{
-			@include close(60px, 60px, 2px, #fff);
-			top: -10px;
-			right:-40px;
-			z-index: 10002;
-			@include breakpoint(maxMobile){
-				top: -20px;
-				right:-60px;
-			}
-		}
-		&-content{
-			position: relative;
-			padding-bottom: 56.25%;
-			height: 0;
-			width:100%;
-
-			iframe, video{
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height:100%;
-				object-fit: inherit;
-			}
-			min-height:auto;
-			@include breakpoint(maxMobile){
-				min-height:auto;
-			}
-		}
-	}
-
-	&.shorts{
-		.popup{
-			&-wrap{
-				@include vw(max-width,480px);
-				@include breakpoint(maxMobile){
-					max-width:320px;
-				}
-			}
-
-			&-close{
-				@include breakpoint(maxMobile){
-					right:-18px;
-				}
-			}
-
-			&-content{
-				padding-bottom: 177.777%;
-			}
-		}
-	}
-}
-
-#popupProfile{
-	.box{
-		margin-bottom:20px;
-	}
-
-	.border-line{
-		@include vw(margin-bottom,20px);
-	}
-}
-
-
-#popupBookInfo{
-	.border-line{
-		@include vw(margin-bottom,20px);
-	}
-	.desc-box{
-		display:flex;
-		align-items:center;
-		margin-bottom:20px;
-		.book-img{
-			display:flex;
-			justify-content:center;
-			align-items: center;
-			background-color:$color-light-brown2;
-			@include vw(width, 168px);@include vw(height, 168px);
-			overflow:hidden;
 			
-			img{
-				width:100%;
-				height:100%;
-			}
-
-			&+.book-desc{margin-left:20px;}
 		}
 
-		.book-desc{
-			text-align:left;
-			@include vw(width, 364px);
-			.desc-title{
-				position:relative;
-				display:inline-block;
-				font-size:18px;
-				color:$color-black;
-				font-weight:600;
-				line-height:27px;
-			}
 
-			.desc-info{
-				font-size:14px;
+		&-scroll{
+			@include boxSizing(border-box);
+			@include vw(max-height,600px);
+			overflow-y:auto;
+
+			@extend %scrollBar;
+		}
+
+		&-cont{
+			@include vw(padding,24px);
+			p{
 				color:$color-black;
-				line-height:23.8px;
-				margin-top:20px;
-				p{
-					margin-top:4px;
-					font-weight:400;
-					&:first-child{margin-top:0;}
-					span{
-						display:inline-block;
-						width:64px;
-						text-align:left;
+				@include vw(font-size,14px);
+				@include vw(line-height,23.8px);
+				text-align:left;
+				font-weight:400;
+				font-family: $font-pretendard;
+				strong{font-weight:600;}
+			}
+			.box{
+				@include vw(margin-bottom,60px);
+				&:last-child{margin-bottom:0;}
+
+				.table-row{
+					margin-top:20px;
+					th,td{
+						padding: 8px 12px;
+						@include vw(font-size,13px);
+						@include vw(line-height,22.1px);
 					}
-					strong{
-						display:inline-block;
-						font-weight:600;
+					&+p{
+						@include vw(margin-top, 20px);
+					}
+				}
+
+				.upload-img{
+					margin-top:20px;
+					margin-bottom:20px;
+					img{
+						width:100%;
 					}
 				}
 			}
+			.heading{@include vw(margin-bottom,20px);	@include vw(font-size,16px);font-weight:600;line-height:1;}
+			.border-line{
+				@include vw(padding-bottom,20px);
+				@include vw(margin-bottom,40px);
+				border-bottom:1px solid $color-light-brown;
+			}
 
-			.desc-price{
+			.notice{
+				color:$color-gray;font-size:14px;font-weight:400;margin-top:8px;
+			}
+		}
+
+		&-action{
+			@include vw(margin-top,24px);
+			justify-content: center;
+			display:flex;
+			a {
 				display:flex;
-				align-items:center;
-				margin-top:24px;
-				.price-subject{width:64px;font-size:14px;}
-				.price-box{
-					.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
-					.price-before, .price-after{font-size:14px;}
-				}
-
-				.price-before, .price-sale, .price-after{font-size:14px;font-weight:600;}
-				.price-before{font-weight:400;color:$color-light-gray;margin-right:8px;    text-decoration: line-through;}
-				.price-sale{margin-right:8px;color:$color-brown;}
-				.price-after{color:$color-black;}
-				
-			}
-		}
-
-
-	}
-
-}
-
-#popupReviewWrite{
-	.form-control{
-		.select, .custom-select{margin-bottom:20px;width:552px;}
-	}
-
-	.notice + .action{margin-top:0px;}
-
-}
-
-#popupReviewUpdate, #popupReviewSuccess,
-#popupMypageReviewUpdate, #popupMypageReviewWrite{
-	.course-title{
-		font-weight:600;
-		font-size:20px;
-		line-height:34px;
-		color:$color-black;
-		margin:20px 0;
-		text-align:center;
-	}
-
-	.form-control{
-		.textarea{height:294px !important;}
-		.select, .custom-select{width:552px;}
-	}
-}
-
-#popupMypageReviewUpdate, #popupMypageReviewWrite{
-	.course-title{
-		margin-top:0;
-	}
-	.form-control{
-		.textarea{height:368px !important;}
-	}
-	.action{margin-top:8px !important;}
-}
-
-.popup-reservation{
-	.table-row{
-		tr{
-			th,td{text-align:left !important;font-size:16px !important;}
-			td{
-				border-left: 1px solid $color-light-brown;
-			}
-
-			th{
-				&.border-left-line{
-					border-left: 1px solid $color-light-brown;
+				justify-content: center;
+				align-items: center;
+				@include vw(font-size, 14px);
+				@include vw(border-radius,2px);	
+				@include vw(width, 73px);
+				@include vw(height, 40px);
+				color:$color-white;
+				background-color:$color-brown;
+				@include vw(margin,0 4px);	
+				&.popup-cancel{
+					background-color:$color-light-gray;
 				}
 			}
 		}
-	}
-}
 
-#popupSchedule{
-	.popup-wrap{
-		width:1200px;
-	}
-
-	.step-box{
-		display:flex;
-		
-		.step{
-			.step-title{
-				font-weight:600;
-				font-size:16px;
-				line-height:27.2px;
-				color:$color-black;
-				strong{
-					font-weight:600;
-					color:$color-brown;
-					display:inline-block;
-					margin-right:8px;
-				}
-				margin-bottom:20px;
-			}
-			&.step-1{
-				.calender-box{
-					border:1px solid $color-light-brown;
-					padding:28px 38px 24px;
-					width:848px;
-					@include boxSizing(border-box);
-
-					.calender-slider{
-						.slick-slide{margin:0 10px;}
-	
-						.slick-arrow{
-							top:13px;
-							background:transparent;
-							width:auto;
-							height:auto;
-							&:before{
-								width:10px;height:10px;
-								border-color: $color-brown;
-								
-							}
-				
-							&.slick-prev{
-								margin-left:-67px;
-								&:before{
-									border-bottom-width: 1.5px;
-									border-left-width: 1.5px;
-								}
-							}
-							&.slick-next{
-								margin-right:-67px;
-								&:before{
-									border-top-width: 1.5px;
-									border-right-width: 1.5px;
-								}
-							}
-	
-							&.slick-disabled{opacity:0.5;cursor:default;}
-	
-						}
-					}
-
-					.btn-arrow{
-						&.btn-prev{
-							@include arrow(left, 10px, 10px, 1.5px, $color-brown);
-							&:before{
-								margin-top:-12px;
-								left:-20px;
-							}
-						}
-						&.btn-next{
-							@include arrow(right, 10px, 10px, 1.5px, $color-brown);
-							&:before{
-								margin-top:-12px;
-								right:-20px;
-							}
-						}
-
-						
-					}
-
-					.month-box{
-						position:relative;
-						text-align:center;
-						.month{
-							font-weight:600;
-							font-size:20px;
-						}
-					}
-
-					.calender-table{
-						margin-top:16px;
-						.table-row{
-							border-top:0;
-							width:100%;
-							tr{
-								&:last-child{border-bottom:none;}
-								th,td{}
-								th{background:transparent;padding:0;height:28px;}
-								td{
-									position:relative;
-									padding:8px 4px 16px;
-									@include boxSizing(border-box);
-									.day{
-										//position:absolute;left:0;top:0;
-										font-size:14px;font-weight:400;
-										display:block;text-align:left;
-										margin-bottom:8px;
-										line-height:19px;
-									}
-
-									&:hover, &.active{
-										background:$color-light-brown2;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			&.step-2{
-				width:280px;margin-left:24px;
-				.timetable-box{
-					.timetable-title{
-						border-top:1px solid $color-light-brown;
-						color:$color-black;
-						font-size:16px;
-						font-weight:600;
-						background-color:$color-light-brown2;
-						padding:8px;
-						@include boxSizing(border-box);
-						text-align:center;
-					}
-
-					.timetable-list{
-						border:1px solid $color-light-brown;
-						
-						ul{
-							@include boxSizing(border-box);
-							padding:16px 8px;
-							height:389px;
-							@extend %scrollBar;
-							overflow-y:auto;
-
-							li{
-								a{
-									padding:10px 8px;
-									display:flex;
-									align-items: cneter;
-									justify-content: space-between;
-
-									.time{
-										font-size:14px;
-										font-weight:400;
-										color:$color-black;
-									}
-								}
-								&:hover, &.active{
-									background:$color-light-brown2;
-								}
-								
-							}
-						}
-					}
-					.timetable-action{
-						margin-top:20px;
-					}
-				}
-			}
-		}
-	}
-}
-
-#popupDevice{
-	.popup-wrap{
-		width:1200px;
-	}
-
-	.device-title{
-		display:flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		margin-bottom:20px;
-		p{
-			font-size:16px;line-height:27.2px;font-weight:400;
-			strong{font-size:20px;font-weight:600;line-height:34px;}
+		.course-title{
+			font-weight:600;
+			font-size:20px;
+			line-height:34px;
+			color:$color-black;
+			margin-bottom:20px;
+			text-align:center;
 		}
 
-		.device-count{
-			font-size:14px;padding:0 16px;line-height:30px;
-			border:1px solid $color-light-brown;height:32px;
-			font-weight:400;
+		.remain-count{
+			line-height:1;
+			font-weight:400;font-size:14px;
+			text-align:center;
+			margin-top:8px;
 			strong{
 				color:$color-brown;
 				display:inline-block;
@@ -607,18 +211,488 @@
 				font-weight:600;
 			}
 		}
-	}
 
-	.device-table{
-		.table-row{
-			tr{
-				th,td{}
-				th{}
-				td{font-size:16px;line-height:27.2px;font-weight:600;word-break: break-all;}
+		.scroll-line-box{
+			margin-bottom:16px;
+			border:1px solid $color-light-brown;
+			padding:20px;
+			@include boxSizing(border-box);
+			@include vw(max-height,158px);
+			overflow-y:auto;
+			@extend %scrollBar;
+			&.min{@include vw(max-height,126px);}
+			dl{
+				&+dl{margin-top:20px;}
+				dt,dd{
+					color:$color-black;
+					@include vw(font-size,16px);
+					@include vw(line-height,27.2px);
+					text-align:left;
+					font-weight:400;
+					font-family: $font-pretendard;
+					@include boxSizing(border-box);
+				}
+				dt{font-weight:600;margin-bottom:8px;}
+				dd{}
 			}
 		}
 
+	}
 
-		.btn-edit, .btn-delete{margin-left:20px;}
+	#popupAlert1, #popupAlert2{
+		.popup-wrap{
+			@include vw(border-radius,8px);
+			@include vw(width,376px);
+			@include vw(padding,36px);
+			@include boxSizing(border-box);
+		}
+	}
+
+
+	#popupLayerVideo{
+		.popup{
+			&-wrap{
+				width:100%;
+				max-width:720px;
+				@include breakpoint(maxMobile){
+					width:100%;
+					max-width:720px;
+				}
+			}
+			&-close{
+				@include close(60px, 60px, 2px, #fff);
+				top: -10px;
+				right:-40px;
+				z-index: 10002;
+				@include breakpoint(maxMobile){
+					top: -20px;
+					right:-60px;
+				}
+			}
+			&-content{
+				position: relative;
+				padding-bottom: 56.25%;
+				height: 0;
+				width:100%;
+
+				iframe, video{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height:100%;
+					object-fit: inherit;
+				}
+				min-height:auto;
+				@include breakpoint(maxMobile){
+					min-height:auto;
+				}
+			}
+		}
+
+		&.shorts{
+			.popup{
+				&-wrap{
+					@include vw(max-width,480px);
+					@include breakpoint(maxMobile){
+						max-width:320px;
+					}
+				}
+
+				&-close{
+					@include breakpoint(maxMobile){
+						right:-18px;
+					}
+				}
+
+				&-content{
+					padding-bottom: 177.777%;
+				}
+			}
+		}
+	}
+
+	#popupProfile{
+		.box{
+			margin-bottom:20px;
+		}
+
+		.border-line{
+			@include vw(margin-bottom,20px);
+		}
+	}
+
+
+	#popupBookInfo{
+		.border-line{
+			@include vw(margin-bottom,20px);
+		}
+		.desc-box{
+			display:flex;
+			align-items:center;
+			margin-bottom:20px;
+			.book-img{
+				display:flex;
+				justify-content:center;
+				align-items: center;
+				background-color:$color-light-brown2;
+				@include vw(width, 168px);@include vw(height, 168px);
+				overflow:hidden;
+				
+				img{
+					width:100%;
+					height:100%;
+				}
+
+				&+.book-desc{margin-left:20px;}
+			}
+
+			.book-desc{
+				text-align:left;
+				@include vw(width, 364px);
+				.desc-title{
+					position:relative;
+					display:inline-block;
+					font-size:18px;
+					color:$color-black;
+					font-weight:600;
+					line-height:27px;
+				}
+
+				.desc-info{
+					font-size:14px;
+					color:$color-black;
+					line-height:23.8px;
+					margin-top:20px;
+					p{
+						margin-top:4px;
+						font-weight:400;
+						&:first-child{margin-top:0;}
+						span{
+							display:inline-block;
+							width:64px;
+							text-align:left;
+						}
+						strong{
+							display:inline-block;
+							font-weight:600;
+						}
+					}
+				}
+
+				.desc-price{
+					display:flex;
+					align-items:center;
+					margin-top:24px;
+					.price-subject{width:64px;font-size:14px;}
+					.price-box{
+						.badge{margin-right:8px;padding: 3px 4px;font-size:11px;}
+						.price-before, .price-after{font-size:14px;}
+					}
+
+					.price-before, .price-sale, .price-after{font-size:14px;font-weight:600;}
+					.price-before{font-weight:400;color:$color-light-gray;margin-right:8px;    text-decoration: line-through;}
+					.price-sale{margin-right:8px;color:$color-brown;}
+					.price-after{color:$color-black;}
+					
+				}
+			}
+
+
+		}
+
+	}
+
+	#popupReviewWrite{
+		.form-control{
+			.select, .custom-select{margin-bottom:20px;width:552px;}
+		}
+
+		.notice + .action{margin-top:0px;}
+
+	}
+
+	#popupReviewUpdate, #popupReviewSuccess,
+	#popupMypageReviewUpdate, #popupMypageReviewWrite{
+		.form-control{
+			.textarea{height:294px;}
+			.select, .custom-select{
+				width:552px;
+				margin-bottom:20px;
+			}
+		}
+	}
+
+	#popupMypageReviewUpdate, #popupMypageReviewWrite{
+		.form-control{
+			.textarea{height:368px;}
+		}
+		.action{margin-top:8px;}
+	}
+
+	.popup-reservation{
+		.table-row{
+			tr{
+				th,td{text-align:left;font-size:16px;}
+				td{
+					border-left: 1px solid $color-light-brown;
+				}
+
+				th{
+					&.border-left-line{
+						border-left: 1px solid $color-light-brown;
+					}
+				}
+			}
+		}
+	}
+
+	#popupSchedule{
+		.popup-wrap{
+			width:1200px;
+		}
+
+		.step-box{
+			display:flex;
+			
+			.step{
+				.step-title{
+					font-weight:600;
+					font-size:16px;
+					line-height:27.2px;
+					color:$color-black;
+					strong{
+						font-weight:600;
+						color:$color-brown;
+						display:inline-block;
+						margin-right:8px;
+					}
+					margin-bottom:20px;
+				}
+				&.step-1{
+					.calender-box{
+						border:1px solid $color-light-brown;
+						padding:28px 38px 24px;
+						width:848px;
+						@include boxSizing(border-box);
+
+						.calender-slider{
+							.slick-slide{margin:0 10px;}
+		
+							.slick-arrow{
+								top:13px;
+								background:transparent;
+								width:auto;
+								height:auto;
+								&:before{
+									width:10px;height:10px;
+									border-color: $color-brown;
+									
+								}
+					
+								&.slick-prev{
+									margin-left:-67px;
+									&:before{
+										border-bottom-width: 1.5px;
+										border-left-width: 1.5px;
+									}
+								}
+								&.slick-next{
+									margin-right:-67px;
+									&:before{
+										border-top-width: 1.5px;
+										border-right-width: 1.5px;
+									}
+								}
+		
+								&.slick-disabled{opacity:0.5;cursor:default;}
+		
+							}
+						}
+
+						.btn-arrow{
+							&.btn-prev{
+								@include arrow(left, 10px, 10px, 1.5px, $color-brown);
+								&:before{
+									margin-top:-12px;
+									left:-20px;
+								}
+							}
+							&.btn-next{
+								@include arrow(right, 10px, 10px, 1.5px, $color-brown);
+								&:before{
+									margin-top:-12px;
+									right:-20px;
+								}
+							}
+
+							
+						}
+
+						.month-box{
+							position:relative;
+							text-align:center;
+							.month{
+								font-weight:600;
+								font-size:20px;
+							}
+						}
+
+						.calender-table{
+							margin-top:16px;
+							.table-row{
+								border-top:0;
+								width:100%;
+								tr{
+									&:last-child{border-bottom:none;}
+									th,td{}
+									th{background:transparent;padding:0;height:28px;}
+									td{
+										position:relative;
+										padding:8px 4px 16px;
+										@include boxSizing(border-box);
+										.day{
+											//position:absolute;left:0;top:0;
+											font-size:14px;font-weight:400;
+											display:block;text-align:left;
+											margin-bottom:8px;
+											line-height:19px;
+										}
+
+										&:hover, &.active{
+											background:$color-light-brown2;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				&.step-2{
+					width:280px;margin-left:24px;
+					.timetable-box{
+						.timetable-title{
+							border-top:1px solid $color-light-brown;
+							color:$color-black;
+							font-size:16px;
+							font-weight:600;
+							background-color:$color-light-brown2;
+							padding:8px;
+							@include boxSizing(border-box);
+							text-align:center;
+						}
+
+						.timetable-list{
+							border:1px solid $color-light-brown;
+							
+							ul{
+								@include boxSizing(border-box);
+								padding:16px 8px;
+								height:389px;
+								@extend %scrollBar;
+								overflow-y:auto;
+
+								li{
+									a{
+										padding:10px 8px;
+										display:flex;
+										align-items: cneter;
+										justify-content: space-between;
+
+										.time{
+											font-size:14px;
+											font-weight:400;
+											color:$color-black;
+										}
+									}
+									&:hover, &.active{
+										background:$color-light-brown2;
+									}
+									
+								}
+							}
+						}
+						.timetable-action{
+							margin-top:20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#popupDevice{
+		.popup-wrap{
+			width:1200px;
+		}
+
+		.device-title{
+			display:flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			margin-bottom:20px;
+			p{
+				font-size:16px;line-height:27.2px;font-weight:400;
+				strong{font-size:20px;font-weight:600;line-height:34px;}
+			}
+
+			.remain-count{
+				padding:0 16px;line-height:30px;
+				border:1px solid $color-light-brown;height:32px;
+			}
+		}
+
+		.device-table{
+			.table-row{
+				tr{
+					th,td{}
+					th{}
+					td{font-size:16px;line-height:27.2px;font-weight:600;word-break: break-all;}
+				}
+			}
+
+
+			.btn-edit, .btn-delete{margin-left:20px;}
+		}
+	}
+
+	.popup-coursePeriod{
+		.course-title{
+			margin-bottom:16px;
+		}
+
+		.lecture-box{
+			background-color:$color-light-brown2;
+			border:1px solid $color-light-brown;
+			padding:20px;
+			margin-top:16px;
+			dl{
+				margin-top:8px;
+				&:first-child{margin-top:0;}
+				display:flex;align-items:center;
+				dt,dd{
+					font-weight:400;font-size:14px;color:$color-black;line-height:23.8px;
+				}
+				dt{width:80px;}
+				dd{
+					width:408px;
+					margin-left:24px;
+					strong{font-weight:600;}
+					.form-control{
+						
+						.select{width:120px;background-color:$color-white;}
+						.text{width:160px;margin-left:4px;background-color:$color-white;}
+					}
+				}
+			}
+		}
+
+		.action{
+			margin-top:16px;
+			a{
+				height:38px;line-height:38px;
+				padding:0 12px;
+			}
+		}
 	}
 }

@@ -515,7 +515,7 @@
             label {
                 display: inline-block;
                 @include vw(padding-left, 30px);
-                background: url('../images/icon_checkbox_check.svg') no-repeat left top;
+                background: url('../images/icon_checkbox_check.svg') no-repeat left center;
                 background-size: 24px 24px;
                 //cursor: pointer;
 				font-weight:400;

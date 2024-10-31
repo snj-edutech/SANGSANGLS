@@ -87,7 +87,7 @@
 
 					<div class="list-row">
 						<div class="name">수강후기 수정하기 팝업</div>
-						<button type="button" class="btn small primary" onclick="popupOpen('#popupRevieUpdate')">확인</button>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupReviewUpdate')">확인</button>
 					</div>
 
 					
@@ -130,6 +130,14 @@
 					<div class="list-row">
 						<div class="name">수강후기 수정</div>
 						<button type="button" class="btn small primary" onclick="popupOpen('#popupMypageReviewUpdate')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">수강기간연장(연장기간 미포함)</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupCoursePeriod1')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">수강기간연장(연장기간 포함)</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupCoursePeriod2')">확인</button>
 					</div>
 				</div>
 
@@ -804,7 +812,7 @@
 							강좌명 길면 2줄 노출
 						</div>
 	
-						<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
+						<textarea class="textarea" readonly cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
 	추리논증형 인간으로 거듭나는 데에 초석이 되는 강의입니다. 처음에는 김재형 교수님의 강의를 따라가며 생각해보고 공부하는 과정이 낯설고 어렵게 느껴졌는데 그 과정을 꾸준히 하다 보면 이미 봤던 기출 문제인데도 전에 크게 놓쳤던 게 보이면서 머리가 맑게 트이는 듯한 순간이 올 때가 있습니다. 질문도 꼭 해보세요. 집에서 독학을 하는 상황인데 현재 제가 어려움을 겪고 있는 부분이 어떤 점인지 정확히 캐치해 주시고 조언도 주셔서 한결 마음이 편안해졌습니다. 감사합니다 :)
 						</textarea>
 					</div>
@@ -1429,7 +1437,7 @@
 							<strong>홍길동( YHBMFL084700)님의 기기정보</strong><br/>
 							강의를 수강하시는 기기는 제한적이니 등록된 기기에 네이밍하며 관리하세요!
 						</p>
-						<span class="device-count">기기 삭제 가능 횟수<strong>2회</strong></span>
+						<div class="remain-count">기기 삭제 가능 횟수<strong>2회</strong></div>
 					</div>
 					<div class="device-table">
 						<table class="table-row">
@@ -1502,12 +1510,11 @@
 					수강후기 작성하기
 				</div>
 				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+					</div>
 					<div class="form-control">
-						<div class="course-title">
-							[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
-							강좌명 길면 2줄 노출
-						</div>
-	
 						<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)"></textarea>
 					</div>
 					<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
@@ -1525,12 +1532,11 @@
 					수강후기 작성하기
 				</div>
 				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+					</div>
 					<div class="form-control">
-						<div class="course-title">
-							[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
-							강좌명 길면 2줄 노출
-						</div>
-	
 						<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
 	추리논증형 인간으로 거듭나는 데에 초석이 되는 강의입니다. 처음에는 김재형 교수님의 강의를 따라가며 생각해보고 공부하는 과정이 낯설고 어렵게 느껴졌는데 그 과정을 꾸준히 하다 보면 이미 봤던 기출 문제인데도 전에 크게 놓쳤던 게 보이면서 머리가 맑게 트이는 듯한 순간이 올 때가 있습니다. 질문도 꼭 해보세요. 집에서 독학을 하는 상황인데 현재 제가 어려움을 겪고 있는 부분이 어떤 점인지 정확히 캐치해 주시고 조언도 주셔서 한결 마음이 편안해졌습니다. 감사합니다 :)
 						</textarea>
@@ -1538,6 +1544,164 @@
 					<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
 					<div class="action">
 						<a href="javascript:popupClose('#popupMypageReviewUpdate');" class="btn large btn-brown">수정</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup popup-coursePeriod" id="popupCoursePeriod1">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupCoursePeriod1');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					수강기간 연장하기
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+						<div class="remain-count">연장가능 잔여 횟수<strong>2회</strong></div>
+					</div>
+	
+					<div class="scroll-line-box">
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+					</div>
+					<div class="form-control">
+						<div class="fake-checkbox">
+							<input type="checkbox" id="periodAgree" class="checkbox" checked="">
+							<label for="periodAgree">수강기간 연장에 대한 내용을 확인하였습니다.</label>
+						</div>
+					</div>
+	
+					<div class="lecture-box">
+						<dl>
+							<dt>강좌명</dt>
+							<dd>
+								<strong>(연장)[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 강좌명 길면 2줄 노출</strong>
+							</dd>
+						</dl>
+	
+						<dl>
+							<dt>일 수강료</dt>
+							<dd>
+								<strong>40,000원</strong>
+								<span>(전체수강료 800,000원 ÷ 수강기간 20일)</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>연장일수 선택</dt>
+							<dd>
+								<div class="form-control">
+									<span class="select">
+										<select name="" id="">
+											<option value="">7일</option>
+										</select>
+									</span>
+			
+									<input type="text" class="text" placeholder="금액확인" value="280,000원">
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="action">
+						<a href="javascript:popupClose('#popupCoursePeriod1');" class="btn btn-brown"><strong>수강기간 연장</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="popup popup-coursePeriod" id="popupCoursePeriod2">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupCoursePeriod2');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					수강기간 연장하기
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+						<div class="remain-count">연장가능 잔여 횟수<strong>2회</strong></div>
+					</div>
+	
+					<div class="scroll-line-box min">
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+					</div>
+					<div class="form-control">
+						<div class="fake-checkbox">
+							<input type="checkbox" id="periodAgree" class="checkbox" checked="">
+							<label for="periodAgree">수강기간 연장에 대한 내용을 확인하였습니다.</label>
+						</div>
+					</div>
+	
+					<div class="lecture-box">
+						<dl>
+							<dt>강좌명</dt>
+							<dd>
+								<strong>(연장)[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 강좌명 길면 2줄 노출</strong>
+							</dd>
+						</dl>
+	
+						<dl>
+							<dt>일 수강료</dt>
+							<dd>
+								<strong>40,000원</strong>
+								<span>(전체수강료 800,000원 ÷ 수강기간 20일)</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>연장일수 선택</dt>
+							<dd>
+								<div class="form-control">
+									<span class="select small">
+										<select name="" id="">
+											<option value="">7일</option>
+										</select>
+									</span>
+			
+									<input type="text" class="text" placeholder="금액확인" value="280,000원">
+								</div>
+							</dd>
+						</dl>
+	
+						<dl>
+							<dt>연장기간</dt>
+							<dd>
+								<strong>YYYY-MM-DD ~ YYYY-MM-DD</strong>
+							</dd>
+						</dl>
+	
+					</div>
+					<div class="action">
+						<a href="javascript:popupClose('#popupCoursePeriod2');" class="btn btn-brown"><strong>수강기간 연장</strong></a>
 					</div>
 				</div>
 			</div>

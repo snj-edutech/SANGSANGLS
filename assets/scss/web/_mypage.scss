@@ -88,19 +88,32 @@
 						&:last-child{padding-left:0;margin-left:auto;}
 					}
 
-					.subject{
-						width:80px;
-					}
 					.desc-box{
-						width:auto;
+						&:first-child{padding-right:36px;}
+						
 						.t-img + .t-desc{
 							margin-left:24px;
+							.desc-title{
+								width:519px;
+							}
 						}
 
-						.t-desc .desc-title{
-							width:519px;
+						.desc-title{
+							width:100%;
 						}
 					}
+
+					.subject{
+						width:80px;
+
+						&+.desc-box{
+							width:663px;
+							padding: 20px 24px;
+							
+						}
+					}
+				
+
 					.action-box{
 						.btn{
 							width:128px;margin-top:8px;
@@ -114,17 +127,6 @@
 					.course-list{
 						&:hover{
 							background-color:$color-light-brown2;
-						}
-						.desc-box{
-							.t-desc .desc-title{width:687px;}
-						}
-
-						.subject{
-							&+.desc-box{
-								.t-desc .desc-title{
-									width:571px;
-								}
-							}
 						}
 					}
 				}

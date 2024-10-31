@@ -261,31 +261,31 @@
   }
 }
 
-.popup-scroll, #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul, #wrap .agree-check-box .agree-box, #wrap .editor-box {
+#wrap .popup-scroll, #wrap .popup .scroll-line-box, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul, #wrap .agree-check-box .agree-box, #wrap .editor-box {
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
 
-.popup-scroll::-webkit-scrollbar, #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar, #wrap .agree-check-box .agree-box::-webkit-scrollbar, #wrap .editor-box::-webkit-scrollbar {
+#wrap .popup-scroll::-webkit-scrollbar, #wrap .popup .scroll-line-box::-webkit-scrollbar, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar, #wrap .agree-check-box .agree-box::-webkit-scrollbar, #wrap .editor-box::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-.popup-scroll::-webkit-scrollbar-button:start:decrement, #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:start:decrement, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:start:decrement, #wrap .editor-box::-webkit-scrollbar-button:start:decrement, .popup-scroll::-webkit-scrollbar-button:end:increment, #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:end:increment, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:end:increment, #wrap .editor-box::-webkit-scrollbar-button:end:increment {
+#wrap .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup .scroll-line-box::-webkit-scrollbar-button:start:decrement, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:start:decrement, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:start:decrement, #wrap .editor-box::-webkit-scrollbar-button:start:decrement, #wrap .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup .scroll-line-box::-webkit-scrollbar-button:end:increment, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:end:increment, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:end:increment, #wrap .editor-box::-webkit-scrollbar-button:end:increment {
   display: block;
   width: 0;
   height: 0;
   background-color: #F2EFE7;
 }
 
-.popup-scroll::-webkit-scrollbar-track, #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-track, #wrap .agree-check-box .agree-box::-webkit-scrollbar-track, #wrap .editor-box::-webkit-scrollbar-track {
+#wrap .popup-scroll::-webkit-scrollbar-track, #wrap .popup .scroll-line-box::-webkit-scrollbar-track, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-track, #wrap .agree-check-box .agree-box::-webkit-scrollbar-track, #wrap .editor-box::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 4px;
 }
 
-.popup-scroll::-webkit-scrollbar-thumb, #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-thumb, #wrap .agree-check-box .agree-box::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb {
+#wrap .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup .scroll-line-box::-webkit-scrollbar-thumb, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-thumb, #wrap .agree-check-box .agree-box::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb {
   background-color: #F2EFE7;
   border-radius: 4px;
 }
@@ -509,7 +509,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.popup {
+#wrap .popup {
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -527,25 +527,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
-.popup.show {
+#wrap .popup.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.popup-wrap {
+#wrap .popup-wrap {
   position: relative;
   background-color: #FFFFFC;
   width: 83.33333vw;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-wrap {
+  #wrap .popup-wrap {
     width: 600px;
   }
 }
 
-.popup-close {
+#wrap .popup-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -559,18 +559,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-close {
+  #wrap .popup-close {
     width: 40px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-close {
+  #wrap .popup-close {
     height: 40px;
   }
 }
 
-.popup-close::before, .popup-close::after {
+#wrap .popup-close::before, #wrap .popup-close::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -582,17 +582,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #2C2923;
 }
 
-.popup-close::before {
+#wrap .popup-close::before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.popup-close::after {
+#wrap .popup-close::after {
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
-.popup-close span {
+#wrap .popup-close span {
   position: absolute;
   display: inline-block;
   overflow: hidden;
@@ -609,22 +609,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-close {
+  #wrap .popup-close {
     top: 5px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-close {
+  #wrap .popup-close {
     right: 10px;
   }
 }
 
-.popup-close.white:before, .popup-close.white:after {
+#wrap .popup-close.white:before, #wrap .popup-close.white:after {
   background-color: #fff;
 }
 
-.popup.wide {
+#wrap .popup.wide {
   display: none;
   position: absolute;
   right: auto;
@@ -645,14 +645,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 1024px) {
-  .popup.wide {
+  #wrap .popup.wide {
     width: auto;
     max-width: 100%;
     border-radius: 38px;
   }
 }
 
-.popup-title {
+#wrap .popup-title {
   padding: 1.66667vw 3.33333vw;
   color: #2C2923;
   font-size: 2.22222vw;
@@ -664,69 +664,69 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-title {
+  #wrap .popup-title {
     padding: 12px 24px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-title {
+  #wrap .popup-title {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-title {
+  #wrap .popup-title {
     line-height: 27.2px;
   }
 }
 
-.popup-title dl {
+#wrap .popup-title dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.popup-title dl dt, .popup-title dl dd {
+#wrap .popup-title dl dt, #wrap .popup-title dl dd {
   font-size: 1.94444vw;
   line-height: 3.30556vw;
   font-weight: 400;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-title dl dt, .popup-title dl dd {
+  #wrap .popup-title dl dt, #wrap .popup-title dl dd {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-title dl dt, .popup-title dl dd {
+  #wrap .popup-title dl dt, #wrap .popup-title dl dd {
     line-height: 23.8px;
   }
 }
 
-.popup-title dl dt {
+#wrap .popup-title dl dt {
   width: 6.66667vw;
   font-weight: 600;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-title dl dt {
+  #wrap .popup-title dl dt {
     width: 48px;
   }
 }
 
-.popup-title dl dd {
+#wrap .popup-title dl dd {
   margin-left: 2.77778vw;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-title dl dd {
+  #wrap .popup-title dl dd {
     margin-left: 20px;
   }
 }
 
-.popup-text p {
+#wrap .popup-text p {
   color: #2C2923;
   font-size: 2.22222vw;
   line-height: 3.77778vw;
@@ -738,18 +738,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-text p {
+  #wrap .popup-text p {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-text p {
+  #wrap .popup-text p {
     line-height: 27.2px;
   }
 }
 
-.popup-notice {
+#wrap .popup-notice {
   background-color: #FBFAF6;
   padding: 16px;
   margin-top: 20px;
@@ -763,18 +763,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-notice {
+  #wrap .popup-notice {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-notice {
+  #wrap .popup-notice {
     line-height: 27.2px;
   }
 }
 
-.popup-scroll {
+#wrap .popup-scroll {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-height: 83.33333vw;
@@ -782,22 +782,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-scroll {
+  #wrap .popup-scroll {
     max-height: 600px;
   }
 }
 
-.popup-cont {
+#wrap .popup-cont {
   padding: 3.33333vw;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont {
+  #wrap .popup-cont {
     padding: 24px;
   }
 }
 
-.popup-cont p {
+#wrap .popup-cont p {
   color: #2C2923;
   font-size: 1.94444vw;
   line-height: 3.30556vw;
@@ -807,73 +807,77 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont p {
+  #wrap .popup-cont p {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont p {
+  #wrap .popup-cont p {
     line-height: 23.8px;
   }
 }
 
-.popup-cont .box {
+#wrap .popup-cont p strong {
+  font-weight: 600;
+}
+
+#wrap .popup-cont .box {
   margin-bottom: 8.33333vw;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .box {
+  #wrap .popup-cont .box {
     margin-bottom: 60px;
   }
 }
 
-.popup-cont .box:last-child {
+#wrap .popup-cont .box:last-child {
   margin-bottom: 0;
 }
 
-.popup-cont .box .table-row {
+#wrap .popup-cont .box .table-row {
   margin-top: 20px;
 }
 
-.popup-cont .box .table-row th, .popup-cont .box .table-row td {
-  padding: 8px 12px !important;
+#wrap .popup-cont .box .table-row th, #wrap .popup-cont .box .table-row td {
+  padding: 8px 12px;
   font-size: 1.80556vw;
   line-height: 3.06944vw;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .box .table-row th, .popup-cont .box .table-row td {
+  #wrap .popup-cont .box .table-row th, #wrap .popup-cont .box .table-row td {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .box .table-row th, .popup-cont .box .table-row td {
+  #wrap .popup-cont .box .table-row th, #wrap .popup-cont .box .table-row td {
     line-height: 22.1px;
   }
 }
 
-.popup-cont .box .table-row + p {
+#wrap .popup-cont .box .table-row + p {
   margin-top: 2.77778vw;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .box .table-row + p {
+  #wrap .popup-cont .box .table-row + p {
     margin-top: 20px;
   }
 }
 
-.popup-cont .box .upload-img {
+#wrap .popup-cont .box .upload-img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.popup-cont .box .upload-img img {
+#wrap .popup-cont .box .upload-img img {
   width: 100%;
 }
 
-.popup-cont .heading {
+#wrap .popup-cont .heading {
   margin-bottom: 2.77778vw;
   font-size: 2.22222vw;
   font-weight: 600;
@@ -881,43 +885,43 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .heading {
+  #wrap .popup-cont .heading {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .heading {
+  #wrap .popup-cont .heading {
     font-size: 16px;
   }
 }
 
-.popup-cont .border-line {
+#wrap .popup-cont .border-line {
   padding-bottom: 2.77778vw;
   margin-bottom: 5.55556vw;
   border-bottom: 1px solid #E4DED3;
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .border-line {
+  #wrap .popup-cont .border-line {
     padding-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-cont .border-line {
+  #wrap .popup-cont .border-line {
     margin-bottom: 40px;
   }
 }
 
-.popup-cont .notice {
+#wrap .popup-cont .notice {
   color: #7A746A;
   font-size: 14px;
   font-weight: 400;
   margin-top: 8px;
 }
 
-.popup-action {
+#wrap .popup-action {
   margin-top: 3.33333vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -928,12 +932,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-action {
+  #wrap .popup-action {
     margin-top: 24px;
   }
 }
 
-.popup-action a {
+#wrap .popup-action a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,40 +957,122 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  .popup-action a {
+  #wrap .popup-action a {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-action a {
+  #wrap .popup-action a {
     border-radius: 2px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-action a {
+  #wrap .popup-action a {
     width: 73px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-action a {
+  #wrap .popup-action a {
     height: 40px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .popup-action a {
+  #wrap .popup-action a {
     margin: 0 4px;
   }
 }
 
-.popup-action a.popup-cancel {
+#wrap .popup-action a.popup-cancel {
   background-color: #BEBEBC;
 }
 
-#popupAlert1 .popup-wrap, #popupAlert2 .popup-wrap {
+#wrap .popup .course-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #2C2923;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#wrap .popup .remain-count {
+  line-height: 1;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+#wrap .popup .remain-count strong {
+  color: #A07D3B;
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+#wrap .popup .scroll-line-box {
+  margin-bottom: 16px;
+  border: 1px solid #E4DED3;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: 21.94444vw;
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup .scroll-line-box {
+    max-height: 158px;
+  }
+}
+
+#wrap .popup .scroll-line-box.min {
+  max-height: 17.5vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup .scroll-line-box.min {
+    max-height: 126px;
+  }
+}
+
+#wrap .popup .scroll-line-box dl + dl {
+  margin-top: 20px;
+}
+
+#wrap .popup .scroll-line-box dl dt, #wrap .popup .scroll-line-box dl dd {
+  color: #2C2923;
+  font-size: 2.22222vw;
+  line-height: 3.77778vw;
+  text-align: left;
+  font-weight: 400;
+  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup .scroll-line-box dl dt, #wrap .popup .scroll-line-box dl dd {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup .scroll-line-box dl dt, #wrap .popup .scroll-line-box dl dd {
+    line-height: 27.2px;
+  }
+}
+
+#wrap .popup .scroll-line-box dl dt {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
   border-radius: 1.11111vw;
   width: 52.22222vw;
   padding: 5vw;
@@ -995,36 +1081,36 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #popupAlert1 .popup-wrap, #popupAlert2 .popup-wrap {
+  #wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
     border-radius: 8px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupAlert1 .popup-wrap, #popupAlert2 .popup-wrap {
+  #wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
     width: 376px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupAlert1 .popup-wrap, #popupAlert2 .popup-wrap {
+  #wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
     padding: 36px;
   }
 }
 
-#popupLayerVideo .popup-wrap {
+#wrap #popupLayerVideo .popup-wrap {
   width: 100%;
   max-width: 720px;
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo .popup-wrap {
+  #wrap #popupLayerVideo .popup-wrap {
     width: 100%;
     max-width: 720px;
   }
 }
 
-#popupLayerVideo .popup-close {
+#wrap #popupLayerVideo .popup-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -1037,18 +1123,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo .popup-close {
+  #wrap #popupLayerVideo .popup-close {
     width: 60px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo .popup-close {
+  #wrap #popupLayerVideo .popup-close {
     height: 60px;
   }
 }
 
-#popupLayerVideo .popup-close::before, #popupLayerVideo .popup-close::after {
+#wrap #popupLayerVideo .popup-close::before, #wrap #popupLayerVideo .popup-close::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -1060,17 +1146,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #fff;
 }
 
-#popupLayerVideo .popup-close::before {
+#wrap #popupLayerVideo .popup-close::before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#popupLayerVideo .popup-close::after {
+#wrap #popupLayerVideo .popup-close::after {
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
-#popupLayerVideo .popup-close span {
+#wrap #popupLayerVideo .popup-close span {
   position: absolute;
   display: inline-block;
   overflow: hidden;
@@ -1087,13 +1173,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo .popup-close {
+  #wrap #popupLayerVideo .popup-close {
     top: -20px;
     right: -60px;
   }
 }
 
-#popupLayerVideo .popup-content {
+#wrap #popupLayerVideo .popup-content {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -1101,7 +1187,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   min-height: auto;
 }
 
-#popupLayerVideo .popup-content iframe, #popupLayerVideo .popup-content video {
+#wrap #popupLayerVideo .popup-content iframe, #wrap #popupLayerVideo .popup-content video {
   position: absolute;
   top: 0;
   left: 0;
@@ -1112,62 +1198,62 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo .popup-content {
+  #wrap #popupLayerVideo .popup-content {
     min-height: auto;
   }
 }
 
-#popupLayerVideo.shorts .popup-wrap {
+#wrap #popupLayerVideo.shorts .popup-wrap {
   max-width: 66.66667vw;
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo.shorts .popup-wrap {
+  #wrap #popupLayerVideo.shorts .popup-wrap {
     max-width: 480px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo.shorts .popup-wrap {
+  #wrap #popupLayerVideo.shorts .popup-wrap {
     max-width: 320px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupLayerVideo.shorts .popup-close {
+  #wrap #popupLayerVideo.shorts .popup-close {
     right: -18px;
   }
 }
 
-#popupLayerVideo.shorts .popup-content {
+#wrap #popupLayerVideo.shorts .popup-content {
   padding-bottom: 177.777%;
 }
 
-#popupProfile .box {
+#wrap #popupProfile .box {
   margin-bottom: 20px;
 }
 
-#popupProfile .border-line {
+#wrap #popupProfile .border-line {
   margin-bottom: 2.77778vw;
 }
 
 @media screen and (min-width: 720px) {
-  #popupProfile .border-line {
+  #wrap #popupProfile .border-line {
     margin-bottom: 20px;
   }
 }
 
-#popupBookInfo .border-line {
+#wrap #popupBookInfo .border-line {
   margin-bottom: 2.77778vw;
 }
 
 @media screen and (min-width: 720px) {
-  #popupBookInfo .border-line {
+  #wrap #popupBookInfo .border-line {
     margin-bottom: 20px;
   }
 }
 
-#popupBookInfo .desc-box {
+#wrap #popupBookInfo .desc-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,7 +1263,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 20px;
 }
 
-#popupBookInfo .desc-box .book-img {
+#wrap #popupBookInfo .desc-box .book-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,38 +1280,38 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #popupBookInfo .desc-box .book-img {
+  #wrap #popupBookInfo .desc-box .book-img {
     width: 168px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupBookInfo .desc-box .book-img {
+  #wrap #popupBookInfo .desc-box .book-img {
     height: 168px;
   }
 }
 
-#popupBookInfo .desc-box .book-img img {
+#wrap #popupBookInfo .desc-box .book-img img {
   width: 100%;
   height: 100%;
 }
 
-#popupBookInfo .desc-box .book-img + .book-desc {
+#wrap #popupBookInfo .desc-box .book-img + .book-desc {
   margin-left: 20px;
 }
 
-#popupBookInfo .desc-box .book-desc {
+#wrap #popupBookInfo .desc-box .book-desc {
   text-align: left;
   width: 50.55556vw;
 }
 
 @media screen and (min-width: 720px) {
-  #popupBookInfo .desc-box .book-desc {
+  #wrap #popupBookInfo .desc-box .book-desc {
     width: 364px;
   }
 }
 
-#popupBookInfo .desc-box .book-desc .desc-title {
+#wrap #popupBookInfo .desc-box .book-desc .desc-title {
   position: relative;
   display: inline-block;
   font-size: 18px;
@@ -1234,34 +1320,34 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 27px;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-info {
+#wrap #popupBookInfo .desc-box .book-desc .desc-info {
   font-size: 14px;
   color: #2C2923;
   line-height: 23.8px;
   margin-top: 20px;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-info p {
+#wrap #popupBookInfo .desc-box .book-desc .desc-info p {
   margin-top: 4px;
   font-weight: 400;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-info p:first-child {
+#wrap #popupBookInfo .desc-box .book-desc .desc-info p:first-child {
   margin-top: 0;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-info p span {
+#wrap #popupBookInfo .desc-box .book-desc .desc-info p span {
   display: inline-block;
   width: 64px;
   text-align: left;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-info p strong {
+#wrap #popupBookInfo .desc-box .book-desc .desc-info p strong {
   display: inline-block;
   font-weight: 600;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1271,108 +1357,95 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 24px;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price .price-subject {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-subject {
   width: 64px;
   font-size: 14px;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price .price-box .badge {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-box .badge {
   margin-right: 8px;
   padding: 3px 4px;
   font-size: 11px;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price .price-box .price-before, #popupBookInfo .desc-box .book-desc .desc-price .price-box .price-after {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-box .price-before, #wrap #popupBookInfo .desc-box .book-desc .desc-price .price-box .price-after {
   font-size: 14px;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price .price-before, #popupBookInfo .desc-box .book-desc .desc-price .price-sale, #popupBookInfo .desc-box .book-desc .desc-price .price-after {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-before, #wrap #popupBookInfo .desc-box .book-desc .desc-price .price-sale, #wrap #popupBookInfo .desc-box .book-desc .desc-price .price-after {
   font-size: 14px;
   font-weight: 600;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price .price-before {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-before {
   font-weight: 400;
   color: #BEBEBC;
   margin-right: 8px;
   text-decoration: line-through;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price .price-sale {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-sale {
   margin-right: 8px;
   color: #A07D3B;
 }
 
-#popupBookInfo .desc-box .book-desc .desc-price .price-after {
+#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-after {
   color: #2C2923;
 }
 
-#popupReviewWrite .form-control .select, #popupReviewWrite .form-control .custom-select {
+#wrap #popupReviewWrite .form-control .select, #wrap #popupReviewWrite .form-control .custom-select {
   margin-bottom: 20px;
   width: 552px;
 }
 
-#popupReviewWrite .notice + .action {
+#wrap #popupReviewWrite .notice + .action {
   margin-top: 0px;
 }
 
-#popupReviewUpdate .course-title, #popupReviewSuccess .course-title,
-#popupMypageReviewUpdate .course-title, #popupMypageReviewWrite .course-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 34px;
-  color: #2C2923;
-  margin: 20px 0;
-  text-align: center;
+#wrap #popupReviewUpdate .form-control .textarea, #wrap #popupReviewSuccess .form-control .textarea,
+#wrap #popupMypageReviewUpdate .form-control .textarea, #wrap #popupMypageReviewWrite .form-control .textarea {
+  height: 294px;
 }
 
-#popupReviewUpdate .form-control .textarea, #popupReviewSuccess .form-control .textarea,
-#popupMypageReviewUpdate .form-control .textarea, #popupMypageReviewWrite .form-control .textarea {
-  height: 294px !important;
-}
-
-#popupReviewUpdate .form-control .select, #popupReviewUpdate .form-control .custom-select, #popupReviewSuccess .form-control .select, #popupReviewSuccess .form-control .custom-select,
-#popupMypageReviewUpdate .form-control .select,
-#popupMypageReviewUpdate .form-control .custom-select, #popupMypageReviewWrite .form-control .select, #popupMypageReviewWrite .form-control .custom-select {
+#wrap #popupReviewUpdate .form-control .select, #wrap #popupReviewUpdate .form-control .custom-select, #wrap #popupReviewSuccess .form-control .select, #wrap #popupReviewSuccess .form-control .custom-select,
+#wrap #popupMypageReviewUpdate .form-control .select,
+#wrap #popupMypageReviewUpdate .form-control .custom-select, #wrap #popupMypageReviewWrite .form-control .select, #wrap #popupMypageReviewWrite .form-control .custom-select {
   width: 552px;
+  margin-bottom: 20px;
 }
 
-#popupMypageReviewUpdate .course-title, #popupMypageReviewWrite .course-title {
-  margin-top: 0;
+#wrap #popupMypageReviewUpdate .form-control .textarea, #wrap #popupMypageReviewWrite .form-control .textarea {
+  height: 368px;
 }
 
-#popupMypageReviewUpdate .form-control .textarea, #popupMypageReviewWrite .form-control .textarea {
-  height: 368px !important;
+#wrap #popupMypageReviewUpdate .action, #wrap #popupMypageReviewWrite .action {
+  margin-top: 8px;
 }
 
-#popupMypageReviewUpdate .action, #popupMypageReviewWrite .action {
-  margin-top: 8px !important;
+#wrap .popup-reservation .table-row tr th, #wrap .popup-reservation .table-row tr td {
+  text-align: left;
+  font-size: 16px;
 }
 
-.popup-reservation .table-row tr th, .popup-reservation .table-row tr td {
-  text-align: left !important;
-  font-size: 16px !important;
-}
-
-.popup-reservation .table-row tr td {
+#wrap .popup-reservation .table-row tr td {
   border-left: 1px solid #E4DED3;
 }
 
-.popup-reservation .table-row tr th.border-left-line {
+#wrap .popup-reservation .table-row tr th.border-left-line {
   border-left: 1px solid #E4DED3;
 }
 
-#popupSchedule .popup-wrap {
+#wrap #popupSchedule .popup-wrap {
   width: 1200px;
 }
 
-#popupSchedule .step-box {
+#wrap #popupSchedule .step-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#popupSchedule .step-box .step .step-title {
+#wrap #popupSchedule .step-box .step .step-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 27.2px;
@@ -1380,14 +1453,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 20px;
 }
 
-#popupSchedule .step-box .step .step-title strong {
+#wrap #popupSchedule .step-box .step .step-title strong {
   font-weight: 600;
   color: #A07D3B;
   display: inline-block;
   margin-right: 8px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box {
   border: 1px solid #E4DED3;
   padding: 28px 38px 24px;
   width: 848px;
@@ -1395,52 +1468,52 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-slide {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-slide {
   margin: 0 10px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow {
   top: 13px;
   background: transparent;
   width: auto;
   height: auto;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow:before {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow:before {
   width: 10px;
   height: 10px;
   border-color: #A07D3B;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-prev {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-prev {
   margin-left: -67px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-prev:before {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-prev:before {
   border-bottom-width: 1.5px;
   border-left-width: 1.5px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-next {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-next {
   margin-right: -67px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-next:before {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-next:before {
   border-top-width: 1.5px;
   border-right-width: 1.5px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-disabled {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-slider .slick-arrow.slick-disabled {
   opacity: 0.5;
   cursor: default;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev {
   position: relative;
   display: inline-block;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1459,40 +1532,40 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     width: 10px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     height: 10px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     margin-top: -5px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     left: 20px;
   }
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev:before {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev:before {
   margin-top: -12px;
   left: -20px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next {
   position: relative;
   display: inline-block;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1511,71 +1584,71 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     width: 10px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     height: 10px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     margin-top: -5px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
+  #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     right: 20px;
   }
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next:before {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next:before {
   margin-top: -12px;
   right: -20px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .month-box {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .month-box {
   position: relative;
   text-align: center;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .month-box .month {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .month-box .month {
   font-weight: 600;
   font-size: 20px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-table {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table {
   margin-top: 16px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row {
   border-top: 0;
   width: 100%;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr:last-child {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr:last-child {
   border-bottom: none;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr th {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr th {
   background: transparent;
   padding: 0;
   height: 28px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td {
   position: relative;
   padding: 8px 4px 16px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td .day {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td .day {
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -1584,16 +1657,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 19px;
 }
 
-#popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td:hover, #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td.active {
+#wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td:hover, #wrap #popupSchedule .step-box .step.step-1 .calender-box .calender-table .table-row tr td.active {
   background: #F2EFE7;
 }
 
-#popupSchedule .step-box .step.step-2 {
+#wrap #popupSchedule .step-box .step.step-2 {
   width: 280px;
   margin-left: 24px;
 }
 
-#popupSchedule .step-box .step.step-2 .timetable-box .timetable-title {
+#wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-title {
   border-top: 1px solid #E4DED3;
   color: #2C2923;
   font-size: 16px;
@@ -1605,11 +1678,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
 }
 
-#popupSchedule .step-box .step.step-2 .timetable-box .timetable-list {
+#wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list {
   border: 1px solid #E4DED3;
 }
 
-#popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul {
+#wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 16px 8px;
@@ -1617,7 +1690,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   overflow-y: auto;
 }
 
-#popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li a {
+#wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li a {
   padding: 10px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1630,25 +1703,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
           justify-content: space-between;
 }
 
-#popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li a .time {
+#wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li a .time {
   font-size: 14px;
   font-weight: 400;
   color: #2C2923;
 }
 
-#popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li:hover, #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li.active {
+#wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li:hover, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li.active {
   background: #F2EFE7;
 }
 
-#popupSchedule .step-box .step.step-2 .timetable-box .timetable-action {
+#wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-action {
   margin-top: 20px;
 }
 
-#popupDevice .popup-wrap {
+#wrap #popupDevice .popup-wrap {
   width: 1200px;
 }
 
-#popupDevice .device-title {
+#wrap #popupDevice .device-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1661,43 +1734,100 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 20px;
 }
 
-#popupDevice .device-title p {
+#wrap #popupDevice .device-title p {
   font-size: 16px;
   line-height: 27.2px;
   font-weight: 400;
 }
 
-#popupDevice .device-title p strong {
+#wrap #popupDevice .device-title p strong {
   font-size: 20px;
   font-weight: 600;
   line-height: 34px;
 }
 
-#popupDevice .device-title .device-count {
-  font-size: 14px;
+#wrap #popupDevice .device-title .remain-count {
   padding: 0 16px;
   line-height: 30px;
   border: 1px solid #E4DED3;
   height: 32px;
-  font-weight: 400;
 }
 
-#popupDevice .device-title .device-count strong {
-  color: #A07D3B;
-  display: inline-block;
-  margin-left: 5px;
-  font-weight: 600;
-}
-
-#popupDevice .device-table .table-row tr td {
+#wrap #popupDevice .device-table .table-row tr td {
   font-size: 16px;
   line-height: 27.2px;
   font-weight: 600;
   word-break: break-all;
 }
 
-#popupDevice .device-table .btn-edit, #popupDevice .device-table .btn-delete {
+#wrap #popupDevice .device-table .btn-edit, #wrap #popupDevice .device-table .btn-delete {
   margin-left: 20px;
+}
+
+#wrap .popup-coursePeriod .course-title {
+  margin-bottom: 16px;
+}
+
+#wrap .popup-coursePeriod .lecture-box {
+  background-color: #F2EFE7;
+  border: 1px solid #E4DED3;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl:first-child {
+  margin-top: 0;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePeriod .lecture-box dl dd {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2C2923;
+  line-height: 23.8px;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl dt {
+  width: 80px;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl dd {
+  width: 408px;
+  margin-left: 24px;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl dd strong {
+  font-weight: 600;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl dd .form-control .select {
+  width: 120px;
+  background-color: #FFFFFC;
+}
+
+#wrap .popup-coursePeriod .lecture-box dl dd .form-control .text {
+  width: 160px;
+  margin-left: 4px;
+  background-color: #FFFFFC;
+}
+
+#wrap .popup-coursePeriod .action {
+  margin-top: 16px;
+}
+
+#wrap .popup-coursePeriod .action a {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 12px;
 }
 
 .dim {
@@ -2734,7 +2864,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .fake-checkbox label {
   display: inline-block;
   padding-left: 4.16667vw;
-  background: url("../images/icon_checkbox_check.svg") no-repeat left top;
+  background: url("../images/icon_checkbox_check.svg") no-repeat left center;
   background-size: 24px 24px;
   font-weight: 400;
   font-size: 14px;
@@ -7525,20 +7655,29 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: auto;
 }
 
-#wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject {
-  width: 80px;
-}
-
-#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box {
-  width: auto;
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box:first-child {
+  padding-right: 36px;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc {
   margin-left: 24px;
 }
 
-#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-desc .desc-title {
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc .desc-title {
   width: 519px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .desc-title {
+  width: 100%;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject {
+  width: 80px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject + .desc-box {
+  width: 663px;
+  padding: 20px 24px;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn {
@@ -7554,14 +7693,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list:hover {
   background-color: #F2EFE7;
-}
-
-#wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list .desc-box .t-desc .desc-title {
-  width: 687px;
-}
-
-#wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list .subject + .desc-box .t-desc .desc-title {
-  width: 571px;
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view {
