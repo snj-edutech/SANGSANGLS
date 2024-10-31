@@ -13,7 +13,7 @@
   clear: both;
 }
 
-#wrap .lecture-review-list .review-list .review-info dl dd, #wrap .section-online-bookstore .tab-slide .online-slider .list .book-desc .desc-title {
+#wrap .lecture-review-list .review-list .review-info dl dd, #wrap .section-online-bookstore .tab-slide .online-slider .list .book-desc .desc-title, #wrap .section-mypage-wrap .content .notice-box .notice-title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -2707,6 +2707,28 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-image: url("../images/icon_plus.png");
 }
 
+#wrap .nodata-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FBFAF6;
+  height: 480px;
+  text-align: center;
+}
+
+#wrap .nodata-box p {
+  color: #7A746A;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+}
+
 #wrap .search-input-box {
   width: 160px;
 }
@@ -4494,6 +4516,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+#wrap .action.flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #wrap .action.fly {
@@ -7852,6 +7880,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-top: 10px;
 }
 
+#wrap .section-mypage-wrap .content .pagination {
+  margin-top: 40px;
+}
+
 #wrap .section-mypage-wrap .content .total-number-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7907,6 +7939,161 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-top: 40px;
 }
 
+#wrap .section-mypage-wrap .content .notice-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#wrap .section-mypage-wrap .content .notice-box .notice-title {
+  width: 611px;
+  margin-bottom: 0;
+}
+
+#wrap .section-mypage-wrap .content .notice-box .notice-date {
+  margin-left: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7A746A;
+}
+
+#wrap .section-mypage-wrap .content .notice-box .btn {
+  margin-left: auto;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box {
+  padding: 40px;
+  border: 1px solid #E4DED3;
+  background-color: #F2EFE7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-left {
+  width: 418px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-left .lecture-subject {
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40.8px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right {
+  width: 373px;
+  margin-left: 20px;
+  border-left: 1px solid #BEBEBC;
+  padding-left: 36px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl:first-child {
+  margin-top: 0;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dt, #wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dd {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dt {
+  color: #7A746A;
+  width: 80px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dd {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+#wrap .section-mypage-wrap .content .select-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#wrap .section-mypage-wrap .content .select-group .custom-select-box {
+  font-size: 0;
+}
+
+#wrap .section-mypage-wrap .content .select-group .custom-select-box .custom-select {
+  width: 160px;
+  margin-right: 8px;
+}
+
+#wrap .section-mypage-wrap .content .select-group .action {
+  margin-top: 0;
+}
+
+#wrap .section-mypage-wrap .content .select-group .action .btn {
+  display: inline-block;
+  margin-left: 1.11111vw;
+  padding: 0 2.22222vw;
+  height: 5.27778vw;
+  line-height: 5.27778vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-mypage-wrap .content .select-group .action .btn {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-mypage-wrap .content .select-group .action .btn {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-mypage-wrap .content .select-group .action .btn {
+    height: 38px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-mypage-wrap .content .select-group .action .btn {
+    line-height: 38px;
+  }
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list + .action {
+  margin-top: 24px;
+}
+
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .col {
   padding: 20px;
 }
@@ -7920,6 +8107,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: auto;
 }
 
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box {
+  position: relative;
+}
+
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box:first-child {
   padding-right: 36px;
 }
@@ -7930,10 +8121,40 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc .desc-title {
   width: 519px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-star {
+  position: absolute;
+  right: 12px;
+  top: 24px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-star .btn-star {
+  background: url("../images/btn_star_off.svg") no-repeat 0 0;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-star .btn-star.active img {
+  opacity: 0;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .desc-title {
   width: 100%;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .check {
+  line-height: 1;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .check label {
+  width: 24px;
+  height: 24px;
+  padding-left: 0;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject {
@@ -7958,6 +8179,33 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list:hover {
   background-color: #F2EFE7;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.like-data-list .course-list .col {
+  padding: 24px 12px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.like-data-list .course-list .col:first-child {
+  padding-left: 20px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.like-data-list .course-list .col:last-child {
+  padding-right: 20px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.like-data-list .course-list .subject {
+  font-size: 13px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.like-data-list .course-list .subject + .desc-box {
+  width: 591px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list.like-data-list .course-list .desc-box .t-desc .desc-title {
+  width: 471px;
+  padding-right: 24px;
+  font-size: 16px;
+  line-height: 27.2px;
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view {

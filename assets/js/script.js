@@ -43,7 +43,14 @@ function addEvent(){
 	categoryListEvent();
 
 	calenderEvent();
+	starEvent();
+}
+
+function starEvent(){
 	
+	$(".btn-star").on("click", function(){
+		$(this).toggleClass('active');
+	});
 }
 
 function calenderEvent(){
