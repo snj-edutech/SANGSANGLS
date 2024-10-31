@@ -828,7 +828,7 @@
 					<div class="remain-count">연장가능 잔여 횟수<strong>2회</strong></div>
 				</div>
 
-				<div class="scroll-line-box">
+				<div class="line-box scroll">
 					<dl>
 						<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
 						<dd>
@@ -889,12 +889,91 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="popup popup-coursePause" id="popupCoursePause">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupCoursePause');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				수강 일시정지
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="course-title">
+					[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+					강좌명 길면 2줄 노출
+					<div class="remain-count">일시정지 잔여 횟수<strong>2회</strong></div>
+				</div>
+
+				<div class="line-box">
+					<p>
+						-일시중지는 <strong class="highlight">3</strong>회 가능합니다.<br/>
+						-중지 일수는 수강 잔여일수를 초과 할 수 없으며, <br/>
+						<strong class="highlight">3회 중지 합계 일수는 원래 강좌의 수강 기간을 초과할 수 없습니다.</strong>
+					</p>
+				</div>
+
+				<div class="lecture-box">
+					<dl>
+						<dt>수강기간</dt>
+						<dd>
+							<strong>YYYY-MM-DD ~ YYYY-MM-DD (99일+99일+99일)</strong>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>일시정지 1회</dt>
+						<dd>
+							<strong>YYYY-MM-DD (정지 취소)</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt>일시정지 2회</dt>
+						<dd>
+							<strong>YYYY-MM-DD (정지 취소)</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt>일시정지 3회</dt>
+						<dd>
+							<strong>YYYY-MM-DD (정지 취소)</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt>일 수강료</dt>
+						<dd>
+							<strong>40,000원</strong>
+							<span>(전체수강료 800,000원 ÷ 수강기간 20일)</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt>연장일수 선택</dt>
+						<dd>
+							<div class="form-control">
+								<span class="select">
+									<select name="" id="">
+										<option value="">7일</option>
+									</select>
+								</span>
+		
+								<input type="text" class="text" placeholder="금액확인" value="280,000원">
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="action">
+					<a href="javascript:popupClose('#popupCoursePause');" class="btn large btn-brown"><strong>신청하기</strong></a>
+					<a href="javascript:popupClose('#popupCoursePause');" class="btn large btn-gray"><strong>신청불가</strong></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
 		tabMenuEvent('.section-mypage');
+		popupOpen('#popupCoursePause');
 	});
 </script>
 </body>

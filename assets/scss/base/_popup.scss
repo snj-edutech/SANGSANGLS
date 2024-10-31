@@ -212,15 +212,21 @@
 			}
 		}
 
-		.scroll-line-box{
+		.line-box{
 			margin-bottom:16px;
 			border:1px solid $color-light-brown;
 			padding:20px;
 			@include boxSizing(border-box);
-			@include vw(max-height,158px);
-			overflow-y:auto;
-			@extend %scrollBar;
-			&.min{@include vw(max-height,126px);}
+			
+			
+			&.scroll{
+				@include vw(max-height,158px);
+				overflow-y:auto;
+				@extend %scrollBar;
+
+				&.min{@include vw(max-height,126px);}
+			}
+
 			dl{
 				&+dl{margin-top:20px;}
 				dt,dd{
@@ -656,7 +662,7 @@
 		}
 	}
 
-	.popup-coursePeriod{
+	.popup-coursePeriod, .popup-coursePause{
 		.course-title{
 			margin-bottom:16px;
 		}
@@ -689,6 +695,11 @@
 
 		.action{
 			margin-top:16px;
+		}
+	}
+
+	.popup-coursePeriod{
+		.action{
 			a{
 				height:38px;line-height:38px;
 				padding:0 12px;

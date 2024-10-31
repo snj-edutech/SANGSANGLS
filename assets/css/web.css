@@ -261,31 +261,31 @@
   }
 }
 
-#wrap .popup-scroll, #wrap .popup .scroll-line-box, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul, #wrap .agree-check-box .agree-box, #wrap .editor-box {
+#wrap .popup-scroll, #wrap .popup .line-box.scroll, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul, #wrap .agree-check-box .agree-box, #wrap .editor-box {
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
 
-#wrap .popup-scroll::-webkit-scrollbar, #wrap .popup .scroll-line-box::-webkit-scrollbar, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar, #wrap .agree-check-box .agree-box::-webkit-scrollbar, #wrap .editor-box::-webkit-scrollbar {
+#wrap .popup-scroll::-webkit-scrollbar, #wrap .popup .line-box.scroll::-webkit-scrollbar, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar, #wrap .agree-check-box .agree-box::-webkit-scrollbar, #wrap .editor-box::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-#wrap .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup .scroll-line-box::-webkit-scrollbar-button:start:decrement, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:start:decrement, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:start:decrement, #wrap .editor-box::-webkit-scrollbar-button:start:decrement, #wrap .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup .scroll-line-box::-webkit-scrollbar-button:end:increment, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:end:increment, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:end:increment, #wrap .editor-box::-webkit-scrollbar-button:end:increment {
+#wrap .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:start:decrement, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:start:decrement, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:start:decrement, #wrap .editor-box::-webkit-scrollbar-button:start:decrement, #wrap .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:end:increment, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:end:increment, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:end:increment, #wrap .editor-box::-webkit-scrollbar-button:end:increment {
   display: block;
   width: 0;
   height: 0;
   background-color: #F2EFE7;
 }
 
-#wrap .popup-scroll::-webkit-scrollbar-track, #wrap .popup .scroll-line-box::-webkit-scrollbar-track, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-track, #wrap .agree-check-box .agree-box::-webkit-scrollbar-track, #wrap .editor-box::-webkit-scrollbar-track {
+#wrap .popup-scroll::-webkit-scrollbar-track, #wrap .popup .line-box.scroll::-webkit-scrollbar-track, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-track, #wrap .agree-check-box .agree-box::-webkit-scrollbar-track, #wrap .editor-box::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 4px;
 }
 
-#wrap .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup .scroll-line-box::-webkit-scrollbar-thumb, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-thumb, #wrap .agree-check-box .agree-box::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb {
+#wrap .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup .line-box.scroll::-webkit-scrollbar-thumb, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-thumb, #wrap .agree-check-box .agree-box::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb {
   background-color: #F2EFE7;
   border-radius: 4px;
 }
@@ -1014,37 +1014,40 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
 }
 
-#wrap .popup .scroll-line-box {
+#wrap .popup .line-box {
   margin-bottom: 16px;
   border: 1px solid #E4DED3;
   padding: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+#wrap .popup .line-box.scroll {
   max-height: 21.94444vw;
   overflow-y: auto;
 }
 
 @media screen and (min-width: 720px) {
-  #wrap .popup .scroll-line-box {
+  #wrap .popup .line-box.scroll {
     max-height: 158px;
   }
 }
 
-#wrap .popup .scroll-line-box.min {
+#wrap .popup .line-box.scroll.min {
   max-height: 17.5vw;
 }
 
 @media screen and (min-width: 720px) {
-  #wrap .popup .scroll-line-box.min {
+  #wrap .popup .line-box.scroll.min {
     max-height: 126px;
   }
 }
 
-#wrap .popup .scroll-line-box dl + dl {
+#wrap .popup .line-box dl + dl {
   margin-top: 20px;
 }
 
-#wrap .popup .scroll-line-box dl dt, #wrap .popup .scroll-line-box dl dd {
+#wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
   color: #2C2923;
   font-size: 2.22222vw;
   line-height: 3.77778vw;
@@ -1056,18 +1059,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #wrap .popup .scroll-line-box dl dt, #wrap .popup .scroll-line-box dl dd {
+  #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #wrap .popup .scroll-line-box dl dt, #wrap .popup .scroll-line-box dl dd {
+  #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
     line-height: 27.2px;
   }
 }
 
-#wrap .popup .scroll-line-box dl dt {
+#wrap .popup .line-box dl dt {
   font-weight: 600;
   margin-bottom: 8px;
 }
@@ -1764,18 +1767,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 20px;
 }
 
-#wrap .popup-coursePeriod .course-title {
+#wrap .popup-coursePeriod .course-title, #wrap .popup-coursePause .course-title {
   margin-bottom: 16px;
 }
 
-#wrap .popup-coursePeriod .lecture-box {
+#wrap .popup-coursePeriod .lecture-box, #wrap .popup-coursePause .lecture-box {
   background-color: #F2EFE7;
   border: 1px solid #E4DED3;
   padding: 20px;
   margin-top: 16px;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl {
+#wrap .popup-coursePeriod .lecture-box dl, #wrap .popup-coursePause .lecture-box dl {
   margin-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1785,42 +1788,42 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
           align-items: center;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl:first-child {
+#wrap .popup-coursePeriod .lecture-box dl:first-child, #wrap .popup-coursePause .lecture-box dl:first-child {
   margin-top: 0;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePeriod .lecture-box dl dd {
+#wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePeriod .lecture-box dl dd, #wrap .popup-coursePause .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dd {
   font-weight: 400;
   font-size: 14px;
   color: #2C2923;
   line-height: 23.8px;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl dt {
+#wrap .popup-coursePeriod .lecture-box dl dt, #wrap .popup-coursePause .lecture-box dl dt {
   width: 80px;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl dd {
+#wrap .popup-coursePeriod .lecture-box dl dd, #wrap .popup-coursePause .lecture-box dl dd {
   width: 408px;
   margin-left: 24px;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl dd strong {
+#wrap .popup-coursePeriod .lecture-box dl dd strong, #wrap .popup-coursePause .lecture-box dl dd strong {
   font-weight: 600;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl dd .form-control .select {
+#wrap .popup-coursePeriod .lecture-box dl dd .form-control .select, #wrap .popup-coursePause .lecture-box dl dd .form-control .select {
   width: 120px;
   background-color: #FFFFFC;
 }
 
-#wrap .popup-coursePeriod .lecture-box dl dd .form-control .text {
+#wrap .popup-coursePeriod .lecture-box dl dd .form-control .text, #wrap .popup-coursePause .lecture-box dl dd .form-control .text {
   width: 160px;
   margin-left: 4px;
   background-color: #FFFFFC;
 }
 
-#wrap .popup-coursePeriod .action {
+#wrap .popup-coursePeriod .action, #wrap .popup-coursePause .action {
   margin-top: 16px;
 }
 
