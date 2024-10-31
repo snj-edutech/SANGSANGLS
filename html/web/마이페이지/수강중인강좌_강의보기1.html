@@ -192,7 +192,7 @@
 									</dl>
 									<dl>
 										<dt>일시정지</dt>
-										<dd><strong>3회</strong><a href="javascript:;" class="btn">수강일시정지</a></dd>
+										<dd><strong>3회</strong><a href="javascript:popupOpen('#popupCoursePause');" class="btn">수강일시정지</a></dd>
 									</dl>
 									
 									
@@ -896,7 +896,7 @@
 			<div class="popup-title">
 				수강 일시정지
 			</div>
-			<div class="popup-cont popup-scroll">
+			<div class="popup-cont">
 				<div class="course-title">
 					[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
 					강좌명 길면 2줄 노출
@@ -945,17 +945,303 @@
 						</dd>
 					</dl>
 					<dl>
-						<dt>연장일수 선택</dt>
+						<dt>신청기간 0회</dt>
 						<dd>
-							<div class="form-control">
-								<span class="select">
-									<select name="" id="">
-										<option value="">7일</option>
-									</select>
-								</span>
-		
-								<input type="text" class="text" placeholder="금액확인" value="280,000원">
+							<div class="date-box">
+								<label for="date-first">
+									<input type="text" class="date" id="date-first" value="2024-02-14"  />
+									<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<div class="layer-open">
+										<div class="calender-box">
+										
+											<div class="month-box">
+												<strong class="month">2024. 09</strong>
+												<div class="btn-arrow">
+													<a href="javascript:;" class="btn-prev disabled"></a>
+													<a href="javascript:'" class="btn-next"></a>
+												</div>
+											</div>
+											<div class="calender-table">
+												<table class="table-row">
+													<tbody><tr>
+														<th>일</th>
+														<th>월</th>
+														<th>화</th>
+														<th>수</th>
+														<th>목</th>
+														<th>금</th>
+														<th>토</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">1</span>
+														</td>
+														<td>
+															<span class="day">2</span>
+														</td>
+														<td>
+															<span class="day">3</span>
+														</td>
+														<td>
+															<span class="day">4</span>
+														</td>
+														<td>
+															<span class="day">5</span>
+														</td>
+														<td>
+															<span class="day">6</span>
+														</td>
+														<td>
+															<span class="day">7</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">8</span>
+														</td>
+														<td>
+															<span class="day">9</span>
+														</td>
+														<td>
+															<span class="day">10</span>
+														</td>
+														<td>
+															<span class="day">11</span>
+														</td>
+														<td>
+															<span class="day">12</span>
+														</td>
+														<td>
+															<span class="day">13</span>
+														</td>
+														<td>
+															<span class="day">14</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">15</span>
+														</td>
+														<td>
+															<span class="day">16</span>
+														</td>
+														<td>
+															<span class="day">17</span>
+														</td>
+														<td>
+															<span class="day">18</span>
+														</td>
+														<td>
+															<span class="day">19</span>
+														</td>
+														<td>
+															<span class="day">20</span>
+														</td>
+														<td>
+															<span class="day">21</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">22</span>
+														</td>
+														<td class="active">
+															<span class="day">23</span>
+														</td>
+														<td>
+															<span class="day">24</span>
+														</td>
+														<td class="disabled">
+															<span class="day">25</span>
+														</td>
+														<td class="disabled">
+															<span class="day">26</span>
+														</td>
+														<td class="disabled">
+															<span class="day">27</span>
+														</td>
+														<td class="disabled">
+															<span class="day">28</span>
+														</td>
+													</tr>
+													<tr>
+														<td class="disabled">
+															<span class="day">29</span>
+														</td>
+														<td class="disabled">
+															<span class="day">30</span>
+														</td>
+														<td class="disabled">
+															<span class="day">31</span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</div>
+									</div>
+								</label>
+								<span class="date-dash">&nbsp;</span>
+								<label for="date-last">
+									<input type="text" class="date" id="date-last" placeholder="YYYY-MM-DD" />
+									<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<div class="layer-open">
+										<div class="calender-box">
+										
+											<div class="month-box">
+												<strong class="month">2024. 09</strong>
+												<div class="btn-arrow">
+													<a href="javascript:;" class="btn-prev disabled"></a>
+													<a href="javascript:'" class="btn-next"></a>
+												</div>
+											</div>
+											<div class="calender-table">
+												<table class="table-row">
+													<tbody><tr>
+														<th>일</th>
+														<th>월</th>
+														<th>화</th>
+														<th>수</th>
+														<th>목</th>
+														<th>금</th>
+														<th>토</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">1</span>
+														</td>
+														<td>
+															<span class="day">2</span>
+														</td>
+														<td>
+															<span class="day">3</span>
+														</td>
+														<td>
+															<span class="day">4</span>
+														</td>
+														<td>
+															<span class="day">5</span>
+														</td>
+														<td>
+															<span class="day">6</span>
+														</td>
+														<td>
+															<span class="day">7</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">8</span>
+														</td>
+														<td>
+															<span class="day">9</span>
+														</td>
+														<td>
+															<span class="day">10</span>
+														</td>
+														<td>
+															<span class="day">11</span>
+														</td>
+														<td>
+															<span class="day">12</span>
+														</td>
+														<td>
+															<span class="day">13</span>
+														</td>
+														<td>
+															<span class="day">14</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">15</span>
+														</td>
+														<td>
+															<span class="day">16</span>
+														</td>
+														<td>
+															<span class="day">17</span>
+														</td>
+														<td>
+															<span class="day">18</span>
+														</td>
+														<td>
+															<span class="day">19</span>
+														</td>
+														<td>
+															<span class="day">20</span>
+														</td>
+														<td>
+															<span class="day">21</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span class="day">22</span>
+														</td>
+														<td class="active">
+															<span class="day">23</span>
+														</td>
+														<td>
+															<span class="day">24</span>
+														</td>
+														<td class="disabled">
+															<span class="day">25</span>
+														</td>
+														<td class="disabled">
+															<span class="day">26</span>
+														</td>
+														<td class="disabled">
+															<span class="day">27</span>
+														</td>
+														<td class="disabled">
+															<span class="day">28</span>
+														</td>
+													</tr>
+													<tr>
+														<td class="disabled">
+															<span class="day">29</span>
+														</td>
+														<td class="disabled">
+															<span class="day">30</span>
+														</td>
+														<td class="disabled">
+															<span class="day">31</span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+														<td>
+															<span class="day"></span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</div>
+									</div>
+								</label>
 							</div>
+
+
 						</dd>
 					</dl>
 				</div>
@@ -973,7 +1259,15 @@
 <script>
 	$(function(){
 		tabMenuEvent('.section-mypage');
-		popupOpen('#popupCoursePause');
+		
+		/* 수강일시정지 달력 제어 */
+		$(".btn-calendar").on("click", function(){
+			$(this).next(".layer-open").show();
+		});
+
+		$(".popup-coursePause .calender-box .calender-table .table-row tr td").on("click", function(){
+			$(".layer-open").hide();
+		});
 	});
 </script>
 </body>

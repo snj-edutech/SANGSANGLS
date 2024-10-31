@@ -681,6 +681,7 @@
 				}
 				dt{width:80px;}
 				dd{
+					position:relative;
 					width:408px;
 					margin-left:24px;
 					strong{font-weight:600;}
@@ -703,6 +704,89 @@
 			a{
 				height:38px;line-height:38px;
 				padding:0 12px;
+			}
+		}
+	}
+
+	.popup-coursePause{
+		.layer-open{display:none;position:absolute;right:0;top:39px;z-index:10;}
+		.calender-box{
+			border:1px solid $color-light-brown;
+			padding:24px;
+			width:328px;
+			@include boxSizing(border-box);
+			background-color:$color-white;
+			box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+
+			.month-box{
+				position:relative;
+				text-align:left;
+				display:flex;align-items:center;
+				justify-content: space-between;
+				line-height:1;
+				.month{
+					font-weight:600;
+					font-size:20px;
+				}
+
+				.btn-arrow{
+					font-size:0;
+					a{
+						width:40px;
+						height:40px;
+						&.btn-prev{
+							@include arrow(left, 8px, 8px, 1.5px, $color-black);
+							&.disabled{
+								&:before{
+									border-color:$color-light-gray;
+								}
+							}
+							
+						}
+						&.btn-next{
+							@include arrow(right, 8px, 8px, 1.5px, $color-black);
+							&.disabled{
+								&:before{
+									border-color:$color-light-gray;
+								}
+							}
+							
+						}
+
+						
+					}
+				}
+			}
+
+			.calender-table{
+				margin-top:8px;
+				.table-row{
+					border-top:0;
+					width:100%;
+					tr{
+						&:last-child{border-bottom:none;}
+						th,td{padding:0;height:40px;line-height:1;@include boxSizing(border-box);}
+						th{background:transparent;}
+						td{
+							text-align:center;
+							vertical-align:middle;
+							
+							font-size:14px;font-weight:400;
+							border:1px solid $color-light-brown;
+							cursor:pointer;
+							&.active{
+								background:$color-brown;
+								color:$color-white;
+							}
+
+							&.disabled{
+								background:$color-light-brown2;
+								color:$color-light-gray;
+								cursor:default;
+							}
+						}
+					}
+				}
 			}
 		}
 	}

@@ -1804,6 +1804,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-coursePeriod .lecture-box dl dd, #wrap .popup-coursePause .lecture-box dl dd {
+  position: relative;
   width: 408px;
   margin-left: 24px;
 }
@@ -1831,6 +1832,201 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 38px;
   line-height: 38px;
   padding: 0 12px;
+}
+
+#wrap .popup-coursePause .layer-open {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 39px;
+  z-index: 10;
+}
+
+#wrap .popup-coursePause .calender-box {
+  border: 1px solid #E4DED3;
+  padding: 24px;
+  width: 328px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FFFFFC;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+#wrap .popup-coursePause .calender-box .month-box {
+  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1;
+}
+
+#wrap .popup-coursePause .calender-box .month-box .month {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow {
+  font-size: 0;
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow a {
+  width: 40px;
+  height: 40px;
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev {
+  position: relative;
+  display: inline-block;
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 1.11111vw;
+  height: 1.11111vw;
+  margin-top: -0.55556vw;
+  border-width: 0;
+  border-style: solid;
+  border-color: #2C2923;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 2.22222vw;
+  border-bottom-width: 1.5px;
+  border-left-width: 1.5px;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
+    width: 8px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
+    height: 8px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
+    margin-top: -4px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
+    left: 16px;
+  }
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev.disabled:before {
+  border-color: #BEBEBC;
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next {
+  position: relative;
+  display: inline-block;
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 1.11111vw;
+  height: 1.11111vw;
+  margin-top: -0.55556vw;
+  border-width: 0;
+  border-style: solid;
+  border-color: #2C2923;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 2.22222vw;
+  border-top-width: 1.5px;
+  border-right-width: 1.5px;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
+    width: 8px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
+    height: 8px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
+    margin-top: -4px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
+    right: 16px;
+  }
+}
+
+#wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next.disabled:before {
+  border-color: #BEBEBC;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table {
+  margin-top: 8px;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table .table-row {
+  border-top: 0;
+  width: 100%;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table .table-row tr:last-child {
+  border-bottom: none;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table .table-row tr th, #wrap .popup-coursePause .calender-box .calender-table .table-row tr td {
+  padding: 0;
+  height: 40px;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table .table-row tr th {
+  background: transparent;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table .table-row tr td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #E4DED3;
+  cursor: pointer;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table .table-row tr td.active {
+  background: #A07D3B;
+  color: #FFFFFC;
+}
+
+#wrap .popup-coursePause .calender-box .calender-table .table-row tr td.disabled {
+  background: #F2EFE7;
+  color: #BEBEBC;
+  cursor: default;
 }
 
 .dim {
@@ -3315,6 +3511,72 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .file-list-box .btn.btn-file {
   margin-bottom: 0;
+}
+
+#wrap .date-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap .date-box .date-dash {
+  margin: 0 8px;
+  display: inline-block;
+  background-color: #7A746A;
+  width: 12px;
+  height: 1px;
+}
+
+#wrap .date-box label {
+  position: relative;
+  display: inline-block;
+}
+
+#wrap .date-box label .btn-calendar {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#wrap .date-box .date {
+  border: none;
+  border: 1px solid #E4DED3;
+  background-color: #FFFFFC;
+  display: inline-block;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 32px 8px 12px;
+  width: 154px;
+  color: #BEBEBC;
+}
+
+#wrap .date-box .date::-webkit-input-placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap .date-box .date:-ms-input-placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap .date-box .date::-ms-input-placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap .date-box .date::placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 #wrap .select-box {
