@@ -41,7 +41,20 @@ function addEvent(){
 
 	searchValueEvent('.header-search');
 	categoryListEvent();
+
+	calenderEvent();
 	
+}
+
+function calenderEvent(){
+	/* 달력 제어 */
+	$(".btn-calendar").on("click", function(){
+		$(this).next(".layer-open").show();
+	});
+
+	$(".calender-box .calender-table .table-row tr td").on("click", function(){
+		$(".layer-open").hide();
+	});
 }
 
 function searchValueEvent($selector){
