@@ -62,6 +62,11 @@
 						}
 					}
 
+					.lecture-btn{
+						display:flex;
+						margin-top:20px;
+					}
+
 					dl{
 						display:flex;
 						dt{
@@ -120,6 +125,7 @@
 					padding:24px;
 					border:1px solid $color-light-brown;
 					width:520px;@include boxSizing(border-box);
+					text-align:left;
 					.layer-title{margin-bottom:8px;font-size:14px;font-weight:600;color:$color-brown;}
 					.layer-list{
 						li{font-size:14px;font-weight:400;color:$color-black;line-height:23.8px;}

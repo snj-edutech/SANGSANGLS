@@ -87,6 +87,10 @@
         color: $color-brown !important;
     }
 
+    .color-black {
+        color: $color-black !important;
+    }
+
 	.color-point {
         color: #E50000 !important;
     }
@@ -282,6 +286,21 @@
 			}
 		}
 	}
+
+    .nodata-box{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color:$color-light-beige;
+        height:480px;
+        text-align:center;
+        p{
+            color:$color-gray;
+            font-size:16px;
+            font-weight:400;
+            line-height:27.2px;
+        }
+    }
 
     .search-input-box{
         width:160px;
@@ -639,6 +658,34 @@
                 }
             }
         }
+
+        .fake-save-box{
+            position:relative;
+            .fake-input {
+				width:100%;
+				border:1px solid $color-light-brown;
+				@include vw(padding, 9px 70px 9px 8px);
+            }
+
+            .fake-btn {
+				position:absolute;right:8px;
+				top: 50%;
+				transform: translateY(-45%);
+                label {
+					display:inline-block;
+                    @include vw(padding,5.5px 5px);
+                    text-align: center;
+                    @include vw(font-size,13px);
+                    color: $color-black;
+					border:1px solid $color-light-brown;
+                    cursor: pointer;
+					font-weight:400;
+					border-radius:2px;
+					line-height:1;
+                   
+                }
+            }
+        }
     }
 
 	.custom-select {
@@ -713,6 +760,31 @@
 		align-items: center;
 		.btn.btn-file{margin-bottom:0;}
 	}
+
+    .date-box{
+        display:flex;
+		align-items: center;
+        .date-dash{margin:0 8px;display:inline-block;background-color:$color-gray;width:12px;height:1px;}
+        label{
+            position:relative;
+            display:inline-block;
+            .btn-calendar{
+                display:inline-block;
+                position:absolute;right:10px;top:10px;
+            }
+        }
+        .date{
+            border:none;border:1px solid $color-light-brown;background-color:$color-white;
+            display:inline-block;height:40px;font-size:14px;font-weight:400;
+            padding:8px 32px 8px 12px;width:154px;color:$color-light-gray;
+            &::placeholder{
+                color:$color-black;
+                font-size:14px;
+                font-weight:400;
+            }
+
+        }
+    }
 
     .select-box{
         background-color:$color-light-beige;
@@ -853,7 +925,10 @@
 	}
 
 	.space{display:inline-block;padding:0 3px;}
-	.form-text{ font-size:14px;font-weight:400;color:$color-gray;}
+	.form-text{
+         font-size:14px;font-weight:400;color:$color-gray;
+         strong{display:inline-block;margin-right:8px;font-weight:600;color:$color-black;}
+    }
 
 	.table-row{
 		width:100%;
@@ -928,7 +1003,7 @@
                 .icon-lock, .icon-new{position:relative;top:-2px;}
                 .icon-new{margin-left:8px;}
 
-                &.date, &.reply, &.time{
+                &.date, &.reply, &.time, &.percent{
                     color:$color-gray;
                 }
 
@@ -1098,7 +1173,16 @@
 			@include boxSizing(border-box);
 			@include vw(width, 87px);@include vw(height, 38px); 
 			@include vw(line-height, 38px); 
-			@include vw(padding-left,32px);
+			@include vw(padding-left,26px);
+		}
+
+        &.btn-download{
+			display:block;
+			background: $color-white url('../images/icon_down_brown.svg') no-repeat 8px center;
+			@include boxSizing(border-box);
+			@include vw(width, 87px);@include vw(height, 38px); 
+			@include vw(line-height, 38px); 
+			@include vw(padding-left,26px);
 		}
 
         &.btn-file{
@@ -1143,6 +1227,7 @@
 		&.flex-start{justify-content: flex-start;}
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
+        &.flex-between{justify-content: space-between;}
 
 		&.fly{
 			display:inline-block;

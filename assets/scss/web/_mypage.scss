@@ -1,116 +1,347 @@
 #wrap{
-	.section-mypage{
-		.wrap{
-			display:flex;
-			width:1200px;
-			margin:0 auto;
-			.sidebar{
-				width:274px;
-				a{display:inline-block;}
+	.section-mypage-wrap{
 
-				.menu-title{font-size:40px;font-weight:600;color:$color-black;}
-				.menu-item{
-					margin-top:40px;
-					>a{font-size:20px;font-weight:600;color:$color-black;}
-					.submenu{
-						.submenu-item{
-							a{font-size:16px;font-weight:400;color:$color-gray;line-height:27.2px;}
-							margin-top:8px;
-							&:first-child{margin-top:16px;}
-							&:hover, &.active{
-								a{
-									color:$color-brown;
-									font-weight:600;
-								}
+		display:flex;
+		width:1200px;
+		margin:0 auto;
+		.sidebar{
+			width:274px;
+			a{display:inline-block;}
+
+			.menu-title{font-size:40px;font-weight:600;color:$color-black;}
+			.menu-item{
+				margin-top:40px;
+				>p{font-size:20px;font-weight:600;color:$color-black;}
+				.submenu{
+					.submenu-item{
+						a{font-size:16px;font-weight:400;color:$color-gray;line-height:27.2px;}
+						margin-top:8px;
+						&:first-child{margin-top:16px;}
+						&:hover, &.active{
+							a{
+								color:$color-brown;
+								font-weight:600;
 							}
-
 						}
+
 					}
 				}
-
 			}
-			.content{
-				margin-left:35px;width:891px;
-				h3{color:$color-black;padding-bottom:40px;padding-top:10px;}
 
-				.total-number-box{
-					display:flex;
-					justify-content: space-between;
-					margin-bottom:20px;
-					.total{
-						font-size:16px;
-						font-weight:400;
-						color:$color-black;
-					
-						strong{
-							font-weight:600;
-							color:$color-brown;
-							display:inline-block;
-							margin-left:3px;
-						}
+		}
+		.content{
+			margin-left:35px;width:891px;
+			>h3{color:$color-black;padding-bottom:40px;padding-top:10px;}
+			.pagination{margin-top:40px;}
+			.total-number-box{
+				display:flex;
+				justify-content: space-between;
+				margin-bottom:20px;
+				.total{
+					font-size:16px;
+					font-weight:400;
+					color:$color-black;
+				
+					strong{
+						font-weight:600;
+						color:$color-brown;
+						display:inline-block;
+						margin-left:3px;
 					}
-			
-					.device{
+				}
+		
+				.device{
+					a{
 						display:flex;
 						align-items: center;
 						font-size:13px;
 						font-weight:400;
 						color:$color-black;
-						.icon{
-							display:inline-block;
-							margin-right:4px;
-						}
+					}
+					.icon{
+						display:inline-block;
+						margin-right:4px;
+					}
+				}
+			}
+
+			.tab-box{
+				.tab-menu{
+					margin-top:0;
+					ul{
+						position:static;
+						width:100%;
+						transform:translateX(0);
 					}
 				}
 
-				.tab-box{
-					.tab-menu{
-						margin-top:0;
-						ul{
-							position:static;
+				.tab-view{
+					padding-top:40px;
+				}
+			}
+
+			.notice-box{
+				display:flex;
+				align-items:center;
+				margin-bottom:40px;
+				margin-top:20px;
+				.notice-title{
+					@extend %textEllipsis;
+					width:611px;
+					margin-bottom:0;
+				}
+
+				.notice-date{margin-left:24px;font-size:14px;font-weight:400;color:$color-gray;}
+
+				.btn{
+					margin-left:auto;
+				}
+			}
+
+			.lecture-info-box{
+				padding:40px;
+				border:1px solid $color-light-brown;
+				background-color:$color-light-brown2;
+				display:flex;
+				align-items:center;
+				@include boxSizing(border-box);
+				margin-bottom:80px;
+
+				.lecture-left{
+					width:418px;
+					.lecture-subject{
+						color:$color-black;font-weight:600;font-size:24px;line-height:40.8px;
+					}
+				}
+
+				.lecture-right{
+					width:373px;
+					margin-left:20px;
+					border-left:1px solid $color-light-gray;
+					padding-left:36px;
+					@include boxSizing(border-box);
+					dl{
+						position:relative;
+						display:flex;
+						align-items:center;
+						margin-top:12px;
+						&:first-child{margin-top:0;}
+						dt,dd{font-size:16px;font-weight:400;text-align:left;}
+						dt{color:$color-gray;width:80px;}
+						dd{
+							font-weight:600;
+							margin-left:20px;
+							
+						}
+					}
+
+				}
+			}
+
+			.select-group{
+				display:flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom:20px;
+				.custom-select-box{
+					font-size:0;
+					.custom-select{width:160px;margin-right:8px;}
+					
+				}
+
+				.action{
+					margin-top:0;
+					.btn{
+						display:inline-block;@include vw(margin-left, 8px);
+						@include vw(padding,0 16px);@include vw(height, 38px);@include vw(line-height, 38px);
+					}
+				}
+			}
+
+
+
+			.lecture-data-list{
+				&+.action{
+					margin-top:24px;
+				}
+
+				.course-list {
+					.col{
+						padding:20px;
+						&:first-child{padding-right:0;}
+						&:last-child{padding-left:0;margin-left:auto;}
+					}
+
+					.desc-box{
+						position:relative;
+						&:first-child{padding-right:36px;}
+						
+						.t-img + .t-desc{
+							margin-left:24px;
+							.desc-title{
+								width:519px;
+								@include boxSizing(border-box);
+							}
+						}
+
+						.t-star{
+							position:absolute;right:12px;top:24px;
+							.btn-star{
+								background:url('../images/btn_star_off.svg') no-repeat 0 0;
+								background-size:cover;
+								width:24px;height:24px;
+								display:block;
+								&.active{
+									img{opacity:0;}
+								}
+							}
+						}
+
+						.desc-title{
 							width:100%;
-							transform:translateX(0);
 						}
 					}
 
-					.tab-view{
-						padding-top:40px;
+					.check{
+						line-height:1;
+						label{width:24px;height:24px;padding-left:0;}
+					}
+
+					.subject{
+						width:80px;
+
+						&+.desc-box{
+							width:663px;
+							padding: 20px 24px;
+							
+						}
+					}
+				
+
+					.action-box{
+						.btn{
+							width:128px;margin-top:8px;
+							margin-left:0;padding:0;
+							&:first-child{margin-top:0;}
+						}
 					}
 				}
 
-				.lecture-data-list{
-					.course-list {
-						.col{
-							padding:20px;
-							&:first-child{padding-right:0;}
-							&:last-child{padding-left:0;margin-left:auto;}
+				&.hover-data-list{
+					.course-list{
+						&:hover{
+							background-color:$color-light-brown2;
 						}
+					}
+				}
 
+				&.like-data-list{
+					.course-list{
+						.col{
+							padding:24px 12px;
+							&:first-child{padding-left:20px;}
+							&:last-child{padding-right:20px;}
+						}
 						.subject{
-							width:80px;
+							font-size:13px;
+							&+.desc-box{width:591px;}
 						}
 						.desc-box{
-							width:auto;
-							.t-img + .t-desc{
-								margin-left:24px;
-							}
-
-							.t-desc .desc-title{
-								width:519px;
+							.t-desc{
+								.desc-title{
+									width:471px;
+									padding-right:24px;
+									font-size:16px;
+									line-height:27.2px;
+								}
 							}
 						}
-						.action-box{
-							.btn{
-								width:128px;margin-top:8px;
-								margin-left:0;padding:0;
-								&:first-child{margin-top:0;}
+					}
+				}
+			}
+
+			.section-lecture{
+				.lecture-box .lecture-view{
+					flex-wrap:wrap;
+					.lecture-left{
+						width:100%;
+						.lecture-subject{font-size:24px;line-height:40px;}
+						.lecture-name{
+							margin-top:8px;
+							strong{font-size:14px;}
+						}
+						dl{
+							dt{
+								&.thumbnail{
+			
+									width:160px;
+									height:160px;
+
+								}
+							}
+							dd{
+								
+							}
+						}
+					}
+					.lecture-right{
+						width:100%;
+						padding-left:0;margin-left:0;
+						border-left:0;
+						margin-top:36px;
+						border-top:1px solid $color-light-gray;
+						padding-top:8px;
+
+						display:flex;
+						flex-wrap:wrap;
+						dl{
+							margin-top:12px;
+							width:50%;
+							dt{width:80px;}
+							dd{
+								display:flex;width:auto;margin-left:20px;
+								strong{display:inline-block;width:48px;}
+								a{margin-left:12px;}
 							}
 						}
 					}
 				}
 
-				
+				.action{padding-bottom:40px;}
 			}
+
+			.section-lecture-content{
+				.notice-list-table{
+					.table-row tr{
+						th{position:relative;font-weight:400;}
+						th,td{
+							padding:20px 12px;
+							&:first-child{padding-left:20px;}
+							&:last-child{padding-right:20px;}
+						}
+					}
+				}
+
+				.btn-help:hover{
+					& + .layer-box{display:block;}
+				}
+
+				.layer-box{
+					display:none;
+					position:absolute;right:10px;top:67px;z-index:11;
+					background-color:$color-white;
+					padding:24px;text-align:left;
+					border:1px solid $color-light-brown;
+					width:520px;@include boxSizing(border-box);
+					.layer-title{margin-bottom:8px;font-size:14px;font-weight:600;color:$color-brown;}
+					.layer-list{
+						li{font-size:14px;font-weight:400;color:$color-black;line-height:23.8px;}
+					}
+				}
+			}
+
+			
 		}
+		
 	}
 }

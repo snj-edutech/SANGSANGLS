@@ -87,7 +87,7 @@
 
 					<div class="list-row">
 						<div class="name">수강후기 수정하기 팝업</div>
-						<button type="button" class="btn small primary" onclick="popupOpen('#popupRevieUpdate')">확인</button>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupReviewUpdate')">확인</button>
 					</div>
 
 					
@@ -114,6 +114,34 @@
 					<div class="list-row">
 						<div class="name">방문상담 - 나의 예약 확인</div>
 						<button type="button" class="btn small primary" onclick="popupOpen('#popupReservation2')">확인</button>
+					</div>
+				</div>
+
+				<div class="list-item">
+					<div class="list-type">마이페이지</div>
+					<div class="list-row">
+						<div class="name">기기관리</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupDevice')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">수강후기 등록</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupMypageReviewWrite')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">수강후기 수정</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupMypageReviewUpdate')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">수강기간연장(연장기간 미포함)</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupCoursePeriod1')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">수강기간연장(연장기간 포함)</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupCoursePeriod2')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">수강일시정지</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupCoursePause')">확인</button>
 					</div>
 				</div>
 
@@ -788,7 +816,7 @@
 							강좌명 길면 2줄 노출
 						</div>
 	
-						<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
+						<textarea class="textarea" readonly cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
 	추리논증형 인간으로 거듭나는 데에 초석이 되는 강의입니다. 처음에는 김재형 교수님의 강의를 따라가며 생각해보고 공부하는 과정이 낯설고 어렵게 느껴졌는데 그 과정을 꾸준히 하다 보면 이미 봤던 기출 문제인데도 전에 크게 놓쳤던 게 보이면서 머리가 맑게 트이는 듯한 순간이 올 때가 있습니다. 질문도 꼭 해보세요. 집에서 독학을 하는 상황인데 현재 제가 어려움을 겪고 있는 부분이 어떤 점인지 정확히 캐치해 주시고 조언도 주셔서 한결 마음이 편안해졌습니다. 감사합니다 :)
 						</textarea>
 					</div>
@@ -800,9 +828,9 @@
 			</div>
 		</div>
 	
-		<div class="popup" id="popupRevieUpdate">
+		<div class="popup" id="popupReviewUpdate">
 			<div class="popup-wrap">
-				<a href="javascript:popupClose('#popupRevieUpdate');"  class="popup-close">팝업닫기</a>
+				<a href="javascript:popupClose('#popupReviewUpdate');"  class="popup-close">팝업닫기</a>
 				<div class="popup-title">
 					수강후기 작성하기
 				</div>
@@ -1400,11 +1428,656 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="popup" id="popupDevice">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupDevice');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					기기관리
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="device-title">
+						<p>
+							<strong>홍길동( YHBMFL084700)님의 기기정보</strong><br/>
+							강의를 수강하시는 기기는 제한적이니 등록된 기기에 네이밍하며 관리하세요!
+						</p>
+						<div class="remain-count">기기 삭제 가능 횟수<strong>2회</strong></div>
+					</div>
+					<div class="device-table">
+						<table class="table-row">
+							<colgroup>
+								<col style="width:20%;" />
+								<col style="width:25%;" />
+								<col style="width:25%;" />
+								<col style="width:auto;" />
+							</colgroup>
+							<tr>
+								<th>구분</th>
+								<th>고유번호</th>
+								<th>등록일시</th>
+								<th>기기명</th>
+							</tr>
+							<tr>
+								<td>스트리밍(MO)</td>
+								<td>sx8407246c2d39de037ea2192ad941498</td>
+								<td>YYYY-MM-DD 00:00:00.0</td>
+								<td>
+									일이삼사오육칠팔구십일이삼
+									<a href="javascript:;" class="btn-edit"><img src="../../../assets/images/btn_edit.svg" alt="" /></a>
+									<a href="javascript:;" class="btn-delete"><img src="../../../assets/images/btn_delete.svg" alt="" /></a>
+								</td>
+							</tr>
+							<tr>
+								<td>스트리밍(PC)</td>
+								<td>고유번호</td>
+								<td>YYYY-MM-DD 00:00:00.0</td>
+								<td>
+									<div class="form-control">
+										<div class="fake-save-box">
+											<input type="text" class="text fake-input" id="saveText" placeholder="기기명 (최대13자)" />
+											<a href="javascript:;" class="fake-btn"><label for="saveText">저장하기</label></a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>스트리밍(PC)</td>
+								<td>고유번호</td>
+								<td>YYYY-MM-DD 00:00:00.0</td>
+								<td>
+									<div class="form-control">
+										<div class="fake-save-box">
+											<input type="text" class="text fake-input" id="saveText" value="일이삼사오육칠팔구십일이삼" />
+											<a href="javascript:;" class="fake-btn"><label for="saveText">저장하기</label></a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+	
+					<div class="popup-notice">
+						- 고유번호는 동영상 플레이어 고유의 일련번호를 뜻합니다.<br/>
+						- 동영상강의의 불법적인 재생 및 다운로드 방지를 위해 사용자의 동영상 플레이어 아이디를 관리합니다.<br/>
+						- 최대 3개의 기기까지만 등록이 가능(모바일포함)하며 새로운 기기에서 재생을 원할 경우 기존에 등록하신 기기를 삭제하여야 합니다. 삭제 가능횟수는 2회 제공됩니다.<br/>
+						- 강좌를 구매하신 고객이 강의를 재생하면 기기정보가 자동으로 서버에 등록됩니다. 이와같이 서버에 정보가 등록된 기기에서만 재생이 가능합니다.
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="popupMypageReviewWrite">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupMypageReviewWrite');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					수강후기 작성하기
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+					</div>
+					<div class="form-control">
+						<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)"></textarea>
+					</div>
+					<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
+					<div class="action">
+						<a href="javascript:popupClose('#popupMypageReviewWrite');" class="btn large btn-brown">등록</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="popup" id="popupMypageReviewUpdate">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupMypageReviewUpdate');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					수강후기 작성하기
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+					</div>
+					<div class="form-control">
+						<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
+	추리논증형 인간으로 거듭나는 데에 초석이 되는 강의입니다. 처음에는 김재형 교수님의 강의를 따라가며 생각해보고 공부하는 과정이 낯설고 어렵게 느껴졌는데 그 과정을 꾸준히 하다 보면 이미 봤던 기출 문제인데도 전에 크게 놓쳤던 게 보이면서 머리가 맑게 트이는 듯한 순간이 올 때가 있습니다. 질문도 꼭 해보세요. 집에서 독학을 하는 상황인데 현재 제가 어려움을 겪고 있는 부분이 어떤 점인지 정확히 캐치해 주시고 조언도 주셔서 한결 마음이 편안해졌습니다. 감사합니다 :)
+						</textarea>
+					</div>
+					<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
+					<div class="action">
+						<a href="javascript:popupClose('#popupMypageReviewUpdate');" class="btn large btn-brown">수정</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup popup-coursePeriod" id="popupCoursePeriod1">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupCoursePeriod1');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					수강기간 연장하기
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+						<div class="remain-count">연장가능 잔여 횟수<strong>2회</strong></div>
+					</div>
+	
+					<div class="line-box scroll">
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+					</div>
+					<div class="form-control">
+						<div class="fake-checkbox">
+							<input type="checkbox" id="periodAgree" class="checkbox" checked="">
+							<label for="periodAgree">수강기간 연장에 대한 내용을 확인하였습니다.</label>
+						</div>
+					</div>
+	
+					<div class="lecture-box">
+						<dl>
+							<dt>강좌명</dt>
+							<dd>
+								<strong>(연장)[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 강좌명 길면 2줄 노출</strong>
+							</dd>
+						</dl>
+	
+						<dl>
+							<dt>일 수강료</dt>
+							<dd>
+								<strong>40,000원</strong>
+								<span>(전체수강료 800,000원 ÷ 수강기간 20일)</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>연장일수 선택</dt>
+							<dd>
+								<div class="form-control">
+									<span class="select">
+										<select name="" id="">
+											<option value="">7일</option>
+										</select>
+									</span>
+			
+									<input type="text" class="text" placeholder="금액확인" value="280,000원">
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="action">
+						<a href="javascript:popupClose('#popupCoursePeriod1');" class="btn btn-brown"><strong>수강기간 연장</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="popup popup-coursePeriod" id="popupCoursePeriod2">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupCoursePeriod2');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					수강기간 연장하기
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+						<div class="remain-count">연장가능 잔여 횟수<strong>2회</strong></div>
+					</div>
+	
+					<div class="line-box scroll min">
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+						<dl>
+							<dt>수강기간연장은 일별 과금되며 결제 후 이용 가능합니다.</dt>
+							<dd>
+								-강좌 당 최대 2회까지 신청 가능합니다.<br/>
+								-1회에 최대 7일까지 연장 가능합니다.<br/>
+								-결제 후 취소 및 환불 불가하니 신중한 결정 바랍니다.
+							</dd>
+						</dl>
+					</div>
+					<div class="form-control">
+						<div class="fake-checkbox">
+							<input type="checkbox" id="periodAgree" class="checkbox" checked="">
+							<label for="periodAgree">수강기간 연장에 대한 내용을 확인하였습니다.</label>
+						</div>
+					</div>
+	
+					<div class="lecture-box">
+						<dl>
+							<dt>강좌명</dt>
+							<dd>
+								<strong>(연장)[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 강좌명 길면 2줄 노출</strong>
+							</dd>
+						</dl>
+	
+						<dl>
+							<dt>일 수강료</dt>
+							<dd>
+								<strong>40,000원</strong>
+								<span>(전체수강료 800,000원 ÷ 수강기간 20일)</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>연장일수 선택</dt>
+							<dd>
+								<div class="form-control">
+									<span class="select small">
+										<select name="" id="">
+											<option value="">7일</option>
+										</select>
+									</span>
+			
+									<input type="text" class="text" placeholder="금액확인" value="280,000원">
+								</div>
+							</dd>
+						</dl>
+	
+						<dl>
+							<dt>연장기간</dt>
+							<dd>
+								<strong>YYYY-MM-DD ~ YYYY-MM-DD</strong>
+							</dd>
+						</dl>
+	
+					</div>
+					<div class="action">
+						<a href="javascript:popupClose('#popupCoursePeriod2');" class="btn btn-brown"><strong>수강기간 연장</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup popup-coursePause" id="popupCoursePause">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupCoursePause');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					수강 일시정지
+				</div>
+				<div class="popup-cont">
+					<div class="course-title">
+						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+						강좌명 길면 2줄 노출
+						<div class="remain-count">일시정지 잔여 횟수<strong>2회</strong></div>
+					</div>
+	
+					<div class="line-box">
+						<p>
+							-일시중지는 <strong class="highlight">3</strong>회 가능합니다.<br/>
+							-중지 일수는 수강 잔여일수를 초과 할 수 없으며, <br/>
+							<strong class="highlight">3회 중지 합계 일수는 원래 강좌의 수강 기간을 초과할 수 없습니다.</strong>
+						</p>
+					</div>
+	
+					<div class="lecture-box">
+						<dl>
+							<dt>수강기간</dt>
+							<dd>
+								<strong>YYYY-MM-DD ~ YYYY-MM-DD (99일+99일+99일)</strong>
+							</dd>
+						</dl>
+	
+						<dl>
+							<dt>일시정지 1회</dt>
+							<dd>
+								<strong>YYYY-MM-DD (정지 취소)</strong>
+							</dd>
+						</dl>
+						<dl>
+							<dt>일시정지 2회</dt>
+							<dd>
+								<strong>YYYY-MM-DD (정지 취소)</strong>
+							</dd>
+						</dl>
+						<dl>
+							<dt>일시정지 3회</dt>
+							<dd>
+								<strong>YYYY-MM-DD (정지 취소)</strong>
+							</dd>
+						</dl>
+						<dl>
+							<dt>일 수강료</dt>
+							<dd>
+								<strong>40,000원</strong>
+								<span>(전체수강료 800,000원 ÷ 수강기간 20일)</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>신청기간 0회</dt>
+							<dd>
+								<div class="date-box">
+									<label for="date-first">
+										<input type="text" class="date" id="date-first" value="2024-02-14"  />
+										<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+										<div class="layer-open">
+											<div class="calender-box">
+											
+												<div class="month-box">
+													<strong class="month">2024. 09</strong>
+													<div class="btn-arrow">
+														<a href="javascript:;" class="btn-prev disabled"></a>
+														<a href="javascript:'" class="btn-next"></a>
+													</div>
+												</div>
+												<div class="calender-table">
+													<table class="table-row">
+														<tbody><tr>
+															<th>일</th>
+															<th>월</th>
+															<th>화</th>
+															<th>수</th>
+															<th>목</th>
+															<th>금</th>
+															<th>토</th>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">1</span>
+															</td>
+															<td>
+																<span class="day">2</span>
+															</td>
+															<td>
+																<span class="day">3</span>
+															</td>
+															<td>
+																<span class="day">4</span>
+															</td>
+															<td>
+																<span class="day">5</span>
+															</td>
+															<td>
+																<span class="day">6</span>
+															</td>
+															<td>
+																<span class="day">7</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">8</span>
+															</td>
+															<td>
+																<span class="day">9</span>
+															</td>
+															<td>
+																<span class="day">10</span>
+															</td>
+															<td>
+																<span class="day">11</span>
+															</td>
+															<td>
+																<span class="day">12</span>
+															</td>
+															<td>
+																<span class="day">13</span>
+															</td>
+															<td>
+																<span class="day">14</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">15</span>
+															</td>
+															<td>
+																<span class="day">16</span>
+															</td>
+															<td>
+																<span class="day">17</span>
+															</td>
+															<td>
+																<span class="day">18</span>
+															</td>
+															<td>
+																<span class="day">19</span>
+															</td>
+															<td>
+																<span class="day">20</span>
+															</td>
+															<td>
+																<span class="day">21</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">22</span>
+															</td>
+															<td class="active">
+																<span class="day">23</span>
+															</td>
+															<td>
+																<span class="day">24</span>
+															</td>
+															<td class="disabled">
+																<span class="day">25</span>
+															</td>
+															<td class="disabled">
+																<span class="day">26</span>
+															</td>
+															<td class="disabled">
+																<span class="day">27</span>
+															</td>
+															<td class="disabled">
+																<span class="day">28</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="disabled">
+																<span class="day">29</span>
+															</td>
+															<td class="disabled">
+																<span class="day">30</span>
+															</td>
+															<td class="disabled">
+																<span class="day">31</span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+											</div>
+										</div>
+									</label>
+									<span class="date-dash">&nbsp;</span>
+									<label for="date-last">
+										<input type="text" class="date" id="date-last" placeholder="YYYY-MM-DD" />
+										<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+										<div class="layer-open">
+											<div class="calender-box">
+											
+												<div class="month-box">
+													<strong class="month">2024. 09</strong>
+													<div class="btn-arrow">
+														<a href="javascript:;" class="btn-prev disabled"></a>
+														<a href="javascript:'" class="btn-next"></a>
+													</div>
+												</div>
+												<div class="calender-table">
+													<table class="table-row">
+														<tbody><tr>
+															<th>일</th>
+															<th>월</th>
+															<th>화</th>
+															<th>수</th>
+															<th>목</th>
+															<th>금</th>
+															<th>토</th>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">1</span>
+															</td>
+															<td>
+																<span class="day">2</span>
+															</td>
+															<td>
+																<span class="day">3</span>
+															</td>
+															<td>
+																<span class="day">4</span>
+															</td>
+															<td>
+																<span class="day">5</span>
+															</td>
+															<td>
+																<span class="day">6</span>
+															</td>
+															<td>
+																<span class="day">7</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">8</span>
+															</td>
+															<td>
+																<span class="day">9</span>
+															</td>
+															<td>
+																<span class="day">10</span>
+															</td>
+															<td>
+																<span class="day">11</span>
+															</td>
+															<td>
+																<span class="day">12</span>
+															</td>
+															<td>
+																<span class="day">13</span>
+															</td>
+															<td>
+																<span class="day">14</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">15</span>
+															</td>
+															<td>
+																<span class="day">16</span>
+															</td>
+															<td>
+																<span class="day">17</span>
+															</td>
+															<td>
+																<span class="day">18</span>
+															</td>
+															<td>
+																<span class="day">19</span>
+															</td>
+															<td>
+																<span class="day">20</span>
+															</td>
+															<td>
+																<span class="day">21</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span class="day">22</span>
+															</td>
+															<td class="active">
+																<span class="day">23</span>
+															</td>
+															<td>
+																<span class="day">24</span>
+															</td>
+															<td class="disabled">
+																<span class="day">25</span>
+															</td>
+															<td class="disabled">
+																<span class="day">26</span>
+															</td>
+															<td class="disabled">
+																<span class="day">27</span>
+															</td>
+															<td class="disabled">
+																<span class="day">28</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="disabled">
+																<span class="day">29</span>
+															</td>
+															<td class="disabled">
+																<span class="day">30</span>
+															</td>
+															<td class="disabled">
+																<span class="day">31</span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+															<td>
+																<span class="day"></span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+											</div>
+										</div>
+									</label>
+								</div>
+	
+	
+							</dd>
+						</dl>
+					</div>
+					<div class="action">
+						<a href="javascript:popupClose('#popupCoursePause');" class="btn large btn-brown"><strong>신청하기</strong></a>
+						<a href="javascript:popupClose('#popupCoursePause');" class="btn large btn-gray"><strong>신청불가</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="../../../assets/js/script.js"></script>
 	<script>
 		$(function(){
-			
+
 		});
 	</script>
 	<style>

@@ -105,247 +105,227 @@
 				</div>
 			</div>
 		</header>
-		
-		<div id="contents">
-			<div class="section-professor-home">
-				<div class="wrap">
-					<div class="professor-desc">
-						<p class="desc-name">추리논증 김재형</p>
-						<p class="desc-subject">해설이 아닌 해결이 되는, RAINMAKER</p>
-					</div>
-					<div class="professor-img"><img src="../../../assets/images/professor/professor5_1200x360.png" alt="" /></div>
-				</div>
-				<div class="professor-profile">
-					<div class="profile-content">
-						<a href="javascript:popupOpen('#popupProfile');" class="btn-profile">프로필</a>
-						<div class="profile-video-title">교수님 소개영상</div>
-						<div class="profile-video" style="background-image: url('https://i.ytimg.com/vi/PHh_SI-F7Q0/maxresdefault.jpg');">
-							<a href="javascript:layerVideoOpen('https://www.youtube.com/embed/PHh_SI-F7Q0?amp;autoplay=1&amp;playlist=PHh_SI-F7Q0&amp;loop=1');" class="btn-play"><img src="../../../assets/images/btn_play.svg" alt="" /></a>
-						</div>
-						<div class="profile-video-title">교수님 추천영상</div>
-						<div class="profile-video" style="background-image: url('https://i.ytimg.com/vi/7fFEQVRx_Uk/maxresdefault.jpg');">
-							<a href="javascript:layerVideoOpen('https://www.youtube.com/embed/7fFEQVRx_Uk?amp;autoplay=1&amp;playlist=7fFEQVRx_Uk&amp;loop=1');"  class="btn-play"><img src="../../../assets/images/btn_play.svg" alt="" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="section-professor-content" id="sectionMenu">
-				<div class="wrap">
+		<div id="contents">
+			<div class="section-mypage-wrap">
+
+				<div class="sidebar">
+					<div class="menu-title"><a href="javascript:;">마이페이지</a></div>
+
+					<div class="menu-item" >
+						<p>내 강의실</p>
+						<div class="submenu">
+							<div class="submenu-item active"><a href="javascript:;">수강중인 강좌</a></div>
+							<div class="submenu-item"><a href="javascript:;">수강예정 강좌</a></div>
+							<div class="submenu-item"><a href="javascript:;">학원 강좌</a></div>
+							<div class="submenu-item"><a href="javascript:;">수강완료 강좌</a></div>
+						</div>
+					</div>
+
+					<div class="menu-item" >
+						<p>결제 정보</p>
+						<div class="submenu">
+							<div class="submenu-item"><a href="javascript:;">장바구니</a></div>
+							<div class="submenu-item"><a href="javascript:;">주문/배송 조회</a></div>
+							<div class="submenu-item"><a href="javascript:;">포인트/쿠폰 확인</a></div>
+						</div>
+					</div>
+
+					<div class="menu-item" >
+						<p>고객센터</p>
+						<div class="submenu">
+							<div class="submenu-item"><a href="javascript:;">나의 문의</a></div>
+							<div class="submenu-item"><a href="javascript:;">받은 쪽지함</a></div>
+						</div>
+					</div>
+
+					<div class="menu-item" >
+						<p>개인정보</p>
+						<div class="submenu">
+							<div class="submenu-item"><a href="javascript:;">개인정보 수정</a></div>
+							<div class="submenu-item"><a href="javascript:;">회원탈퇴</a></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="content">
+					<h3>수강중인 강좌</h3>
+
+					<div class="notice-box">
+						<span class="icon-volume"><img src="../../../assets/images/icon_volume.svg" alt=""/></span>
+						<p class="notice-title">
+							일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십
+						</p>
+						<span class="icon-new">N</span>
+						<div class="notice-date">YYYY-MM-DD</div>
+						<a href="javascript:" class="btn">공지 더보기</a>
+					</div>
+					<div class="lecture-info-box">
+						<div class="lecture-left">
+							<div class="lecture-subject">
+								2026대비 상상패스<br/>(패스명 두줄일 경우)
+							</div>
+						</div>
+
+						<div class="lecture-right">
+							<dl>
+								<dt>수강기간</dt>
+								<dd>
+									YYYY-MM-DD ~ YYYY-MM-DD
+								</dd>
+							</dl>
+							<dl>
+								<dt>잔여기간</dt>
+								<dd>99일</dd>
+							</dl>
+						</div>
+					</div>
+
 					<div class="tab-box">
 						<div class="tab-menu">
 							<ul>
-								<li><a href="#tabView1" class="page-move2">교수소개</a></li>
-								<li><a href="#tabView2" class="page-move2">개설강좌</a></li>
-								<li><a href="#tabView3" class="page-move2">공지사항</a></li>
-								<li><a href="#tabView4" class="page-move2">학습질문</a></li>
-								<li class="active"><a href="#tabView4" class="page-move2">수강후기</a></li>
+								<li class="active"><a href="javascript:;">수강중인 강좌</a></li>
+								<li><a href="javascript:;">수강완료 강좌</a></li>
+								<li><a href="javascript:;">즐겨찾는 강좌</a></li>
+								<li><a href="javascript:;">삭제 강좌</a></li>
 							</ul>
 						</div>
 
-						<div class="tab-view active">
-							<div class="professor-content" id="tabView4">	
-								<h3>수강후기</h3>
-
-								<div class="lecture-review-list">
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데, 교수님의 강의를 들으면서 할 수 있겠다는 생각이 들었습니다.
-												공부해야 할 부분과 넘겨야 할 부분을 분명하게 알려주시고, 계산기 사용방법도 알려주셔서 더 효과적으로 공부할 수 있을 것 같습니다.
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
+						<div class="tab-view active" >
+							<div class="select-group">
+								<div class="custom-select-box">
+									<div class="custom-select">
+										<div class="selected">
+										  <div class="selected-value">과목선택(전체)</div>
+										  <div class="arrow"></div>
+										</div>
+										<ul>
+										  <li class="option">과목선택(전체)1</li>
+										  <li class="option">과목선택(전체)2</li>
+										</ul>
 									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데, 교수님의 강의를 들으면서 할 수 있겠다는 생각이 들었습니다.
-												공부해야 할 부분과 넘겨야 할 부분을 분명하게 알려주시고, 계산기 사용방법도 알려주셔서 더 효과적으로 공부할 수 있을 것 같습니다.
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
+									<div class="custom-select">
+										<div class="selected">
+										  <div class="selected-value">교수선택(전체)</div>
+										  <div class="arrow"></div>
+										</div>
+										<ul>
+										  <li class="option">교수선택(전체)1</li>
+										  <li class="option">교수선택(전체)2</li>
+										</ul>
 									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
-									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데, 교수님의 강의를 들으면서 할 수 있겠다는 생각이 들었습니다.
-												공부해야 할 부분과 넘겨야 할 부분을 분명하게 알려주시고, 계산기 사용방법도 알려주셔서 더 효과적으로 공부할 수 있을 것 같습니다.	비전공자여서 회계에 대한 막연한 두려움이 있었는데, 교수님의 강의를 들으면서 할 수 있겠다는 생각이 들었습니다.
-												공부해야 할 부분과 넘겨야 할 부분을 분명하게 알려주시고, 계산기 사용방법도 알려주셔서 더 효과적으로 공부할 수 있을 것 같습니다.
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
-									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데, 교수님의 강의를 들으면서 할 수 있겠다는 생각이 들었습니다.
-												공부해야 할 부분과 넘겨야 할 부분을 분명하게 알려주시고, 계산기 사용방법도 알려주셔서 더 효과적으로 공부할 수 있을 것 같습니다.
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
-									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
-									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데, 교수님의 강의를 들으면서 할 수 있겠다는 생각이 들었습니다.
-												공부해야 할 부분과 넘겨야 할 부분을 분명하게 알려주시고, 계산기 사용방법도 알려주셔서 더 효과적으로 공부할 수 있을 것 같습니다.
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
-									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데, 교수님의 강의를 들으면서 할 수 있겠다는 생각이 들었습니다.
-												공부해야 할 부분과 넘겨야 할 부분을 분명하게 알려주시고, 계산기 사용방법도 알려주셔서 더 효과적으로 공부할 수 있을 것 같습니다.
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
-									</div>
-
-									<div class="review-list">
-										<a href="javascript:popupOpen('#popupLectureView');">
-											<div class="review-desc">
-												비전공자여서 회계에 대한 막연한 두려움이 있었는데
-											</div> 
-											<div class="review-info">
-												<dl>
-													<dt>강좌명</dt>
-													<dd>RAINMAKER 김재형의 LEET 추리논증 기본이론</dd>
-												</dl>
-												<dl>
-													<dt>작성자</dt>
-													<dd>홍*동</dd>
-												</dl>
-											</div>
-										</a>
+									<div class="custom-select">
+										<div class="selected">
+										  <div class="selected-value">최근 추가순</div>
+										  <div class="arrow"></div>
+										</div>
+										<ul>
+										  <li class="option">최근 추가순1</li>
+										  <li class="option">최근 추가순2</li>
+										</ul>
 									</div>
 								</div>
-		
-								<div class="action fly">
-									<a href="javascript:popupOpen('#popupReviewWrite');" class="btn large btn-brown">작성</a>
+								<div class="action">
+									<a href="javascript:;" class="btn">교재구매</a>
+									<a href="javascript:;" class="btn btn-brown">강좌추가</a>
 								</div>
-
-								<div class="pagination">
-									<a href="javascript:;" class="control control-prev"><span>이전페이지</span></a>
-									<a href="javascript:;" class="active"><span>1</span></a>
-									<a href="javascript:;"><span>2</span></a>
-									<a href="javascript:;"><span>3</span></a>
-									<a href="javascript:;"><span>4</span></a>
-									<a href="javascript:;"><span>5</span></a>
-									<a href="javascript:;"><span>6</span></a>
-									<a href="javascript:;"><span>7</span></a>
-									<a href="javascript:;"><span>8</span></a>
-									<a href="javascript:;"><span>9</span></a>
-									<a href="javascript:;"><span>10</span></a>
-									<a href="javascript:;" class="control control-next"><span>다음페이지</span></a>
-								</div>
-
-
-								
 							</div>
+
+							<div class="lecture-data-list like-data-list">
+								<div class="grid course-list">
+									<div class="col check">
+										<div class="form-control">
+											<div class="fake-checkbox">
+												<input type="checkbox" id="check-1" class="checkbox" >
+												<label for="check-1"></label>
+											</div>
+										</div>
+									</div>
+									<div class="col subject">실전문풀</div>
+									<div class="col desc-box">
+										<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진"></div>
+										<div class="t-desc">
+											<div class="desc-title"><a href="javascript:;">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강특강특강특강특강[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
+											<div class="desc-text">
+												<p>강의상태<strong>완강</strong></p>
+												<p>진도율<strong>100%</strong></p>
+												<p><span class="icon"><img src="../../../assets/images/icon_history.svg" alt=""></span><strong>무제한</strong></p>
+											</div>
+											<div class="desc-text">
+												<p>추리논증 김재형</p>
+											</div>
+										</div>
+										<div class="t-star"><a href="javascript:;" class="btn-star active"><img src="../../../assets/images/btn_star_on.svg" alt=""/></a></div>
+									</div>
+									<div class="col action-box">
+										<a href="javascript:;" class="btn btn-light-brown large"><strong>강의보기</strong></a>
+										<a href="javascript:popupOpen('#popupMypageReviewWrite');" class="btn">수강후기 작성</a>
+									</div>
+								</div>
+
+								<div class="grid course-list">
+									<div class="col check">
+										<div class="form-control">
+											<div class="fake-checkbox">
+												<input type="checkbox" id="check-1" class="checkbox" >
+												<label for="check-1"></label>
+											</div>
+										</div>
+									</div>
+									<div class="col subject">실전문풀</div>
+									<div class="col desc-box">
+										<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진"></div>
+										<div class="t-desc">
+											<div class="desc-title"><a href="javascript:;">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
+											<div class="desc-text">
+												<p>강의상태<strong>완강</strong></p>
+												<p>진도율<strong>100%</strong></p>
+												<p><span class="icon"><img src="../../../assets/images/icon_history.svg" alt=""></span><strong>무제한</strong></p>
+											</div>
+											<div class="desc-text">
+												<p>추리논증 김재형</p>
+											</div>
+										</div>
+										<div class="t-star"><a href="javascript:;" class="btn-star active"><img src="../../../assets/images/btn_star_on.svg" alt=""/></a></div>
+									</div>
+									<div class="col action-box">
+										<a href="javascript:;" class="btn btn-light-brown large"><strong>강의보기</strong></a>
+										<a href="javascript:popupOpen('#popupMypageReviewWrite');" class="btn">수강후기 작성</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="action flex-between">
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="allCheck" class="checkbox" >
+										<label for="allCheck">전체선택</label>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn">선택강좌 삭제</a>
+							</div>
+
+							<div class="pagination">
+								<a href="javascript:;" class="control control-prev"><span>이전페이지</span></a>
+								<a href="javascript:;" class="active"><span>1</span></a>
+								<a href="javascript:;"><span>2</span></a>
+								<a href="javascript:;"><span>3</span></a>
+								<a href="javascript:;"><span>4</span></a>
+								<a href="javascript:;"><span>5</span></a>
+								<a href="javascript:;"><span>6</span></a>
+								<a href="javascript:;"><span>7</span></a>
+								<a href="javascript:;"><span>8</span></a>
+								<a href="javascript:;"><span>9</span></a>
+								<a href="javascript:;"><span>10</span></a>
+								<a href="javascript:;" class="control control-next"><span>다음페이지</span></a>
+							</div>
+
 						</div>
 					</div>
 				</div>
+				
 			</div>
-
 		</div>
 
 		<footer id="footer">
@@ -847,154 +827,137 @@
 		</div>
 	</div>
 
-
-	<div class="popup" id="popupProfile">
+	<div class="popup" id="popupDevice">
 		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupProfile');"  class="popup-close">팝업닫기</a>
+			<a href="javascript:popupClose('#popupDevice');"  class="popup-close">팝업닫기</a>
 			<div class="popup-title">
-				김재형 교수님 프로필
+				기기관리
 			</div>
 			<div class="popup-cont popup-scroll">
-				<div class="heading highlight border-line">약력</div>
-				<div class="box">
+				<div class="device-title">
 					<p>
-						연세대학교 교육학과 졸업
-						<br/>
-						現 상상로스쿨 추리논증 전임교수<br/>
-						現 합격의법학원 PSAT 상황판단 전임교수<br/>
-						前 메가로스쿨 추리논증 전임교수<br/>
-						前 스카이로스쿨 추리논증 전임교수<br/>
-						前 합격의법학원 PSAT 언어논리 전임교수<br/>
-						前 일등로스쿨 추리논증 전임교수
+						<strong>홍길동( YHBMFL084700)님의 기기정보</strong><br/>
+						강의를 수강하시는 기기는 제한적이니 등록된 기기에 네이밍하며 관리하세요!
 					</p>
+					<div class="remain-count">기기 삭제 가능 횟수<strong>2회</strong></div>
 				</div>
-				<div class="heading highlight border-line">저서</div>
-				<div class="box">
-					<p>
-						shot the 추리논증
-					</p>
+				<div class="device-table">
+					<table class="table-row">
+						<colgroup>
+							<col style="width:20%;" />
+							<col style="width:25%;" />
+							<col style="width:25%;" />
+							<col style="width:auto;" />
+						</colgroup>
+						<tr>
+							<th>구분</th>
+							<th>고유번호</th>
+							<th>등록일시</th>
+							<th>기기명</th>
+						</tr>
+						<tr>
+							<td>스트리밍(MO)</td>
+							<td>sx8407246c2d39de037ea2192ad941498</td>
+							<td>YYYY-MM-DD 00:00:00.0</td>
+							<td>
+								일이삼사오육칠팔구십일이삼
+								<a href="javascript:;" class="btn-edit"><img src="../../../assets/images/btn_edit.svg" alt="" /></a>
+								<a href="javascript:;" class="btn-delete"><img src="../../../assets/images/btn_delete.svg" alt="" /></a>
+							</td>
+						</tr>
+						<tr>
+							<td>스트리밍(PC)</td>
+							<td>고유번호</td>
+							<td>YYYY-MM-DD 00:00:00.0</td>
+							<td>
+								<div class="form-control">
+									<div class="fake-save-box">
+										<input type="text" class="text fake-input" id="saveText" placeholder="기기명 (최대13자)" />
+										<a href="javascript:;" class="fake-btn"><label for="saveText">저장하기</label></a>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>스트리밍(PC)</td>
+							<td>고유번호</td>
+							<td>YYYY-MM-DD 00:00:00.0</td>
+							<td>
+								<div class="form-control">
+									<div class="fake-save-box">
+										<input type="text" class="text fake-input" id="saveText" value="일이삼사오육칠팔구십일이삼" />
+										<a href="javascript:;" class="fake-btn"><label for="saveText">저장하기</label></a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
 				</div>
+
+				<div class="popup-notice">
+					- 고유번호는 동영상 플레이어 고유의 일련번호를 뜻합니다.<br/>
+					- 동영상강의의 불법적인 재생 및 다운로드 방지를 위해 사용자의 동영상 플레이어 아이디를 관리합니다.<br/>
+					- 최대 3개의 기기까지만 등록이 가능(모바일포함)하며 새로운 기기에서 재생을 원할 경우 기존에 등록하신 기기를 삭제하여야 합니다. 삭제 가능횟수는 2회 제공됩니다.<br/>
+					- 강좌를 구매하신 고객이 강의를 재생하면 기기정보가 자동으로 서버에 등록됩니다. 이와같이 서버에 정보가 등록된 기기에서만 재생이 가능합니다.
+				</div>
+				
 			</div>
 		</div>
 	</div>
 
-	<div class="popup" id="popupReviewWrite">
+	<div class="popup" id="popupMypageReviewWrite">
 		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupReviewWrite');"  class="popup-close">팝업닫기</a>
+			<a href="javascript:popupClose('#popupMypageReviewWrite');"  class="popup-close">팝업닫기</a>
 			<div class="popup-title">
 				수강후기 작성하기
 			</div>
 			<div class="popup-cont popup-scroll">
+				<div class="course-title">
+					[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+					강좌명 길면 2줄 노출
+				</div>
 				<div class="form-control">
-					<div class="custom-select">
-						<div class="selected">
-						  <div class="selected-value">문의하실 수강중인 강좌를 선택하세요</div>
-						  <div class="arrow"></div>
-						</div>
-						<ul>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-						</ul>
-					</div>
-
 					<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)"></textarea>
 				</div>
 				<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
 				<div class="action">
-					<a href="javascript:popupOpen('#popupReviewSuccess');" class="btn large btn-brown">등록</a>
+					<a href="javascript:popupClose('#popupMypageReviewWrite');" class="btn large btn-brown">등록</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="popup" id="popupReviewSuccess">
+	<div class="popup" id="popupMypageReviewUpdate">
 		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupReviewSuccess');"  class="popup-close">팝업닫기</a>
+			<a href="javascript:popupClose('#popupMypageReviewUpdate');"  class="popup-close">팝업닫기</a>
 			<div class="popup-title">
 				수강후기 작성하기
 			</div>
 			<div class="popup-cont popup-scroll">
-				<div class="form-control">
-					<div class="custom-select">
-						<div class="selected">
-						  <div class="selected-value">문의하실 수강중인 강좌를 선택하세요</div>
-						  <div class="arrow"></div>
-						</div>
-						<ul>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-						  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-						</ul>
-					</div>
-
-					<div class="course-title">
-						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
-						강좌명 길면 2줄 노출
-					</div>
-
-					<textarea class="textarea" readonly cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
-추리논증형 인간으로 거듭나는 데에 초석이 되는 강의입니다. 처음에는 김재형 교수님의 강의를 따라가며 생각해보고 공부하는 과정이 낯설고 어렵게 느껴졌는데 그 과정을 꾸준히 하다 보면 이미 봤던 기출 문제인데도 전에 크게 놓쳤던 게 보이면서 머리가 맑게 트이는 듯한 순간이 올 때가 있습니다. 질문도 꼭 해보세요. 집에서 독학을 하는 상황인데 현재 제가 어려움을 겪고 있는 부분이 어떤 점인지 정확히 캐치해 주시고 조언도 주셔서 한결 마음이 편안해졌습니다. 감사합니다 :)
-					</textarea>
+				<div class="course-title">
+					[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+					강좌명 길면 2줄 노출
 				</div>
-				<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
-				<div class="action">
-					<a href="javascript:popupClose('#popupReviewSuccess');" class="btn large btn-brown">등록</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="popupReviewUpdate">
-		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupReviewUpdate');"  class="popup-close">팝업닫기</a>
-			<div class="popup-title">
-				수강후기 작성하기
-			</div>
-			<div class="popup-cont popup-scroll">
 				<div class="form-control">
-					<div class="custom-select">
-						<div class="selected">
-							<div class="selected-value">문의하실 수강중인 강좌를 선택하세요</div>
-							<div class="arrow"></div>
-						</div>
-						<ul>
-							<li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-							<li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
-							<li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-							<li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-						</ul>
-					</div>
-
-					<div class="course-title">
-						[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
-						강좌명 길면 2줄 노출
-					</div>
-
 					<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)">
 추리논증형 인간으로 거듭나는 데에 초석이 되는 강의입니다. 처음에는 김재형 교수님의 강의를 따라가며 생각해보고 공부하는 과정이 낯설고 어렵게 느껴졌는데 그 과정을 꾸준히 하다 보면 이미 봤던 기출 문제인데도 전에 크게 놓쳤던 게 보이면서 머리가 맑게 트이는 듯한 순간이 올 때가 있습니다. 질문도 꼭 해보세요. 집에서 독학을 하는 상황인데 현재 제가 어려움을 겪고 있는 부분이 어떤 점인지 정확히 캐치해 주시고 조언도 주셔서 한결 마음이 편안해졌습니다. 감사합니다 :)
 					</textarea>
 				</div>
 				<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
 				<div class="action">
-					<a href="javascript:popupClose('#popupReviewUpdate');" class="btn large btn-brown">수정</a>
+					<a href="javascript:popupClose('#popupMypageReviewUpdate');" class="btn large btn-brown">수정</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
+
 </div>
 
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
-		tabMenuEvent('.section-professor-content');
-
-		$(window).on("scroll", scrollMenuEvent);
-		scrollMenuEvent();
-
+		tabMenuEvent('.section-mypage');
 		
 	});
 </script>
