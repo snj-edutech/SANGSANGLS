@@ -10,6 +10,46 @@
         }
     }
 
+	.section-online-slide{
+		margin-top:80px;
+		.season-slider{
+			.slick-slide{
+				margin-left:36px;
+				width:376px;
+			}
+
+			.list{
+				a{display:block;}
+			}
+
+			.slick-arrow {
+				@extend %slick-arrow;
+				border-radius:0;
+				
+				&.slick-prev{
+					@include slideArrow(left, 24px, 24px, 1px, $color-gray, $color-white);
+					&:before{
+						width:8px;height:8px;
+					}
+					left:auto;right:23px;
+					top:-44px;
+					transform: translateY(0);
+					border:1px solid $color-light-brown;
+				}
+				&.slick-next{
+				   @include slideArrow(right, 24px, 24px, 1px, $color-gray, $color-white);
+				   &:before{
+						width:8px;height:8px;
+					}
+		
+					top:-44px;right:0;
+					transform: translateY(0);
+					border:1px solid $color-light-brown;
+				}
+			}
+		}
+	}
+
     // 온라인 서점
     .section-online-bookstore{
         .tab-box{

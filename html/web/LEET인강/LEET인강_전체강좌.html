@@ -114,14 +114,38 @@
 						<div class="tab-menu-small">
 							<ul>
 								<li><a href="javascript:;">프리패스</a></li>
-								<li><a href="javascript:;">패키지/시즌</a></li>
+								<li><a href="javascript:;">교수패스</a></li>
 								<li class="active"><a href="javascript:;">전체강좌</a></li>
-								<li><a href="javascript:;">무료특강</a></li>
+								<li><a href="javascript:;">특강</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="section-online-slide">
+				<div class="wrap">
+					<h3>시즌 추천</h3>
+					<div class="slider season-slider" data-slide="seasonSlider">
+						<div class="list">
+							<a href="javascript:;">
+								<img src="../../../assets/images/temp/banner1_376x120.png" alt="" />
+							</a>
+						</div>
+						<div class="list">
+							<a href="javascript:;">
+								<img src="../../../assets/images/temp/banner2_376x120.png" alt="" />
+							</a>
+						</div>
+						<div class="list">
+							<a href="javascript:;">
+								<img src="../../../assets/images/temp/banner3_376x120.png" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="section-online-content">
 				<div class="wrap">
 					<div class="tab-box">
@@ -1662,6 +1686,8 @@
 	$(function(){
 		tabMenuEvent('.section-online-content');
 		tabMenuClickEvent('.section-online-title');
+
+		slideEvent();
 	});
 </script>
 </body>

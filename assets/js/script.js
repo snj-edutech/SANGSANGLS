@@ -283,6 +283,17 @@ function slideEvent() {
 				variableWidth: true,
                 
 			};
+		} else if(_data == 'seasonSlider'){
+			_options = {
+				dots: false,
+				arrows: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+				centerMode: false,
+				variableWidth: true,
+                
+			};
 		} else if(_data == 'calenderSlider'){
 			_options = {
 				dots: false,
