@@ -38,6 +38,16 @@
             position:absolute;right:0;top:-4px;
             z-index:9;
         }
+
+        .info-text{
+            position:absolute;right:0;top:10px;
+            color:$color-gray;
+            font-size:14px;
+            font-weight:400;
+            line-height:23.8px;
+        }
+
+        
     }
 
 	h4{
@@ -294,6 +304,7 @@
         background-color:$color-light-beige;
         height:480px;
         text-align:center;
+        .icon{margin-bottom:16px;}
         p{
             color:$color-gray;
             font-size:16px;
@@ -369,6 +380,12 @@
                         font-size:18px;
                         color:$color-black;
 						@include boxSizing(border-box);
+                        border-left:none;
+                        
+                    }
+
+                    &:first-child{
+                        a{border-left:1px solid $color-light-brown;}
                     }
 
                     &.active, &:hover{
@@ -399,6 +416,11 @@
                         border:none;height:35px;
                         border-bottom:1px solid $color-light-brown;
 						font-size:16px;font-weight:400;
+
+                    }
+
+                    &:first-child{
+                        a{border-left:none;}
                     }
 
                     &.active, &:hover{
@@ -512,6 +534,12 @@
         }
     }
 
+    .custom-select-box{
+        font-size:0;
+
+        &+.form-control{margin-left:8px;}
+    }
+
 	.form-control {
         // margin-left: 8px;
         // &:first-child { margin-left: 0; }
@@ -541,7 +569,7 @@
                 @extend .sr-only;
                 &:checked + label { background-image: url('../images/icon_checkbox_checked.svg'); }
 
-				 &.disable + label{
+				 &.disabled + label{
                     background-image: url('../images/icon_check_disable.svg'); 
                 }
             }
@@ -564,7 +592,7 @@
                 @extend .sr-only;
                 &:checked + label { background-image: url('../images/icon_radio_checked.svg'); }
 
-                // &.disable + label{
+                // &.disabled + label{
                 //     background-image: url('../img/common/icon_radio_disable.png'); 
                 // }
             }
@@ -604,11 +632,15 @@
             @include vw(padding, 8px 8px 8px 16px);
             @include vw(font-size, 14px);
             border: 1px solid rgba(228, 222, 211, 1);
-            background: #fff;
+            background: $color-white;
             @include boxSizing(border-box);
             color:$color-black;
             height:40px;
             &::placeholder { color: $color-light-gray; }
+            &.disabled{
+                background-color:$color-light-gray !important;
+                color:$color-gray;
+            }
         }
 
         .textarea {
@@ -718,6 +750,14 @@
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
+
+            &.disabled{
+                background-color:$color-light-gray;
+                color:$color-gray;
+                .arrow {
+                    background-image: url('../images/icon_select_arrow_gray.svg');
+                }
+            }
 		}
 
 		ul{
@@ -798,7 +838,7 @@
 
         .select, .custom-select{
 			background-position:97% center;
-			background-color:#fff;
+			background-color:$color-white;
             width: 280px;
 			&.small{width:160px;}
 			margin-right:8px;
@@ -996,6 +1036,8 @@
 		font-weight:400;
 		line-height:27.2px;
 	}
+
+   
 
     .notice-list-table{
         .table-row{

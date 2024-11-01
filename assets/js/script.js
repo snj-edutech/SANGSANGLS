@@ -37,6 +37,7 @@ function addEvent(){
     pageMove('.page-move2', -50);
 	fileUploadEvent();
 	toggleEvent();
+
 	selectEvent();
 
 	searchValueEvent('.header-search');
@@ -433,6 +434,10 @@ function selectEvent(){
 
 	selectBoxElements.forEach(selectBoxElement => {
 		selectBoxElement.addEventListener("click", function (e) {
+			if (selectBoxElement.querySelector(".selected").classList.contains("disabled")) {
+				return;
+			}
+			
 			const targetElement = e.target;
 			const isOptionElement = targetElement.classList.contains("option");
 

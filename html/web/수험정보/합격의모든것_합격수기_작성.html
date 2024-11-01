@@ -130,8 +130,8 @@
 					<div class="tab-box">
 						<div class="tab-list">
 							<ul>
-								<li class="active"><a href="javascript:;">1단계 합격스펙 </a></li>
-								<li><a href="javascript:;">합격수기</a></li>
+								<li><a href="javascript:;">1단계 합격스펙 </a></li>
+								<li  class="active"><a href="javascript:;">합격수기</a></li>
 								<li><a href="javascript:;">학교별 면접 꿀팁</a></li>
 								<li><a href="javascript:;">POST-LEET 면접 후기</a></li>
 							</ul>
@@ -139,28 +139,9 @@
 
 						<div class="tab-view active">
 							<div class="examInfo-univ-input">
-								<h3>1단계 합격 대학 정보</h3>
-								<div class="notice-input-table">
-									<table class="table-row ">
-										<colgroup>
-											<col style="width:170px" />
-											<col style="width:auto" />
-										</colgroup>
-										<tr>
-											<th>제목</th>
-											<td>
-												<div class="form-control">
-													<input type="text" class="text wide" placeholder="제목을 입력해주세요" />
-												</div>
-											</td> 
-										</tr>
-									</table>
-								</div>
-							</div>
+								<h3>합격수기 작성</h3>
 
-							<div class="examInfo-univ-input">
-								<h4>1단계 합격 대학 정보</h4>
-								<div class="notice-input-table">
+								<div class="notice-input-table review-input-table">
 									<table class="table-row ">
 										<colgroup>
 											<col style="width:170px" />
@@ -171,303 +152,149 @@
 										<tr>
 											<th>작성자</th>
 											<td>홍길동</td> 
-											<th>합격 대학 군</th>
-											<td>
-												<div class="radio-box">
-													<div class="form-control">
-														<span class="fake-radio">
-															<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
-															<label for="radioType1">가군</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType2" class="radio" name="radioSelect">
-															<label for="radioType2">나군</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType3" class="radio" name="radioSelect" >
-															<label for="radioType3">가/나군 모두</label>
-														</span>
-													</div>
-												</div>
-											</td> 
-										</tr>
-										<tr>
 											<th>응시학년도</th>
-											<td colspan="3">
-												<div class="form-control">
-													<div class="select year">
-														<select name="" id="">
-															<option value="">학년도 전체</option>
-														</select>
+											<td>
+												<div class="custom-select">
+													<div class="selected">
+													  <div class="selected-value">학년도 전체</div>
+													  <div class="arrow"></div>
 													</div>
+													<ul>
+													  <li class="option">전체1</li>
+													  <li class="option">전체2</li>
+													  <li class="option">전체3</li>
+													  <li class="option">전체4</li>
+													</ul>
 												</div>
+												
 											</td> 
 										</tr>
-										
+									
 										<tr>
-											<th rowspan="2">
-												합격 대학/<br/>
-												전형/수험번호
+											<th>
+												합격한 학교명
 											</th>
 											<td colspan="3">
-												<div class="select-box flex-start">
-													<p class="select-text">가군</p>
-													<div class="form-control">
-														<span class="select univ">
-															<select name="" id="">
-																<option value="">대학교 전체</option>
-															</select>
-														</span>
-														<span class="select type">
-															<select name="" id="">
-																<option value="">일반</option>
-															</select>
-														</span>
-	
-														<input type="text" class="text large " placeholder="수험번호를 입력해주세요" />
-													</div>
-												</div>
-											</td> 
-										</tr>
-										<tr>
-											<td colspan="3">
-												<div class="select-box flex-start">
-													<p class="select-text">나군</p>
-													<div class="form-control">
-														<span class="select univ">
-															<select name="" id="">
-																<option value="">대학교 전체</option>
-															</select>
-														</span>
-														<span class="select type ">
-															<select name="" id="">
-																<option value="">일반</option>
-															</select>
-														</span>
-	
-														<input type="text" class="text large " placeholder="수험번호를 입력해주세요" />
-													</div>
-												</div>
-											</td> 
-										</tr>
-
-									</table>
-								</div>
-							</div>
-
-							<div class="examInfo-univ-input">
-								<h4>합격자 출신 대학</h4>
-								<div class="notice-input-table">
-									<table class="table-row ">
-										<colgroup>
-											<col style="width:170px" />
-											<col style="width:auto" />
-											<col style="width:170px" />
-											<col style="width:auto" />
-										</colgroup>
-										<tr>
-											<th>학교명</th>
-											<td>
-												<div class="form-control">
-													<input type="text" class="text" placeholder="학교명을 입력해주세요" />
-												</div>
-											</td> 
-											<th>전공계열</th>
-											<td>
-												<div class="form-control">
-													<div class="select major">
-														<select name="" id="">
-															<option value="">전공 전체</option>
-														</select>
-													</div>
-												</div>
-											</td> 
-										</tr>
-										<tr>
-											<th>학과명</th>
-											<td colspan="3">
-												<div class="form-control">
-													<input type="text" class="text" placeholder="학과명을 입력해주세요" />
-												</div>
-											</td> 
-										</tr>
-									</table>
-								</div>
-							</div>
-
-							<div class="examInfo-univ-input">
-								<h4>LEET</h4>
-								<div class="notice-input-table">
-									<table class="table-row ">
-										<colgroup>
-											<col style="width:170px" />
-											<col style="width:auto" />
-											<col style="width:170px" />
-											<col style="width:auto" />
-										</colgroup>
-										<tr>
-											<th>언어이해</th>
-											<td>
-												<div class="input-box">
-													<div class="input-text-start">표준점수</div>
-													<div class="form-control">
-														<input type="text" class="text" placeholder="점수(숫자)를 입력해주세요"/>
-													</div>
-													<div class="input-text-end">점</div>
-												</div>
-											</td> 
-											<td colspan="2">
-												<div class="input-box">
-													<div class="input-text-start">백분위</div>
-													<div class="form-control">
-														<input type="text" class="text" placeholder="점수(숫자)를 입력해주세요"/>
-													</div>
-													<div class="input-text-end">점</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>추리논증</th>
-											<td>
-												<div class="input-box">
-													<div class="input-text-start">표준점수</div>
-													<div class="form-control">
-														<input type="text" class="text" placeholder="점수(숫자)를 입력해주세요"/>
-													</div>
-													<div class="input-text-end">점</div>
-												</div>
-											</td> 
-											<td colspan="2">
-												<div class="input-box">
-													<div class="input-text-start">백분위</div>
-													<div class="form-control">
-														<input type="text" class="text" placeholder="점수(숫자)를 입력해주세요"/>
-													</div>
-													<div class="input-text-end">점</div>
-												</div>
-											</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-
-							<div class="examInfo-univ-input">
-								<h4>공인영어</h4>
-								<div class="notice-input-table">
-									<table class="table-row ">
-										<colgroup>
-											<col style="width:170px" />
-											<col style="width:auto" />
-											<col style="width:170px" />
-											<col style="width:auto" />
-										</colgroup>
-										<tr>
-											<th>시험종류</th>
-											<td  colspan="3">
-												<div class="radio-box">
-													<div class="form-control">
-														<span class="fake-radio">
-															<input type="radio" id="engType1" class="radio" name="engtype" checked>
-															<label for="engType1">TOEIC</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="engType2" class="radio" name="engtype">
-															<label for="engType2">New TEPS</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="engType3" class="radio" name="engtype" >
-															<label for="engType3">TOEFL(iBT)</label>
-														</span>
-													</div>
-												</div>
-											</td> 
-										</tr>
-										<tr>
-											<th>백분위</th>
-											<td colspan="3">
-												<div class="input-box">
-													<div class="form-control">
-														<input type="text" class="text" placeholder="점수(숫자)를 입력해주세요"/>
-													</div>
-													<div class="input-text-end">점</div>
-												</div>
-											</td> 
-										</tr>
-									</table>
-								</div>
-							</div>
-
-							<div class="examInfo-univ-input">
-								<h4>GPA</h4>
-								<div class="notice-input-table">
-									<table class="table-row ">
-										<colgroup>
-											<col style="width:170px" />
-											<col style="width:auto" />
-											<col style="width:170px" />
-											<col style="width:auto" />
-										</colgroup>
-										<tr>
-											<th>평점/점수</th>
-											<td  colspan="3">
 												<div class="box-group">
-													<div class="radio-box">
-														<div class="form-control">
-															<span class="fake-radio">
-																<input type="radio" id="averageType1" class="radio" name="average" checked>
-																<label for="averageType1">4.5 만점</label>
-															</span>
-															<span class="fake-radio">
-																<input type="radio" id="averageType2" class="radio" name="average">
-																<label for="averageType2">4.3 만점</label>
-															</span>
-															<span class="fake-radio">
-																<input type="radio" id="averageType3" class="radio" name="average" >
-																<label for="averageType3">4.0 만점</label>
-															</span>
+													<div class="select-box flex-start">
+														<p class="select-text">가군</p>
+														<div class="custom-select univ">
+															<div class="selected">
+															  <div class="selected-value">대학교 전체</div>
+															  <div class="arrow"></div>
+															</div>
+															<ul>
+															  <li class="option">전체1</li>
+															  <li class="option">전체2</li>
+															  <li class="option">전체3</li>
+															  <li class="option">전체4</li>
+															</ul>
 														</div>
 													</div>
 
-													<div class="input-box">
-														<div class="input-text-start">원점수</div>
-														<div class="form-control">
-															<input type="text" class="text" placeholder="점수(숫자)를 입력해주세요"/>
+													<div class="select-box flex-start">
+														<p class="select-text">나군</p>
+														<div class="custom-select univ">
+															<div class="selected">
+															  <div class="selected-value">대학교 전체</div>
+															  <div class="arrow"></div>
+															</div>
+															<ul>
+															  <li class="option">전체1</li>
+															  <li class="option">전체2</li>
+															  <li class="option">전체3</li>
+															  <li class="option">전체4</li>
+															</ul>
 														</div>
-							
-														<div class="input-text-end">점</div>
 													</div>
 												</div>
 											</td> 
 										</tr>
+
 										<tr>
-											<th>백분위</th>
+											<th>LEET 표준점수</th>
+											<td colspan="3">
+												<div class="form-control">
+													<input type="text" class="text " placeholder="점수를 입력해주세요 (소수점 포함)" />
+												</div>
+											</td> 
+										</tr>
+
+										<tr>
+											<th>공인영어성적</th>
 											<td colspan="3">
 												<div class="input-box">
 													<div class="form-control">
-														<input type="text" class="text" placeholder="점수(숫자)를 입력해주세요"/>
+														<input type="text" class="text " placeholder="점수를 입력해주세요">
 													</div>
-						
-													<div class="input-text-end">점</div>
-													<a href="javascript:popupOpen('#popupGPA');" class="btn small btn-gpa">GPA 환산표</a>
+													<div class="input-text-end">(TOEIC, TOEFL, TEPS 등)</div>
 												</div>
 											</td> 
 										</tr>
-									</table>
-								</div>
-							</div>
 
-							<div class="examInfo-univ-input">
-								<h4>합격 인증 서류</h4>
-								<div class="notice-input-table">
-									<table class="table-row ">
-										<colgroup>
-											<col style="width:170px" />
-											<col style="width:auto" />
-											<col style="width:170px" />
-											<col style="width:auto" />
-										</colgroup>
 										<tr>
-											<th>파일 첨부</th>
+											<th>GPA</th>
+											<td colspan="3">
+												<div class="form-control">
+													<input type="text" class="text " placeholder="점수를 입력해주세요 (소수점 포함)" />
+												</div>
+											</td> 
+										</tr>
+
+										<tr>
+											<th>전공</th>
+											<td>
+												<div class="custom-select">
+													<div class="selected">
+													  <div class="selected-value">전체</div>
+													  <div class="arrow"></div>
+													</div>
+													<ul>
+													  <li class="option">전체1</li>
+													  <li class="option">전체2</li>
+													  <li class="option">전체3</li>
+													  <li class="option">전체4</li>
+													</ul>
+												</div>
+											</td> 
+											<th>수험생활</th>
+											<td>
+												<div class="custom-select">
+													<div class="selected">
+													  <div class="selected-value">전체</div>
+													  <div class="arrow"></div>
+													</div>
+													<ul>
+													  <li class="option">전체1</li>
+													  <li class="option">전체2</li>
+													  <li class="option">전체3</li>
+													  <li class="option">전체4</li>
+													</ul>
+												</div>
+											</td> 
+										</tr>
+
+										<tr>
+											<th>수강 형태</th>
+											<td colspan="3">
+												<div class="custom-select">
+													<div class="selected">
+													  <div class="selected-value">전체</div>
+													  <div class="arrow"></div>
+													</div>
+													<ul>
+													  <li class="option">전체1</li>
+													  <li class="option">전체2</li>
+													  <li class="option">전체3</li>
+													  <li class="option">전체4</li>
+													</ul>
+												</div>
+												
+											</td> 
+										</tr>
+
+										<tr>
+											<th>합격인증 파일첨부</th>
 											<td  colspan="3">
 												<div class="file-box">
 													<div class="form-control">
@@ -484,6 +311,14 @@
 											</td> 
 										</tr>
 
+										<tr>
+											<th>내용</th>
+											<td colspan="3">
+												<div class="editor-box">
+													에디터 영역
+												</div>
+											</td>
+										</tr>
 									</table>
 								</div>
 							</div>
@@ -491,11 +326,11 @@
 							<div class="agree-check-box">
 								<div class="agree-box">
 									■ 개인정보 수집 및 이용 동의 (필수)<br/>
-									㈜이매진피앤엠은 본 이벤트를 위해 다음과 같이 회원님의 개인정보를 수집 및 이용합니다.<br/>
-									˙ 수집 및 이용 목적 : 참여자정보 확인, 홍보 및 마케팅을 위한 1단계 합격 스토리 활용<br/>
-									˙ 수집항목 : 이름, 응시 학교명, 응시년도 <br/>
-									˙ 보유 및 이용기간 : 1단계 합격 스토리 폐기 시 까지<br/>
-									귀하는 개인정보 수집 및 이용에 동의하지 않으실 수 있으나, 동의하지 않으실 경우 이벤트 참여가 제한됩니다									
+									(주)이매진피앤엠은 본 이벤트를 위해 다음과 같이 회원님의 개인정보를 수집 및 이용합니다.<br/>
+									· 수집 및 이용 목적 : 참여자 정보 확인, 홍보 및 마케팅을 위한 합격수기 활용<br/>
+									· 수집항목 : 이름, 합격 학교명, 응시년도, LEET 표준점수, TOEIC, GPA, 전공, 수험생활, 수강 형태<br/>
+									· 보유 및 이용 기간 : 합격수기 폐기 시까지<br/>
+									귀하는 개인정보 수집 및 이용에 동의하지 않으실 수 있으나, 동의하지 않으실 경우 이벤트 참여가 제한됩니다.
 								</div>
 								<div class="radio-box">
 									<div class="form-control">
@@ -515,9 +350,10 @@
 
 							<div class="agree-check-box">
 								<div class="agree-box">
-									■ 1단계 합격 스토리 저작재산권 이용 동의 (필수)<br/>
-									㈜이매진피앤엠(이하 '회사')에 제공한 1단계 합격 스토리 저작재산권과 관련한 일체의 권리를 회사의 상품 홍보 및 마케팅을 위한 온/오프라인 홍보물 제작에 1단계 합격 스토리 폐기 시 까지 이용하는 것에 동의합니다. <br/>1단계 합격 스토리 작성 및 게시와 관련하여 '회사'로부터 지급받은 대가 중 제세공과금이 발생하는 경우 본인이 부담하는 것에 동의합니다. <br/>동의날짜로부터 12개월 이내 동의를 철회할 경우 '회사'로부터 지급받은 대가 전액반환(제세공과금 제외)에 동의합니다. <br/>
-									위 내용을 충분히 이해하였으며 1단계 합격 스토리 저작재산권 이용에 동의합니다.						
+									■ 합격수기 저작재산권 이용 동의(필수)<br/>
+									(주)이매진피앤엠(이하 '회사')에 제공한 합격수기 저작재산권과 관련한 일체의 권리를 회사의 상품 홍보 및 마케팅을 위한 온/오프라인 홍보물 제작에 합격수기 폐기 시 까지 이용하는 것에 동의합니다.<br/>
+									합격수기 작성 및 게시와 관련하여 '회사'로부터 지급받은 대가 중 제세공과금이 발생하는 경우 본인이 부담하는 것에 동의합니다. 동의날짜로부터 12개월 이내 동의를 철회할 경우 '회사'로부터 지급받은 대가 전액반환(제세공과금 제외)에 동의합니다.<br/>
+									위 내용을 충분히 이해하였으며 합격수기 저작재산권 이용에 동의합니다.						
 								</div>
 								<div class="radio-box">
 									<div class="form-control">

@@ -1,5 +1,7 @@
 #wrap{
 	.section-campus-content{
+		.lecture-data-list{margin-top:40px;}
+
 		.campus-reservation{
 			margin-top:40px;
 
@@ -24,13 +26,19 @@
 								.form-control{
 									&+ .form-control{margin-left:8px;}
 								}
+
+								.custom-select{
+									&+ .custom-select,
+									&+ .form-control{margin-left:8px;}
+
+								}
 			
 								.input-text-start{width:80px;margin:0;}
-								.text, .select{
+								.text, .select, .custom-select{
 									width:120px;margin:0;
 								}
 			
-								.select{
+								.select, .custom-select{
 									&.wide{
 										width:160px;
 									}
