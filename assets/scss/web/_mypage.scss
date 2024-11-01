@@ -35,7 +35,7 @@
 			.pagination{margin-top:40px;}
 
 
-			.notice-info-box{
+			.mypage-notice-box{
 				display:flex;
 				align-items:center;
 				margin-bottom:40px;
@@ -53,7 +53,7 @@
 				}
 			}
 
-			.lecture-info-box{
+			.mypage-lecture-box{
 				padding:40px;
 				border:1px solid $color-light-brown;
 				background-color:$color-light-brown2;
@@ -221,7 +221,7 @@
 					.action-box{
 						.btn{
 							width:128px;margin-top:8px;
-							margin-left:0;padding:0;
+							margin-left:0;padding:0;height:30px;
 							&:first-child{margin-top:0;}
 						}
 					}

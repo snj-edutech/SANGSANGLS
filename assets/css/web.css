@@ -13,7 +13,7 @@
   clear: both;
 }
 
-#wrap .lecture-review-list .review-list .review-info dl dd, #wrap .section-online-bookstore .tab-slide .online-slider .list .book-desc .desc-title, #wrap .section-online-bookstore .notice-list-table .table-row tr td.link a, #wrap .section-mypage-wrap .content .notice-info-box .notice-title {
+#wrap .lecture-review-list .review-list .review-info dl dd, #wrap .section-online-bookstore .tab-slide .online-slider .list .book-desc .desc-title, #wrap .section-online-bookstore .notice-list-table .table-row tr td.link a, #wrap .section-mypage-wrap .content .mypage-notice-box .notice-title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -3471,6 +3471,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1.11111vw 2.22222vw 1.11111vw 2.22222vw;
   font-size: 1.94444vw;
   font-weight: 400;
@@ -4314,6 +4317,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .btn.btn-light-brown {
   border-color: #E4DED3;
   background-color: #E4DED3;
+}
+
+#wrap .btn.btn-light-gray {
+  border-color: #BEBEBC;
+  background-color: #BEBEBC;
+  color: #FFFFFC;
 }
 
 #wrap .btn.large {
@@ -6000,6 +6009,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dt.book-img img, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl dt.book-img img {
   width: 92px;
   height: 128px;
+}
+
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dt.thumbnail, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl dt.thumbnail {
+  background-color: #E4DED3;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+#wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dt.thumbnail img, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl dt.thumbnail img {
+  width: 100%;
+  height: 100%;
 }
 
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dd, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl dd {
@@ -8168,7 +8198,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 40px;
 }
 
-#wrap .section-mypage-wrap .content .notice-info-box {
+#wrap .section-mypage-wrap .content .mypage-notice-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8179,23 +8209,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 20px;
 }
 
-#wrap .section-mypage-wrap .content .notice-info-box .notice-title {
+#wrap .section-mypage-wrap .content .mypage-notice-box .notice-title {
   width: 611px;
   margin-bottom: 0;
 }
 
-#wrap .section-mypage-wrap .content .notice-info-box .notice-date {
+#wrap .section-mypage-wrap .content .mypage-notice-box .notice-date {
   margin-left: 24px;
   font-size: 14px;
   font-weight: 400;
   color: #7A746A;
 }
 
-#wrap .section-mypage-wrap .content .notice-info-box .btn {
+#wrap .section-mypage-wrap .content .mypage-notice-box .btn {
   margin-left: auto;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box {
+#wrap .section-mypage-wrap .content .mypage-lecture-box {
   padding: 40px;
   border: 1px solid #E4DED3;
   background-color: #F2EFE7;
@@ -8210,18 +8240,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 80px;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-left {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-left {
   width: 418px;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-left .lecture-subject {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-left .lecture-subject {
   color: #2C2923;
   font-weight: 600;
   font-size: 24px;
   line-height: 40.8px;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right {
   width: 373px;
   margin-left: 20px;
   border-left: 1px solid #BEBEBC;
@@ -8230,7 +8260,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right dl {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8241,22 +8271,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 12px;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl:first-child {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right dl:first-child {
   margin-top: 0;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dt, #wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dd {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right dl dt, #wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right dl dd {
   font-size: 16px;
   font-weight: 400;
   text-align: left;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dt {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right dl dt {
   color: #7A746A;
   width: 80px;
 }
 
-#wrap .section-mypage-wrap .content .lecture-info-box .lecture-right dl dd {
+#wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right dl dd {
   font-weight: 600;
   margin-left: 20px;
 }
@@ -8455,6 +8485,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 8px;
   margin-left: 0;
   padding: 0;
+  height: 30px;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn:first-child {
