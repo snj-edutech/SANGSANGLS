@@ -101,19 +101,6 @@
 			}
 		}
 
-		&-notice{
-			background-color:$color-light-beige;
-			padding:16px;margin-top:20px;
-			color:$color-black;
-			@include vw(font-size,16px);
-			@include vw(line-height,27.2px);
-			font-weight:400;
-			font-family: $font-pretendard;
-			@include boxSizing(border-box);
-			
-		}
-
-
 		&-scroll{
 			@include boxSizing(border-box);
 			@include vw(max-height,600px);
@@ -241,6 +228,18 @@
 				dt{font-weight:600;margin-bottom:8px;}
 				dd{}
 			}
+		}
+
+		.fill-box{
+			background-color:$color-light-beige;
+			padding:16px;margin-top:20px;
+			color:$color-black;
+			@include vw(font-size,16px);
+			@include vw(line-height,27.2px);
+			font-weight:400;
+			font-family: $font-pretendard;
+			@include boxSizing(border-box);
+			
 		}
 
 	}
@@ -409,17 +408,7 @@
 
 	}
 
-	#popupReviewWrite{
-		.form-control{
-			.select, .custom-select{margin-bottom:20px;width:552px;}
-		}
-
-		.notice + .action{margin-top:0px;}
-
-	}
-
-	#popupReviewUpdate, #popupReviewSuccess,
-	#popupMypageReviewUpdate, #popupMypageReviewWrite{
+	.popup-review{
 		.form-control{
 			.textarea{height:294px;}
 			.select, .custom-select{
@@ -427,6 +416,15 @@
 				margin-bottom:20px;
 			}
 		}
+	}
+
+	#popupReviewWrite{
+		.form-control{
+			.select, .custom-select{margin-bottom:20px;width:552px;}
+		}
+
+		.notice + .action{margin-top:0px;}
+
 	}
 
 	#popupMypageReviewUpdate, #popupMypageReviewWrite{
@@ -788,6 +786,29 @@
 					}
 				}
 			}
+		}
+	}
+
+	.popup-notice{
+		.popup-wrap{
+			width:1200px;
+		}
+
+		.popup-cont{
+			padding:24px 40px 40px;
+			@include boxSizing(border-box);
+			.notice-list-table{margin-top:20px;}
+			.pagination{margin-top:38px;}
+		}
+	}
+
+	.popup-lecture{
+		.popup-wrap{
+			width:1200px;
+		}
+
+		.popup-cont{
+			padding:24px 40px;
 		}
 	}
 }

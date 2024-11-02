@@ -749,31 +749,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-#wrap .popup-notice {
-  background-color: #FBFAF6;
-  padding: 16px;
-  margin-top: 20px;
-  color: #2C2923;
-  font-size: 2.22222vw;
-  line-height: 3.77778vw;
-  font-weight: 400;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .popup-notice {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .popup-notice {
-    line-height: 27.2px;
-  }
-}
-
 #wrap .popup-scroll {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1073,6 +1048,31 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup .line-box dl dt {
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+#wrap .popup .fill-box {
+  background-color: #FBFAF6;
+  padding: 16px;
+  margin-top: 20px;
+  color: #2C2923;
+  font-size: 2.22222vw;
+  line-height: 3.77778vw;
+  font-weight: 400;
+  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup .fill-box {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup .fill-box {
+    line-height: 27.2px;
+  }
 }
 
 #wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
@@ -1396,6 +1396,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
 }
 
+#wrap .popup-review .form-control .textarea {
+  height: 294px;
+}
+
+#wrap .popup-review .form-control .select, #wrap .popup-review .form-control .custom-select {
+  width: 552px;
+  margin-bottom: 20px;
+}
+
 #wrap #popupReviewWrite .form-control .select, #wrap #popupReviewWrite .form-control .custom-select {
   margin-bottom: 20px;
   width: 552px;
@@ -1403,18 +1412,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #popupReviewWrite .notice + .action {
   margin-top: 0px;
-}
-
-#wrap #popupReviewUpdate .form-control .textarea, #wrap #popupReviewSuccess .form-control .textarea,
-#wrap #popupMypageReviewUpdate .form-control .textarea, #wrap #popupMypageReviewWrite .form-control .textarea {
-  height: 294px;
-}
-
-#wrap #popupReviewUpdate .form-control .select, #wrap #popupReviewUpdate .form-control .custom-select, #wrap #popupReviewSuccess .form-control .select, #wrap #popupReviewSuccess .form-control .custom-select,
-#wrap #popupMypageReviewUpdate .form-control .select,
-#wrap #popupMypageReviewUpdate .form-control .custom-select, #wrap #popupMypageReviewWrite .form-control .select, #wrap #popupMypageReviewWrite .form-control .custom-select {
-  width: 552px;
-  margin-bottom: 20px;
 }
 
 #wrap #popupMypageReviewUpdate .form-control .textarea, #wrap #popupMypageReviewWrite .form-control .textarea {
@@ -2029,6 +2026,32 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   cursor: default;
 }
 
+#wrap .popup-notice .popup-wrap {
+  width: 1200px;
+}
+
+#wrap .popup-notice .popup-cont {
+  padding: 24px 40px 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrap .popup-notice .popup-cont .notice-list-table {
+  margin-top: 20px;
+}
+
+#wrap .popup-notice .popup-cont .pagination {
+  margin-top: 38px;
+}
+
+#wrap .popup-lecture .popup-wrap {
+  width: 1200px;
+}
+
+#wrap .popup-lecture .popup-cont {
+  padding: 24px 40px;
+}
+
 .dim {
   position: fixed;
   top: 0;
@@ -2525,6 +2548,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #FFFFFC;
   border: 1px solid #E4DED3;
   border-radius: 0.27778vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 720px) {
@@ -3936,10 +3961,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .table-row {
   width: 100%;
   border-top: 1px solid #E4DED3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #wrap .table-row tr {
   border-bottom: 1px solid #E4DED3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #wrap .table-row tr th, #wrap .table-row tr td {
@@ -3949,6 +3978,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 1.94444vw;
   line-height: 3.30556vw;
   font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 720px) {
@@ -4584,6 +4615,42 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   right: 0;
   bottom: -10px;
   z-index: 10;
+}
+
+#wrap .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap .flex.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#wrap .flex.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap .flex.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#wrap .flex.flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #wrap .btn-top {

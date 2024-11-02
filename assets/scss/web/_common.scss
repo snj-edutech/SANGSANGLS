@@ -244,6 +244,7 @@
 			background-color:$color-white;
 			border:1px solid $color-light-brown;
 			@include vw(border-radius,2px);
+            @include boxSizing(border-box);
             &.active, &:hover {
               border-color:$color-black;
             }
@@ -974,8 +975,10 @@
 	.table-row{
 		width:100%;
 		border-top:1px solid $color-light-brown;
+        @include boxSizing(border-box);
 		tr{
 			border-bottom:1px solid $color-light-brown;
+            @include boxSizing(border-box);
 			th,td{
 				padding:16px 20px;
 				text-align:center;
@@ -983,6 +986,7 @@
 				@include vw(font-size,14px);
 				@include vw(line-height,23.8px);
 				font-weight:400;
+                @include boxSizing(border-box);
 			}
 
 			th{background-color:$color-light-brown2;font-weight:600;}
@@ -1277,6 +1281,16 @@
 			display:inline-block;
 			position:absolute;right:0;bottom:-10px; z-index:10;  
 		}
+	}
+
+    .flex{
+		display:flex;
+		justify-content:  flex-end;
+		align-items: center;
+		&.flex-start{justify-content: flex-start;}
+		&.flex-center{justify-content: center;}
+		&.flex-end{justify-content: flex-end;}
+        &.flex-between{justify-content: space-between;}
 	}
 
 }
