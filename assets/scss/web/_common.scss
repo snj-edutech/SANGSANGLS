@@ -58,6 +58,21 @@
         text-align:left;
 		line-height:34px;
         padding-bottom: 20px;
+
+        .device{
+            line-height:1;
+            a{
+                display:flex;
+                align-items: center;
+                font-size:13px;
+                font-weight:400;
+                color:$color-black;
+            }
+            .icon{
+                display:inline-block;
+                margin-right:4px;
+            }
+        }
     }
 
 	h5{
@@ -199,6 +214,7 @@
             color:$color-gray;
             font-size:16px;
             font-weight:400;
+            text-align:center;
         }
     }
 
@@ -967,6 +983,7 @@
 	}
 
 	.space{display:inline-block;padding:0 3px;}
+    
 	.form-text{
          font-size:14px;font-weight:400;color:$color-gray;
          strong{display:inline-block;margin-right:8px;font-weight:600;color:$color-black;}
@@ -1042,7 +1059,9 @@
 		line-height:27.2px;
 	}
 
-   
+    .info-text{
+        font-size:13px;line-height:22.1px;font-weight:400;color:$color-black;
+    }
 
     .notice-list-table{
         .table-row{

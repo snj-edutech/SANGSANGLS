@@ -227,7 +227,7 @@
 									</div>
 								</div>
 								<div class="action">
-									<a href="javascript:;" class="btn">교재구매</a>
+									<a href="javascript:popupOpen('#popupMypageBookInfo');" class="btn">교재구매</a>
 									<!-- <a href="javascript:;" class="btn btn-brown">강좌추가</a> -->
 								</div>
 							</div>
@@ -237,8 +237,8 @@
 									<div class="col check">
 										<div class="form-control">
 											<div class="fake-checkbox">
-												<input type="checkbox" id="check-1" class="checkbox" >
-												<label for="check-1"></label>
+												<input type="checkbox" id="check-2" class="checkbox" >
+												<label for="check-2"></label>
 											</div>
 										</div>
 									</div>
@@ -958,17 +958,356 @@
 			<div class="popup-title">
 				강좌추가
 			</div>
+			<div class="popup-cont">
+				<div class="holder">
+					<div class="popup-text">
+						<strong>전체 강좌 리스트</strong>
+						<p>
+							- 검색 후 수강할 강좌의 체크박스를 선택하면, 해당 강좌가 수강신청 리스트에 추가됩니다.<br/>
+							- 강좌명을 클릭하면 강좌의 상세 정보를 확인할 수 있습니다.
+						</p>
+					</div>
+
+					<div class="select-box flex-start">
+						<div class="custom-select-box">
+							<div class="custom-select">
+								<div class="selected">
+								<div class="selected-value">과목선택(전체)</div>
+								<div class="arrow"></div>
+								</div>
+								<ul>
+								<li class="option">전체1</li>
+								<li class="option">전체2</li>
+								<li class="option">전체3</li>
+								<li class="option">전체4</li>
+								</ul>
+							</div>
+							<div class="custom-select">
+								<div class="selected">
+								<div class="selected-value">교수선택(전체)</div>
+								<div class="arrow"></div>
+								</div>
+								<ul>
+								<li class="option">전체1</li>
+								<li class="option">전체2</li>
+								<li class="option">전체3</li>
+								<li class="option">전체4</li>
+								</ul>
+							</div>
+						</div>
+						<div class="form-control">
+							<input type="text" class="text large " placeholder="검색어를 입력하세요">
+						</div>
+						<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
+					</div>
+
+					<div class="notice-list-table">
+						<table class="table-row ">
+							<colgroup>
+								<col style="width:70px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:auto">
+								<col style="width:92px">
+								<col style="width:92px">
+								<col style="width:92px">
+							</colgroup>
+							<tr>
+								<th>선택</th>
+								<th>No.</th>
+								<th>과목</th>
+								<th>교수</th>
+								<th>강좌명</th>
+								<th>강의수</th>
+								<th>완강여부</th>
+								<th>추가여부</th>
+							</tr>
+						</table>
+					</div>
+					<div class="notice-list-table notice-list-scroll">
+						<table class="table-row ">
+							<colgroup>
+								<col style="width:70px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:auto">
+								<col style="width:92px">
+								<col style="width:92px">
+								<col style="width:92px">
+							</colgroup>
+							<tr>
+								<td class="check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup1" class="checkbox disabled">
+											<label for="check-popup1"></label>
+										</div>
+									</div>
+								</td>
+								<td>999</td>
+								<td>추리논증</td>
+								<td>홍길동</td>
+								<td class="link"><a href="javscript:;"  >[온라인] 컴팩트 자기소개서 첨삭 수강신청 (3회 27만원)</a></td>
+								<td>99강</td>
+								<td>완강</td>
+								<td><img src="../../../assets/images/icon_check_circle.svg" alt="" /></td>
+																		
+							</tr>
+							<tr>
+								<td class="check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup2" class="checkbox">
+											<label for="check-popup2"></label>
+										</div>
+									</div>
+								</td>
+								<td>999</td>
+								<td>추리논증</td>
+								<td>홍길동</td>
+								<td class="link"><a href="javscript:;"  >[온라인] 컴팩트 자기소개서 첨삭 수강신청 (3회 27만원)</a></td>
+								<td>99강</td>
+								<td>완강</td>
+								<td></td>
+																		
+							</tr>
+							<tr>
+								<td class="check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup3" class="checkbox">
+											<label for="check-popup3"></label>
+										</div>
+									</div>
+								</td>
+								<td>999</td>
+								<td>추리논증</td>
+								<td>홍길동</td>
+								<td class="link"><a href="javscript:;"  >[온라인] 컴팩트 자기소개서 첨삭 수강신청 (3회 27만원)</a></td>
+								<td>99강</td>
+								<td>완강</td>
+								<td><img src="../../../assets/images/icon_check_circle.svg" alt="" /></td>
+																		
+							</tr>	
+							
+						</table>
+					</div>
+				</div>
+				<div class="holder border-top-line">
+					<h5>수강신청 강좌 목록</h5>
+					<div class="notice-list-table">
+						<table class="table-row ">
+							<colgroup>
+								<col style="width:70px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:auto">
+								<col style="width:92px">
+								<col style="width:92px">
+								<col style="width:92px">
+							</colgroup>
+							<tr>
+								<th>선택</th>
+								<th>No.</th>
+								<th>과목</th>
+								<th>교수</th>
+								<th>강좌명</th>
+								<th>강의수</th>
+								<th>완강여부</th>
+								<th>추가여부</th>
+							</tr>
+						</table>
+					</div>
+					<div class="notice-list-table notice-list-nodata">
+						<p>선택된 강좌가 없습니다.</p>
+					</div>
+
+					<div class="notice-list-table">
+						<table class="table-row ">
+							<colgroup>
+								<col style="width:70px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:auto">
+								<col style="width:92px">
+								<col style="width:92px">
+								<col style="width:92px">
+							</colgroup>
+							<tr>
+								<th>선택</th>
+								<th>No.</th>
+								<th>과목</th>
+								<th>교수</th>
+								<th>강좌명</th>
+								<th>강의수</th>
+								<th>완강여부</th>
+								<th>삭제</th>
+							</tr>
+						</table>
+					</div>
+					<div class="notice-list-table notice-list-scroll">
+						<table class="table-row ">
+							<colgroup>
+								<col style="width:70px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:auto">
+								<col style="width:92px">
+								<col style="width:92px">
+								<col style="width:92px">
+							</colgroup>
+							<tr>
+								<td class="check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup4" class="checkbox disabled">
+											<label for="check-popup4"></label>
+										</div>
+									</div>
+								</td>
+								<td>999</td>
+								<td>추리논증</td>
+								<td>홍길동</td>
+								<td class="link"><a href="javscript:;"  >[온라인] 컴팩트 자기소개서 첨삭 수강신청 (3회 27만원)</a></td>
+								<td>99강</td>
+								<td>완강</td>
+								<td><a href="javscript:;"><img src="../../../assets/images/btn_delete.svg" alt="" /></a></td>
+																		
+							</tr>
+							<tr>
+								<td class="check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup5" class="checkbox">
+											<label for="check-popup5"></label>
+										</div>
+									</div>
+								</td>
+								<td>999</td>
+								<td>추리논증</td>
+								<td>홍길동</td>
+								<td class="link"><a href="javscript:;"  >[온라인] 컴팩트 자기소개서 첨삭 수강신청 (3회 27만원)</a></td>
+								<td>99강</td>
+								<td>완강</td>
+								<td><a href="javscript:;"><img src="../../../assets/images/btn_delete.svg" alt="" /></a></td>
+																		
+							</tr>
+							<tr>
+								<td class="check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup6" class="checkbox">
+											<label for="check-popup6"></label>
+										</div>
+									</div>
+								</td>
+								<td>999</td>
+								<td>추리논증</td>
+								<td>홍길동</td>
+								<td class="link"><a href="javscript:;"  >[온라인] 컴팩트 자기소개서 첨삭 수강신청 (3회 27만원)</a></td>
+								<td>99강</td>
+								<td>완강</td>
+								<td><a href="javscript:;"><img src="../../../assets/images/btn_delete.svg" alt="" /></a></td>
+																		
+							</tr>	
+							
+						</table>
+					</div>
+					
+					<div class="action">
+						<a href="javascript:;" class="btn large btn-brown">강좌추가</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-bookInfo" id="popupMypageBookInfo">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupMypageBookInfo');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				교재구매
+			</div>
 			<div class="popup-cont popup-scroll">
-				<dl>
-					<dt>전체 강좌 리스트</dt>
-					<dd>
-						- 검색 후 수강할 강좌의 체크박스를 선택하면, 해당 강좌가 수강신청 리스트에 추가됩니다.<br/>
-						- 강좌명을 클릭하면 강좌의 상세 정보를 확인할 수 있습니다.
-					</dd>
-				</dl>
-
-
-				
+				<div class="select-box">
+					<div class="custom-select">
+						<div class="selected">
+						  <div class="selected-value">전체</div>
+						  <div class="arrow"></div>
+						</div>
+						<ul>
+						  <li class="option">전체1</li>
+						  <li class="option">전체2</li>
+						  <li class="option">전체3</li>
+						  <li class="option">전체4</li>
+						</ul>
+					</div>
+					<div class="form-control">
+						<input type="text" class="text" placeholder="검색어를 입력하세요">
+					</div>
+					<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
+				</div>
+				<div class="desc-box">
+					<div class="book-check">
+						<div class="form-control">
+							<div class="fake-checkbox">
+								<input type="checkbox" id="check-popup10" class="checkbox">
+								<label for="check-popup10"></label>
+							</div>
+						</div>
+					</div>
+					<div class="book-img"><img src="../../../assets/images/temp/book_68x96.png" alt="교재"></div>
+					<div class="book-desc">
+						<div class="desc-title">
+							<span>언어이해</span>
+							LEET IN Primer [제본교재]
+						</div>      
+						<div class="desc-info">
+							<p>상상LEET연구소 저</p>
+							<p>(주)이매진P&M</p>
+						</div>
+						<div class="desc-price">
+							<div class="price-before">999,999원</div>
+							<div class="price-sale">100%</div>	
+							<div class="price-after">999,999원</div>
+						</div>
+					</div>
+				</div>
+				<div class="desc-box">
+					<div class="book-check">
+						<div class="form-control">
+							<div class="fake-checkbox">
+								<input type="checkbox" id="check-popup11" class="checkbox">
+								<label for="check-popup11"></label>
+							</div>
+						</div>
+					</div>
+					<div class="book-img"><img src="../../../assets/images/temp/book_68x96.png" alt="교재"></div>
+					<div class="book-desc">
+						<div class="desc-title">
+							<span>언어이해</span>
+							LEET IN Primer [제본교재]
+						</div>      
+						<div class="desc-info">
+							<p>상상LEET연구소 저</p>
+							<p>(주)이매진P&M</p>
+						</div>
+						<div class="desc-price">
+							<div class="price-before">999,999원</div>
+							<div class="price-sale">100%</div>	
+							<div class="price-after">999,999원</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-btn">
+				<a href="javascript:popupClose('#popupMypageBookInfo');" class="btn large">장바구니</a>
+				<a href="javascript:popupClose('#popupMypageBookInfo');" class="btn large btn-brown">바로결제</a>
 			</div>
 		</div>
 	</div>
@@ -979,7 +1318,7 @@
 <script>
 	$(function(){
 		tabMenuEvent('.section-mypage');
-		popupOpen('#popupLectureList')
+		
 		
 	});
 </script>

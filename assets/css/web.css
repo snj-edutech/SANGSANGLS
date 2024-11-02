@@ -261,31 +261,31 @@
   }
 }
 
-#wrap .popup-scroll, #wrap .popup .line-box.scroll, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul, #wrap .agree-check-box .agree-box, #wrap .editor-box {
+#wrap .popup-scroll, #wrap .popup .line-box.scroll, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul, #wrap .popup-lecture .popup-cont .notice-list-scroll, #wrap .popup-lecture .popup-cont .notice-list-nodata, #wrap .agree-check-box .agree-box, #wrap .editor-box {
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
 
-#wrap .popup-scroll::-webkit-scrollbar, #wrap .popup .line-box.scroll::-webkit-scrollbar, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar, #wrap .agree-check-box .agree-box::-webkit-scrollbar, #wrap .editor-box::-webkit-scrollbar {
+#wrap .popup-scroll::-webkit-scrollbar, #wrap .popup .line-box.scroll::-webkit-scrollbar, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar, #wrap .popup-lecture .popup-cont .notice-list-scroll::-webkit-scrollbar, #wrap .popup-lecture .popup-cont .notice-list-nodata::-webkit-scrollbar, #wrap .agree-check-box .agree-box::-webkit-scrollbar, #wrap .editor-box::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-#wrap .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:start:decrement, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:start:decrement, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:start:decrement, #wrap .editor-box::-webkit-scrollbar-button:start:decrement, #wrap .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:end:increment, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:end:increment, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:end:increment, #wrap .editor-box::-webkit-scrollbar-button:end:increment {
+#wrap .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:start:decrement, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:start:decrement, #wrap .popup-lecture .popup-cont .notice-list-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-lecture .popup-cont .notice-list-nodata::-webkit-scrollbar-button:start:decrement, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:start:decrement, #wrap .editor-box::-webkit-scrollbar-button:start:decrement, #wrap .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:end:increment, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-button:end:increment, #wrap .popup-lecture .popup-cont .notice-list-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup-lecture .popup-cont .notice-list-nodata::-webkit-scrollbar-button:end:increment, #wrap .agree-check-box .agree-box::-webkit-scrollbar-button:end:increment, #wrap .editor-box::-webkit-scrollbar-button:end:increment {
   display: block;
   width: 0;
   height: 0;
   background-color: #F2EFE7;
 }
 
-#wrap .popup-scroll::-webkit-scrollbar-track, #wrap .popup .line-box.scroll::-webkit-scrollbar-track, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-track, #wrap .agree-check-box .agree-box::-webkit-scrollbar-track, #wrap .editor-box::-webkit-scrollbar-track {
+#wrap .popup-scroll::-webkit-scrollbar-track, #wrap .popup .line-box.scroll::-webkit-scrollbar-track, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-track, #wrap .popup-lecture .popup-cont .notice-list-scroll::-webkit-scrollbar-track, #wrap .popup-lecture .popup-cont .notice-list-nodata::-webkit-scrollbar-track, #wrap .agree-check-box .agree-box::-webkit-scrollbar-track, #wrap .editor-box::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 4px;
 }
 
-#wrap .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup .line-box.scroll::-webkit-scrollbar-thumb, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-thumb, #wrap .agree-check-box .agree-box::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb {
+#wrap .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup .line-box.scroll::-webkit-scrollbar-thumb, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-thumb, #wrap .popup-lecture .popup-cont .notice-list-scroll::-webkit-scrollbar-thumb, #wrap .popup-lecture .popup-cont .notice-list-nodata::-webkit-scrollbar-thumb, #wrap .agree-check-box .agree-box::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb {
   background-color: #F2EFE7;
   border-radius: 4px;
 }
@@ -652,6 +652,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap .popup-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #E4DED3;
+  background-color: #FFFFFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #wrap .popup-title {
   padding: 1.66667vw 3.33333vw;
   color: #2C2923;
@@ -723,42 +741,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 720px) {
   #wrap .popup-title dl dd {
     margin-left: 20px;
-  }
-}
-
-#wrap .popup-text p {
-  color: #2C2923;
-  font-size: 2.22222vw;
-  line-height: 3.77778vw;
-  text-align: center;
-  font-weight: 400;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .popup-text p {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .popup-text p {
-    line-height: 27.2px;
-  }
-}
-
-#wrap .popup-scroll {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  max-height: 83.33333vw;
-  overflow-y: auto;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .popup-scroll {
-    max-height: 600px;
   }
 }
 
@@ -894,6 +876,47 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 14px;
   font-weight: 400;
   margin-top: 8px;
+}
+
+#wrap .popup-text p {
+  text-align: left;
+  color: #7A746A;
+  font-size: 1.94444vw;
+  line-height: 3.30556vw;
+  text-align: left;
+  font-weight: 400;
+  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-text p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-text p {
+    line-height: 23.8px;
+  }
+}
+
+#wrap .popup-text strong {
+  font-weight: 600;
+}
+
+#wrap .popup-scroll {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: 83.33333vw;
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .popup-scroll {
+    max-height: 600px;
+  }
 }
 
 #wrap .popup-action {
@@ -1075,7 +1098,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-#wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
+#wrap .popup-alert .popup-wrap {
   border-radius: 1.11111vw;
   width: 52.22222vw;
   padding: 5vw;
@@ -1084,21 +1107,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
+  #wrap .popup-alert .popup-wrap {
     border-radius: 8px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
+  #wrap .popup-alert .popup-wrap {
     width: 376px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #wrap #popupAlert1 .popup-wrap, #wrap #popupAlert2 .popup-wrap {
+  #wrap .popup-alert .popup-wrap {
     padding: 36px;
   }
+}
+
+#wrap .popup-alert .popup-text p {
+  font-size: 16px;
+  text-align: center;
+  color: #2C2923;
 }
 
 #wrap #popupLayerVideo .popup-wrap {
@@ -1246,17 +1275,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-#wrap #popupBookInfo .border-line {
+#wrap .popup-bookInfo .border-line {
   margin-bottom: 2.77778vw;
 }
 
 @media screen and (min-width: 720px) {
-  #wrap #popupBookInfo .border-line {
+  #wrap .popup-bookInfo .border-line {
     margin-bottom: 20px;
   }
 }
 
-#wrap #popupBookInfo .desc-box {
+#wrap .popup-bookInfo .desc-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1266,7 +1295,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 20px;
 }
 
-#wrap #popupBookInfo .desc-box .book-img {
+#wrap .popup-bookInfo .desc-box .book-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1283,38 +1312,38 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 720px) {
-  #wrap #popupBookInfo .desc-box .book-img {
+  #wrap .popup-bookInfo .desc-box .book-img {
     width: 168px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #wrap #popupBookInfo .desc-box .book-img {
+  #wrap .popup-bookInfo .desc-box .book-img {
     height: 168px;
   }
 }
 
-#wrap #popupBookInfo .desc-box .book-img img {
+#wrap .popup-bookInfo .desc-box .book-img img {
   width: 68px;
   height: 96px;
 }
 
-#wrap #popupBookInfo .desc-box .book-img + .book-desc {
+#wrap .popup-bookInfo .desc-box .book-img + .book-desc {
   margin-left: 20px;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc {
+#wrap .popup-bookInfo .desc-box .book-desc {
   text-align: left;
   width: 50.55556vw;
 }
 
 @media screen and (min-width: 720px) {
-  #wrap #popupBookInfo .desc-box .book-desc {
+  #wrap .popup-bookInfo .desc-box .book-desc {
     width: 364px;
   }
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-title {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-title {
   position: relative;
   display: inline-block;
   font-size: 18px;
@@ -1323,34 +1352,34 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 27px;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-info {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-info {
   font-size: 14px;
   color: #2C2923;
   line-height: 23.8px;
   margin-top: 20px;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-info p {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-info p {
   margin-top: 4px;
   font-weight: 400;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-info p:first-child {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-info p:first-child {
   margin-top: 0;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-info p span {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-info p span {
   display: inline-block;
   width: 64px;
   text-align: left;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-info p strong {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-info p strong {
   display: inline-block;
   font-weight: 600;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1360,39 +1389,39 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 24px;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-subject {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-subject {
   width: 64px;
   font-size: 14px;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-box .badge {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-box .badge {
   margin-right: 8px;
   padding: 3px 4px;
   font-size: 11px;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-box .price-before, #wrap #popupBookInfo .desc-box .book-desc .desc-price .price-box .price-after {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-box .price-before, #wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-box .price-after {
   font-size: 14px;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-before, #wrap #popupBookInfo .desc-box .book-desc .desc-price .price-sale, #wrap #popupBookInfo .desc-box .book-desc .desc-price .price-after {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-before, #wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-sale, #wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-after {
   font-size: 14px;
   font-weight: 600;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-before {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-before {
   font-weight: 400;
   color: #BEBEBC;
   margin-right: 8px;
   text-decoration: line-through;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-sale {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-sale {
   margin-right: 8px;
   color: #A07D3B;
 }
 
-#wrap #popupBookInfo .desc-box .book-desc .desc-price .price-after {
+#wrap .popup-bookInfo .desc-box .book-desc .desc-price .price-after {
   color: #2C2923;
 }
 
@@ -2049,7 +2078,154 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-lecture .popup-cont {
-  padding: 24px 40px;
+  padding: 0;
+}
+
+#wrap .popup-lecture .popup-cont .holder {
+  padding: 24px 40px 40px;
+}
+
+#wrap .popup-lecture .popup-cont .popup-text strong {
+  font-size: 18px;
+  color: #2C2923;
+  display: block;
+  margin-bottom: 4px;
+}
+
+#wrap .popup-lecture .popup-cont .select-box {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#wrap .popup-lecture .popup-cont .select-box .custom-select {
+  width: 160px;
+}
+
+#wrap .popup-lecture .popup-cont .select-box .text {
+  width: 240px;
+}
+
+#wrap .popup-lecture .popup-cont .check {
+  line-height: 1;
+}
+
+#wrap .popup-lecture .popup-cont .check label {
+  width: 24px;
+  height: 24px;
+  padding-left: 0;
+}
+
+#wrap .popup-lecture .popup-cont h5 {
+  color: #2C2923;
+}
+
+#wrap .popup-lecture .popup-cont .border-top-line {
+  padding: 24px 40px 24px;
+  margin-top: 0px;
+  border-top: 1px solid #E4DED3;
+}
+
+#wrap .popup-lecture .popup-cont .notice-list-scroll, #wrap .popup-lecture .popup-cont .notice-list-nodata {
+  height: 205px;
+  overflow-y: auto;
+}
+
+#wrap .popup-lecture .popup-cont .notice-list-scroll .table-row, #wrap .popup-lecture .popup-cont .notice-list-nodata .table-row {
+  border-top: none;
+}
+
+#wrap .popup-lecture .popup-cont .notice-list-nodata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #E4DED3;
+}
+
+#wrap #popupMypageBookInfo .popup-cont {
+  padding-bottom: 105px;
+}
+
+#wrap #popupMypageBookInfo .select-box {
+  margin-bottom: 16px;
+}
+
+#wrap #popupMypageBookInfo .select-box .custom-select {
+  width: 160px;
+}
+
+#wrap #popupMypageBookInfo .select-box .text {
+  width: 240px;
+}
+
+#wrap #popupMypageBookInfo .desc-box {
+  border-top: 1px solid #E4DED3;
+  padding: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 0;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-check {
+  line-height: 1;
+  margin-right: 16px;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-check label {
+  width: 24px;
+  height: 24px;
+  padding-left: 0;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-desc {
+  width: 300px;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-desc .desc-title span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-desc .desc-info {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-desc .desc-info p {
+  position: relative;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-desc .desc-info p:after {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #E4DED3;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -6px;
+}
+
+#wrap #popupMypageBookInfo .desc-box .book-desc .desc-info p:last-child:after {
+  display: none;
 }
 
 .dim {
@@ -2116,6 +2292,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: left;
   line-height: 34px;
   padding-bottom: 20px;
+}
+
+#wrap h4 .device {
+  line-height: 1;
+}
+
+#wrap h4 .device a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #2C2923;
+}
+
+#wrap h4 .device .icon {
+  display: inline-block;
+  margin-right: 4px;
 }
 
 #wrap h5 {
@@ -2430,6 +2627,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #7A746A;
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
 }
 
 #wrap .badge {
@@ -4044,6 +4242,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
+}
+
+#wrap .info-text {
+  font-size: 13px;
+  line-height: 22.1px;
+  font-weight: 400;
+  color: #2C2923;
 }
 
 #wrap .notice-list-table .table-row td .icon-lock, #wrap .notice-list-table .table-row td .icon-new {
@@ -8265,6 +8470,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 40px;
 }
 
+#wrap .section-mypage-wrap .content .check {
+  line-height: 1;
+}
+
+#wrap .section-mypage-wrap .content .check label {
+  width: 24px;
+  height: 24px;
+  padding-left: 0;
+}
+
 #wrap .section-mypage-wrap .content .mypage-notice-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8371,6 +8586,123 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-mypage-wrap .content .tab-box .tab-view {
   padding-top: 40px;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc {
+  text-align: left;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc .desc-badge {
+  margin-bottom: 4px;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc .desc-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27.2px;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc .desc-text {
+  font-size: 13px;
+  color: #2C2923;
+  line-height: 22.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc .desc-text p {
+  margin-top: 4px;
+  position: relative;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc .desc-text p strong {
+  display: inline-block;
+  font-weight: 600;
+  color: #A07D3B;
+  margin-left: 4px;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc .desc-text p:after {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #E4DED3;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -6px;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.desc .desc-text p:last-child:after {
+  display: none;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.price {
+  text-align: right;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.price .price-before {
+  color: #E4DED3;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .notice-list-table td.price .price-after {
+  color: #A07D3B;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #A07D3B;
+  padding: 60px 0;
+  margin-top: 60px;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box .price-icon {
+  margin: 0 20px;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box .price-subject {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22.1px;
+  color: #7A746A;
+  text-align: center;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box .price-num {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40.8px;
+  color: #2C2923;
+  text-align: center;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box .price-num.total {
+  color: #A07D3B;
+}
+
+#wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box + .action {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #wrap .section-mypage-wrap .content .select-group {
@@ -8506,6 +8838,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc .desc-title .badge {
+  margin-right: 8px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc .desc-text {
+  margin-top: 4px;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc .desc-text + .desc-text {
+  margin-top: 8px;
+}
+
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-star {
   position: absolute;
   right: 12px;
@@ -8526,16 +8870,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .desc-title {
   width: 100%;
-}
-
-#wrap .section-mypage-wrap .content .lecture-data-list .course-list .check {
-  line-height: 1;
-}
-
-#wrap .section-mypage-wrap .content .lecture-data-list .course-list .check label {
-  width: 24px;
-  height: 24px;
-  padding-left: 0;
+  font-size: 16px;
+  line-height: 27.2px;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject {
@@ -8552,11 +8888,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 8px;
   margin-left: 0;
   padding: 0;
-  height: 30px;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn:first-child {
   margin-top: 0;
+}
+
+#wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn:nth-child(1):nth-last-child(3), #wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn:nth-child(2):nth-last-child(2), #wrap .section-mypage-wrap .content .lecture-data-list .course-list .action-box .btn:nth-child(3):nth-last-child(1) {
+  height: 30px;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list.hover-data-list .course-list:hover {
@@ -8588,6 +8927,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-right: 24px;
   font-size: 16px;
   line-height: 27.2px;
+}
+
+#wrap .section-mypage-wrap .content .section-lecture {
+  margin-bottom: 40px;
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view {
@@ -8659,7 +9002,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .action {
-  padding-bottom: 40px;
+  padding-bottom: 0;
 }
 
 #wrap .section-mypage-wrap .content .section-lecture-content .notice-list-table .table-row tr th {

@@ -71,6 +71,17 @@
 
 		}
 
+		&-btn{
+			position:absolute;left:0;bottom:0;
+			width:100%;
+			border-top: 1px solid $color-light-brown;
+			background-color:$color-white;
+			display:flex;
+			justify-content: flex-end;
+			padding:24px;
+			@include boxSizing(border-box);
+		}
+
 		&-title{
 			@include vw(padding,12px 24px);
 			color:$color-black;
@@ -87,26 +98,6 @@
 				dd{@include vw(margin-left,20px);}
 			}
 
-		}
-
-		&-text{
-			p{
-				color:$color-black;
-				@include vw(font-size,16px);
-				@include vw(line-height,27.2px);
-				text-align:center;
-				font-weight:400;
-				font-family: $font-pretendard;
-				@include boxSizing(border-box);
-			}
-		}
-
-		&-scroll{
-			@include boxSizing(border-box);
-			@include vw(max-height,600px);
-			overflow-y:auto;
-
-			@extend %scrollBar;
 		}
 
 		&-cont{
@@ -154,6 +145,28 @@
 			.notice{
 				color:$color-gray;font-size:14px;font-weight:400;margin-top:8px;
 			}
+		}
+
+		&-text{
+			p{
+				text-align:left;
+				color:$color-gray;
+				@include vw(font-size,14px);
+				@include vw(line-height,23.8px);
+				text-align:left;
+				font-weight:400;
+				font-family: $font-pretendard;
+				@include boxSizing(border-box);
+			}
+			strong{font-weight:600;}
+		}
+
+		&-scroll{
+			@include boxSizing(border-box);
+			@include vw(max-height,600px);
+			overflow-y:auto;
+
+			@extend %scrollBar;
 		}
 
 		&-action{
@@ -244,12 +257,16 @@
 
 	}
 
-	#popupAlert1, #popupAlert2{
+	.popup-alert{
 		.popup-wrap{
 			@include vw(border-radius,8px);
 			@include vw(width,376px);
 			@include vw(padding,36px);
 			@include boxSizing(border-box);
+		}
+
+		.popup-text{
+			p{font-size:16px;text-align:center;color:$color-black;}
 		}
 	}
 
@@ -328,7 +345,7 @@
 	}
 
 
-	#popupBookInfo{
+	.popup-bookInfo{
 		.border-line{
 			@include vw(margin-bottom,20px);
 		}
@@ -336,6 +353,7 @@
 			display:flex;
 			align-items:center;
 			margin-bottom:20px;
+			
 			.book-img{
 				display:flex;
 				justify-content:center;
@@ -808,7 +826,106 @@
 		}
 
 		.popup-cont{
-			padding:24px 40px;
+			padding:0;
+
+			.holder{
+				padding:24px 40px 40px;
+			}
+
+			.popup-text{
+				strong{font-size:18px;color:$color-black;display:block;
+				margin-bottom:4px;}
+			}
+
+			.select-box{
+				margin-top:16px;
+				margin-bottom:16px;
+				.custom-select{width:160px;}
+				.text{width:240px;}
+			}
+
+			.check{
+				line-height:1;
+				label{width:24px;height:24px;padding-left:0;}
+			}
+
+			h5{color:$color-black;}
+			.border-top-line{
+				padding:24px 40px 24px;
+				margin-top:0px;
+				border-top:1px solid $color-light-brown;
+			}
+
+			.notice-list-scroll,.notice-list-nodata{
+				height:205px;
+				overflow-y:auto;
+				@extend %scrollBar;
+				.table-row{
+					border-top:none; 
+				}
+			}
+
+			.notice-list-nodata{
+				display:flex;
+				justify-content: center;
+				align-items:center;
+				border-bottom:1px solid $color-light-brown;
+			}
+
+			
+		}
+	}
+
+	#popupMypageBookInfo{
+		.popup-cont{padding-bottom:105px;}
+		.select-box{
+			margin-bottom:16px;
+			.custom-select{width:160px;}
+			.text{width:240px;}
+		}
+
+		.desc-box{
+			border-top: 1px solid $color-light-brown;
+			padding:20px;
+			align-items:start;
+			margin-bottom:0;
+			.book-check{
+				line-height:1;margin-right:16px;
+				label{width:24px;height:24px;padding-left:0;}
+			}
+			.book-desc{
+				width:300px;
+				.desc-title{
+					span{display:block;font-size:14px;font-weight:400;}
+				}
+
+				.desc-info{
+					margin-top:5px;
+					display:flex;
+					align-items:center;
+					p{
+						position:relative;
+						display:inline-block;
+						padding-right:8px;
+						margin-right:8px;
+						vertical-align:middle;
+						font-size:13px;
+						margin-top:0;
+						&:after{
+							content:'';
+							width:1px;
+							height:12px;
+							background-color:$color-light-brown;
+							position:absolute;right:0;top:50%;margin-top:-6px;
+
+						}
+						
+						&:last-child{
+							&:after{display:none;}
+						}
+					}
+				}
+			}
 		}
 	}
 }
