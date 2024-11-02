@@ -1253,18 +1253,22 @@
 		}
 
         &.btn-file{
+            position:relative;
 			display:inline-block;
 			background: $color-light-beige;
 			@include boxSizing(border-box);
 			width:auto;@include vw(height, 38px); 
 			@include vw(line-height, 38px); 
-            @include vw(padding,0 12px);
+            @include vw(padding,0 30px 0 12px);
             margin-left:0;
 			@include vw(margin-right, 8px);
             @include vw(margin-bottom, 8px);
+            max-width:100%;
+            overflow:hidden;
+            @extend %textEllipsis;
             .icon-down{
                 display:inline-block;
-                position:relative;top:9px;
+                position:absolute;top:9px;right:9px;
                 margin-left:4px;
             }
 		}

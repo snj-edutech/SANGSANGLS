@@ -13,7 +13,7 @@
   clear: both;
 }
 
-#wrap .lecture-review-list .review-list .review-info dl dd, #wrap .section-online-bookstore .tab-slide .online-slider .list .book-desc .desc-title, #wrap .section-online-bookstore .notice-list-table .table-row tr td.link a, #wrap .section-mypage-wrap .content .mypage-notice-box .notice-title {
+#wrap .btn.btn-file, #wrap .lecture-review-list .review-list .review-info dl dd, #wrap .section-online-bookstore .tab-slide .online-slider .list .book-desc .desc-title, #wrap .section-online-bookstore .notice-list-table .table-row tr td.link a, #wrap .section-mypage-wrap .content .mypage-notice-box .notice-title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -4689,6 +4689,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .btn.btn-file {
+  position: relative;
   display: inline-block;
   background: #FBFAF6;
   -webkit-box-sizing: border-box;
@@ -4696,10 +4697,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: auto;
   height: 5.27778vw;
   line-height: 5.27778vw;
-  padding: 0 1.66667vw;
+  padding: 0 4.16667vw 0 1.66667vw;
   margin-left: 0;
   margin-right: 1.11111vw;
   margin-bottom: 1.11111vw;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 720px) {
@@ -4716,7 +4719,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 @media screen and (min-width: 720px) {
   #wrap .btn.btn-file {
-    padding: 0 12px;
+    padding: 0 30px 0 12px;
   }
 }
 
@@ -4734,8 +4737,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .btn.btn-file .icon-down {
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: 9px;
+  right: 9px;
   margin-left: 4px;
 }
 
@@ -8585,6 +8589,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .tab-box .tab-view {
+  position: relative;
   padding-top: 40px;
 }
 
