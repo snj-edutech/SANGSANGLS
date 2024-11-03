@@ -928,4 +928,11 @@
 			}
 		}
 	}
+
+	#popupMessageView{
+		.table-row{
+			th,td{text-align:left;font-size:16px;font-weight:400;line-height:27.2px;}
+			th{font-weight:600;}
+		}
+	}
 }

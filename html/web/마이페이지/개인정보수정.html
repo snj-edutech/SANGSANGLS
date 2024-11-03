@@ -134,7 +134,7 @@
 					<div class="menu-item" >
 						<p>고객센터</p>
 						<div class="submenu">
-							<div class="submenu-item active"><a href="javascript:;">나의 문의</a></div>
+							<div class="submenu-item "><a href="javascript:;">나의 문의</a></div>
 							<div class="submenu-item"><a href="javascript:;">받은 쪽지함</a></div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 					<div class="menu-item" >
 						<p>개인정보</p>
 						<div class="submenu">
-							<div class="submenu-item"><a href="javascript:;">개인정보 수정</a></div>
+							<div class="submenu-item active"><a href="javascript:;">개인정보 수정</a></div>
 							<div class="submenu-item"><a href="javascript:;">회원탈퇴</a></div>
 						</div>
 					</div>
@@ -150,85 +150,456 @@
 				</div>
 
 				<div class="content">
-					<h3>나의 문의</h3>
+					<h3>개인정보 수정</h3>
+					<div class="holder">
+						<h4>기본 정보</h4>
+						<div class="notice-input-table">
+							<table class="table-row ">
+								<colgroup>
+									<col style="width:170px" />
+									<col style="width:auto" />
+								</colgroup>
+								<tr>
+									<th>이메일 ID</th>
+									<td>sangsang@naver.com</td>
+								</tr>
+								<tr>
+									<th>아이디</th>
+									<td>abcdefg123456</td>
+								</tr>
+								<tr>
+									<th>이름</th>
+									<td>
+										<div class="input-box">
+											<div class="input-text-start">홍길동</div>
+											<div class="form-control">
+												<span class="fake-radio">
+													<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
+													<label for="radioType1">남</label>
+												</span>
+												<span class="fake-radio">
+													<input type="radio" id="radioType2" class="radio" name="radioSelect">
+													<label for="radioType2">여</label>
+												</span>
+											</div>
+										</div>
+									</td> 
+								</tr>
+								<tr>
+									<th>비밀번호</th>
+									<td>
+										<div class="form-control">
+											<input type="text" class="text " placeholder="" />
+										</div>
+										<p class="form-text color-point">비밀번호는 최소 8자리 최대 16자리, 문자/숫자/특수문자를 혼용해야 합니다.</p>
+									</td> 
+								</tr>
 
-					<div class="tab-box">
-						<div class="tab-menu">
-							<ul>
-								<li class="active"><a href="javascript:;">일반 문의</a></li>
-								<li><a href="javascript:;">학원 문의</a></li>
-								<li><a href="javascript:;">교수 문의</a></li>
-							</ul>
+								<tr>
+									<th>비밀번호 확인</th>
+									<td>
+										<div class="form-control">
+											<input type="text" class="text " placeholder="" />
+										</div>
+									</td> 
+								</tr>
+
+								<tr>
+									<th>휴대전화</th>
+									<td>
+										<div class="input-box">
+											<div class="form-control">
+												<input type="text" class="text " placeholder="" vlaue="00012345678">
+											</div>
+											<a href="javascript:;" class="btn">인증번호발송</a>
+										</div>
+									</td> 
+								</tr>
+
+								<tr>
+									<th>인증번호</th>
+									<td>
+										<div class="timer-box">
+											<div class="form-control">
+												<input type="text" class="text " placeholder="인증번호를 입력하세요" vlaue="">
+												<span class="timer">03:00</span>
+											</div>
+											<a href="javascript:;" class="btn">확인</a>
+										</div>
+									</td> 
+								</tr>
+
+
+								<tr>
+									<th>생년월일</th>
+									<td>
+										<div class="custom-select-box">
+											<div class="custom-select">
+												<div class="selected">
+												<div class="selected-value">YYYY</div>
+												<div class="arrow"></div>
+												</div>
+												<ul>
+												<li class="option">전체1</li>
+												<li class="option">전체2</li>
+												<li class="option">전체3</li>
+												<li class="option">전체4</li>
+												</ul>
+											</div>
+											<div class="custom-select">
+												<div class="selected">
+												<div class="selected-value">MM</div>
+												<div class="arrow"></div>
+												</div>
+												<ul>
+												<li class="option">전체1</li>
+												<li class="option">전체2</li>
+												<li class="option">전체3</li>
+												<li class="option">전체4</li>
+												</ul>
+											</div>
+											<div class="custom-select">
+												<div class="selected">
+												<div class="selected-value">DD</div>
+												<div class="arrow"></div>
+												</div>
+												<ul>
+												<li class="option">전체1</li>
+												<li class="option">전체2</li>
+												<li class="option">전체3</li>
+												<li class="option">전체4</li>
+												</ul>
+											</div>
+										</div>
+										
+									</td> 
+								</tr>
+								
+								<tr>
+									<th>정보 수신 이메일</th>
+									<td>
+										<div class="form-control">
+											<input type="text" class="text " placeholder="" value="sangsang@naver.com" />
+										</div>
+									</td> 
+								</tr>
+
+								<tr>
+									<th>수신여부</th>
+									<td>
+										<div class="input-box">
+											<div class="form-control">
+												<span class="fake-radio">
+													<input type="radio" id="receiveType1" class="radio" name="receiveSelect" checked>
+													<label for="receiveType1">SNS</label>
+												</span>
+												<span class="fake-radio">
+													<input type="radio" id="receiveType2" class="radio" name="receiveSelect">
+													<label for="receiveType2">EMAIL</label>
+												</span>
+											</div>
+										</div>
+									</td> 
+								</tr>
+
+								<tr>
+									<th>주소</th>
+									<td class="address">
+										<div class="form-control flex">
+											<input type="text" class="text " placeholder="" vlaue="00012345678">
+											<a href="javascript:;" class="btn">주소검색</a>
+										</div>
+										<div class="form-control">
+											<input type="text" class="text wide" placeholder="" vlaue="서울시 강남구 논현로 524" />
+										</div>
+										<div class="form-control">
+											<input type="text" class="text wide" placeholder="" vlaue="청파빌딩 2층" />
+										</div>
+									</td> 
+								</tr>
+
+								<tr>
+									<th>학사정보</th>
+									<td class="university">
+										<div class="form-control">
+											<span class="fake-radio">
+												<input type="radio" id="domestic" class="radio" name="country" checked="">
+												<label for="domestic">국내</label>
+											</span>
+											<span class="fake-radio">
+												<input type="radio" id="overseas" class="radio" name="country">
+												<label for="overseas">해외</label>
+											</span>
+										</div>
+										<div class="form-control">
+											<input type="text" class="text wide" value="상상대학교 제1캠퍼스" />
+										</div>
+
+										<div class="custom-select-box">
+											<div class="custom-select">
+												<div class="selected">
+												  <div class="selected-value">졸업여부</div>
+												  <div class="arrow"></div>
+												</div>
+												<ul>
+												  <li class="option">졸업여부1</li>
+												  <li class="option">졸업여부2</li>
+												  <li class="option">졸업여부3</li>
+												  <li class="option">졸업여부4</li>
+												</ul>
+											</div>
+											<div class="custom-select">
+												<div class="selected">
+												  <div class="selected-value">학년선택</div>
+												  <div class="arrow"></div>
+												</div>
+												<ul>
+												  <li class="option">학년선택1</li>
+												  <li class="option">학년선택2</li>
+												  <li class="option">학년선택3</li>
+												  <li class="option">학년선택4</li>
+												</ul>
+											</div>
+											<div class="custom-select">
+												<div class="selected">
+												  <div class="selected-value">졸업년도</div>
+												  <div class="arrow"></div>
+												</div>
+												<ul>
+												  <li class="option">졸업년도1</li>
+												  <li class="option">졸업년도2</li>
+												  <li class="option">졸업년도3</li>
+												  <li class="option">졸업년도4</li>
+												</ul>
+											</div>
+											
+										</div>
+
+										<div class="input-box">
+											<div class="custom-select">
+												<div class="selected">
+												  <div class="selected-value">전공계열선택</div>
+												  <div class="arrow"></div>
+												</div>
+												<ul>
+												  <li class="option">전공계열선택1</li>
+												  <li class="option">전공계열선택2</li>
+												  <li class="option">전공계열선택3</li>
+												  <li class="option">전공계열선택4</li>
+												</ul>
+											</div>
+											<div class="form-control">
+												<input type="text" class="text" placeholder="학부 입력" />
+											</div>
+										</div>
+									</td> 
+								</tr>
+							</table>
 						</div>
+						<div class="form-text">* 기본정보 수정 시 이매진피앤엠 모든 홈페이지(상상로스쿨, 상상모의고사)의 회원 정보가 수정됩니다.</div>
+					</div>
 
-						<div class="tab-view active">
-							<div class="notice-list-table">
-								<table class="table-row ">
-									<colgroup>
-										<col style="width:80px">
-										<col style="width:120px">
-										<col style="width:auto">
-										<col style="width:140px">
-										<col style="width:120px">
-									</colgroup>
-									<tr>
-										<th>번호</th>
-										<th>분류</th>
-										<th>제목</th>
-										<th>작성일</th>
-										<th>답변</th>
-									</tr>
-									<tr>
-										<td>9,999</td>
-										<td>인강</td>
-										<td class="link"><a href="javscript:;">29번 질문드립니다.<span class="icon-new">N</span></a></td>
-										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply ">답변대기</td>											
-									</tr>
-									<tr>
-										<td>9,999</td>
-										<td>동영상</td>
-										<td class="link"><a href="javscript:;" >24년도 14번 3번 선지 질문드립니다<span class="icon-new">N</span></a></td>
-										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply end">답변완료</td>											
-									</tr>
-									<tr>
-										<td>9,999</td>
-										<td>환불/취소</td>
-										<td class="link"><a href="javscript:;"  >[공지] 2023년 5월 김재형 교수님 학습Q&A 답변 지연 안내</a></td>
-										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply">답변대기</td>											
-									</tr>
-									<tr>
-										<td>9,999</td>
-										<td>온라인서점</td>
-										<td class="link"><a href="javscript:;"  >[공지] 2023년 5월 김재형 교수님 학습Q&A 답변 지연 안내</a></td>
-										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply end">답변완료</td>											
-									</tr>
-								</table>
-							</div>
+					<div class="holder">
+						<h4>선택 항목</h4>
+						<div class="notice-input-table">
+							<table class="table-row ">
+								<colgroup>
+									<col style="width:170px" />
+									<col style="width:auto" />
+								</colgroup>
+								<tr>
+									<th>학부평점</th>
+									<td class="average">
+										<div class="input-box">
+											<div class="form-control">
+												<input type="text" class="text " placeholder="" value="100"/>
+											</div>
+											<div class="space first">/100</div>
+											<div class="space">(</div>
+											<div class="form-control">
+												<input type="text" class="text " placeholder="" value="4.5"/>
+											</div>
+											<div class="space">/</div>
+											<div class="form-control">
+												<input type="text" class="text " placeholder="" value="4.5"/>
+											</div>
+											<div class="space">)</div>
+											<div class="form-text">* 예시  3.8 / 4.5</div>
+										</div>
+									</td>
+								</tr> 
+								<tr>
+									<th>공인영어 성적</th>
+									<td class="score">
+										<div class="flex-group">
+											<div class="input-box">
+												<div class="input-text-start">TOEIC</div>
+												<div class="form-control">
+													<input type="text" class="text" placeholder="" value="100">
+												</div>
+												<div class="input-text-end">점</div>
+											</div>
+											<div class="input-box">
+												<div class="input-text-start">TOEFL</div>
+												<div class="form-control">
+													<input type="text" class="text" placeholder="" value="100">
+												</div>
+												<div class="input-text-end">점</div>
+											</div>
+											<div class="input-box">
+												<div class="input-text-start">TEPS</div>
+												<div class="form-control">
+													<input type="text" class="text" placeholder="" value="100">
+												</div>
+												<div class="input-text-end">점</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>법학 학습 경력</th>
+									<td>
+										<div class="form-control">
+											<span class="fake-radio">
+												<input type="radio" id="lawType1" class="radio" name="lawSelect" checked>
+												<label for="lawType1">YES</label>
+											</span>
+											<span class="fake-radio">
+												<input type="radio" id="lawType2" class="radio" name="lawSelect">
+												<label for="lawType2">NO</label>
+											</span>
+										</div>
+									</td> 
+								</tr>
 
-							<div class="action fly">
-								<a href="javascript:;" class="btn large btn-brown">작성</a>
-							</div>
-							
-							<div class="pagination">
-								<a href="javascript:;" class="control control-prev"><span>이전페이지</span></a>
-								<a href="javascript:;" class="active"><span>1</span></a>
-								<a href="javascript:;"><span>2</span></a>
-								<a href="javascript:;"><span>3</span></a>
-								<a href="javascript:;"><span>4</span></a>
-								<a href="javascript:;"><span>5</span></a>
-								<a href="javascript:;"><span>6</span></a>
-								<a href="javascript:;"><span>7</span></a>
-								<a href="javascript:;"><span>8</span></a>
-								<a href="javascript:;"><span>9</span></a>
-								<a href="javascript:;"><span>10</span></a>
-								<a href="javascript:;" class="control control-next"><span>다음페이지</span></a>
-							</div>
+								<tr>
+									<th>희망 로스쿨</th>
+									<td>
+										<div class="custom-select-box">
+											<div class="custom-select">
+												<div class="selected">
+												<div class="selected-value">1순위</div>
+												<div class="arrow"></div>
+												</div>
+												<ul>
+												<li class="option">전체1</li>
+												<li class="option">전체2</li>
+												<li class="option">전체3</li>
+												<li class="option">전체4</li>
+												</ul>
+											</div>
+											<div class="custom-select">
+												<div class="selected">
+												<div class="selected-value">2순위</div>
+												<div class="arrow"></div>
+												</div>
+												<ul>
+												<li class="option">전체1</li>
+												<li class="option">전체2</li>
+												<li class="option">전체3</li>
+												<li class="option">전체4</li>
+												</ul>
+											</div>
+											<div class="custom-select">
+												<div class="selected">
+												<div class="selected-value">3순위</div>
+												<div class="arrow"></div>
+												</div>
+												<ul>
+												<li class="option">전체1</li>
+												<li class="option">전체2</li>
+												<li class="option">전체3</li>
+												<li class="option">전체4</li>
+												</ul>
+											</div>
+										</div>
+										
+									</td> 
+								</tr>
+								
+								<tr>
+									<th>LEET 응시 경험</th>
+									<td>
+										<div class="form-control">
+											<span class="fake-radio">
+												<input type="radio" id="testType1" class="radio" name="testSelect" checked>
+												<label for="testType1">초시</label>
+											</span>
+											<span class="fake-radio">
+												<input type="radio" id="testType2" class="radio" name="testSelect">
+												<label for="testType2">재시</label>
+											</span>
+										</div>
+									</td> 
+								</tr>
+
+
+								<tr>
+									<th>선호하는 학습 방법</th>
+									<td>
+										<div class="input-box">
+											<div class="form-control">
+												<span class="fake-radio">
+													<input type="radio" id="studyType1" class="radio" name="studySelect" checked>
+													<label for="studyType1">학원</label>
+												</span>
+												<span class="fake-radio">
+													<input type="radio" id="studyType2" class="radio" name="studySelect">
+													<label for="studyType2">온라인</label>
+												</span>
+												<span class="fake-radio">
+													<input type="radio" id="studyType3" class="radio" name="studySelect">
+													<label for="studyType3">독학(스터디)</label>
+												</span>
+											</div>
+										</div>
+									</td> 
+								</tr>
+
+								<tr>
+									<th>로스쿨 정보<br/>획득 경로</th>
+									<td>
+										<div class="custom-select wide">
+											<div class="selected">
+											  <div class="selected-value">정보 획득 경로 선택</div>
+											  <div class="arrow"></div>
+											</div>
+											<ul>
+											  <li class="option">전체1</li>
+											  <li class="option">전체2</li>
+											  <li class="option">전체3</li>
+											  <li class="option">전체4</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<th>상상로스쿨<br/>	인지 경로</th>
+									<td>
+										<div class="custom-select wide">
+											<div class="selected">
+											  <div class="selected-value">인지 경로 선택</div>
+											  <div class="arrow"></div>
+											</div>
+											<ul>
+											  <li class="option">전체1</li>
+											  <li class="option">전체2</li>
+											  <li class="option">전체3</li>
+											  <li class="option">전체4</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
+
+					<div class="action">
+ 						<a href="javascript:;" class="btn large btn-gray">취소</a>
+						<a href="javascript:;" class="btn large btn-brown">수정</a>
+					</div>
+
 				</div>
 				
 			</div>
@@ -739,6 +1110,7 @@
 <script>
 	$(function(){
 		tabMenuEvent('.section-mypage');
+		
 		
 	});
 </script>

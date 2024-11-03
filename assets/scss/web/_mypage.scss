@@ -425,6 +425,102 @@
 				}
 			}
 
+			.notice-input-table{
+				.checkbox-box{
+					flex-wrap:wrap;
+					.form-control{width:25%;}
+				}
+
+				.form-control .textarea{height:160px;}
+				.custom-select-box{
+					.custom-select{width:120px;}
+				}
+
+				.custom-select{
+					width:280px;
+					&.wide{width:480px;}
+				}
+				.form-control{
+					.text{
+						width:280px;
+						&.wide{width:100%;}
+					}
+
+					.fake-file-box{
+						width:320px;
+						.text{width:100%;}
+					}
+
+					&+.form-text{margin-top:10px;}
+				}
+
+				td{
+					&.score{
+						.text{width:55px;}
+						.input-box{
+							margin-left:36px;
+							&:first-child{margin-left:0;}
+							& + .input-box{margin-top:0;}
+						}
+					}
+					&.average{
+						.text{width:55px;}
+						.space{
+							padding:0 10px;
+							&.first{padding-right:0;}
+						}
+					}
+					&.address{
+						.input-box{
+							.form-control{margin-top:0;}
+						}
+						.form-control{margin-top:10px;}
+					}
+
+					&.university{
+						.form-control + .form-control{	margin-top:10px;}
+
+						.custom-select-box{
+							margin-top:10px;
+						}
+
+						.input-box{
+							margin-top:10px;
+							.custom-select{width:160px;margin-right:10px;}
+						}
+					}
+				}
+			}
+
+			.password-input-box{
+				background-color:$color-light-beige;
+				height:480px;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+				@include boxSizing(border-box);
+				text-align:center;
+				.input-box{
+					margin-top:40px;
+					.input-text-start{font-size:16px;}
+					.form-control{
+						.text{height:60px;}
+					}
+				}
+				.action{margin-top:40px;}
+	
+	
+			}
+
+			.holder+.holder{margin-top:60px;}
+
+			.notice-list{
+				margin-top:20px;
+				li{color:$color-gray;}
+			}
+
+			
+
 		}
 		
 	}

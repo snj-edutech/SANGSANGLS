@@ -134,8 +134,8 @@
 					<div class="menu-item" >
 						<p>고객센터</p>
 						<div class="submenu">
-							<div class="submenu-item active"><a href="javascript:;">나의 문의</a></div>
-							<div class="submenu-item"><a href="javascript:;">받은 쪽지함</a></div>
+							<div class="submenu-item "><a href="javascript:;">나의 문의</a></div>
+							<div class="submenu-item active"><a href="javascript:;">받은 쪽지함</a></div>
 						</div>
 					</div>
 
@@ -150,14 +150,13 @@
 				</div>
 
 				<div class="content">
-					<h3>나의 문의</h3>
+					<h3>받은 쪽지함</h3>
 
 					<div class="tab-box">
 						<div class="tab-menu">
 							<ul>
-								<li class="active"><a href="javascript:;">일반 문의</a></li>
-								<li><a href="javascript:;">학원 문의</a></li>
-								<li><a href="javascript:;">교수 문의</a></li>
+								<li class="active"><a href="javascript:;">미확인</a></li>
+								<li><a href="javascript:;">전체</a></li>
 							</ul>
 						</div>
 
@@ -166,51 +165,47 @@
 								<table class="table-row ">
 									<colgroup>
 										<col style="width:80px">
-										<col style="width:120px">
 										<col style="width:auto">
+										<col style="width:120px">
 										<col style="width:140px">
 										<col style="width:120px">
 									</colgroup>
 									<tr>
 										<th>번호</th>
-										<th>분류</th>
 										<th>제목</th>
+										<th>작성자</th>
 										<th>작성일</th>
 										<th>답변</th>
 									</tr>
 									<tr>
 										<td>9,999</td>
-										<td>인강</td>
-										<td class="link"><a href="javscript:;">29번 질문드립니다.<span class="icon-new">N</span></a></td>
+										<td class="link"><a href="javascript:popupOpen('#popupMessageView');" class="ellipsis">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십<span class="icon-new">N</span></a></td>
+										<td>운영자</td>
 										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply ">답변대기</td>											
+										<td class="reply ready">미확인</td>											
 									</tr>
 									<tr>
 										<td>9,999</td>
-										<td>동영상</td>
-										<td class="link"><a href="javscript:;" >24년도 14번 3번 선지 질문드립니다<span class="icon-new">N</span></a></td>
+										<td class="link"><a href="javascript:popupOpen('#popupMessageView');" class="ellipsis">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십<span class="icon-new">N</span></a></td>
+										<td>운영자</td>
 										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply end">답변완료</td>											
+										<td class="reply ready">미확인</td>											
 									</tr>
 									<tr>
 										<td>9,999</td>
-										<td>환불/취소</td>
-										<td class="link"><a href="javscript:;"  >[공지] 2023년 5월 김재형 교수님 학습Q&A 답변 지연 안내</a></td>
+										<td class="link"><a href="javascript:popupOpen('#popupMessageView');" class="ellipsis">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></td>
+										<td>운영자</td>
 										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply">답변대기</td>											
+										<td class="reply ready">미확인</td>											
 									</tr>
 									<tr>
 										<td>9,999</td>
-										<td>온라인서점</td>
-										<td class="link"><a href="javscript:;"  >[공지] 2023년 5월 김재형 교수님 학습Q&A 답변 지연 안내</a></td>
+										<td class="link"><a href="javascript:popupOpen('#popupMessageView');" class="ellipsis">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></td>
+										<td>운영자</td>
 										<td class="date">YYYY-MM-DD</td>	
-										<td class="reply end">답변완료</td>											
+										<td class="reply ready">미확인</td>											
 									</tr>
 								</table>
-							</div>
-
-							<div class="action fly">
-								<a href="javascript:;" class="btn large btn-brown">작성</a>
 							</div>
 							
 							<div class="pagination">
@@ -733,12 +728,45 @@
 		</div>
 	</div>
 
+	<div class="popup" id="popupMessageView">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupMessageView');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				쪽지
+			</div>
+			<div class="popup-cont popup-scroll">
+				<table class="table-row">
+					<colgroup>
+						<col style="width:172px;" />
+						<col style="width:auto;" />
+					</colgroup>
+					<tr>
+						<th>작성자</th>
+						<td>운영자</td>
+					</tr>
+					<tr>
+						<th>작성일</th>
+						<td>YYYY-MM-DD</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다.쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다.쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 
+ 							쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다.쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다.쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다. 쪽지 내용이 노출됩니다.
+						</td>
+					</tr>
+					
+				</table>
+			</div>
+		</div>
+	</div>
+
 </div>
 
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
 		tabMenuEvent('.section-mypage');
+		
 		
 	});
 </script>
