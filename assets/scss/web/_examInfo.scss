@@ -25,6 +25,11 @@
 					&.univ{margin-left:8px;width:133px;}
 				}
 			}
+
+			.custom-select{
+				&.year{width:105px;}
+				&.univ{margin-left:8px;width:133px;}
+			}
 		}	
 
 		.examInfo-univ-list{
@@ -60,7 +65,7 @@
 						img{width:100%;}
 					}
 					p{
-						font-size:24px;font-weight:600;margin-top:8px;
+						font-size:24px;font-weight:600;margin-top:16px;
 					}
 				}
 				.univ-info{
@@ -75,7 +80,7 @@
 							margin-left:auto;
 							display:flex;
 							>div{
-								width:52px;margin-left:20px;
+								width:64px;margin-left:16px;text-align:center;
 								.text{font-size:14px;font-weight:600;line-height:23.8px;color:$color-black;}
 								.rate{font-size:18px;font-weight:600;line-height:27px;color:$color-brown;}
 							}
@@ -90,15 +95,18 @@
 			text-align:center;
 			border:1px solid $color-light-brown;
 			padding:64px;
-			.univ-logo{
-				display:inline-block;
-				width:80px;
-				height:80px;
+			.logo-box{
 				margin-bottom:20px;
-				img{width:100%;}
+				.univ-logo{
+					display:inline-block;
+					width:80px;
+					height:80px;
+					margin-bottom:20px;
+					img{width:100%;}
+				}
 			}
 			p{
-				font-size:40px;font-weight:600;line-height:60px;
+				font-size:40px;font-weight:600;line-height:1;
 			}
 		}
 		
@@ -116,7 +124,10 @@
 						font-size:16px;
 						font-weight:400;
 
-						.type{font-weight:600;margin-right:10px;}
+						.type{
+							font-weight:600;margin-right:10px;margin-left:20px;
+							&:first-child{margin-left:0;}
+						}
 					}
 				}
 			}
@@ -239,6 +250,14 @@
 					&.year{width:133px;}
 					&.major{width:120px;}
 				}
+
+				.custom-select{
+					width:280px;
+					&.univ{width:133px;}
+					&.type{width:93px;}
+					&.year{width:133px;}
+					&.major{width:120px;}
+				}
 	
 				.text{
 					width:300px;
@@ -272,6 +291,11 @@
 						width:160px;
 						&.univ{width:280px;}
 					}
+					.custom-select{
+						width:160px;
+						&.univ{width:280px;}
+					}
+
 					.text{
 						width:280px;
 						&.wide{width:100%;}
@@ -326,6 +350,7 @@
 				}
 
 				.list{
+					margin-left:24px;
 					padding-left:30px;	
 					position:relative;
 					
@@ -334,7 +359,7 @@
 						width:2px;
 						height:100%;
 						background-color:$color-brown;
-						position:absolute;left:0;top:0;
+						position:absolute;left:2px;top:0;
 					}
 
 					ul{

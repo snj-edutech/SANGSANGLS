@@ -204,25 +204,18 @@
 					justify-content: flex-start;
 
 					.t-img{
-						@include vw(width, 168px);@include vw(height, 168px);
+						width:168px;height:168px;
+						background-color:$color-light-brown2;
+						overflow:hidden;
+						img{
+							width:68px;height:96px;
+						}
+					}
+
+					.t-desc{
+						.desc-title{width:675px;}
 					}
 				}
-			}
-		}
-
-		.search-nodata-box{
-			display:flex;
-			justify-content: center;
-			align-items: center;
-			background-color:$color-light-beige;
-			height:480px;
-			text-align:center;
-			p{
-				margin-top:16px;
-				color:$color-gray;
-				font-size:16px;
-				font-weight:400;
-				line-height:27.2px;
 			}
 		}
 	}
