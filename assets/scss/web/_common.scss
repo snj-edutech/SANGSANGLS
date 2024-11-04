@@ -534,22 +534,24 @@
     .category-box{
         background-color:$color-light-beige;
         padding:40px 40px 32px;
-        .category-list{
-            ul{
-                display:flex;
-                flex-wrap:wrap;
-                li{
-                    display:inline-block;margin-right:8px;
-                    margin-bottom:8px;
-                    a{padding:0 20px;display:flex;align-items:center;justify-content:center;border:1px solid $color-light-brown;background-color:$color-white;color:$color-black;font-size:14px;font-weight:400;height:40px;}
 
-                    &.active, &:hover{
-                        a{color:$color-white;background-color:$color-brown;border-color:$color-brown;}
-                    }
-                }
-            }
-        }
     }
+
+	.category-list{
+		ul{
+			display:flex;
+			flex-wrap:wrap;
+			li{
+				display:inline-block;margin-right:8px;
+				margin-bottom:8px;
+				a{padding:0 20px;display:flex;align-items:center;justify-content:center;border:1px solid $color-light-brown;background-color:$color-white;color:$color-black;font-size:14px;font-weight:400;height:40px;border-radius:2px;}
+
+				&.active, &:hover{
+					a{color:$color-white;background-color:$color-brown;border-color:$color-brown;}
+				}
+			}
+		}
+	}
 
     .custom-select-box{
         font-size:0;
@@ -847,6 +849,11 @@
             }
 
         }
+
+		.btn{
+			height:40px;
+			padding:0 16px;
+		}
     }
 
     .select-box{
@@ -943,8 +950,20 @@
 	}
 
 	.agree-check-box{
-		margin-top:20px;
-		&:first-child{margin-top:0;}
+		margin-top:40px;
+
+		&+ .agree-check-box{margin-top:20px;}
+	
+		.agree-title{
+			position:relative;
+			color:$color-brown;
+			font-size:16px;
+			font-weight:600;
+			margin-bottom:12px;
+		}
+
+		 .fake-checkbox +  .fake-checkbox{margin-top:12px;}
+
 		.agree-box{
 			height:120px;
 			overflow-y:auto;
@@ -1333,6 +1352,9 @@
 		justify-content:  flex-end;
 		align-items: center;
 		margin-top:20px;
+		
+		.btn{font-weight:600;}
+
 		&.flex-start{justify-content: flex-start;}
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
