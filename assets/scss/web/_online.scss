@@ -6,7 +6,19 @@
 			&+.action{margin-top:40px;}
 		}
         .tab-view{
-            .lecture-data-list{margin-top:40px;}
+            .lecture-data-list{
+				margin-top:40px;
+				.course-list{
+					&:first-child{border-top:none;}
+				}
+			}
+
+			.category-box +  .lecture-data-list,
+			.select-box +   .lecture-data-list{
+				.course-list{
+					&:first-child{border-top:1px solid $color-light-brown;;}
+				}
+			}
         }
     }
 
@@ -16,6 +28,7 @@
 			.slick-slide{
 				margin-left:36px;
 				width:376px;
+				img{width:100%;}
 			}
 
 			.list{
