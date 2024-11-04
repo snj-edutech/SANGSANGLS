@@ -6038,7 +6038,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin-bottom: 20px;
 }
 #wrap .section-examInfo-content .examInfo-univ-title .logo-box .univ-logo img {
   width: 100%;
