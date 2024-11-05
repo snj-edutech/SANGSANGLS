@@ -430,6 +430,7 @@ function selectEvent(){
 		const selectBox = optionElement.closest(".custom-select");
 		const selectedElement = selectBox.querySelector(".selected-value");
 		selectedElement.textContent = optionElement.textContent;
+		selectedElement.style.color = "#2C2923";
 	}
 
 	selectBoxElements.forEach(selectBoxElement => {

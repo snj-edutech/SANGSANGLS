@@ -1,0 +1,115 @@
+#wrap{
+	.section-member-content{
+		h3{color:$color-black;}
+		.tab-box{
+			.tab-menu{margin-top:40px;}
+			.tab-view{padding-top:40px;}
+		}
+
+		.member-search-box{
+			padding:40px;
+			border:1px solid $color-light-brown;
+			.radio-box{
+				margin-bottom:40px;
+				padding-bottom:20px;
+				border-bottom:1px solid $color-light-brown;
+			}
+			.radio-select{
+				.table-row{
+					border:none;
+					tr{
+						border:none;
+						th,td{padding:0;padding:10px 0;text-align:left;}
+						th{text-align:left;background-color:transparent;padding-right:12px;}
+						&:first-child{
+							th,td{padding-top:0;}
+						}
+						&:last-child{
+							th,td{padding-bottom:0;}
+						}
+
+						td{
+							.custom-select{width:160px;margin-left:8px;}
+							.custom-select-box{
+								.custom-select{
+									width:120px;
+									margin-left:10px;
+									&:first-child{margin-left:0;}
+								}
+							}
+							.text{
+								width:280px;
+								&.email{width:200px;}
+							}
+							.space{padding:0 8px;}
+							.btn{margin-left:12px;}
+						}
+					}
+					
+				}
+
+				.search-result-box{
+					padding:40px;
+					margin-top:40px;
+					background-color:$color-light-brown2;
+					dl{
+						display:flex;align-items:center; justify-content:center;
+						dt{font-size:16px;font-weight:400;color:$color-black;}
+						dd{margin-left:20px;font-size:24px;font-weight:600;color:$color-brown;}
+					}
+
+					p{
+						display:flex;align-items:center; justify-content:center;
+						font-size:16px;font-weight:400;color:$color-black;
+						strong{font-weight:600;display:inline-block;margin-left:4px;}
+					}
+				}
+			}
+			
+		}
+	}
+
+	.section-login-content{
+		margin-top:120px;
+		.login-box{
+			width:376px;
+			margin:0 auto;
+			text-align:center;
+			.header-logo{margin-bottom:40px;}
+			.form-control{
+				.text{height:56px;}
+				&+.form-control{
+					.text{border-top:none;}
+				}
+			}
+
+			.radio-box{
+				margin-top:16px;
+				justify-content: space-between;
+				
+			}
+			.btn-idpw{display:inline-block;font-size:14px;font-weight:400;color:$color-black;}
+
+			.btn-login{margin-top:24px;display:flex;align-items:center;justify-content: center;color:$color-white;height:56px;background-color:$color-black;font-weight:600;font-size:14px;}
+
+			.info-box{
+				padding-top:24px;
+				margin-top:60px;
+				border-top:1px solid $color-light-brown;
+				dl{
+					margin-top:20px;text-align:left;
+					&:first-child{margin-top:0;}
+					dt,dd{font-size:13px;color:$color-black;line-height:22.1px;}
+					dt{font-weight:600;margin-bottom:4px;}
+					dd{font-weight:400;}
+				}
+			}
+
+			.action{
+				.btn{
+					border-color:$color-light-brown;background-color: $color-light-brown2;color:$color-black;
+				}
+			}
+		}
+	}
+}

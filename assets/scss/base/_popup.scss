@@ -935,4 +935,26 @@
 			th{font-weight:600;}
 		}
 	}
+
+	#popupLogin{
+
+		.popup-cont{
+			padding:88px 112px 88px;
+			text-align:center;
+			.header-logo{
+				margin-bottom:40px;
+				p{font-size:16px;font-weight:600;margin-top:8px;text-align:center;}
+			}
+
+			.form-control{
+				.text{height:56px;}
+				&+.form-control{
+					.text{border-top:none;}
+				}
+			}
+
+			.btn-idpw{margin-top:16px;display:inline-block;font-size:14px;font-weight:400;color:$color-black;}
+			.btn-login{margin-top:24px;display:flex;align-items:center;justify-content: center;color:$color-white;height:56px;background-color:$color-black;font-weight:600;font-size:14px;}
+		}
+	}
 }

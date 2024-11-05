@@ -759,7 +759,8 @@
 			@include vw(padding, 8px 16px 8px 16px);
 			@include vw(font-size,14px);
 			font-weight:400;
-			color: $color-black; 
+			//color: $color-black; 
+			color:$color-light-gray;
 			font-family:$font-pretendard;
 			@include boxSizing(border-box);
 			background-color:$color-white;

@@ -105,242 +105,236 @@
 				</div>
 			</div>
 		</header>
-		
-		<div id="contents">
-			<div class="section-professor-home">
-				<div class="wrap">
-					<div class="professor-desc">
-						<p class="desc-name">추리논증 김재형</p>
-						<p class="desc-subject">해설이 아닌 해결이 되는, RAINMAKER</p>
-					</div>
-					<div class="professor-img"><img src="../../../assets/images/professor/professor5_1200x360.png" alt="" /></div>
-				</div>
-				<div class="professor-profile">
-					<div class="profile-content">
-						<a href="javascript:popupOpen('#popupProfile');" class="btn-profile">프로필</a>
-						<div class="profile-video-title">교수님 소개영상</div>
-						<div class="profile-video" style="background-image: url('https://i.ytimg.com/vi/PHh_SI-F7Q0/maxresdefault.jpg');">
-							<a href="javascript:layerVideoOpen('https://www.youtube.com/embed/PHh_SI-F7Q0?amp;autoplay=1&amp;playlist=PHh_SI-F7Q0&amp;loop=1');" class="btn-play"><img src="../../../assets/images/btn_play.svg" alt="" /></a>
-						</div>
-						<div class="profile-video-title">교수님 추천영상</div>
-						<div class="profile-video" style="background-image: url('https://i.ytimg.com/vi/7fFEQVRx_Uk/maxresdefault.jpg');">
-							<a href="javascript:layerVideoOpen('https://www.youtube.com/embed/7fFEQVRx_Uk?amp;autoplay=1&amp;playlist=7fFEQVRx_Uk&amp;loop=1');"  class="btn-play"><img src="../../../assets/images/btn_play.svg" alt="" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="section-professor-content" id="sectionMenu">
+		<div id="contents">
+			<div class="section-member-content">
 				<div class="wrap">
+					<h3>통합 아이디/비밀번호 찾기</h3>
 					<div class="tab-box">
 						<div class="tab-menu">
 							<ul>
-								<li ><a href="#tabView1" class="page-move2">교수소개</a></li>
-								<li><a href="#tabView2" class="page-move2">개설강좌</a></li>
-								<li><a href="#tabView3" class="page-move2">공지사항</a></li>
-								<li class="active"><a href="#tabView4" class="page-move2">학습질문</a></li>
-								<li><a href="#tabView4" class="page-move2">수강후기</a></li>
+								<li class="active"><a href="javascript:;">아이디 찾기</a></li>
+								<li><a href="javascript:;">비말번호 찾기</a></li>
 							</ul>
 						</div>
 
 						<div class="tab-view active">
-							<div class="professor-content" id="tabView3">	
-								<h3>학습질문</h3>
-								<div class="notice-input-table">
-									<table class="table-row ">
+							<div class="member-search-box">
+								<div class="radio-box">
+									<div class="form-control">
+										<span class="fake-radio">
+											<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
+											<label for="radioType1">이메일</label>
+										</span>
+										<span class="fake-radio">
+											<input type="radio" id="radioType2" class="radio" name="radioSelect">
+											<label for="radioType2">휴대폰번호</label>
+										</span>
+										
+									</div>
+									<p class="form-text">* 회원정보에 등록한 정보를 입력해주세요.</p>
+								</div>
+
+								<div class="radio-select radio-select-1">
+									<table class="table-row">
 										<colgroup>
-											<col style="width:170px">
-											<col style="width:auto">
+											<col style="width:120px;" />
+											<col style="width:auto;" />
 										</colgroup>
 										<tr>
-											<th>구분</th>
-											<td>
-												<div class="radio-box">
-													<div class="form-control">
-														<span class="fake-radio">
-															<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
-															<label for="radioType1">인강</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType2" class="radio" name="radioSelect">
-															<label for="radioType2">교재</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType3" class="radio" name="radioSelect" >
-															<label for="radioType3">학원강좌</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType4" class="radio" name="radioSelect">
-															<label for="radioType4">기타</label>
-														</span>
-													</div>
-													<p class="form-text">* 강좌, 교재 문의는 수강중인 강좌에 대해서만 가능합니다.</p>
-												</div>
-											</td>
-										</tr>
-
-										<tr class="radio-select radio-select-1">
-											<th>강좌</th>
-											<td>
-												<div class="custom-select">
-													<div class="selected">
-													  <div class="selected-value">문의하실 수강중인 강좌를 선택하세요</div>
-													  <div class="arrow"></div>
-													</div>
-													<ul>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-										<tr class="radio-select radio-select-1">
-											<th>강의</th>
-											<td>
-												<div class="custom-select">
-													<div class="selected">
-													  <div class="selected-value">문의하실 수강중인 강의를 선택하세요</div>
-													  <div class="arrow"></div>
-													</div>
-													<ul>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-
-										<tr class="radio-select radio-select-2">
-											<th>교재</th>
+											<th>이름</th>
 											<td>
 												<div class="form-control">
-													<div class="select">
-														<select name="" id="">
-															<option value="">문의하실 구입한 교재를 선택하세요</option>
-														</select>
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr class="radio-select radio-select-2">
-											<th>강의</th>
-											<td>
-												<div class="form-control">
-													<div class="select">
-														<select name="" id="">
-															<option value="">문의하실 수강중인 강의를 선택하세요</option>
-														</select>
-													</div>
-												</div>
-											</td>
-										</tr>
-
-										<tr class="radio-select radio-select-3">
-											<th>강좌</th>
-											<td>
-												<div class="form-control">
-													<div class="select">
-														<select name="" id="">
-															<option value="">문의하실 수강중인 강좌를 선택하세요</option>
-														</select>
-													</div>
-												</div>
-											</td>
-										</tr>
-
-										<tr>
-											<th>제목</th>
-											<td>
-												<div class="form-control">
-													<input type="text" class="text" placeholder="문의 제목을 입력하세요." />
+													<input type="text" class="text" placeholder="이름을 입력하세요">
 												</div>
 											</td>
 										</tr>
 										<tr>
-											<th>답변 알림</th>
+											<th>생년월일</th>
+											<td>
+												<div class="custom-select-box">
+													<div class="custom-select">
+														<div class="selected">
+														<div class="selected-value">YYYY</div>
+														<div class="arrow"></div>
+														</div>
+														<ul>
+														<li class="option">전체1</li>
+														<li class="option">전체2</li>
+														<li class="option">전체3</li>
+														<li class="option">전체4</li>
+														</ul>
+													</div>
+													<div class="custom-select">
+														<div class="selected">
+														<div class="selected-value">MM</div>
+														<div class="arrow"></div>
+														</div>
+														<ul>
+														<li class="option">전체1</li>
+														<li class="option">전체2</li>
+														<li class="option">전체3</li>
+														<li class="option">전체4</li>
+														</ul>
+													</div>
+													<div class="custom-select">
+														<div class="selected">
+														<div class="selected-value">DD</div>
+														<div class="arrow"></div>
+														</div>
+														<ul>
+														<li class="option">전체1</li>
+														<li class="option">전체2</li>
+														<li class="option">전체3</li>
+														<li class="option">전체4</li>
+														</ul>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>정보수신 이메일</th>
 											<td>
 												<div class="input-box">
 													<div class="form-control">
-														<input type="text" class="text" placeholder="이메일을 입력하세요" />
+														<input type="text" class="text email" placeholder="이메일을 입력하세요" value="" />
 													</div>
-						
+													<div class="space">@</div>
 													<div class="form-control">
-														<div class="fake-checkbox">
-															<input type="checkbox" id="agreeCheck1" class="checkbox" checked>
-															<label for="agreeCheck1">받기</label>
-														</div>
+														<input type="text" class="text " placeholder="" value="" />
 													</div>
-						
+													<div class="custom-select">
+														<div class="selected">
+														<div class="selected-value">메일주소 선택</div>
+														<div class="arrow"></div>
+														</div>
+														<ul>
+														<li class="option">전체1</li>
+														<li class="option">전체2</li>
+														<li class="option">전체3</li>
+														<li class="option">전체4</li>
+														</ul>
+													</div>
+													<a href="javascript:;" class="btn">인증번호받기</a>
 												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>인증번호</th>
+											<td>
 												<div class="input-box">
 													<div class="form-control">
-														<input type="text" class="text" placeholder="휴대폰 번호를 ‘-’ 없이 입력하세요"  />
+														<input type="text" class="text " placeholder="인증번호를 입력하세요" vlaue="" />
 													</div>
-						
-													<div class="form-control">
-														<div class="fake-checkbox">
-															<input type="checkbox" id="agreeCheck2" class="checkbox" checked>
-															<label for="agreeCheck2">받기</label>
-														</div>
-													</div>
-						
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>공개여부</th>
-											<td>
-												<div class="form-control">
-													<div class="fake-checkbox">
-														<input type="checkbox" id="openCheck" class="checkbox" checked>
-														<label for="openCheck">공개</label>
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>내용</th>
-											<td>
-												<div class="editor-box">
-													에디터 영역
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>파일첨부</th>
-											<td>
-												<div class="file-box">
-													<div class="form-control">
-														<div class="fake-file-box">
-															<input type="text" class="text fake-file-name" readonly>
-															<div class="fake-file">
-																<input type="file" id="fileUpload" name="file">
-																<label for="fileUpload">찾아보기</label>
-															</div>
-														</div>
-													</div>
-													<div class="form-text"> * 파일크기는 10M를 초과하여서는 안됩니다.</div>
+													<a href="javascript:;" class="btn">확인</a>
 												</div>
 											</td>
 										</tr>
 									</table>
+
+									<div class="search-result-box">
+										<dl>
+											<dt>ID</dt>
+											<dd>sangsang</dd>
+										</dl>
+									</div>
 								</div>
-		
-								<div class="action">
-									<a href="javascript:;" class="btn large btn-gray">취소</a>
-									<a href="javascript:;" class="btn large btn-brown">등록</a>
+
+								<div class="radio-select radio-select-2">
+									<table class="table-row">
+										<colgroup>
+											<col style="width:120px;" />
+											<col style="width:auto;" />
+										</colgroup>
+										<tr>
+											<th>이름</th>
+											<td>
+												<div class="form-control">
+													<input type="text" class="text" placeholder="이름을 입력하세요">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>생년월일</th>
+											<td>
+												<div class="custom-select-box">
+													<div class="custom-select">
+														<div class="selected">
+														<div class="selected-value">YYYY</div>
+														<div class="arrow"></div>
+														</div>
+														<ul>
+														<li class="option">전체1</li>
+														<li class="option">전체2</li>
+														<li class="option">전체3</li>
+														<li class="option">전체4</li>
+														</ul>
+													</div>
+													<div class="custom-select">
+														<div class="selected">
+														<div class="selected-value">MM</div>
+														<div class="arrow"></div>
+														</div>
+														<ul>
+														<li class="option">전체1</li>
+														<li class="option">전체2</li>
+														<li class="option">전체3</li>
+														<li class="option">전체4</li>
+														</ul>
+													</div>
+													<div class="custom-select">
+														<div class="selected">
+														<div class="selected-value">DD</div>
+														<div class="arrow"></div>
+														</div>
+														<ul>
+														<li class="option">전체1</li>
+														<li class="option">전체2</li>
+														<li class="option">전체3</li>
+														<li class="option">전체4</li>
+														</ul>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th>휴대전화</th>
+											<td>
+												<div class="input-box">
+													<div class="form-control">
+														<input type="text" class="text " placeholder="휴대폰번호를 입력하세요" vlaue="" />
+													</div>
+													<a href="javascript:;" class="btn">인증번호발송</a>
+												</div>
+											</td> 
+										</tr>
+										<tr>
+											<th>인증번호</th>
+											<td>
+												<div class="timer-box">
+													<div class="form-control">
+														<input type="text" class="text " placeholder="인증번호를 입력하세요" vlaue="" />
+														<span class="timer">03:00</span>
+													</div>
+													<a href="javascript:;" class="btn">확인</a>
+												</div>
+											</td> 
+										</tr>
+									</table>
+
+									<div class="search-result-box">
+										<dl>
+											<dt>ID</dt>
+											<dd>sangsang</dd>
+										</dl>
+									</div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<footer id="footer">
@@ -842,48 +836,85 @@
 		</div>
 	</div>
 
-
-	<div class="popup" id="popupProfile">
+	<div class="popup" id="popupReservation">
 		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupProfile');"  class="popup-close">팝업닫기</a>
+			<a href="javascript:popupClose('#popupReservation');"  class="popup-close">팝업닫기</a>
 			<div class="popup-title">
-				김재형 교수님 프로필
+				나의 예약 확인
 			</div>
 			<div class="popup-cont popup-scroll">
-				<div class="heading highlight border-line">약력</div>
-				<div class="box">
-					<p>
-						연세대학교 교육학과 졸업
-						<br/>
-						現 상상로스쿨 추리논증 전임교수<br/>
-						現 합격의법학원 PSAT 상황판단 전임교수<br/>
-						前 메가로스쿨 추리논증 전임교수<br/>
-						前 스카이로스쿨 추리논증 전임교수<br/>
-						前 합격의법학원 PSAT 언어논리 전임교수<br/>
-						前 일등로스쿨 추리논증 전임교수
-					</p>
-				</div>
-				<div class="heading highlight border-line">저서</div>
-				<div class="box">
-					<p>
-						shot the 추리논증
-					</p>
-				</div>
+
+				<table class="table-row">
+					<colgroup>
+						<col style="width:68px;" />
+						<col style="width:104px;" />
+						<col style="width:auto;" />
+					</colgroup>
+					<tr>
+						<th colspan="2">이름</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th colspan="2">연락처</th>
+						<td>01012345678</td>
+					</tr>
+					<tr>
+						<th rowspan="6">학사<br/>정보</th>
+						<th class="border-left-line">학사정보</th>
+						<td>졸업</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">학년</th>
+						<td>4학년</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">졸업년도</th>
+						<td>9999</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">학점</th>
+						<td>4.5</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">전공계열</th>
+						<td>전공계열</td>
+					</tr>
+					<tr>
+						<th class="border-left-line">전공명</th>
+						<td>전공명</td>
+					</tr>
+
+					<tr>
+						<th colspan="2">법학 학습 경력</th>
+						<td>YES</td>
+					</tr>
+					<tr>
+						<th colspan="2">LEET 응시 경험</th>
+						<td>초시</td>
+					</tr>
+					<tr>
+						<th colspan="2">상담희망일자</th>
+						<td>0000-00-00 00:00</td>
+					</tr>
+					<tr>
+						<th colspan="2">입반 테스트</th>
+						<td>응시</td>
+					</tr>
+					<tr>
+						<th colspan="2">상담 희망 내용</th>
+						<td>에디터 영역</td>
+					</tr>
+				</table>
+
 			</div>
 		</div>
 	</div>
-
-
-
 </div>
 
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
-		tabMenuEvent('.section-professor-content');
-
-		$(window).on("scroll", scrollMenuEvent);
-		scrollMenuEvent();
+		tabMenuEvent('.section-member-content');
 
 		radioCheckEvent();
 	});
@@ -899,11 +930,7 @@
 				$('.radio-select-1').show();
 			} else if ($('#radioType2').is(':checked')) {
 				$('.radio-select-2').show();
-			} else if ($('#radioType3').is(':checked')) {
-				$('.radio-select-3').show();
-			} else if ($('#radioType4').is(':checked')) {
-				$('.radio-select-4').show();
-			}
+			} 
 		});
 	}
 </script>

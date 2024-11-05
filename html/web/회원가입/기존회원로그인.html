@@ -27,320 +27,48 @@
 
 <div id="wrap">
 	<div id="container">
-		<div class="header-top-banner active" id="headerTopBanner" >
-			<div class="wrap">
-				<a href="javascript:;">[이벤트] 합격이 예상되는 로스쿨을 각오와 함께 등록해보세요!</a>
-			</div>
-			<a href="javascript:headerTopBannerClose();" class="banner-close"><span class="sr-only">닫기</span></a>
-		</div>
-
-		<header id="header">
-			<div class="header-util">
-				<div class="wrap">
-					<div class="logout">
-						<a href="javascript:;">통합 로그인</a>
-						<a href="javascript:;">통합회원 가입</a>
-					</div>
-					<div class="login">
-						<a href="javascript:;" data-header-layer="toggle">홍길동님<span class="icon-new">N</span><span class="icon-arrow"><img src="../../../assets/images/btn_arrow_down.svg" alt="로그인 레이어 오픈" /></span></a>
-						<div class="header-layer">
-                            <ul class="util-list">
-								<li><a href="javascript:;">받은쪽지<span>14</span>개</a></li>
-								<li><a href="javascript:;">장바구니<span>0</span>개</a></li>
-								<li><a href="javascript:;">개인정보수정</a></li>
-								<li><a href="javascript:;">로그아웃</a></li>
-                            </ul>
-                        </div>
-					</div>
-					<a href="javascript:;">고객센터</a>
-					<a href="javascript:headerSearchOpen();" class="btn-header-search"><img src="../../../assets/images/btn_search.svg" alt="검색" /></a>
-				</div>
-			</div>
-			<div class="header-gnb">
-				<div class="wrap">
-					<h1 class="header-logo">
-						<a href="javascript:;"><img src="../../../assets/images/logo.svg" alt="상상로스쿨" /></a>
-					</h1>
-					<div class="header-menu">
-						<ul class="gnb-list">
-							<li>
-								<a href="javascript:;"><span>교수소개</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>LEET 인강</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>수험정보</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>온라인 서점</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>모의고사</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>마이페이지</span></a>
-							</li>
-						</ul>
-						<a href="javascript:;" class="btn-sscampus"><span  class="icon-sscampus"><img src="../../../assets/images/logo_sscampus.svg" alt="상상캠퍼스" /></span>상상캠퍼스</a>
-					</div>
-				</div>
-			</div>
-			<div class="header-search">
-				<div class="wrap">
-					<a href="javascript:headerSearchClose();" class="header-search-close"><span class="sr-only">닫기</span></a>
-					<div class="search-box">
-						<div class="search-text">
-							<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
-							<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
-							<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
-							
-						</div> 
-						<div class="action">
-							<a href="javascript:;" class="btn">전체 강좌</a>
-							<a href="javascript:;" class="btn">전체 교재</a>
-						</div>
-					</div>
-	
-				</div>
-			</div>
-		</header>
-		
 		<div id="contents">
-			<div class="section-professor-home">
+			<div class="section-login-content">
 				<div class="wrap">
-					<div class="professor-desc">
-						<p class="desc-name">추리논증 김재형</p>
-						<p class="desc-subject">해설이 아닌 해결이 되는, RAINMAKER</p>
-					</div>
-					<div class="professor-img"><img src="../../../assets/images/professor/professor5_1200x360.png" alt="" /></div>
-				</div>
-				<div class="professor-profile">
-					<div class="profile-content">
-						<a href="javascript:popupOpen('#popupProfile');" class="btn-profile">프로필</a>
-						<div class="profile-video-title">교수님 소개영상</div>
-						<div class="profile-video" style="background-image: url('https://i.ytimg.com/vi/PHh_SI-F7Q0/maxresdefault.jpg');">
-							<a href="javascript:layerVideoOpen('https://www.youtube.com/embed/PHh_SI-F7Q0?amp;autoplay=1&amp;playlist=PHh_SI-F7Q0&amp;loop=1');" class="btn-play"><img src="../../../assets/images/btn_play.svg" alt="" /></a>
+					<div class="login-box">
+						<h1 class="header-logo">
+							<a href="javascript:;"><img src="../../../assets/images/logo.svg" alt="상상로스쿨"></a>
+						</h1>
+						<div class="form-control">
+							<input type="text" class="text" placeholder="이메일 ID" />
 						</div>
-						<div class="profile-video-title">교수님 추천영상</div>
-						<div class="profile-video" style="background-image: url('https://i.ytimg.com/vi/7fFEQVRx_Uk/maxresdefault.jpg');">
-							<a href="javascript:layerVideoOpen('https://www.youtube.com/embed/7fFEQVRx_Uk?amp;autoplay=1&amp;playlist=7fFEQVRx_Uk&amp;loop=1');"  class="btn-play"><img src="../../../assets/images/btn_play.svg" alt="" /></a>
+						<div class="form-control">
+							<input type="text" class="text" placeholder="비밀번호" />
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="section-professor-content" id="sectionMenu">
-				<div class="wrap">
-					<div class="tab-box">
-						<div class="tab-menu">
-							<ul>
-								<li ><a href="#tabView1" class="page-move2">교수소개</a></li>
-								<li><a href="#tabView2" class="page-move2">개설강좌</a></li>
-								<li><a href="#tabView3" class="page-move2">공지사항</a></li>
-								<li class="active"><a href="#tabView4" class="page-move2">학습질문</a></li>
-								<li><a href="#tabView4" class="page-move2">수강후기</a></li>
-							</ul>
-						</div>
-
-						<div class="tab-view active">
-							<div class="professor-content" id="tabView3">	
-								<h3>학습질문</h3>
-								<div class="notice-input-table">
-									<table class="table-row ">
-										<colgroup>
-											<col style="width:170px">
-											<col style="width:auto">
-										</colgroup>
-										<tr>
-											<th>구분</th>
-											<td>
-												<div class="radio-box">
-													<div class="form-control">
-														<span class="fake-radio">
-															<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
-															<label for="radioType1">인강</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType2" class="radio" name="radioSelect">
-															<label for="radioType2">교재</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType3" class="radio" name="radioSelect" >
-															<label for="radioType3">학원강좌</label>
-														</span>
-														<span class="fake-radio">
-															<input type="radio" id="radioType4" class="radio" name="radioSelect">
-															<label for="radioType4">기타</label>
-														</span>
-													</div>
-													<p class="form-text">* 강좌, 교재 문의는 수강중인 강좌에 대해서만 가능합니다.</p>
-												</div>
-											</td>
-										</tr>
-
-										<tr class="radio-select radio-select-1">
-											<th>강좌</th>
-											<td>
-												<div class="custom-select">
-													<div class="selected">
-													  <div class="selected-value">문의하실 수강중인 강좌를 선택하세요</div>
-													  <div class="arrow"></div>
-													</div>
-													<ul>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-										<tr class="radio-select radio-select-1">
-											<th>강의</th>
-											<td>
-												<div class="custom-select">
-													<div class="selected">
-													  <div class="selected-value">문의하실 수강중인 강의를 선택하세요</div>
-													  <div class="arrow"></div>
-													</div>
-													<ul>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-
-										<tr class="radio-select radio-select-2">
-											<th>교재</th>
-											<td>
-												<div class="form-control">
-													<div class="select">
-														<select name="" id="">
-															<option value="">문의하실 구입한 교재를 선택하세요</option>
-														</select>
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr class="radio-select radio-select-2">
-											<th>강의</th>
-											<td>
-												<div class="form-control">
-													<div class="select">
-														<select name="" id="">
-															<option value="">문의하실 수강중인 강의를 선택하세요</option>
-														</select>
-													</div>
-												</div>
-											</td>
-										</tr>
-
-										<tr class="radio-select radio-select-3">
-											<th>강좌</th>
-											<td>
-												<div class="form-control">
-													<div class="select">
-														<select name="" id="">
-															<option value="">문의하실 수강중인 강좌를 선택하세요</option>
-														</select>
-													</div>
-												</div>
-											</td>
-										</tr>
-
-										<tr>
-											<th>제목</th>
-											<td>
-												<div class="form-control">
-													<input type="text" class="text" placeholder="문의 제목을 입력하세요." />
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>답변 알림</th>
-											<td>
-												<div class="input-box">
-													<div class="form-control">
-														<input type="text" class="text" placeholder="이메일을 입력하세요" />
-													</div>
-						
-													<div class="form-control">
-														<div class="fake-checkbox">
-															<input type="checkbox" id="agreeCheck1" class="checkbox" checked>
-															<label for="agreeCheck1">받기</label>
-														</div>
-													</div>
-						
-												</div>
-												<div class="input-box">
-													<div class="form-control">
-														<input type="text" class="text" placeholder="휴대폰 번호를 ‘-’ 없이 입력하세요"  />
-													</div>
-						
-													<div class="form-control">
-														<div class="fake-checkbox">
-															<input type="checkbox" id="agreeCheck2" class="checkbox" checked>
-															<label for="agreeCheck2">받기</label>
-														</div>
-													</div>
-						
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>공개여부</th>
-											<td>
-												<div class="form-control">
-													<div class="fake-checkbox">
-														<input type="checkbox" id="openCheck" class="checkbox" checked>
-														<label for="openCheck">공개</label>
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>내용</th>
-											<td>
-												<div class="editor-box">
-													에디터 영역
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th>파일첨부</th>
-											<td>
-												<div class="file-box">
-													<div class="form-control">
-														<div class="fake-file-box">
-															<input type="text" class="text fake-file-name" readonly>
-															<div class="fake-file">
-																<input type="file" id="fileUpload" name="file">
-																<label for="fileUpload">찾아보기</label>
-															</div>
-														</div>
-													</div>
-													<div class="form-text"> * 파일크기는 10M를 초과하여서는 안됩니다.</div>
-												</div>
-											</td>
-										</tr>
-									</table>
-								</div>
-		
-								<div class="action">
-									<a href="javascript:;" class="btn large btn-gray">취소</a>
-									<a href="javascript:;" class="btn large btn-brown">등록</a>
-								</div>
-								
+						<div class="radio-box">
+							<div class="form-control">
+								<span class="fake-radio">
+									<input type="radio" id="radioType1" class="radio" name="radioSelect">
+									<label for="radioType1">아이디 저장하기</label>
+								</span>
 							</div>
+							<a href="javascript:;" class="btn-idpw">아이디/비밀번호 찾기</a>
+						</div>
+						<a href="javascript:;" class="btn-login">통합 로그인</a>
+
+						<div class="info-box">
+							<dl>
+								<dt>통합회원 이란?</dt>
+								<dd>㈜이매진피앤엠이 운영하는 홈페이지에서 제공하는 유/무료 교육 서비스를 하나의 아이디로 편리하게 이용할 수 있는 제도입니다.</dd>
+							</dl>
+							<dl>
+								<dt>기존 회원 이신가요?</dt>
+								<dd>기존 회원은 통합 전환 후 이메일 ID로 로그인 가능합니다.<br/>
+									통합 전환 후 보유한 포인트, 쿠폰 등은 그대로 사용 가능합니다.</dd>
+							</dl>
+						</div>
+						<div class="action flex-between">
+							<a href="javascript:;" class="btn large">통합회원 전환하기</a>
+							<a href="javascript:;" class="btn large">통합회원 가입하기</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<footer id="footer">
@@ -842,70 +570,37 @@
 		</div>
 	</div>
 
-
-	<div class="popup" id="popupProfile">
+	<div class="popup" id="popupLogin">
 		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupProfile');"  class="popup-close">팝업닫기</a>
-			<div class="popup-title">
-				김재형 교수님 프로필
-			</div>
-			<div class="popup-cont popup-scroll">
-				<div class="heading highlight border-line">약력</div>
-				<div class="box">
-					<p>
-						연세대학교 교육학과 졸업
-						<br/>
-						現 상상로스쿨 추리논증 전임교수<br/>
-						現 합격의법학원 PSAT 상황판단 전임교수<br/>
-						前 메가로스쿨 추리논증 전임교수<br/>
-						前 스카이로스쿨 추리논증 전임교수<br/>
-						前 합격의법학원 PSAT 언어논리 전임교수<br/>
-						前 일등로스쿨 추리논증 전임교수
-					</p>
+			<a href="javascript:popupClose('#popupLogin');" class="popup-close">팝업닫기</a>
+			<div class="popup-cont">
+				<h1 class="header-logo">
+					<a href="javascript:;"><img src="../../../assets/images/logo.svg" alt="상상로스쿨"></a>
+					<p>기존회원 로그인</p>
+				</h1>
+				
+				<div class="form-control">
+					<input type="text" class="text" placeholder="이메일 ID" />
 				</div>
-				<div class="heading highlight border-line">저서</div>
-				<div class="box">
-					<p>
-						shot the 추리논증
-					</p>
+				<div class="form-control">
+					<input type="text" class="text" placeholder="비밀번호" />
 				</div>
+
+				<div class="flex flex-end">
+					<a href="javascript:;" class="btn-idpw">아이디/비밀번호 찾기</a>
+				</div>
+				<a href="javascript:;" class="btn-login">로그인</a>
 			</div>
 		</div>
 	</div>
-
-
 
 </div>
 
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
-		tabMenuEvent('.section-professor-content');
-
-		$(window).on("scroll", scrollMenuEvent);
-		scrollMenuEvent();
-
-		radioCheckEvent();
+		popupOpen('#popupLogin');
 	});
-
-	function radioCheckEvent(){
-		$('.radio-select').hide();
-		$('.radio-select-1').show();
-
-		$('input[name="radioSelect"]').on('change', function() {
-			$('.radio-select').hide();
-
-			if ($('#radioType1').is(':checked')) {
-				$('.radio-select-1').show();
-			} else if ($('#radioType2').is(':checked')) {
-				$('.radio-select-2').show();
-			} else if ($('#radioType3').is(':checked')) {
-				$('.radio-select-3').show();
-			} else if ($('#radioType4').is(':checked')) {
-				$('.radio-select-4').show();
-			}
-		});
-	}
 </script>
 </body>
 </html>
