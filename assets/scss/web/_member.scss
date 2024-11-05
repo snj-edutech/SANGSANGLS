@@ -112,4 +112,204 @@
 			}
 		}
 	}
+
+	.section-join-title{	
+		margin-bottom:60px;
+		.join-title{font-size:40px;font-weight:600;text-align:center;}
+		.join-step-list{
+			margin-top:40px;
+			ul{
+				display:flex;
+				justify-content: center;
+				li{
+					position:relative;
+					&:after{
+						content:'';
+						width:80px;
+						height:1px;
+						background-color:$color-gray;
+						position:absolute;right:100px;top:12px;
+
+					}
+					width:100px;
+					padding-left:80px;
+					&:first-child{
+						padding-left:0;
+						&:after{
+							display:none;
+						}
+					}
+					.num{display:flex;justify-content:center;align-items:center;width:24px;height:24px;border-radius:50%;background-color:$color-black;color:$color-white;margin:0 auto;font-size:13px;font-weight:400;}
+					p{font-size:14px;line-height:23.8px;color:$color-black;font-weight:600;margin-top:12px;text-align:center;}
+					&.active{
+						.num{background-color:$color-brown;}
+						p{color:$color-brown;}
+					}
+				}
+			}
+		}
+	}
+
+	.section-join-content{
+		h3{
+			color:$color-black;
+			.form-text{margin-left:20px;}
+		}
+		.holder + .holder{margin-top:80px;}
+
+		.agree-check-box{
+			& + .agree-check-box{margin-top:60px;}
+
+			.agree-box{
+				height:215px;
+				margin-bottom:20px;
+				p{
+					color:$color-black;
+					@include vw(font-size,14px);
+					@include vw(line-height,23.8px);
+					text-align:left;
+					font-weight:400;
+					font-family: $font-pretendard;
+					strong{font-weight:600;}
+				}
+				.box{
+					@include vw(margin-bottom,60px);
+					&:last-child{margin-bottom:0;}
+
+					.table-row{
+						margin-top:20px;
+						th,td{
+							padding: 8px 12px;
+							@include vw(font-size,13px);
+							@include vw(line-height,22.1px);
+						}
+						&+p{
+							@include vw(margin-top, 20px);
+						}
+					}
+
+					.upload-img{
+						margin-top:20px;
+						margin-bottom:20px;
+						img{
+							width:100%;
+						}
+					}
+				}
+				.heading{@include vw(margin-bottom,20px);	@include vw(font-size,16px);font-weight:600;line-height:1;}
+				.border-line{
+					@include vw(padding-bottom,20px);
+					@include vw(margin-bottom,40px);
+					border-bottom:1px solid $color-light-brown;
+				}
+
+				.notice{
+					color:$color-gray;font-size:14px;font-weight:400;margin-top:8px;
+				}
+			}
+
+			&+.action{margin-top:60px;}
+		}
+
+		.notice-input-table{
+			.color-point{margin-top:10px;}
+
+			.checkbox-box{
+				flex-wrap:wrap;
+				.form-control{width:25%;}
+			}
+
+			.form-control .textarea{height:160px;}
+			.custom-select-box{
+				.custom-select{width:120px;}
+			}
+
+			.custom-select{
+				width:280px;
+				&.wide{width:480px;}
+			}
+			.form-control{
+				.text{
+					width:280px;
+					&.wide{width:100%;}
+				}
+
+				.fake-file-box{
+					width:320px;
+					.text{width:100%;}
+				}
+
+			}
+			
+
+			td{
+				&.score{
+					.text{width:55px;}
+					.input-box{
+						margin-left:36px;
+						&:first-child{margin-left:0;}
+						& + .input-box{margin-top:0;}
+					}
+				}
+				&.average{
+					.text{width:55px;}
+					.space{
+						padding:0 10px;
+						&.first{padding-right:0;}
+					}
+				}
+				&.address{
+					.input-box{
+						.form-control{margin-top:0;}
+					}
+					.form-control{margin-top:10px;}
+				}
+
+				&.university{
+					.form-control + .form-control{	margin-top:10px;}
+
+					.custom-select-box{
+						margin-top:10px;
+					}
+
+					.input-box{
+						margin-top:10px;
+						.custom-select{width:160px;margin-right:10px;}
+					}
+				}
+
+				&.point{
+					.text{
+						width:160px;
+						margin-right:5px;
+					}
+				}
+
+				&.total{font-size:24px;}
+
+				&.delivery{
+					.form-text{margin-left:20px;}
+				}
+
+				.btn-map{margin-left:-24px;}
+			}
+		}
+
+		.join-result-box{
+			height:480px;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			background-color:$color-light-beige;
+			p{
+				strong{display:block;font-size:24px;font-weight:600;margin-bottom:4px;line-height:40.8px;}
+				font-weight:400;font-size:16px;line-height:27.2px;
+			}
+			.action{
+				margin-top:40px;
+			}
+
+		}
+
+	}
 }

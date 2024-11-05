@@ -759,8 +759,8 @@
 			@include vw(padding, 8px 16px 8px 16px);
 			@include vw(font-size,14px);
 			font-weight:400;
-			//color: $color-black; 
-			color:$color-light-gray;
+			color: $color-black; 
+			//color:$color-light-gray;
 			font-family:$font-pretendard;
 			@include boxSizing(border-box);
 			background-color:$color-white;
@@ -964,20 +964,20 @@
 		}
 
 		 .fake-checkbox +  .fake-checkbox{margin-top:12px;}
+	}
 
-		.agree-box{
-			height:120px;
-			overflow-y:auto;
-			@extend %scrollBar;
-			padding:20px;
-			@include boxSizing(border-box);
-			color:$color-black;
-			font-size:14px;
-			font-weight:400;
-			line-height:23.8px;
-			margin-bottom:10px;
-			border:1px solid $color-light-brown;
-		}
+	.agree-box{
+		height:120px;
+		overflow-y:auto;
+		@extend %scrollBar;
+		padding:20px;
+		@include boxSizing(border-box);
+		color:$color-black;
+		font-size:14px;
+		font-weight:400;
+		line-height:23.8px;
+		margin-bottom:10px;
+		border:1px solid $color-light-brown;
 	}
 
 	.editor-box{
