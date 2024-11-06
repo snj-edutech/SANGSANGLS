@@ -155,6 +155,17 @@
 			color:$color-black;
 			.form-text{margin-left:20px;}
 		}
+
+		.notice-text{
+			&+ .holder{
+				margin-top:20px;
+			}
+		}
+
+		h5{color:$color-black;}
+
+		.notice-list{margin-bottom:20px;}
+
 		.holder + .holder{margin-top:80px;}
 
 		.agree-check-box{
@@ -206,7 +217,29 @@
 				.notice{
 					color:$color-gray;font-size:14px;font-weight:400;margin-top:8px;
 				}
+
+				&.type-list{
+					height:auto;
+
+					dl{
+						display:flex;
+						margin-top:8px;
+						&:first-child{margin-top:0;}
+						dt, dd{
+							color:$color-black;
+							@include vw(font-size,14px);
+							@include vw(line-height,23.8px);
+							text-align:left;
+							font-weight:400;
+						}
+						dt{width:94px;margin-right:20px;}
+						dd{}
+					}
+					
+				}
+	
 			}
+
 
 			&+.action{margin-top:60px;}
 		}
@@ -302,6 +335,7 @@
 			align-items: center;
 			background-color:$color-light-beige;
 			p{
+				text-align:center;
 				strong{display:block;font-size:24px;font-weight:600;margin-bottom:4px;line-height:40.8px;}
 				font-weight:400;font-size:16px;line-height:27.2px;
 			}

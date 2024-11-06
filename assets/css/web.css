@@ -8015,6 +8015,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-join-content h3 .form-text {
   margin-left: 20px;
 }
+#wrap .section-join-content .notice-text + .holder {
+  margin-top: 20px;
+}
+#wrap .section-join-content h5 {
+  color: #2C2923;
+}
+#wrap .section-join-content .notice-list {
+  margin-bottom: 20px;
+}
 #wrap .section-join-content .holder + .holder {
   margin-top: 80px;
 }
@@ -8127,6 +8136,37 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
   margin-top: 8px;
 }
+#wrap .section-join-content .agree-check-box .agree-box.type-list {
+  height: auto;
+}
+#wrap .section-join-content .agree-check-box .agree-box.type-list dl {
+  display: flex;
+  margin-top: 8px;
+}
+#wrap .section-join-content .agree-check-box .agree-box.type-list dl:first-child {
+  margin-top: 0;
+}
+#wrap .section-join-content .agree-check-box .agree-box.type-list dl dt, #wrap .section-join-content .agree-check-box .agree-box.type-list dl dd {
+  color: #2C2923;
+  font-size: 1.9444444444vw;
+  line-height: 3.3055555556vw;
+  text-align: left;
+  font-weight: 400;
+}
+@media screen and (min-width: 720px) {
+  #wrap .section-join-content .agree-check-box .agree-box.type-list dl dt, #wrap .section-join-content .agree-check-box .agree-box.type-list dl dd {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .section-join-content .agree-check-box .agree-box.type-list dl dt, #wrap .section-join-content .agree-check-box .agree-box.type-list dl dd {
+    line-height: 23.8px;
+  }
+}
+#wrap .section-join-content .agree-check-box .agree-box.type-list dl dt {
+  width: 94px;
+  margin-right: 20px;
+}
 #wrap .section-join-content .agree-check-box + .action {
   margin-top: 60px;
 }
@@ -8224,6 +8264,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #FBFAF6;
 }
 #wrap .section-join-content .join-result-box p {
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 27.2px;

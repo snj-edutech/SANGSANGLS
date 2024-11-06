@@ -109,21 +109,25 @@
 		<div id="contents">
 			<div class="section-join-title">
 				<div class="wrap">
-					<div class="join-title">통합회원 가입</div>
+					<div class="join-title">통합회원 전환</div>
 					<div class="join-step-list">
 						<ul>
 							<li>
 								<span class="num">1</span>
 								<p>
-									회원 약관 동의 및<br/>실명확인
+									통합회원<br/>약관 동의
 								</p>
 							</li>
-							<li  class="active">
+							<li>
 								<span class="num">2</span>
-								<p>회원 정보 입력</p>
+								<p>전환대상 확인</p>
+							</li>
+							<li  class="active">
+								<span class="num">3</span>
+								<p>통합계정<br/>정보 등록</p>
 							</li>
 							<li>
-								<span class="num">3</span>
+								<span class="num">4</span>
 								<p>가입 완료</p>
 							</li>
 						</ul>
@@ -133,14 +137,28 @@
 
 			<div class="section-join-content">
 				<div class="wrap">
+					<h3>통합계정 정보 입력</h3>
+					<div class="notice-text">
+						현재 로그인 되어 있는 기본 회원 정보가 자동으로 입력되며 통합계정 이메일 ID를 설정해주세요.<br/>
+						통합회원으로 전환 후 이메일 ID를 통해 로그인이 가능합니다.<br/>
+						<span class="color-point">* 통합계정 이메일 ID 입력 후 변경 불가</span>
+					</div>
+
 					<div class="holder">
-						<h3>기본 정보 입력</h3>
 						<div class="notice-input-table">
 							<table class="table-row ">
 								<colgroup>
 									<col style="width:170px" />
 									<col style="width:auto" />
 								</colgroup>
+								<tr>
+									<th>기존 아이디</th>
+									<td>
+										<div class="form-control">
+											<input type="text" class="text disabled " disabled placeholder="" value="sangsang" />
+										</div>
+									</td>
+								</tr>
 								<tr>
 									<th>이메일 ID</th>
 									<td>
@@ -159,7 +177,6 @@
 										<div class="form-control">
 											<input type="text" class="text " placeholder="" />
 										</div>
-										<p class="form-text color-point">비밀번호는 최소 8자리 최대 16자리, 문자/숫자/특수문자를 혼용해야 합니다.</p>
 									</td> 
 								</tr>
 
@@ -176,7 +193,7 @@
 									<td>
 										<div class="input-box">
 											<div class="form-control">
-												<input type="text" class="text " placeholder="이름을 입력하세요." value="">
+												<input type="text" class="text disabled" disabled placeholder="이름을 입력하세요." value="홍길동" />
 											</div>
 											<div class="form-control">
 												<span class="fake-radio">
@@ -269,306 +286,30 @@
 										</div>
 									</td> 
 								</tr>
-
-								<tr>
-									<th>주소</th>
-									<td class="address">
-										<div class="form-control flex">
-											<input type="text" class="text " placeholder="우편번호" value="" />
-											<a href="javascript:;" class="btn">주소검색</a>
-										</div>
-										<div class="form-control">
-											<input type="text" class="text wide" placeholder="" value="" />
-										</div>
-										<div class="form-control">
-											<input type="text" class="text wide" placeholder="상세주소를 입력하세요" value="" />
-										</div>
-									</td> 
-								</tr>
-
-								<tr>
-									<th>학사정보</th>
-									<td class="university">
-										<div class="form-control">
-											<span class="fake-radio">
-												<input type="radio" id="domestic" class="radio" name="country" checked="">
-												<label for="domestic">국내</label>
-											</span>
-											<span class="fake-radio">
-												<input type="radio" id="overseas" class="radio" name="country">
-												<label for="overseas">해외</label>
-											</span>
-										</div>
-										<div class="form-control">
-											<input type="text" class="text wide" placeholder="학교명을 입력하세요." value="" />
-										</div>
-
-										<div class="custom-select-box">
-											<div class="custom-select">
-												<div class="selected">
-												  <div class="selected-value">졸업여부</div>
-												  <div class="arrow"></div>
-												</div>
-												<ul>
-												  <li class="option">졸업여부1</li>
-												  <li class="option">졸업여부2</li>
-												  <li class="option">졸업여부3</li>
-												  <li class="option">졸업여부4</li>
-												</ul>
-											</div>
-											<div class="custom-select">
-												<div class="selected">
-												  <div class="selected-value">학년선택</div>
-												  <div class="arrow"></div>
-												</div>
-												<ul>
-												  <li class="option">학년선택1</li>
-												  <li class="option">학년선택2</li>
-												  <li class="option">학년선택3</li>
-												  <li class="option">학년선택4</li>
-												</ul>
-											</div>
-											<div class="custom-select">
-												<div class="selected">
-												  <div class="selected-value">YYYY</div>
-												  <div class="arrow"></div>
-												</div>
-												<ul>
-												  <li class="option">졸업년도1</li>
-												  <li class="option">졸업년도2</li>
-												  <li class="option">졸업년도3</li>
-												  <li class="option">졸업년도4</li>
-												</ul>
-											</div>
-											
-										</div>
-
-										<div class="input-box">
-											<div class="custom-select">
-												<div class="selected">
-												  <div class="selected-value">전공계열선택</div>
-												  <div class="arrow"></div>
-												</div>
-												<ul>
-												  <li class="option">전공계열선택1</li>
-												  <li class="option">전공계열선택2</li>
-												  <li class="option">전공계열선택3</li>
-												  <li class="option">전공계열선택4</li>
-												</ul>
-											</div>
-											<div class="form-control">
-												<input type="text" class="text" placeholder="전공명을 입력하세요" />
-											</div>
-										</div>
-									</td> 
-								</tr>
 							</table>
 						</div>
 					</div>
 
-					<div class="holder">
-						<h3>
-							선택 입력 항목
-							<span class="form-text">* 선택 정보를 모두 입력하시면 1,000p 적립해드립니다.</span>
-						</h3>
-						<div class="notice-input-table">
-							<table class="table-row ">
-								<colgroup>
-									<col style="width:170px" />
-									<col style="width:auto" />
-								</colgroup>
-								<tr>
-									<th>학부평점</th>
-									<td class="average">
-										<div class="input-box">
-											<div class="form-control">
-												<input type="text" class="text " placeholder="" value=""/>
-											</div>
-											<div class="space first">/100</div>
-											<div class="space">(</div>
-											<div class="form-control">
-												<input type="text" class="text " placeholder="" value=""/>
-											</div>
-											<div class="space">/</div>
-											<div class="form-control">
-												<input type="text" class="text " placeholder="" value=""/>
-											</div>
-											<div class="space">)</div>
-											<div class="form-text">* 예시  3.8 / 4.5</div>
-										</div>
-									</td>
-								</tr> 
-								<tr>
-									<th>공인영어 성적</th>
-									<td class="score">
-										<div class="flex-group">
-											<div class="input-box">
-												<div class="input-text-start">TOEIC</div>
-												<div class="form-control">
-													<input type="text" class="text" placeholder="" value="" />
-												</div>
-												<div class="input-text-end">점</div>
-											</div>
-											<div class="input-box">
-												<div class="input-text-start">TOEFL</div>
-												<div class="form-control">
-													<input type="text" class="text" placeholder="" value="" />
-												</div>
-												<div class="input-text-end">점</div>
-											</div>
-											<div class="input-box">
-												<div class="input-text-start">TEPS</div>
-												<div class="form-control">
-													<input type="text" class="text" placeholder="" value="" />
-												</div>
-												<div class="input-text-end">점</div>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>법학 학습 경력</th>
-									<td>
-										<div class="form-control">
-											<span class="fake-radio">
-												<input type="radio" id="lawType1" class="radio" name="lawSelect" checked>
-												<label for="lawType1">YES</label>
-											</span>
-											<span class="fake-radio">
-												<input type="radio" id="lawType2" class="radio" name="lawSelect">
-												<label for="lawType2">NO</label>
-											</span>
-										</div>
-									</td> 
-								</tr>
-
-								<tr>
-									<th>희망 로스쿨</th>
-									<td>
-										<div class="custom-select-box">
-											<div class="custom-select">
-												<div class="selected">
-												<div class="selected-value">1순위</div>
-												<div class="arrow"></div>
-												</div>
-												<ul>
-												<li class="option">전체1</li>
-												<li class="option">전체2</li>
-												<li class="option">전체3</li>
-												<li class="option">전체4</li>
-												</ul>
-											</div>
-											<div class="custom-select">
-												<div class="selected">
-												<div class="selected-value">2순위</div>
-												<div class="arrow"></div>
-												</div>
-												<ul>
-												<li class="option">전체1</li>
-												<li class="option">전체2</li>
-												<li class="option">전체3</li>
-												<li class="option">전체4</li>
-												</ul>
-											</div>
-											<div class="custom-select">
-												<div class="selected">
-												<div class="selected-value">3순위</div>
-												<div class="arrow"></div>
-												</div>
-												<ul>
-												<li class="option">전체1</li>
-												<li class="option">전체2</li>
-												<li class="option">전체3</li>
-												<li class="option">전체4</li>
-												</ul>
-											</div>
-										</div>
-										
-									</td> 
-								</tr>
-								
-								<tr>
-									<th>LEET 응시 경험</th>
-									<td>
-										<div class="form-control">
-											<span class="fake-radio">
-												<input type="radio" id="testType1" class="radio" name="testSelect" checked>
-												<label for="testType1">초시</label>
-											</span>
-											<span class="fake-radio">
-												<input type="radio" id="testType2" class="radio" name="testSelect">
-												<label for="testType2">재시</label>
-											</span>
-										</div>
-									</td> 
-								</tr>
-
-
-								<tr>
-									<th>선호하는 학습 방법</th>
-									<td>
-										<div class="input-box">
-											<div class="form-control">
-												<span class="fake-radio">
-													<input type="radio" id="studyType1" class="radio" name="studySelect" checked>
-													<label for="studyType1">학원</label>
-												</span>
-												<span class="fake-radio">
-													<input type="radio" id="studyType2" class="radio" name="studySelect">
-													<label for="studyType2">온라인</label>
-												</span>
-												<span class="fake-radio">
-													<input type="radio" id="studyType3" class="radio" name="studySelect">
-													<label for="studyType3">독학(스터디)</label>
-												</span>
-											</div>
-										</div>
-									</td> 
-								</tr>
-
-								<tr>
-									<th>로스쿨 정보<br/>획득 경로</th>
-									<td>
-										<div class="custom-select wide">
-											<div class="selected">
-											  <div class="selected-value">정보 획득 경로 선택</div>
-											  <div class="arrow"></div>
-											</div>
-											<ul>
-											  <li class="option">전체1</li>
-											  <li class="option">전체2</li>
-											  <li class="option">전체3</li>
-											  <li class="option">전체4</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<th>상상로스쿨<br/>	인지 경로</th>
-									<td>
-										<div class="custom-select wide">
-											<div class="selected">
-											  <div class="selected-value">인지 경로 선택</div>
-											  <div class="arrow"></div>
-											</div>
-											<ul>
-											  <li class="option">전체1</li>
-											  <li class="option">전체2</li>
-											  <li class="option">전체3</li>
-											  <li class="option">전체4</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-							</table>
+					<div class="agree-check-box holder">
+						<h3>이벤트 및 혜택정보 수신 (선택)</h3>
+						<div class="checkbox-box">
+							<div class="form-control">
+								<span class="fake-checkbox">
+									<input type="checkbox" id="checkType1" class="checkbox" checked="">
+									<label for="checkType1">SMS</label>
+								</span>
+								<span class="fake-checkbox">
+									<input type="checkbox" id="checkType2" class="checkbox">
+									<label for="checkType2">Email</label>
+								</span>
+							</div>
 						</div>
 					</div>
 
 					<div class="action">
- 						<a href="javascript:;" class="btn large btn-gray">취소</a>
-						<a href="javascript:;" class="btn large btn-brown">가입</a>
-					</div>
+						<a href="javascript:;" class="btn large btn-gray">이전</a>
+					   <a href="javascript:;" class="btn large btn-brown">다음</a>
+				   </div>
 				</div>	
 			</div>
 		</div>
