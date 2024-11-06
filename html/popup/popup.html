@@ -104,8 +104,12 @@
 				<div class="list-item">
 					<div class="list-type">상상캠퍼스</div>
 					<div class="list-row">
+						<div class="name">상담희망일자 선택하기(예약 없음)</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('.popup-schedule-nodata')">확인</button>
+					</div>
+					<div class="list-row">
 						<div class="name">상담희망일자 선택하기</div>
-						<button type="button" class="btn small primary" onclick="popupOpen('#popupSchedule')">확인</button>
+						<button type="button" class="btn small primary" onclick="popupOpen('.popup-schedule')">확인</button>
 					</div>
 					<div class="list-row">
 						<div class="name">배치상담 - 나의 예약 확인</div>
@@ -1400,9 +1404,232 @@
 			</div>
 		</div>
 
-		<div class="popup" id="popupSchedule">
+		<div class="popup popup-schedule-nodata" id="popupSchedule">
 			<div class="popup-wrap">
-				<a href="javascript:popupClose('#popupSchedule');"  class="popup-close">팝업닫기</a>
+				<!-- 하나의 팝업으로 아이디로 제어해도 됨/보여주기 용도로 클래스로 나눔 -->
+				<!-- <a href="javascript:popupClose('#popupSchedule');"  class="popup-close">팝업닫기</a> -->
+				<a href="javascript:popupClose('.popup-schedule-nodata');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					상담희망일자 선택하기
+				</div>
+				<div class="popup-cont">
+					<div class="step-box">
+						<div class="step step-1">
+							<div class="step-title">
+								<strong>Step 1</strong>
+								상담희망일자 선택
+							</div>
+							<div class="calender-box">
+								
+								<div class="month-box">
+									<a href="javascript:;" class="btn-arrow btn-prev"></a>
+									<strong class="month">2024. 09</strong>
+									<a href="javascript:'" class="btn-arrow btn-next"></a>
+								</div>
+								<div class="calender-table">
+									<table class="table-row">
+										<tr>
+											<th>SUN</th>
+											<th>MON</th>
+											<th>TUE</th>
+											<th>WED</th>
+											<th>THU</th>
+											<th>FRI</th>
+											<th>SAT</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="day">1</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+											<td  class="active">
+												<span class="day">2</span>
+	
+												<a href="javascript:;" class="badge badge-brown">예약가능</a>
+											</td>
+											<td>
+												<span class="day">3</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+											<td>
+												<span class="day">4</span>
+	
+												<a href="javascript:;" class="badge badge-brown">예약가능</a>
+											</td>
+											<td>
+												<span class="day">5</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+											<td>
+												<span class="day">6</span>
+	
+												<a href="javascript:;" class="badge badge-brown">예약가능</a>
+											</td>
+											<td>
+												<span class="day">7</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="day">8</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+											<td>
+												<span class="day">9</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+											<td>
+												<span class="day">10</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+											<td>
+												<span class="day">11</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+											<td>
+												<span class="day">12</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+			
+											</td>
+											<td>
+												<span class="day">13</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+			
+											</td>
+											<td>
+												<span class="day">14</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+	
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="day">15</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+				
+											</td>
+											<td>
+												<span class="day">16</span>
+		
+												<a href="javascript:;" class="badge badge-brown">예약가능</a>
+											</td>
+											<td>
+												<span class="day">17</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+				
+											</td>
+											<td>
+												<span class="day">18</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+										
+											</td>
+											<td>
+												<span class="day">19</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+										
+											</td>
+											<td>
+												<span class="day">20</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+								
+											</td>
+											<td>
+												<span class="day">21</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+									
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="day">22</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+							
+											</td>
+											<td>
+												<span class="day">23</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+											
+											</td>
+											<td>
+												<span class="day">24</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+											
+											</td>
+											<td>
+												<span class="day">25</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+											</td>
+											<td>
+												<span class="day">26</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+								
+											</td>
+											<td>
+												<span class="day">27</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+								
+											</td>
+											<td>
+												<span class="day">28</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+									
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="day">29</span>
+	
+												<a href="javascript:;" class="badge badge-brown">예약가능</a>
+											</td>
+											<td>
+												<span class="day">30</span>
+												<a href="javascript:;" class="badge badge-light-gray">예약불가능</a>
+				
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="step step-2">
+							<div class="step-title">
+								<strong>Step 2</strong>
+								상담 희망시간 선택
+							</div>
+							<div class="timetable-box">
+								<div class="timetable-nodata">
+									<div>
+										<div class="icon"><img src="../../../assets/images/icon_calendar_clock.svg" alt="" /></div>
+										<p>
+											상담희망일자를<br/>
+											먼저 선택해 주세요.
+										</p>
+									</div>
+								</div>
+								<div class="timetable-action">
+									<a href="javascript:;" class="btn btn-gray large">선택 완료</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup popup-schedule" id="popupSchedule">
+			<div class="popup-wrap">
+				<!-- 하나의 팝업으로 아이디로 제어해도 됨/보여주기 용도로 클래스로 나눔 -->
+				<!-- <a href="javascript:popupClose('#popupSchedule');"  class="popup-close">팝업닫기</a> -->
+				<a href="javascript:popupClose('.popup-schedule');"  class="popup-close">팝업닫기</a>
 				<div class="popup-title">
 					상담희망일자 선택하기
 				</div>
