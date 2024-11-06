@@ -1750,7 +1750,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-#wrap .popup-lecture .popup-cont .select-box .custom-select {
+#wrap .popup-lecture .popup-cont .select-box .custom-select, #wrap .popup-lecture .popup-cont .select-box .select {
   width: 160px;
 }
 #wrap .popup-lecture .popup-cont .select-box .text {
@@ -1791,7 +1791,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #popupMypageBookInfo .select-box {
   margin-bottom: 16px;
 }
-#wrap #popupMypageBookInfo .select-box .custom-select {
+#wrap #popupMypageBookInfo .select-box .custom-select, #wrap #popupMypageBookInfo .select-box .select {
   width: 160px;
 }
 #wrap #popupMypageBookInfo .select-box .text {
@@ -2776,6 +2776,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .custom-select-box .custom-select + .custom-select {
   margin-left: 10px;
 }
+#wrap .custom-select-box .select + .select {
+  margin-left: 10px;
+}
 #wrap .form-control {
   font-size: 0;
 }
@@ -2838,7 +2841,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 0;
   background: url("../images/icon_select_arrow.svg") no-repeat 98% center;
   background-size: 24px 24px;
-  width: 100%;
+  width: 600px;
 }
 #wrap .form-control .select select {
   width: 100%;
@@ -6554,6 +6557,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .custom-select + .custom-select, #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .custom-select + .form-control {
   margin-left: 8px;
 }
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .select + .select, #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .select + .form-control {
+  margin-left: 8px;
+}
 #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .input-text-start {
   width: 80px;
   margin: 0;
@@ -7018,7 +7024,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .select-group .custom-select-box {
   font-size: 0;
 }
-#wrap .section-mypage-wrap .content .select-group .custom-select-box .custom-select {
+#wrap .section-mypage-wrap .content .select-group .custom-select-box .custom-select, #wrap .section-mypage-wrap .content .select-group .custom-select-box .select {
   width: 160px;
   margin-right: 8px;
 }
@@ -7263,13 +7269,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .notice-input-table .form-control .textarea {
   height: 160px;
 }
-#wrap .section-mypage-wrap .content .notice-input-table .custom-select-box .custom-select {
+#wrap .section-mypage-wrap .content .notice-input-table .custom-select-box .custom-select, #wrap .section-mypage-wrap .content .notice-input-table .custom-select-box .select {
   width: 120px;
 }
 #wrap .section-mypage-wrap .content .notice-input-table .custom-select {
   width: 280px;
 }
 #wrap .section-mypage-wrap .content .notice-input-table .custom-select.wide {
+  width: 480px;
+}
+#wrap .section-mypage-wrap .content .notice-input-table .select {
+  width: 280px;
+}
+#wrap .section-mypage-wrap .content .notice-input-table .select.wide {
   width: 480px;
 }
 #wrap .section-mypage-wrap .content .notice-input-table .form-control .text {
@@ -7323,7 +7335,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .notice-input-table td.university .input-box {
   margin-top: 10px;
 }
-#wrap .section-mypage-wrap .content .notice-input-table td.university .input-box .custom-select {
+#wrap .section-mypage-wrap .content .notice-input-table td.university .input-box .custom-select, #wrap .section-mypage-wrap .content .notice-input-table td.university .input-box .select {
   width: 160px;
   margin-right: 10px;
 }
@@ -7823,7 +7835,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-member-content .member-search-box .radio-select .table-row tr:last-child th, #wrap .section-member-content .member-search-box .radio-select .table-row tr:last-child td {
   padding-bottom: 0;
 }
-#wrap .section-member-content .member-search-box .radio-select .table-row tr td .custom-select {
+#wrap .section-member-content .member-search-box .radio-select .table-row tr td .custom-select, #wrap .section-member-content .member-search-box .radio-select .table-row tr td .select {
   width: 160px;
   margin-left: 8px;
 }
@@ -7832,6 +7844,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 10px;
 }
 #wrap .section-member-content .member-search-box .radio-select .table-row tr td .custom-select-box .custom-select:first-child {
+  margin-left: 0;
+}
+#wrap .section-member-content .member-search-box .radio-select .table-row tr td .custom-select-box .select {
+  width: 120px;
+  margin-left: 10px;
+}
+#wrap .section-member-content .member-search-box .radio-select .table-row tr td .custom-select-box .select:first-child {
   margin-left: 0;
 }
 #wrap .section-member-content .member-search-box .radio-select .table-row tr td .text {
@@ -8182,13 +8201,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-join-content .notice-input-table .form-control .textarea {
   height: 160px;
 }
-#wrap .section-join-content .notice-input-table .custom-select-box .custom-select {
+#wrap .section-join-content .notice-input-table .custom-select-box .custom-select, #wrap .section-join-content .notice-input-table .custom-select-box .select {
   width: 120px;
 }
 #wrap .section-join-content .notice-input-table .custom-select {
   width: 280px;
 }
 #wrap .section-join-content .notice-input-table .custom-select.wide {
+  width: 480px;
+}
+#wrap .section-join-content .notice-input-table .select {
+  width: 280px;
+}
+#wrap .section-join-content .notice-input-table .select.wide {
   width: 480px;
 }
 #wrap .section-join-content .notice-input-table .form-control .text {
@@ -8239,7 +8264,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-join-content .notice-input-table td.university .input-box {
   margin-top: 10px;
 }
-#wrap .section-join-content .notice-input-table td.university .input-box .custom-select {
+#wrap .section-join-content .notice-input-table td.university .input-box .custom-select, #wrap .section-join-content .notice-input-table td.university .input-box .select {
   width: 160px;
   margin-right: 10px;
 }

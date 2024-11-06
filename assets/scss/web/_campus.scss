@@ -30,6 +30,11 @@
 								.custom-select{
 									&+ .custom-select,
 									&+ .form-control{margin-left:8px;}
+								}
+
+								.select{
+									&+ .select,
+									&+ .form-control{margin-left:8px;}
 
 								}
 			

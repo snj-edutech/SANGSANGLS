@@ -840,7 +840,7 @@
 			.select-box{
 				margin-top:16px;
 				margin-bottom:16px;
-				.custom-select{width:160px;}
+				.custom-select, .select{width:160px;}
 				.text{width:240px;}
 			}
 
@@ -880,7 +880,7 @@
 		.popup-cont{padding-bottom:105px;}
 		.select-box{
 			margin-bottom:16px;
-			.custom-select{width:160px;}
+			.custom-select, .select{width:160px;}
 			.text{width:240px;}
 		}
 

@@ -218,7 +218,7 @@
 				margin-bottom:20px;
 				.custom-select-box{
 					font-size:0;
-					.custom-select{width:160px;margin-right:8px;}
+					.custom-select, .select{width:160px;margin-right:8px;}
 					
 				}
 
@@ -440,13 +440,19 @@
 
 				.form-control .textarea{height:160px;}
 				.custom-select-box{
-					.custom-select{width:120px;}
+					.custom-select, .select{width:120px;}
 				}
 
 				.custom-select{
 					width:280px;
 					&.wide{width:480px;}
 				}
+
+				.select{
+					width:280px;
+					&.wide{width:480px;}
+				}
+
 				.form-control{
 					.text{
 						width:280px;
@@ -493,7 +499,7 @@
 
 						.input-box{
 							margin-top:10px;
-							.custom-select{width:160px;margin-right:10px;}
+							.custom-select, .select{width:160px;margin-right:10px;}
 						}
 					}
 
