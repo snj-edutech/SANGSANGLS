@@ -838,6 +838,8 @@
             .btn-calendar{
                 display:inline-block;
                 position:absolute;right:10px;top:10px;
+
+				&.disabled{cursor:default;}
             }
         }
         .date{
@@ -1279,6 +1281,8 @@
 		@include vw(margin-left, 8px);
 		&:first-child{margin-left:0;}
 		strong{font-weight:600;}
+
+		&.disabled{cursor:default;}
 
 		&.btn-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
 		&.btn-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}

@@ -720,6 +720,10 @@
 					width:408px;
 					margin-left:24px;
 					strong{font-weight:600;}
+
+					.custom-select{
+						width:120px;background-color:$color-white;
+					}
 					.form-control{
 						
 						.select{width:120px;background-color:$color-white;}

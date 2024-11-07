@@ -284,6 +284,7 @@
 							.desc-title{
 								width:519px;
 								@include boxSizing(border-box);
+								@include multipleEllipsis(2);
 								.badge{margin-right:8px;}
 							}
 
@@ -329,10 +330,12 @@
 							width:128px;margin-top:8px;
 							margin-left:0;padding:0;
 							&:first-child{margin-top:0;}
-
-							&:nth-child(1):nth-last-child(3),
-							&:nth-child(2):nth-last-child(2),
-							&:nth-child(3):nth-last-child(1) { height:30px;}
+						
+							// &:nth-child(1):nth-last-child(3),
+							// &:nth-child(2):nth-last-child(2),
+							// &:nth-child(3):nth-last-child(1) { height:30px;}
+							height:30px;
+							&.large{height:56px;}
 						}
 					}
 				}

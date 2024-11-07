@@ -56,7 +56,7 @@ function starEvent(){
 
 function calenderEvent(){
 	/* 달력 제어 */
-	$(".btn-calendar").on("click", function(){
+	$(".btn-calendar").not(".disabled").on("click", function(){
 		$(this).next(".layer-open").show();
 	});
 
