@@ -476,6 +476,8 @@
 
 		.step-box{
 			display:flex;
+
+			.disabled a{cursor:default;}
 			
 			.step{
 				.step-title{

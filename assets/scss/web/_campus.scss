@@ -2,6 +2,13 @@
 	.section-campus-content{
 		.lecture-data-list{margin-top:40px;}
 
+
+		.tab-view{
+			.lecture-data-list .course-list:first-child{border-top:none;}
+			.select-box + .lecture-data-list .course-list:first-child,
+			.category-box + .lecture-data-list .course-list:first-child{border-top:1px solid $color-light-brown;}
+		}
+
 		.campus-reservation{
 			margin-top:40px;
 
