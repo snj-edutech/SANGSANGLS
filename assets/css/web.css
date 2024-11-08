@@ -6159,7 +6159,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view .holder + .holder {
   margin-top: 80px;
 }
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view .notice-view-table + .notice-text {
+#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view .notice-view-table + .notice-text,
+#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view .notice-text + .notice-view-table {
   margin-top: 10px;
 }
 #wrap .section-examInfo-content .examInfo-univ-view + .examInfo-univ-view {

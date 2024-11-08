@@ -150,7 +150,8 @@
 						&+.holder{margin-top:80px;}
 					}
 	
-					.notice-view-table + .notice-text{margin-top:10px;}
+					.notice-view-table + .notice-text,
+					.notice-text + .notice-view-table{margin-top:10px;}
 				}
 	
 			}
