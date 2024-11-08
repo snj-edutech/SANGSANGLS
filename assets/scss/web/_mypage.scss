@@ -47,6 +47,9 @@
 					@extend %textEllipsis;
 					width:611px;
 					margin-bottom:0;
+					a{
+						&:hover{border-bottom:2px solid $color-black;}
+					}
 				}
 
 				.notice-date{margin-left:24px;font-size:14px;font-weight:400;color:$color-gray;}
@@ -218,7 +221,7 @@
 				margin-bottom:20px;
 				.custom-select-box{
 					font-size:0;
-					.custom-select, .select{width:160px;margin-right:8px;}
+					.custom-select, .select{width:160px;margin-right:8px;margin-left:0;}
 					
 				}
 
@@ -311,6 +314,7 @@
 							width:100%;
 							font-size:16px;
 							line-height:27.2px;
+							@include multipleEllipsis(2);
 						}
 					}
 
@@ -366,6 +370,7 @@
 									padding-right:24px;
 									font-size:16px;
 									line-height:27.2px;
+									@include multipleEllipsis(2);
 								}
 							}
 						}
@@ -380,6 +385,7 @@
 						.desc-badge{margin-bottom:4px;}
 						.desc-title{
 							font-size:16px;font-weight:600;line-height:27.2px;
+							@include multipleEllipsis(2);
 						}
 						.desc-text{
 							font-size:13px;
@@ -443,7 +449,10 @@
 
 				.form-control .textarea{height:160px;}
 				.custom-select-box{
-					.custom-select, .select{width:120px;}
+					.custom-select, .select{
+						width:120px;
+						&.wide{width:280px;}
+					}
 				}
 
 				.custom-select{
@@ -553,7 +562,7 @@
 						padding-left:0;margin-left:0;
 						border-left:0;
 						margin-top:36px;
-						border-top:1px solid $color-light-gray;
+						border-top:1px solid $color-light-brown;
 						padding-top:8px;
 
 						display:flex;
@@ -628,7 +637,8 @@
 				padding:24px;text-align:left;
 				border:1px solid $color-light-brown;
 				width:520px;@include boxSizing(border-box);
-				&.wide{width:600px;}
+				&.ex-wide{width:800px;}
+				&.wide{width:650px;}
 				.layer-title{margin-bottom:8px;font-size:14px;font-weight:600;color:$color-brown;}
 				.layer-list{
 					li{font-size:14px;font-weight:400;color:$color-black;line-height:23.8px;}
@@ -785,7 +795,16 @@
 
 			.notice-view-table{
 				&+.form-text{margin-top:20px;}
-				th{color:$color-black;font-weight:600;}
+				th{
+					color:$color-black;font-weight:600;
+					&.date{font-weight:400;color:$color-gray;}
+					&.end{color:$color-brown;}
+				}
+
+				td{
+					font-weight:400;
+					strong{font-weight:600;}
+				}
 			}
 
 			.action{
@@ -811,7 +830,7 @@
 						@include boxSizing(border-box);
 						text-align:center;
 						
-						a{display:block;}
+						a{display:block;cursor:default;}
 
 						.coupon-img{
 							position:relative;

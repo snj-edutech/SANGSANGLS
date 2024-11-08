@@ -1152,6 +1152,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
   line-height: 27px;
 }
+#wrap .popup-bookInfo .desc-box .book-desc .desc-title a:hover {
+  border-bottom: 2px solid #2C2923;
+}
 #wrap .popup-bookInfo .desc-box .book-desc .desc-info {
   font-size: 14px;
   color: #2C2923;
@@ -1809,6 +1812,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #E4DED3;
+}
+#wrap #popupLectureList .table-row tr th {
+  font-weight: 400;
 }
 #wrap #popupMypageBookInfo .popup-cont {
   padding-bottom: 105px;
@@ -2612,7 +2618,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-right: 24px;
 }
 #wrap .price-box .price-before {
-  color: #E4DED3;
+  color: #BEBEBC;
   font-size: 16px;
   font-weight: 400;
   text-decoration: line-through;
@@ -3987,9 +3993,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
-}
-#wrap .action .btn {
-  font-weight: 600;
 }
 #wrap .action.flex-start {
   justify-content: flex-start;
@@ -5488,14 +5491,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 40px;
 }
 #wrap .section-online-content .tab-view .lecture-data-list {
-  margin-top: 40px;
+  margin-top: 0;
 }
 #wrap .section-online-content .tab-view .lecture-data-list .course-list:first-child {
   border-top: none;
+  margin-top: 0px;
 }
 #wrap .section-online-content .tab-view .category-box + .lecture-data-list .course-list:first-child,
 #wrap .section-online-content .tab-view .select-box + .lecture-data-list .course-list:first-child {
   border-top: 1px solid #E4DED3;
+  margin-top: 40px;
 }
 #wrap .section-online-slide {
   margin-top: 80px;
@@ -6561,15 +6566,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #7A746A;
 }
 
-#wrap .section-campus-content .lecture-data-list {
-  margin-top: 40px;
-}
 #wrap .section-campus-content .tab-view .lecture-data-list .course-list:first-child {
   border-top: none;
 }
 #wrap .section-campus-content .tab-view .select-box + .lecture-data-list .course-list:first-child,
 #wrap .section-campus-content .tab-view .category-box + .lecture-data-list .course-list:first-child {
   border-top: 1px solid #E4DED3;
+  margin-top: 40px;
 }
 #wrap .section-campus-content .campus-reservation {
   margin-top: 40px;
@@ -6696,7 +6699,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 80px;
 }
 #wrap .section-campus-content .campus-guide-view .box {
-  padding: 40px 0;
+  padding: 40px 0 80px;
   border-top: 1px solid #E4DED3;
   display: flex;
   flex-wrap: wrap;
@@ -6856,6 +6859,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .mypage-notice-box .notice-title {
   width: 611px;
   margin-bottom: 0;
+}
+#wrap .section-mypage-wrap .content .mypage-notice-box .notice-title a:hover {
+  border-bottom: 2px solid #2C2923;
 }
 #wrap .section-mypage-wrap .content .mypage-notice-box .notice-date {
   margin-left: 24px;
@@ -7072,6 +7078,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .select-group .custom-select-box .custom-select, #wrap .section-mypage-wrap .content .select-group .custom-select-box .select {
   width: 160px;
   margin-right: 8px;
+  margin-left: 0;
 }
 #wrap .section-mypage-wrap .content .select-group .action {
   margin-top: 0;
@@ -7194,6 +7201,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
   font-size: 16px;
   line-height: 27.2px;
+  display: -webkit-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject {
   width: 80px;
@@ -7238,6 +7254,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-right: 24px;
   font-size: 16px;
   line-height: 27.2px;
+  display: -webkit-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 #wrap .section-mypage-wrap .content .notice-list-table td.desc {
   text-align: left;
@@ -7249,6 +7274,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 16px;
   font-weight: 600;
   line-height: 27.2px;
+  display: -webkit-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 #wrap .section-mypage-wrap .content .notice-list-table td.desc .desc-text {
   font-size: 13px;
@@ -7326,6 +7360,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-mypage-wrap .content .notice-input-table .custom-select-box .custom-select, #wrap .section-mypage-wrap .content .notice-input-table .custom-select-box .select {
   width: 120px;
+}
+#wrap .section-mypage-wrap .content .notice-input-table .custom-select-box .custom-select.wide, #wrap .section-mypage-wrap .content .notice-input-table .custom-select-box .select.wide {
+  width: 280px;
 }
 #wrap .section-mypage-wrap .content .notice-input-table .custom-select {
   width: 280px;
@@ -7436,7 +7473,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 0;
   border-left: 0;
   margin-top: 36px;
-  border-top: 1px solid #BEBEBC;
+  border-top: 1px solid #E4DED3;
   padding-top: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -7524,8 +7561,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+#wrap .section-mypage-wrap .content .layer-box.ex-wide {
+  width: 800px;
+}
 #wrap .section-mypage-wrap .content .layer-box.wide {
-  width: 600px;
+  width: 650px;
 }
 #wrap .section-mypage-wrap .content .layer-box .layer-title {
   margin-bottom: 8px;
@@ -7785,6 +7825,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
   font-weight: 600;
 }
+#wrap .section-mypage-wrap .content .notice-view-table th.date {
+  font-weight: 400;
+  color: #7A746A;
+}
+#wrap .section-mypage-wrap .content .notice-view-table th.end {
+  color: #A07D3B;
+}
+#wrap .section-mypage-wrap .content .notice-view-table td {
+  font-weight: 400;
+}
+#wrap .section-mypage-wrap .content .notice-view-table td strong {
+  font-weight: 600;
+}
 #wrap .section-mypage-wrap .content .action .btn-list {
   margin-left: auto;
 }
@@ -7815,6 +7868,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-mypage-wrap .content .coupon-list ul li a {
   display: block;
+  cursor: default;
 }
 #wrap .section-mypage-wrap .content .coupon-list ul li .coupon-img {
   position: relative;

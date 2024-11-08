@@ -7,16 +7,16 @@
 		}
         .tab-view{
             .lecture-data-list{
-				margin-top:40px;
+				margin-top:0;
 				.course-list{
-					&:first-child{border-top:none;}
+					&:first-child{border-top:none;	margin-top:0px;}
 				}
 			}
 
 			.category-box +  .lecture-data-list,
 			.select-box +   .lecture-data-list{
 				.course-list{
-					&:first-child{border-top:1px solid $color-light-brown;;}
+					&:first-child{border-top:1px solid $color-light-brown;margin-top:40px;}
 				}
 			}
         }

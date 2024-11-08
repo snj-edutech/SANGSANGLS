@@ -371,7 +371,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		.price-subject{color:$color-black;font-size:16px;font-weight:600;margin-right:24px;}
-		.price-before{color:$color-light-brown;font-size:16px;font-weight:400;text-decoration: line-through;margin-right:8px;}
+		.price-before{color:$color-light-gray;font-size:16px;font-weight:400;text-decoration: line-through;margin-right:8px;}
 		.price-after{color:$color-brown;font-size:18px;font-weight:600;}
 		&.total{
 			.price-before{}
@@ -1358,8 +1358,6 @@
 		justify-content:  flex-end;
 		align-items: center;
 		margin-top:20px;
-		
-		.btn{font-weight:600;}
 
 		&.flex-start{justify-content: flex-start;}
 		&.flex-center{justify-content: center;}

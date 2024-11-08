@@ -380,6 +380,9 @@
 					color:$color-black;
 					font-weight:600;
 					line-height:27px;
+					a{
+						&:hover{border-bottom:2px solid $color-black;}
+					}
 				}
 
 				.desc-info{
@@ -895,8 +898,15 @@
 				border-bottom:1px solid $color-light-brown;
 			}
 
+
+			
+
 			
 		}
+	}
+
+	#popupLectureList{
+		.table-row tr th{font-weight:400;}
 	}
 
 	#popupMypageBookInfo{
