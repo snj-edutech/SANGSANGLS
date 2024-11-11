@@ -231,8 +231,8 @@
 				&+dl{margin-top:20px;}
 				dt,dd{
 					color:$color-black;
-					@include vw(font-size,16px);
-					@include vw(line-height,27.2px);
+					@include vw(font-size,14px);
+					@include vw(line-height,23.8px);
 					text-align:left;
 					font-weight:400;
 					font-family: $font-pretendard;
@@ -240,6 +240,11 @@
 				}
 				dt{font-weight:600;margin-bottom:8px;}
 				dd{}
+
+				&.bg-box{
+					background-color:$color-light-beige;
+					padding:16px;
+				}
 			}
 		}
 
@@ -734,6 +739,8 @@
 					}
 				}
 			}
+
+
 		}
 
 		.action{

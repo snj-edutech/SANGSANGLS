@@ -900,8 +900,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
   color: #2C2923;
-  font-size: 2.2222222222vw;
-  line-height: 3.7777777778vw;
+  font-size: 1.9444444444vw;
+  line-height: 3.3055555556vw;
   text-align: left;
   font-weight: 400;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
@@ -910,17 +910,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 720px) {
   #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 720px) {
   #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
-    line-height: 27.2px;
+    line-height: 23.8px;
   }
 }
 #wrap .popup .line-box dl dt {
   font-weight: 600;
   margin-bottom: 8px;
+}
+#wrap .popup .line-box dl.bg-box {
+  background-color: #FBFAF6;
+  padding: 16px;
 }
 #wrap .popup .fill-box {
   background-color: #FBFAF6;
