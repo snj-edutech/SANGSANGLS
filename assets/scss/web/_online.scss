@@ -40,9 +40,9 @@
 				border-radius:0;
 				
 				&.slick-prev{
-					@include slideArrow(left, 24px, 24px, 1px, $color-gray, $color-white);
+					@include slideArrow(left, 24px, 24px, 1.5px, $color-gray, $color-white);
 					&:before{
-						width:8px;height:8px;
+						width:4px;height:4px;
 					}
 					left:auto;right:23px;
 					top:-44px;
@@ -50,9 +50,9 @@
 					border:1px solid $color-light-brown;
 				}
 				&.slick-next{
-				   @include slideArrow(right, 24px, 24px, 1px, $color-gray, $color-white);
+				   @include slideArrow(right, 24px, 24px, 1.5px, $color-gray, $color-white);
 				   &:before{
-						width:8px;height:8px;
+					width:4px;height:4px;
 					}
 		
 					top:-44px;right:0;

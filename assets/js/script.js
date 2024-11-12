@@ -264,6 +264,32 @@ function tabSlideEvent($selector){
 }
 
 function slideEvent() {
+	let $slider = $('.page-slide .slider');
+
+	console.log($slider.length);
+
+	if ($slider.length) {
+		let currentSlide;
+		let slidesCount;
+		let sliderCounter = document.createElement('div');
+		sliderCounter.classList.add('slick-counter');
+
+		let updateSliderCounter = function(slick, currentIndex) {
+			currentSlide = slick.slickCurrentSlide() + 1;
+			slidesCount = slick.slideCount;
+			$(sliderCounter).html("<span><strong>"+currentSlide + '</strong>/' +slidesCount+"</span>")
+		};
+
+		$slider.on('init', function(event, slick) {
+			$slider.append(sliderCounter);
+			updateSliderCounter(slick);
+		});
+
+		$slider.on('afterChange', function(event, slick, currentSlide) {
+			updateSliderCounter(slick, currentSlide);
+		});
+	}
+
 	$('.slider').each(function(key, item){
 		var sliderIdName = 'slider' + key;
 			this.id = sliderIdName;
@@ -306,11 +332,21 @@ function slideEvent() {
 				variableWidth: false,
                 
 			};
+		} else if(_data == 'campusSlider'){
+			_options = {
+				dots: false,
+				arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+				centerMode: false,
+				variableWidth: false,
+                
+			};
 		}
 
 		$(sliderId).slick(_options);
 	});
-
 };
 
 //button event 함수를 만들고
