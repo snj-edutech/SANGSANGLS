@@ -6945,39 +6945,39 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 4px;
   height: 4px;
 }
-#wrap .section-campus-content .campus-slide {
+#wrap .section-campus-content .campus-banner {
   margin-top: 120px;
 }
-#wrap .section-campus-content .campus-slide.half-slide {
+#wrap .section-campus-content .campus-banner.half-banner {
   display: flex;
   margin-top: 60px;
 }
-#wrap .section-campus-content .campus-slide.half-slide > div {
+#wrap .section-campus-content .campus-banner.half-banner > div {
   width: 588px;
   margin-left: 24px;
 }
-#wrap .section-campus-content .campus-slide.half-slide > div:first-child {
+#wrap .section-campus-content .campus-banner.half-banner > div:first-child {
   margin-left: 0;
 }
-#wrap .section-campus-content .campus-slide.half-slide .campus-slider {
+#wrap .section-campus-content .campus-banner.half-banner .campus-slider {
   width: 100%;
 }
-#wrap .section-campus-content .campus-slide.half-slide .campus-slider .slick-arrow.slick-prev, #wrap .section-campus-content .campus-slide.half-slide .campus-slider .slick-arrow.slick-next {
+#wrap .section-campus-content .campus-banner.half-banner .campus-slider .slick-arrow.slick-prev, #wrap .section-campus-content .campus-banner.half-banner .campus-slider .slick-arrow.slick-next {
   top: 0;
 }
-#wrap .section-campus-content .campus-slide.page-slide .slick-counter {
+#wrap .section-campus-content .campus-banner.page-banner .slick-counter {
   position: absolute;
   right: 58px;
   top: -44px;
 }
-#wrap .section-campus-content .campus-slide.page-slide .slick-counter span {
+#wrap .section-campus-content .campus-banner.page-banner .slick-counter span {
   color: #BEBEBC;
   font-size: 12px;
   font-weight: 400;
   line-height: 20.4px;
   letter-spacing: 2px;
 }
-#wrap .section-campus-content .campus-slide.page-slide .slick-counter span strong {
+#wrap .section-campus-content .campus-banner.page-banner .slick-counter span strong {
   color: #A07D3B;
   font-weight: 400;
 }
@@ -6992,9 +6992,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-campus-content .campus-notice > div:first-child {
   margin-left: 0;
 }
-#wrap .section-campus-content .campus-notice .campus-slider {
+#wrap .section-campus-content .campus-notice .campus-lecture-list .campus-slider {
   width: 100%;
 }
+#wrap .section-campus-content .campus-notice .campus-notice-list .notice-list-table .table-row td {
+  padding: 10px;
+}
+#wrap .section-campus-content .campus-notice .campus-notice-list .notice-list-table .table-row td .icon-new {
+  top: -1px;
+}
+#wrap .section-campus-content .campus-notice .campus-notice-list .notice-list-table .table-row td .badge {
+  margin-right: 8px;
+}
+
 #wrap .section-mypage-wrap {
   display: flex;
   width: 1200px;

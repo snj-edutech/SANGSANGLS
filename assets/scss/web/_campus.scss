@@ -252,10 +252,10 @@
 			}
 		}
 
-		.campus-slide{
+		.campus-banner{
 			margin-top:120px;
 
-			&.half-slide{
+			&.half-banner{
 				display:flex;
 				margin-top:60px;
 				>div{
@@ -270,7 +270,7 @@
 				}
 			}
 
-			&.page-slide{
+			&.page-banner{
 				.slick-counter{
 					position:absolute;right:58px;top:-44px;
 					span{
@@ -293,12 +293,22 @@
 				width:570px;margin-left:60px;
 				&:first-child{margin-left:0;}
 			}
-			.campus-slider{
-				width:100%;
+
+			.campus-lecture-list{
+				.campus-slider{
+					width:100%;
+				}
 			}
 
-			.campus-lecture-list{}
-			.campus-notice-list{}
+			.campus-notice-list{
+				.notice-list-table .table-row {
+					td{
+						padding:10px;
+						.icon-new{top:-1px;}
+						.badge{margin-right:8px;}
+					}
+				}
+			}
 		}
 
 	}
