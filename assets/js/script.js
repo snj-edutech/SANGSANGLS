@@ -258,8 +258,6 @@ function tabSlideEvent($selector){
 function slideEvent() {
 	let $slider = $('.page-slide .slider');
 
-	console.log($slider.length);
-
 	if ($slider.length) {
 		let currentSlide;
 		let slidesCount;
