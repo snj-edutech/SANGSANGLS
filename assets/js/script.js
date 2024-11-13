@@ -1,6 +1,6 @@
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-var agent = navigator.userAgent.toLowerCase();
-var trident = navigator.userAgent.match(/Trident\/(\d.\d)/i);
+// var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+// var agent = navigator.userAgent.toLowerCase();
+// var trident = navigator.userAgent.match(/Trident\/(\d.\d)/i);
 
 var _w;
 var _breakpoint = 720;
@@ -21,14 +21,6 @@ function create(){
     _w = $(window);
     _wrap = $('#wrap');
     _wid = _w.width();
-
-    // if(isMobile){
-    //     $(".popup-btn a").css({width:"100%"});
-    //     $(".btn-print").hide();
-    // }else{
-    //     $(".popup-btn a").css({width:"50%"});
-    //     $(".btn-print").css({display:"inline-block"});
-    // }
 }
 
 function addEvent(){
