@@ -226,32 +226,6 @@
 			.list{
 				a{display:block;}
 			}
-
-			.slick-arrow {
-				@extend %slick-arrow;
-				border-radius:0;
-				
-				&.slick-prev{
-					@include slideArrow(left, 24px, 24px, 1.5px, $color-gray, $color-white);
-					&:before{
-						width:4px;height:4px;
-					}
-					left:auto;right:23px;
-					top:-44px;
-					transform: translateY(0);
-					border:1px solid $color-light-brown;
-				}
-				&.slick-next{
-				   @include slideArrow(right, 24px, 24px, 1.5px, $color-gray, $color-white);
-				   &:before{
-						width:4px;height:4px;
-					}
-		
-					top:-44px;right:0;
-					transform: translateY(0);
-					border:1px solid $color-light-brown;
-				}
-			}
 		}
 
 		.campus-banner{
