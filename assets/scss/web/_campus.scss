@@ -1,7 +1,7 @@
 #wrap{
 	.section-campus-content{
 		//.lecture-data-list{margin-top:40px;}
-
+	
 
 		.tab-view{
 			.lecture-data-list .course-list:first-child{border-top:none;}
@@ -58,6 +58,7 @@
 			
 								.text{
 									&.medium{width:160px;}
+									&.faculty{width:208px;}
 								}
 								
 								
@@ -69,6 +70,9 @@
 									.input-text-start{width:auto;margin-right:8px;}
 			
 								}
+
+								& + .input-box{margin-top:10px;}
+								
 							}
 						}
 					}

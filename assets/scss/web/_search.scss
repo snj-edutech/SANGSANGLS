@@ -50,6 +50,41 @@
 
 
 	.section-search-content{
+		.tab-box{
+			.tab-menu{
+				margin-top:32px;
+			}
+
+			.tab-view{
+				padding-top:60px;
+
+				.lecture-data-title{
+					background-color:$color-light-brown2;
+					padding:24px 20px;
+					color:$color-black;
+					font-size:18px;
+					font-weight:600;
+					line-height:27px;
+				}
+
+				.lecture-data-list{
+					.book-list{
+						.desc-box{
+							.t-img{
+								width:168px;height:168px;
+								background-color:$color-light-brown2;
+								overflow:hidden;
+								img{
+									width:68px;height:96px;
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+
 		.search-data-result{
 			padding:0px 0 60px;
 			color:$color-black;

@@ -248,6 +248,38 @@
 
 
 			&+.action{margin-top:60px;}
+			.notice-input-table{
+				margin-top:20px;
+				.member-check-box{
+					display:flex;
+
+					.member-check{
+						line-height:1;
+						label{width:24px;height:24px;padding-left:0;}
+					}
+					.member-list{
+						margin-left:20px;
+						dl{
+							display:flex;
+							margin-top:8px;
+							&:first-child{margin-top:0;}
+							dt, dd{
+								color:$color-black;
+								@include vw(font-size,14px);
+								@include vw(line-height,23.8px);
+								text-align:left;
+								font-weight:400;
+								strong{
+									font-weight:600;
+								}
+							}
+							dt{width:100px;margin-right:20px;}
+							dd{}
+						}
+					}
+				}
+
+			}
 		}
 
 		.notice-input-table{
@@ -312,6 +344,7 @@
 
 				&.university{
 					.form-control + .form-control{	margin-top:10px;}
+					.form-text{margin-top:10px;}
 
 					.custom-select-box{
 						margin-top:10px;

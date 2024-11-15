@@ -4560,6 +4560,30 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 0;
   text-indent: -9999px;
 }
+#wrap .section-search-content .tab-box .tab-menu {
+  margin-top: 32px;
+}
+#wrap .section-search-content .tab-box .tab-view {
+  padding-top: 60px;
+}
+#wrap .section-search-content .tab-box .tab-view .lecture-data-title {
+  background-color: #F2EFE7;
+  padding: 24px 20px;
+  color: #2C2923;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+#wrap .section-search-content .tab-box .tab-view .lecture-data-list .book-list .desc-box .t-img {
+  width: 168px;
+  height: 168px;
+  background-color: #F2EFE7;
+  overflow: hidden;
+}
+#wrap .section-search-content .tab-box .tab-view .lecture-data-list .book-list .desc-box .t-img img {
+  width: 68px;
+  height: 96px;
+}
 #wrap .section-search-content .search-data-result {
   padding: 0px 0 60px;
   color: #2C2923;
@@ -5503,8 +5527,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 80px;
 }
 #wrap .section-online-slide .season-slider .slick-slide {
-  margin-left: 36px;
-  width: 376px;
+  margin-left: 24px;
+  width: 588px;
 }
 #wrap .section-online-slide .season-slider .slick-slide img {
   width: 100%;
@@ -5961,8 +5985,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-customer-content .tab-box .tab-menu {
   margin-top: 0;
 }
-#wrap .section-customer-content .tab-box .tab-view {
-  padding-top: 60px;
+#wrap .section-customer-content .tab-box .tab-view .toggle-box {
+  border-top: 0;
 }
 #wrap .section-customer-content .program-box .program-info-list li {
   color: #7A746A;
@@ -6626,6 +6650,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .text.medium {
   width: 160px;
 }
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .input-box .text.faculty {
+  width: 208px;
+}
 #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .flex-group .input-box {
   margin-top: 0;
   margin-right: 36px;
@@ -6633,6 +6660,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .flex-group .input-box .input-text-start {
   width: auto;
   margin-right: 8px;
+}
+#wrap .section-campus-content .campus-reservation .campus-input-table .table-row tr td .flex-group + .input-box {
+  margin-top: 10px;
 }
 #wrap .section-campus-content .campus-reservation .action {
   position: relative;
@@ -8444,6 +8474,54 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-join-content .agree-check-box + .action {
   margin-top: 60px;
 }
+#wrap .section-join-content .agree-check-box .notice-input-table {
+  margin-top: 20px;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box {
+  display: flex;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-check {
+  line-height: 1;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-check label {
+  width: 24px;
+  height: 24px;
+  padding-left: 0;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list {
+  margin-left: 20px;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl {
+  display: flex;
+  margin-top: 8px;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl:first-child {
+  margin-top: 0;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt, #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dd {
+  color: #2C2923;
+  font-size: 1.9444444444vw;
+  line-height: 3.3055555556vw;
+  text-align: left;
+  font-weight: 400;
+}
+@media screen and (min-width: 720px) {
+  #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt, #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dd {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt, #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dd {
+    line-height: 23.8px;
+  }
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt strong, #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dd strong {
+  font-weight: 600;
+}
+#wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt {
+  width: 100px;
+  margin-right: 20px;
+}
 #wrap .section-join-content .notice-input-table .color-point {
   margin-top: 10px;
 }
@@ -8511,6 +8589,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 10px;
 }
 #wrap .section-join-content .notice-input-table td.university .form-control + .form-control {
+  margin-top: 10px;
+}
+#wrap .section-join-content .notice-input-table td.university .form-text {
   margin-top: 10px;
 }
 #wrap .section-join-content .notice-input-table td.university .custom-select-box {

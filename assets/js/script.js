@@ -304,7 +304,7 @@ function slideEvent() {
 			_options = {
 				dots: false,
 				arrows: true,
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
 				centerMode: false,

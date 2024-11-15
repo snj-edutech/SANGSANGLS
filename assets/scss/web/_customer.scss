@@ -48,7 +48,9 @@
 	.section-customer-content{
 		.tab-box{
 			.tab-menu{margin-top:0;}
-			.tab-view{padding-top:60px;}
+			.tab-view{
+				.toggle-box{border-top:0;}
+			}
 		}
 
 		.program-box{
