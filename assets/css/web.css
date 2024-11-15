@@ -8610,6 +8610,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: auto;
   transform: translateX(0);
 }
+#wrap .section-player .player-content .player-tab .tab-box .tab-menu ul li a {
+  font-size: 14px;
+}
 #wrap .section-player .player-content .player-tab .tab-box .tab-view {
   padding-top: 20px;
 }
@@ -8684,9 +8687,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .lectureInfo-list-box .lectureInfo-list dl dd {
   color: #2C2923;
+  display: inline-block;
 }
-#wrap .section-player .player-content .player-tab .tab-box .tab-view .lectureInfo-list-box .lectureInfo-list dl:hover {
+#wrap .section-player .player-content .player-tab .tab-box .tab-view .lectureInfo-list-box .lectureInfo-list dl.active {
   background-color: #F2EFE7;
+}
+#wrap .section-player .player-content .player-tab .tab-box .tab-view .lectureInfo-list-box .lectureInfo-list dl:hover dd {
+  text-underline-offset: 5px;
+  text-decoration: underline solid 0.5px;
 }
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-btn {
   padding-bottom: 20px;

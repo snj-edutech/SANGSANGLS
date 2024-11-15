@@ -42,7 +42,8 @@
 						ul{
 							position:static;
 							width:auto;
-							transform:translateX(0)
+							transform:translateX(0);
+							li a{font-size:14px;}
 						}
 					}
 
@@ -82,9 +83,15 @@
 									display:flex;cursor:pointer;
 									dt,dd{font-size:12px;line-height:20.4px;font-weight:400;}
 									dt{color:$color-gray;width:36px;margin-right:4px;}
-									dd{color:$color-black;}
-									&:hover{
+									dd{color:$color-black;display:inline-block;}
+									&.active{
 										background-color:$color-light-brown2;
+									}
+									&:hover{
+										dd{
+											text-underline-offset: 5px;
+											text-decoration: underline solid 0.5px;
+										}
 									}
 								}
 							}
