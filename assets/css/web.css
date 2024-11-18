@@ -6759,10 +6759,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 788px;
   margin-left: auto;
 }
-#wrap .section-campus-content .campus-map {
-  padding-top: 120px;
-  border-top: 1px solid #E4DED3;
-}
 #wrap .section-campus-content .campus-map .map-info {
   margin-top: 30px;
   display: flex;
@@ -6830,61 +6826,36 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 42px;
   padding-bottom: 16px;
 }
-#wrap .section-campus-content .campus-slider .slick-slide {
+#wrap .section-campus-content .banner-slider .slick-slide {
   width: 1200px;
-  height: 489px;
+  height: 480px;
   overflow: hidden;
 }
-#wrap .section-campus-content .campus-slider .slick-slide img {
+#wrap .section-campus-content .banner-slider .slick-slide img {
   width: 100%;
   height: 100%;
 }
-#wrap .section-campus-content .campus-slider .list a {
+#wrap .section-campus-content .banner-slider .list a {
   display: block;
 }
-#wrap .section-campus-content .campus-banner {
-  margin-top: 120px;
+#wrap .section-campus-content .campus-banner.offline-slide {
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
-#wrap .section-campus-content .campus-banner.half-slide {
-  display: flex;
-  margin-top: 60px;
+#wrap .section-campus-content .campus-banner.offline-slide .banner-slider {
+  width: 100%;
 }
-#wrap .section-campus-content .campus-banner.half-slide > div {
+#wrap .section-campus-content .campus-banner.offline-slide .banner-slider .slick-slide {
+  height: 440px;
+}
+#wrap .section-campus-content .campus-banner.offline-slide .banner-slider .slick-arrow.slick-prev, #wrap .section-campus-content .campus-banner.offline-slide .banner-slider .slick-arrow.slick-next {
+  top: 0;
+}
+#wrap .section-campus-content .campus-banner.twoBnner-slide .banner-slider .slick-slide {
   width: 588px;
   height: 160px;
   overflow: hidden;
-  margin-left: 24px;
-}
-#wrap .section-campus-content .campus-banner.half-slide > div:first-child {
-  margin-left: 0;
-}
-#wrap .section-campus-content .campus-banner.half-slide .campus-slider {
-  width: 100%;
-}
-#wrap .section-campus-content .campus-banner.half-slide .campus-slider .slick-slide {
-  height: 160px;
-}
-#wrap .section-campus-content .campus-banner.half-slide .campus-slider .slick-arrow.slick-prev, #wrap .section-campus-content .campus-banner.half-slide .campus-slider .slick-arrow.slick-next {
-  top: 0;
-}
-#wrap .section-campus-content .campus-banner.page-slide .slick-slide {
-  height: 440px;
-}
-#wrap .section-campus-content .campus-banner.page-slide .slick-counter {
-  position: absolute;
-  right: 58px;
-  top: -44px;
-}
-#wrap .section-campus-content .campus-banner.page-slide .slick-counter span {
-  color: #BEBEBC;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20.4px;
-  letter-spacing: 2px;
-}
-#wrap .section-campus-content .campus-banner.page-slide .slick-counter span strong {
-  color: #A07D3B;
-  font-weight: 400;
+  margin-right: 24px;
 }
 #wrap .section-campus-content .campus-notice {
   margin-top: 120px;
@@ -6899,10 +6870,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-campus-content .campus-notice > div:first-child {
   margin-left: 0;
 }
-#wrap .section-campus-content .campus-notice .campus-lecture-list .campus-slider {
+#wrap .section-campus-content .campus-notice .campus-lecture-list .banner-slider {
   width: 100%;
 }
-#wrap .section-campus-content .campus-notice .campus-lecture-list .campus-slider .slick-slide {
+#wrap .section-campus-content .campus-notice .campus-lecture-list .banner-slider .slick-slide {
   height: 300px;
 }
 #wrap .section-campus-content .campus-notice .campus-lecture-list .lecture-data-list .course-list .col {
@@ -8828,4 +8799,76 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .form-control .text::placeholder {
   font-size: 13px;
+}
+
+#wrap .section-main-title {
+  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-size: 24px;
+  line-height: 43.2px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+#wrap .section-main-content .tab-box.tab-slide .tab-menu-slide ul li:after {
+  height: 16px;
+  margin-top: -8px;
+}
+#wrap .section-main-content .tab-box.tab-slide .tab-menu-slide ul li a {
+  font-size: 18px;
+}
+#wrap .section-main-content .main-slider .slick-slide {
+  width: 1200px;
+  height: 489px;
+  overflow: hidden;
+}
+#wrap .section-main-content .main-slider .slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+#wrap .section-main-content .main-slider .list a {
+  display: block;
+}
+#wrap .section-main-content .main-banner {
+  margin-top: 120px;
+}
+#wrap .section-main-content .main-banner.half-slide {
+  display: flex;
+  margin-top: 60px;
+}
+#wrap .section-main-content .main-banner.half-slide > div {
+  width: 588px;
+  height: 160px;
+  overflow: hidden;
+  margin-left: 24px;
+}
+#wrap .section-main-content .main-banner.half-slide > div:first-child {
+  margin-left: 0;
+}
+#wrap .section-main-content .main-banner.half-slide .half-slider {
+  width: 100%;
+}
+#wrap .section-main-content .main-banner.half-slide .half-slider .slick-slide {
+  height: 160px;
+}
+#wrap .section-main-content .main-banner.half-slide .half-slider .slick-arrow.slick-prev, #wrap .section-main-content .main-banner.half-slide .half-slider .slick-arrow.slick-next {
+  top: 0;
+}
+#wrap .section-main-content .main-banner.page-slide .slick-slide {
+  height: 440px;
+}
+#wrap .section-main-content .main-banner.page-slide .slick-counter {
+  position: absolute;
+  right: 58px;
+  top: -44px;
+}
+#wrap .section-main-content .main-banner.page-slide .slick-counter span {
+  color: #BEBEBC;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20.4px;
+  letter-spacing: 2px;
+}
+#wrap .section-main-content .main-banner.page-slide .slick-counter span strong {
+  color: #A07D3B;
+  font-weight: 400;
 }/*# sourceMappingURL=web.css.map */

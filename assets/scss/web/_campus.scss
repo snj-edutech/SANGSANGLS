@@ -160,9 +160,6 @@
 		}
 
 		.campus-map{
-			padding-top:120px;
-			border-top:1px solid $color-light-brown;
-
 			.map-info{
 				margin-top:30px;
 				display:flex;
@@ -219,10 +216,10 @@
 			padding-bottom:16px;
 		}
 
-		.campus-slider{
+		.banner-slider{
 			.slick-slide{
 				width:1200px;
-				height:489px;
+				height:480px;
 				overflow:hidden;
 				img{width:100%;height:100%;}
 			}
@@ -233,42 +230,25 @@
 		}
 
 		.campus-banner{
-			margin-top:120px;
-
-			&.half-slide{
-				display:flex;
-				margin-top:60px;
-				>div{
-					width:588px;height:160px;overflow:hidden;margin-left:24px;
-					&:first-child{margin-left:0;}
-				}
-				.campus-slider{
+			&.offline-slide{
+				margin-top:80px;
+				margin-bottom:60px;
+				.banner-slider{
 					width:100%;
-					.slick-slide{height:160px;}
+					.slick-slide{height:440px;}
 					.slick-arrow {
 						&.slick-prev, &.slick-next{top:0;}
 					}
 				}
 			}
 
-			&.page-slide{
-				.slick-slide{
-					height:440px;
-				}
-
-				.slick-counter{
-					position:absolute;right:58px;top:-44px;
-					span{
-						color:$color-light-gray;
-						font-size:12px;
-						font-weight:400;
-						line-height:20.4px;
-						letter-spacing:2px;
-						strong{color:$color-brown;font-weight:400;}
+			&.twoBnner-slide{
+				.banner-slider{
+					.slick-slide{
+						width:588px;height:160px;overflow:hidden;margin-right:24px;
 					}
 				}
 			}
-
 		}
 
 		.campus-notice{
@@ -280,7 +260,7 @@
 			}
 
 			.campus-lecture-list{
-				.campus-slider{
+				.banner-slider{
 					width:100%;
 					.slick-slide{
 						height:300px;

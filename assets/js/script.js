@@ -322,7 +322,7 @@ function slideEvent() {
 				variableWidth: false,
                 
 			};
-		} else if(_data == 'campusSlider'){
+		} else if(_data == 'bannerSlider'){
 			_options = {
 				dots: false,
 				arrows: true,
@@ -331,6 +331,17 @@ function slideEvent() {
                 infinite: true,
 				centerMode: false,
 				variableWidth: false,
+                
+			};
+		} else if(_data == 'twoBannerSlider'){
+			_options = {
+				dots: false,
+				arrows: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+				centerMode: false,
+				variableWidth: true,
                 
 			};
 		}
