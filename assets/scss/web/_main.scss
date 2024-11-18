@@ -9,15 +9,23 @@
 	}
 
 	.section-main-content{
-		.tab-box.tab-slide .tab-menu-slide ul li{
-			&:after{height:16px;margin-top:-8px;}
-			a{font-size:18px;}
+		.tab-box{
+			&.tab-slide{
+				.tab-menu-slide{
+					margin-top:0;
+					ul li{
+						&:after{height:16px;margin-top:-8px;}
+						a{font-size:18px;}
+					}
+				}
+			}
 		}
 
-		.main-slider{
+		.banner-slider{
+			width:100%;
 			.slick-slide{
 				width:1200px;
-				height:489px;
+				height:440px;
 				overflow:hidden;
 				img{width:100%;height:100%;}
 			}
@@ -28,8 +36,7 @@
 		}
 
 		.main-banner{
-			margin-top:120px;
-
+			position:relative;
 			&.half-slide{
 				display:flex;
 				margin-top:60px;
@@ -37,8 +44,7 @@
 					width:588px;height:160px;overflow:hidden;margin-left:24px;
 					&:first-child{margin-left:0;}
 				}
-				.half-slider{
-					width:100%;
+				.banner-slider{
 					.slick-slide{height:160px;}
 					.slick-arrow {
 						&.slick-prev, &.slick-next{top:0;}
@@ -53,6 +59,8 @@
 
 				.slick-counter{
 					position:absolute;right:58px;top:-44px;
+					width:auto !important;
+					height:auto !important;
 					span{
 						color:$color-light-gray;
 						font-size:12px;
@@ -62,6 +70,23 @@
 						strong{color:$color-brown;font-weight:400;}
 					}
 				}
+			}
+
+		}
+
+		.main-banner-top{
+			margin-top:80px;
+			.main-banner-tab{
+				display:flex;
+				.tab-slide{
+					width:891px;
+				}
+			}
+
+			.main-banner-promotion{
+				width:273px;
+				margin-left:36px;
+				padding-top:45px;
 			}
 
 		}

@@ -240,115 +240,153 @@ function tabEvent($selector){
     });
 }
 
-function tabSlideEvent($selector){
-    $($selector).find('.tab-menu-slide').find('li').on('click', function(){
-		var idx = $(this).index();
-		var navList = $($selector).find('.tab-menu-slide').find('li');
+function tabSlideEvent($selector) {
+    $($selector).find('.tab-menu-slide li').on('click', function () {
+        const idx = $(this).index();
+        const $tabs = $($selector).find('.tab-menu-slide li');
+        const $views = $($selector).find('.tab-view');
 
-		navList.removeClass("active");
-		navList.eq(idx).addClass("active");
+        // 탭 활성화
+        $tabs.removeClass('active');
+        $tabs.eq(idx).addClass('active');
 
-        $($selector).find('.tab-view').removeClass('active');
-		$($selector).find('.tab-view').eq(idx).addClass('active');
+        // 뷰 활성화
+        $views.removeClass('active');
+        $views.eq(idx).addClass('active');
 
-        $(".slider").slick('setPosition');
+        // 슬라이드 위치 재조정
+        $views.eq(idx).find('.slider').slick('setPosition');
     });
 }
 
 function slideEvent() {
-	let $slider = $('.page-slide .slider');
+    // 모든 슬라이더에 대해 처리
+    $('.slider').each(function (index, slider) {
+        const $slider = $(slider);
+        const sliderIdName = 'slider' + index;
+        slider.id = sliderIdName; // 각 슬라이더에 고유 ID 부여
 
-	if ($slider.length) {
-		let currentSlide;
-		let slidesCount;
-		let sliderCounter = document.createElement('div');
-		sliderCounter.classList.add('slick-counter');
+        const dataSlide = $slider.data('slide');
+		const autoplay = $slider.data('autoplay') || false; // `data-autoplay`로 동작 여부 지정
+        const autoplaySpeed = $slider.data('autoplay-speed') || 3000; // `data-autoplay-speed`로 속도 지정
+        let options;
 
-		let updateSliderCounter = function(slick, currentIndex) {
-			currentSlide = slick.slickCurrentSlide() + 1;
-			slidesCount = slick.slideCount;
-			$(sliderCounter).html("<span><strong>"+currentSlide + '</strong>/' +slidesCount+"</span>")
-		};
+        // 슬라이더 별 옵션 설정
+        switch (dataSlide) {
+            case 'onlineSlider':
+                options = {
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: true,
+                };
+                break;
 
-		$slider.on('init', function(event, slick) {
-			$slider.append(sliderCounter);
-			updateSliderCounter(slick);
-		});
+            case 'seasonSlider':
+                options = {
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: true,
+                };
+                break;
 
-		$slider.on('afterChange', function(event, slick, currentSlide) {
-			updateSliderCounter(slick, currentSlide);
-		});
-	}
+            case 'calenderSlider':
+                options = {
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    centerMode: false,
+                    variableWidth: false,
+                };
+                break;
 
-	$('.slider').each(function(key, item){
-		var sliderIdName = 'slider' + key;
-			this.id = sliderIdName;
-		var sliderId = '#' + sliderIdName;
-		var _data = $(sliderId).data('slide');
-		var _options;
+            case 'bannerSlider':
+                options = {
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: false,
+                    autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                };
+                break;
 
-		if(_data == 'onlineSlider'){
-			_options = {
-				autoplay: true,
-                autoplaySpeed: 2000,
-				dots: false,
-				arrows: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                infinite: true,
-				centerMode: false,
-				variableWidth: true,
-                
-			};
-		} else if(_data == 'seasonSlider'){
-			_options = {
-				dots: false,
-				arrows: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-				centerMode: false,
-				variableWidth: true,
-                
-			};
-		} else if(_data == 'calenderSlider'){
-			_options = {
-				dots: false,
-				arrows: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: false,
-				centerMode: false,
-				variableWidth: false,
-                
-			};
-		} else if(_data == 'bannerSlider'){
-			_options = {
-				dots: false,
-				arrows: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-				centerMode: false,
-				variableWidth: false,
-                
-			};
-		} else if(_data == 'twoBannerSlider'){
-			_options = {
-				dots: false,
-				arrows: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-				centerMode: false,
-				variableWidth: true,
-                
-			};
-		}
+            case 'twoBannerSlider':
+                options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: true,
 
-		$(sliderId).slick(_options);
-	});
-};
+                };
+                break;
+
+            default:
+                options = {
+                    dots: true,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: false,
+                };
+        }
+
+        // 슬라이더 초기화
+        $slider.slick(options);
+
+        // 페이징 처리
+        if ($slider.closest('.page-slide').length) {
+            let sliderCounter = $slider.siblings('.slick-counter');
+            if (!sliderCounter.length) {
+                sliderCounter = $('<div class="slick-counter"></div>');
+                $slider.parent().append(sliderCounter);
+            }
+
+            const updateSliderCounter = (slick, currentIndex) => {
+                const currentSlide = slick.slickCurrentSlide() + 1;
+                const slidesCount = slick.slideCount;
+                sliderCounter.html(`<span><strong>${currentSlide}</strong>/${slidesCount}</span>`);
+            };
+
+			 // 강제로 초기 상태 업데이트
+			 setTimeout(() => {
+                const slickInstance = $slider.slick('getSlick');
+                updateSliderCounter(slickInstance);
+            }, 0);
+
+            $slider.on('init', function (event, slick) {
+                updateSliderCounter(slick);
+            });
+
+            $slider.on('afterChange', function (event, slick) {
+                updateSliderCounter(slick);
+            });
+        }
+    });
+}
+
+
 
 //button event 함수를 만들고
 function countEvent(button, type) {
