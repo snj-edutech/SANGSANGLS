@@ -275,8 +275,8 @@ function slideEvent() {
         switch (dataSlide) {
             case 'onlineSlider':
                 options = {
-                    autoplay: true,
-                    autoplaySpeed: 2000,
+                    autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
                     dots: false,
                     arrows: true,
                     slidesToShow: 4,
@@ -289,6 +289,8 @@ function slideEvent() {
 
             case 'seasonSlider':
                 options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
                     dots: false,
                     arrows: true,
                     slidesToShow: 2,
@@ -301,6 +303,8 @@ function slideEvent() {
 
             case 'calenderSlider':
                 options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
                     dots: false,
                     arrows: true,
                     slidesToShow: 1,
@@ -313,6 +317,8 @@ function slideEvent() {
 
             case 'bannerSlider':
                 options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
                     dots: false,
                     arrows: true,
                     slidesToShow: 1,
@@ -320,8 +326,6 @@ function slideEvent() {
                     infinite: true,
                     centerMode: false,
                     variableWidth: false,
-                    autoplay: autoplay,
-                    autoplaySpeed: autoplaySpeed,
                 };
                 break;
 
@@ -342,6 +346,8 @@ function slideEvent() {
 
             default:
                 options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
                     dots: true,
                     arrows: true,
                     slidesToShow: 1,
@@ -356,33 +362,36 @@ function slideEvent() {
         $slider.slick(options);
 
         // 페이징 처리
-        if ($slider.closest('.page-slide').length) {
-            let sliderCounter = $slider.siblings('.slick-counter');
-            if (!sliderCounter.length) {
-                sliderCounter = $('<div class="slick-counter"></div>');
-                $slider.parent().append(sliderCounter);
-            }
-
-            const updateSliderCounter = (slick, currentIndex) => {
-                const currentSlide = slick.slickCurrentSlide() + 1;
-                const slidesCount = slick.slideCount;
-                sliderCounter.html(`<span><strong>${currentSlide}</strong>/${slidesCount}</span>`);
-            };
-
-			 // 강제로 초기 상태 업데이트
-			 setTimeout(() => {
-                const slickInstance = $slider.slick('getSlick');
-                updateSliderCounter(slickInstance);
-            }, 0);
-
-            $slider.on('init', function (event, slick) {
-                updateSliderCounter(slick);
-            });
-
-            $slider.on('afterChange', function (event, slick) {
-                updateSliderCounter(slick);
-            });
-        }
+		if ($slider.closest('.page-slide').length) {
+			const slidesCount = $slider.children().length; // 슬라이드 개수 확인
+			if (slidesCount > 1) { // 슬라이드가 2개 이상일 경우에만 페이징 표시
+				let sliderCounter = $slider.siblings('.slick-counter');
+				if (!sliderCounter.length) {
+					sliderCounter = $('<div class="slick-counter"></div>');
+					$slider.parent().append(sliderCounter);
+				}
+		
+				const updateSliderCounter = (slick, currentIndex) => {
+					const currentSlide = slick.slickCurrentSlide() + 1;
+					const totalSlides = slick.slideCount;
+					sliderCounter.html(`<span><strong>${currentSlide}</strong>/${totalSlides}</span>`);
+				};
+		
+				// 강제로 초기 상태 업데이트
+				setTimeout(() => {
+					const slickInstance = $slider.slick('getSlick');
+					updateSliderCounter(slickInstance);
+				}, 0);
+		
+				$slider.on('init', function (event, slick) {
+					updateSliderCounter(slick);
+				});
+		
+				$slider.on('afterChange', function (event, slick) {
+					updateSliderCounter(slick);
+				});
+			}
+		}
     });
 }
 
