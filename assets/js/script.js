@@ -211,8 +211,8 @@ function tabMenuClickEvent($selector){
 
 		// 모든 tab-view에서 active 클래스 제거 후 해당 인덱스에 active 추가
 		if($($selector).find('.tab-view').length > 1){
-			$('.tab-view').removeClass('active');
-			$('.tab-view').eq(adjustedIdx).addClass("active");
+			$($selector).find('.tab-view').removeClass('active');
+			$($selector).find('.tab-view').eq(adjustedIdx).addClass("active");
 		}
 
 	});
@@ -287,6 +287,20 @@ function slideEvent() {
                 };
                 break;
 
+			case 'threeBannerSlider':
+				options = {
+					autoplay: autoplay,
+					autoplaySpeed: autoplaySpeed,
+					dots: false,
+					arrows: true,
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+					centerMode: false,
+					variableWidth: true,
+				};
+				break;
+				
             case 'seasonSlider':
                 options = {
 					autoplay: autoplay,
