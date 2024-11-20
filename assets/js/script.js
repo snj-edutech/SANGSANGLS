@@ -472,7 +472,7 @@ function layerVideoOpen($url, $options){
 		$options = "autoplay loop controls";
 	}
 
-	var _body = $("body");
+	var _body = $("#wrap");
 	_body.append('<div class="popup" id="popupLayerVideo"><div class="popup-wrap"><a href="javascript:layerVideoClose();" class="popup-close"></a><div class="popup-content"></div></div></div>');
 
 	var _popupLayerContent = $("#popupLayerVideo .popup-content");
