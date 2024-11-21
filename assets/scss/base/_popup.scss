@@ -997,4 +997,33 @@
 			.btn-login{margin-top:24px;display:flex;align-items:center;justify-content: center;color:$color-white;height:56px;background-color:$color-black;font-weight:600;font-size:14px;}
 		}
 	}
+
+	#popupLayerMain{
+		.popup-wrap{
+			width:auto;
+			.popup-close{top:17px;right:11px;}
+			.popup-title{
+				background-color:transparent;border:none;
+				color:$color-black;font-weight:600;font-size:18px;padding:24px 24px 0;
+			}
+			.popup-cont{
+				padding:20px 24px 20px;
+
+				.popup-banner-list{
+					display:flex;
+					a{
+						display:block;width:300px;height:400px;overflow:hidden;
+						margin-left:12px;
+						&:first-child{margin-left:0;}
+						img{width:100%;height:100%;}
+					}
+				}
+
+				.form-control{
+					margin-top:20px;
+					text-align:right;
+				}
+			}
+		}
+	}
 }
