@@ -2546,6 +2546,18 @@
 									</label>
 								</div>
 	
+
+								<div class="date-box">
+									<label for="date-first">
+										<input type="text" class="date" disabled id="datepicker1" value="2024-02-14"  />
+										<a href="javascript:;" class="btn-calendar disabled"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									</label>
+									<span class="date-dash">&nbsp;</span>
+									<label for="date-last">
+										<input type="text" class="date" id="datepicker2" placeholder="YYYY-MM-DD" />
+										<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									</label>
+								</div>
 	
 							</dd>
 						</dl>
@@ -2557,6 +2569,15 @@
 				</div>
 			</div>
 		</div>
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script type="text/javascript">
+			$( function() {
+				$( "#datepicker1" ).datepicker({dateFormat: 'yy-mm-dd',});
+				$( "#datepicker2" ).datepicker({dateFormat: 'yy-mm-dd',});
+			});
+		</script>
 
 		<div class="popup popup-notice" id="popupNoticeList">
 			<div class="popup-wrap">

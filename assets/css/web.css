@@ -1980,6 +1980,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+#ui-datepicker-div {
+  z-index: 1004 !important;
+}
+
 #wrap {
   line-height: 1.4;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
@@ -3219,20 +3223,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .date-box label {
   position: relative;
   display: inline-block;
+  background-color: #FFFFFC;
 }
 #wrap .date-box label .btn-calendar {
   display: inline-block;
   position: absolute;
   right: 10px;
   top: 10px;
+  z-index: 1;
 }
 #wrap .date-box label .btn-calendar.disabled {
   cursor: default;
 }
 #wrap .date-box .date {
+  position: relative;
+  z-index: 2;
   border: none;
   border: 1px solid #E4DED3;
-  background-color: #FFFFFC;
+  background-color: transparent;
   display: inline-block;
   height: 40px;
   font-size: 14px;

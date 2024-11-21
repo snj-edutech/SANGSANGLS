@@ -10,6 +10,8 @@
     background-color: rgba(0, 0, 0, .6);
 }
 
+#ui-datepicker-div{z-index:1004 !important;}
+
 #wrap {
     line-height: 1.4;
     font-family: $font-pretendard;
@@ -837,15 +839,19 @@
         label{
             position:relative;
             display:inline-block;
+			background-color:$color-white;
             .btn-calendar{
                 display:inline-block;
-                position:absolute;right:10px;top:10px;
+                position:absolute;right:10px;top:10px;z-index:1;
 
 				&.disabled{cursor:default;}
             }
         }
         .date{
-            border:none;border:1px solid $color-light-brown;background-color:$color-white;
+			position:relative;z-index:2;
+            border:none;border:1px solid $color-light-brown;
+			background-color:transparent;
+			//background-color:$color-white;
             display:inline-block;height:40px;font-size:14px;font-weight:400;
             padding:8px 32px 8px 12px;width:154px;color:$color-light-gray;
             &::placeholder{
@@ -861,6 +867,7 @@
 			padding:0 16px;
 		}
     }
+
 
     .select-box{
         background-color:$color-light-beige;
