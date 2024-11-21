@@ -5575,6 +5575,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-online-slide .season-slider .list a {
   display: block;
 }
+#wrap .section-online-title {
+  margin-bottom: 80px;
+}
 #wrap .section-online-bookstore .slick-arrow {
   border-radius: 50%;
 }
