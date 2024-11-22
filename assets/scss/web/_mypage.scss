@@ -711,7 +711,11 @@
 						margin-bottom:0;
 					}
 				}
-				.layer-open{display:none;position:absolute;right:0;top:39px;z-index:10;}
+				.layer-open{display:none;position:absolute;left:0;top:39px;z-index:10;}
+
+				label[for='date-last'] + .layer-open{
+					left:189px;
+				}
 				.calender-box{
 					border:1px solid $color-light-brown;
 					padding:24px;

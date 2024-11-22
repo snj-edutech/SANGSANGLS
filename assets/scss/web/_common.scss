@@ -833,9 +833,12 @@
 	}
 
     .date-box{
-        display:flex;
-		align-items: center;
-        .date-dash{margin:0 8px;display:inline-block;background-color:$color-gray;width:12px;height:1px;}
+		position:relative;
+       // display:flex;
+		//align-items: center;
+
+		display:inline-block;vertical-align:middle;
+        .date-dash{margin:0 8px;display:inline-block;vertical-align:middle;background-color:$color-gray;width:12px;height:1px;}
         label{
             position:relative;
             display:inline-block;
@@ -860,11 +863,16 @@
                 font-weight:400;
             }
 
+			&.disabled{cursor:default;}
+
         }
 
 		.btn{
+			display:inline-block;
 			height:40px;
+			line-height:40px;
 			padding:0 16px;
+			vertical-align:top;
 		}
     }
 
