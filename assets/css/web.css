@@ -8689,6 +8689,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+#wrap .section-player .player-content .player-video.wide {
+  width: 100%;
+}
 #wrap .section-player .player-content .player-video .video-box {
   background-color: #BEBEBC;
   width: 100%;
@@ -8802,6 +8805,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-bottom: 20px;
   border-bottom: 1px solid #E4DED3;
 }
+#wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-btn .btn {
+  font-size: 14px;
+}
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-btn .btn-bookmark {
   height: 5.5555555556vw;
   line-height: 5.5555555556vw;
@@ -8841,14 +8847,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: 12px;
   border-radius: 4px;
 }
-#wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .form-control .text {
-  font-size: 13px;
-  padding: 8px;
-  height: 38px;
-  line-height: 38px;
+#wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .form-control {
+  position: relative;
 }
-#wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .form-control .text::placeholder {
+#wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .form-control .text {
+  padding: 8px 52px 8px 8px;
+  height: 42px;
+  line-height: 42px;
+}
+#wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .form-control .btn-save {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  height: 26px;
+  line-height: 26px;
+}
+#wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .form-value {
   font-size: 13px;
+  line-height: 22.1px;
+  color: #2C2923;
+  font-weight: 400;
 }
 
 #wrap .section-main-title {

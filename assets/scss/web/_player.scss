@@ -21,6 +21,10 @@
 				padding: 8px;
 				@include boxSizing(border-box);
 
+				&.wide{
+					width:100%;
+				}
+
 				.video-box{
 					background-color:$color-light-gray;
 					width:100%;
@@ -100,6 +104,7 @@
 						.bookmark-btn{
 							padding-bottom:20px;
 							border-bottom:1px solid $color-light-brown;
+							.btn{font-size:14px;}
 							.btn-bookmark{
 								@include vw(height, 40px); 
 								@include vw(line-height, 40px); 
@@ -129,10 +134,19 @@
 								}
 
 								.form-control{
+									position:relative;
 									.text{
-										font-size:13px;padding:8px;height:38px;line-height:38px;
-										&::placeholder{	font-size:13px;}
+										padding:8px 52px 8px 8px;height:42px;line-height:42px;
 									}
+
+
+
+
+									.btn-save{position:absolute;right:8px;top:8px;height:26px;line-height:26px;}
+								}
+
+								.form-value{
+									font-size:13px;line-height:22.1px;color:$color-black;font-weight:400;
 								}
 							}
 						}
