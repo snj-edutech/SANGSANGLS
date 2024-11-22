@@ -48,38 +48,13 @@ function starEvent(){
 
 function calenderEvent(){
 	/* 달력 제어 */
-	// $(".btn-calendar").not(".disabled").on("click", function(){
-	// 	$(this).next(".layer-open").show();
-	// });
+	$("input.date").not(".disabled").on("click", function(){
+		$(this).closest('label').next(".layer-open").show();
+	});
 
-	// $(".calender-box .calender-table .table-row tr td").on("click", function(){
-	// 	$(".layer-open").hide();
-	// });
-
-	$(".date-box label").click(function () {
-        const input = $(this).find("input.date");
-
-        // input이 disabled가 아닌 경우에만 실행
-        if (!input.prop("disabled")) {
-            $(this).find(".layer-open").show()
-        } else {
-            $(this).find(".layer-open").hide();
-        }
-    });
-
-	// $(document).click(function (event) {
-    //     if (!$(event.target).closest(".date-box").length) {
-    //         $(".layer-open").hide();
-    //     }
-    // });
-
-	$(document).on("click", ".calender-box .calender-table .table-row tr td", function () {
-        const layerOpen = $(this).closest(".layer-open");
-
-        if (layerOpen.is(":visible")) {
-			layerOpen.hide();
-        }
-    });
+	$(".calender-box .calender-table .table-row tr td").on("click", function(){
+		$(this).closest(".layer-open").hide();
+	});
 }
 
 function searchValueEvent($selector){
