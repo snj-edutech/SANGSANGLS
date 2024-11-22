@@ -9775,4 +9775,36 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-main-content .main-notice-customer .main-customer .action a:first-child {
   margin-left: 0;
+}
+
+#wrap .section-error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#wrap .section-error h3 {
+  text-align: center;
+  color: #2C2923;
+}
+#wrap .section-error .date-box {
+  display: inline-block;
+  padding: 20px;
+  color: #2C2923;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27.2px;
+  background-color: #F2EFE7;
+  margin-bottom: 20px;
+}
+#wrap .section-error .text-box p {
+  font-size: 16px;
+  line-height: 27.2px;
+  color: #7A746A;
+  font-weight: 400;
+}
+#wrap .section-error .action {
+  margin-top: 40px;
 }/*# sourceMappingURL=web.css.map */
