@@ -201,6 +201,19 @@
 								<td>
 									<div class="date-box">
 										<label for="date-first">
+											<input type="text" class="date"  id="datepicker1" placeholder="YYYY-MM-DD" />
+											<a href="javascript:;" class="btn-calendar "><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+										</label>
+										<span class="date-dash">&nbsp;</span>
+										<label for="date-last">
+											<input type="text" class="date" id="datepicker2" placeholder="YYYY-MM-DD" />
+											<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+										</label>
+										<a href="javascript:;" class="btn btn-brown">검색</a>
+									</div>
+
+									<!-- <div class="date-box">
+										<label for="date-first">
 											<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
 											<input type="text" class="date" id="date-first" placeholder="YYYY-MM-DD" value=""  />
 										</label>
@@ -492,7 +505,7 @@
 											</div>
 										</div>
 										<a href="javascript:;" class="btn btn-brown">검색</a>
-									</div>
+									</div> -->
 								</td>
 							</tr>
 							
@@ -1144,10 +1157,15 @@
 	</div>
 </div>
 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
 		tabMenuEvent('.section-mypage-wrap');
+
+		$( "#datepicker1" ).datepicker({dateFormat: 'yy-mm-dd',});
+		$( "#datepicker2" ).datepicker({dateFormat: 'yy-mm-dd',});
 		
 	});
 </script>
