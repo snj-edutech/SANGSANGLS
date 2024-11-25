@@ -360,9 +360,10 @@
 							margin-left:16px;
 							.desc-title{
 								width:739px;
-								font-size:16px;line-height:27.2px;
+								font-size:16px;line-height:1;
 								@extend %textEllipsis;
 							}
+							.desc-text{line-height:1;}
 						}
 					}
 				}
@@ -483,7 +484,7 @@
 				.review-list{
 					margin-right:36px;
 					width:376px;
-					height:320px;
+					height:321px;
 					a{
 						display:block;
 						padding:30px;

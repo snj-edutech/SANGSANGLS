@@ -177,10 +177,16 @@
         }
 
 		.notice-list-table {
-			.table-row tr td.link a{
-				width:960px;
-				overflow:hidden;
-				@extend %textEllipsis;
+			.table-row tr td.link{
+				line-height:1;
+				a{
+					width:960px;
+					overflow:hidden;
+					@extend %textEllipsis;
+					line-height:1;
+					vertical-align:middle;
+					.icon-new{top:0;}
+				}
 			}
 		}
     }
