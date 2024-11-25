@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+    <meta id="viewport" content="width=1300, user-scalable=yes" name="viewport">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+	<link rel="stylesheet" href="../../../assets/css/web.css" />
+
+	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+
+	<script src="../../../assets/js/script.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+    <div id="container" class="publish-gate-content">
+		<h1>컴포넌트 모음</h1>
+
+		<!-- 탭-1 -->
+		<div class="component-content">
+			<div class="wrap">
+				<div class="component-item">
+					<div class="component-title">tab-list</div>
+					<div class="component-body">
+						<div class="section-tab">
+							<div class="tab-box">
+								<div class="tab-list">
+									<ul>
+										<li class="active"><a href="javascript:;">탭1</a></li>
+										<li><a href="javascript:;">탭2</a></li>
+										<li><a href="javascript:;">탭3</a></li>
+										<li><a href="javascript:;">탭4</a></li>
+									</ul>
+								</div>
+
+								<div class="tab-view active">
+									tab-view1
+								</div>
+								<div class="tab-view">
+									tab-view2
+								</div>
+								<div class="tab-view">
+									tab-view3
+								</div>
+								<div class="tab-view">
+									tab-view4
+								</div>
+							</div>
+						</div>
+
+						<script>
+							tabEvent('.section-tab');
+						</script>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">tab-menu</div>
+					<div class="component-body">
+						<div class="section-menu" id="sectionMenu">
+							<div class="wrap">
+								<div class="tab-box">
+									<div class="tab-menu">
+										<ul>
+											<li class="active"><a href="javascript:;">탭1</a></li>
+											<li><a href="javascript:;">탭2</a></li>
+											<li><a href="javascript:;">탭3</a></li>
+											<li><a href="javascript:;">탭4</a></li>
+										</ul>
+									</div>
+
+									<div class="tab-view active">
+										tab-view
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<script>
+								tabMenuEvent('.section-menu');
+
+								$(window).on("scroll", scrollMenuEvent);
+								scrollMenuEvent();
+						</script>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">tab-menu-small</div>
+					<div class="component-body">
+						<div class="section-nav">
+							<div class="tab-box">
+								<div class="tab-menu-small">
+									<div class="menu-title">LEFT</div>
+									<ul>
+										<li class="active"><a href="javascript:;">탭명1</a></li>
+										<li><a href="javascript:;">탭명2</a></li>
+										<li><a href="javascript:;">탭명3</a></li>
+										<li><a href="javascript:;">탭명4</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<script>
+							//navEvent('.section-nav');
+						</script>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">tab-menu-slide</div>
+					<div class="component-body">
+						<div class="section-online-bookstore">
+							<div class="tab-box tab-slide">
+								<div class="tab-menu-slide">
+									<ul>
+										<li class="active"><a href="javascript:;">BEST 교재</a></li>
+										<li><a href="javascript:;">신규교재</a></li>
+									</ul>
+								</div>
+
+								<div class="tab-view active">
+									<div class="slider online-slider" data-slide="onlineSlider" data-autoplay="true" data-autoplay-speed="2000">
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER  </div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-view">
+									<div class="slider online-slider" data-slide="onlineSlider" data-autoplay="true" data-autoplay-speed="2000">
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER  </div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="list">
+											<a href="javascript:;">
+												<div class="book-img"><img src="../../../assets/images/temp/book_120x168.png" alt="" /></div>
+												<div class="book-desc">
+													<div class="desc-title">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</div>     
+													<div class="desc-text">
+														<p>언어이해,추리논증</p>
+														<p>입문과정</p>
+														<p>홍길동</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<script>
+							tabSlideEvent('.section-online-bookstore .tab-slide');
+							slideEvent();
+						</script>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">Category</div>
+					<div class="component-body">
+						<div class="section-category">
+							<div class="category-box">
+								<div class="category-list">
+									<ul>
+										<li class="active"><a href="javascript:;">전체</a></li>
+										<li><a href="javascript:;">언어이해</a></li>
+										<li><a href="javascript:;">추리논증</a></li>
+										<li><a href="javascript:;">논술</a></li>
+										<li><a href="javascript:;">자기소개서</a></li>
+										<li><a href="javascript:;">자기소개서+온라인첨삭</a></li>
+										<li><a href="javascript:;">면접</a></li>
+										<li><a href="javascript:;">언어이해</a></li>
+										<li><a href="javascript:;">추리논증</a></li>
+										<li><a href="javascript:;">논술</a></li>
+										<li><a href="javascript:;">자기소개서</a></li>
+										<li><a href="javascript:;">자기소개서+온라인첨삭</a></li>
+										<li><a href="javascript:;">면접</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<script>
+							//navEvent('.section-nav');
+						</script>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">Badge</div>
+					<div class="component-body">
+						<div class="component-result">
+							<span class="badge">뱃지</span>
+							<span class="badge badge-brown">접수중</span>
+							<span class="badge badge-gray">뱃지</span>
+							<span class="badge badge-light-brown">뱃지</span>
+							<br/>
+							<span class="badge">접수대기</span>
+							<span class="badge badge-brown">접수중</span>
+							<span class="badge badge-black">마감임박</span>
+							<span class="badge badge-light-gray">마감</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">pagination</div>
+					<div class="component-body">
+						<div class="pagination">
+							<a href="javascript:;" class="control control-prev"><span>이전페이지</span></a>
+							<a href="javascript:;" class="active"><span>1</span></a>
+							<a href="javascript:;"><span>2</span></a>
+							<a href="javascript:;"><span>3</span></a>
+							<a href="javascript:;"><span>4</span></a>
+							<a href="javascript:;"><span>5</span></a>
+							<a href="javascript:;"><span>6</span></a>
+							<a href="javascript:;"><span>7</span></a>
+							<a href="javascript:;"><span>8</span></a>
+							<a href="javascript:;"><span>9</span></a>
+							<a href="javascript:;"><span>10</span></a>
+							<a href="javascript:;" class="control control-next"><span>다음페이지</span></a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="component-item">
+					<div class="component-title">count</div>
+					<div class="component-body">
+						<div class="count-box">
+							<button type="button" class="btn-minus" onclick="countEvent(this, 'minus')"><span class="sr-only">감소</span></button>
+							<span class="result number">1</span>
+							<button type="button" class="btn-plus" onclick="countEvent(this, 'plus')"><span class="sr-only">증가</span></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">price</div>
+					<div class="component-body">
+						<div class="price-box">
+							<div class="price-subject">총 결제금액</div>
+							<div class="price-before">999,999원</div>
+							<div class="price-after">999,999원</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">search</div>
+					<div class="component-body">
+						<div class="search-input-box">
+							<div class="search-text">
+								<input type="text" id="txtSearch" name="txtSearch" placeholder="검색" />
+								<a href="javascript:;" class="search-input-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
+							</div> 
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form : textarea</div>
+					<div class="component-body">
+						<div class="form-control">
+							<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form : select</div>
+					<div class="component-body">
+						<div class="select-box">
+							<div class="form-control">
+								<span class="select">
+									<select name="" id="">
+										<option value="">과목 선택</option>
+									</select>
+								</span>
+								<span class="select">
+									<select name="" id="">
+										<option value="">교수 선택</option>
+									</select>
+								</span>
+							</div>
+							<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
+						</div>
+
+						<div class="select-box">
+							<div class="form-control">
+								<span class="select small">
+									<select name="" id="">
+										<option value="">전체 선택</option>
+									</select>
+								</span>
+		
+								<input type="text" class="text" placeholder="검색어를 입력하세요" />
+							</div>
+							<a href="javascript:;" class="btn btn-brown btn-search">검색</a>
+						</div>
+						<div class="select-box flex-end">
+							<p class="select-text">교재 정렬 순서</p>
+							<div class="form-control">
+								<span class="select small">
+									<select name="" id="">
+										<option value="">전체 선택</option>
+									</select>
+								</span>
+							</div>
+						</div>
+
+						<div class="form-control">
+							<div class="select">
+								<select name="" id="">
+									<option value="">교수 선택</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="custom-select">
+							<div class="selected">
+							  <div class="selected-value">문의하실 수강중인 강좌를 선택하세요</div>
+							  <div class="arrow"></div>
+							</div>
+							<ul>
+							  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
+							  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강 (호버시)</li>
+							  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
+							  <li class="option">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form: input[type="checkbox"]</div>
+					<div class="component-body">
+						<div class="checkbox-box">
+							<div class="form-control">
+								<span class="fake-checkbox">
+									<input type="checkbox" id="privacyAgree" class="checkbox" checked>
+									<label for="privacyAgree">강좌</label>
+								</span>
+								<span class="fake-checkbox">
+									<input type="checkbox" id="privacyAgree2" class="checkbox">
+									<label for="privacyAgree2">교재</label>
+								</span>
+							</div>
+						</div>
+
+						<div class="form-control">
+							<div class="fake-checkbox">
+								<input type="checkbox" id="privacyAgree3" class="checkbox" checked>
+								<label for="privacyAgree3">강좌</label>
+							</div>
+							<div class="fake-checkbox">
+								<input type="checkbox" id="privacyAgree4" class="checkbox" checked>
+								<label for="privacyAgree4">교재</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="component-item">
+					<div class="component-title">form: input[type="radio"]</div>
+					<div class="component-body">
+						<div class="radio-box">
+							<div class="form-control">
+								<span class="fake-radio">
+									<input type="radio" id="radioType1" class="radio" name="radioSelect" checked>
+									<label for="radioType1">인강</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType2" class="radio" name="radioSelect">
+									<label for="radioType2">교재</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType3" class="radio" name="radioSelect" >
+									<label for="radioType3">학원강좌</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType4" class="radio" name="radioSelect">
+									<label for="radioType4">기타</label>
+								</span>
+							</div>
+							<p class="form-text">* 강좌, 교재 문의는 수강중인 강좌에 대해서만 가능합니다.</p>
+						</div>
+						<div class="form-control">
+							<span class="fake-radio">
+								<input type="radio" id="agree" class="radio" name="agreeSelect" checked>
+								<label for="agree">동의</label>
+							</span>
+							<span class="fake-radio">
+								<input type="radio" id="notAgree" class="radio" name="agreeSelect">
+								<label for="notAgree">비동의</label>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form: input[type="file"]</div>
+					<div class="component-body">
+						<div class="form-control">
+							<div class="fake-file-box">
+								<input type="text" class="text fake-file-name" readonly>
+								<div class="fake-file">
+									<input type="file" id="fileUpload" name="file">
+									<label for="fileUpload">찾아보기</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form: input[type="text"]</div>
+					<div class="component-body">
+						<div class="input-box">
+							<div class="form-control">
+								<input type="text" class="text" />
+							</div>
+
+							<div class="form-control">
+								<div class="fake-checkbox">
+									<input type="checkbox" id="privacyAgree3" class="checkbox" checked>
+									<label for="privacyAgree3">강좌</label>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="form-control">
+							<input type="text" class="text" />
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">form: input[type="date"]</div>
+					<div class="component-body">
+						
+						<div class="date-box">
+							<label for="date-first">
+								<input type="text" class="date" disabled id="datepicker1" value="2024-02-14"  />
+								<a href="javascript:;" class="btn-calendar disabled"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+							</label>
+							<span class="date-dash">&nbsp;</span>
+							<label for="date-last">
+								<input type="text" class="date" id="datepicker2" placeholder="YYYY-MM-DD" />
+								<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+							</label>
+						</div>
+					</div>
+
+					<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+					<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+					<script type="text/javascript">
+						$( function() {
+							$( "#datepicker1" ).datepicker({dateFormat: 'yy-mm-dd',});
+							$( "#datepicker2" ).datepicker({dateFormat: 'yy-mm-dd',});
+						});
+					</script>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">Button</div>
+					<div class="component-body">
+						<div class="file-list-box">
+							<a href="javascript:;" class="btn btn-file">파일명.png<span class="icon-down"><img src="../../../assets/images/icon_down_brown.svg" alt="" /></span></a><a href="javascript:;" class="btn-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-item">
+					<div class="component-title">Toggle</div>
+					<div class="component-body">
+						<div class="toggle-box">
+							<dl>
+								<dt data-toggle>질문1</dt>
+								<dd>대답1</dd>
+							</dl>
+							<dl>
+								<dt data-toggle>질문2</dt>
+								<dd>대답2</dd>
+								<dd>대답2</dd>
+								<dd>대답2</dd>
+							</dl>
+		
+							<dl>
+								<dt data-toggle>질문3</dt>
+								<dd>대답1</dd>
+							</dl>
+							<dl>
+								<dt  data-toggle>질문4</dt>
+								<dd>대답2</dd>
+								<dd>대답2</dd>
+								<dd>대답2</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+    </div>
+</div>
+
+<style>
+	.publish-gate-content h1 {
+		margin: 20px 0;
+		text-align: center;
+		font-size: 42px;
+		font-weight: bold;
+	}
+
+	.publish-gate-content .component-title {
+		position: relative;
+		font-weight: bold;
+		font-size: 40px;
+		color: #A07D3B;
+	}
+
+	.publish-gate-content .component-item+.component-item {
+		margin-top: 80px;
+	}
+
+	.publish-gate-content .component-body {
+		padding: 28px 24px;
+		margin-top: 22px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+	}
+
+</style>
+</body>
+</html>
