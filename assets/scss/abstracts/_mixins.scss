@@ -415,7 +415,7 @@
 
 			@if $unit == 'px' {
 				$px: append($px, $value);
-				$max-mobile: 720;
+				$max-mobile: 375;
 				$vw-context: ($max-mobile * .01) * 1;
 				$vw: append($vw, (($val/$vw-context) * 1 + vw));
 			}
@@ -431,11 +431,13 @@
 		#{$property}: $px;
 	} @else {
 		#{$property}: $vw;
-		@include breakpoint(maxMobile){
+		//@include breakpoint(maxMobile){
+		@media screen and (min-width: 375px){
 			#{$property}: $px;
 		}
 	}
 }
+
 
 // pointer
 // @include pointer(50%, 0, 66px, 73px, 20, bounce);

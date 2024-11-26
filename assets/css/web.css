@@ -477,9 +477,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup-wrap {
   position: relative;
   background-color: #FFFFFC;
-  width: 83.3333333333vw;
+  width: 160vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-wrap {
     width: 600px;
   }
@@ -489,19 +489,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   right: 0;
   display: block;
-  width: 5.5555555556vw;
-  height: 5.5555555556vw;
+  width: 10.6666666667vw;
+  height: 10.6666666667vw;
   font-size: 0;
-  top: 0.6944444444vw;
-  right: 1.3888888889vw;
+  top: 1.3333333333vw;
+  right: 2.6666666667vw;
   z-index: 10002;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-close {
     width: 40px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-close {
     height: 40px;
   }
@@ -542,12 +542,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 0;
   text-indent: -9999px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-close {
     top: 5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-close {
     right: 10px;
   }
@@ -596,26 +596,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 #wrap .popup-title {
-  padding: 1.6666666667vw 3.3333333333vw;
+  padding: 3.2vw 6.4vw;
   color: #2C2923;
-  font-size: 2.2222222222vw;
-  line-height: 3.7777777778vw;
+  font-size: 4.2666666667vw;
+  line-height: 7.2533333333vw;
   font-weight: 600;
   text-align: left;
   background-color: #F2EFE7;
   border-bottom: 1px solid #E4DED3;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-title {
     padding: 12px 24px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-title {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-title {
     line-height: 27.2px;
   }
@@ -624,59 +624,59 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 #wrap .popup-title dl dt, #wrap .popup-title dl dd {
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   font-weight: 400;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-title dl dt, #wrap .popup-title dl dd {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-title dl dt, #wrap .popup-title dl dd {
     line-height: 23.8px;
   }
 }
 #wrap .popup-title dl dt {
-  width: 6.6666666667vw;
+  width: 12.8vw;
   font-weight: 600;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-title dl dt {
     width: 48px;
   }
 }
 #wrap .popup-title dl dd {
-  margin-left: 2.7777777778vw;
+  margin-left: 5.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-title dl dd {
     margin-left: 20px;
   }
 }
 #wrap .popup-cont {
-  padding: 3.3333333333vw;
+  padding: 6.4vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont {
     padding: 24px;
   }
 }
 #wrap .popup-cont p {
   color: #2C2923;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   text-align: left;
   font-weight: 400;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont p {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont p {
     line-height: 23.8px;
   }
@@ -685,9 +685,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
 }
 #wrap .popup-cont .box {
-  margin-bottom: 8.3333333333vw;
+  margin-bottom: 16vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .box {
     margin-bottom: 60px;
   }
@@ -700,23 +700,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup-cont .box .table-row th, #wrap .popup-cont .box .table-row td {
   padding: 8px 12px;
-  font-size: 1.8055555556vw;
-  line-height: 3.0694444444vw;
+  font-size: 3.4666666667vw;
+  line-height: 5.8933333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .box .table-row th, #wrap .popup-cont .box .table-row td {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .box .table-row th, #wrap .popup-cont .box .table-row td {
     line-height: 22.1px;
   }
 }
 #wrap .popup-cont .box .table-row + p {
-  margin-top: 2.7777777778vw;
+  margin-top: 5.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .box .table-row + p {
     margin-top: 20px;
   }
@@ -729,32 +729,32 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
 }
 #wrap .popup-cont .heading {
-  margin-bottom: 2.7777777778vw;
-  font-size: 2.2222222222vw;
+  margin-bottom: 5.3333333333vw;
+  font-size: 4.2666666667vw;
   font-weight: 600;
   line-height: 1;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .heading {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .heading {
     font-size: 16px;
   }
 }
 #wrap .popup-cont .border-line {
-  padding-bottom: 2.7777777778vw;
-  margin-bottom: 5.5555555556vw;
+  padding-bottom: 5.3333333333vw;
+  margin-bottom: 10.6666666667vw;
   border-bottom: 1px solid #E4DED3;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .border-line {
     padding-bottom: 20px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-cont .border-line {
     margin-bottom: 40px;
   }
@@ -768,20 +768,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup-text p {
   text-align: left;
   color: #7A746A;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   text-align: left;
   font-weight: 400;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-text p {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-text p {
     line-height: 23.8px;
   }
@@ -792,20 +792,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .popup-scroll {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  max-height: 83.3333333333vw;
+  max-height: 160vw;
   overflow-y: auto;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-scroll {
     max-height: 600px;
   }
 }
 #wrap .popup-action {
-  margin-top: 3.3333333333vw;
+  margin-top: 6.4vw;
   justify-content: center;
   display: flex;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-action {
     margin-top: 24px;
   }
@@ -814,35 +814,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.9444444444vw;
-  border-radius: 0.2777777778vw;
-  width: 10.1388888889vw;
-  height: 5.5555555556vw;
+  font-size: 3.7333333333vw;
+  border-radius: 0.5333333333vw;
+  width: 19.4666666667vw;
+  height: 10.6666666667vw;
   color: #FFFFFC;
   background-color: #A07D3B;
-  margin: 0 0.5555555556vw;
+  margin: 0 1.0666666667vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-action a {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-action a {
     border-radius: 2px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-action a {
     width: 73px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-action a {
     height: 40px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-action a {
     margin: 0 4px;
   }
@@ -879,18 +879,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 #wrap .popup .line-box.scroll {
-  max-height: 21.9444444444vw;
+  max-height: 42.1333333333vw;
   overflow-y: auto;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup .line-box.scroll {
     max-height: 158px;
   }
 }
 #wrap .popup .line-box.scroll.min {
-  max-height: 17.5vw;
+  max-height: 33.6vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup .line-box.scroll.min {
     max-height: 126px;
   }
@@ -900,20 +900,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
   color: #2C2923;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   text-align: left;
   font-weight: 400;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
     line-height: 23.8px;
   }
@@ -931,41 +931,41 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 16px;
   margin-top: 20px;
   color: #2C2923;
-  font-size: 2.2222222222vw;
-  line-height: 3.7777777778vw;
+  font-size: 4.2666666667vw;
+  line-height: 7.2533333333vw;
   font-weight: 400;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup .fill-box {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup .fill-box {
     line-height: 27.2px;
   }
 }
 #wrap .popup-alert .popup-wrap {
-  border-radius: 1.1111111111vw;
-  width: 52.2222222222vw;
-  padding: 5vw;
+  border-radius: 2.1333333333vw;
+  width: 100.2666666667vw;
+  padding: 9.6vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-alert .popup-wrap {
     border-radius: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-alert .popup-wrap {
     width: 376px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-alert .popup-wrap {
     padding: 36px;
   }
@@ -990,18 +990,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   right: 0;
   display: block;
-  width: 8.3333333333vw;
-  height: 8.3333333333vw;
+  width: 16vw;
+  height: 16vw;
   top: -10px;
   right: -40px;
   z-index: 10002;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupLayerVideo .popup-close {
     width: 60px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupLayerVideo .popup-close {
     height: 60px;
   }
@@ -1069,9 +1069,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap #popupLayerVideo.shorts .popup-wrap {
-  max-width: 66.6666666667vw;
+  max-width: 128vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupLayerVideo.shorts .popup-wrap {
     max-width: 480px;
   }
@@ -1093,17 +1093,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 20px;
 }
 #wrap #popupProfile .border-line {
-  margin-bottom: 2.7777777778vw;
+  margin-bottom: 5.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupProfile .border-line {
     margin-bottom: 20px;
   }
 }
 #wrap .popup-bookInfo .border-line {
-  margin-bottom: 2.7777777778vw;
+  margin-bottom: 5.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-bookInfo .border-line {
     margin-bottom: 20px;
   }
@@ -1118,16 +1118,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: center;
   align-items: center;
   background-color: #F2EFE7;
-  width: 23.3333333333vw;
-  height: 23.3333333333vw;
+  width: 44.8vw;
+  height: 44.8vw;
   overflow: hidden;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-bookInfo .desc-box .book-img {
     width: 168px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-bookInfo .desc-box .book-img {
     height: 168px;
   }
@@ -1141,9 +1141,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup-bookInfo .desc-box .book-desc {
   text-align: left;
-  width: 50.5555555556vw;
+  width: 97.0666666667vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-bookInfo .desc-box .book-desc {
     width: 364px;
   }
@@ -1315,35 +1315,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.3888888889vw;
-  height: 1.3888888889vw;
-  margin-top: -0.6944444444vw;
+  width: 2.6666666667vw;
+  height: 2.6666666667vw;
+  margin-top: -1.3333333333vw;
   border-width: 0;
   border-style: solid;
   border-color: #A07D3B;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  left: 2.7777777778vw;
+  left: 5.3333333333vw;
   border-bottom-width: 1.5px;
   border-left-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     width: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     height: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     margin-top: -5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-prev::before {
     left: 20px;
   }
@@ -1361,35 +1361,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.3888888889vw;
-  height: 1.3888888889vw;
-  margin-top: -0.6944444444vw;
+  width: 2.6666666667vw;
+  height: 2.6666666667vw;
+  margin-top: -1.3333333333vw;
   border-width: 0;
   border-style: solid;
   border-color: #A07D3B;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  right: 2.7777777778vw;
+  right: 5.3333333333vw;
   border-top-width: 1.5px;
   border-right-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     width: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     height: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     margin-top: -5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #popupSchedule .step-box .step.step-1 .calender-box .btn-arrow.btn-next::before {
     right: 20px;
   }
@@ -1631,35 +1631,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.1111111111vw;
-  height: 1.1111111111vw;
-  margin-top: -0.5555555556vw;
+  width: 2.1333333333vw;
+  height: 2.1333333333vw;
+  margin-top: -1.0666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  left: 2.2222222222vw;
+  left: 4.2666666667vw;
   border-bottom-width: 1.5px;
   border-left-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
     width: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
     height: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
     margin-top: -4px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-prev::before {
     left: 16px;
   }
@@ -1676,35 +1676,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.1111111111vw;
-  height: 1.1111111111vw;
-  margin-top: -0.5555555556vw;
+  width: 2.1333333333vw;
+  height: 2.1333333333vw;
+  margin-top: -1.0666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  right: 2.2222222222vw;
+  right: 4.2666666667vw;
   border-top-width: 1.5px;
   border-right-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
     width: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
     height: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
     margin-top: -4px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .popup-coursePause .calender-box .month-box .btn-arrow a.btn-next::before {
     right: 16px;
   }
@@ -2057,10 +2057,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .dot {
   position: relative;
-  padding-left: 3.6111111111vw;
+  padding-left: 6.9333333333vw;
   text-align: left;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .dot {
     padding-left: 26px;
   }
@@ -2125,19 +2125,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .slick-dots {
   width: 100%;
-  margin-top: 2.7777777778vw;
+  margin-top: 5.3333333333vw;
   text-align: center;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-dots {
     margin-top: 20px;
   }
 }
 #wrap .slick-dots li {
   display: inline-block;
-  margin: 0 0.8333333333vw;
+  margin: 0 1.6vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-dots li {
     margin: 0 6px;
   }
@@ -2147,16 +2147,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-indent: -10000em;
   border: 0;
   border-radius: 50%;
-  width: 2.0833333333vw;
-  height: 2.0833333333vw;
+  width: 4vw;
+  height: 4vw;
   background-color: #666;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-dots li button {
     width: 15px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-dots li button {
     height: 15px;
   }
@@ -2173,8 +2173,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 3.3333333333vw;
-  height: 3.3333333333vw;
+  width: 6.4vw;
+  height: 6.4vw;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -2194,12 +2194,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   transform: translateY(0);
   border: 1px solid #E4DED3;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-prev {
     width: 24px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-prev {
     height: 24px;
   }
@@ -2210,8 +2210,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   left: 50%;
   display: block;
-  width: 0.8333333333vw;
-  height: 0.8333333333vw;
+  width: 1.6vw;
+  height: 1.6vw;
   border-width: 0;
   border-style: solid;
   border-color: #7A746A;
@@ -2221,12 +2221,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-prev::before {
     width: 6px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-prev::before {
     height: 6px;
   }
@@ -2240,8 +2240,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 3.3333333333vw;
-  height: 3.3333333333vw;
+  width: 6.4vw;
+  height: 6.4vw;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -2260,12 +2260,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   transform: translateY(0);
   border: 1px solid #E4DED3;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-next {
     width: 24px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-next {
     height: 24px;
   }
@@ -2276,8 +2276,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   left: 50%;
   display: block;
-  width: 0.8333333333vw;
-  height: 0.8333333333vw;
+  width: 1.6vw;
+  height: 1.6vw;
   border-width: 0;
   border-style: solid;
   border-color: #7A746A;
@@ -2287,12 +2287,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-next::before {
     width: 6px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .slick-arrow.slick-next::before {
     height: 6px;
   }
@@ -2314,13 +2314,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: center;
 }
 #wrap .badge {
-  font-size: 1.5277777778vw;
-  padding: 0 0.4861111111vw;
-  height: 2.6388888889vw;
+  font-size: 2.9333333333vw;
+  padding: 0 0.9333333333vw;
+  height: 5.0666666667vw;
   display: inline-block;
-  border-width: 0.1388888889vw;
+  border-width: 0.2666666667vw;
   border-style: solid;
-  border-radius: 0.2777777778vw;
+  border-radius: 0.5333333333vw;
   background-color: #FFFFFC;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2330,27 +2330,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
   vertical-align: middle;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .badge {
     font-size: 11px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .badge {
     padding: 0 3.5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .badge {
     height: 19px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .badge {
     border-width: 1px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .badge {
     border-radius: 2px;
   }
@@ -2380,19 +2380,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #FFFFFC;
 }
 #wrap .badge + p {
-  margin-top: 1.1111111111vw;
+  margin-top: 2.1333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .badge + p {
     margin-top: 8px;
   }
 }
 #wrap .pagination {
-  margin-top: 8.3333333333vw;
+  margin-top: 16vw;
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination {
     margin-top: 60px;
   }
@@ -2400,45 +2400,45 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .pagination a {
   display: inline-block;
   text-align: center;
-  width: 4.7222222222vw;
-  height: 4.7222222222vw;
-  line-height: 4.7222222222vw;
-  margin: 0 0.2777777778vw;
-  font-size: 1.8055555556vw;
+  width: 9.0666666667vw;
+  height: 9.0666666667vw;
+  line-height: 9.0666666667vw;
+  margin: 0 0.5333333333vw;
+  font-size: 3.4666666667vw;
   color: #2C2923;
   font-weight: 400;
   background-color: #FFFFFC;
   border: 1px solid #E4DED3;
-  border-radius: 0.2777777778vw;
+  border-radius: 0.5333333333vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a {
     width: 34px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a {
     height: 34px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a {
     line-height: 34px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a {
     margin: 0 2px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a {
     border-radius: 2px;
   }
@@ -2464,35 +2464,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.3888888889vw;
-  height: 1.3888888889vw;
-  margin-top: -0.6944444444vw;
+  width: 2.6666666667vw;
+  height: 2.6666666667vw;
+  margin-top: -1.3333333333vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  left: 2.7777777778vw;
+  left: 5.3333333333vw;
   border-bottom-width: 1.5px;
   border-left-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-prev::before {
     width: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-prev::before {
     height: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-prev::before {
     margin-top: -5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-prev::before {
     left: 20px;
   }
@@ -2509,35 +2509,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.3888888889vw;
-  height: 1.3888888889vw;
-  margin-top: -0.6944444444vw;
+  width: 2.6666666667vw;
+  height: 2.6666666667vw;
+  margin-top: -1.3333333333vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  right: 2.7777777778vw;
+  right: 5.3333333333vw;
   border-top-width: 1.5px;
   border-right-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-next::before {
     width: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-next::before {
     height: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-next::before {
     margin-top: -5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .pagination a.control-next::before {
     right: 20px;
   }
@@ -2632,16 +2632,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 16px;
 }
 #wrap .search-input-box .action .btn {
-  width: 9.0277777778vw;
-  height: 4.1666666667vw;
+  width: 17.3333333333vw;
+  height: 8vw;
   margin-left: 8px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .search-input-box .action .btn {
     width: 65px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .search-input-box .action .btn {
     height: 30px;
   }
@@ -2864,13 +2864,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .form-control .fake-checkbox label {
   display: inline-block;
-  padding-left: 4.1666666667vw;
+  padding-left: 8vw;
   background: url("../images/icon_checkbox_check.svg") no-repeat left center;
   background-size: 24px 24px;
   font-weight: 400;
   font-size: 14px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-checkbox label {
     padding-left: 30px;
   }
@@ -2882,9 +2882,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-image: url("../images/icon_check_disable.svg");
 }
 #wrap .form-control .fake-radio {
-  margin-right: 5vw;
+  margin-right: 9.6vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-radio {
     margin-right: 36px;
   }
@@ -2892,14 +2892,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .fake-radio label {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 4.1666666667vw;
+  padding-left: 8vw;
   background: url("../images/icon_radio_check.svg") no-repeat left center;
   background-size: 24px 24px;
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-radio label {
     padding-left: 30px;
   }
@@ -2917,8 +2917,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .select select {
   width: 100%;
   height: 40px;
-  padding: 1.1111111111vw 2.2222222222vw 1.1111111111vw 2.2222222222vw;
-  font-size: 1.9444444444vw;
+  padding: 2.1333333333vw 4.2666666667vw 2.1333333333vw 4.2666666667vw;
+  font-size: 3.7333333333vw;
   font-weight: 400;
   border: 1px solid rgb(228, 222, 211);
   color: #2C2923;
@@ -2928,12 +2928,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .select select {
     padding: 8px 16px 8px 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .select select {
     font-size: 14px;
   }
@@ -2947,8 +2947,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .text {
   display: inline-block;
   width: 100%;
-  padding: 1.1111111111vw 1.1111111111vw 1.1111111111vw 2.2222222222vw;
-  font-size: 1.9444444444vw;
+  padding: 2.1333333333vw 2.1333333333vw 2.1333333333vw 4.2666666667vw;
+  font-size: 3.7333333333vw;
   border: 1px solid rgb(228, 222, 211);
   background: #FFFFFC;
   -webkit-box-sizing: border-box;
@@ -2956,12 +2956,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
   height: 40px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .text {
     padding: 8px 8px 8px 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .text {
     font-size: 14px;
   }
@@ -2975,12 +2975,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .form-control .textarea {
   width: 100%;
-  height: 55vw;
-  padding: 2.2222222222vw;
-  font-size: 1.9444444444vw;
+  height: 105.6vw;
+  padding: 4.2666666667vw;
+  font-size: 3.7333333333vw;
   font-weight: 400;
-  line-height: 3.3055555556vw;
-  border-width: 0.1388888889vw;
+  line-height: 6.3466666667vw;
+  border-width: 0.2666666667vw;
   border-style: solid;
   border-color: #E4DED3;
   resize: none;
@@ -2989,37 +2989,37 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .textarea {
     height: 396px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .textarea {
     padding: 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .textarea {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .textarea {
     line-height: 23.8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .textarea {
     border-width: 1px;
   }
 }
 #wrap .form-control .textarea::placeholder {
   color: #BEBEBC;
-  font-size: 1.9444444444vw;
+  font-size: 3.7333333333vw;
   font-weight: 400;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .textarea::placeholder {
     font-size: 14px;
   }
@@ -3031,9 +3031,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .fake-file-box .fake-file-name {
   width: 100%;
   border: 1px solid #E4DED3;
-  padding: 1.25vw 11.1111111111vw 1.25vw 2.2222222222vw;
+  padding: 2.4vw 21.3333333333vw 2.4vw 4.2666666667vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-file-box .fake-file-name {
     padding: 9px 80px 9px 16px;
   }
@@ -3046,9 +3046,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .form-control .fake-file-box .fake-file label {
   display: inline-block;
-  padding: 0.7638888889vw 0.6944444444vw;
+  padding: 1.4666666667vw 1.3333333333vw;
   text-align: center;
-  font-size: 1.8055555556vw;
+  font-size: 3.4666666667vw;
   color: #2C2923;
   border: 1px solid #E4DED3;
   cursor: pointer;
@@ -3056,12 +3056,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-radius: 2px;
   line-height: 1;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-file-box .fake-file label {
     padding: 5.5px 5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-file-box .fake-file label {
     font-size: 13px;
   }
@@ -3072,9 +3072,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .fake-save-box .fake-input {
   width: 100%;
   border: 1px solid #E4DED3;
-  padding: 1.25vw 9.7222222222vw 1.25vw 1.1111111111vw;
+  padding: 2.4vw 18.6666666667vw 2.4vw 2.1333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-save-box .fake-input {
     padding: 9px 70px 9px 8px;
   }
@@ -3087,9 +3087,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .form-control .fake-save-box .fake-btn label {
   display: inline-block;
-  padding: 0.7638888889vw 0.6944444444vw;
+  padding: 1.4666666667vw 1.3333333333vw;
   text-align: center;
-  font-size: 1.8055555556vw;
+  font-size: 3.4666666667vw;
   color: #2C2923;
   border: 1px solid #E4DED3;
   cursor: pointer;
@@ -3097,12 +3097,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-radius: 2px;
   line-height: 1;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-save-box .fake-btn label {
     padding: 5.5px 5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .form-control .fake-save-box .fake-btn label {
     font-size: 13px;
   }
@@ -3120,8 +3120,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.1111111111vw 2.2222222222vw 1.1111111111vw 2.2222222222vw;
-  font-size: 1.9444444444vw;
+  padding: 2.1333333333vw 4.2666666667vw 2.1333333333vw 4.2666666667vw;
+  font-size: 3.7333333333vw;
   font-weight: 400;
   color: #2C2923;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
@@ -3129,12 +3129,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
   background-color: #FFFFFC;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .custom-select .selected {
     padding: 8px 16px 8px 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .custom-select .selected {
     font-size: 14px;
   }
@@ -3176,19 +3176,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-overflow: ellipsis;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0.5555555556vw 2.2222222222vw;
-  font-size: 1.9444444444vw;
+  padding: 1.0666666667vw 4.2666666667vw;
+  font-size: 3.7333333333vw;
   font-weight: 400;
   color: #2C2923;
   line-height: 23.8px;
   margin-top: 8px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .custom-select ul li {
     padding: 4px 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .custom-select ul li {
     font-size: 14px;
   }
@@ -3274,15 +3274,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 40px 40px 40px;
 }
 #wrap .select-box .btn-search {
-  width: 7.6388888889vw;
-  height: 5.5555555556vw;
+  width: 14.6666666667vw;
+  height: 10.6666666667vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .select-box .btn-search {
     width: 55px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .select-box .btn-search {
     height: 40px;
   }
@@ -3438,9 +3438,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .checkbox-box .fake-checkbox {
   margin-top: 0;
-  margin-right: 5vw;
+  margin-right: 9.6vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .checkbox-box .fake-checkbox {
     margin-right: 36px;
   }
@@ -3523,18 +3523,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 16px 20px;
   text-align: center;
   color: #2C2923;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .table-row tr th, #wrap .table-row tr td {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .table-row tr th, #wrap .table-row tr td {
     line-height: 23.8px;
   }
@@ -3726,26 +3726,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-top: 1px solid #E4DED3;
 }
 #wrap .grid .col {
-  padding: 4.4444444444vw 2.7777777778vw;
+  padding: 8.5333333333vw 5.3333333333vw;
   text-align: center;
   color: #2C2923;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .grid .col {
     padding: 32px 20px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .grid .col {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .grid .col {
     line-height: 23.8px;
   }
@@ -3773,47 +3773,47 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   align-items: center;
   justify-content: center;
   width: auto;
-  padding: 0 0.6944444444vw;
-  height: 3.6111111111vw;
-  font-size: 1.8055555556vw;
+  padding: 0 1.3333333333vw;
+  height: 6.9333333333vw;
+  font-size: 3.4666666667vw;
   line-height: 1;
   font-weight: 400;
-  border-width: 0.1388888889vw;
+  border-width: 0.2666666667vw;
   border-style: solid;
-  border-radius: 0.2777777778vw;
+  border-radius: 0.5333333333vw;
   background-color: #FFFFFC;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #2C2923;
   border-color: #E4DED3;
-  margin-left: 1.1111111111vw;
+  margin-left: 2.1333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn {
     padding: 0 5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn {
     height: 26px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn {
     border-width: 1px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn {
     border-radius: 2px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn {
     margin-left: 8px;
   }
@@ -3853,48 +3853,48 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .btn.large {
   width: auto;
-  padding: 0 5.5555555556vw;
-  height: 7.7777777778vw;
-  font-size: 1.9444444444vw;
+  padding: 0 10.6666666667vw;
+  height: 14.9333333333vw;
+  font-size: 3.7333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.large {
     padding: 0 40px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.large {
     height: 56px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.large {
     font-size: 14px;
   }
 }
 #wrap .btn.btn-link {
   display: inline-block;
-  margin-left: 1.1111111111vw;
-  padding: 0 2.2222222222vw;
-  height: 5.2777777778vw;
-  line-height: 5.2777777778vw;
+  margin-left: 2.1333333333vw;
+  padding: 0 4.2666666667vw;
+  height: 10.1333333333vw;
+  line-height: 10.1333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-link {
     margin-left: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-link {
     padding: 0 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-link {
     height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-link {
     line-height: 38px;
   }
@@ -3904,27 +3904,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: #FFFFFC url("../images/icon_play_arrow.svg") no-repeat 8px center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 12.0833333333vw;
-  height: 5.2777777778vw;
-  line-height: 5.2777777778vw;
-  padding-left: 3.6111111111vw;
+  width: 23.2vw;
+  height: 10.1333333333vw;
+  line-height: 10.1333333333vw;
+  padding-left: 6.9333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-video {
     width: 87px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-video {
     height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-video {
     line-height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-video {
     padding-left: 26px;
   }
@@ -3934,27 +3934,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: #FFFFFC url("../images/icon_down_brown.svg") no-repeat 8px center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 12.0833333333vw;
-  height: 5.2777777778vw;
-  line-height: 5.2777777778vw;
-  padding-left: 3.6111111111vw;
+  width: 23.2vw;
+  height: 10.1333333333vw;
+  line-height: 10.1333333333vw;
+  padding-left: 6.9333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-download {
     width: 87px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-download {
     height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-download {
     line-height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-download {
     padding-left: 26px;
   }
@@ -3966,36 +3966,36 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: auto;
-  height: 5.2777777778vw;
-  line-height: 5.2777777778vw;
-  padding: 0 4.1666666667vw 0 1.6666666667vw;
+  height: 10.1333333333vw;
+  line-height: 10.1333333333vw;
+  padding: 0 8vw 0 3.2vw;
   margin-left: 0;
-  margin-right: 1.1111111111vw;
-  margin-bottom: 1.1111111111vw;
+  margin-right: 2.1333333333vw;
+  margin-bottom: 2.1333333333vw;
   max-width: 100%;
   overflow: hidden;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-file {
     height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-file {
     line-height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-file {
     padding: 0 30px 0 12px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-file {
     margin-right: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-file {
     margin-bottom: 8px;
   }
@@ -4013,23 +4013,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: auto;
-  height: 5.2777777778vw;
-  line-height: 5.2777777778vw;
-  padding: 0 1.6666666667vw;
+  height: 10.1333333333vw;
+  line-height: 10.1333333333vw;
+  padding: 0 3.2vw;
   margin-left: 0;
   color: #FFFFFC;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-down {
     height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-down {
     line-height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .btn.btn-down {
     padding: 0 12px;
   }
@@ -4115,18 +4115,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   right: 0;
   display: block;
-  width: 4.1666666667vw;
-  height: 4.1666666667vw;
+  width: 8vw;
+  height: 8vw;
   top: 50%;
   margin-top: -15px;
   margin-left: 500px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .header-top-banner .banner-close {
     width: 30px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .header-top-banner .banner-close {
     height: 30px;
   }
@@ -4327,16 +4327,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 16px;
 }
 #wrap #header .header-search .search-box .action .btn {
-  width: 9.0277777778vw;
-  height: 4.1666666667vw;
+  width: 17.3333333333vw;
+  height: 8vw;
   margin-left: 8px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #header .header-search .search-box .action .btn {
     width: 65px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #header .header-search .search-box .action .btn {
     height: 30px;
   }
@@ -4346,16 +4346,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   right: 0;
   display: block;
-  width: 6.9444444444vw;
-  height: 6.9444444444vw;
+  width: 13.3333333333vw;
+  height: 13.3333333333vw;
   top: -50px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #header .header-search .header-search-close {
     width: 50px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap #header .header-search .header-search-close {
     height: 50px;
   }
@@ -4546,16 +4546,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 16px;
 }
 #wrap .section-search .search-box .action .btn {
-  width: 9.0277777778vw;
-  height: 4.1666666667vw;
+  width: 17.3333333333vw;
+  height: 8vw;
   margin-left: 8px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search .search-box .action .btn {
     width: 65px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search .search-box .action .btn {
     height: 30px;
   }
@@ -4565,16 +4565,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   right: 0;
   display: block;
-  width: 6.9444444444vw;
-  height: 6.9444444444vw;
+  width: 13.3333333333vw;
+  height: 13.3333333333vw;
   top: -50px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search .search-close {
     width: 50px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search .search-close {
     height: 50px;
   }
@@ -4668,35 +4668,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.3888888889vw;
-  height: 1.3888888889vw;
-  margin-top: -0.6944444444vw;
+  width: 2.6666666667vw;
+  height: 2.6666666667vw;
+  margin-top: -1.3333333333vw;
   border-width: 0;
   border-style: solid;
   border-color: #A07D3B;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  right: 2.7777777778vw;
+  right: 5.3333333333vw;
   border-top-width: 1px;
   border-right-width: 1px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search-content .search-data-title a::before {
     width: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search-content .search-data-title a::before {
     height: 10px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search-content .search-data-title a::before {
     margin-top: -5px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search-content .search-data-title a::before {
     right: 20px;
   }
@@ -4724,16 +4724,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: center;
   align-items: center;
   background-color: #F2EFE7;
-  width: 10vw;
-  height: 10vw;
+  width: 19.2vw;
+  height: 19.2vw;
   overflow: hidden;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search-content .search-data-list .search-list .desc-box .t-img, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
     width: 72px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search-content .search-data-list .search-list .desc-box .t-img, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
     height: 72px;
   }
@@ -4797,9 +4797,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 #wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-btn .btn, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-btn .btn {
-  margin-left: 0.6944444444vw;
+  margin-left: 1.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-btn .btn, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-btn .btn {
     margin-left: 5px;
   }
@@ -4868,16 +4868,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: center;
   align-items: center;
   background-color: #F2EFE7;
-  width: 23.3333333333vw;
-  height: 23.3333333333vw;
+  width: 44.8vw;
+  height: 44.8vw;
   overflow: hidden;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .lecture-data-list .book-list .desc-box .t-img, #wrap .lecture-data-list .course-list .desc-box .t-img {
     width: 168px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .lecture-data-list .book-list .desc-box .t-img, #wrap .lecture-data-list .course-list .desc-box .t-img {
     height: 168px;
   }
@@ -4965,9 +4965,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 #wrap .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
-  margin-left: 0.6944444444vw;
+  margin-left: 1.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
     margin-left: 5px;
   }
@@ -5041,15 +5041,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 760px;
 }
 #wrap .lecture-data-list .course-list .desc-box .t-img {
-  width: 10vw;
-  height: 10vw;
+  width: 19.2vw;
+  height: 19.2vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .lecture-data-list .course-list .desc-box .t-img {
     width: 72px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .lecture-data-list .course-list .desc-box .t-img {
     height: 72px;
   }
@@ -5382,16 +5382,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: center;
   align-items: center;
   background-color: #F2EFE7;
-  width: 23.3333333333vw;
-  height: 23.3333333333vw;
+  width: 44.8vw;
+  height: 44.8vw;
   overflow: hidden;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     width: 168px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     height: 168px;
   }
@@ -5478,9 +5478,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
-  margin-left: 0.6944444444vw;
+  margin-left: 1.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn .btn, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn .btn {
     margin-left: 5px;
   }
@@ -5527,15 +5527,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 760px;
 }
 #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
-  width: 10vw;
-  height: 10vw;
+  width: 19.2vw;
+  height: 19.2vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     width: 72px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
     height: 72px;
   }
@@ -5602,8 +5602,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 8.8888888889vw;
-  height: 8.8888888889vw;
+  width: 17.0666666667vw;
+  height: 17.0666666667vw;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -5616,22 +5616,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
-  margin-left: -88.1944444444vw;
+  margin-left: -169.3333333333vw;
   background: #FBFAF6;
   top: 128px;
   transform: translateY(0);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-prev {
     width: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-prev {
     height: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-prev {
     margin-left: -635px;
   }
@@ -5642,8 +5642,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   left: 50%;
   display: block;
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 4.2666666667vw;
+  height: 4.2666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
@@ -5653,12 +5653,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-prev::before {
     width: 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-prev::before {
     height: 16px;
   }
@@ -5672,8 +5672,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 8.8888888889vw;
-  height: 8.8888888889vw;
+  width: 17.0666666667vw;
+  height: 17.0666666667vw;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -5686,22 +5686,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
-  margin-right: -88.1944444444vw;
+  margin-right: -169.3333333333vw;
   background: #FBFAF6;
   top: 128px;
   transform: translateY(0);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-next {
     width: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-next {
     height: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-next {
     margin-right: -635px;
   }
@@ -5712,8 +5712,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   left: 50%;
   display: block;
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 4.2666666667vw;
+  height: 4.2666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
@@ -5723,12 +5723,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-next::before {
     width: 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-online-bookstore .slick-arrow.slick-next::before {
     height: 16px;
   }
@@ -6989,12 +6989,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: #FFFFFC url("../images/icon_arrow_right.svg") no-repeat 95% center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 37.9166666667vw;
+  width: 72.8vw;
   justify-content: flex-start;
   margin-left: 24px;
   padding: 0 24px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-campus-content .campus-notice .campus-notice-list .action a {
     width: 273px;
   }
@@ -7298,27 +7298,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-mypage-wrap .content .select-group .action .btn {
   display: inline-block;
-  margin-left: 1.1111111111vw;
-  padding: 0 2.2222222222vw;
-  height: 5.2777777778vw;
-  line-height: 5.2777777778vw;
+  margin-left: 2.1333333333vw;
+  padding: 0 4.2666666667vw;
+  height: 10.1333333333vw;
+  line-height: 10.1333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .select-group .action .btn {
     margin-left: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .select-group .action .btn {
     padding: 0 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .select-group .action .btn {
     height: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .select-group .action .btn {
     line-height: 38px;
   }
@@ -7919,35 +7919,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.1111111111vw;
-  height: 1.1111111111vw;
-  margin-top: -0.5555555556vw;
+  width: 2.1333333333vw;
+  height: 2.1333333333vw;
+  margin-top: -1.0666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  left: 2.2222222222vw;
+  left: 4.2666666667vw;
   border-bottom-width: 1.5px;
   border-left-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-prev::before {
     width: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-prev::before {
     height: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-prev::before {
     margin-top: -4px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-prev::before {
     left: 16px;
   }
@@ -7964,35 +7964,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.1111111111vw;
-  height: 1.1111111111vw;
-  margin-top: -0.5555555556vw;
+  width: 2.1333333333vw;
+  height: 2.1333333333vw;
+  margin-top: -1.0666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  right: 2.2222222222vw;
+  right: 4.2666666667vw;
   border-top-width: 1.5px;
   border-right-width: 1.5px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-next::before {
     width: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-next::before {
     height: 8px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-next::before {
     margin-top: -4px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box .btn-arrow a.btn-next::before {
     right: 16px;
   }
@@ -8383,18 +8383,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-join-content .agree-check-box .agree-box p {
   color: #2C2923;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   text-align: left;
   font-weight: 400;
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box p {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box p {
     line-height: 23.8px;
   }
@@ -8403,9 +8403,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
 }
 #wrap .section-join-content .agree-check-box .agree-box .box {
-  margin-bottom: 8.3333333333vw;
+  margin-bottom: 16vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .box {
     margin-bottom: 60px;
   }
@@ -8418,23 +8418,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-join-content .agree-check-box .agree-box .box .table-row th, #wrap .section-join-content .agree-check-box .agree-box .box .table-row td {
   padding: 8px 12px;
-  font-size: 1.8055555556vw;
-  line-height: 3.0694444444vw;
+  font-size: 3.4666666667vw;
+  line-height: 5.8933333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .box .table-row th, #wrap .section-join-content .agree-check-box .agree-box .box .table-row td {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .box .table-row th, #wrap .section-join-content .agree-check-box .agree-box .box .table-row td {
     line-height: 22.1px;
   }
 }
 #wrap .section-join-content .agree-check-box .agree-box .box .table-row + p {
-  margin-top: 2.7777777778vw;
+  margin-top: 5.3333333333vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .box .table-row + p {
     margin-top: 20px;
   }
@@ -8447,32 +8447,32 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
 }
 #wrap .section-join-content .agree-check-box .agree-box .heading {
-  margin-bottom: 2.7777777778vw;
-  font-size: 2.2222222222vw;
+  margin-bottom: 5.3333333333vw;
+  font-size: 4.2666666667vw;
   font-weight: 600;
   line-height: 1;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .heading {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .heading {
     font-size: 16px;
   }
 }
 #wrap .section-join-content .agree-check-box .agree-box .border-line {
-  padding-bottom: 2.7777777778vw;
-  margin-bottom: 5.5555555556vw;
+  padding-bottom: 5.3333333333vw;
+  margin-bottom: 10.6666666667vw;
   border-bottom: 1px solid #E4DED3;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .border-line {
     padding-bottom: 20px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box .border-line {
     margin-bottom: 40px;
   }
@@ -8495,17 +8495,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-join-content .agree-check-box .agree-box.type-list dl dt, #wrap .section-join-content .agree-check-box .agree-box.type-list dl dd {
   color: #2C2923;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   text-align: left;
   font-weight: 400;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box.type-list dl dt, #wrap .section-join-content .agree-check-box .agree-box.type-list dl dd {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .agree-box.type-list dl dt, #wrap .section-join-content .agree-check-box .agree-box.type-list dl dd {
     line-height: 23.8px;
   }
@@ -8543,17 +8543,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt, #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dd {
   color: #2C2923;
-  font-size: 1.9444444444vw;
-  line-height: 3.3055555556vw;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
   text-align: left;
   font-weight: 400;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt, #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dd {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dt, #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl dd {
     line-height: 23.8px;
   }
@@ -8744,15 +8744,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-top: 20px;
 }
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .btn {
-  height: 5.5555555556vw;
-  line-height: 5.5555555556vw;
+  height: 10.6666666667vw;
+  line-height: 10.6666666667vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-player .player-content .player-tab .tab-box .tab-view .btn {
     height: 40px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-player .player-content .player-tab .tab-box .tab-view .btn {
     line-height: 40px;
   }
@@ -8831,15 +8831,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 14px;
 }
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-btn .btn-bookmark {
-  height: 5.5555555556vw;
-  line-height: 5.5555555556vw;
+  height: 10.6666666667vw;
+  line-height: 10.6666666667vw;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-btn .btn-bookmark {
     height: 40px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-btn .btn-bookmark {
     line-height: 40px;
   }
@@ -9019,8 +9019,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 8.8888888889vw;
-  height: 8.8888888889vw;
+  width: 17.0666666667vw;
+  height: 17.0666666667vw;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -9033,22 +9033,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
-  margin-left: -88.1944444444vw;
+  margin-left: -169.3333333333vw;
   background: #FBFAF6;
   top: 128px;
   transform: translateY(0);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-prev {
     width: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-prev {
     height: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-prev {
     margin-left: -635px;
   }
@@ -9059,8 +9059,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   left: 50%;
   display: block;
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 4.2666666667vw;
+  height: 4.2666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
@@ -9070,12 +9070,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-prev::before {
     width: 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-prev::before {
     height: 16px;
   }
@@ -9089,8 +9089,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 8.8888888889vw;
-  height: 8.8888888889vw;
+  width: 17.0666666667vw;
+  height: 17.0666666667vw;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -9103,22 +9103,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
-  margin-right: -88.1944444444vw;
+  margin-right: -169.3333333333vw;
   background: #FBFAF6;
   top: 128px;
   transform: translateY(0);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-next {
     width: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-next {
     height: 64px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-next {
     margin-right: -635px;
   }
@@ -9129,8 +9129,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   left: 50%;
   display: block;
-  width: 2.2222222222vw;
-  height: 2.2222222222vw;
+  width: 4.2666666667vw;
+  height: 4.2666666667vw;
   border-width: 0;
   border-style: solid;
   border-color: #2C2923;
@@ -9140,12 +9140,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-next::before {
     width: 16px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-professor-list .slick-arrow.slick-next::before {
     height: 16px;
   }
@@ -9379,13 +9379,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: #FFFFFC url("../images/icon_arrow_right.svg") no-repeat 95% center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 37.6388888889vw;
+  width: 72.2666666667vw;
   justify-content: flex-start;
   margin-left: 16px;
   padding: 0 24px;
   height: 80px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-lecture-slide .lecture-slide .action a {
     width: 271px;
   }
@@ -9806,12 +9806,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: #FFFFFC url("../images/icon_arrow_right.svg") no-repeat 95% center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 37.9166666667vw;
+  width: 72.8vw;
   justify-content: flex-start;
   margin-left: 24px;
   padding: 0 24px;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 375px) {
   #wrap .section-main-content .main-notice-customer .main-customer .action a {
     width: 273px;
   }

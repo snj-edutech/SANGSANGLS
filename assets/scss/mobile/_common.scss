@@ -1,0 +1,70 @@
+#wrap {
+    font-family: $font-pretendard;
+    color: $color-black;
+	font-weight:600;
+	background-color:$color-white;
+
+	img{max-width:100%;}
+	a{display:inline-block;}
+
+	.scroll{
+		overflow: hidden;
+		white-space: nowrap;
+		overflow-x: auto;
+		width:100%;
+		display: flex;
+		align-items:center;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	.nodata-box{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        .icon{@include vw(margin-bottom,8px);}
+        p{
+            color:$color-black;
+			@include vw(font-size,14px);
+            font-weight:400;
+			@include vw(line-height,27.2px);
+        }
+    }
+
+	.form-control {
+		font-size:0;
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            margin: 0;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+        input[type="number"] { -moz-appearance: textfield; }
+
+		.select {
+            display: inline-block;
+            font-size: 0;
+            background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
+            @include vw(background-size, 20px 20px);
+			@include vw(width,160px);
+            select {
+                width: 100%;
+				@include vw(height,28px);
+                @include vw(padding, 4px 8px);
+                @include vw(font-size,10px);
+                font-weight:400;
+                border: 1px solid $color-light-brown;
+                color: $color-black; 
+                -webkit-appearance: none;
+                appearance: none;
+                font-family:$font-pretendard;
+                @include boxSizing(border-box);
+                &::-ms-expand { display: none; }
+                &::placeholder { color: $color-black; }
+               
+            }
+        }
+	}
+}
