@@ -300,6 +300,19 @@ function slideEvent() {
 					variableWidth: true,
 				};
 				break;
+			case 'seasonalBannerSlider':
+				options = {
+					autoplay: autoplay,
+					autoplaySpeed: autoplaySpeed,
+					dots: true,
+					arrows: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					centerMode: true,
+					variableWidth: true,
+				};
+				break;
 				
             case 'seasonSlider':
                 options = {
