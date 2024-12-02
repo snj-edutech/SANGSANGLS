@@ -9439,10 +9439,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-seasonal-banner {
   background-color: rgb(36, 35, 33);
   padding: 120px 0;
+  overflow: hidden;
 }
 #wrap .section-seasonal-banner .seasonal-slider {
   display: flex;
   flex-wrap: wrap;
+}
+#wrap .section-seasonal-banner .seasonal-slider .slick-track {
+  position: relative;
+  left: 50%;
+  margin-left: -190px;
 }
 #wrap .section-seasonal-banner .seasonal-slider .list {
   width: 390px;

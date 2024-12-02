@@ -309,7 +309,7 @@ function slideEvent() {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					infinite: true,
-					centerMode: true,
+					centerMode: false,
 					variableWidth: true,
 				};
 				break;

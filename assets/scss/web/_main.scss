@@ -377,10 +377,15 @@
 	.section-seasonal-banner{
 		background-color:rgba(36, 35, 33, 1);
 		padding:120px 0;
+		overflow:hidden;
 		.seasonal-slider{
 			display:flex;
 			flex-wrap:wrap;
-			//.slick-track{margin-left:-406px;}
+			.slick-track{
+				position:relative;
+				left:50%;
+				margin-left:-190px;
+			}
 
 			.list{
 				width:390px;
