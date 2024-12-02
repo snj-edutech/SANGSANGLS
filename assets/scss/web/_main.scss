@@ -338,6 +338,7 @@
 			.img-box{
 				a{
 					display:block;
+					cursor:default;
 					img{width:100%;}
 				}
 			}
@@ -354,7 +355,10 @@
 				flex-wrap:wrap;
 				.list{
 					width:384px;
-					&.wide{width:792px;}
+					&.wide{
+						width:792px;
+						a{cursor:pointer;}
+					}
 					&:first-child{margin-bottom:72px;}
 					&:last-child{margin-left:24px;}
 				}
@@ -376,14 +380,15 @@
 		.seasonal-slider{
 			display:flex;
 			flex-wrap:wrap;
+			//.slick-track{margin-left:-406px;}
 
 			.list{
 				width:390px;
 				margin-right:16px;
-				
+				img{width:100%;}
 				a{
 					display:block;
-					img{width:100%;}
+					
 				}
 			}
 

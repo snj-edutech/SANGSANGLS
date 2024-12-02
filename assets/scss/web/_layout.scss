@@ -191,6 +191,7 @@
 		&.header{
 			background-color:$color-black;
 			.header-gnb{
+				margin-top:0;
 				padding:36.5px 40px;
 				border-bottom:1px solid $color-light-black;
 				.header-logo{
