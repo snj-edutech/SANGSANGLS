@@ -52,9 +52,12 @@
 
 			.login{
 				position:relative;
-				line-height:1;
 				.icon-new{
 					position:relative;top:-1px;
+				}
+
+				.icon-arrow{
+					position:relative;top:2px;
 				}
 
 				.header-layer{
@@ -85,8 +88,10 @@
 						display:block;
 					}
 
-					.icon-arrow img{
-						transform:rotateZ(-180deg);
+					.icon-arrow{
+						img{
+							transform:rotateZ(-180deg);
+						}
 					}
 				}
 			}
@@ -208,7 +213,11 @@
 						margin-left:24px;
 					}
 
-					.login .header-layer .util-list li a{font-size:13px;color:$color-gray;}
+					.login .header-layer .util-list {
+						li {
+							a{font-size:13px;color:$color-gray;}
+						}
+					}
 					
 				}
 			}
@@ -226,7 +235,13 @@
 							color:#9a9a9a;
 							font-size:16px;
 							line-height:27.2px;
-							font-weight:600;
+							font-weight:500;
+						}
+
+						&.active{
+							a{
+								color:$color-white;
+							}
 						}
 					}
 				}
@@ -238,7 +253,7 @@
 
 	#contents {
 		@extend %clearfix; 
-		padding:80px 0 200px;
+		padding:100px 0 200px;
 		@include boxSizing(border-box);
 		&.main{padding:0;}
    }
