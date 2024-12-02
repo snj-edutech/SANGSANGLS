@@ -306,7 +306,7 @@ function slideEvent() {
 					autoplaySpeed: autoplaySpeed,
 					dots: true,
 					arrows: true,
-					slidesToShow: 1,
+					slidesToShow: 3,
 					slidesToScroll: 1,
 					infinite: true,
 					centerMode: false,
