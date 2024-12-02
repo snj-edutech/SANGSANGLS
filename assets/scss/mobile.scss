@@ -7,9 +7,8 @@
 
 @import "base/font"; // 웹폰트
 @import "base/reset"; // 초기화
-@import "base/popup"; // 팝업
 
-
+@import "mobile/popup"; // 팝업
 @import "mobile/common"; // 공통
 @import "mobile/layout"; // 웹
 // @import "web/search"; // 검색
@@ -24,4 +23,4 @@
 // @import "web/member"; // 회원가입
 // @import "web/player"; // 플레이어
 // @import "web/main"; // 메인
-// @import "web/error"; // 에러
+@import "mobile/error"; // 에러

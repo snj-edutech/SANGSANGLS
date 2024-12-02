@@ -67,4 +67,27 @@
             }
         }
 	}
+
+    .table-row{
+		width:100%;
+		border-top:1px solid $color-light-brown;
+        @include boxSizing(border-box);
+		tr{
+			border-bottom:1px solid $color-light-brown;
+            @include boxSizing(border-box);
+			th,td{
+				@include vw(padding,8px 16px);
+				text-align:center;
+				color:$color-black;
+				@include vw(font-size,14px);
+				@include vw(line-height,23.8px);
+				font-weight:400;
+                @include boxSizing(border-box);
+			}
+
+			th{background-color:$color-light-brown2;font-weight:600;}
+			
+		}
+
+	}
 }
