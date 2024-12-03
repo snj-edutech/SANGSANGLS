@@ -448,24 +448,30 @@
 				border-radius:50%;
 		
 				&.slick-prev{
-					@include slideArrow(left, 40px, 40px, 1px, $color-black, $color-light-beige, $margin: 95px);
+					@include slideArrow(left, 40px, 40px, 1px, $color-black, $color-light-beige, $margin: 52px);
 					&:before{
 						width:8px;height:8px;
 					}
 		
 					top:auto;
-					bottom:-15px;
+					bottom:-88px;
 					transform: translateY(0);
 				}
 				&.slick-next{
-				   @include slideArrow(right, 40px, 40px, 1px, $color-black,$color-light-beige, $margin: 95px);
+				   @include slideArrow(right, 40px, 40px, 1px, $color-black,$color-light-beige, $margin: 52px);
 				   &:before{
 						width:8px;height:8px;
 					}
 		
 					top:auto;
-					bottom:-15px;
+					bottom:-88px;
 					transform: translateY(0);
+				}
+
+				&.slick-disabled{
+					&:before{
+						border-color:#e4ded3;
+					}
 				}
 			}
 		}

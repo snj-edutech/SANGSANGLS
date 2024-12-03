@@ -304,7 +304,7 @@ function slideEvent() {
 				options = {
 					autoplay: autoplay,
 					autoplaySpeed: autoplaySpeed,
-					dots: true,
+					dots: false,
 					arrows: true,
 					slidesToShow: 1,
 					slidesToScroll: 1,

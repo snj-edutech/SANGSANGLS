@@ -9519,10 +9519,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
-  margin-left: -25.3333333333vw;
+  margin-left: -13.8666666667vw;
   background: #FBFAF6;
   top: auto;
-  bottom: -15px;
+  bottom: -88px;
   transform: translateY(0);
 }
 @media screen and (min-width: 375px) {
@@ -9537,7 +9537,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 375px) {
   #wrap .section-seasonal-banner .seasonal-slider .slick-arrow.slick-prev {
-    margin-left: -95px;
+    margin-left: -52px;
   }
 }
 #wrap .section-seasonal-banner .seasonal-slider .slick-arrow.slick-prev::before {
@@ -9590,10 +9590,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
-  margin-right: -25.3333333333vw;
+  margin-right: -13.8666666667vw;
   background: #FBFAF6;
   top: auto;
-  bottom: -15px;
+  bottom: -88px;
   transform: translateY(0);
 }
 @media screen and (min-width: 375px) {
@@ -9608,7 +9608,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 375px) {
   #wrap .section-seasonal-banner .seasonal-slider .slick-arrow.slick-next {
-    margin-right: -95px;
+    margin-right: -52px;
   }
 }
 #wrap .section-seasonal-banner .seasonal-slider .slick-arrow.slick-next::before {
@@ -9641,6 +9641,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-seasonal-banner .seasonal-slider .slick-arrow.slick-next:before {
   width: 8px;
   height: 8px;
+}
+#wrap .section-seasonal-banner .seasonal-slider .slick-arrow.slick-disabled:before {
+  border-color: #e4ded3;
 }
 #wrap .section-special-banner {
   background-color: rgb(116, 113, 109);
