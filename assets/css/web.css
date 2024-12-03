@@ -9255,7 +9255,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   bottom: 8px;
   width: 32px;
   height: 32px;
-  background: url(../../../assets/images/btn_play_gray.svg) no-repeat 0 0;
+  background: url(../images/btn_play_gray.svg) no-repeat 0 0;
   background-size: cover;
   opacity: 0.8;
 }
@@ -9328,7 +9328,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 374px;
 }
 #wrap .section-main-curriculum .curriculum-main .video-play:after {
-  background: url(../../../assets/images/btn_play_black.svg) no-repeat 0 0;
+  background: url(../images/btn_play_black.svg) no-repeat 0 0;
   width: 40px;
   height: 40px;
 }
