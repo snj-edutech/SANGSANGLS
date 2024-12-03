@@ -412,7 +412,8 @@
 			display:flex;
 			flex-wrap:wrap;
 			
-			.slick-list{position:relative;left:50%;margin-left:-600px;}
+			//.slick-list{position:relative;left:50%;margin-left:-600px;}
+			.slick-track{margin-left:-406px;}
 
 			.list{
 				width:390px;

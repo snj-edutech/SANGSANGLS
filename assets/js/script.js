@@ -306,10 +306,10 @@ function slideEvent() {
 					autoplaySpeed: autoplaySpeed,
 					dots: true,
 					arrows: true,
-					slidesToShow: 3,
+					slidesToShow: 1,
 					slidesToScroll: 1,
-					infinite: true,
-					centerMode: false,
+					infinite: false,
+					centerMode: true,
 					variableWidth: true,
 				};
 				break;
