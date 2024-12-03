@@ -9257,7 +9257,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 32px;
   background: url(../images/btn_play_gray.svg) no-repeat 0 0;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.15;
 }
 #wrap .section-main-curriculum .video-play:hover a img {
   transform: scale(1.04);
