@@ -31,11 +31,12 @@ function create(){
 
 function addEvent(){
 	_menuIcon.on("click", menuEvent);
-
-
-	headerEvent();
+	
 	pageMove('.page-move');
     pageMove('.page-move2', -50);
+
+	/*
+	headerEvent();
 	fileUploadEvent();
 	toggleEvent();
 
@@ -46,6 +47,7 @@ function addEvent(){
 
 	calenderEvent();
 	starEvent();
+	*/
 }
 
 function menuEvent(){
@@ -63,6 +65,87 @@ function menuEvent(){
       //  _header.removeClass("change");
     }
 }
+
+function pageMove($selector, $position){
+	if($position == undefined) $position = 0;
+
+	var selector = $selector;
+	$(selector).on('click', function (e) {
+		e.preventDefault();
+
+		var _top = $($(this).attr('href'));
+		if (typeof (_top) != 'undefined' && typeof (_top.offset()) != 'undefined') { // 대상 체크
+			var $target = _top.offset().top;
+
+			$('html,body').animate({
+				scrollTop: $target+$position
+			}, 500);
+		}
+	});
+}
+
+
+function popupOpen($selector){
+	popupReset();
+
+	$($selector).show();
+
+	// if($selector == "#popupSchedule"){
+	// 	$('.slider').slick('setPosition');
+	// }
+
+	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
+		// 팝업이클때는 
+		var st = $(window).scrollTop();
+		$($selector).addClass("wide").css({top:st});
+		$("body").append('<div class="popup-dim"></div>');
+	}else{
+		// 팝업이 작을때는
+		$($selector).removeClass("wide");
+		$($selector).css({display:"flex"});
+	}
+}
+
+function popupReset(){
+	$('.popup').hide();
+	if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
+	}
+}
+
+// popupClose('#brandLayerEvent');
+function popupClose($selector){
+    //$('.slide-container').slick("unslick");
+	$($selector).hide();
+
+	if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -123,23 +206,7 @@ function scrollMenuEvent(){
 	});
 }
 
-function pageMove($selector, $position){
-	if($position == undefined) $position = 0;
 
-	var selector = $selector;
-	$(selector).on('click', function (e) {
-		e.preventDefault();
-
-		var _top = $($(this).attr('href'));
-		if (typeof (_top) != 'undefined' && typeof (_top.offset()) != 'undefined') { // 대상 체크
-			var $target = _top.offset().top;
-
-			$('html,body').animate({
-				scrollTop: $target+$position
-			}, 500);
-		}
-	});
-}
 
 function pageTopMove(){
 	$('html,body').animate({
@@ -454,43 +521,7 @@ function countEvent(button, type) {
 	resultSpan.innerText = number;
 }
 
-function popupOpen($selector){
-	popupReset();
 
-	$($selector).show();
-
-	// if($selector == "#popupSchedule"){
-	// 	$('.slider').slick('setPosition');
-	// }
-
-	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
-		// 팝업이클때는 
-		var st = $(window).scrollTop()+50;
-		$($selector).addClass("wide").css({top:st});
-		$("body").append('<div class="popup-dim"></div>');
-	}else{
-		// 팝업이 작을때는
-		$($selector).removeClass("wide");
-		$($selector).css({display:"flex"});
-	}
-}
-
-function popupReset(){
-	$('.popup').hide();
-	if($(".popup-dim").is(':visible')){
-		$(".popup-dim").remove();
-	}
-}
-
-// popupClose('#brandLayerEvent');
-function popupClose($selector){
-    //$('.slide-container').slick("unslick");
-	$($selector).hide();
-
-	if($(".popup-dim").is(':visible')){
-		$(".popup-dim").remove();
-	}
-}
 
 // layer video
 // popupLayerVideoOpen($url, "autoplay loop controls muted");

@@ -34,6 +34,8 @@
 						<a href="javascript:;"><img src="../../../assets/images/mobile/logo.svg" alt="logo" /></a>
 					</h1>
 					<div class="header-util">
+						<a href="javascript:headerSearchOpen();" class="btn-header-search"><img src="../../../assets/images/mobile/btn_search.svg" alt="검색" /></a>
+						<a href="javascript:headerSearchOpen();" class="btn-header-search"><img src="../../../assets/images/mobile/btn_mypage.svg" alt="마이페이지" /></a>
 						<div id="menu">
 							<a href="javascript:;" class="menu-icon">
 								<!-- <img src="../../../assets/images/mobile/btn_menu.svg" alt="gnb" /> -->
@@ -46,7 +48,7 @@
 				</div>
 			</div>
 
-			<div class="header-layer-gnb">
+			<div class="header-gnb">
 				<ul>
 					<li>
 						<a href="javascript:;">
@@ -76,6 +78,70 @@
 				</ul>
 			</div>
 
+			<div class="header-nav">
+				<ul>
+					<li class="active">
+						<a href="javascript:;">전체교재</a>
+					</li>
+					<li>
+						<a href="javascript:;">공지사항</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="header-title">
+				<div class="wrap">
+					<a href="javascript:;" class="btn-back"><img src="../../../assets/images/mobile/btn_back_large.svg" alt="back" /></a>
+					<h2><a href="javascript:;">메뉴명</a></h2>
+				</div>
+			</div>
+			<div class="header-tab">
+				<ul>
+					<li class="active">
+						<a href="javascript:;">강사홈</a>
+					</li>
+					<li>
+						<a href="javascript:;">개설강좌</a>
+					</li>
+					<li>
+						<a href="javascript:;">공지사항</a>
+					</li>
+					<li>
+						<a href="javascript:;">학습질문</a>
+					</li>
+					<li>
+						<a href="javascript:;">수강후기</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="header-search">
+				<div class="wrap">
+
+					<div class="search-box">
+						<a href="javascript:headerSearchClose();" class="header-search-close"><img src="../../../assets/images/mobile/btn_back.svg" alt="back" /></a>
+						<div class="search-text">
+							<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
+							<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/mobile/btn_cancel.svg" alt="취소" /></a>
+						</div> 
+						<div class="search-action">
+							<a href="javascript:;" class="search-btn"><img src="../../../assets/images/mobile/btn_search_large.svg" alt="검색" /></a>
+						</div>
+
+						
+					</div>
+
+					<div class="search-nodata">
+						<div>
+							<div class="icon"><img src="../../../assets/images/mobile/icon_search_small.svg" alt="" /></div>
+							<p>
+								검색어를 입력해주세요.
+							</p>
+						</div>
+					</div>
+	
+				</div>
+			</div>
 		</header>
 
 		<div id="contents" class="">
@@ -91,35 +157,61 @@
 			<div class="footer-top">
 				<div class="wrap">
 					<ul class="footer-list">
-						<li><a href="javascript:;">로그인</a></li>
-						<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
 						<li><a href="javascript:popupOpen('#popupPrivacy');"><strong>개인정보 처리방침</strong></a></li>
+						<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
+						<li><a href="javascript:;">고객센터</a></li>
+						<li><a href="javascript:;">강사채용</a></li>
 						<li><a href="javascript:;">PC버전</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="footer-bottom">
 				<div class="wrap">
-					<div class="footer-logo">
+					<h1 class="logo">
 						<a href="javascript:;">
 							<img src="../../../assets/images/mobile/f_logo.svg" alt="logo" />
 						</a>
+					</h1>
+
+					<div class="footer-site">
+						<div class="form-control">
+							<span class="select">
+								<select name="" id="">
+									<option value="">패밀리 사이트</option>
+								</select>
+							</span>
+						</div>
 					</div>
 
 					<div class="company-info">
 						<p><strong>㈜이매진PNM </strong>대표 강 상 희</p>
 						<p>
-							사업자등록번호 371-87-01877  |  통신판매신고번호 제 2023-서울강남-05461호  |  신고기관명 서울특별시 강남구청  |  주 소 서울시 강남구 논현로 524 청파빌딩 2층  |  상상로스쿨 원격평생교육시설(제 원-777호)  |  전화번호 <a href="tel:02-582-3359"> 02-582-3359</a>  |  FAX 02-6243-3881 |  E-mail <a href="mailto:imagine@imaginepnm.com"> imagine@imaginepnm.com</a>  |  개인정보관리책임자 우민균
+							<span>사업자등록번호 371-87-01877</span>
+							<span>통신판매신고번호 제 2023-서울강남-05461호</span>
 						</p>
-						
+						<p>
+							<span>신고기관명 서울특별시 강남구청</span>
+							<span>주 소 서울시 강남구 논현로 524 청파빌딩 2층</span>
+						</p>
+						<p>
+							<span>상상로스쿨 원격평생교육시설(제 원-777호)</span>
+							<span>전화번호<a href="tel:02-582-3359"> 02-582-3359</span>
+						</p>
+						<p>
+							<span>FAX 02-6243-3881</span>
+							<span>E-mail <a href="mailto:imagine@imaginepnm.com"> imagine@imaginepnm.com</a></span>
+						</p>
+						<p>
+							<span>개인정보관리책임자 우민균</span>
+						</p>
 						<p class="copyright">
 							COPYRIGHT &copy; IMAGINE PNM CORP. ALL RIGHT RESERVED.
 						</p>
 					</div>
 					<div class="sns-list">
-						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_youtube.svg" alt="유튜브" /></a>
 						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_blog.svg" alt="네이버블로그" /></a>
 						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_instagram.svg" alt="인스타그램" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_youtube.svg" alt="유튜브" /></a>
 						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_kakao.svg" alt="카카오" /></a>
 					</div>
 				</div>
@@ -128,6 +220,34 @@
 	</div>
 
 	<!-- 팝업 -->
+	<div class="popup popup-alert" id="popupAlert1">
+		<div class="popup-wrap">
+			<div class="popup-text">
+				<p>
+					로그인 후 이용 가능합니다.
+				</p>
+			</div>
+			<div class="popup-action">
+				<a href="javascript:popupClose('#popupAlert1');">확인</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-alert" id="popupAlert2">
+		<div class="popup-wrap">
+			<div class="popup-text">
+				<p>
+					장바구니에 담겼습니다. <br/>
+					장바구니로 이동하여 확인하시겠습니까?
+				</p>
+			</div>
+			<div class="popup-action">
+				<a href="javascript:popupClose('#popupAlert2');" class="popup-cancel">취소</a>
+				<a href="javascript:popupClose('#popupAlert2');">확인</a>
+			</div>
+		</div>
+	</div>
+
 	<div class="popup" id="popupTerms">
 		<div class="popup-wrap">
 			<a href="javascript:popupClose('#popupTerms');" class="popup-close">팝업닫기</a>
@@ -344,8 +464,8 @@
 					<table class="table-row">
 						<colgroup>
 							<col style="width:40%;">
-							<col style="width:30%;">
-							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:40%;">
 						</colgroup>
 						<tr>
 							<th>위탁 대상자</th>
@@ -403,10 +523,10 @@
 					</p>
 					<table class="table-row">
 						<colgroup>
-							<col style="width:28%;">
-							<col style="width:24%;">
-							<col style="width:24%;">
-							<col style="width:24%;">
+							<col style="width:20%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:30%;">
 						</colgroup>
 						<tr>
 							<th>위탁 대상자</th>
@@ -575,7 +695,8 @@
 <script src="../../../assets/js/m.script.js"></script>
 <script>
 	$(function(){
-
+		//popupOpen('#popupAlert1');
+		//popupOpen('#popupAlert2');
 	});
 </script>
 </body>
