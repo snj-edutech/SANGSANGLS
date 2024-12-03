@@ -42,6 +42,7 @@
 
 			.main-banner-top{
 				a{
+                    @include vw(width,335px);
 					background-color:#504b42;
 					color:$color-light-beige;
 					@include vw(height,128px);
@@ -54,14 +55,14 @@
 				@include vw(margin-top,8px);
 				display:flex;
 				.banner-left{
-                    @include vw(width,1163.5px);
+                    @include vw(width,163.5px);
 					a{
 						width:100%;
 						@include vw(height,232px);
 					}
 				}
 				.banner-right{
-					@include vw(width,1163.5px);
+					@include vw(width,163.5px);
 					@include vw(margin-left,8px);
 					a{
 						@include vw(height,112px);
@@ -173,7 +174,8 @@
 		.curriculum-main{
 
 			.video-play{
-				width:100%;
+				@include vw(max-width,335px);
+                width:100%;
 				@include vw(height,212px);
 				&:after{
 					background: url(../images/mobile/btn_play_black.svg) no-repeat 0 0;
@@ -259,6 +261,7 @@
 		@include vw(padding,64px 0);
 		.platform-list{
             .list{
+                @include vw(max-width,335px);
                 width:100%;
                 @include vw(margin-top,48px);
                 &:first-child{margin-top:0;}
@@ -286,7 +289,8 @@
 		@include vw(padding,64px 0);
 		.special-banner-box{
 			.img-box{
-				width:100%;
+                @include vw(max-width,335px);
+                width:100%;
 				img{width:100%;}
 			}
 			.text-box{
