@@ -419,6 +419,31 @@ function slideEvent() {
 				});
 			}
 		}
+
+		if(dataSlide == "seasonalBannerSlider"){
+			$slider.on('afterChange', function (event, slick, currentSlide) {
+				// 3번째 슬라이드 이후로 화살표 비활성화
+				const totalSlides = slick.$slides.length;
+				const $prevArrow = $('.slick-prev');
+				const $nextArrow = $('.slick-next');
+		
+				if (currentSlide >= totalSlides - 3) {
+					$nextArrow.addClass('slick-disabled');
+					$nextArrow.attr('disabled', true);
+				} else {
+					$nextArrow.removeClass('slick-disabled');
+					$nextArrow.attr('disabled', false);
+				}
+		
+				if (currentSlide === 0) {
+					$prevArrow.addClass('slick-disabled');
+					$prevArrow.attr('disabled', true);
+				} else {
+					$prevArrow.removeClass('slick-disabled');
+					$prevArrow.attr('disabled', false);
+				}
+			});
+		}
     });
 }
 
