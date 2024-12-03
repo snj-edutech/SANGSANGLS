@@ -54,15 +54,11 @@ function menuEvent(){
     $(this).toggleClass("active");
 
     if(_menuIcon.hasClass("active")){
-      //  _dim.show();
-      //  _gnb.slideDown();
-      //  _gnb.css("display","block");
-      //  _header.addClass("change");
-
+		$(".header-layer-gnb").css({right:0});
+		$("html, body").css({'overflow-y':'hidden'});
     }else{
-     //   _dim.hide();
-      //  _gnb.slideUp();
-      //  _header.removeClass("change");
+		$(".header-layer-gnb").css({right:"100%"});
+		$("html, body").css({'overflow-y':'auto'});
     }
 }
 
@@ -89,10 +85,6 @@ function popupOpen($selector){
 	popupReset();
 
 	$($selector).show();
-
-	// if($selector == "#popupSchedule"){
-	// 	$('.slider').slick('setPosition');
-	// }
 
 	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
 		// 팝업이클때는 
@@ -121,6 +113,171 @@ function popupClose($selector){
 	if($(".popup-dim").is(':visible')){
 		$(".popup-dim").remove();
 	}
+}
+
+function slideEvent() {
+    // 모든 슬라이더에 대해 처리
+    $('.slider').each(function (index, slider) {
+        const $slider = $(slider);
+        const sliderIdName = 'slider' + index;
+        slider.id = sliderIdName; // 각 슬라이더에 고유 ID 부여
+
+        const dataSlide = $slider.data('slide');
+		const autoplay = $slider.data('autoplay') || false; // `data-autoplay`로 동작 여부 지정
+        const autoplaySpeed = $slider.data('autoplay-speed') || 3000; // `data-autoplay-speed`로 속도 지정
+        let options;
+
+        // 슬라이더 별 옵션 설정
+        switch (dataSlide) {
+			case 'bannerSlider':
+                options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                    dots: false,
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    centerMode: false,
+                    variableWidth: true,
+                };
+                break;
+			case 'seasonalBannerSlider':
+				options = {
+					autoplay: autoplay,
+					autoplaySpeed: autoplaySpeed,
+					dots: false,
+					arrows: false,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: false,
+					centerMode: false,
+					variableWidth: true,
+				};
+				break;
+
+            case 'onlineSlider':
+                options = {
+                    autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: true,
+                };
+                break;
+
+			case 'threeBannerSlider':
+				options = {
+					autoplay: autoplay,
+					autoplaySpeed: autoplaySpeed,
+					dots: false,
+					arrows: true,
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+					centerMode: false,
+					variableWidth: true,
+				};
+				break;
+				
+            case 'seasonSlider':
+                options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: true,
+                };
+                break;
+
+            case 'calenderSlider':
+                options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    centerMode: false,
+                    variableWidth: false,
+                };
+                break;
+
+
+
+            case 'twoBannerSlider':
+                options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: true,
+
+                };
+                break;
+
+            default:
+                options = {
+					autoplay: autoplay,
+                    autoplaySpeed: autoplaySpeed,
+                    dots: true,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,
+                    variableWidth: false,
+                };
+        }
+
+        // 슬라이더 초기화
+        $slider.slick(options);
+
+        // 페이징 처리
+		if ($slider.closest('.page-slide').length) {
+			const slidesCount = $slider.children().length; // 슬라이드 개수 확인
+			if (slidesCount > 1) { // 슬라이드가 2개 이상일 경우에만 페이징 표시
+				let sliderCounter = $slider.siblings('.slick-counter');
+				if (!sliderCounter.length) {
+					sliderCounter = $('<div class="slick-counter"></div>');
+					$slider.parent().append(sliderCounter);
+				}
+		
+				const updateSliderCounter = (slick, currentIndex) => {
+					const currentSlide = slick.slickCurrentSlide() + 1;
+					const totalSlides = slick.slideCount;
+					sliderCounter.html(`<span><strong>${currentSlide}</strong>/${totalSlides}</span>`);
+				};
+		
+				// 강제로 초기 상태 업데이트
+				setTimeout(() => {
+					const slickInstance = $slider.slick('getSlick');
+					updateSliderCounter(slickInstance);
+				}, 0);
+		
+				$slider.on('init', function (event, slick) {
+					updateSliderCounter(slick);
+				});
+		
+				$slider.on('afterChange', function (event, slick) {
+					updateSliderCounter(slick);
+				});
+			}
+		}
+    });
 }
 
 
@@ -354,155 +511,7 @@ function tabSlideEvent($selector) {
     });
 }
 
-function slideEvent() {
-    // 모든 슬라이더에 대해 처리
-    $('.slider').each(function (index, slider) {
-        const $slider = $(slider);
-        const sliderIdName = 'slider' + index;
-        slider.id = sliderIdName; // 각 슬라이더에 고유 ID 부여
 
-        const dataSlide = $slider.data('slide');
-		const autoplay = $slider.data('autoplay') || false; // `data-autoplay`로 동작 여부 지정
-        const autoplaySpeed = $slider.data('autoplay-speed') || 3000; // `data-autoplay-speed`로 속도 지정
-        let options;
-
-        // 슬라이더 별 옵션 설정
-        switch (dataSlide) {
-            case 'onlineSlider':
-                options = {
-                    autoplay: autoplay,
-                    autoplaySpeed: autoplaySpeed,
-                    dots: false,
-                    arrows: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    centerMode: false,
-                    variableWidth: true,
-                };
-                break;
-
-			case 'threeBannerSlider':
-				options = {
-					autoplay: autoplay,
-					autoplaySpeed: autoplaySpeed,
-					dots: false,
-					arrows: true,
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					infinite: true,
-					centerMode: false,
-					variableWidth: true,
-				};
-				break;
-				
-            case 'seasonSlider':
-                options = {
-					autoplay: autoplay,
-                    autoplaySpeed: autoplaySpeed,
-                    dots: false,
-                    arrows: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    centerMode: false,
-                    variableWidth: true,
-                };
-                break;
-
-            case 'calenderSlider':
-                options = {
-					autoplay: autoplay,
-                    autoplaySpeed: autoplaySpeed,
-                    dots: false,
-                    arrows: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    centerMode: false,
-                    variableWidth: false,
-                };
-                break;
-
-            case 'bannerSlider':
-                options = {
-					autoplay: autoplay,
-                    autoplaySpeed: autoplaySpeed,
-                    dots: false,
-                    arrows: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    centerMode: false,
-                    variableWidth: false,
-                };
-                break;
-
-            case 'twoBannerSlider':
-                options = {
-					autoplay: autoplay,
-                    autoplaySpeed: autoplaySpeed,
-                    dots: false,
-                    arrows: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    centerMode: false,
-                    variableWidth: true,
-
-                };
-                break;
-
-            default:
-                options = {
-					autoplay: autoplay,
-                    autoplaySpeed: autoplaySpeed,
-                    dots: true,
-                    arrows: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    centerMode: false,
-                    variableWidth: false,
-                };
-        }
-
-        // 슬라이더 초기화
-        $slider.slick(options);
-
-        // 페이징 처리
-		if ($slider.closest('.page-slide').length) {
-			const slidesCount = $slider.children().length; // 슬라이드 개수 확인
-			if (slidesCount > 1) { // 슬라이드가 2개 이상일 경우에만 페이징 표시
-				let sliderCounter = $slider.siblings('.slick-counter');
-				if (!sliderCounter.length) {
-					sliderCounter = $('<div class="slick-counter"></div>');
-					$slider.parent().append(sliderCounter);
-				}
-		
-				const updateSliderCounter = (slick, currentIndex) => {
-					const currentSlide = slick.slickCurrentSlide() + 1;
-					const totalSlides = slick.slideCount;
-					sliderCounter.html(`<span><strong>${currentSlide}</strong>/${totalSlides}</span>`);
-				};
-		
-				// 강제로 초기 상태 업데이트
-				setTimeout(() => {
-					const slickInstance = $slider.slick('getSlick');
-					updateSliderCounter(slickInstance);
-				}, 0);
-		
-				$slider.on('init', function (event, slick) {
-					updateSliderCounter(slick);
-				});
-		
-				$slider.on('afterChange', function (event, slick) {
-					updateSliderCounter(slick);
-				});
-			}
-		}
-    });
-}
 
 
 

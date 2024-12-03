@@ -287,22 +287,20 @@
 		.popup{
 			&-wrap{
 				width:100%;
-				max-width:720px;
+				max-width:750px;
 				@include breakpoint(maxMobile){
 					width:100%;
-					max-width:720px;
+					max-width:750px;
 				}
 			}
 			&-close{
 				@include close(60px, 60px, 2px, #fff);
-				top: -10px;
-				right:-40px;
+				@include vw(top, -60px);
+				@include vw(right,0px);
+				left:auto;
 				z-index: 10002;
-				@include breakpoint(maxMobile){
-					top: -20px;
-					right:-60px;
-				}
 			}
+
 			&-content{
 				position: relative;
 				padding-bottom: 56.25%;
