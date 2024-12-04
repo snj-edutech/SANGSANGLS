@@ -332,6 +332,12 @@
             font-weight:400;
             line-height:27.2px;
         }
+
+		&+.action.fly{
+			position:static;
+			display:flex;
+			justify-content: flex-end;
+		}
     }
 
     .search-input-box{
