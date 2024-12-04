@@ -3687,7 +3687,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: -6px;
 }
 #wrap .notice-view-table .table-row td.download {
-  padding: 20px 20px 12px;
+  padding: 20px 20px 0px;
+  font-size: 0;
 }
 #wrap .notice-input-table .table-row th, #wrap .notice-input-table .table-row td {
   text-align: left;
@@ -4006,6 +4007,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 9px;
   right: 9px;
   margin-left: 4px;
+  line-height: 1;
 }
 #wrap .btn.btn-down {
   display: inline-block;

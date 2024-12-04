@@ -1211,7 +1211,8 @@
                 }
 
                 &.download{
-                    padding:20px 20px 12px;
+                    padding:20px 20px 0px;
+					font-size:0;
                 }
 
                
@@ -1350,6 +1351,7 @@
                 display:inline-block;
                 position:absolute;top:9px;right:9px;
                 margin-left:4px;
+				line-height:1;
             }
 		}
 
