@@ -534,7 +534,7 @@ function layerVideoClose(){
 }
 
 function fileUploadEvent(){
-    var fileTarget = $('.form-control #fileUpload');
+    var fileTarget = $('.form-control input[type="file"]');
     fileTarget.on('change', function(){
         if(window.FileReader){
             var filename = $(this)[0].files[0].name;
