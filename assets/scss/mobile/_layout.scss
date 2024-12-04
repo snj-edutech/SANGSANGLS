@@ -63,6 +63,7 @@
 						width : 20px;
 						height : 18px;
 						display:block;
+						z-index:11;
 
 						span {
 							position : absolute;
@@ -80,6 +81,7 @@
 				
 						&.active{
 							span{
+								background-color : $color-black;
 								&:nth-of-type(1) {
 									-webkit-transform : translateY(8px) rotate(-45deg);
 									transform : translateY(8px) rotate(-45deg);
@@ -116,7 +118,69 @@
 		}
 
 		.header-layer-gnb{
-			display:none;
+			display:block;
+			position:absolute;right:100%;top:0;z-index:10;
+			background-color:#fff;
+			height:100vh;
+			width:100%;
+			transition: 0.5s ease-in;
+			.header-login{
+				@include vw(margin-top,69px);
+				@include vw(padding,19px 24px 32px);
+				border-bottom:1px solid $color-light-brown;
+				.login, .logout{
+					display:flex;
+					justify-content: space-between;
+					align-items: flex-end;
+					a{
+						strong{
+							font-weight:600;@include vw(font-size,24px);@include vw(line-height,40.8px);color:$color-black;
+							
+						}
+						span{border-bottom:1px solid $color-gray;font-weight:400;@include vw(font-size,14px);@include vw(line-height,23.8px);color:$color-gray;}
+					}
+				}
+
+				.logout{
+					a{
+						strong{
+							@include vw(padding-right,30px);
+							@include arrow(right, 6px, 6px, 1px, $color-black);
+							
+						}
+					}
+				}
+			}
+
+			.gnb-list, .util-list{
+				@include vw(padding,32px 24px);
+				li{
+					text-align:left;
+					@include vw(margin-top,24px);
+					&:first-child{margin-top:0;}
+					a{
+						width:100%;
+						color:$color-black;
+						font-weight:400;@include vw(font-size,18px);@include vw(line-height,27px);
+						@include arrow(right, 8px, 8px, 1px, $color-gray);
+						&:before{
+							right:0;
+						}
+
+						
+					}
+				}
+			}
+
+			.util-list{
+				@include vw(padding,0px 24px);
+				li{
+					&:first-child{
+						@include vw(padding-top, 32px);
+						border-top:1px solid $color-light-brown;
+					}
+				}
+			}
 		}
 
 		.header-gnb{
@@ -374,7 +438,7 @@
     #footer {
 		background-color:rgba(36, 35, 33, 1);
 		.footer-top{
-			border-top:1px solid $color-light-brown;
+			//border-top:1px solid $color-light-brown;
 			@include vw(padding,32px 0 24px);
 
 			.footer-list{
