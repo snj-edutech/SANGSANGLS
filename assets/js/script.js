@@ -36,7 +36,7 @@ function addEvent(){
 	categoryListEvent();
 
 	calenderEvent();
-	starEvent();
+	//starEvent();
 }
 
 function starEvent(){

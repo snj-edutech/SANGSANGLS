@@ -7420,6 +7420,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
   transform: translateX(0);
 }
+#wrap .section-mypage-wrap .content .tab-box .tab-menu + .select-group {
+  padding-top: 40px;
+}
 #wrap .section-mypage-wrap .content .tab-box .tab-view {
   position: relative;
   padding-top: 40px;
@@ -7498,6 +7501,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .section-mypage-wrap .content .select-group .action .btn {
     line-height: 38px;
   }
+}
+#wrap .section-mypage-wrap .content .select-group + .tab-view {
+  padding-top: 0;
 }
 #wrap .section-mypage-wrap .content .total-number-box {
   display: flex;
