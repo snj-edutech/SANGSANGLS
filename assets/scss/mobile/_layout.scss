@@ -443,6 +443,12 @@
 			max-width:375px;
 			margin:0 auto;
 		}
+
+		.slider{
+			max-width:375px;
+			margin:0 auto;
+			@include vw(padding-left,20px);
+		}
    }
 
     #footer {

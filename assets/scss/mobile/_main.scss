@@ -172,7 +172,7 @@
 		}
 
 		.curriculum-main{
-
+			@include vw(margin-bottom,48px);
 			.video-play{
 				@include vw(max-width,335px);
                 width:100%;
@@ -214,8 +214,6 @@
 
 		.curriculum-slider{
 			display:flex;
-			@include vw(margin-top,48px);
-            @include vw(margin-left,20px);
 			.list{
 				@include vw(width,320px);
 				@include vw(margin-left,16px);
