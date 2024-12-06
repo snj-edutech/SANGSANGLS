@@ -1,12 +1,17 @@
 #wrap {
+
+
 	.wrap {
 		position:relative;
 		width:100%;
 		@include vw(padding,0 20px);
 		min-width:320px;
 		@include boxSizing(border-box);
-    }
 
+	
+		
+    }
+	
 	.header-top-banner{
 		position:relative;
 		display:none;
@@ -433,6 +438,11 @@
 		@extend %clearfix; 
 		@include vw(min-height,300px);
 		@include boxSizing(border-box);
+
+		.wrap{
+			max-width:375px;
+			margin:0 auto;
+		}
    }
 
     #footer {
