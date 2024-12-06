@@ -3585,6 +3585,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap #contents .wrap {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 #wrap #footer {
   background-color: #242321;
 }
