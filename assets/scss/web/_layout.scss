@@ -194,7 +194,7 @@
 		}
 
 		&.header{
-			background-color:$color-black;
+			background-color:$color-dark-black;
 			.header-gnb{
 				margin-top:0;
 				padding:36.5px 40px;
@@ -354,7 +354,7 @@
 		}
 
 		&.footer{
-			background-color:rgba(36, 35, 33, 1);
+			background-color:$color-dark-black;
 			.footer-top{
 				border-top:0;
 				padding:0;

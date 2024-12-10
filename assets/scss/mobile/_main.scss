@@ -312,7 +312,7 @@
 	}
 
     .section-seasonal-banner{
-		background-color:rgba(36, 35, 33, 1);
+		background-color:$color-dark-black;
 		@include vw(padding,64px 0);
 		overflow:hidden;
 		.seasonal-slider{

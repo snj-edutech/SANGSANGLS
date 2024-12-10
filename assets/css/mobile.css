@@ -2189,7 +2189,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: relative;
   text-align: center;
   vertical-align: middle;
-  background-color: #2C2923;
+  background-color: #242321;
 }
 #wrap #header .header-main {
   border-bottom: 1px solid #3b3b3b;
@@ -2902,7 +2902,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap #footer {
-  background-color: rgb(36, 35, 33);
+  background-color: #242321;
 }
 #wrap #footer .footer-top {
   padding: 8.5333333333vw 0 6.4vw;
@@ -3798,7 +3798,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-seasonal-banner {
-  background-color: rgb(36, 35, 33);
+  background-color: #242321;
   padding: 17.0666666667vw 0;
   overflow: hidden;
 }

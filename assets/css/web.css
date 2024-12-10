@@ -4408,7 +4408,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-indent: -9999px;
 }
 #wrap #header.header {
-  background-color: #2C2923;
+  background-color: #242321;
 }
 #wrap #header.header .header-gnb {
   margin-top: 0;
@@ -4568,7 +4568,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-right: 8px;
 }
 #wrap #footer.footer {
-  background-color: rgb(36, 35, 33);
+  background-color: #242321;
 }
 #wrap #footer.footer .footer-top {
   border-top: 0;
@@ -9467,7 +9467,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 44px;
 }
 #wrap .section-seasonal-banner {
-  background-color: rgb(36, 35, 33);
+  background-color: #242321;
   padding: 120px 0;
   overflow: hidden;
 }
