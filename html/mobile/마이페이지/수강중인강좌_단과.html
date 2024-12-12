@@ -638,6 +638,13 @@
 							<th>등록/<br/>삭제</th>
 						</tr>
 						<tr>
+							<td colspan="3">
+								<div class="nodata-box">
+									<p>등록된 기기가 없습니다.</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
 							<td>스트리밍<br/>(PC)</td>
 							<td class="desc">
 								<div>sx8407246c2d39de037ea2192ad941498</div>
@@ -703,13 +710,34 @@
 			</div>
 		</div>
 	</div>
-
+	
+	<div class="popup popup-review" id="popupMypageReviewWrite">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupMypageReviewWrite');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title border-bottom-line">
+				수강후기 작성하기
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="course-title">
+					[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+					강좌명 길면 2줄 노출
+				</div>
+				<div class="form-control">
+					<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)"></textarea>
+				</div>
+				<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
+				<div class="action">
+					<a href="javascript:popupClose('#popupMypageReviewWrite');" class="btn full btn-brown"><strong>등록</strong></a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script src="../../../assets/js/m.script.js"></script>
 <script>
 	$(function(){
-		popupOpen('#popupDevice');
+
 	});
 </script>
 </body>
