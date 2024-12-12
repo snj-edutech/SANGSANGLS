@@ -11,6 +11,7 @@ var _wid;
 var _menu;
 var _menuIcon;
 
+
 $(function(){
     init();
 });
@@ -27,11 +28,12 @@ function create(){
 
 	_menu = $(".menu");
     _menuIcon = $(".menu-icon");
+
 }
 
 function addEvent(){
 	_menuIcon.on("click", menuEvent);
-	
+
 	pageMove('.page-move');
     pageMove('.page-move2', -50);
 
@@ -61,6 +63,28 @@ function menuEvent(){
 		$("html, body").css({'overflow-y':'auto'});
     }
 }
+
+function mypageLayerOpen(){
+	$(".header-layer-mypage").css({right:0});
+	$("html, body").css({'overflow-y':'hidden'});
+}
+
+function mypageLayerClose(){
+	$(".header-layer-mypage").css({right:"100%"});
+	$("html, body").css({'overflow-y':'auto'});
+}
+
+function menuLayerOpen(){
+	$(".header-layer-gnb").css({right:0});
+	$("html, body").css({'overflow-y':'hidden'});
+}
+
+function menuLayerClose(){
+	$(".header-layer-gnb").css({right:"100%"});
+	$("html, body").css({'overflow-y':'auto'});
+}
+
+
 
 function pageMove($selector, $position){
 	if($position == undefined) $position = 0;
