@@ -99,4 +99,80 @@
             }
         }
     }
+
+	.lecture-content-list{
+		border-top:1px solid $color-light-brown;
+		.list{
+			border-bottom:1px solid $color-light-brown;
+			@include vw(padding,16px 0);
+
+			.info-box{
+				display:flex;
+				justify-content: space-between;
+				@include vw(padding,0 16px);
+				.info-list{
+					.info-text{
+						display:flex;
+						p{
+							position:relative;
+							@include vw(font-size,12px);
+							color:$color-gray;
+							@include vw(line-height,20.4px);
+							font-weight:400;
+							&+p{
+								@include vw(margin-left,8px);
+								@include vw(padding-left,8px);
+								&:before{
+									content:'';
+									width:1px;
+									@include vw(height,12px);
+									background-color:$color-light-brown;
+									position:absolute;left:0;top:50%;@include vw(margin-top,-6px);
+		
+								}
+							}
+						}
+					}
+
+					.info-subject{
+						color:$color-black;
+						@include vw(font-size,13px);
+						@include vw(line-height,22.1px);
+						font-weight:600;
+
+					}
+				}
+
+				.info-time{
+					color:$color-gray;
+					@include vw(font-size,12px);
+					@include vw(line-height,20.4px);
+					font-weight:400;
+				}
+
+			}
+
+			.action-box{
+				@include vw(margin-top,16px);
+				display:none;
+				justify-content: center;
+				.btn{
+					@include vw(margin-left,4px);
+					&:first-child{margin-left:0;}
+					
+				}
+			}
+
+			&.active{
+				background-color:$color-light-brown2;
+				.action-box{
+					display:flex;
+				}
+			}
+		}
+	}
+
+	.section-lecture-content{
+		@include vw(padding,32px 0px 20px);
+	}
 }

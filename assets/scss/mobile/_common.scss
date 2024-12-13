@@ -25,6 +25,14 @@
 		}
 	}
 
+	h3{
+		font-weight:600;
+		color:$color-brown;
+		@include vw(font-size,16px);
+		@include vw(line-height,27.2px);
+		@include vw(margin-bottom,8px);
+	}
+
 	.nodata-box{
         display:flex;
         justify-content: center;
@@ -178,6 +186,26 @@
         &.full{
             width:100%;
         }
+
+		&.btn-video{
+			display:block;
+			background: $color-white url('../images/mobile/icon_play_arrow.svg') no-repeat 8px center;
+			@include boxSizing(border-box);
+			@include vw(min-width, 89px);
+			@include vw(height, 38px); 
+			@include vw(line-height, 38px); 
+			@include vw(padding-left,32px);
+		}
+
+        &.btn-download{
+			display:block;
+			background: $color-white url('../images/mobile/icon_down_brown.svg') no-repeat 8px center;
+			@include boxSizing(border-box);
+			@include vw(min-width, 89px);
+			@include vw(height, 38px); 
+			@include vw(line-height, 38px); 
+			@include vw(padding-left,32px);
+		}
     }
 
     .action{
@@ -189,6 +217,8 @@
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
         &.flex-between{justify-content: space-between;}
+
+
 
     }
 }
