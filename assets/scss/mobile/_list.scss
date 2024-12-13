@@ -1,5 +1,5 @@
 #wrap{
-    .lecture-data-list{
+	.lecture-data-list{
         .list{
             @include vw(padding,24px 0);
             border-bottom:1px solid $color-light-brown;
@@ -170,9 +170,5 @@
 				}
 			}
 		}
-	}
-
-	.section-lecture-content{
-		@include vw(padding,32px 0px 20px);
 	}
 }

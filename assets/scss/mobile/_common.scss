@@ -13,17 +13,28 @@
 
     .text-left{text-align:left !important;}
 
-	.scroll{
-		overflow: hidden;
-		white-space: nowrap;
-		overflow-x: auto;
-		width:100%;
-		display: flex;
-		align-items:center;
-		&::-webkit-scrollbar {
-			display: none;
-		}
+	.border-line-top{
+		border-top:1px solid $color-light-brown2;
+		background-color:$color-light-beige;
+		@include vw(height,10px);
+
 	}
+
+	.holder{
+		@include vw(padding,24px 20px 32px);
+	}
+
+	// .scroll{
+	// 	overflow: hidden;
+	// 	white-space: nowrap;
+	// 	overflow-x: auto;
+	// 	width:100%;
+	// 	display: flex;
+	// 	align-items:center;
+	// 	&::-webkit-scrollbar {
+	// 		display: none;
+	// 	}
+	// }
 
 	h3{
 		font-weight:600;
@@ -31,6 +42,56 @@
 		@include vw(font-size,16px);
 		@include vw(line-height,27.2px);
 		@include vw(margin-bottom,8px);
+	}
+
+	.count-box {
+		display:flex;
+		@include vw(width, 104px);
+		overflow: hidden;
+		border: 1px solid $color-light-brown;
+		background-color: $color-white;
+
+		.number {
+			@include vw(width, 40px);
+			text-align: center;
+			@include vw(line-height, 32px);
+			@include vw(font-size, 13px);
+			font-weight: 400;
+			color:$color-black;
+
+		}
+
+		button {
+			border:none;
+			@include vw(width, 32px);
+			@include vw(height, 32px);
+			background-color: $color-white;
+			background-repeat: no-repeat;
+			background-position: center center;
+			@include vw(background-size, 32px);
+			text-align:center;
+			cursor:pointer;
+			&.btn-minus {
+				background-image: url("../images/icon_minus.png");
+				border-right: 1px solid $color-light-brown;
+			}
+			&.btn-plus {
+				border-left: 1px solid $color-light-brown;
+				background-image: url("../images/icon_plus.png");
+			}
+		}
+	}
+
+	.price-box{
+		display:flex;
+		align-items: center;
+		.price-subject{color:$color-black;@include vw(font-size,14px);font-weight:600;}
+		.price-before{color:$color-light-gray;@include vw(font-size,13px);font-weight:400;text-decoration: line-through;@include vw(margin-right,8px);}
+		.price-after{color:$color-brown;@include vw(font-size,14px);font-weight:600;}
+		&.total{
+			.price-before{@include vw(font-size,14px);}
+			.price-after{@include vw(font-size,20px);}
+		}
 	}
 
 	.nodata-box{
@@ -47,6 +108,39 @@
 			@include vw(line-height,23.8px);
         }
     }
+
+	.notice{
+		color:$color-gray;
+		font-weight:400;
+		@include vw(font-size,12px);
+		@include vw(line-height,20.4px);
+		@include vw(margin-top,8px);
+	}
+
+	.badge{
+		@include vw(font-size,11px);
+		@include vw(padding, 0 3.5px);
+		@include vw(height, 19px);
+		display:inline-block;
+		@include vw(border-width, 1px);
+        border-style: solid;
+        @include vw(border-radius, 2px);
+        background-color: $color-white;
+        @include boxSizing(border-box);
+		color:$color-black;
+		border-color:$color-light-brown;
+		@include vw(line-height,18.6px);
+		font-weight:600;
+		vertical-align:middle;
+
+		&.badge-brown{border-color:$color-brown;background-color: $color-brown;color:$color-white;}
+		&.badge-light-brown{border-color:$color-light-brown2;background-color: $color-light-brown2;}
+		&.badge-gray{border-color:$color-gray;background-color: $color-gray;color:$color-white;}
+		&.badge-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
+		&.badge-light-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
+
+		&+p{  @include vw(margin-top, 8px);}
+	}
 
 	.form-control {
 		font-size:0;
@@ -66,9 +160,9 @@
 			@include vw(width,160px);
             select {
                 width: 100%;
-				@include vw(height,28px);
-                @include vw(padding, 4px 8px);
-                @include vw(font-size,10px);
+				@include vw(height,48px);
+                @include vw(padding, 12px 16px);
+                @include vw(font-size,14px);
                 font-weight:400;
                 border: 1px solid $color-light-brown;
                 color: $color-black; 
@@ -81,6 +175,24 @@
                
             }
         }
+
+		.text {
+            display:inline-block;
+			width:100%;
+            @include vw(padding, 8px 8px 8px 16px);
+            @include vw(font-size, 14px);
+            border: 1px solid rgba(228, 222, 211, 1);
+            background: $color-white;
+            @include boxSizing(border-box);
+            color:$color-black;
+			@include vw( height,48px);
+            &::placeholder { color: $color-light-gray; }
+            &.disabled{
+                background-color:$color-light-gray !important;
+                color:$color-gray;
+            }
+        }
+
 
         .textarea {
             width: 100%;
@@ -131,7 +243,139 @@
                 }
             }
         }
+
+		.fake-checkbox {
+			// margin-top:8px;
+			// &:first-child{margin-top:0;}
+            label {
+                display:flex;
+                background: url('../images/icon_checkbox_check.svg') no-repeat left top;
+                @include vw(background-size, 24px 24px);
+				@include vw(min-height, 24px);
+                //cursor: pointer;
+				font-weight:400;
+				@include vw(font-size,14px);
+				@include vw(padding-left, 30px);
+				@include vw(padding-top, 3px);
+				.badge{
+					display: inline-block;
+					@include vw(min-width,33px);
+				}
+
+            }
+            input {
+                @extend .sr-only;
+                &:checked + label { background-image: url('../images/icon_checkbox_checked.svg'); }
+
+				 &.disabled + label{
+                    background-image: url('../images/icon_check_disable.svg'); 
+                }
+            }
+        }
 	}
+
+	.custom-select {
+		position:relative;
+		display: inline-block;
+		width:100%;	
+		cursor: pointer;
+		@include boxSizing(border-box);
+		.selected {
+			border: 1px solid $color-light-brown;
+			display: flex;
+			justify-content: space-between;
+            align-items:center;
+			@include vw(padding, 8px 16px 8px 16px);
+			@include vw(font-size,14px);
+			font-weight:400;
+			color: $color-black; 
+			//color:$color-light-gray;
+			font-family:$font-pretendard;
+			@include boxSizing(border-box);
+			background-color:$color-white;
+			.arrow {
+				background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
+				@include vw(background-size,24px 24px);
+				@include vw(width,24px);@include vw(height,24px);
+			  }
+
+			.selected-value {
+				width:100%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+            &.disabled{
+                background-color:$color-light-gray;
+                color:$color-gray;
+                .arrow {
+                    background-image: url('../images/icon_select_arrow_gray.svg');
+                }
+            }
+		}
+
+		ul{
+			width: 100%;
+			border: 1px solid $color-light-brown;
+			display: none;
+			position: absolute;
+			border-top: none;
+			background-color:$color-white;
+			z-index:10;
+			@include boxSizing(border-box);
+			@include vw(padding,16px 0);
+			
+			li{
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				@include boxSizing(border-box);
+				@include vw(padding, 4px 16px);
+				@include vw(font-size,14px);
+				font-weight:400;
+				color: $color-black; 
+				@include vw(line-height,23.8px);
+				@include vw(margin-top,8px);
+				&:first-child{margin-top:0;}
+				&:hover {
+					background: $color-light-brown2;
+				}
+			}
+		}
+
+		&.active{
+			ul{
+				display: initial;
+			}
+		}
+	}
+
+	.input-box{
+		display:flex;align-items:center;
+		.text {width: 280px;}
+		.form-control + .form-control{@include vw(margin-left,8px);}
+		&+.input-box{margin-top:10px;}
+
+		.input-text-start{
+			font-size:14px;
+			font-weight:400;
+			color:$color-black;
+			margin-right:20px;
+            strong{font-weight:600;}
+		}
+
+		.input-text-end{
+			font-size:14px;
+			font-weight:400;
+			color:$color-black;
+			margin-left:10px;
+            strong{font-weight:600;}
+		}
+
+        
+	}
+
 
     .table-row{
 		width:100%;
@@ -187,6 +431,11 @@
             width:100%;
         }
 
+		&.large{
+			@include vw(height, 56px);
+			@include vw(font-size,14px);
+		}
+
 		&.btn-video{
 			display:block;
 			background: $color-white url('../images/mobile/icon_play_arrow.svg') no-repeat 8px center;
@@ -207,6 +456,19 @@
 			@include vw(padding-left,32px);
 		}
     }
+
+	.action-list{
+		display:flex;
+		@include vw(margin-top,20px);
+		.btn{
+			@extend %variable;
+			border-left:0;
+			padding:0;
+			&:first-child{
+				border-left:1px solid $color-light-brown;
+			}
+		}
+	}
 
     .action{
 		display:flex;

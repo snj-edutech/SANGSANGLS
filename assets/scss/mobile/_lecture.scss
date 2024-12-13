@@ -1,0 +1,61 @@
+#wrap{
+
+	.section-lecture{
+		@include vw(padding, 20px);
+		background-color:$color-light-brown2;
+
+		.lecture-main{
+			dl{
+				dt{
+					background-color:$color-light-brown;
+					width:100%;
+					@include vw(height,132px);
+					overflow:hidden;
+					text-align:center;
+					img{
+						width:auto;
+						height:100%;
+					}
+				}
+				dd{
+					@include vw(margin-top,16px);
+					.lecture-subject{
+						color:$color-black;
+						font-weight:600;
+						@include vw(font-size,18px);
+						@include vw(line-height,27px);
+					}
+					.lecture-name{
+						color:$color-black;
+						font-weight:600;
+						@include vw(font-size,13px);
+						@include vw(line-height,22px);
+						@include vw(margin-top,8px);
+					}
+				}
+			}
+			
+		}
+
+		.lecture-info{
+			width: 100%;
+			border-top: 1px solid #E4DED3;
+			@include vw(margin-top, 20px);
+			@include vw(padding-top, 16px);
+			dl{
+				display:flex;@include vw(margin-top, 4px);
+				&:first-child{margin-top:0;}
+				dt,dd{@include vw(font-size,13px);@include vw(line-height,22.1px);}
+				dt{color:$color-gray;font-weight:400;@include vw(width, 74px);}
+				dd{color:$color-black;font-weight:600;@include vw(margin-left, 16px);}
+			}
+
+		}
+
+
+
+	}
+	.section-lecture-content{
+		@include vw(padding,32px 0px 20px);
+	}
+}

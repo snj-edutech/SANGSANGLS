@@ -104,6 +104,20 @@ function pageMove($selector, $position){
 	});
 }
 
+function popupBottomOpen($selector){
+	$($selector).addClass('active');
+	$("body").append('<div class="popup-dim"></div>');
+	$("html, body").css({'overflow-y':'hidden'});
+}
+
+function popupBottomClose($selector){
+	$($selector).removeClass('active');
+	$("html, body").css({'overflow-y':'auto'});
+	if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
+	}
+}
+
 
 function popupOpen($selector){
 	//popupReset();
@@ -334,6 +348,21 @@ function layerVideoOpen($url, $options){
 
 function layerVideoClose(){
 	$("#popupLayerVideo").remove();
+}
+
+//button event 함수를 만들고
+function countEvent(button, type) {
+	const countBox = button.closest(".count-box");
+	const resultSpan = countBox.querySelector(".result");
+	let number = parseInt(resultSpan.innerText);
+
+	if (type === "plus") {
+		number++;
+	} else if (type === "minus") {
+		number = number > 0 ? number - 1 : 0;
+	}
+
+	resultSpan.innerText = number;
 }
 
 
@@ -571,20 +600,7 @@ function tabSlideEvent($selector) {
 
 
 
-//button event 함수를 만들고
-function countEvent(button, type) {
-	const countBox = button.closest(".count-box");
-	const resultSpan = countBox.querySelector(".result");
-	let number = parseInt(resultSpan.innerText);
 
-	if (type === "plus") {
-		number++;
-	} else if (type === "minus") {
-		number = number > 0 ? number - 1 : 0;
-	}
-
-	resultSpan.innerText = number;
-}
 
 
 

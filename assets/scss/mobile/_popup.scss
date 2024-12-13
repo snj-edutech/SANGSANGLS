@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     z-index: 1002;
-    background-color: rgba( 0, 0, 0, .6);
+    background-color: rgba( 0, 0, 0, .7);
 }
 
 #wrap{
@@ -211,18 +211,18 @@
 		}
 
 		.line-box{
-			margin-bottom:16px;
+			@include vw(margin-bottom,16px);
 			border:1px solid $color-light-brown;
-			padding:20px;
+			@include vw(padding,16px);
 			@include boxSizing(border-box);
 			
 			
 			&.scroll{
-				@include vw(max-height,158px);
+				@include vw(max-height,344px);
 				overflow-y:auto;
 				@extend %scrollBar;
 
-				&.min{@include vw(max-height,126px);}
+				&.min{@include vw(max-height,136px);}
 			}
 
 			dl{
@@ -236,12 +236,12 @@
 					font-family: $font-pretendard;
 					@include boxSizing(border-box);
 				}
-				dt{font-weight:600;margin-bottom:8px;}
+				dt{font-weight:600;@include vw(margin-bottom,8px);}
 				dd{}
 
 				&.bg-box{
 					background-color:$color-light-beige;
-					padding:16px;
+					@include vw(padding,14px);
 				}
 			}
 		}
@@ -383,6 +383,218 @@
 				@include vw(height,56px);
 				@include vw(font-size,14px);
 			}
+		}
+	}
+
+	.popup-coursePeriod, .popup-coursePause{
+		.form-control .fake-checkbox label{
+			align-items:center;padding-top:0;
+		}
+		.lecture-box{
+			@include vw(margin-top,8px);
+			dl{
+				@include vw(margin-top,32px);
+				&:first-child{margin-top:0;}
+
+				dt,dd{
+					font-weight:400;@include vw(font-size,14px);color:$color-black;@include vw(line-height,23.8px);
+				}
+				dt{font-weight:600;@include vw(font-size,13px);@include vw(margin-bottom,8px);}
+				dd{
+					position:relative;
+					strong{font-weight:600;}
+
+					.custom-select{
+						@include vw(width,163px);background-color:$color-white;
+					}
+					.form-control{
+						.select{@include vw(width,163px);background-color:$color-white;}
+						.text{@include vw(width,163px);background-color:$color-white;}
+					}
+				}
+			}
+
+
+		}
+
+		.action{
+			background-color:$color-white;
+			@include vw(padding, 20px 0);
+			@include vw(margin-top,32px);
+		}
+	}
+
+	.popup-coursePeriod{
+		.action{
+			a{
+				//height:38px;line-height:38px;
+				//padding:0 12px;
+			}
+		}
+	}
+
+	.popup-coursePause{
+		.layer-open{display:none;position:absolute;right:0;top:39px;z-index:10;}
+		.calender-box{
+			border:1px solid $color-light-brown;
+			padding:24px;
+			width:328px;
+			@include boxSizing(border-box);
+			background-color:$color-white;
+			box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+
+			.month-box{
+				position:relative;
+				text-align:left;
+				display:flex;align-items:center;
+				justify-content: space-between;
+				line-height:1;
+				.month{
+					font-weight:600;
+					font-size:20px;
+				}
+
+				.btn-arrow{
+					font-size:0;
+					a{
+						width:40px;
+						height:40px;
+						&.btn-prev{
+							@include arrow(left, 8px, 8px, 1.5px, $color-black);
+							&.disabled{
+								&:before{
+									border-color:$color-light-gray;
+								}
+							}
+							
+						}
+						&.btn-next{
+							@include arrow(right, 8px, 8px, 1.5px, $color-black);
+							&.disabled{
+								&:before{
+									border-color:$color-light-gray;
+								}
+							}
+							
+						}
+
+						
+					}
+				}
+			}
+
+			.calender-table{
+				margin-top:8px;
+				.table-row{
+					border-top:0;
+					width:100%;
+					tr{
+						&:last-child{border-bottom:none;}
+						th,td{padding:0;height:40px;line-height:1;@include boxSizing(border-box);}
+						th{background:transparent;}
+						td{
+							text-align:center;
+							vertical-align:middle;
+							
+							font-size:14px;font-weight:400;
+							border:1px solid $color-light-brown;
+							cursor:pointer;
+							&.active{
+								background:$color-brown;
+								color:$color-white;
+							}
+
+							&.disabled{
+								background:$color-light-brown2;
+								color:$color-light-gray;
+								cursor:default;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.popup-layer-bottom{
+		position:fixed;left:0;right:0;bottom:-100%;z-index: 1003;
+		transition: 0.35s ease-in;
+		&.active{
+			bottom:0;
+		}
+		background-color:$color-white;
+		@include vw(border-radius,20px);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		.popup-layer-close{
+			@include close(30px, 30px, 1px, $color-black);
+			font-size:0;
+			@include vw(top,10px);
+			@include vw(right,10px);
+			z-index: 10002;
+
+			&.white{
+				&:before, &:after{background-color:#fff;}
+			}
+		}
+		.popup-layer-title{
+			background-color:$color-light-brown2;
+			color:$color-black;
+			font-weight:600;
+			@include vw(font-size,18px);
+			@include vw(padding,16px 20px);
+			@include vw(border-top-left-radius,20px);
+			@include vw(border-top-right-radius, 20px);
+		}
+
+		.popup-layer-content{
+			@include vw(padding,0 20px);
+
+
+			.lecture-list{
+				overflow-y:auto;
+				@include vw(max-height,286px);
+				.check-list{
+					border-bottom:1px solid $color-light-brown;
+					@include vw(padding, 16px 0);
+	
+					.form-control{
+						.fake-checkbox{
+							label{
+								.badge{
+									@include vw(margin-right,8px);
+								}
+							}
+						}
+					}
+	
+					.check-control{
+						display:flex;
+						justify-content: space-between;
+						@include vw(margin-top,16px);
+	
+					}
+				}
+			}
+
+			.total-box{
+				display:flex;
+				justify-content: space-between;
+				border-top:1px solid $color-gray;
+				@include vw(padding-top,20px);
+			}
+		}
+
+		.popup-layer-action{
+			display:flex;
+			justify-content: center;
+			@include vw(padding, 20px);
+			.btn{
+				@extend %variable;
+				@include vw(margin-left,8px);
+				&:first-child{margin-left:0;}
+			}
+
 		}
 	}
 
