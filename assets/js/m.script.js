@@ -106,20 +106,21 @@ function pageMove($selector, $position){
 
 
 function popupOpen($selector){
-	popupReset();
+	//popupReset();
 
 	$($selector).show();
+	$("html, body").css({'overflow-y':'hidden'});
 
-	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
-		// 팝업이클때는 
-		var st = $(window).scrollTop();
-		$($selector).addClass("wide").css({top:st});
-		$("body").append('<div class="popup-dim"></div>');
-	}else{
-		// 팝업이 작을때는
-		$($selector).removeClass("wide");
-		$($selector).css({display:"flex"});
-	}
+	// if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
+	// 	// 팝업이클때는 
+	// 	var st = $(window).scrollTop();
+	// 	$($selector).addClass("wide").css({top:st});
+	// 	$("body").append('<div class="popup-dim"></div>');
+	// }else{
+	// 	// 팝업이 작을때는
+	// 	$($selector).removeClass("wide");
+	// 	$($selector).css({display:"flex"});
+	// }
 }
 
 function popupReset(){
@@ -133,10 +134,10 @@ function popupReset(){
 function popupClose($selector){
     //$('.slide-container').slick("unslick");
 	$($selector).hide();
-
-	if($(".popup-dim").is(':visible')){
-		$(".popup-dim").remove();
-	}
+	$("html, body").css({'overflow-y':'auto'});
+	// if($(".popup-dim").is(':visible')){
+	// 	$(".popup-dim").remove();
+	// }
 }
 
 function slideEvent() {
@@ -302,6 +303,37 @@ function slideEvent() {
 			}
 		}
     });
+}
+
+// layer video
+// popupLayerVideoOpen($url, "autoplay loop controls muted");
+// popupLayerVideoOpen($url, "shorts");
+function layerVideoOpen($url, $options){
+	if(typeof $options == "undefined"){
+		$options = "autoplay loop controls";
+	}
+
+	var _body = $("#wrap");
+	_body.append('<div id="popupLayerVideo"><div class="popup-wrap"><a href="javascript:layerVideoClose();" class="popup-close"></a><div class="popup-content"></div></div></div>');
+
+	var _popupLayerContent = $("#popupLayerVideo .popup-content");
+    if ($url.indexOf('.mp4') != -1) {
+        _popupLayerContent.html('<video playsinline="" controlslist="nodownload" '+$options+'><source src="'+$url+'" type="video/mp4"></video>');
+    }else{
+        _popupLayerContent.html('<iframe src="'+$url+'" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen></iframe>');
+    }
+  
+
+	if($options == "shorts"){
+		$("#popupLayerVideo").addClass(' show shorts');
+		$options = "";
+	}else{
+		$("#popupLayerVideo").addClass('show');
+	}
+}
+
+function layerVideoClose(){
+	$("#popupLayerVideo").remove();
 }
 
 
@@ -556,36 +588,7 @@ function countEvent(button, type) {
 
 
 
-// layer video
-// popupLayerVideoOpen($url, "autoplay loop controls muted");
-// popupLayerVideoOpen($url, "shorts");
-function layerVideoOpen($url, $options){
-	if(typeof $options == "undefined"){
-		$options = "autoplay loop controls";
-	}
 
-	var _body = $("#wrap");
-	_body.append('<div class="popup" id="popupLayerVideo"><div class="popup-wrap"><a href="javascript:layerVideoClose();" class="popup-close"></a><div class="popup-content"></div></div></div>');
-
-	var _popupLayerContent = $("#popupLayerVideo .popup-content");
-    if ($url.indexOf('.mp4') != -1) {
-        _popupLayerContent.html('<video playsinline="" controlslist="nodownload" '+$options+'><source src="'+$url+'" type="video/mp4"></video>');
-    }else{
-        _popupLayerContent.html('<iframe src="'+$url+'" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen></iframe>');
-    }
-  
-
-	if($options == "shorts"){
-		$("#popupLayerVideo").addClass(' show shorts');
-		$options = "";
-	}else{
-		$("#popupLayerVideo").addClass('show');
-	}
-}
-
-function layerVideoClose(){
-	$("#popupLayerVideo").remove();
-}
 
 function fileUploadEvent(){
     var fileTarget = $('.form-control #fileUpload');

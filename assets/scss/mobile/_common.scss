@@ -7,6 +7,12 @@
 	img{max-width:100%;}
 	a{display:inline-block;}
 
+	.color-red {
+        color: #E50000 !important;
+    }
+
+    .text-left{text-align:left !important;}
+
 	.scroll{
 		overflow: hidden;
 		white-space: nowrap;
@@ -24,12 +30,13 @@
         justify-content: center;
         align-items: center;
         text-align:center;
+        @include vw(min-height,184px);
         .icon{@include vw(margin-bottom,8px);}
         p{
             color:$color-black;
 			@include vw(font-size,14px);
             font-weight:400;
-			@include vw(line-height,27.2px);
+			@include vw(line-height,23.8px);
         }
     }
 
@@ -66,6 +73,56 @@
                
             }
         }
+
+        .textarea {
+            width: 100%;
+            @include vw(height, 396px);
+            @include vw(padding, 16px);
+            @include vw(font-size,14px);
+            font-weight:400;
+            @include vw(line-height,23.8px);
+            @include vw(border-width, 1px);
+            border-style: solid;
+            border-color: $color-light-brown;
+            resize: none;
+            @include boxSizing(border-box);
+            color:$color-black;
+            font-family:$font-pretendard;
+            &::placeholder { color: $color-light-gray;@include vw(font-size,14px);font-weight:400; }
+           
+        }
+
+        .fake-save-box{
+            position:relative;
+            .fake-input {
+				width:100%;
+				border:1px solid $color-light-brown;
+				@include vw(padding, 12px 54px 12px 8px);
+
+                &::placeholder{color:$color-light-gray;}
+            }
+
+            .fake-btn {
+				position:absolute;@include vw(right,12px);
+				top: 50%;
+				transform: translateY(-50%);
+                label {
+					display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include vw(width,35px);
+                    @include vw(height,26px);
+                    text-align: center;
+                    @include vw(font-size,13px);
+                    color: $color-black;
+					border:1px solid $color-light-brown;
+                    cursor: pointer;
+					font-weight:400;
+					@include vw(border-radius,2px);
+                   
+                }
+            }
+        }
 	}
 
     .table-row{
@@ -83,6 +140,7 @@
 				@include vw(line-height,23.8px);
 				font-weight:400;
                 @include boxSizing(border-box);
+                word-break: break-all;
 			}
 
 			th{background-color:$color-light-brown2;font-weight:600;}
@@ -90,4 +148,47 @@
 		}
 
 	}
+
+    .btn{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        @include vw(height, 38px);
+        @include vw(padding,0 16px);
+        font-weight:400;
+        @include vw(font-size,13px);
+        color:$color-black;
+        border:1px solid $color-light-brown;
+        background-color:$color-white;
+        @include vw(border-radius,2px);
+        strong{
+            font-weight:600;
+        }
+
+        &.btn-brown{
+            background-color:$color-brown;
+            color:$color-white;
+            border-color:$color-brown;
+        }
+
+        &.btn-light-brown{
+            background-color:$color-light-brown;
+        }
+
+        &.full{
+            width:100%;
+        }
+    }
+
+    .action{
+		display:flex;
+		justify-content:  flex-end;
+		align-items: center;
+
+		&.flex-start{justify-content: flex-start;}
+		&.flex-center{justify-content: center;}
+		&.flex-end{justify-content: flex-end;}
+        &.flex-between{justify-content: space-between;}
+
+    }
 }
