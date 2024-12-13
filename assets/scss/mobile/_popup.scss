@@ -173,13 +173,41 @@
 			}
 		}
 
-		.course-title{
-			font-weight:600;
-			@include vw(font-size,18px);
-			@include vw(line-height,27px);
+		.title-box{
 			color:$color-black;
 			@include vw(margin-bottom,20px);
 			text-align:left;
+			p{
+				@include vw(font-size,14px);@include vw(line-height,23.8px);font-weight:400;
+				strong{@include vw(font-size,18px);font-weight:600;@include vw(line-height,27px);}
+			}
+		}
+
+		.remain-count{
+			@include vw(margin-bottom,16px);
+			line-height:1;
+			font-weight:400;@include vw(font-size,14px);
+			text-align:left;
+			@include vw(margin-top,16px);
+			strong{
+				color:$color-brown;
+				display:inline-block;
+				@include vw(margin-left,8px);
+				font-weight:600;
+			}
+		}	
+
+		
+
+		.list-box{
+			@include vw(margin-top,16px);
+			color:$color-black;
+			@include vw(font-size,14px);
+			@include vw(line-height,23.8px);
+			font-weight:400;
+			font-family: $font-pretendard;
+			@include boxSizing(border-box);
+			
 		}
 
 		.line-box{
@@ -217,9 +245,6 @@
 				}
 			}
 		}
-
-
-
 
 	}
 
@@ -319,27 +344,9 @@
 	}
 
 	#popupDevice{
-		.device-title{
-			@include vw(margin-bottom,16px);
-			p{
-				@include vw(font-size,14px);@include vw(line-height,23.8px);font-weight:400;
-				strong{@include vw(font-size,18px);font-weight:600;@include vw(line-height,27px);}
-			}
-
-			.remain-count{
-				line-height:1;
-				font-weight:400;@include vw(font-size,14px);
-				text-align:left;
-				@include vw(margin-top,16px);
-				strong{
-					color:$color-brown;
-					display:inline-block;
-					@include vw(margin-left,8px);
-					font-weight:600;
-				}
-			}	
+		.title-box{
+			margin-bottom:0;
 		}
-
 		.device-table{
 			.table-row{
 				tr{
@@ -363,17 +370,7 @@
 			}
 		}
 
-		.list-box{
-			background-color:$color-light-beige;
-			@include vw(margin-top,16px);
-			color:$color-black;
-			@include vw(font-size,14px);
-			@include vw(line-height,23.8px);
-			font-weight:400;
-			font-family: $font-pretendard;
-			@include boxSizing(border-box);
-			
-		}
+
 	}
 
 	#popupMypageReviewUpdate, #popupMypageReviewWrite{
