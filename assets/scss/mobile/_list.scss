@@ -1,9 +1,12 @@
 #wrap{
+
 	.lecture-data-list{
+		border-top: 1px solid $color-light-brown;
         .list{
             @include vw(padding,24px 0);
             border-bottom:1px solid $color-light-brown;
             .desc-box{
+				position:relative;
                 display:flex;
 				.t-img{
 					background-color:$color-light-brown2;
@@ -21,8 +24,12 @@
 				.t-desc{
 					text-align:left;
                     //@include vw(min-width, 270px);
+					.desc-more + .desc-info{
+						@include vw(margin-bottom,10px);
+					}
                     .desc-info{
                         display:flex;
+						@include vw(margin-bottom,4px);
 						p{
                             position:relative;
 							@include vw(font-size,12px);
@@ -45,22 +52,30 @@
 					}
 
 					.desc-title{
-                        @include vw(margin-top,4px);
+                       
 						color:$color-black;
 						font-weight:600;
-                        @include vw(font-size,16px);
-                        @include vw(line-height,27.2px);
+                        @include vw(font-size,14px);
+                        @include vw(line-height,23.8px);
                         @include multipleEllipsis(2);
-                       a{display:block;}
+						a{display:block;}
+
+						strong{
+							@include vw(font-size,16px);
+							@include vw(line-height,27.2px);
+						}
 					}
 
 					.desc-text{
                         @include vw(margin-top,4px);
-                        @include vw(font-size,12px);
+						display:flex;
+						@include vw(font-size,12px);
 						color:$color-black;
 						@include vw(line-height,20.4px);
-						display:flex;
 						p{
+							@include vw(font-size,12px);
+							color:$color-black;
+							@include vw(line-height,20.4px);
 							position:relative;
 							display:inline-block;
 							vertical-align:middle;
@@ -86,6 +101,23 @@
                             }
 							
 					
+						}
+					}
+				}
+
+				.t-more, .desc-more{
+					position:absolute;right:0;@include vw(top,-6px);
+					display:flex;font-size:0;
+					.btn-star{
+						background:url('../images/mobile/btn_star_off.svg') no-repeat 0 0;
+						background-size:cover;
+						@include vw(width,32px);@include vw(height,32px);
+						display:block;
+						img{
+							display:none;
+						}
+						&.active{
+							img{display:block;}
 						}
 					}
 				}

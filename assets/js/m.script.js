@@ -37,6 +37,10 @@ function addEvent(){
 	pageMove('.page-move');
     pageMove('.page-move2', -50);
 
+	calenderEvent();
+	starEvent();
+	selectListEvent();
+
 	/*
 	headerEvent();
 	fileUploadEvent();
@@ -47,10 +51,9 @@ function addEvent(){
 	searchValueEvent('.header-search');
 	categoryListEvent();
 
-	calenderEvent();
-	starEvent();
 	*/
 }
+
 
 function menuEvent(){
     $(this).toggleClass("active");
@@ -365,32 +368,12 @@ function countEvent(button, type) {
 	resultSpan.innerText = number;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function calenderEvent(){
+	/* 달력 제어 */
+	$("input.date").not(".disabled").on("click", function(){
+		popupBottomOpen('#popupCalendar');
+	});
+}
 
 function starEvent(){
 	
@@ -399,16 +382,42 @@ function starEvent(){
 	});
 }
 
-function calenderEvent(){
-	/* 달력 제어 */
-	$("input.date").not(".disabled").on("click", function(){
-		$(this).closest('label').next(".layer-open").show();
-	});
-
-	$(".calender-box .calender-table .table-row tr td").on("click", function(){
-		$(this).closest(".layer-open").hide();
+function selectListEvent(){
+	$(".select-list li").on("click", function(){
+		$(".select-list li").removeClass('active');
+		$(this).addClass('active');
 	});
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function searchValueEvent($selector){
 	const $input = $($selector).find('input');
