@@ -5472,7 +5472,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-main-curriculum .video-play {
-  position: relative;
   width: 100%;
   height: 48vw;
 }
@@ -5481,46 +5480,48 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     height: 180px;
   }
 }
-#wrap .section-main-curriculum .video-play:after {
+#wrap .section-main-curriculum .video-play a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#wrap .section-main-curriculum .video-play a img {
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+#wrap .section-main-curriculum .video-play a:after {
   content: "";
   position: absolute;
   right: 2.1333333333vw;
   bottom: 2.1333333333vw;
+  z-index: 1;
   background: url(../images/mobile/btn_play_gray.svg) no-repeat 0 0;
   width: 8.5333333333vw;
   height: 8.5333333333vw;
   background-size: cover;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-main-curriculum .video-play:after {
+  #wrap .section-main-curriculum .video-play a:after {
     right: 8px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-main-curriculum .video-play:after {
+  #wrap .section-main-curriculum .video-play a:after {
     bottom: 8px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-main-curriculum .video-play:after {
+  #wrap .section-main-curriculum .video-play a:after {
     width: 32px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-main-curriculum .video-play:after {
+  #wrap .section-main-curriculum .video-play a:after {
     height: 32px;
   }
-}
-#wrap .section-main-curriculum .video-play a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#wrap .section-main-curriculum .video-play a img {
-  transition: all 0.5s ease;
-  width: 100%;
-  height: 100%;
 }
 #wrap .section-main-curriculum .video-play iframe, #wrap .section-main-curriculum .video-play video {
   width: 100%;
@@ -5639,19 +5640,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     height: 212px;
   }
 }
-#wrap .section-main-curriculum .curriculum-main .video-play:after {
+#wrap .section-main-curriculum .curriculum-main .video-play a:after {
   background: url(../images/mobile/btn_play_black.svg) no-repeat 0 0;
   width: 10.6666666667vw;
   height: 10.6666666667vw;
   background-size: cover;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-main-curriculum .curriculum-main .video-play:after {
+  #wrap .section-main-curriculum .curriculum-main .video-play a:after {
     width: 40px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-main-curriculum .curriculum-main .video-play:after {
+  #wrap .section-main-curriculum .curriculum-main .video-play a:after {
     height: 40px;
   }
 }

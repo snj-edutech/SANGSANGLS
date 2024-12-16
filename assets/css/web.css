@@ -9261,13 +9261,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
   height: 162px;
 }
-#wrap .section-main-curriculum .video-play:after {
+#wrap .section-main-curriculum .video-play a {
+  position: relative;
+}
+#wrap .section-main-curriculum .video-play a:after {
   content: "";
   position: absolute;
   right: 8px;
   bottom: 8px;
   width: 32px;
   height: 32px;
+  z-index: 1;
   background: url(../images/btn_play_gray.svg) no-repeat 0 0;
   background-size: cover;
   opacity: 0.15;
@@ -9340,7 +9344,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 744px;
   height: 374px;
 }
-#wrap .section-main-curriculum .curriculum-main .video-play:after {
+#wrap .section-main-curriculum .curriculum-main .video-play a:after {
   background: url(../images/btn_play_black.svg) no-repeat 0 0;
   width: 40px;
   height: 40px;
