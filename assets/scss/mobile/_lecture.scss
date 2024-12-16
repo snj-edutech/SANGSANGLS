@@ -56,10 +56,8 @@
 			}
 
 		}
-
-
-
 	}
+
 	.section-lecture-list{
 		@include vw(padding,20px 0px 20px);
 		h3{
@@ -102,6 +100,23 @@
 				}
 			}
 		}
+
+
+	}
+
+	.section-lecture-total{
+		@include vw(padding-top,24px);
+		background-color:$color-white;
+		&.fixed{
+			position:fixed;left:0;top:0;right:0;z-index:10;
+			@include vw(top,61px);
+			border-bottom:1px solid $color-light-brown;
+			
+		}
+	}
+
+	.section-lecture-total + .section-lecture-list{
+		padding-top:0;
 	}
 
 

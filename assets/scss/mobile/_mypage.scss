@@ -1,7 +1,184 @@
 #wrap{
-	.section-mypage{
 
+	.icon-arrow{
+		position:relative;
+		display:inline-block;
+		vertical-align:middle;
+		@include vw(margin-left,8px);
+		@include vw(top,2px);
+	}
+	
+	.data-layer{
+		display:none;
+		font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+		color:$color-gray;
+	}
 
+	.active{
+		&+ .data-layer{
+			display:block;
+		}
+
+		.icon-arrow img {
+			-webkit-transform: rotateZ(-180deg);
+			transform: rotateZ(-180deg);
+		}
+	}
+
+	.total-number-box{
+		display:flex;
+		justify-content: space-between;
+		align-items:flex-end;
+		@include vw(padding, 4px 0 10px);
+		.total{
+			@include vw(font-size,13px);
+			font-weight:400;
+			color:$color-black;
 		
+			strong{
+				font-weight:600;
+				color:$color-brown;
+				display:inline-block;
+			}
+		}
+
+		.device{
+			a{
+				display:flex;
+				align-items: center;
+				@include vw(font-size,12px);
+				font-weight:400;
+				color:$color-black;
+			}
+			.icon{
+				display:inline-block;
+				@include vw(margin-right,4px);
+			}
+		}
+
+		&+.nodata-box{
+			border-top:1px solid $color-light-brown;
+		}
+
+		.form-control{
+			.fake-checkbox label{
+				@include vw(font-size, 13px);
+				@include vw(padding-top, 4px);
+				strong{@include vw(padding-left, 5px);}
+			}
+		}
+	}
+
+	.total-price-box{
+		border-top:1px solid $color-black;
+		@include vw(padding,24px 0);
+		>div{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			@include vw(margin-top,4px);
+			&:first-child{margin-top:0;}
+
+			
+		}
+		.price-subject{
+			font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+			color:$color-black;text-align:center;
+
+		}
+
+		.price-num{
+			font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);color:$color-black;
+			text-align:center;
+			&.total{color:$color-brown;@include vw(font-size,20px);@include vw(line-height,34px);}
+		}
+	}
+
+	.section-action{
+		@include vw(padding, 20px 20px);
+	}
+
+	.section-mypage{
+		@include vw(padding-top, 24px);
+		@include vw(padding-bottom, 32px);
+		.lecture-data-list{
+			border-top:none;
+			.list{
+				@include vw(padding, 16px 0);
+				.price-box{
+					@include vw(margin-top, 8px);
+					display:flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				.coupon-box{
+					.form-control .select{
+						@include vw(margin-top, 8px);
+						select{
+							@include vw(height, 30px);
+							font-weight:400;@include vw(font-size,13px);
+							@include vw(padding,4px 12px);
+						}
+					}
+				}
+			}
+		}
+
+		.border-line-box{
+			dl{
+				display:flex;
+				justify-content: space-between;
+				align-items: center;
+				@include vw(padding-top, 12px);
+				@include vw(margin-top, 12px);
+				border-top:1px solid $color-light-brown2;
+				&:first-child{
+					border-top:none;
+					padding-top:0;
+					margin-top:0;
+				}
+				dt,dd{}
+				dt{
+					font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+					color:$color-gray;
+				}
+				dd{
+					font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
+					color:$color-black;margin-left:auto;
+					&.total{
+						@include vw(font-size,20px);@include vw(line-height,34px);
+					}
+				}
+			}
+
+			.point-box{
+				display:flex;
+				justify-content: flex-end;
+				align-items:center;
+				dt{
+					@include vw(width,70px);
+				}
+				dd{
+					display:flex;
+					justify-content: flex-end;
+					align-items:center;
+					.text {@include vw(width, 144px);@include vw(padding,8px);}
+					.point-text{@include vw(font-size,14px);font-weight:600;@include vw(margin-left,8px);}
+				}
+			}
+
+			.payment-box{
+				@include vw(padding-top, 12px);
+				@include vw(margin-top, 12px);
+				border-top:1px solid $color-light-brown2;
+				.form-control{
+					@include vw(margin-top, 8px);
+					&:first-child{
+						margin-top:0;
+					}
+				}
+			}
+		}
 	}
 }

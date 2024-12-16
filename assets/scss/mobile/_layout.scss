@@ -548,7 +548,10 @@
 				justify-content: center;
 				width: 100%;
 				@include vw(height, 60px);
-				
+				background-color:$color-white;
+				&.fixed{
+					position:fixed;left:0;top:0;right:0;z-index:10;
+				}
 	
 				.btn-back{
 					position:absolute;top:50%;transform:translateY(-50%);
@@ -563,6 +566,8 @@
 					}
 				}
 			}
+
+
 	
 			.header-tab{
 				ul{
