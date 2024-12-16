@@ -92,8 +92,8 @@
 				}
 
 				.upload-img{
-					margin-top:20px;
-					margin-bottom:20px;
+					@include vw(margin-top,20px);
+					@include vw(margin-bottom,20px);
 					img{
 						width:100%;
 					}
@@ -569,7 +569,7 @@
 							//@include vw(height,40px);
 						}
 						th{
-							background:transparent;@include vw(font-size,13);color:$color-gray;
+							background:transparent;@include vw(font-size,13px);color:$color-gray;
 							border-bottom:1px solid $color-light-brown;
 							//@include vw(height,28px);
 							@include vw(padding-bottom,4px);
