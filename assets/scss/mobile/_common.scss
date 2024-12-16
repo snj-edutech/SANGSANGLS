@@ -7,7 +7,15 @@
 	img{max-width:100%;}
 	a{display:inline-block;}
 
-	.color-red {
+	.highlight {
+        color: $color-brown !important;
+    }
+
+    .color-black {
+        color: $color-black !important;
+    }
+
+	.color-point {
         color: #E50000 !important;
     }
 
@@ -17,7 +25,6 @@
 		border-top:1px solid $color-light-brown2;
 		background-color:$color-light-beige;
 		@include vw(height,10px);
-
 	}
 
 	.holder{
@@ -35,6 +42,59 @@
 	// 		display: none;
 	// 	}
 	// }
+
+	.tab-menu{
+		ul{
+			overflow: hidden;
+			white-space: nowrap;
+			overflow-x: auto;
+			display: flex;
+			align-items:center;
+			width: 100%;
+			@include vw(height, 50px);
+			margin: 0 auto;
+			box-sizing: border-box;
+			border-bottom:1px solid $color-light-brown;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			li{
+				position:relative;
+				display: flex;
+				align-items:center;
+				height:100%;
+				@include vw(margin-right,20px);
+				&:first-child{
+					@include vw(margin-left,20px);
+				}
+				a{
+					display:inline-block;
+					font-weight:400;@include vw(font-size,15px);
+					@include vw(line-height,25.5px);
+					color:rgba(80, 75, 66, 1); //#504b42;
+				}
+
+				&.active{
+					&:after{
+						content:'';
+						display:block;
+						width:100%;
+						@include vw(height,2px);
+						background-color:$color-black;
+						position:absolute;left:0;bottom:0;
+					}
+
+					a{
+						color:$color-black;
+						font-weight:600;
+					}
+					
+				}
+			}
+		}
+	}
+
 
 	h3{
 		font-weight:600;
@@ -99,15 +159,59 @@
         justify-content: center;
         align-items: center;
         text-align:center;
-        @include vw(min-height,184px);
+		@include vw(min-height,184px);
         .icon{@include vw(margin-bottom,8px);}
+
+		@include vw(font-size,14px);
+		font-weight:400;
+		@include vw(line-height,23.8px);
         p{
             color:$color-black;
-			@include vw(font-size,14px);
+			@include vw(font-size,13px);
             font-weight:400;
-			@include vw(line-height,23.8px);
+			@include vw(line-height,22.1px);
+
+			&+p{
+				@include vw(margin-top,8px);
+			}
         }
     }
+
+	.total-number-box{
+		display:flex;
+		justify-content: space-between;
+		align-items:flex-end;
+		@include vw(padding, 4px 0 10px);
+		.total{
+			@include vw(font-size,13px);
+			font-weight:400;
+			color:$color-black;
+		
+			strong{
+				font-weight:600;
+				color:$color-brown;
+				display:inline-block;
+			}
+		}
+
+		.device{
+			a{
+				display:flex;
+				align-items: center;
+				@include vw(font-size,12px);
+				font-weight:400;
+				color:$color-black;
+			}
+			.icon{
+				display:inline-block;
+				@include vw(margin-right,4px);
+			}
+		}
+
+		&+.nodata-box{
+			border-top:1px solid $color-light-brown;
+		}
+	}
 
 	.notice{
 		color:$color-gray;
@@ -118,6 +222,7 @@
 	}
 
 	.badge{
+		@include vw(margin-right,8px);
 		@include vw(font-size,11px);
 		@include vw(padding, 0 3.5px);
 		@include vw(height, 19px);
@@ -138,8 +243,6 @@
 		&.badge-gray{border-color:$color-gray;background-color: $color-gray;color:$color-white;}
 		&.badge-black{border-color:$color-black;background-color: $color-black;color:$color-white;}
 		&.badge-light-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
-
-		&+p{  @include vw(margin-top, 8px);}
 	}
 
 	.form-control {
@@ -157,7 +260,7 @@
             font-size: 0;
             background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
             @include vw(background-size, 20px 20px);
-			@include vw(width,160px);
+			width:100%;
             select {
                 width: 100%;
 				@include vw(height,48px);
@@ -174,6 +277,13 @@
                 &::placeholder { color: $color-black; }
                
             }
+
+			&.noline{
+				select{
+					border:none;
+					
+				}
+			}
         }
 
 		.text {
@@ -260,6 +370,7 @@
 				.badge{
 					display: inline-block;
 					@include vw(min-width,33px);
+					text-align:center;
 				}
 
             }
@@ -277,7 +388,6 @@
 	.custom-select {
 		position:relative;
 		display: inline-block;
-		width:100%;	
 		cursor: pointer;
 		@include boxSizing(border-box);
 		.selected {
@@ -285,75 +395,77 @@
 			display: flex;
 			justify-content: space-between;
             align-items:center;
-			@include vw(padding, 8px 16px 8px 16px);
-			@include vw(font-size,14px);
 			font-weight:400;
 			color: $color-black; 
-			//color:$color-light-gray;
+			@include vw(min-width,73px);
+			@include vw(height,36px);
+			@include vw(font-size,12px);
+			@include vw(padding,8px 40px 8px 12px);
 			font-family:$font-pretendard;
 			@include boxSizing(border-box);
 			background-color:$color-white;
-			.arrow {
-				background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
-				@include vw(background-size,24px 24px);
-				@include vw(width,24px);@include vw(height,24px);
-			  }
-
-			.selected-value {
-				width:100%;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
-			}
+			background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
+			@include vw(background-size, 20px 20px);
 
             &.disabled{
                 background-color:$color-light-gray;
                 color:$color-gray;
-                .arrow {
-                    background-image: url('../images/icon_select_arrow_gray.svg');
-                }
+                background-image: url('../images/icon_select_arrow_gray.svg');
             }
 		}
 
-		ul{
-			width: 100%;
-			border: 1px solid $color-light-brown;
-			display: none;
-			position: absolute;
-			border-top: none;
-			background-color:$color-white;
-			z-index:10;
-			@include boxSizing(border-box);
-			@include vw(padding,16px 0);
-			
-			li{
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				@include boxSizing(border-box);
-				@include vw(padding, 4px 16px);
-				@include vw(font-size,14px);
-				font-weight:400;
-				color: $color-black; 
-				@include vw(line-height,23.8px);
-				@include vw(margin-top,8px);
-				&:first-child{margin-top:0;}
-				&:hover {
-					background: $color-light-brown2;
-				}
-			}
-		}
-
-		&.active{
-			ul{
-				display: initial;
-			}
-		}
 	}
+
+	.date-box{
+		position:relative;
+       // display:flex;
+		//align-items: center;
+
+		display:inline-block;vertical-align:middle;
+        .date-dash{
+			@include vw(margin,0 8px);display:inline-block;vertical-align:middle;background-color:$color-gray;
+			@include vw(width,12px);@include vw(height,1px);}
+        label{
+            position:relative;
+            display:inline-block;
+			background-color:$color-white;
+            .btn-calendar{
+                display:inline-block;
+                position:absolute;@include vw(right,10px);@include vw(top,10px);z-index:1;
+
+				&.disabled{cursor:default;}
+            }
+        }
+        .date{
+			position:relative;z-index:2;
+            border:none;border:1px solid $color-light-brown;
+			background-color:transparent;
+			//background-color:$color-white;
+            display:inline-block;@include vw(height,40px);@include vw(font-size,14px);font-weight:400;
+			@include vw(padding,8px 32px 8px 12px);@include vw(width,146px);color:$color-light-gray;
+			@include boxSizing(border-box);
+            &::placeholder{
+                color:$color-black;
+                @include vw(font-size,14px);
+                font-weight:400;
+            }
+
+			&.disabled{cursor:default;}
+
+        }
+
+		.btn{
+			display:inline-block;
+			@include vw(height,40px);
+			@include vw(line-height,40px);
+			@include vw(padding,0 16px);
+			vertical-align:top;
+		}
+    }
 
 	.input-box{
 		display:flex;align-items:center;
-		.text {width: 280px;}
+		.text {@include vw(width, 280px);}
 		.form-control + .form-control{@include vw(margin-left,8px);}
 		&+.input-box{margin-top:10px;}
 
@@ -375,6 +487,43 @@
 
         
 	}
+
+	.search-input-box{
+        .search-text{
+            position:relative;
+            input[type=text]{
+                width:100%;
+                background: rgba(247, 246, 243, 1);
+				border:none;
+                @include vw(height,40px);@include boxSizing(border-box);
+                @include vw(padding,0 48px 0 16px);
+                color:$color-black;
+                @include vw(font-size,13px);
+                font-weight:600;
+				line-height:1;
+                &::placeholder{
+                    color:$color-light-gray;
+                    @include vw(font-size,13px);
+                    font-weight:600;
+					line-height:1;
+                }
+            }
+
+            .search-input-action{
+                position:absolute;@include vw(right,16px);top:50%;z-index:10;
+                @include vw(width,24px);@include vw(height,24px);@include vw(margin-top,-12px);
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+
+        .action{
+            @include vw(margin-top,16px);
+            .btn{@include vw(width, 65px);@include vw(height, 30px);@include vw(margin-left,8px);}
+        }
+    }
 
 
     .table-row{
@@ -410,6 +559,7 @@
         font-weight:400;
         @include vw(font-size,13px);
         color:$color-black;
+		@include boxSizing(border-box);
         border:1px solid $color-light-brown;
         background-color:$color-white;
         @include vw(border-radius,2px);
@@ -425,6 +575,12 @@
 
         &.btn-light-brown{
             background-color:$color-light-brown;
+        }
+
+		&.btn-light-gray{
+            background-color:$color-light-gray;
+			color:$color-white;
+            border-color:$color-light-gray;
         }
 
         &.full{

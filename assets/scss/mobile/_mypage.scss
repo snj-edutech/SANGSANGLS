@@ -1,37 +1,6 @@
 #wrap{
 	.section-mypage{
-		.total-number-box{
-			display:flex;
-			justify-content: space-between;
-			align-items:flex-end;
-			@include vw(padding, 24px 20px 10px);
-			border-bottom:1px solid $color-light-brown;
-			.total{
-				@include vw(font-size,13px);
-				font-weight:400;
-				color:$color-black;
-			
-				strong{
-					font-weight:600;
-					color:$color-brown;
-					display:inline-block;
-				}
-			}
 
-			.device{
-				a{
-					display:flex;
-					align-items: center;
-					@include vw(font-size,12px);
-					font-weight:400;
-					color:$color-black;
-				}
-				.icon{
-					display:inline-block;
-					@include vw(margin-right,4px);
-				}
-			}
-		}
 
 		
 	}

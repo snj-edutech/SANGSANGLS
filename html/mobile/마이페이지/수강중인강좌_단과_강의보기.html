@@ -88,8 +88,8 @@
 				<div class="action-list">
 					<a href="javascript:;" class="btn">교수홈</a>
 					<a href="javascript:;" class="btn">학습질문</a>
-					<a href="javascript:;" class="btn">기간연장</a>
-					<a href="javascript:;" class="btn">일시정지</a>
+					<a href="javascript:popupOpen('#popupCoursePeriod');" class="btn">기간연장</a>
+					<a href="javascript:popupOpen('#popupCoursePause');" class="btn">일시정지</a>
 					<a href="javascript:popupBottomOpen('#popupBookBuy');" class="btn">교재구매</a>
 				</div>
 				<div class="notice">
@@ -97,7 +97,7 @@
 				</div>
 			</div>
 
-			<div class="section-lecture-content">
+			<div class="section-lecture-list">
 				<div class="wrap">
 					<h3>
 						강의 수강하기
@@ -257,7 +257,7 @@
 	</div>
 
 	<!-- 팝업 -->
-	 <div class="popup-layer-bottom" id="popupBookBuy">
+	<div class="popup-layer-bottom" id="popupBookBuy">
 		<a href="javascript:popupBottomClose('#popupBookBuy');"  class="popup-layer-close">팝업닫기</a>
 		<div class="popup-layer-title">
 			구매하기
@@ -336,7 +336,7 @@
 		</div>
 		<div class="popup-layer-action">
 			<a href="javacript:;" class="btn large ">장바구니</a>
-			<a href="javacript:;" class="btn large btn-brown">바로결제</a>
+			<a href="javacript:;" class="btn large btn-brown"><strong>바로결제</strong></a>
 		</div>
 	 </div>
 
@@ -346,7 +346,7 @@
 			<div class="popup-title">
 				수강기간 연장
 			</div>
-			<div class="popup-scroll">
+			<div class="popup-cont popup-scroll">
 				<div class="holder">
 					<div class="title-box">
 						<p><strong>
@@ -425,14 +425,233 @@
 							</dd>
 						</dl>
 					</div>
-
-					<div class="action">
+					<div class="popup-btn">
 						<a href="javascript:popupClose('#popupCoursePeriod');" class="btn btn-brown full large"><strong>수강기간 연장</strong></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="popup popup-coursePause" id="popupCoursePause">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupCoursePause');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				수강 일시정지
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="course-title">
+					[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강
+					강좌명 길면 2줄 노출
+					<div class="remain-count">일시정지 잔여 횟수<strong>2회</strong></div>
+				</div>
+
+				<div class="line-box">
+					<p>
+						-일시중지는 <strong class="highlight">3</strong>회 가능합니다.<br/>
+						-중지 일수는 수강 잔여일수를 초과 할 수 없으며, <br/>
+						<strong class="highlight">3회 중지 합계 일수는 원래 강좌의 수강 기간을 초과할 수 없습니다.</strong>
+					</p>
+				</div>
+
+				<div class="lecture-box">
+					<dl>
+						<dt>수강기간</dt>
+						<dd>
+							<strong>YYYY-MM-DD ~ YYYY-MM-DD (99일+99일+99일)</strong>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>일시정지 1회</dt>
+						<dd>
+							<strong>YYYY-MM-DD (정지 취소)</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt>일시정지 2회</dt>
+						<dd>
+							<strong>YYYY-MM-DD (정지 취소)</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt>일시정지 3회</dt>
+						<dd>
+							<strong>YYYY-MM-DD (정지 취소)</strong>
+						</dd>
+					</dl>
+					<dl>
+						<dt>신청기간 0회</dt>
+						<dd>
+							<div class="date-box">
+								<label for="date-first">
+									<a href="javascript:;" class="btn-calendar disabled"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<input type="text" class="date disabled" disabled id="date-first" value="2024-02-14"  />
+								</label>
+								<span class="date-dash">&nbsp;</span>
+								<label for="date-last">
+									<a href="javascript:;" class="btn-calendar"><img src="../../../assets/images/btn_calendar.svg" alt="" /></a>
+									<input type="text" class="date" id="date-last" placeholder="YYYY-MM-DD" />
+								</label>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="popup-btn">
+					<a href="javascript:popupClose('#popupCoursePause');" class="btn full large btn-brown"><strong>신청</strong></a>
+					<a href="javascript:popupClose('#popupCoursePause');" class="btn full large btn-light-gray"><strong>신청불가</strong></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-layer-bottom" id="popupCalendar">
+		<a href="javascript:popupBottomClose('#popupCalendar');"  class="popup-layer-close">팝업닫기</a>
+		<div class="popup-layer-title">
+			날짜 선택
+		</div>
+		<div class="popup-layer-content">
+			<div class="calender-box">
+				<div class="month-box">
+					<div class="btn-arrow">
+						<a href="javascript:;" class="btn-prev disabled"></a>
+						<strong class="month">2024. 09</strong>
+						<a href="javascript:'" class="btn-next"></a>
+					</div>
+				</div>
+				<div class="calender-table">
+					<table class="table-row">
+						<colgroup>
+							<col style="width:14.28%" />
+							<col style="width:14.28%" />
+							<col style="width:14.28%" />
+							<col style="width:14.28%" />
+							<col style="width:14.28%" />
+							<col style="width:14.28%" />
+							<col style="width:14.28%" />
+						</colgroup>
+						<tbody><tr>
+							<th>일</th>
+							<th>월</th>
+							<th>화</th>
+							<th>수</th>
+							<th>목</th>
+							<th>금</th>
+							<th>토</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="day">1</span>
+							</td>
+							<td>
+								<span class="day">2</span>
+							</td>
+							<td>
+								<span class="day">3</span>
+							</td>
+							<td>
+								<span class="day">4</span>
+							</td>
+							<td>
+								<span class="day">5</span>
+							</td>
+							<td>
+								<span class="day">6</span>
+							</td>
+							<td>
+								<span class="day">7</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="day">8</span>
+							</td>
+							<td>
+								<span class="day">9</span>
+							</td>
+							<td>
+								<span class="day">10</span>
+							</td>
+							<td>
+								<span class="day">11</span>
+							</td>
+							<td>
+								<span class="day">12</span>
+							</td>
+							<td>
+								<span class="day">13</span>
+							</td>
+							<td>
+								<span class="day">14</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="day">15</span>
+							</td>
+							<td>
+								<span class="day">16</span>
+							</td>
+							<td>
+								<span class="day">17</span>
+							</td>
+							<td>
+								<span class="day">18</span>
+							</td>
+							<td>
+								<span class="day">19</span>
+							</td>
+							<td>
+								<span class="day">20</span>
+							</td>
+							<td>
+								<span class="day">21</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="day">22</span>
+							</td>
+							<td class="active">
+								<span class="day">23</span>
+							</td>
+							<td>
+								<span class="day">24</span>
+							</td>
+							<td class="disabled">
+								<span class="day">25</span>
+							</td>
+							<td class="disabled">
+								<span class="day">26</span>
+							</td>
+							<td class="disabled">
+								<span class="day">27</span>
+							</td>
+							<td class="disabled">
+								<span class="day">28</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="disabled">
+								<span class="day">29</span>
+							</td>
+							<td class="disabled">
+								<span class="day">30</span>
+							</td>
+							<td class="disabled">
+								<span class="day">31</span>
+							</td>
+							
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</div>
+			<div class="popup-layer-btn">
+				<a href="javacript:;" class="btn large btn-brown"><strong>선택완료</strong></a>
+			</div>
+		</div>
+	 </div>
 
 </div>
 
@@ -443,8 +662,6 @@
 		$(".lecture-content-list .btn-action").on("click", function(){
 			$(this).parents(".list").toggleClass("active");
 		});
-
-		popupOpen('#popupCoursePeriod');
 	});
 </script>
 </body>
