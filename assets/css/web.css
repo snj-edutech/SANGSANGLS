@@ -6014,6 +6014,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
 }
 
+#wrap .section-professor-gate .tab-box .tab-menu-small ul li a {
+  font-weight: 500;
+}
 #wrap .professor-gate-list {
   display: flex;
   flex-wrap: wrap;
@@ -6059,7 +6062,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
 }
 #wrap .professor-gate-list .list .professor-desc .desc-subject {
-  font-weight: 300;
+  font-weight: 200;
   font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   color: #A07D3B;
   font-size: 20px;
@@ -6072,7 +6075,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-professor-home .professor-desc {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 80px;
   margin-bottom: 24px;
 }
 #wrap .section-professor-home .professor-desc .desc-name {
