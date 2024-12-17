@@ -33,10 +33,12 @@
 					<a href="javascript:;" class="btn-back"><img src="../../../assets/images/mobile/btn_back_large.svg" alt="back" /></a>
 					<h2><a href="javascript:;">수강중인 강좌</a></h2>
 				</div>
+			</div>
 
-				<div class="header-tab">
+			<div class="section-tab">
+				<div class="tab-menu">
 					<ul>
-						<li>
+						<li >
 							<a href="javascript:;">단과</a>
 						</li>
 						<li>
@@ -45,10 +47,10 @@
 						<li>
 							<a href="javascript:;">패키지</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="javascript:;">무료특강</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="javascript:;">보강동영상</a>
 						</li>
 					</ul>
@@ -58,7 +60,7 @@
 				<div class="wrap">
 					<div class="total-number-box">
 						<div class="total">총 <strong>999</strong>개 강좌</div>
-						<div class="device"><a href="javascript:popupOpen('#popupDevice');"><span class="icon"><img src="../../../assets/images/mobile/icon_device.svg" alt=""></span>기기관리</a></div>
+						<div class="device"><a href="javascript:;"><span class="icon"><img src="../../../assets/images/mobile/icon_device.svg" alt=""></span>기기관리</a></div>
 					</div>
 					<div class="lecture-data-list">
 						<div class="list">
@@ -82,7 +84,7 @@
 							</div>
 
 							<div class="action">
-								<a href="javascript:popupOpen('#popupMypageReviewWrite');" class="btn">수강후기 작성</a>
+								<a href="javascript:;" class="btn">수강후기작성</a>
 								<a href="javascript:;" class="btn btn-brown"><strong>강의보기</strong></a>
 							</div>
 						</div>
@@ -107,7 +109,7 @@
 							</div>
 
 							<div class="action">
-								<a href="javascript:popupOpen('#popupMypageReviewWrite');" class="btn">수강후기 작성</a>
+								<a href="javascript:;" class="btn">수강후기작성</a>
 								<a href="javascript:;" class="btn btn-light-brown"><strong>일시중지 취소</strong></a>
 							</div>
 						</div>
@@ -132,7 +134,7 @@
 							</div>
 
 							<div class="action">
-								<a href="javascript:popupOpen('#popupMypageReviewWrite');" class="btn">수강후기 작성</a>
+								<a href="javascript:;" class="btn">수강후기작성</a>
 								<a href="javascript:;" class="btn btn-brown"><strong>강의보기</strong></a>
 							</div>
 						</div>
@@ -157,7 +159,7 @@
 							</div>
 
 							<div class="action">
-								<a href="javascript:popupOpen('#popupMypageReviewWrite');" class="btn">수강후기 작성</a>
+								<a href="javascript:;" class="btn">수강후기작성</a>
 								<a href="javascript:;" class="btn btn-brown"><strong>강의보기</strong></a>
 							</div>
 						</div>
@@ -168,128 +170,7 @@
 	</div>
 
 	<!-- 팝업 -->
-	<div class="popup" id="popupDevice">
-		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupDevice');"  class="popup-close">팝업닫기</a>
-			<div class="popup-title">
-				기기관리
-			</div>
-			<div class="popup-cont popup-scroll">
-				<div class="title-box">
-					<p>
-						<strong>홍길동( YHBMFL084700)님의 기기정보</strong><br/>
-						강의를 수강하시는 기기는 제한적이니 등록된 기기에 네이밍하며 관리하세요!
-					</p>
-				</div>
-				<div class="remain-count">기기 삭제 가능 횟수<strong>2회</strong></div>
 
-				<div class="device-table">
-					<table class="table-row">
-						<colgroup>
-							<col style="width:20%;" />
-							<col style="width:auto;" />
-							<col style="width:15%;" />
-						</colgroup>
-						<tr>
-							<th>구분</th>
-							<th>고유번호</th>
-							<th>등록/<br/>삭제</th>
-						</tr>
-						<tr>
-							<td colspan="3">
-								<div class="nodata-box">
-									<p>등록된 기기가 없습니다.</p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>스트리밍<br/>(PC)</td>
-							<td class="desc">
-								<div>sx8407246c2d39de037ea2192ad941498</div>
-							</td>
-							<td>
-								<a href="javascript:;" class="btn-edit"><img src="../../../assets/images/mobile/btn_edit.svg" alt="" /></a>
-								<a href="javascript:;" class="btn-delete"><img src="../../../assets/images/mobile/btn_delete.svg" alt="" /></a>
-							</td>
-						</tr>
-						<tr>
-							<td>스트리밍<br/>(MO)</td>
-							<td class="desc">
-								<div>sx8407246c2d39de037ea2192ad941498</div>
-								<div><strong>일이삼사오육칠팔구십일이삼</strong></div>
-							</td>
-							<td>
-								<a href="javascript:;" class="btn-edit"><img src="../../../assets/images/mobile/btn_edit.svg" alt="" /></a>
-								<a href="javascript:;" class="btn-delete"><img src="../../../assets/images/mobile/btn_delete.svg" alt="" /></a>
-							</td>
-						</tr>
-						<tr>
-							<td>스트리밍<br/>(PC)</td>
-							<td class="desc">
-								<div>sx8407246c2d39de037ea2192ad941498</div>
-								<div class="form-control">
-									<div class="fake-save-box">
-										<input type="text" class="text fake-input" id="saveText" placeholder="기기명 (최대13자)" />
-										<a href="javascript:;" class="fake-btn"><label for="saveText">저장</label></a>
-									</div>
-								</div>
-							</td>
-							<td>
-								<a href="javascript:;" class="btn-edit"><img src="../../../assets/images/mobile/btn_edit.svg" alt="" /></a>
-								<a href="javascript:;" class="btn-delete"><img src="../../../assets/images/mobile/btn_delete.svg" alt="" /></a>
-							</td>
-						</tr>
-						<tr>
-							<td>스트리밍<br/>(PC)</td>
-							<td class="desc">
-								<div>sx8407246c2d39de037ea2192ad941498</div>
-								<div class="form-control">
-									<div class="fake-save-box">
-										<input type="text" class="text fake-input" id="saveText" value="아이패드" />
-										<a href="javascript:;" class="fake-btn"><label for="saveText">저장</label></a>
-									</div>
-								</div>
-							</td>
-							<td>
-								<a href="javascript:;" class="btn-edit"><img src="../../../assets/images/mobile/btn_edit.svg" alt="" /></a>
-								<a href="javascript:;" class="btn-delete"><img src="../../../assets/images/mobile/btn_delete.svg" alt="" /></a>
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="list-box">
-					- 고유번호는 동영상 플레이어 고유의 일련번호를 뜻합니다.<br/>
-					- 동영상강의의 불법적인 재생 및 다운로드 방지를 위해 사용자의 동영상 플레이어 아이디를 관리합니다.<br/>
-					- 최대 3개의 기기까지만 등록이 가능(모바일포함)하며 새로운 기기에서 재생을 원할 경우 기존에 등록하신 기기를 삭제하여야 합니다. 삭제 가능횟수는 2회 제공됩니다.<br/>
-					- 강좌를 구매하신 고객이 강의를 재생하면 기기정보가 자동으로 서버에 등록됩니다. 이와같이 서버에 정보가 등록된 기기에서만 재생이 가능합니다.
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	
-	<div class="popup popup-review" id="popupMypageReviewWrite">
-		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupMypageReviewWrite');"  class="popup-close">팝업닫기</a>
-			<div class="popup-title border-bottom-line">
-				수강후기 작성하기
-			</div>
-			<div class="popup-cont popup-scroll">
-				<div class="title-box">
-					<p><strong>[2025-입문] RAINMAKER 김재형의 LEET 추리논증 입문과정 강좌명 강좌명  강좌명 강좌명 강좌명 강좌명  강좌명</strong></p>
-				</div>
-				<div class="form-control">
-					<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요. (최대 500자 가능)"></textarea>
-				</div>
-				<div class="notice">* 강좌후기 입력시 +500P가 제공됩니다.</div>
-				<div class="popup-btn">
-					<a href="javascript:popupClose('#popupMypageReviewWrite');" class="btn full btn-brown"><strong>등록</strong></a>
-				</div>
-			</div>
-
-		</div>
-	</div>
 </div>
 
 <script src="../../../assets/js/m.script.js"></script>

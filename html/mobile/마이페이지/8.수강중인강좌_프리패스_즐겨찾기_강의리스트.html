@@ -35,15 +35,15 @@
 				</div>
 			</div>
 
-			<div class="section-lecture">
-				<div class="lecture-box">
-					<div class="lecture-main">
+			<div class="section-lecture-info">
+				<div class="lecture-info-box">
+					<div class="lecture-info-top">
 						<div class="lecture-subject">
 							2026대비 상상패스
 						</div>
 					</div>
 
-					<div class="lecture-info">
+					<div class="lecture-info-bottom">
 						<dl>
 							<dt>수강기간</dt>
 							<dd>
@@ -57,21 +57,19 @@
 							</dd>
 						</dl>
 					</div>
-	
 				</div>
 				<div class="action-list">
-					<a href="javascript:popupOpen('#popupMypageBookInfo');" class="btn">교재구매</a>
-					<a href="javascript:popupOpen('#popupMypageLectureInfo');" class="btn">강좌추가</a>
+					<a href="javascript:;" class="btn">교재구매</a>
+					<a href="javascript:;" class="btn">강좌추가</a>
 				</div>
-
 			</div>
 
 			<div class="section-tab">
 				<div class="tab-menu">
 					<ul>
-						<li class="active"><a href="javascript:;">수강중인 강좌</a></li>
+						<li><a href="javascript:;">수강중인 강좌</a></li>
 						<li><a href="javascript:;">수강완료 강좌</a></li>
-						<li><a href="javascript:;">즐겨찾기 강좌</a></li>
+						<li class="active"><a href="javascript:;">즐겨찾기 강좌</a></li>
 						<li><a href="javascript:;">삭제 강좌</a></li>
 					</ul>
 				</div>
@@ -79,15 +77,15 @@
 
 			<div class="section-lecture-list">
 				<div class="wrap">
-					<div class="select-group">
+					<div class="select-search-box">
 						<div class="select-box">
 							<div class="custom-select">
-								<a href="javascript:popupBottomOpen('#popupMoreSubject');" class="selected">
+								<a href="javascript:;" class="selected">
 									과목
 								</a>
 							</div>
 							<div class="custom-select">
-								<a href="javascript:popupBottomOpen('#popupMoreTeacher');" class="selected">
+								<a href="javascript:;" class="selected">
 									교수님
 								</a>
 							</div>
@@ -117,11 +115,58 @@
 						</div>
 					</div>
 
-					<div class="nodata-box">
-						<div>
-							<p>수강중인 강좌정보가 없습니다.</p>
-							<p><span class="highlight">* ‘강좌 추가’ 버튼을 클릭한 후,<br/>수강을 원하는 강좌를 추가하시면 이용 가능합니다.</span>
-							</p>
+					<div class="lecture-data-list">
+						<div class="list">
+							<div class="desc-box">
+								<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진"></div>
+								<div class="t-desc">
+									<div class="desc-more">
+										<a href="javascript:;" class="btn-star active"><img src="../../../assets/images/mobile/btn_star_on.svg" alt=""></a>
+										<a href="javascript:;" class="btn-more"><img src="../../../assets/images/mobile/btn_more.svg" alt=""></a>
+									</div>
+									<div class="desc-info">
+										<p>입문과정</p>
+										<p>추리논증 김재형</p>
+									</div>
+									<div class="desc-title"><a href="javascript:;" >[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
+									<div class="desc-text">
+										<p>강좌상태<strong>완강</strong></p>
+										<p>진도율<strong>100%</strong></p>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="action">
+								<a href="javascript:;" class="btn">수강후기작성</a>
+								<a href="javascript:;" class="btn btn-brown"><strong>강의보기</strong></a>
+							</div>
+						</div>
+						<div class="list">
+							<div class="desc-box">
+								<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진"></div>
+								<div class="t-desc">
+									<div class="desc-more">
+										<a href="javascript:;" class="btn-star active"><img src="../../../assets/images/mobile/btn_star_on.svg" alt=""></a>
+										<a href="javascript:;" class="btn-more"><img src="../../../assets/images/mobile/btn_more.svg" alt=""></a>
+									</div>
+									<div class="desc-info">
+										<p>입문과정</p>
+										<p>추리논증 김재형</p>
+									</div>
+									<div class="desc-title"><a href="javascript:;" >[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
+									<div class="desc-text">
+										<p>강좌상태<strong>완강</strong></p>
+										<p>진도율<strong>100%</strong></p>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="action">
+								<a href="javascript:;" class="btn">수강후기작성</a>
+								<a href="javascript:;" class="btn btn-brown"><strong>강의보기</strong></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -438,9 +483,7 @@
 <script>
 	$(function(){
 		// 강의 리스트 클릭시
-		$(".lecture-content-list .btn-action").on("click", function(){
-			$(this).parents(".list").toggleClass("active");
-		});
+		
 	});
 </script>
 </body>

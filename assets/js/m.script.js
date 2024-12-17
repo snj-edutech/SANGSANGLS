@@ -42,6 +42,9 @@ function addEvent(){
 	selectListEvent();
 	toggleDataEvent();
 	
+	$(window).on("scroll", scrollMenuEvent);
+	scrollMenuEvent();
+	
 
 	/*
 	headerEvent();
@@ -394,21 +397,21 @@ function selectListEvent(){
 function toggleDataEvent(){
 	$(".btn-toggle").on("click", function(){
 		var $parent = $(this).parent();
-		$parent.toggleClass('active');
+		$parent.toggleClass('open');
 	});
 
 }
 
 function scrollMenuEvent(){
-	var wt = $(window).scrollTop();
-	var scrollTop = $('.section-header').offset().top;
+	if ($('.section-header').length > 0) {
+		var wt = $(window).scrollTop();
+		var scrollTop = $('.section-header').offset().top;
 
-	if( wt > scrollTop ){
-		$('.section-header .header-title').addClass('fixed');
-		$('.section-lecture-total').addClass('fixed');
-	} else {
-		$('.section-header .header-title').removeClass('fixed');
-		$('.section-lecture-total').removeClass('fixed');
+		if( wt > scrollTop ){
+			$('.section-header .header-title').addClass('fixed');
+		} else {
+			$('.section-header .header-title').removeClass('fixed');
+		}
 	}
 }
 

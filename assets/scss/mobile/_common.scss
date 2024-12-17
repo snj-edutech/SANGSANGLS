@@ -472,7 +472,7 @@
 			background-color:transparent;
 			//background-color:$color-white;
             display:inline-block;@include vw(height,40px);@include vw(font-size,14px);font-weight:400;
-			@include vw(padding,8px 32px 8px 12px);@include vw(width,146px);color:$color-light-gray;
+			@include vw(padding,8px 32px 8px 12px);@include vw(width,145px);color:$color-light-gray;
 			@include boxSizing(border-box);
             &::placeholder{
                 color:$color-black;

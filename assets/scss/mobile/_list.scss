@@ -1,5 +1,4 @@
 #wrap{
-
 	.lecture-data-list{
 		border-top: 1px solid $color-light-brown;
         .list{
@@ -7,7 +6,8 @@
             border-bottom:1px solid $color-light-brown;
             .desc-box{
 				position:relative;
-                //display:flex;
+               display:flex;
+			   width:100%;
 				.t-img{
 					background-color:$color-light-brown2;
 					@include vw(min-width, 48px);@include vw(height, 48px);
@@ -159,7 +159,7 @@
         }
     }
 
-	.lecture-content-list{
+	.lecture-notice-list{
 		border-top:1px solid $color-light-brown;
 		.list{
 			border-bottom:1px solid $color-light-brown;
@@ -222,7 +222,7 @@
 				}
 			}
 
-			&.active{
+			&.open{
 				background-color:$color-light-brown2;
 				.action-box{
 					display:flex;

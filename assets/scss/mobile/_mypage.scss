@@ -1,30 +1,5 @@
 #wrap{
 
-	.icon-arrow{
-		position:relative;
-		display:inline-block;
-		vertical-align:middle;
-		@include vw(margin-left,8px);
-		@include vw(top,2px);
-	}
-	
-	.data-layer{
-		display:none;
-		font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
-		color:$color-gray;
-	}
-
-	.active{
-		&+ .data-layer{
-			display:block;
-		}
-
-		.icon-arrow img {
-			-webkit-transform: rotateZ(-180deg);
-			transform: rotateZ(-180deg);
-		}
-	}
-
 	.total-number-box{
 		display:flex;
 		justify-content: space-between;
@@ -68,6 +43,138 @@
 			}
 		}
 	}
+
+	.section-lecture-list{
+		@include vw(padding,20px 0px 20px);
+		h3{
+			@include vw(padding-top,12px);
+		}
+
+
+	}
+
+	.select-search-box{
+		display:flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		@include vw(margin-bottom,16px);
+		
+		.form-control{
+			.select{
+				select{
+					@include vw(height,36px);
+					@include vw(font-size,12px);
+					@include vw(padding,8px 40px 8px 12px);
+				}
+				&.noline{
+					select{
+						@include vw(height,24px);
+						@include vw(padding,0 28px 2px 12px);
+					}
+				}
+			}
+		}
+
+		.select-box{
+			display:flex;
+			align-items: center;
+			.form-control{
+				@include vw(margin-left,8px);
+				&:first-child{margin-left:0;}
+			}
+
+			.custom-select{
+				@include vw(margin-left,8px);
+				&:first-child{margin-left:0;}
+			}
+		}
+	}
+
+	.section-lecture-info{
+		@include vw(padding, 20px);
+		background-color:$color-light-brown2;
+
+		.lecture-info-box{
+			.lecture-info-top{
+				.thumbnail{
+					background-color:$color-light-brown;
+					width:100%;
+					@include vw(height,132px);
+					overflow:hidden;
+					text-align:center;
+					@include vw(margin-bottom,16px);
+					img{
+						width:auto;
+						height:100%;
+					}
+				}
+
+				.lecture-subject{
+					color:$color-black;
+					font-weight:600;
+					@include vw(font-size,18px);
+					@include vw(line-height,27px);
+					
+				}
+
+				.lecture-name{
+					color:$color-black;
+					font-weight:600;
+					@include vw(font-size,13px);
+					@include vw(line-height,22px);
+					@include vw(margin-top,8px);
+				}
+			}
+
+			.lecture-info-bottom{
+				width: 100%;
+				border-top: 1px solid #E4DED3;
+				@include vw(margin-top, 20px);
+				@include vw(padding-top, 16px);
+				dl{
+					display:flex;@include vw(margin-top, 4px);
+					&:first-child{margin-top:0;}
+					dt,dd{@include vw(font-size,13px);@include vw(line-height,22.1px);}
+					dt{color:$color-gray;font-weight:400;@include vw(width, 74px);}
+					dd{color:$color-black;font-weight:600;@include vw(margin-left, 16px);}
+				}
+			}
+		}
+
+		&+.section-tab{
+			@include vw(padding-top, 12px);
+		}
+
+	}
+
+
+
+	.icon-arrow{
+		position:relative;
+		display:inline-block;
+		vertical-align:middle;
+		@include vw(margin-left,8px);
+		@include vw(top,2px);
+	}
+	
+	.data-layer{
+		display:none;
+		font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+		color:$color-gray;
+	}
+
+	.open{
+		&+ .data-layer{
+			display:block;
+		}
+
+		.icon-arrow img {
+			-webkit-transform: rotateZ(-180deg);
+			transform: rotateZ(-180deg);
+		}
+	}
+
+
 
 	.total-price-box{
 		border-top:1px solid $color-black;
