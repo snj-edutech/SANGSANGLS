@@ -51,7 +51,7 @@
 		}
 	}
 
-	.section-order-list{
+	.section-order{
 		.lecture-data-list{
 			border-top:none;
 			.list{
@@ -269,89 +269,110 @@
 		}
 	}
 
-	.mypage-data-box{
+	.section-point{
 		background-color:$color-light-brown2;
-		@include vw(padding,24px 20px);
-		dl{
-			@include vw(margin-top,4px);
-			&:first-child{margin-top:0;}
-			display:flex;
-			dt{color:$color-black;font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);@include vw(min-width,58px);	@include vw(margin-right,8px);}
-			dd{
-				position:relative;width:100%;
-				color:$color-black;font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
-				strong{
-					font-weight:600;@include vw(margin-left,8px);
-					@include vw(font-size,13px);@include vw(line-height,22.1px);
-				}
+		@include vw(padding,20px 12px);
 
-				.btn{
-					display:inline-block;
-					margin-left:auto;
-					position:absolute;right:0;top:0;
-				}
-			}
-		}
-	}
-
-	.section-mypage{
-		.border-line-box{
+		.point-list{
 			dl{
 				display:flex;
 				justify-content: space-between;
-				align-items: center;
-				@include vw(padding-top, 12px);
-				@include vw(margin-top, 12px);
-				border-top:1px solid $color-light-brown2;
-				&:first-child{
-					border-top:none;
-					padding-top:0;
-					margin-top:0;
-				}
-				dt,dd{}
-				dt{
-					font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
-					color:$color-gray;
-				}
-				dd{
-					font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
-					color:$color-black;margin-left:auto;
-					&.total{
-						@include vw(font-size,20px);@include vw(line-height,34px);
-					}
-				}
-			}
-
-			.point-box{
-				display:flex;
-				justify-content: flex-end;
 				align-items:center;
 				dt{
-					@include vw(width,70px);
+					color:$color-black;font-weight:400;@include vw(font-size,13px);
+					@include vw(line-height,22.1px);
 				}
 				dd{
-					display:flex;
-					justify-content: flex-end;
-					align-items:center;
-					.text {@include vw(width, 144px);@include vw(padding,8px);}
-					.point-text{@include vw(font-size,14px);font-weight:600;@include vw(margin-left,8px);}
+					color:$color-black;font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
+					strong{
+						font-weight:600;@include vw(margin-left,8px);
+						@include vw(font-size,13px);@include vw(line-height,22.1px);
+					}
 				}
-			}
 
-			.payment-box{
-				@include vw(padding-top, 12px);
-				@include vw(margin-top, 12px);
-				border-top:1px solid $color-light-brown2;
-				.form-control{
-					@include vw(margin-top, 8px);
-					&:first-child{
-						margin-top:0;
+				&.point-data{
+					dt{
+						.icon-point{@include vw(margin-right,8px);display:inline-block;}
+						color:$color-black;font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
+					}
+					dd{
+						color:$color-brown;font-weight:700;@include vw(font-size,24px);@include vw(line-height,40.8px);
 					}
 				}
 			}
 		}
 	}
 
+	.section-history{
+		@include vw(padding-bottom, 16px);
+		.lecture-data-list{
+			.list{
+				@include vw(padding, 16px 0);
+				&:last-child{
+					border-bottom:none;
+				}
+			}
+		}
+	}
+
+	.payment-total-box{
+		border:1px solid $color-light-brown;
+		@include vw(padding,16px 20px);
+		
+		dl{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			@include vw(padding-top, 12px);
+			@include vw(margin-top, 12px);
+			border-top:1px solid $color-light-brown2;
+			&:first-child{
+				border-top:none;
+				padding-top:0;
+				margin-top:0;
+			}
+			dt,dd{}
+			dt{
+				font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+				color:$color-gray;
+			}
+			dd{
+				font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
+				color:$color-black;margin-left:auto;
+				&.total{
+					@include vw(font-size,20px);@include vw(line-height,34px);
+				}
+			}
+		}
+
+		.point-box{
+			display:flex;
+			justify-content: flex-end;
+			align-items:center;
+			dt{
+				@include vw(width,70px);
+			}
+			dd{
+				display:flex;
+				justify-content: flex-end;
+				align-items:center;
+				.text {@include vw(width, 144px);@include vw(padding,8px);}
+				.point-text{@include vw(font-size,14px);font-weight:600;@include vw(margin-left,8px);}
+			}
+		}
+
+		.payment-box{
+			@include vw(padding-top, 12px);
+			@include vw(margin-top, 12px);
+			border-top:1px solid $color-light-brown2;
+			.form-control{
+				@include vw(margin-top, 8px);
+				&:first-child{
+					margin-top:0;
+				}
+			}
+		}
+	}
 
 	.section-period{
 		@include vw(padding,24px 0px);
@@ -370,6 +391,47 @@
 
 			.btn{
 				@include vw(margin-left, 8px);
+			}
+		}
+	}
+
+	.section-coupon{
+		.coupon-list{
+			ul{
+
+				li{
+					@include vw(margin-top,12px);
+					&first-child{margin-top:0;}
+					background-color:$color-light-beige;
+					border:1px solid $color-light-brown;
+					display:flex;
+					align-items:center;
+					justify-content: center;
+					width:100%;@include vw(height,116px);
+					@include boxSizing(border-box);
+					text-align:center;
+					
+					a{
+						display:block;cursor:default;
+						>div{
+							&:last-child{@include vw(margin-top,8px);}
+						}
+					}
+
+					.coupon-img{
+						position:relative;
+						@include vw(width,96px);
+					}
+
+					.coupon-subject{
+						color:$color-black;@include vw(font-size,14px);font-weight:600;@include vw(line-height,23.8px);
+						text-align:left;@include vw(margin-left,16px);
+					}
+
+					.coupon-text{font-weight:400;@include vw(font-size,12px);@include vw(line-height,20.4px);color:$color-gray;}
+					.coupon-date{@include vw(margin-left,8px);font-weight:600;@include vw(font-size,12px);@include vw(line-height,20.4px);color:$color-brown;}
+
+				}
 			}
 		}
 	}
