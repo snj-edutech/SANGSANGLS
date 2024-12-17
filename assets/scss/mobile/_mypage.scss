@@ -49,8 +49,15 @@
 		h3{
 			@include vw(padding-top,12px);
 		}
+	}
 
-
+	.section-order-list{
+		.lecture-data-list{
+			border-top:none;
+			.list{
+				@include vw(padding,16px 0px);
+			}
+		}
 	}
 
 	.select-search-box{
@@ -147,35 +154,6 @@
 
 	}
 
-
-
-	.icon-arrow{
-		position:relative;
-		display:inline-block;
-		vertical-align:middle;
-		@include vw(margin-left,8px);
-		@include vw(top,2px);
-	}
-	
-	.data-layer{
-		display:none;
-		font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
-		color:$color-gray;
-	}
-
-	.open{
-		&+ .data-layer{
-			display:block;
-		}
-
-		.icon-arrow img {
-			-webkit-transform: rotateZ(-180deg);
-			transform: rotateZ(-180deg);
-		}
-	}
-
-
-
 	.total-price-box{
 		border-top:1px solid $color-black;
 		@include vw(padding,24px 0);
@@ -201,37 +179,122 @@
 		}
 	}
 
+	.order-list{
+		@include vw(padding,20px 0 0);
+		dl{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			@include vw(margin-top,8px);
+			&:first-child{margin-top:0;}
+			dt{
+				font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+				color:$color-black;text-align:left;
+			}
+			dd{
+				font-weight:400;@include vw(font-size,14px);@include vw(line-height,23.8px);color:$color-black;
+				text-align:right;
+				&.payment{
+					@include vw(font-size,20px);@include vw(line-height,34px);
+					font-weight:600;color:$color-brown;
+				}
+
+				.btn{
+					display:inline-block;
+					@include vw(margin-left,16px);
+				}
+			}
+			
+		}
+
+		&+.form-text{
+			@include vw(margin-top,20px);
+		}
+
+	}
+
 	.section-action{
 		@include vw(padding, 20px 20px);
 	}
+	.section-lecture-list +.section-action{@include vw(padding, 0 20px 20px);}
 
-	.section-mypage{
-		@include vw(padding-top, 24px);
-		@include vw(padding-bottom, 32px);
-		.lecture-data-list{
-			border-top:none;
-			.list{
-				@include vw(padding, 16px 0);
-				.price-box{
+
+	// 토글 데이터
+	.icon-arrow{
+		position:relative;
+		display:inline-block;
+		vertical-align:middle;
+		@include vw(margin-left,8px);
+		@include vw(top,2px);
+	}
+	
+	.data-layer{
+		display:none !important;
+		font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);
+		color:$color-gray;
+	}
+
+	.open{
+		&+ .data-layer{
+			display:block !important;
+		}
+
+		.icon-arrow img {
+			-webkit-transform: rotateZ(-180deg);
+			transform: rotateZ(-180deg);
+		}
+	}
+
+	.order-data-list{
+		border-top:none;
+		.list{
+			@include vw(padding, 16px 0);
+			.price-box{
+				@include vw(margin-top, 8px);
+				display:flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.coupon-box{
+				.form-control .select{
 					@include vw(margin-top, 8px);
-					display:flex;
-					justify-content: space-between;
-					align-items: center;
-				}
-
-				.coupon-box{
-					.form-control .select{
-						@include vw(margin-top, 8px);
-						select{
-							@include vw(height, 30px);
-							font-weight:400;@include vw(font-size,13px);
-							@include vw(padding,4px 12px);
-						}
+					select{
+						@include vw(height, 30px);
+						font-weight:400;@include vw(font-size,13px);
+						@include vw(padding,4px 12px);
 					}
 				}
 			}
 		}
+	}
 
+	.mypage-data-box{
+		background-color:$color-light-brown2;
+		@include vw(padding,24px 20px);
+		dl{
+			@include vw(margin-top,4px);
+			&:first-child{margin-top:0;}
+			display:flex;
+			dt{color:$color-black;font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);@include vw(min-width,58px);	@include vw(margin-right,8px);}
+			dd{
+				position:relative;width:100%;
+				color:$color-black;font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
+				strong{
+					font-weight:600;@include vw(margin-left,8px);
+					@include vw(font-size,13px);@include vw(line-height,22.1px);
+				}
+
+				.btn{
+					display:inline-block;
+					margin-left:auto;
+					position:absolute;right:0;top:0;
+				}
+			}
+		}
+	}
+
+	.section-mypage{
 		.border-line-box{
 			dl{
 				display:flex;
@@ -285,6 +348,28 @@
 						margin-top:0;
 					}
 				}
+			}
+		}
+	}
+
+
+	.section-period{
+		@include vw(padding,24px 0px);
+		.date-box{
+			@include vw(margin-top,12px);
+
+			.date{
+				@include vw(width, 133px);
+				@include vw(font-size, 13px);
+				&::placeholder{@include vw(font-size, 13px);}
+			}
+
+			#date-last{
+				border-left:none;
+			}
+
+			.btn{
+				@include vw(margin-left, 8px);
 			}
 		}
 	}

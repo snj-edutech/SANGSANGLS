@@ -21,7 +21,7 @@
 
     .text-left{text-align:left !important;}
 
-	.border-line-top{
+	.hr{
 		border-top:1px solid $color-light-brown2;
 		background-color:$color-light-beige;
 		@include vw(height,10px);
@@ -171,7 +171,7 @@
 			.price-before{@include vw(font-size,12px);font-weight:400;color:$color-black;text-decoration:none;}
 			.price-text{
 				@include vw(font-size,12px);font-weight:400;@include vw(margin-left,12px);
-				color:$color-gray;
+				color:$color-gray;@include vw(margin-right,4px);
 			}
 			.price-sale{@include vw(font-size,12px);font-weight:600;color:$color-brown;}
 		}
@@ -450,6 +450,7 @@
 		position:relative;
        // display:flex;
 		//align-items: center;
+		font-size:0;
 
 		display:inline-block;vertical-align:middle;
         .date-dash{
@@ -511,14 +512,11 @@
 			label{@include vw(line-height,23.8px);padding-top:0;}
 		 }
 
-		 .btn-help.active{
-			& + .layer-box{display:block;}
-		}
-
 		 .layer-box{
 			display:none;
 			background-color:$color-white;
 			@include vw(margin-top,8px);
+			@include vw(margin-bottom,8px);
 			@include vw(padding,20px);text-align:left;
 			border:1px solid $color-light-brown;
 			@include boxSizing(border-box);
@@ -529,6 +527,8 @@
 
 
 		}
+
+		.open+.layer-box{display:block;}
 	}
 
 	.input-box{
@@ -672,6 +672,12 @@
 			@include vw(padding,0 8px);
 		}
 
+		&.x-small{
+			@include vw(height, 26px);
+			@include vw(font-size,13px);
+			@include vw(padding,0 6px);
+		}
+
 		&.btn-video{
 			display:block;
 			background: $color-white url('../images/mobile/icon_play_arrow.svg') no-repeat 8px center;
@@ -702,6 +708,24 @@
 			padding:0;
 			&:first-child{
 				border-left:1px solid $color-light-brown;
+			}
+		}
+	}
+
+	.category-list{
+		display:flex;
+
+		.btn{
+			@extend %variable;
+			padding:0;
+			@include vw(margin-left,8px);
+			&:first-child{
+				margin-left:0;
+			}
+			&.active{
+				background-color:$color-brown;
+				color:$color-white;
+				border-color:$color-brown;
 			}
 		}
 	}

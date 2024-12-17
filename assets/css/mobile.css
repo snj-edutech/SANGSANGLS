@@ -57,34 +57,34 @@
   vertical-align: middle;
 }
 
-#wrap .action-list .btn:only-child, #wrap .popup-layer-bottom .popup-layer-action .btn:only-child, #wrap .action-list .btn:nth-child(1):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(1) {
+#wrap .category-list .btn:only-child, #wrap .action-list .btn:only-child, #wrap .popup-layer-bottom .popup-layer-action .btn:only-child, #wrap .category-list .btn:nth-child(1):nth-last-child(1), #wrap .action-list .btn:nth-child(1):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(1) {
   width: 100%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(2), #wrap .action-list .btn:nth-child(2):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(2), #wrap .action-list .btn:nth-child(1):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(2), #wrap .category-list .btn:nth-child(2):nth-last-child(1), #wrap .action-list .btn:nth-child(2):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(1) {
   width: 50%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(3), #wrap .action-list .btn:nth-child(2):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(2), #wrap .action-list .btn:nth-child(3):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(3), #wrap .action-list .btn:nth-child(1):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(3), #wrap .category-list .btn:nth-child(2):nth-last-child(2), #wrap .action-list .btn:nth-child(2):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(2), #wrap .category-list .btn:nth-child(3):nth-last-child(1), #wrap .action-list .btn:nth-child(3):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(1) {
   width: 33.333%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(4), #wrap .action-list .btn:nth-child(2):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(3), #wrap .action-list .btn:nth-child(3):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(2), #wrap .action-list .btn:nth-child(4):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(4), #wrap .action-list .btn:nth-child(1):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(4), #wrap .category-list .btn:nth-child(2):nth-last-child(3), #wrap .action-list .btn:nth-child(2):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(3), #wrap .category-list .btn:nth-child(3):nth-last-child(2), #wrap .action-list .btn:nth-child(3):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(2), #wrap .category-list .btn:nth-child(4):nth-last-child(1), #wrap .action-list .btn:nth-child(4):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(1) {
   width: 25%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(5), #wrap .action-list .btn:nth-child(2):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(4), #wrap .action-list .btn:nth-child(3):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(3), #wrap .action-list .btn:nth-child(4):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(2), #wrap .action-list .btn:nth-child(5):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(5), #wrap .action-list .btn:nth-child(1):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(5), #wrap .category-list .btn:nth-child(2):nth-last-child(4), #wrap .action-list .btn:nth-child(2):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(4), #wrap .category-list .btn:nth-child(3):nth-last-child(3), #wrap .action-list .btn:nth-child(3):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(3), #wrap .category-list .btn:nth-child(4):nth-last-child(2), #wrap .action-list .btn:nth-child(4):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(2), #wrap .category-list .btn:nth-child(5):nth-last-child(1), #wrap .action-list .btn:nth-child(5):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(1) {
   width: 20%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(6), #wrap .action-list .btn:nth-child(2):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(5), #wrap .action-list .btn:nth-child(3):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(4), #wrap .action-list .btn:nth-child(4):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(3), #wrap .action-list .btn:nth-child(5):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(2), #wrap .action-list .btn:nth-child(6):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(6), #wrap .action-list .btn:nth-child(1):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(6), #wrap .category-list .btn:nth-child(2):nth-last-child(5), #wrap .action-list .btn:nth-child(2):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(5), #wrap .category-list .btn:nth-child(3):nth-last-child(4), #wrap .action-list .btn:nth-child(3):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(4), #wrap .category-list .btn:nth-child(4):nth-last-child(3), #wrap .action-list .btn:nth-child(4):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(3), #wrap .category-list .btn:nth-child(5):nth-last-child(2), #wrap .action-list .btn:nth-child(5):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(2), #wrap .category-list .btn:nth-child(6):nth-last-child(1), #wrap .action-list .btn:nth-child(6):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(1) {
   width: 16.66%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(7), #wrap .action-list .btn:nth-child(2):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(6), #wrap .action-list .btn:nth-child(3):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(5), #wrap .action-list .btn:nth-child(4):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(4), #wrap .action-list .btn:nth-child(5):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(3), #wrap .action-list .btn:nth-child(6):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(2), #wrap .action-list .btn:nth-child(7):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(7), #wrap .action-list .btn:nth-child(1):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(7), #wrap .category-list .btn:nth-child(2):nth-last-child(6), #wrap .action-list .btn:nth-child(2):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(6), #wrap .category-list .btn:nth-child(3):nth-last-child(5), #wrap .action-list .btn:nth-child(3):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(5), #wrap .category-list .btn:nth-child(4):nth-last-child(4), #wrap .action-list .btn:nth-child(4):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(4), #wrap .category-list .btn:nth-child(5):nth-last-child(3), #wrap .action-list .btn:nth-child(5):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(3), #wrap .category-list .btn:nth-child(6):nth-last-child(2), #wrap .action-list .btn:nth-child(6):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(2), #wrap .category-list .btn:nth-child(7):nth-last-child(1), #wrap .action-list .btn:nth-child(7):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(1) {
   width: 14.28571%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(8), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(8), #wrap .action-list .btn:nth-child(2):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(7), #wrap .action-list .btn:nth-child(3):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(6), #wrap .action-list .btn:nth-child(4):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(5), #wrap .action-list .btn:nth-child(5):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(4), #wrap .action-list .btn:nth-child(6):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(3), #wrap .action-list .btn:nth-child(7):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(2), #wrap .action-list .btn:nth-child(8):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(8):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(8), #wrap .action-list .btn:nth-child(1):nth-last-child(8), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(8), #wrap .category-list .btn:nth-child(2):nth-last-child(7), #wrap .action-list .btn:nth-child(2):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(7), #wrap .category-list .btn:nth-child(3):nth-last-child(6), #wrap .action-list .btn:nth-child(3):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(6), #wrap .category-list .btn:nth-child(4):nth-last-child(5), #wrap .action-list .btn:nth-child(4):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(5), #wrap .category-list .btn:nth-child(5):nth-last-child(4), #wrap .action-list .btn:nth-child(5):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(4), #wrap .category-list .btn:nth-child(6):nth-last-child(3), #wrap .action-list .btn:nth-child(6):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(3), #wrap .category-list .btn:nth-child(7):nth-last-child(2), #wrap .action-list .btn:nth-child(7):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(2), #wrap .category-list .btn:nth-child(8):nth-last-child(1), #wrap .action-list .btn:nth-child(8):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(8):nth-last-child(1) {
   width: 12.5%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(9), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(9), #wrap .action-list .btn:nth-child(2):nth-last-child(8), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(8), #wrap .action-list .btn:nth-child(3):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(7), #wrap .action-list .btn:nth-child(4):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(6), #wrap .action-list .btn:nth-child(5):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(5), #wrap .action-list .btn:nth-child(6):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(4), #wrap .action-list .btn:nth-child(7):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(3), #wrap .action-list .btn:nth-child(8):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(8):nth-last-child(2), #wrap .action-list .btn:nth-child(9):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(9):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(9), #wrap .action-list .btn:nth-child(1):nth-last-child(9), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(9), #wrap .category-list .btn:nth-child(2):nth-last-child(8), #wrap .action-list .btn:nth-child(2):nth-last-child(8), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(8), #wrap .category-list .btn:nth-child(3):nth-last-child(7), #wrap .action-list .btn:nth-child(3):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(7), #wrap .category-list .btn:nth-child(4):nth-last-child(6), #wrap .action-list .btn:nth-child(4):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(6), #wrap .category-list .btn:nth-child(5):nth-last-child(5), #wrap .action-list .btn:nth-child(5):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(5), #wrap .category-list .btn:nth-child(6):nth-last-child(4), #wrap .action-list .btn:nth-child(6):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(4), #wrap .category-list .btn:nth-child(7):nth-last-child(3), #wrap .action-list .btn:nth-child(7):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(3), #wrap .category-list .btn:nth-child(8):nth-last-child(2), #wrap .action-list .btn:nth-child(8):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(8):nth-last-child(2), #wrap .category-list .btn:nth-child(9):nth-last-child(1), #wrap .action-list .btn:nth-child(9):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(9):nth-last-child(1) {
   width: 11.11%;
 }
-#wrap .action-list .btn:nth-child(1):nth-last-child(10), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(10), #wrap .action-list .btn:nth-child(2):nth-last-child(9), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(9), #wrap .action-list .btn:nth-child(3):nth-last-child(8), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(8), #wrap .action-list .btn:nth-child(4):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(7), #wrap .action-list .btn:nth-child(5):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(6), #wrap .action-list .btn:nth-child(6):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(5), #wrap .action-list .btn:nth-child(7):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(4), #wrap .action-list .btn:nth-child(8):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(8):nth-last-child(3), #wrap .action-list .btn:nth-child(9):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(9):nth-last-child(2), #wrap .action-list .btn:nth-child(10):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(10):nth-last-child(1) {
+#wrap .category-list .btn:nth-child(1):nth-last-child(10), #wrap .action-list .btn:nth-child(1):nth-last-child(10), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(1):nth-last-child(10), #wrap .category-list .btn:nth-child(2):nth-last-child(9), #wrap .action-list .btn:nth-child(2):nth-last-child(9), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(2):nth-last-child(9), #wrap .category-list .btn:nth-child(3):nth-last-child(8), #wrap .action-list .btn:nth-child(3):nth-last-child(8), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(3):nth-last-child(8), #wrap .category-list .btn:nth-child(4):nth-last-child(7), #wrap .action-list .btn:nth-child(4):nth-last-child(7), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(4):nth-last-child(7), #wrap .category-list .btn:nth-child(5):nth-last-child(6), #wrap .action-list .btn:nth-child(5):nth-last-child(6), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(5):nth-last-child(6), #wrap .category-list .btn:nth-child(6):nth-last-child(5), #wrap .action-list .btn:nth-child(6):nth-last-child(5), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(6):nth-last-child(5), #wrap .category-list .btn:nth-child(7):nth-last-child(4), #wrap .action-list .btn:nth-child(7):nth-last-child(4), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(7):nth-last-child(4), #wrap .category-list .btn:nth-child(8):nth-last-child(3), #wrap .action-list .btn:nth-child(8):nth-last-child(3), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(8):nth-last-child(3), #wrap .category-list .btn:nth-child(9):nth-last-child(2), #wrap .action-list .btn:nth-child(9):nth-last-child(2), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(9):nth-last-child(2), #wrap .category-list .btn:nth-child(10):nth-last-child(1), #wrap .action-list .btn:nth-child(10):nth-last-child(1), #wrap .popup-layer-bottom .popup-layer-action .btn:nth-child(10):nth-last-child(1) {
   width: 10%;
 }
 
@@ -1997,6 +1997,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 16px;
   }
 }
+#wrap #popupOrderView .popup-cont {
+  padding: 0;
+}
+#wrap #popupOrderView .popup-btn {
+  padding: 5.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap #popupOrderView .popup-btn {
+    padding: 20px;
+  }
+}
+#wrap #popupOrderView .order-data-list .list:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
 #wrap {
   font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
@@ -2022,13 +2037,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .text-left {
   text-align: left !important;
 }
-#wrap .border-line-top {
+#wrap .hr {
   border-top: 1px solid #F2EFE7;
   background-color: #FBFAF6;
   height: 2.6666666667vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .border-line-top {
+  #wrap .hr {
     height: 10px;
   }
 }
@@ -2328,6 +2343,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
   margin-left: 3.2vw;
   color: #7A746A;
+  margin-right: 1.0666666667vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-info .price-text {
@@ -2337,6 +2353,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-info .price-text {
     margin-left: 12px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .price-box .price-info .price-text {
+    margin-right: 4px;
   }
 }
 #wrap .price-box .price-info .price-sale {
@@ -2914,6 +2935,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .date-box {
   position: relative;
+  font-size: 0;
   display: inline-block;
   vertical-align: middle;
 }
@@ -3078,13 +3100,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-#wrap .agree-check-box .btn-help.active + .layer-box {
-  display: block;
-}
 #wrap .agree-check-box .layer-box {
   display: none;
   background-color: #FFFFFC;
   margin-top: 2.1333333333vw;
+  margin-bottom: 2.1333333333vw;
   padding: 5.3333333333vw;
   text-align: left;
   border: 1px solid #E4DED3;
@@ -3094,6 +3114,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .agree-check-box .layer-box {
     margin-top: 8px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .agree-check-box .layer-box {
+    margin-bottom: 8px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -3116,6 +3141,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .agree-check-box .layer-box .layer-list li {
     line-height: 22.1px;
   }
+}
+#wrap .agree-check-box .open + .layer-box {
+  display: block;
 }
 #wrap .input-box {
   display: flex;
@@ -3401,6 +3429,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 0 8px;
   }
 }
+#wrap .btn.x-small {
+  height: 6.9333333333vw;
+  font-size: 3.4666666667vw;
+  padding: 0 1.6vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.x-small {
+    height: 26px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.x-small {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.x-small {
+    padding: 0 6px;
+  }
+}
 #wrap .btn.btn-video {
   display: block;
   background: #FFFFFC url("../images/mobile/icon_play_arrow.svg") no-repeat 8px center;
@@ -3476,6 +3524,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .action-list .btn:first-child {
   border-left: 1px solid #E4DED3;
+}
+#wrap .category-list {
+  display: flex;
+}
+#wrap .category-list .btn {
+  padding: 0;
+  margin-left: 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .category-list .btn {
+    margin-left: 8px;
+  }
+}
+#wrap .category-list .btn:first-child {
+  margin-left: 0;
+}
+#wrap .category-list .btn.active {
+  background-color: #A07D3B;
+  color: #FFFFFC;
+  border-color: #A07D3B;
 }
 #wrap .action {
   display: flex;
@@ -4868,7 +4936,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .lecture-data-list .list .desc-box {
   position: relative;
   display: flex;
-  width: 100%;
 }
 #wrap .lecture-data-list .list .desc-box .t-img {
   background-color: #F2EFE7;
@@ -4900,6 +4967,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .lecture-data-list .list .desc-box .t-desc {
   text-align: left;
+  width: 100%;
 }
 #wrap .lecture-data-list .list .desc-box .t-desc .desc-more + .desc-info {
   margin-bottom: 2.6666666667vw;
@@ -5103,11 +5171,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2.1333333333vw;
+  margin-top: 1.6vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .lecture-data-list .list .desc-box .t-desc .desc-price {
-    margin-top: 8px;
+    margin-top: 6px;
   }
 }
 #wrap .lecture-data-list .list .desc-box .t-desc .desc-price .count {
@@ -5412,38 +5480,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 50%;
   transform: translateY(-50%);
   right: 3.2vw;
+  height: 6.9333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .lecture-data-input .btn-address {
     right: 12px;
   }
 }
-
-#wrap .section-lecture-total {
-  padding-top: 6.4vw;
-  background-color: #FFFFFC;
-}
 @media screen and (min-width: 375px) {
-  #wrap .section-lecture-total {
-    padding-top: 24px;
+  #wrap .lecture-data-input .btn-address {
+    height: 26px;
   }
-}
-#wrap .section-lecture-total.fixed {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  top: 16.2666666667vw;
-  border-bottom: 1px solid #E4DED3;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-lecture-total.fixed {
-    top: 61px;
-  }
-}
-#wrap .section-lecture-total + .section-lecture-list {
-  padding-top: 0;
 }
 
 #wrap .total-number-box {
@@ -5532,6 +5579,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .section-lecture-list h3 {
     padding-top: 12px;
+  }
+}
+#wrap .section-order-list .lecture-data-list {
+  border-top: none;
+}
+#wrap .section-order-list .lecture-data-list .list {
+  padding: 4.2666666667vw 0vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-order-list .lecture-data-list .list {
+    padding: 16px 0px;
   }
 }
 #wrap .select-search-box {
@@ -5744,47 +5802,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding-top: 12px;
   }
 }
-#wrap .icon-arrow {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 2.1333333333vw;
-  top: 0.5333333333vw;
-}
-@media screen and (min-width: 375px) {
-  #wrap .icon-arrow {
-    margin-left: 8px;
-  }
-}
-@media screen and (min-width: 375px) {
-  #wrap .icon-arrow {
-    top: 2px;
-  }
-}
-#wrap .data-layer {
-  display: none;
-  font-weight: 400;
-  font-size: 3.4666666667vw;
-  line-height: 5.8933333333vw;
-  color: #7A746A;
-}
-@media screen and (min-width: 375px) {
-  #wrap .data-layer {
-    font-size: 13px;
-  }
-}
-@media screen and (min-width: 375px) {
-  #wrap .data-layer {
-    line-height: 22.1px;
-  }
-}
-#wrap .open + .data-layer {
-  display: block;
-}
-#wrap .open .icon-arrow img {
-  -webkit-transform: rotateZ(-180deg);
-  transform: rotateZ(-180deg);
-}
 #wrap .total-price-box {
   border-top: 1px solid #2C2923;
   padding: 6.4vw 0;
@@ -5857,6 +5874,95 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 34px;
   }
 }
+#wrap .order-list {
+  padding: 5.3333333333vw 0 0;
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list {
+    padding: 20px 0 0;
+  }
+}
+#wrap .order-list dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl {
+    margin-top: 8px;
+  }
+}
+#wrap .order-list dl:first-child {
+  margin-top: 0;
+}
+#wrap .order-list dl dt {
+  font-weight: 400;
+  font-size: 3.4666666667vw;
+  line-height: 5.8933333333vw;
+  color: #2C2923;
+  text-align: left;
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl dt {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl dt {
+    line-height: 22.1px;
+  }
+}
+#wrap .order-list dl dd {
+  font-weight: 400;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
+  color: #2C2923;
+  text-align: right;
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl dd {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl dd {
+    line-height: 23.8px;
+  }
+}
+#wrap .order-list dl dd.payment {
+  font-size: 5.3333333333vw;
+  line-height: 9.0666666667vw;
+  font-weight: 600;
+  color: #A07D3B;
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl dd.payment {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl dd.payment {
+    line-height: 34px;
+  }
+}
+#wrap .order-list dl dd .btn {
+  display: inline-block;
+  margin-left: 4.2666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list dl dd .btn {
+    margin-left: 16px;
+  }
+}
+#wrap .order-list + .form-text {
+  margin-top: 5.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .order-list + .form-text {
+    margin-top: 20px;
+  }
+}
 #wrap .section-action {
   padding: 5.3333333333vw 5.3333333333vw;
 }
@@ -5865,70 +5971,200 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 20px 20px;
   }
 }
-#wrap .section-mypage {
-  padding-top: 6.4vw;
-  padding-bottom: 8.5333333333vw;
+#wrap .section-lecture-list + .section-action {
+  padding: 0 5.3333333333vw 5.3333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage {
-    padding-top: 24px;
+  #wrap .section-lecture-list + .section-action {
+    padding: 0 20px 20px;
+  }
+}
+#wrap .icon-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2.1333333333vw;
+  top: 0.5333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .icon-arrow {
+    margin-left: 8px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage {
-    padding-bottom: 32px;
+  #wrap .icon-arrow {
+    top: 2px;
   }
 }
-#wrap .section-mypage .lecture-data-list {
+#wrap .data-layer {
+  display: none !important;
+  font-weight: 400;
+  font-size: 3.4666666667vw;
+  line-height: 5.8933333333vw;
+  color: #7A746A;
+}
+@media screen and (min-width: 375px) {
+  #wrap .data-layer {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .data-layer {
+    line-height: 22.1px;
+  }
+}
+#wrap .open + .data-layer {
+  display: block !important;
+}
+#wrap .open .icon-arrow img {
+  -webkit-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+}
+#wrap .order-data-list {
   border-top: none;
 }
-#wrap .section-mypage .lecture-data-list .list {
+#wrap .order-data-list .list {
   padding: 4.2666666667vw 0;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage .lecture-data-list .list {
+  #wrap .order-data-list .list {
     padding: 16px 0;
   }
 }
-#wrap .section-mypage .lecture-data-list .list .price-box {
+#wrap .order-data-list .list .price-box {
   margin-top: 2.1333333333vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage .lecture-data-list .list .price-box {
+  #wrap .order-data-list .list .price-box {
     margin-top: 8px;
   }
 }
-#wrap .section-mypage .lecture-data-list .list .coupon-box .form-control .select {
+#wrap .order-data-list .list .coupon-box .form-control .select {
   margin-top: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage .lecture-data-list .list .coupon-box .form-control .select {
+  #wrap .order-data-list .list .coupon-box .form-control .select {
     margin-top: 8px;
   }
 }
-#wrap .section-mypage .lecture-data-list .list .coupon-box .form-control .select select {
+#wrap .order-data-list .list .coupon-box .form-control .select select {
   height: 8vw;
   font-weight: 400;
   font-size: 3.4666666667vw;
   padding: 1.0666666667vw 3.2vw;
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage .lecture-data-list .list .coupon-box .form-control .select select {
+  #wrap .order-data-list .list .coupon-box .form-control .select select {
     height: 30px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage .lecture-data-list .list .coupon-box .form-control .select select {
+  #wrap .order-data-list .list .coupon-box .form-control .select select {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .section-mypage .lecture-data-list .list .coupon-box .form-control .select select {
+  #wrap .order-data-list .list .coupon-box .form-control .select select {
     padding: 4px 12px;
   }
+}
+#wrap .mypage-data-box {
+  background-color: #F2EFE7;
+  padding: 6.4vw 5.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box {
+    padding: 24px 20px;
+  }
+}
+#wrap .mypage-data-box dl {
+  margin-top: 1.0666666667vw;
+  display: flex;
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl {
+    margin-top: 4px;
+  }
+}
+#wrap .mypage-data-box dl:first-child {
+  margin-top: 0;
+}
+#wrap .mypage-data-box dl dt {
+  color: #2C2923;
+  font-weight: 400;
+  font-size: 3.4666666667vw;
+  line-height: 5.8933333333vw;
+  min-width: 15.4666666667vw;
+  margin-right: 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dt {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dt {
+    line-height: 22.1px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dt {
+    min-width: 58px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dt {
+    margin-right: 8px;
+  }
+}
+#wrap .mypage-data-box dl dd {
+  position: relative;
+  width: 100%;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 3.7333333333vw;
+  line-height: 6.3466666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dd {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dd {
+    line-height: 23.8px;
+  }
+}
+#wrap .mypage-data-box dl dd strong {
+  font-weight: 600;
+  margin-left: 2.1333333333vw;
+  font-size: 3.4666666667vw;
+  line-height: 5.8933333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dd strong {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dd strong {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .mypage-data-box dl dd strong {
+    line-height: 22.1px;
+  }
+}
+#wrap .mypage-data-box dl dd .btn {
+  display: inline-block;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #wrap .section-mypage .border-line-box dl {
   display: flex;
@@ -6072,6 +6308,55 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-mypage .border-line-box .payment-box .form-control:first-child {
   margin-top: 0;
+}
+#wrap .section-period {
+  padding: 6.4vw 0vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-period {
+    padding: 24px 0px;
+  }
+}
+#wrap .section-period .date-box {
+  margin-top: 3.2vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-period .date-box {
+    margin-top: 12px;
+  }
+}
+#wrap .section-period .date-box .date {
+  width: 35.4666666667vw;
+  font-size: 3.4666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-period .date-box .date {
+    width: 133px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-period .date-box .date {
+    font-size: 13px;
+  }
+}
+#wrap .section-period .date-box .date::placeholder {
+  font-size: 3.4666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-period .date-box .date::placeholder {
+    font-size: 13px;
+  }
+}
+#wrap .section-period .date-box #date-last {
+  border-left: none;
+}
+#wrap .section-period .date-box .btn {
+  margin-left: 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-period .date-box .btn {
+    margin-left: 8px;
+  }
 }
 
 #wrap .section-main-slogan {
