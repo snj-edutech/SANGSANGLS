@@ -7,7 +7,7 @@
             border-bottom:1px solid $color-light-brown;
             .desc-box{
 				position:relative;
-                display:flex;
+                //display:flex;
 				.t-img{
 					background-color:$color-light-brown2;
 					@include vw(min-width, 48px);@include vw(height, 48px);
@@ -29,6 +29,7 @@
 					}
                     .desc-info{
                         display:flex;
+						align-items: center;
 						@include vw(margin-bottom,4px);
 						p{
                             position:relative;
@@ -101,6 +102,32 @@
                             }
 							
 					
+						}
+					}
+
+					.desc-price{
+						display:flex;
+						justify-content: space-between;
+						align-items: center;
+						@include vw(margin-top,8px);
+						.count{
+							@include vw(font-size,12px);
+							color:$color-gray;
+							strong{
+								color:$color-black;
+								display:inline-block;
+								@include vw(margin-left,5px);
+							}
+						}
+
+						.price{
+							display:flex;
+							justify-content: flex-end;
+							align-items: center;
+							>div{@include vw(margin-left,12px);}
+							.price-before{color:$color-light-brown;@include vw(font-size,13px);font-weight:400;text-decoration: line-through;}
+							.price-after{color:$color-brown;@include vw(font-size,14px);font-weight:600;}
+							.price-sale{color: #E50000;;@include vw(font-size,14px);font-weight:600;}
 						}
 					}
 				}
@@ -201,6 +228,22 @@
 					display:flex;
 				}
 			}
+		}
+	}
+
+	.lecture-data-input{
+		dl{
+			@include vw(margin-top,24px);
+			&:first-child{@include vw(margin-top,20px);}
+			dt,dd{}
+			dt{font-weight:600;@include vw(font-size,13px);@include vw(line-height,22.1px);}
+			dd{position:relative;@include vw(margin-top,8px);}
+		}
+
+		.btn-map{@include vw(margin-left,20px);}
+		.btn-address{
+			position:absolute;top:50%;transform:translateY(-50%);
+			@include vw(right,12px);
 		}
 	}
 }

@@ -40,6 +40,8 @@ function addEvent(){
 	calenderEvent();
 	starEvent();
 	selectListEvent();
+	toggleDataEvent();
+	
 
 	/*
 	headerEvent();
@@ -389,6 +391,26 @@ function selectListEvent(){
 	});
 }
 
+function toggleDataEvent(){
+	$(".btn-toggle").on("click", function(){
+		var $parent = $(this).parent();
+		$parent.toggleClass('active');
+	});
+
+}
+
+function scrollMenuEvent(){
+	var wt = $(window).scrollTop();
+	var scrollTop = $('.section-header').offset().top;
+
+	if( wt > scrollTop ){
+		$('.section-header .header-title').addClass('fixed');
+		$('.section-lecture-total').addClass('fixed');
+	} else {
+		$('.section-header .header-title').removeClass('fixed');
+		$('.section-lecture-total').removeClass('fixed');
+	}
+}
 
 
 
@@ -440,22 +462,7 @@ function searchValueEvent($selector){
     });
 }
 
-function scrollMenuEvent(){
-	var wt = $(window).scrollTop();
-	var scrollTop = $('#sectionMenu').offset().top;
 
-	if( wt >= scrollTop ){
-		$('#sectionMenu .tab-menu ul').addClass('fixed');
-	} else {
-		$('#sectionMenu .tab-menu ul').removeClass('fixed');
-	}
-
-	$('#sectionMenu .lecture-content').each(function (index, value) {
-		if ($(window).scrollTop() > ($('#' + value.id).offset().top) - 200) {
-			$('#sectionMenu .tab-menu li').eq(index).addClass('active').siblings('li').removeClass('active');
-		}
-	});
-}
 
 
 
