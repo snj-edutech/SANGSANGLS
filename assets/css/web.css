@@ -8422,6 +8422,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-login-content .login-box .header-logo {
   margin-bottom: 40px;
+  line-height: 1;
 }
 #wrap .section-login-content .login-box .form-control .text {
   height: 56px;
@@ -8871,13 +8872,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-player .player-title {
   background-color: #E4DED3;
-  padding: 8px 16px;
+  padding: 12px 16px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 #wrap .section-player .player-title .logo {
-  width: 86px;
+  width: 114px;
   display: block;
+  line-height: 1;
 }
 #wrap .section-player .player-title .logo img {
   width: 100%;
