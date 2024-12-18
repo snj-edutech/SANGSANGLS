@@ -736,6 +736,31 @@
 				padding-bottom:0;
 			}
 		}
+
+		.order-data-box{
+			background-color:$color-light-brown2;
+			@include vw(padding,24px 20px);
+			dl{
+				@include vw(margin-top,4px);
+				&:first-child{margin-top:0;}
+				display:flex;
+				dt{color:$color-black;font-weight:400;@include vw(font-size,13px);@include vw(line-height,22.1px);@include vw(min-width,58px);	@include vw(margin-right,8px);}
+				dd{
+					position:relative;width:100%;
+					color:$color-black;font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
+					strong{
+						font-weight:600;@include vw(margin-left,8px);
+						@include vw(font-size,13px);@include vw(line-height,22.1px);
+					}
+	
+					.btn{
+						display:inline-block;
+						margin-left:auto;
+						position:absolute;right:0;top:0;
+					}
+				}
+			}
+		}
 	}
 
 

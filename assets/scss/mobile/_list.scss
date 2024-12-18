@@ -82,6 +82,11 @@
 							vertical-align:middle;
                             color:$color-gray;
                             font-weight:400;
+							span{
+								display:inline-block;
+								@include vw(margin-left,4px);
+								color:$color-black;
+							}
 							strong{
 								display:inline-block;
 								font-weight:600;
@@ -105,7 +110,11 @@
 						}
 					}
 
-					.desc-price{
+					.desc-num{
+						color:$color-brown;@include vw(font-size,14px);font-weight:600;
+					}
+
+					.desc-price, .desc-point{
 						display:flex;
 						justify-content: space-between;
 						align-items: center;
@@ -129,6 +138,8 @@
 							.price-after{color:$color-brown;@include vw(font-size,14px);font-weight:600;}
 							.price-sale{color: #E50000;;@include vw(font-size,14px);font-weight:600;}
 						}
+
+
 					}
 				}
 
