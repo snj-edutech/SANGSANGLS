@@ -1,0 +1,44 @@
+#wrap{
+	.section-promotion-story{
+		.wrap{
+			padding-top:80px;
+			padding-bottom:60px;
+			border-top:1px solid #DCDCDB;
+			display:flex;
+			justify-content: space-between;
+			.text-box{
+				font-size:20px;
+				line-height:2;
+				color:$color-black;
+				font-weight:400;
+			}
+			.menu-box{
+				width:170px;
+				.menu-title{
+					border-bottom:1px solid $color-light-brown;
+					font-weight:600;
+					padding-bottom:20px;
+					line-height:1.7;
+					font-size:16px;
+				}
+				.menu-list{
+					li{
+						border-bottom:1px solid $color-light-brown;
+						font-size:14px;
+						line-height:1.7;
+						color:$color-black;
+						font-weight:400;
+						padding:10px 0;
+					}
+				}
+			}
+		}
+	}
+	.section-promotion-banner{
+		img{width:100%;}
+	}
+
+	.section-promotion-lecture{
+		padding-top:120px;
+	}
+}
