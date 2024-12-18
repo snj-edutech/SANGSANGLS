@@ -10566,30 +10566,220 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 40px;
 }
 
-#wrap .section-promotion-story .wrap {
-  padding-top: 80px;
+#wrap .section-promotion-title {
+  padding-top: 40px;
   padding-bottom: 60px;
+  text-align: center;
+}
+#wrap .section-promotion-title .head-copy {
+  color: #7A746A;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+#wrap .section-promotion-title .main-copy {
+  color: #2C2923;
+  font-size: 60px;
+  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-weight: 200;
+  line-height: 1.5;
+}
+#wrap .section-promotion-curriculum .wrap {
   border-top: 1px solid #DCDCDB;
+  padding-top: 80px;
+}
+#wrap .section-promotion-curriculum .curriculum-list {
+  display: flex;
+  padding-bottom: 120px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
+  width: 273px;
+  color: #2C2923;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content {
+  width: 892px;
+  margin-left: 36px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .img-box img {
+  width: 100%;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content p {
+  color: #2C2923;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content p strong {
+  font-weight: 600;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content p .underline {
+  font-weight: 600;
+  text-underline-offset: 3px;
+  text-decoration: underline solid 1px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .list li {
+  color: #2C2923;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .badge {
+  display: inline-block;
+  margin-bottom: 22px;
+  font-size: 14px;
+  height: 24px;
+  padding: 0 6px;
+  line-height: 24px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box {
+  position: relative;
+  width: 100%;
+  height: 447px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a {
+  display: block;
+  position: relative;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a img {
+  width: 100%;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4) url(../images/promotion/btn_play.svg) no-repeat 50% 50%;
+  background-size: 100px 100px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a .video-text {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box {
+  margin-top: 40px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table {
+  width: 100%;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table thead th {
+  background-color: #E4DED3;
+  border-left: 1px solid #FBFAF6;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 0;
+  vertical-align: center;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody th, #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td {
+  text-align: center;
+  padding: 14px 0;
+  vertical-align: center;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody th {
+  border-bottom: 1px solid #E4DED3;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #F2EFE7;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td {
+  border-left: 1px solid #E4DED3;
+  border-bottom: 1px solid #E4DED3;
+  color: #2C2923;
+  font-size: 16px;
+  font-weight: 600;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td.empty {
+  background-color: #FBFAF6;
+}
+#wrap .section-promotion-profile {
+  padding-bottom: 60px;
+}
+#wrap .section-promotion-profile .img-box img {
+  width: 100%;
+}
+#wrap .section-promotion-profile .profile-box {
+  padding-top: 80px;
+  display: flex;
+}
+#wrap .section-promotion-profile .profile-box .text-box {
+  width: 582px;
+  margin-left: 456px;
+  font-size: 18px;
+  line-height: 2;
+  color: #2C2923;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+}
+#wrap .section-promotion-profile .profile-box .text-box .notice {
+  color: #888;
+  font-size: 12px;
+  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  letter-spacing: 0px;
+}
+#wrap .section-promotion-profile .profile-box .menu-box {
+  width: 162px;
+}
+#wrap .section-promotion-profile .profile-box .menu-box .menu-title {
+  border-bottom: 1px solid #E4DED3;
+  font-weight: 600;
+  padding-bottom: 24px;
+  line-height: 1.7;
+  font-size: 24px;
+}
+#wrap .section-promotion-profile .profile-box .menu-box .menu-list li {
+  border-bottom: 1px solid #E4DED3;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2C2923;
+  font-weight: 400;
+  padding: 10px 0;
+}
+#wrap .section-promotion-story .wrap {
+  padding-bottom: 60px;
+  padding-top: 80px;
+  border-top: 1px solid #DCDCDB;
+}
+#wrap .section-promotion-story .story-box {
   display: flex;
   justify-content: space-between;
 }
-#wrap .section-promotion-story .wrap .text-box {
+#wrap .section-promotion-story .story-box .text-box {
   font-size: 20px;
   line-height: 2;
   color: #2C2923;
   font-weight: 400;
+  letter-spacing: -1px;
 }
-#wrap .section-promotion-story .wrap .menu-box {
+#wrap .section-promotion-story .story-box .menu-box {
   width: 170px;
 }
-#wrap .section-promotion-story .wrap .menu-box .menu-title {
+#wrap .section-promotion-story .story-box .menu-box .menu-title {
   border-bottom: 1px solid #E4DED3;
   font-weight: 600;
   padding-bottom: 20px;
   line-height: 1.7;
   font-size: 16px;
 }
-#wrap .section-promotion-story .wrap .menu-box .menu-list li {
+#wrap .section-promotion-story .story-box .menu-box .menu-list li {
   border-bottom: 1px solid #E4DED3;
   font-size: 14px;
   line-height: 1.7;

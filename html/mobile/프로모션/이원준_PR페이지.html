@@ -8,7 +8,7 @@
     <meta property="og:image" content="../../../assets/images/og.png">
     <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
     <meta name="google-site-verification" content="">
-    <meta id="viewport" content="width=1300, user-scalable=yes" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
     <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
     <meta name="keyword" content="상상로스쿨">
     <meta name="title" content="상상로스쿨">
@@ -18,7 +18,7 @@
     <meta name="robots" content="index, follow">
 
 	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
-	<link rel="stylesheet" href="../../../assets/css/web.css" />
+	<link rel="stylesheet" href="../../../assets/css/mobile.css" />
 
 	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
 	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
@@ -28,58 +28,81 @@
 
 <div id="wrap">
 	<div id="container">
-		<header id="header" class="header">
-			<div class="header-gnb">
-				<h1 class="header-logo">
-					<a href="javascript:;"><img src="../../../assets/images/logo_sdij.svg" alt="시대인재로스쿨" /></a>
-				</h1>
-	
-				<div class="header-util">
-					<div class="logout">
-						<a href="javascript:;">로그인</a>
-						<a href="javascript:;">회원가입</a>
-					</div>
-					<div class="login">
-						<a href="javascript:;" data-header-layer="toggle">홍길동님<span class="icon-arrow"><img src="../../../assets/images/btn_arrow_down_white.svg" alt="로그인 레이어 오픈" /></span></a>
-						<div class="header-layer">
-							<ul class="util-list">
-								<li><a href="javascript:;">받은쪽지<span>14</span>개</a></li>
-								<li><a href="javascript:;">장바구니<span>0</span>개</a></li>
-								<li><a href="javascript:;">개인정보수정</a></li>
-								<li><a href="javascript:;">로그아웃</a></li>
-							</ul>
+		<header id="header">
+			<div class="header-main">
+				<div class="wrap">
+					<h1 class="header-logo">
+						<a href="javascript:;"><img src="../../../assets/images/mobile/logo.svg" alt="logo" /></a>
+					</h1>
+					<div class="header-util">
+						<div id="menu">
+							<a href="javascript:;" class="menu-icon">
+								<!-- <img src="../../../assets/images/mobile/btn_menu.svg" alt="gnb" /> -->
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
 						</div>
 					</div>
-					<a href="javascript:;">마이페이지</a>
 				</div>
 			</div>
 
-			<div class="header-menu">
+			<div class="header-layer-gnb">
+				<div class="header-login">
+					<div class="logout">
+						<a href="javascript:;"><strong>통합로그인</strong></a>
+						<a href="javascript:;"><span>통합회원 가입</span></a>
+					</div>
+					
+					<div class="login">
+						<a href="javascript:;"><strong>홍길동 님</strong></a>
+						<a href="javascript:;"><span>로그아웃</span></a>
+					</div>
+				</div>
 				<ul class="gnb-list">
 					<li>
-						<a href="javascript:;"><span>콘텐츠 플랫폼</span></a>
+						<a href="javascript:;">
+							콘텐츠 플랫폼
+						</a>
 					</li>
 					<li>
-						<a href="javascript:;"><span>서바이벌 프로</span></a>
+						<a href="javascript:;">
+							서바이벌 프로
+						</a>
+					</li>
+					<li class="active">
+						<a href="javascript:;">
+							하이퍼패스
+						</a>
 					</li>
 					<li>
-						<a href="javascript:;"><span>하이퍼패스</span></a>
+						<a href="javascript:;">
+							교수소개
+						</a>
 					</li>
 					<li>
-						<a href="javascript:;"><span>교수소개</span></a>
+						<a href="javascript:;">
+							강남캠퍼스
+						</a>
+					</li>
+				</ul>
+				<ul class="util-list">
+					<li>
+						<a href="javascript:;">
+							마이페이지
+						</a>
 					</li>
 					<li>
-						<a href="javascript:;"><span>수험정보</span></a>
-					</li>
-					<li>
-						<a href="javascript:;"><span>강남캠퍼스</span></a>
+						<a href="javascript:;">
+							고객센터
+						</a>
 					</li>
 				</ul>
 			</div>
 
 		</header>
 
-		<div id="contents" >
+		<div id="contents" class="promotion">
 			<div class="section-promotion-title">
 				<div class="wrap">
 					<div class="head-copy">시대인재 이원준</div>
@@ -92,8 +115,21 @@
 
 			<div class="section-promotion-profile">
 				<div class="wrap">
-					<div class="img-box"><img src="../../../assets/images/promotion/lwj/profile.jpg" alt="강사프로필" /></div>
+					<div class="img-box"><img src="../../../assets/images/mobile/promotion/lwj/profile.jpg" alt="강사프로필" /></div>
+					<p class="notice">1) 기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구</p>
 					<div class="profile-box">
+						<div class="text-box">
+							시대인재가 로스쿨을 시작합니다.<br/>
+							저도 시대인재와 함께합니다.<br/>
+							<br/>
+							15년간 수많은 로스쿨 준비생들이 제 강의를 통해 <br/>
+							지금보다 더 나은 성적을 받아왔습니다.<br/>
+							<br/>
+							2026 LEET에서도 수험생 여러분들이<br/>
+							리트 성적을 운에 맡기지 않고<br/>
+							실력으로 얻을 수 있도록 최선을 다하겠습니다.
+						</div>
+
 						<div class="menu-box">
 							<div class="menu-title">언어이해 이원준</div>
 							<ul class="menu-list">
@@ -108,20 +144,6 @@
 								</li>
 							</ul>
 						</div>
-						<div class="text-box">
-							시대인재가 로스쿨을 시작합니다.<br/>
-							저도 시대인재와 함께합니다.<br/>
-							<br/>
-							15년간 수많은 로스쿨 준비생들이<br/>
-							제 강의를 통해 지금보다 더 나은 성적을 받아왔습니다.<br/>
-							<br/>
-							2026 LEET에서도 수험생 여러분들이<br/>
-							리트 성적을 운에 맡기지 않고<br/>
-							실력으로 얻을 수 있도록 최선을 다하겠습니다.<br/>
-							<br/>
-							<br/>
-							<p class="notice">1) 기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구기준문구</p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -130,13 +152,13 @@
 				<div class="wrap">
 					<div class="curriculum-list">
 						<div class="curriculum-title">
-							수험생 머리속에 <br/>생각의 틀을 넣는다
+							수험생 머리속에 생각의 틀을 넣는다
 						</div>
 						<div class="curriculum-content">
 							<p>
-								LEET 언어이해, 기출분석과 모의고사 중심으로 학습합니다.
+								LEET 언어이해, <br/>기출분석과 모의고사 중심으로 학습합니다.
 							</p>
-							<div class="img-box"><img src="../../../assets/images/promotion/lwj/curriculum_1.jpg" alt="" /></div>
+							<div class="img-box"><img src="../../../assets/images/mobile/promotion/lwj/curriculum_1.jpg" alt="" /></div>
 						</div>
 					</div>
 
@@ -150,7 +172,7 @@
 								<strong>방법론 - 기출 속에 들어 있는 <em class="underline">핵심 코드</em>를 이용해서 쟁점을 잡고 구조를 파악하는 것</strong>
 							</p>
 							<span class="badge"># 최근 LEET 기출 빈출 코드</span>
-							<div class="img-box"><img src="../../../assets/images/promotion/lwj/curriculum_2.jpg" alt="" /></div>
+							<div class="img-box"><img src="../../../assets/images/mobile/promotion/lwj/curriculum_2.jpg" alt="" /></div>
 						</div>
 					</div>
 
@@ -160,7 +182,7 @@
 						</div>
 						<div class="curriculum-content">
 							<p>
-								기출 분석을 통해 체득한 방법론을
+								기출 분석을 통해 체득한 방법론을 <br/>
 								<strong class="underline">적용할 수 있게 많이 풀어보아야 합니다.</strong>
 							</p>
 							<ul class="list">
@@ -169,23 +191,23 @@
 							</ul>
 						</div>
 					</div>
-					
+
 					<div class="curriculum-list">
 						<div class="curriculum-title">
 							2026 LEET대비 커리큘럼
 						</div>
 						<div class="curriculum-content">
 							<p>
-								2025년에도 수험생 여러분의 머리 속에 생각의 틀을 넣을 준비가 되어 있습니다.
+								2025년에도 수험생 여러분의<br/> 머리 속에 생각의 틀을 넣을 준비가 되어 있습니다.
 							</p>
 							
 							<div class="video-box">
 								<a href="javascript:layerVideoOpen('https://www.youtube.com/embed/PHh_SI-F7Q0?amp;autoplay=1&amp;playlist=PHh_SI-F7Q0&amp;loop=1');">
-									<img src="../../../assets/images/promotion/lwj/thumbnail.jpg" alt="">
-									<p class="video-text">
+									<img src="../../../assets/images/mobile/promotion/lwj/thumbnail.jpg" alt="">
+									<div class="video-text">
 										2026 LEET 커리큘럼 영상<br/>
 										언어이해 이원준
-									</p>
+									</div>
 								</a>
 							</div>
 
@@ -215,7 +237,7 @@
 											<th>3월 시작<br/>초시생</th>
 											<td class="empty"></td>
 											<td>방법론</td>
-											<td>매주 1-2회 모의고사</td>
+											<td>매주 1-2회 <br/>모의고사</td>
 										</tr>
 										<tr>
 											<th  rowspan="2">재시생</th>
@@ -223,7 +245,7 @@
 											<td colspan="2"  rowspan="2">매주 1-2회 모의고사</td>
 										</tr>
 										<tr>
-											<td>매주 1-2회 모의고사</td>
+											<td>매주 1-2회<br/> 모의고사</td>
 										</tr>
 									</tbody>
 								</table>
@@ -241,26 +263,13 @@
 							처음부터 언어이해를 잘하는 사람은 많습니다.<br/>
 							하지만, 언어이해를 잘할 수 있게 도와주는 사람은 찾기 힘듭니다.<br/>
 							<br/>
-							단순히 문제를 풀고 설명하는 수준에서 한 차원 넘어서서<br/>
-							모든 문제에 일반적으로 적용할 수 있는 패턴과 규칙을 알려주는 사람은<br/>
-							이원준이 유일합니다.<br/>
+							단순히 문제를 풀고 설명하는 수준에서<br/>
+							 한 차원 넘어서서<br/>
+							모든 문제에 일반적으로 적용할 수 있는<br/>
+							 패턴과 규칙을 알려주는 사람은 이원준이 유일합니다.<br/>
 							<br/>
 							언어이해 강의의 패러다임은 이원준이 만듭니다.<br/>
 							그리고, 우리는 아직 그 속에 살고 있습니다.
-						</div>
-						<div class="menu-box">
-							<div class="menu-title">언어이해 이원준</div>
-							<ul class="menu-list">
-								<li>
-									<a href="javascript:;">공지사항</a>
-								</li>
-								<li>
-									<a href="javascript:;">학습질문</a>
-								</li>
-								<li>
-									<a href="javascript:;">수강후기</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -268,161 +277,77 @@
 
 			<div class="section-promotion-banner">
 				<div class="wrap">
-					<img src="../../../assets/images/promotion/lwj/banner.jpg" alt="강사배너" />
+					<img src="../../../assets/images/mobile/promotion/lwj/banner.jpg" alt="강사배너" />
 				</div>
 			</div>
 
 			<div class="section-promotion-lecture">
 				<div class="wrap">
 					<div class="lecture-data-list">
-						<div class="grid course-list">
-							<div class="col subject">기출특강</div>
-							<div class="col desc-box">
-								<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진" /></div>
+						<div class="list">
+							<div class="desc-box">
+								<div class="t-check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup1" disabled="" class="checkbox disabled">
+											<label for="check-popup1"></label>
+										</div>
+									</div>
+								</div>
+								<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진"></div>
 								<div class="t-desc">
-									<div class="desc-title"><a href="javascript:;" >[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
-									<div class="desc-text">
-										<p>강의수<strong>6강</strong></p>
-										<p>수강기간<strong>30일</strong></p>
-										<p>강의상태<strong>완강</strong></p>
-										<p><span class="icon"><img src="../../../assets/images/icon_history.svg" alt="" /></span><strong>2배수</strong></p>
+									<div class="desc-info">
+										<p>입문과정</p>
+										<p>추리논증 김재형</p>
 									</div>
-									<div class="desc-btn">
-										<a href="javascript:;" class="btn">강좌정보</a>
-										<a href="javascript:;" class="btn">OT 영상</a>
-										<a href="javascript:;" class="btn">교재정보</a>
-									</div>
-								</div>
-								<div class="t-name">추리논증<br/>김재형</div>
-							</div>
-							<div class="col price">
-								<div>
-									<div class="form-control">
-										<div class="fake-checkbox">
-											<input type="checkbox" id="checkboxA1" class="checkbox" checked>
-											<label for="checkboxA1">강좌</label>
-										</div>
-									</div>
-									<div class="price-box">
-										<!-- <div class="price-before">999,999원</div>
-										<div class="price-sale">100%</div> -->
-										<div class="price-after">999,999원</div>
-									</div>
-								</div>
-								<div>
-									<div class="form-control">
-										<div class="fake-checkbox">
-											<input type="checkbox" id="checkboxA2" class="checkbox" checked>
-											<label for="checkboxA2">교재1</label>
-										</div>
-									</div>
-									<div class="price-box">
-										<div class="price-before">999,999원</div>
-										<div class="price-sale">100%</div>
-										<div class="price-after">999,999원</div>
-									</div>
-								</div>
-								<div>
-									<div class="form-control">
-										<div class="fake-checkbox">
-											<input type="checkbox" id="checkboxA3" class="checkbox" checked>
-											<label for="checkboxA3">교재2</label>
-										</div>
-									</div>
-									<div class="price-box">
-										<!-- <div class="price-before">999,999원</div>
-										<div class="price-sale">100%</div> -->
-										<div class="price-after">999,999원</div>
-									</div>
+									<div class="desc-title"><a href="javascript:;">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
+									
 								</div>
 							</div>
 						</div>
-						<div class="grid course-list">
-							<div class="col subject">기출특강</div>
-							<div class="col desc-box">
-								<div class="t-img"><img src="../../../assets/images/professor/professor2_400x400.png" alt="강사사진" /></div>
-								<div class="t-desc">
-									<div class="desc-title"><a href="javascript:;" >[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강[2025] RAINMAKER 김재형의 LEET </a></div>     
-									<div class="desc-text">
-										<p>강의수<strong>6강</strong></p>
-										<p>수강기간<strong>30일</strong></p>
-										<p>강의상태<strong>완강</strong></p>
-										<p><span class="icon"><img src="../../../assets/images/icon_history.svg" alt="" /></span><strong>2배수</strong></p>
-									</div>
-									<div class="desc-btn">
-										<a href="javascript:;" class="btn">강좌정보</a>
-										<a href="javascript:;" class="btn">OT 영상</a>
-										<a href="javascript:;" class="btn">교재정보</a>
-									</div>
-								</div>
-								<div class="t-name">추리논증<br/>김재형</div>
-							</div>
-							<div class="col price">
-								<div>
+						<div class="list">
+							<div class="desc-box">
+								<div class="t-check">
 									<div class="form-control">
 										<div class="fake-checkbox">
-											<input type="checkbox" id="checkboxB1" class="checkbox" checked>
-											<label for="checkboxB1">강좌</label>
+											<input type="checkbox" id="check-popup2" class="checkbox">
+											<label for="check-popup2"></label>
 										</div>
 									</div>
-									<div class="price-box">
-										<!-- <div class="price-before">999,999원</div>
-										<div class="price-sale">100%</div> -->
-										<div class="price-after">999,999원</div>
+								</div>
+								<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진"></div>
+								<div class="t-desc">
+									<div class="desc-info">
+										<p>입문과정</p>
+										<p>추리논증 김재형</p>
 									</div>
+									<div class="desc-title"><a href="javascript:;">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
+								
 								</div>
 							</div>
 						</div>
-						<div class="grid course-list">
-							<div class="col subject">기출특강</div>
-							<div class="col desc-box">
-								<div class="t-img"><img src="../../../assets/images/professor/professor3_400x400.png" alt="강사사진" /></div>
+						<div class="list">
+							<div class="desc-box">
+								<div class="t-check">
+									<div class="form-control">
+										<div class="fake-checkbox">
+											<input type="checkbox" id="check-popup3" class="checkbox">
+											<label for="check-popup3"></label>
+										</div>
+									</div>
+								</div>
+								<div class="t-img"><img src="../../../assets/images/professor/professor1_400x400.png" alt="강사사진"></div>
 								<div class="t-desc">
-									<div class="desc-title"><a href="javascript:;" >[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
-									<div class="desc-text">
-										<p>강의수<strong>6강</strong></p>
-										<p>수강기간<strong>30일</strong></p>
-										<p>강의상태<strong>완강</strong></p>
-										<p><span class="icon"><img src="../../../assets/images/icon_history.svg" alt="" /></span><strong>2배수</strong></p>
+									<div class="desc-info">
+										<p>입문과정</p>
+										<p>추리논증 김재형</p>
 									</div>
-									<div class="desc-btn">
-										<a href="javascript:;" class="btn">강좌정보</a>
-										<a href="javascript:;" class="btn">OT 영상</a>
-										<a href="javascript:;" class="btn">교재정보</a>
-									</div>
+									<div class="desc-title"><a href="javascript:;">[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강[2025] RAINMAKER 김재형의 LEET 추리논증 파이널 특강</a></div>     
+								
 								</div>
-								<div class="t-name">추리논증<br/>김재형</div>
 							</div>
-							<div class="col price">
-								<div>
-									<div class="form-control">
-										<div class="fake-checkbox">
-											<input type="checkbox" id="checkboxC1" class="checkbox" checked>
-											<label for="checkboxC1">강좌</label>
-										</div>
-									</div>
-									<div class="price-box">
-										<!-- <div class="price-before">999,999원</div>
-										<div class="price-sale">100%</div> -->
-										<div class="price-after">999,999원</div>
-									</div>
-								</div>
-								<div>
-									<div class="form-control">
-										<div class="fake-checkbox">
-											<input type="checkbox" id="checkboxC2" class="checkbox" checked>
-											<label for="checkboxC2">교재1</label>
-										</div>
-									</div>
-									<div class="price-box">
-										<div class="price-before">999,999원</div>
-										<div class="price-sale">100%</div>
-										<div class="price-after">999,999원</div>
-									</div>
-								</div>
+						</div>
 
-							</div>
-						</div>
 					</div>
 					<div class="action">
 						<a href="javascript:;" class="btn large">장바구니</a>
@@ -434,110 +359,44 @@
 
 		</div>
 
-		<footer id="footer" class="footer">
+		<footer id="footer">
 			<div class="footer-top">
 				<div class="wrap">
-					<div class="footer-menu">
-						<div>
-							<p class="footer-menu-title"><a href="javascript:;"><img src="../../../assets/images/f_logo_sdij.svg" alt="시대인재로스쿨" /></a></p>
-							<ul class="footer-menu-list">
-								<li><a href="javascript:;">콘텐츠 플랫폼</a></li>
-								<li><a href="javascript:;">서바이벌 프로</a></li>
-								<li><a href="javascript:;">하이퍼패스</a></li>
-								<li><a href="javascript:;">교수소개</a></li>
-								<li><a href="javascript:;">수험정보</a></li>
-								<li><a href="javascript:;">강남캠퍼스</a></li>
-							</ul>
-						</div>
-						<div>
-							<p class="footer-menu-title">Service Policies</p>
-							<ul class="footer-menu-list">
-								<li><a href="javascript:;">고객센터</a></li>
-								<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
-								<li><a href="javascript:popupOpen('#popupPrivacy');"><strong>개인정보 처리방침</strong></a></li>
-							</ul>
-						</div>
-						<div>
-							<p class="footer-menu-title">Contact</p>
-							<ul class="footer-menu-list">
-								<li><a href="javascript:;">1:1 문의</a></li>
-								<li><a href="javascript:;">FAQ</a></li>
-							</ul>
-						</div>
-					</div>
-					
-
-					<div class="footer-info">
-						<p class="footer-customer">고객센터  02-582-3359</p>
-						<dl class="footer-info-list">
-							<dt>동영상 강의/교재 및 제휴 문의</dt>
-							<dd>
-								<div>
-									<strong>평일</strong>
-									<p>
-										09:30 ~ 18:30<br/>(점심시간 12:30 ~ 13:30
-									</p>
-								</div>
-								<div>
-									<strong>주말/공휴일</strong>
-									<p>
-										나의 문의 게시판 이용
-									</p>
-								</div>
-							</dd>
-						</dl>
-						<dl class="footer-info-list">
-							<dt>학원 수강/상담 문의</dt>
-							<dd>
-								<div>
-									<strong>평일</strong>
-									<p>
-										08:00 ~ 22:00
-									</p>
-								</div>
-								<div>
-									<strong>주말/공휴일</strong>
-									<p>
-										09:00 ~ 22:00
-									</p>
-								</div>
-							</dd>
-						</dl>
-					</div>
+					<ul class="footer-list">
+						<li><a href="javascript:;">로그인</a></li>
+						<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
+						<li><a href="javascript:popupOpen('#popupPrivacy');"><strong>개인정보 처리방침</strong></a></li>
+						<li><a href="javascript:;">PC버전</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="footer-bottom">
 				<div class="wrap">
+					<div class="footer-logo">
+						<a href="javascript:;">
+							<img src="../../../assets/images/mobile/f_logo.svg" alt="logo" />
+						</a>
+					</div>
+
 					<div class="company-info">
 						<p><strong>㈜이매진PNM </strong>대표 강 상 희</p>
 						<p>
-							<span>사업자등록번호 371-87-01877</span>
-							<span>통신판매신고번호 제 2023-서울강남-05461호</span>
-							<span>신고기관명 서울특별시 강남구청</span>
-							<span>주 소 서울시 강남구 논현로 524 청파빌딩 2층</span>
+							사업자등록번호 371-87-01877  |  통신판매신고번호 제 2023-서울강남-05461호  |  신고기관명 서울특별시 강남구청  |  주 소 서울시 강남구 논현로 524 청파빌딩 2층  |  상상로스쿨 원격평생교육시설(제 원-777호)  |  전화번호 <a href="tel:02-582-3359"> 02-582-3359</a>  |  FAX 02-6243-3881 |  E-mail <a href="mailto:imagine@imaginepnm.com"> imagine@imaginepnm.com</a>  |  개인정보관리책임자 우민균
 						</p>
-						<p>
-							<span>상상로스쿨 원격평생교육시설(제 원-777호)</span>
-							<span>전화번호 02-582-3359</span>
-							<span>FAX 02-6243-3881</span>
-							<span>E-mail imagine@imaginepnm.com</span>
-							<span>개인정보관리책임자 우민균</span>
-						</p>
+						
 						<p class="copyright">
 							COPYRIGHT &copy; IMAGINE PNM CORP. ALL RIGHT RESERVED.
 						</p>
 					</div>
 					<div class="sns-list">
-						<a href="javascript:;" ><img src="../../../assets/images/btn_youtube_white.svg" alt="유튜브" /></a>
-						<a href="javascript:;" ><img src="../../../assets/images/btn_blog_white.svg" alt="네이버블로그" /></a>
-						<a href="javascript:;" ><img src="../../../assets/images/btn_instagram_white.svg" alt="인스타그램" /></a>
-						<a href="javascript:;" ><img src="../../../assets/images/btn_kakao_white.svg" alt="카카오" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_youtube.svg" alt="유튜브" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_blog.svg" alt="네이버블로그" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_instagram.svg" alt="인스타그램" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/mobile/btn_kakao.svg" alt="카카오" /></a>
 					</div>
 				</div>
 			</div>
 		</footer>
-
-		<a href="javascript:pageTopMove();" class="btn-top"><img src="../../../assets/images/btn_top.svg" alt="top" /></a>
 	</div>
 
 	<!-- 팝업 -->
@@ -757,8 +616,8 @@
 					<table class="table-row">
 						<colgroup>
 							<col style="width:40%;">
-							<col style="width:20%;">
-							<col style="width:40%;">
+							<col style="width:30%;">
+							<col style="width:30%;">
 						</colgroup>
 						<tr>
 							<th>위탁 대상자</th>
@@ -816,10 +675,10 @@
 					</p>
 					<table class="table-row">
 						<colgroup>
-							<col style="width:20%;">
-							<col style="width:20%;">
-							<col style="width:30%;">
-							<col style="width:30%;">
+							<col style="width:28%;">
+							<col style="width:24%;">
+							<col style="width:24%;">
+							<col style="width:24%;">
 						</colgroup>
 						<tr>
 							<th>위탁 대상자</th>
@@ -983,70 +842,13 @@
 		</div>
 	</div>
 
-	<div class="popup" id="popupLectureView">
-		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupLectureView');"  class="popup-close">팝업닫기</a>
-			<div class="popup-title">
-				<dl>
-					<dt>강좌명</dt>
-					<dd>[2025-기본] RAINMAKER 김재형의 LEET 추리논증 기본이론<br/>
-						강좌명 길면 2줄 노출</dd>
-				</dl>
-				<dl>
-					<dt>작성자</dt>
-					<dd>홍*동</dd>
-				</dl>
-			</div>
-			<div class="popup-cont popup-scroll">
-				<div class="box">
-					<p>
-						추리논증형 인간으로 거듭나는 데에 초석이 되는 강의입니다. 
-						처음에는 김재형 교수님의 강의를 따라가며 생각해보고 공부하는 과정이 낯설고 어렵게 느껴졌는데 그 과정을 꾸준히 하다 보면 이미 봤던 기출 문제인데도 전에 크게 놓쳤던 게 보이면서 머리가 맑게 트이는 듯한 순간이 올 때가 있습니다. 질문도 꼭 해보세요. 
-						집에서 독학을 하는 상황인데 현재 제가 어려움을 겪고 있는 부분이 어떤 점인지 정확히 캐치해 주시고 조언도 주셔서 한결 마음이 편안해졌습니다. 감사합니다 :)
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="popupLayerMain">
-		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupLayerMain');" class="popup-close">팝업닫기</a>
-			<div class="popup-title">
-				시대인재LAW
-			</div>
-			<div class="popup-cont">
-				<div class="popup-banner-list">
-					<a href="javascript:;"><img src="../../../assets/images/temp/popup_layer1.png" alt="" /></a>
-					<a href="javascript:;"><img src="../../../assets/images/temp/popup_layer2.png" alt="" /></a>
-					<a href="javascript:;"><img src="../../../assets/images/temp/popup_layer3.png" alt="" /></a>
-				</div>
-				<div class="form-control">
-					<div class="fake-checkbox">
-						<input type="checkbox" id="todayCheckAgree" class="checkbox" />
-						<label for="todayCheckAgree">오늘 하루 열지않기</label>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 </div>
 
-<script src="../../../assets/js/script.js"></script>
+<script src="../../../assets/js/m.script.js"></script>
 <script>
 	$(function(){
-		slideEvent();
 
-		//popupOpen('#popupLayerMain');
-
-		$('.grid-list').masonry({
-			itemSelector: '.grid-item',
-			gutter: 15,
-			horizontalOrder: true
-		});
 	});
-
 </script>
 </body>
 </html>

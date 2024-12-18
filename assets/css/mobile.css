@@ -7499,4 +7499,426 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .section-error .action a {
     height: 56px;
   }
+}
+
+#wrap .promotion .wrap {
+  max-width: 375px;
+  margin: 0 auto;
+}
+#wrap .section-promotion-title {
+  padding-top: 16vw;
+  padding-bottom: 10.6666666667vw;
+  text-align: center;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-title {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-title {
+    padding-bottom: 40px;
+  }
+}
+#wrap .section-promotion-title .head-copy {
+  color: #7A746A;
+  font-size: 4.2666666667vw;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 4.8vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-title .head-copy {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-title .head-copy {
+    margin-bottom: 18px;
+  }
+}
+#wrap .section-promotion-title .main-copy {
+  color: #2C2923;
+  font-size: 7.2vw;
+  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-weight: 200;
+  line-height: 1.5;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-title .main-copy {
+    font-size: 27px;
+  }
+}
+#wrap .section-promotion-profile {
+  padding-bottom: 24vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile {
+    padding-bottom: 90px;
+  }
+}
+#wrap .section-promotion-profile .img-box img {
+  width: 100%;
+}
+#wrap .section-promotion-profile .profile-box {
+  padding-top: 10.6666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box {
+    padding-top: 40px;
+  }
+}
+#wrap .section-promotion-profile .profile-box .text-box {
+  font-size: 4.2666666667vw;
+  line-height: 2;
+  color: #2C2923;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box .text-box {
+    font-size: 16px;
+  }
+}
+#wrap .section-promotion-profile .profile-box .notice {
+  color: #888;
+  font-size: 2.6666666667vw;
+  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  letter-spacing: 0px;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box .notice {
+    font-size: 10px;
+  }
+}
+#wrap .section-promotion-profile .profile-box .menu-box {
+  margin-top: 10.6666666667vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box .menu-box {
+    margin-top: 40px;
+  }
+}
+#wrap .section-promotion-profile .profile-box .menu-box .menu-title {
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 4.2666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box .menu-box .menu-title {
+    font-size: 16px;
+  }
+}
+#wrap .section-promotion-profile .profile-box .menu-box .menu-list {
+  width: 43.7333333333vw;
+  border-top: 1px solid #E4DED3;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box .menu-box .menu-list {
+    width: 164px;
+  }
+}
+#wrap .section-promotion-profile .profile-box .menu-box .menu-list li {
+  border-bottom: 1px solid #E4DED3;
+  font-size: 3.7333333333vw;
+  line-height: 1.7;
+  color: #2C2923;
+  font-weight: 400;
+  padding: 2.6666666667vw 0;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box .menu-box .menu-list li {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-profile .profile-box .menu-box .menu-list li {
+    padding: 10px 0;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list {
+  padding-bottom: 21.3333333333vw;
+}
+#wrap .section-promotion-curriculum .curriculum-list:first-child {
+  border-top: 1px solid #DCDCDB;
+  padding-top: 10.6666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list:first-child {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list {
+    padding-bottom: 80px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
+  color: #2C2923;
+  font-size: 5.3333333333vw;
+  font-weight: 600;
+  line-height: 1.7;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
+    font-size: 20px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .img-box img {
+  width: 100%;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .list li {
+  color: #2C2923;
+  font-size: 4.2666666667vw;
+  font-weight: 400;
+  line-height: 1.7;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .list li {
+    font-size: 16px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content p {
+  color: #2C2923;
+  font-size: 4.2666666667vw;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 6.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content p {
+    margin-bottom: 24px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content p strong {
+  font-weight: 600;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content p .underline {
+  font-weight: 600;
+  text-underline-offset: 3px;
+  text-decoration: underline solid 1px;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .badge {
+  display: inline-block;
+  margin-bottom: 5.8666666667vw;
+  font-size: 3.7333333333vw;
+  height: 6.4vw;
+  padding: 0 1.6vw;
+  line-height: 6.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .badge {
+    margin-bottom: 22px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .badge {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .badge {
+    height: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .badge {
+    padding: 0 6px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .badge {
+    line-height: 24px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box {
+  position: relative;
+  width: 100%;
+  height: 56.5333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box {
+    height: 212px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a {
+  display: block;
+  position: relative;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a img {
+  width: 100%;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4) url(../images/promotion/btn_play.svg) no-repeat 50% 50%;
+  background-size: 10.6666666667vw 10.6666666667vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a:after {
+    background-size: 40px 40px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a .video-text {
+  position: absolute;
+  left: 0;
+  bottom: 5.8666666667vw;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 4.2666666667vw;
+  line-height: 1.7;
+  font-weight: 500;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a .video-text {
+    bottom: 22px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a .video-text {
+    font-size: 16px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box {
+  margin-top: 6.4vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box {
+    margin-top: 24px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table {
+  width: 100%;
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table thead th {
+  background-color: #E4DED3;
+  border-left: 1px solid #FBFAF6;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 3.4666666667vw;
+  padding: 2.1333333333vw 0;
+  vertical-align: center;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table thead th {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table thead th {
+    padding: 8px 0;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody th, #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td {
+  text-align: center;
+  padding: 3.7333333333vw 0;
+  vertical-align: center;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody th, #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td {
+    padding: 14px 0;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody th {
+  border-bottom: 1px solid #E4DED3;
+  color: #2C2923;
+  font-weight: 600;
+  font-size: 3.4666666667vw;
+  background-color: #F2EFE7;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody th {
+    font-size: 13px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td {
+  border-left: 1px solid #E4DED3;
+  border-bottom: 1px solid #E4DED3;
+  color: #2C2923;
+  font-size: 3.4666666667vw;
+  font-weight: 600;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td {
+    font-size: 13px;
+  }
+}
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .table-box table tbody td.empty {
+  background-color: #FBFAF6;
+}
+#wrap .section-promotion-story .wrap {
+  padding-bottom: 8vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-story .wrap {
+    padding-bottom: 30px;
+  }
+}
+#wrap .section-promotion-story .story-box {
+  padding-top: 10.6666666667vw;
+  border-top: 1px solid #DCDCDB;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-story .story-box {
+    padding-top: 40px;
+  }
+}
+#wrap .section-promotion-story .story-box .text-box {
+  font-size: 4.2666666667vw;
+  line-height: 1.8;
+  color: #2C2923;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-story .story-box .text-box {
+    font-size: 16px;
+  }
+}
+#wrap .section-promotion-banner img {
+  width: 100%;
+}
+#wrap .section-promotion-lecture {
+  padding-top: 21.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-lecture {
+    padding-top: 80px;
+  }
+}
+#wrap .section-promotion-lecture .action {
+  margin-top: 5.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-lecture .action {
+    margin-top: 20px;
+  }
+}
+#wrap .section-promotion-lecture .action .btn {
+  width: 50%;
+  margin-left: 2.1333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-lecture .action .btn {
+    margin-left: 8px;
+  }
+}
+#wrap .section-promotion-lecture .action .btn:first-child {
+  margin-left: 0;
 }/*# sourceMappingURL=mobile.css.map */
