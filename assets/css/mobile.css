@@ -2162,6 +2162,32 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 24px 20px 32px;
   }
 }
+#wrap .icon-new {
+  display: inline-block;
+  line-height: 1;
+  margin-left: 2.1333333333vw;
+  background: url(../images/icon_new.svg) no-repeat center top;
+  width: 4.2666666667vw;
+  height: 4.2666666667vw;
+  background-size: cover;
+  font-size: 0;
+  vertical-align: middle;
+}
+@media screen and (min-width: 375px) {
+  #wrap .icon-new {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .icon-new {
+    width: 16px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .icon-new {
+    height: 16px;
+  }
+}
 #wrap .tab-menu ul {
   overflow: hidden;
   white-space: nowrap;
@@ -2293,6 +2319,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap h4 .action .btn {
     margin-left: 8px;
+  }
+}
+#wrap h4 .date {
+  font-weight: 400;
+  color: #7A746A;
+  font-size: 3.4666666667vw;
+  line-height: 5.8933333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap h4 .date {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap h4 .date {
+    line-height: 22.1px;
   }
 }
 #wrap .count-box {
@@ -4709,11 +4751,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-bottom: 0;
 }
 #wrap #contents.main .wrap {
-  max-width: 375px;
+  max-width: 600px;
   margin: 0 auto;
 }
 #wrap #contents.main .slider {
-  max-width: 375px;
+  max-width: 600px;
   margin: 0 auto;
   padding-left: 5.3333333333vw;
 }
@@ -5611,6 +5653,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap .btn-write {
+  position: fixed;
+  z-index: 10;
+  bottom: 8.5333333333vw;
+  right: 5.3333333333vw;
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn-write {
+    bottom: 32px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn-write {
+    right: 20px;
+  }
+}
 #wrap .total-number-box {
   display: flex;
   justify-content: space-between;
@@ -6738,16 +6796,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-main-banner .main-banner-list .main-banner-top a {
-  width: 89.3333333333vw;
+  width: 100%;
   background-color: #504b42;
   color: #FBFAF6;
   height: 34.1333333333vw;
   cursor: default;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-main-banner .main-banner-list .main-banner-top a {
-    width: 335px;
-  }
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .main-banner-top a {
@@ -6764,12 +6817,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left {
-  width: 43.6vw;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left {
-    width: 163.5px;
-  }
+  width: 50%;
 }
 #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left a {
   width: 100%;
@@ -6781,13 +6829,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right {
-  width: 43.6vw;
+  width: 50%;
   margin-left: 2.1333333333vw;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right {
-    width: 163.5px;
-  }
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right {
@@ -7215,14 +7258,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-main-platform .platform-list .list {
-  max-width: 89.3333333333vw;
   width: 100%;
   margin-top: 12.8vw;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-main-platform .platform-list .list {
-    max-width: 335px;
-  }
 }
 @media screen and (min-width: 375px) {
   #wrap .section-main-platform .platform-list .list {
@@ -7294,13 +7331,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-special-banner .special-banner-box .img-box {
-  max-width: 89.3333333333vw;
   width: 100%;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-special-banner .special-banner-box .img-box {
-    max-width: 335px;
-  }
 }
 #wrap .section-special-banner .special-banner-box .img-box img {
   width: 100%;
@@ -7502,7 +7533,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .promotion .wrap {
-  max-width: 375px;
+  max-width: 600px;
   margin: 0 auto;
 }
 #wrap .section-promotion-title {
@@ -7742,16 +7773,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box {
   position: relative;
   width: 100%;
-  height: 56.5333333333vw;
-}
-@media screen and (min-width: 375px) {
-  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box {
-    height: 212px;
-  }
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a {
   display: block;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: inherit;
 }
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .video-box a img {
   width: 100%;

@@ -1,4 +1,9 @@
 #wrap{
+	.btn-write{
+		position:fixed;z-index:10;
+		@include vw(bottom,32px);
+		@include vw(right,20px);
+	}
 
 	.total-number-box{
 		display:flex;

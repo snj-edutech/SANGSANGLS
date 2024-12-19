@@ -2,7 +2,8 @@
 
 	.promotion{
 		.wrap{
-			max-width:375px;
+			max-width:600px;
+			//max-width:375px;
 			margin:0 auto;
 		}
 	}
@@ -126,10 +127,19 @@
 				.video-box{
 					position:relative;
 					width:100%;
-					@include vw(height,212px);
+					//@include vw(height,212px);
+					padding-bottom: 56.25%; 
+					height: 0;
+					overflow:hidden;
 					a{
 						display:block;
-						position:relative;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: inherit;
+
 						img{width:100%;}
 						&:after{
 							content:'';

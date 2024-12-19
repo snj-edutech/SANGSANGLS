@@ -40,6 +40,18 @@
 		@include vw(padding,24px 20px 32px);
 	}
 
+	.icon-new {
+		display: inline-block;
+		line-height: 1;
+		@include vw(margin-left, 8px);
+		background: url(../images/icon_new.svg) no-repeat center top;
+		@include vw(width, 16px);
+		@include vw(height, 16px);
+		background-size:cover;
+		font-size: 0;
+		vertical-align: middle;
+	}
+
 
 
 	.tab-menu{
@@ -117,6 +129,13 @@
 			.btn{
 				@include vw(margin-left,8px);
 			}
+		}
+
+		.date{
+			font-weight:400;
+			color:$color-gray;
+			@include vw(font-size,13px);
+			@include vw(line-height,22.1px);
 		}
 	}
 

@@ -528,12 +528,12 @@
 		&.main{
 			padding-bottom:0;
 			.wrap{
-				max-width:375px;
+				max-width:600px;
 				margin:0 auto;
 			}
 
 			.slider{
-				max-width:375px;
+				max-width:600px;
 				margin:0 auto;
 				@include vw(padding-left,20px);
 			}
