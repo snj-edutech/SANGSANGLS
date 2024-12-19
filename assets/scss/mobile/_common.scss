@@ -138,6 +138,16 @@
 			@include vw(line-height,22.1px);
 		}
 	}
+	.text-box{
+		border-top: 1px solid $color-light-brown;
+		border-bottom: 1px solid $color-light-brown;
+		@include vw(padding,16px 0);
+		@include vw(line-height, 23.8px);
+		@include vw(font-size, 14px);
+		font-weight: 400;
+		color:$color-black;
+	}
+
 
 	.count-box {
 		display:flex;
@@ -719,6 +729,28 @@
 			@include vw(height, 38px); 
 			@include vw(line-height, 38px); 
 			@include vw(padding-left,32px);
+		}
+
+		&.btn-file{
+            position:relative;
+			display:inline-block;
+			background: $color-light-beige;
+			@include boxSizing(border-box);
+			width:auto;@include vw(height, 38px); 
+			@include vw(line-height, 38px); 
+            @include vw(padding,0 30px 0 12px);
+            margin-left:0;
+			@include vw(margin-right, 8px);
+            @include vw(margin-bottom, 8px);
+            max-width:100%;
+            overflow:hidden;
+            @extend %textEllipsis;
+            .icon-down{
+                display:inline-block;
+                position:absolute;top:9px;right:9px;
+                margin-left:4px;
+				line-height:1;
+            }
 		}
     }
 

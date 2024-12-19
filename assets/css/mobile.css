@@ -11,6 +11,12 @@
   clear: both;
 }
 
+#wrap .btn.btn-file {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .hidden,
 .sr_only,
 .sr-only,
@@ -2337,6 +2343,30 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 22.1px;
   }
 }
+#wrap .text-box {
+  border-top: 1px solid #E4DED3;
+  border-bottom: 1px solid #E4DED3;
+  padding: 4.2666666667vw 0;
+  line-height: 6.3466666667vw;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+  color: #2C2923;
+}
+@media screen and (min-width: 375px) {
+  #wrap .text-box {
+    padding: 16px 0;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .text-box {
+    line-height: 23.8px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .text-box {
+    font-size: 14px;
+  }
+}
 #wrap .count-box {
   display: flex;
   width: 27.7333333333vw;
@@ -3648,6 +3678,55 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .btn.btn-download {
     padding-left: 32px;
   }
+}
+#wrap .btn.btn-file {
+  position: relative;
+  display: inline-block;
+  background: #FBFAF6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: auto;
+  height: 10.1333333333vw;
+  line-height: 10.1333333333vw;
+  padding: 0 8vw 0 3.2vw;
+  margin-left: 0;
+  margin-right: 2.1333333333vw;
+  margin-bottom: 2.1333333333vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.btn-file {
+    height: 38px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.btn-file {
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.btn-file {
+    padding: 0 30px 0 12px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.btn-file {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .btn.btn-file {
+    margin-bottom: 8px;
+  }
+}
+#wrap .btn.btn-file .icon-down {
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  margin-left: 4px;
+  line-height: 1;
 }
 #wrap .action-list {
   display: flex;
@@ -6683,7 +6762,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 20.4px;
   }
 }
-
 #wrap .section-main-slogan {
   padding-top: 12.8vw;
   padding-bottom: 6.4vw;
