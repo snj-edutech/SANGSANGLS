@@ -19,6 +19,10 @@
         color: $color-black !important;
     }
 
+	.color-gray {
+        color: $color-gray !important;
+    }
+
 	.color-point {
         color: #E50000 !important;
     }
@@ -34,6 +38,11 @@
 	.border-line-box{
 		border:1px solid $color-light-brown;
 		@include vw(padding,16px 20px);
+	}
+
+	.border-top-line{
+		border-top:1px solid $color-light-brown;
+		@include vw(padding-top,20px);
 	}
 
 	.holder{
@@ -139,15 +148,7 @@
 		}
 	}
 
-	.view-box{
-		border-top: 1px solid $color-light-brown;
-		border-bottom: 1px solid $color-light-brown;
-		@include vw(padding,16px 0);
-		@include vw(line-height, 23.8px);
-		@include vw(font-size, 14px);
-		font-weight: 400;
-		color:$color-black;
-	}
+
 
 
 	.count-box {
@@ -737,19 +738,21 @@
 			display:inline-block;
 			background: $color-light-beige;
 			@include boxSizing(border-box);
-			width:auto;@include vw(height, 38px); 
-			@include vw(line-height, 38px); 
+			width:100%;@include vw(height, 48px); 
+			@include vw(line-height, 48px); 
             @include vw(padding,0 30px 0 12px);
             margin-left:0;
 			@include vw(margin-right, 8px);
-            @include vw(margin-bottom, 8px);
+            @include vw(margin-top, 8px);
+			&:first-child{margin-top:0;}
             max-width:100%;
             overflow:hidden;
             @extend %textEllipsis;
             .icon-down{
                 display:inline-block;
-                position:absolute;top:9px;right:9px;
-                margin-left:4px;
+                position:absolute;top:50%;@include vw(right,9px);
+				transform:translateY(-50%);
+                @include vw(margin-left,4px);
 				line-height:1;
             }
 		}
