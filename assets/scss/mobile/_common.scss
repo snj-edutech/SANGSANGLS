@@ -138,7 +138,8 @@
 			@include vw(line-height,22.1px);
 		}
 	}
-	.text-box{
+
+	.view-box{
 		border-top: 1px solid $color-light-brown;
 		border-bottom: 1px solid $color-light-brown;
 		@include vw(padding,16px 0);

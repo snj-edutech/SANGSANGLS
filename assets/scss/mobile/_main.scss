@@ -179,6 +179,11 @@
 
 		.curriculum-main{
 			@include vw(margin-bottom,48px);
+
+			@media screen and (min-width: 600px) {
+				display:flex;
+				justify-content: space-between;
+			}
 			.video-play{
 				@include vw(max-width,335px);
                 width:100%;
@@ -253,6 +258,12 @@
 
     .section-main-highlights{
 		@include vw(padding,64px 0);
+
+		.grid-list{
+			max-width:375px;
+			margin:0 auto;
+		}
+		
 		.grid-item {
 			@include vw(width,159px);
 			@include vw(margin-bottom,15px);

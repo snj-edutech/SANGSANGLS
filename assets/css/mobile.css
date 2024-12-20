@@ -2343,7 +2343,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 22.1px;
   }
 }
-#wrap .text-box {
+#wrap .view-box {
   border-top: 1px solid #E4DED3;
   border-bottom: 1px solid #E4DED3;
   padding: 4.2666666667vw 0;
@@ -2353,17 +2353,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
 }
 @media screen and (min-width: 375px) {
-  #wrap .text-box {
+  #wrap .view-box {
     padding: 16px 0;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .text-box {
+  #wrap .view-box {
     line-height: 23.8px;
   }
 }
 @media screen and (min-width: 375px) {
-  #wrap .text-box {
+  #wrap .view-box {
     font-size: 14px;
   }
 }
@@ -7125,6 +7125,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 48px;
   }
 }
+@media screen and (min-width: 600px) {
+  #wrap .section-main-curriculum .curriculum-main {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 #wrap .section-main-curriculum .curriculum-main .video-play {
   max-width: 89.3333333333vw;
   width: 100%;
@@ -7300,6 +7306,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .section-main-highlights {
     padding: 64px 0;
   }
+}
+#wrap .section-main-highlights .grid-list {
+  max-width: 375px;
+  margin: 0 auto;
 }
 #wrap .section-main-highlights .grid-item {
   width: 42.4vw;
