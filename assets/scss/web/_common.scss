@@ -516,9 +516,9 @@
                         @include boxSizing(border-box);
                     }
 
-                    &.active, &:hover{
+                    &.active{
                         background-color:$color-white;
-                        border-bottom:1px solid $color-light-beige;
+                        border-bottom:1px solid $color-white;
                         a{
                             //border-color:$color-black;
                             //color:$color-black;

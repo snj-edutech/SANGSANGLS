@@ -3457,9 +3457,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 
-#wrap .tab-box .tab-menu-small ul li.active, #wrap .tab-box .tab-menu-small ul li:hover {
+#wrap .tab-box .tab-menu-small ul li.active {
   background-color: #FFFFFC;
-  border-bottom: 1px solid #FBFAF6;
+  border-bottom: 1px solid #FFFFFC;
 }
 
 #wrap .tab-box.tab-slide .tab-menu-slide {
