@@ -7372,6 +7372,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 635px;
 }
 
+#wrap .section-lecture-content .lecture-content .table-row tr th {
+  font-weight: 400;
+}
+
 #wrap .section-lecture-content .package-content .lecture-data-list {
   margin-top: 60px;
 }
