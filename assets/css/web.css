@@ -70,7 +70,7 @@
   vertical-align: middle;
 }
 
-#wrap .slick-arrow, #wrap .section-online-bookstore .slick-arrow, #wrap .section-seasonal-banner .seasonal-slider .slick-arrow, #wrap .section-main-content .main-professor-list .slick-arrow {
+#wrap .slick-arrow, #wrap .section-online-bookstore .slick-arrow, #wrap .section-main-curriculum .slick-arrow, #wrap .section-seasonal-banner .seasonal-slider .slick-arrow, #wrap .section-main-content .main-professor-list .slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -288,6 +288,13 @@
 #wrap .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup .line-box.scroll::-webkit-scrollbar-thumb, #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul::-webkit-scrollbar-thumb, #wrap .popup-lecture .popup-cont .notice-list-scroll::-webkit-scrollbar-thumb, #wrap .popup-lecture .popup-cont .notice-list-nodata::-webkit-scrollbar-thumb, #wrap .agree-box::-webkit-scrollbar-thumb, #wrap .editor-box::-webkit-scrollbar-thumb, #wrap .section-player .player-content .player-tab::-webkit-scrollbar-thumb {
   background-color: #F2EFE7;
   border-radius: 4px;
+}
+
+@font-face {
+  font-family: 'Wemakeprice';
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -524,7 +531,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   bottom: 0;
   left: 0;
   z-index: 1003;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 #wrap .popup.show {
@@ -760,7 +767,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 6.34667vw;
   text-align: left;
   font-weight: 400;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 375px) {
@@ -885,7 +892,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 6.34667vw;
   text-align: left;
   font-weight: 400;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1051,7 +1058,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 6.34667vw;
   text-align: left;
   font-weight: 400;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1086,7 +1093,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 4.26667vw;
   line-height: 7.25333vw;
   font-weight: 400;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2406,7 +2413,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap {
   line-height: 1.4;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   color: #2C2923;
   font-weight: 600;
   background-color: #FFFFFC;
@@ -2423,11 +2430,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap h3 {
   position: relative;
-  font-weight: 600;
   font-size: 24px;
-  color: #A07D3B;
+  color: #2c2923;
+  font-weight: 300;
   text-align: left;
-  line-height: 40.8px;
+  line-height: 36px;
   padding-bottom: 20px;
 }
 
@@ -3232,7 +3239,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .price-box .price-before {
-  color: #BEBEBC;
+  color: #dddddd;
   font-size: 16px;
   font-weight: 400;
   text-decoration: line-through;
@@ -3240,9 +3247,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .price-box .price-after {
-  color: #A07D3B;
+  color: #2C2923;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 #wrap .price-box.total .price-after {
@@ -3583,7 +3590,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -3680,7 +3687,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #2C2923;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 375px) {
@@ -3875,7 +3882,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 3.73333vw;
   font-weight: 400;
   color: #2C2923;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #FFFFFC;
@@ -5617,7 +5624,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #contents {
-  padding: 100px 0 200px;
+  padding: 120px 0 200px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -5786,6 +5793,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #footer.footer .footer-top .footer-menu .footer-menu-title {
+  font-family: "Wemakeprice", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   color: #FFFFFC;
   font-size: 16px;
   font-weight: 700;
@@ -5807,6 +5815,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
+#wrap #footer.footer .footer-top .footer-menu .footer-menu-list li a strong {
+  color: #FFFFFC;
+}
+
 #wrap #footer.footer .footer-top .footer-menu .footer-menu-list li:first-child {
   margin-top: 24px;
 }
@@ -5816,6 +5828,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #footer.footer .footer-top .footer-info .footer-customer {
+  font-family: "Wemakeprice", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 34px;
@@ -6977,12 +6990,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 20px;
 }
 
-#wrap .section-lecture .action {
-  padding-bottom: 12px;
-}
-
 #wrap .section-lecture-content .tab-view {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 #wrap .section-lecture-content .lecture-content {
@@ -10977,7 +10986,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 6.34667vw;
   text-align: left;
   font-weight: 400;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 375px) {
@@ -11638,7 +11647,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-banner {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 #wrap .section-main-banner .main-banner-tab {
@@ -11753,13 +11762,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-banner .main-banner-list a {
   display: block;
-  color: #2C2923;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 36px;
   padding: 24px;
   height: 124px;
-  background-color: #F2EFE7;
+  background-color: #dddbd8;
+  color: #242321;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -11768,7 +11777,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #504b42;
   color: #FBFAF6;
   height: 140px;
-  cursor: default;
 }
 
 #wrap .section-main-banner .main-banner-list .main-banner-bottom {
@@ -11778,33 +11786,33 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left {
-  width: 470px;
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one {
+  width: 281px;
+  margin-left: 12px;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left a {
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one a {
   width: 100%;
   height: 260px;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right {
-  width: 298px;
-  margin-left: 12px;
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two {
+  width: 487px;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right a {
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a {
   height: 124px;
+  background-color: #f2efe7;
+  color: #504b42;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right a:first-child {
-  background-color: #7A746A;
-  color: #FBFAF6;
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a:first-child {
   margin-bottom: 12px;
 }
 
 #wrap .section-main-slogan {
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 
 #wrap .section-main-slogan .wrap {
@@ -11818,9 +11826,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-slogan p {
   text-align: left;
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 300;
+  font-size: 17px;
+  line-height: 34px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -11830,23 +11838,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-slogan p.subject {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 39.6px;
-  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-size: 32px;
+  line-height: 48px;
 }
 
 #wrap .section-main-slogan p.desc {
   margin-left: 80px;
-  font-family: Pretendard, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 #wrap .main-title {
   font-weight: 400;
-  font-size: 32px;
-  line-height: 57.6px;
+  font-size: 40px;
+  line-height: 60px;
   margin-bottom: 48px;
   color: #FFFFFC;
-  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Wemakeprice", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 #wrap .main-title strong {
@@ -11860,6 +11867,144 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-main-curriculum {
   background-color: #242321;
   padding: 120px 0;
+}
+
+#wrap .section-main-curriculum .slick-arrow.slick-prev {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  display: block;
+  width: 25.6vw;
+  height: 25.6vw;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  color: transparent;
+  text-indent: -9999px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 50%;
+  margin-left: -185.86667vw;
+  background: none;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-prev {
+    width: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-prev {
+    height: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-prev {
+    margin-left: -697px;
+  }
+}
+
+#wrap .section-main-curriculum .slick-arrow.slick-prev::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 6.4vw;
+  height: 6.4vw;
+  border-width: 0;
+  border-style: solid;
+  border-color: #504b42;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  -webkit-transform: translate(-25%, -50%) rotate(45deg);
+  transform: translate(-25%, -50%) rotate(45deg);
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-prev::before {
+    width: 24px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-prev::before {
+    height: 24px;
+  }
+}
+
+#wrap .section-main-curriculum .slick-arrow.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  display: block;
+  width: 25.6vw;
+  height: 25.6vw;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  color: transparent;
+  text-indent: -9999px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 50%;
+  margin-right: -185.86667vw;
+  background: none;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-next {
+    width: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-next {
+    height: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-next {
+    margin-right: -697px;
+  }
+}
+
+#wrap .section-main-curriculum .slick-arrow.slick-next::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 6.4vw;
+  height: 6.4vw;
+  border-width: 0;
+  border-style: solid;
+  border-color: #504b42;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  -webkit-transform: translate(-75%, -50%) rotate(45deg);
+  transform: translate(-75%, -50%) rotate(45deg);
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-next::before {
+    width: 24px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-curriculum .slick-arrow.slick-next::before {
+    height: 24px;
+  }
 }
 
 #wrap .section-main-curriculum .video-play {
@@ -11989,7 +12134,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-curriculum .curriculum-main .video-text .video-title {
   margin-top: 24px;
-  color: #BEBEBC;
+  color: dimgray;
   font-size: 14px;
   line-height: 23.8px;
   font-weight: 500;
@@ -11999,8 +12144,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: block;
   font-size: 28px;
   line-height: 42px;
-  font-weight: 500;
+  font-weight: 600;
   color: #FFFFFC;
+  margin-bottom: 4px;
 }
 
 #wrap .section-main-curriculum .curriculum-list {
@@ -12010,13 +12156,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 48px;
 }
 
-#wrap .section-main-curriculum .curriculum-list .list {
-  width: 288px;
+#wrap .section-main-curriculum .curriculum-list .slick-slide {
   margin-left: 16px;
 }
 
-#wrap .section-main-curriculum .curriculum-list .list:first-child {
+#wrap .section-main-curriculum .curriculum-list .slick-slide:first-child {
   margin-left: 0;
+}
+
+#wrap .section-main-curriculum .curriculum-list .list {
+  width: 288px;
 }
 
 #wrap .section-main-curriculum .curriculum-list .list .video-play {
@@ -12075,12 +12224,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 
-#wrap .section-main-platform .platform-list .img-box a {
+#wrap .section-main-platform .platform-list a {
   display: block;
-  cursor: default;
 }
 
-#wrap .section-main-platform .platform-list .img-box a img {
+#wrap .section-main-platform .platform-list .img-box img {
   width: 100%;
 }
 
@@ -12378,6 +12526,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-special-banner .special-banner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .section-special-banner .special-banner-box a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -27,83 +27,55 @@
 
 <div id="wrap">
 	<div id="container">
-		<div class="header-top-banner active" id="headerTopBanner" >
-			<div class="wrap">
-				<a href="javascript:;">[이벤트] 합격이 예상되는 로스쿨을 각오와 함께 등록해보세요!</a>
-			</div>
-			<a href="javascript:headerTopBannerClose();" class="banner-close"><span class="sr-only">닫기</span></a>
-		</div>
-		
-		<header id="header">
-			<div class="header-util">
-				<div class="wrap">
+		<header id="header" class="header">
+			<div class="header-gnb">
+				<h1 class="header-logo">
+					<a href="javascript:;"><img src="../../../assets/images/logo_sdij.svg" alt="시대인재로스쿨" /></a>
+				</h1>
+	
+				<div class="header-util">
 					<div class="logout">
-						<a href="javascript:;">통합 로그인</a>
-						<a href="javascript:;">통합회원 가입</a>
+						<a href="javascript:;">로그인</a>
+						<a href="javascript:;">회원가입</a>
 					</div>
 					<div class="login">
-						<a href="javascript:;" data-header-layer="toggle">홍길동님<span class="icon-new">N</span><span class="icon-arrow"><img src="../../../assets/images/btn_arrow_down.svg" alt="로그인 레이어 오픈" /></span></a>
+						<a href="javascript:;" data-header-layer="toggle">홍길동님<span class="icon-arrow"><img src="../../../assets/images/btn_arrow_down_white.svg" alt="로그인 레이어 오픈" /></span></a>
 						<div class="header-layer">
-                            <ul class="util-list">
+							<ul class="util-list">
 								<li><a href="javascript:;">받은쪽지<span>14</span>개</a></li>
 								<li><a href="javascript:;">장바구니<span>0</span>개</a></li>
 								<li><a href="javascript:;">개인정보수정</a></li>
 								<li><a href="javascript:;">로그아웃</a></li>
-                            </ul>
-                        </div>
-					</div>
-					<a href="javascript:;">고객센터</a>
-					<a href="javascript:headerSearchOpen();" class="btn-header-search"><img src="../../../assets/images/btn_search.svg" alt="검색" /></a>
-				</div>
-			</div>
-			<div class="header-gnb">
-				<div class="wrap">
-					<h1 class="header-logo">
-						<a href="javascript:;"><img src="../../../assets/images/logo.svg" alt="상상로스쿨" /></a>
-					</h1>
-					<div class="header-menu">
-						<ul class="gnb-list">
-							<li>
-								<a href="javascript:;"><span>교수소개</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>LEET 인강</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>수험정보</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>온라인 서점</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>모의고사</span></a>
-							</li>
-							<li>
-								<a href="javascript:;"><span>마이페이지</span></a>
-							</li>
-						</ul>
-						<a href="javascript:;" class="btn-sscampus"><span  class="icon-sscampus"><img src="../../../assets/images/logo_sscampus.svg" alt="상상캠퍼스" /></span>상상캠퍼스</a>
-					</div>
-				</div>
-			</div>
-			<div class="header-search">
-				<div class="wrap">
-					<a href="javascript:headerSearchClose();" class="header-search-close"><span class="sr-only">닫기</span></a>
-					<div class="search-box">
-						<div class="search-text">
-							<a href="javascript:;" class="search-action"><img src="../../../assets/images/btn_search_large.svg" alt="검색" /></a>
-							<input type="text" id="txtSearchKeyword" name="txtSearchKeyword" placeholder="검색어를 입력해주세요" />
-							<a href="javascript:;" class="search-cancel"><img src="../../../assets/images/btn_cancel.svg" alt="취소" /></a>
-							
-						</div> 
-						<div class="action">
-							<a href="javascript:;" class="btn">전체 강좌</a>
-							<a href="javascript:;" class="btn">전체 교재</a>
+							</ul>
 						</div>
 					</div>
-	
+					<a href="javascript:;">마이페이지</a>
 				</div>
 			</div>
+
+			<div class="header-menu">
+				<ul class="gnb-list">
+					<li>
+						<a href="javascript:;"><span>LEET PASS</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>교수소개</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>전체강좌</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>수험정보</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>전국모의고사</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>강남캠퍼스</span></a>
+					</li>
+				</ul>
+			</div>
+
 		</header>
 
 		<div id="contents">
@@ -664,29 +636,80 @@
 
 		</div>
 
-		<footer id="footer">
+		<footer id="footer" class="footer">
 			<div class="footer-top">
 				<div class="wrap">
-					<ul class="footer-list">
-						<li><a href="javascript:;">회사소개</a></li>
-						<li><a href="javascript:popupOpen('#popupPrivacy');"><strong>개인정보 처리방침</strong></a></li>
-						<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
-						<li><a href="javascript:;">고객센터</a></li>
-					</ul>
+					<div class="footer-menu">
+						<div>
+							<p class="footer-menu-title"><a href="javascript:;"><img src="../../../assets/images/f_logo_sdij.svg" alt="시대인재로스쿨" /></a></p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">콘텐츠 플랫폼</a></li>
+								<li><a href="javascript:;">서바이벌 프로</a></li>
+								<li><a href="javascript:;">하이퍼패스</a></li>
+								<li><a href="javascript:;">교수소개</a></li>
+								<li><a href="javascript:;">수험정보</a></li>
+								<li><a href="javascript:;">강남캠퍼스</a></li>
+							</ul>
+						</div>
+						<div>
+							<p class="footer-menu-title">Service Policies</p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">고객센터</a></li>
+								<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
+								<li><a href="javascript:popupOpen('#popupPrivacy');"><strong>개인정보 처리방침</strong></a></li>
+							</ul>
+						</div>
+						<div>
+							<p class="footer-menu-title">Contact</p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">1:1 문의</a></li>
+								<li><a href="javascript:;">FAQ</a></li>
+							</ul>
+						</div>
+					</div>
+					
 
-					<div class="footer-site">
-						<a href="javascript:;">패밀리 사이트</a>
-						<a href="javascript:;" class="btn-ssmockexam"><img src="../../../assets/images/logo_ssmockexam.svg" alt="상상모의고사" /></a>
+					<div class="footer-info">
+						<p class="footer-customer">고객센터  02-582-3359</p>
+						<dl class="footer-info-list">
+							<dt>동영상 강의/교재 및 제휴 문의</dt>
+							<dd>
+								<div>
+									<strong>평일</strong>
+									<p>
+										09:30 ~ 18:30<br/>(점심시간 12:30 ~ 13:30
+									</p>
+								</div>
+								<div>
+									<strong>주말/공휴일</strong>
+									<p>
+										나의 문의 게시판 이용
+									</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="footer-info-list">
+							<dt>학원 수강/상담 문의</dt>
+							<dd>
+								<div>
+									<strong>평일</strong>
+									<p>
+										08:00 ~ 22:00
+									</p>
+								</div>
+								<div>
+									<strong>주말/공휴일</strong>
+									<p>
+										09:00 ~ 22:00
+									</p>
+								</div>
+							</dd>
+						</dl>
 					</div>
 				</div>
 			</div>
 			<div class="footer-bottom">
 				<div class="wrap">
-					<h1 class="logo">
-						<a href="javascript:;">
-							<img src="../../../assets/images/f_logo.svg" alt="상상로스쿨" />
-						</a>
-					</h1>
 					<div class="company-info">
 						<p><strong>㈜이매진PNM </strong>대표 강 상 희</p>
 						<p>
@@ -707,11 +730,10 @@
 						</p>
 					</div>
 					<div class="sns-list">
-						<a href="javascript:;" ><img src="../../../assets/images/btn_blog.svg" alt="네이버블로그" /></a>
-						<a href="javascript:;" ><img src="../../../assets/images/btn_instagram.svg" alt="인스타그램" /></a>
-						<a href="javascript:;" ><img src="../../../assets/images/btn_youtube.svg" alt="유튜브" /></a>
-						<a href="javascript:;" ><img src="../../../assets/images/btn_facebook.svg" alt="페이스북" /></a>
-						<a href="javascript:;" ><img src="../../../assets/images/btn_kakao.svg" alt="카카오" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_youtube_white.svg" alt="유튜브" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_blog_white.svg" alt="네이버블로그" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_instagram_white.svg" alt="인스타그램" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_kakao_white.svg" alt="카카오" /></a>
 					</div>
 				</div>
 			</div>

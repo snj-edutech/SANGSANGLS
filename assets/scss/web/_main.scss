@@ -11,7 +11,7 @@
 	}
 
 	.section-main-banner{
-		margin-top:80px;
+		margin-top:70px;
 		.main-banner-tab{
 			display:flex;
 			.tab-slide{
@@ -94,11 +94,12 @@
 			padding-bottom:120px;
 
 			a{
-				display:block;color:$color-black;font-size:24px;
-				font-weight:200;
+				display:block;font-size:24px;
+				font-weight:300;
 				line-height:36px;
 				padding:24px;height:124px;
-				background-color:$color-light-brown2;
+				background-color:rgba(221, 219, 216, 1);
+				color:rgba(36, 35, 33, 1);
 				@include boxSizing(border-box);
 			}
 
@@ -107,29 +108,30 @@
 					background-color:#504b42;
 					color:$color-light-beige;
 					height:140px;
-					cursor:default;
-
 				}
 			}
 
 			.main-banner-bottom{
 				margin-top:12px;
 				display:flex;
-				.banner-left{
-					width:470px;
+				.banner-one{
+					width:281px;
+					margin-left:12px;
 					a{
 						width:100%;
 						height:260px;
+						
 					}
 				}
-				.banner-right{
-					width:298px;
-					margin-left:12px;
+				.banner-two{
+					width:487px;
+					
 					a{
 						height:124px;
+						background-color:rgba(242, 239, 231, 1);
+						color:rgba(80, 75, 66, 1);
+						
 						&:first-child{
-							background-color:$color-gray;
-							color:$color-light-beige;
 							margin-bottom:12px;
 						}
 					}
@@ -141,20 +143,20 @@
 
 	.section-main-slogan{
 		padding-top:120px;
-		padding-bottom:80px;
+		padding-bottom:70px;
 		.wrap{display:flex;justify-content: center;}
 		p{
 			text-align:left;
-			font-size:18px;
-			line-height:36px;
-			font-weight:300;
+			font-size:17px;
+			line-height:34px;
+			font-weight:400;
 			strong{font-weight:700;}
 			margin:0;
 			&.subject{
 				font-weight:400;
-				font-size:22px;
-				line-height:39.6px;
-				font-family:$font-notoSerifKr;
+				font-size:32px;
+				line-height:48px;
+				
 			}
 			&.desc{margin-left:80px;font-family:$font-pretendard;}
 		}
@@ -163,11 +165,11 @@
 
 	.main-title{
 		font-weight:400;
-		font-size:32px;
-		line-height:57.6px;
+		font-size:40px;
+		line-height:60px;
 		margin-bottom:48px;
 		color:$color-white;
-		font-family:$font-notoSerifKr;
+		font-family:$font-Wemakeprice;
 		strong{
 			font-weight:600;
 		}
@@ -180,6 +182,17 @@
 	.section-main-curriculum{
 		background-color:rgba(36, 35, 33, 1);
 		padding:120px 0;
+
+		.slick-arrow {
+			@extend %slick-arrow;
+	
+			&.slick-prev{
+				@include slideArrow(left, 96px, 96px, 2px, rgba(80, 75, 66, 1),  $margin: 697px);
+			}
+			&.slick-next{
+			   @include slideArrow(right, 96px, 96px, 2px, rgba(80, 75, 66, 1), $margin: 697px);
+			}
+		}
 
 		.video-play{
 			position:relative;
@@ -294,7 +307,7 @@
 
 				.video-title{
 					margin-top:24px;
-					color:$color-light-gray;
+					color:rgba(105, 105, 105, 1);
 					font-size:14px;
 					line-height:23.8px;
 					font-weight:500;
@@ -302,8 +315,9 @@
 						display:block;
 						font-size:28px;
 						line-height:42px;
-						font-weight:500;
+						font-weight:600;
 						color:$color-white;
+						margin-bottom:4px;
 					}
 				}
 			}
@@ -312,10 +326,14 @@
 		.curriculum-list{
 			display:flex;
 			margin-top:48px;
-			.list{
-				width:288px;
+			.slick-slide{
 				margin-left:16px;
 				&:first-child{margin-left:0;}
+			}
+
+			.list{
+				width:288px;
+				
 				.video-play{
 					width:100%;
 					height:162px;
@@ -369,12 +387,12 @@
 		padding:120px 0;
 		.platform-list{
 			display:flex;
+			a{
+				display:block;
+			}
+
 			.img-box{
-				a{
-					display:block;
-					cursor:default;
-					img{width:100%;}
-				}
+				img{width:100%;}
 			}
 
 			.text-box{
@@ -486,6 +504,9 @@
 		padding:120px 0;
 		.special-banner-box{
 			display:flex;
+			a{
+				display:flex;
+			}
 			.img-box{
 				width:792px;
 				img{width:100%;}

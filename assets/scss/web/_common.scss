@@ -30,11 +30,14 @@
 
     h3{
         position:relative;
-        font-weight:600;
+        //font-weight:600;
+        //line-height:40.8px;
+        //color:$color-brown;
         font-size:24px;
-        color:$color-brown;
+        color:rgba(44, 41, 35, 1);
+        font-weight:300;
         text-align:left;
-		line-height:40.8px;
+		line-height:36px;
         padding-bottom: 20px;
         .search-input-box{
             position:absolute;right:0;top:-4px;
@@ -381,8 +384,8 @@
 		justify-content: flex-end;
 		align-items: center;
 		.price-subject{color:$color-black;font-size:16px;font-weight:600;margin-right:24px;}
-		.price-before{color:$color-light-gray;font-size:16px;font-weight:400;text-decoration: line-through;margin-right:8px;}
-		.price-after{color:$color-brown;font-size:18px;font-weight:600;}
+		.price-before{color:rgba(221, 221, 221, 1);font-size:16px;font-weight:400;text-decoration: line-through;margin-right:8px;}
+		.price-after{color:$color-black;font-size:18px;font-weight:400;}
 		&.total{
 			.price-before{}
 			.price-after{font-size:24px;}
