@@ -13663,48 +13663,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 40px;
 }
 
-#wrap .section-error {
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-#wrap .section-error h3 {
-  text-align: center;
-  color: #2C2923;
-}
-
-#wrap .section-error .date-box {
-  display: inline-block;
-  padding: 20px;
-  color: #2C2923;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 27.2px;
-  background-color: #F2EFE7;
-  margin-bottom: 20px;
-}
-
-#wrap .section-error .text-box p {
-  font-size: 16px;
-  line-height: 27.2px;
-  color: #7A746A;
-  font-weight: 400;
-}
-
-#wrap .section-error .action {
-  margin-top: 40px;
-}
-
 #wrap .section-promotion-title {
   padding-top: 40px;
   padding-bottom: 60px;
