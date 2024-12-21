@@ -1,4 +1,9 @@
 #wrap{
+	.btn-write{
+		position:fixed;z-index:10;
+		@include vw(bottom,32px);
+		@include vw(right,20px);
+	}
 
 	.total-number-box{
 		display:flex;
@@ -435,4 +440,36 @@
 			}
 		}
 	}
+
+	.view-box{
+		border-top: 1px solid $color-light-brown;
+		@include vw(padding,16px 0);
+		@include vw(line-height, 23.8px);
+		@include vw(font-size, 14px);
+		font-weight: 400;
+		color:$color-black;
+	}
+
+	.qna-box{
+		dl{
+			dt{
+				@include vw(margin-bottom, 16px);
+				font-weight:600;@include vw(font-size,13px);@include vw(line-height,22.1px);
+				color:$color-black;
+			}
+			dd{
+
+			}
+		}
+	}
+
+	.section-question{
+		@include vw(padding,24px 0 32px);
+	}
+
+	.section-answer{
+		@include vw(padding-top, 32px);
+	}
+
+
 }
