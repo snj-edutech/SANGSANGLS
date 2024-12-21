@@ -12182,6 +12182,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-home .curriculum-table table tbody td:last-child {
   border-right: none;
 }
+#wrap .section-teacher-home .curriculum-table table tbody td span {
+  text-decoration: underline;
+}
 #wrap .section-teacher-home .curriculum-book {
   margin: 80px 0 160px;
 }

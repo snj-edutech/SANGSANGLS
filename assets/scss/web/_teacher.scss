@@ -184,6 +184,9 @@
                             &:last-child {
                                 border-right: none;
                             }
+                            span {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
