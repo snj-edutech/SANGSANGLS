@@ -14154,7 +14154,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-thumb-img {
-  width: 245px;
+  max-width: 245px;
+  min-width: 245px;
   height: 310px;
 }
 
@@ -14205,7 +14206,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-thumb {
-  width: 120px;
+  max-width: 120px;
+  min-width: 120px;
   margin-right: 24px;
 }
 
@@ -14244,6 +14246,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-thumb {
+  max-width: 344px;
   min-width: 344px;
   height: 436px;
 }
@@ -14300,7 +14303,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-home .teacher-home-detail .t-content-notice ul li a {
   position: relative;
   display: block;
-  width: 100%;
   font-size: 16px;
   padding-right: 90px;
   overflow: hidden;
@@ -14319,7 +14321,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-
 #wrap .section-teacher-home .teacher-home-detail .t-curriculum-list ul {
   padding: 24px 0;
   border: 1px solid #E4DED3;
@@ -14336,9 +14337,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
           align-items: center;
   margin-bottom: 8px;
 }
-
 #wrap .section-teacher-home .teacher-home-detail .t-curriculum-thumb {
-  width: 96px;
+  min-width: 96px;
+  max-width: 96px;
   margin-right: 24px;
 }
 
@@ -14482,7 +14483,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-home .curriculum-book ul li .book-thumb {
-  width: 122px;
+  max-width: 122px;
+  min-width: 122px;
   margin: 0 auto;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -14517,7 +14519,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-home .curriculum-list .list {
-  width: 390px;
+  min-width: 390px;
+  max-width: 390px;
 }
 
 #wrap .section-teacher-home .curriculum-list .list img {

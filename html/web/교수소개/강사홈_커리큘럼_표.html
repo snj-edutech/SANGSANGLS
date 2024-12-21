@@ -92,7 +92,7 @@
 								</div>
 								<div class="t-content-title-desc">
 									<p>이원준 교수님</p>
-									<a href="javascript:;">프로필</a>
+									<a href="javascript:popupOpen('#popupProfile');">프로필</a>
 								</div>
 							</div>
 							<div class="t-content-notice">
@@ -114,26 +114,22 @@
 							<div class="t-curriculum-list">
 								<ul>
 									<li>
-										<a href="javascript:;">
-											<div class="t-curriculum-thumb">
-												<img src="../../../assets/images/teacher/teacher_llj_curriculum_1.png" alt="커리큘럼이미지1">
-											</div>
-											<div class="t-curriculum-text">
-												<p>[2026] BrainCracker 이원준 언어이해 CC [core code]</p>
-												<span>기출을 학습하는 일관된 틀을 가질 수 있도록 16개 핵심코드로 정리</span>
-											</div>
-										</a>
+										<div class="t-curriculum-thumb">
+											<img src="../../../assets/images/teacher/teacher_llj_curriculum_1.png" alt="커리큘럼이미지1">
+										</div>
+										<div class="t-curriculum-text">
+											<a href="javascript:;">[2026] BrainCracker 이원준 언어이해 CC [core code]</a>
+											<span>기출을 학습하는 일관된 틀을 가질 수 있도록 16개 핵심코드로 정리</span>
+										</div>
 									</li>
 									<li>
-										<a href="javascript:;">
-											<div class="t-curriculum-thumb">
-												<img src="../../../assets/images/teacher/teacher_llj_curriculum_2.png" alt="커리큘럼이미지2">
-											</div>
-											<div class="t-curriculum-text">
-												<p>[2026] 이원준 BrainCracker 언어이해 기출 Archive</p>
-												<span>연도별/영역별로 기출문제를 풀어보고 필요한 문항에 대한 해설강의를 검색할 수 있는 강의</span>
-											</div>
-										</a>
+										<div class="t-curriculum-thumb">
+											<img src="../../../assets/images/teacher/teacher_llj_curriculum_2.png" alt="커리큘럼이미지2">
+										</div>
+										<div class="t-curriculum-text">
+											<a href="javascript:;">[2026] 이원준 BrainCracker 언어이해 기출 Archive</a>
+											<span>연도별/영역별로 기출문제를 풀어보고 필요한 문항에 대한 해설강의를 검색할 수 있는 강의</span>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -184,30 +180,36 @@
 											<tr>
 												<th>물리학I</th>
 												<td>
-													<span>First 기초입문 &lt;다각도VER&gt;</span><br />
-													Hidden Track
+													<a href="javascript:;">First 기초입문 &lt;다각도VER&gt;</a><br />
+													<a href="javascript:;">Hidden Track</a>
 												</td>
 												<td>
-													Hidden Track<br />
-													Hidden Track
+													<a href="javascript:;">Hidden Track</a><br />
+													<a href="javascript:;">Hidden Track</a>
 												</td>
 												<td>
-													Hidden Track<br />
-													Hidden Track<br />
-													Hidden Track<br />
-													Hidden Track<br />
-													Hidden Track<br />
-													Hidden Track
+													<a href="javascript:;">Hidden Track</a><br />
+													<a href="javascript:;">Hidden Track</a><br />
+													<a href="javascript:;">Hidden Track</a><br />
+													<a href="javascript:;">Hidden Track</a><br />
+													<a href="javascript:;">Hidden Track</a><br />
+													<a href="javascript:;">Hidden Track</a>
 												</td>
 											</tr>
 											<tr>
 												<th>2022 개정 통합과학</th>
-												<td colspan="3">기범적 사고 &lt;통합과학에는 B의 관점이 있다&gt;</td>
+												<td colspan="3">
+													<a href="javascript:;">기범적 사고 &lt;통합과학에는 B의 관점이 있다&gt;</a>
+												</td>
 											</tr>
 											<tr>
 												<th>물리학 실전 모의고사</th>
-												<td colspan="2">물리학I 봉투 모의고사 시리즈</td>
-												<td>물리학I 모의고사 Collection</td>
+												<td colspan="2">
+													<a href="javascript:;">물리학I 봉투 모의고사 시리즈</a>
+												</td>
+												<td>
+													<a href="javascript:;">물리학I 모의고사 Collection</a>
+												</td>
 											</tr>
 										</tbody>
 									</table>
@@ -1034,6 +1036,7 @@
 		</footer>
 
 		<a href="javascript:pageTopMove();" class="btn-top"><img src="../../../assets/images/btn_top.svg" alt="top" /></a>
+		
 	</div>
 
 	<!-- 팝업 -->
@@ -1479,6 +1482,35 @@
 		</div>
 	</div>
 
+	<div class="popup" id="popupProfile">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupProfile');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				이원준 교수님 프로필
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="heading highlight border-line">약력</div>
+				<div class="box">
+					<p>
+						연세대학교 교육학과 졸업
+						<br/>
+						現 상상로스쿨 추리논증 전임교수<br/>
+						現 합격의법학원 PSAT 상황판단 전임교수<br/>
+						前 메가로스쿨 추리논증 전임교수<br/>
+						前 스카이로스쿨 추리논증 전임교수<br/>
+						前 합격의법학원 PSAT 언어논리 전임교수<br/>
+						前 일등로스쿨 추리논증 전임교수
+					</p>
+				</div>
+				<div class="heading highlight border-line">저서</div>
+				<div class="box">
+					<p>
+						shot the 추리논증
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script src="../../../assets/js/script.js"></script>
