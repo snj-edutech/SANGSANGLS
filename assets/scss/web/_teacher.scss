@@ -32,6 +32,7 @@
                     }
                     &-curriculum {
                         &-list {
+                            width: 100%;
                             margin-left: 80px;
                             ul {
                                 padding: 24px 0;
@@ -39,28 +40,31 @@
                                 border-left: 0;
                                 border-right: 0;
                                 li {
+                                    display: flex;
+                                    align-items: center;
                                     margin-bottom: 8px;
                                     &:last-child {
                                         margin-bottom: 0;
-                                    }
-                                    a {
-                                        display: flex;
-                                        align-items: center;
                                     }
                                 }
                             }
                         }
                         &-thumb {
                             width: 120px;
+                            margin-right: 24px;
                             img {
                                 width: 100%;
-                                margin-right: 24px;
                             }
                         }
                         &-text {
                             font-size: 18px;
                             font-weight: 600;
-                            margin-left: 24px;
+                            a {
+                                display: block;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
                             span {
                                 font-size: 15px;
                                 font-weight: 400;
