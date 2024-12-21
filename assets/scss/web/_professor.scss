@@ -100,6 +100,10 @@
 
 	.professor-content{
 		padding-top:80px;
+
+		&.pt-40{
+			padding-top:40px;
+		}
 		h3+.holder{
 			margin-top:10px;
 		}

@@ -105,20 +105,19 @@
 			<div class="section-professor-content" id="sectionMenu">
 				<div class="wrap">
 					<div class="tab-box">
-						<div class="tab-menu">
+						<div class="tab-menu-small">
 							<ul>
-								<li ><a href="#tabView1" class="page-move2">교수소개</a></li>
-								<li><a href="#tabView2" class="page-move2">개설강좌</a></li>
-								<li><a href="#tabView3" class="page-move2">공지사항</a></li>
-								<li class="active"><a href="#tabView4" class="page-move2">학습질문</a></li>
-								<li><a href="#tabView4" class="page-move2">수강후기</a></li>
+								<li ><a href="javascript:;">커리큘럼</a></li>
+								<li><a href="javascript:;">개설강좌</a></li>
+								<li class="active"><a href="javascript:;">학습질문</a></li>
+								<li><a href="javascript:;">수강후기</a></li>
+								<li><a href="javascript:;">공지사항</a></li>
 							</ul>
 						</div>
 
 						<div class="tab-view active">
-							<div class="professor-content" id="tabView3">	
+							<div class="professor-content pt-40">	
 								<h3>
-									학습질문
 									<div class="search-input-box">
 										<div class="search-text">
 											<input type="text" id="txtSearch" name="txtSearch" placeholder="검색">
@@ -795,10 +794,6 @@
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
-		tabMenuEvent('.section-professor-content');
-
-		$(window).on("scroll", scrollMenuEvent);
-		scrollMenuEvent();
 	});
 </script>
 </body>

@@ -2463,6 +2463,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap h3 {
   position: relative;
+  min-height: 48px;
   font-size: 24px;
   color: #2c2923;
   font-weight: 300;
@@ -4673,7 +4674,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .notice-view-table .table-row td.editor .study-info dl dd {
   font-weight: 600;
-  color: #A07D3B;
+  color: #7A746A;
 }
 
 #wrap .notice-view-table .table-row td.editor .study-info dl dd + dt {
@@ -7924,6 +7925,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .professor-content {
   padding-top: 80px;
+}
+
+#wrap .professor-content.pt-40 {
+  padding-top: 40px;
 }
 
 #wrap .professor-content h3 + .holder {
