@@ -1,82 +1,108 @@
 #wrap{
-    .section-teacher-gate{
-        .teacher-gate-list{
-            .list{
-                display: flex;
-                margin-top:160px;
-                &:first-child{
-                    margin-top:120px;
+    .section-teacher-home{
+        .teacher-home-detail {
+            display: flex;
+            margin-bottom: 160px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .t {
+                &-thumb {
+                    min-width: 344px;
+                    height: 436px;
                 }
-                .t {
-                    &-thumb {
-                        &-img {
-                            width: 245px;
-                            height: 310px;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        &-text {
-                            margin-top: 16px;
+                &-content {
+                    width: calc(100% - 344px);
+                    padding-left: 80px;
+                    box-sizing: border-box;
+                    &-title {
+                        display: flex;
+                        align-items: center;
+                        &-label {
+                            margin-right: 32px;
+                            padding: 16px;
+                            border: 1px solid #2c2923;
                             p {
-                                font-size: 24px;
-                                line-height: 1.5;
+                                font-size: 32px;
                                 font-weight: 200;
                             }
-                            span {
-                                font-size: 15px;
-                                font-weight: 400;
+                        }
+                        &-desc {
+                            p {
+                                font-size: 32px;
+                                font-weight: 200;
+                            }
+                            a {
+                                font-size: 14px;
+                                color: #bebebc;
                             }
                         }
                     }
-                    &-curriculum {
-                        &-list {
-                            width: 100%;
-                            margin-left: 80px;
-                            ul {
-                                padding: 24px 0;
-                                border: 1px solid #e4ded3;
-                                border-left: none;
-                                border-right: none;
-                                li {
-                                    margin-bottom: 8px;
-                                    &:last-child {
-                                        margin-bottom: 0;
+                    &-notice {
+                        margin: 72px 0 32px;
+                        ul {
+                            li {
+                                margin-bottom: 16px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                                a {
+                                    position: relative;
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 16px;
+                                    padding-right: 90px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    box-sizing: border-box;
+                                    span {
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 0;
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        transform: translateY(-50%);
                                     }
                                 }
                             }
-                            a { 
-                                display: flex;
-                                align-items: center;
-                                width: 100%;
-                                img {
-                                    width: 100%;
-                                    height: 100%;
+                        }
+                    }
+                }
+                &-curriculum {
+                    &-list {
+                        ul {
+                            padding: 24px 0;
+                            border: 1px solid #E4DED3;
+                            border-left: none;
+                            border-right: none;
+                            li {
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 8px;
                                 }
                             }
                         }
-                        &-thumb {
-                            width: 120px;
-                            height: 80px;
+                    }
+                    &-thumb {
+                        width: 96px;
+                        margin-right: 24px;
+                    }
+                    &-text {
+                        p {
+                            font-size: 18px;
+                            font-weight: 600;
                         }
-                        &-text {
-                            margin-left: 24px;
-                            p {
-                                font-size: 18px;
-                                font-weight: 600;
-                                margin-bottom: 4px;
-                            }
-                            span {
-                                font-size: 14px;
-                                font-weight: 400;
-                            }
+                        span {
+                            font-size: 15px;
+                            font-weight: 400;
                         }
                     }
                 }
             }
         }
-        
     }
 
 
