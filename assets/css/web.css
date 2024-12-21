@@ -2395,6 +2395,35 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: right;
 }
 
+#wrap #popupLayerText .popup-wrap {
+  width: 423px;
+  border: 1px solid #504b42;
+}
+
+#wrap #popupLayerText .popup-wrap .popup-title {
+  padding: 6.4vw;
+  line-height: 1;
+  background-color: #504b42;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap #popupLayerText .popup-wrap .popup-title {
+    padding: 24px;
+  }
+}
+
+#wrap #popupLayerText .popup-wrap .popup-close {
+  top: 10px;
+}
+
+#wrap #popupLayerText .popup-wrap .popup-cont {
+  padding: 0;
+}
+
+#wrap #popupLayerText .popup-wrap .popup-cont img {
+  width: 100%;
+}
+
 .dim {
   position: fixed;
   top: 0;
