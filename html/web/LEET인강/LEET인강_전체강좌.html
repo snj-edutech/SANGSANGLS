@@ -79,25 +79,8 @@
 		</header>
 
 		<div id="contents">
-			<div class="section-online-title">
-				<div class="wrap">
-					<h2>LEET 인강</h2>
-					<div class="tab-box">
-						<div class="tab-menu-small">
-							<ul>
-								<li><a href="javascript:;">프리패스</a></li>
-								<li><a href="javascript:;">교수패스</a></li>
-								<li class="active"><a href="javascript:;">전체강좌</a></li>
-								<li><a href="javascript:;">특강</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-
 			<div class="section-online-slide">
 				<div class="wrap">
-					<h3>시즌 추천</h3>
 					<div class="slider season-slider" data-slide="seasonSlider">
 						<div class="list">
 							<a href="javascript:;">
@@ -116,7 +99,7 @@
 			<div class="section-online-content">
 				<div class="wrap">
 					<div class="tab-box">
-						<div class="tab-menu">
+						<div class="tab-menu-small">
 							<ul>
 								<li class="active"><a href="javascript:;">과목별</a></li>
 								<li><a href="javascript:;">교수별</a></li>
@@ -125,6 +108,7 @@
 						</div>
 
 						<div class="tab-view active">
+
 							<div class="category-box">
 								<div class="category-list">
 									<ul>
@@ -132,11 +116,8 @@
 										<li><a href="javascript:;">언어이해</a></li>
 										<li><a href="javascript:;">추리논증</a></li>
 										<li><a href="javascript:;">논술</a></li>
-										<li><a href="javascript:;">자기소개서</a></li>
-										<li><a href="javascript:;">자기소개서+온라인첨삭</a></li>
 									</ul>
 								</div>
-		
 							</div>
 
 							<div class="lecture-data-list">
@@ -1701,7 +1682,7 @@
 <script src="../../../assets/js/script.js"></script>
 <script>
 	$(function(){
-		tabMenuEvent('.section-online-content');
+		tabMenuClickEvent('.section-online-content');
 		tabMenuClickEvent('.section-online-title');
 
 		slideEvent();

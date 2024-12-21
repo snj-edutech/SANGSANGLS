@@ -1,29 +1,80 @@
 #wrap{
     // LEFT 인강
 	.section-online-content{
+		margin-top:120px;
+		.select-box{
+			background-color:$color-white;
+			padding-top:68px;
+			padding-bottom:60px;
+			.btn-search{
+				background-color:rgba(80, 75, 66, 1);
+
+			}
+		}
+		.category-box{
+			padding:0;
+			background-color:$color-white;
+		}
+
+		.category-list{
+			padding-bottom:88px;
+			margin-top:24px;
+			width:100%;
+			ul{
+				display:flex;
+				li{
+					margin-right:8px;
+					width:auto !important;
+					&:first-child{
+						a{
+							border-left:0;
+						}
+					}
+					a{
+						display:inline-block;
+						padding: 4px 16px 16px;
+						height:43px;
+						font-size:15px;
+						font-weight:400;
+						line-height:22.5px;
+						border:none;
+						color:$color-light-gray;
+						@include boxSizing(border-box);
+					}
+					&.active, &:hover{
+						a{
+							color:$color-black;
+							background-color:$color-white;
+							border-bottom:2px solid $color-black;
+						}
+					}
+				}
+			}
+		}
+
 		.lecture-data-list{
-			margin-top:80px;
+			//margin-top:80px;
 			&+.action{margin-top:40px;}
 		}
         .tab-view{
             .lecture-data-list{
-				margin-top:0;
+				//margin-top:0;
 				.course-list{
-					&:first-child{border-top:none;	margin-top:0px;}
+					&:first-child{}//border-top:none;	margin-top:0px;}
 				}
 			}
 
 			.category-box +  .lecture-data-list,
 			.select-box +   .lecture-data-list{
 				.course-list{
-					&:first-child{border-top:1px solid $color-light-brown;margin-top:40px;}
+					&:first-child{}//border-top:1px solid $color-light-brown;margin-top:40px;}
 				}
 			}
         }
     }
 
 	.section-online-slide{
-		margin-top:80px;
+		margin-top:0px;
 		.season-slider{
 			.slick-slide{
 				margin-left:24px;

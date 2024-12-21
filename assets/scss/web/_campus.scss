@@ -1,7 +1,41 @@
 #wrap{
 	.section-campus-content{
 		//.lecture-data-list{margin-top:40px;}
-	
+
+		.tab-menu{
+			width:100%;
+			border-bottom:1px solid $color-light-brown;
+			height:43px;
+			margin-top:40px;
+			ul{
+				display:flex;
+				li{
+					margin-right:8px;
+					width:auto !important;
+					a{
+						display:inline-block;
+						padding: 4px 16px 16px;
+						height:43px;
+						font-size:15px;
+						font-weight:400;
+						line-height:22.5px;
+						border:none;
+						background-color:transparent;
+					}
+					&.active{
+						a{
+							background-color:$color-white;
+							border-bottom:2px solid $color-black;
+						}
+					}
+				}
+			}
+		}
+
+		.btn-search{
+			background-color:rgba(80, 75, 66, 1);
+
+		}
 
 		.tab-view{
 			.lecture-data-list .course-list:first-child{border-top:none;}
@@ -10,7 +44,7 @@
 		}
 
 		.campus-reservation{
-			margin-top:40px;
+			margin-top:80px;
 
 			.notice-text{
 				margin-top:10px;
@@ -108,7 +142,7 @@
 		}
 
 		.campus-reservation-result{
-			margin-top:40px;
+			margin-top:80px;
 			background-color:$color-light-beige;
 			height:480px;
 			text-align:center;
@@ -131,7 +165,13 @@
 		}
 
 		.campus-data-list{
-			margin-top:80px;
+			margin-top:40px;
+		}
+
+		.campus-data-view{
+			h3{
+				padding-bottom:32px;
+			}
 		}
 
 		.campus-guide-view{
@@ -160,6 +200,7 @@
 		}
 
 		.campus-map{
+			padding-top:80px;
 			.map-info{
 				margin-top:30px;
 				display:flex;
@@ -318,5 +359,12 @@
 			}
 		}
 
+	}
+
+	.section-campus-view{
+		padding-bottom:40px;
+		.img-box{
+			img{width:100%;}
+		}
 	}
 }
