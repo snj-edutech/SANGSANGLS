@@ -14175,6 +14175,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list {
+  width: 100%;
   margin-left: 80px;
 }
 
@@ -14200,21 +14201,30 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 8px;
+}
+#wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li:last-child {
+  margin-bottom: 0;
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-thumb {
   width: 120px;
+  margin-right: 24px;
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-thumb img {
   width: 100%;
-  margin-right: 24px;
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text {
   font-size: 18px;
   font-weight: 600;
-  margin-left: 24px;
+}
+#wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a {
+  display: block;
+}
+#wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a:hover {
+  text-decoration: underline;
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text span {
