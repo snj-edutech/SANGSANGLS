@@ -249,6 +249,9 @@
 					font-size:13px;line-height:19.5px;font-weight:400;
 					padding-right:12px;
 					margin-right:8px;
+					a{
+						color:$color-light-gray;
+					}
 					&:after{
 						content:'';
 						width:1px;

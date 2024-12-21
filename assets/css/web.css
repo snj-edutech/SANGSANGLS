@@ -12277,6 +12277,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-right: 8px;
 }
 
+#wrap .section-main-curriculum .video-text .video-desc span a {
+  color: #BEBEBC;
+}
+
 #wrap .section-main-curriculum .video-text .video-desc span:after {
   content: '';
   width: 1px;
@@ -14187,14 +14191,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li {
-  margin-bottom: 8px;
-}
-
-#wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li:last-child {
-  margin-bottom: 0;
-}
-
-#wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14203,6 +14199,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
           align-items: center;
   margin-bottom: 8px;
 }
+
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li:last-child {
   margin-bottom: 0;
 }
@@ -14220,9 +14217,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 18px;
   font-weight: 600;
 }
+
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a {
   display: block;
 }
+
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-text a:hover {
   text-decoration: underline;
 }
