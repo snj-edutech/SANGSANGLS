@@ -1028,6 +1028,7 @@
 	}
 
 	#popupLayerText{
+		position:fixed;right:0;top:200px;z-index:100;
 		.popup-wrap{
 			width:423px;
 			border:1px solid rgba(80, 75, 66, 1);

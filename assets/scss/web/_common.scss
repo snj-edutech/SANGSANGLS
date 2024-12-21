@@ -406,7 +406,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		.price-subject{color:$color-black;font-size:16px;font-weight:600;margin-right:24px;}
-		.price-before{color:rgba(221, 221, 221, 1);font-size:16px;font-weight:400;text-decoration: line-through;margin-right:8px;}
+		.price-before{color:$color-light-gray;font-size:16px;font-weight:400;text-decoration: line-through;margin-right:8px;}
 		.price-after{color:$color-black;font-size:18px;font-weight:400;}
 		&.total{
 			.price-before{}
@@ -703,7 +703,7 @@
             height:40px;
             &::placeholder { color: $color-light-gray; }
             &.disabled{
-                background-color:$color-light-gray !important;
+                background-color:$color-light-beige !important;
                 color:$color-gray;
             }
         }
@@ -821,7 +821,7 @@
 			}
 
             &.disabled{
-                background-color:$color-light-gray;
+                background-color:$color-light-beige;
                 color:$color-gray;
                 .arrow {
                     background-image: url('../images/icon_select_arrow_gray.svg');

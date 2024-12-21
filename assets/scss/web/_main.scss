@@ -200,13 +200,13 @@
 			height:162px;
 			a{
 				position:relative;
-				&:after{
-					content:'';
-					position:absolute;right:8px;bottom:8px;width:32px;height:32px;z-index:1;
-					background: url(../images/btn_play_gray.svg) no-repeat 0 0;
-					background-size:cover;
-					opacity:0.15;
-				}
+				// &:after{
+				// 	content:'';
+				// 	position:absolute;right:8px;bottom:8px;width:32px;height:32px;z-index:1;
+				// 	background: url(../images/btn_play_gray.svg) no-repeat 0 0;
+				// 	background-size:cover;
+				// 	opacity:0.15;
+				// }
 			}
 
 			&:hover{
@@ -216,9 +216,9 @@
 					}
 				}
 
-				&:after{
-					opacity:1;
-				}
+				// &:after{
+				// 	opacity:1;
+				// }
 			}
 
 			a{
@@ -286,12 +286,12 @@
 				width:744px;
 				height:374px;
 				a{
-					&:after{
-						background: url(../images/btn_play_black.svg) no-repeat 0 0;
-						width:40px;
-						height:40px;
+					// &:after{
+					// 	background: url(../images/btn_play_black.svg) no-repeat 0 0;
+					// 	width:40px;
+					// 	height:40px;
 						
-					}
+					// }
 				}
 			}
 
