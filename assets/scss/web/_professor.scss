@@ -46,7 +46,7 @@
 
 	.section-professor-home{
 		overflow:hidden;
-		position:relative;top:-101px;
+		position:relative;top:-121px;
 		background-color:$color-light-brown2;
 		.professor-desc{
 			text-align:center;
@@ -99,7 +99,11 @@
 	}
 
 	.professor-content{
-		padding-top:60px;
+		padding-top:80px;
+
+		&.pt-40{
+			padding-top:40px;
+		}
 		h3+.holder{
 			margin-top:10px;
 		}

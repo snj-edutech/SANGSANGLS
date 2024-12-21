@@ -12,9 +12,8 @@
 			margin:0;color:#504B42;
 			&.subject{
 				font-weight:400;
-				@include vw(font-size,20px);
-				@include vw(line-height,34px);
-				font-family:$font-notoSerifKr;
+				@include vw(font-size,24px);
+				@include vw(line-height,36px);
                 color:$color-black;
 			}
 			&.desc{
@@ -32,9 +31,9 @@
 			width:100%;
 
 			a{
-				display:block;color:$color-black;@include vw(font-size,18px);
-				font-weight:400;
-				@include vw(line-height,27px);
+				display:block;color:$color-black;@include vw(font-size,20px);
+				font-weight:300;
+				@include vw(line-height,30px);
 				@include vw(padding,16px);
 				background-color:$color-light-brown2;
 				@include boxSizing(border-box);
@@ -47,31 +46,34 @@
 					background-color:#504b42;
 					color:$color-light-beige;
 					@include vw(height,128px);
-					cursor:default;
-
 				}
 			}
 
 			.main-banner-bottom{
 				@include vw(margin-top,8px);
 				display:flex;
-				.banner-left{
-                    //@include vw(width,163.5px);
+				
+				.banner-one{
+                    @include vw(margin-left,8px);
 					width:50%;
 					a{
 						width:100%;
 						@include vw(height,232px);
+						background-color:rgba(221, 219, 216, 1);
+						color:rgba(36, 35, 33, 1);
 					}
 				}
-				.banner-right{
+
+				.banner-two{
 					//@include vw(width,163.5px);
 					width:50%;
-					@include vw(margin-left,8px);
+					
 					a{
 						@include vw(height,112px);
+						background-color:rgba(242, 239, 231, 1);
+						color:rgba(80, 75, 66, 1);
+						
 						&:first-child{
-							background-color:$color-gray;
-							color:$color-light-beige;
 							@include vw(margin-bottom,8px);
 						}
 					}
@@ -87,7 +89,7 @@
         @include vw(line-height,40.8px);
 		@include vw(margin-bottom,24px);
 		color:$color-white;
-		font-family:$font-notoSerifKr;
+		font-family:$font-Wemakeprice;
 		strong{
 			font-weight:600;
 		}
@@ -120,14 +122,14 @@
 
 
 				position:relative;
-				&:after{
-					content:'';
-					position:absolute;@include vw(right,8px);@include vw(bottom,8px);z-index:1;
-					background: url(../images/mobile/btn_play_gray.svg) no-repeat 0 0;
-					@include vw(width,32px);
-					@include vw(height,32px);
-					background-size:cover;
-				}
+				// &:after{
+				// 	content:'';
+				// 	position:absolute;@include vw(right,8px);@include vw(bottom,8px);z-index:1;
+				// 	background: url(../images/mobile/btn_play_gray.svg) no-repeat 0 0;
+				// 	@include vw(width,32px);
+				// 	@include vw(height,32px);
+				// 	background-size:cover;
+				// }
 			}
 			iframe, video{
 				width:100%;
@@ -172,7 +174,7 @@
 			}
 			.video-title{
 				//@extend %textEllipsis;
-				color:$color-white;@include vw(margin-top,12px);
+				color:$color-white;@include vw(margin-top,8px);
 				@include vw(font-size,18px);@include vw(line-height,27px);font-weight:500;
 			}
 		}
@@ -189,18 +191,22 @@
                 width:100%;
 				@include vw(height,212px);
 				a{
-					&:after{
-						background: url(../images/mobile/btn_play_black.svg) no-repeat 0 0;
-						@include vw(width,40px);
-						@include vw(height,40px);
-						background-size:cover;
-					}
+					// &:after{
+					// 	background: url(../images/mobile/btn_play_black.svg) no-repeat 0 0;
+					// 	@include vw(width,40px);
+					// 	@include vw(height,40px);
+					// 	background-size:cover;
+					// }
 				}
 			}
 
 			.video-text{
 				margin:0;
 				@include vw(margin-top,16px);
+				@media screen and (min-width: 600px) {
+					margin-top:0;
+					@include vw(margin-left,16px);
+				}
 				.video-desc{
 					span{
 						@include vw(font-size,13px);
@@ -260,7 +266,7 @@
 		@include vw(padding,64px 0);
 
 		.grid-list{
-			max-width:375px;
+			max-width:333px;
 			margin:0 auto;
 		}
 		
@@ -313,13 +319,13 @@
 			.text-box{
 				@include vw(margin-top,24px);
 				.subject{
-					font-weight:600;
-					@include vw(font-size,20px);
-					@include vw(line-height,30px);
+					font-weight:400;
+					@include vw(font-size,24px);
+					@include vw(line-height,36px);
 					color:$color-white;
 				}
 				.desc{
-					@include vw(margin-top,8px);
+					@include vw(margin-top,16px);
 					color:$color-white;
 					@include vw(font-size,14px);
 					font-weight:400;

@@ -1026,4 +1026,26 @@
 			}
 		}
 	}
+
+	#popupLayerText{
+		position:fixed;right:0;top:200px;z-index:100;
+		.popup-wrap{
+			width:423px;
+			border:1px solid rgba(80, 75, 66, 1);
+			.popup-title{
+				@include vw(padding,24px);
+				line-height:1;
+				background-color:rgba(80, 75, 66, 1);
+			}
+
+			.popup-close{
+				top:10px;
+			}
+			.popup-cont{
+				
+				padding:0;
+				img{width:100%;}
+			}
+		}
+	}
 }
