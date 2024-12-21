@@ -12,9 +12,9 @@
 			margin:0;color:#504B42;
 			&.subject{
 				font-weight:400;
-				@include vw(font-size,20px);
-				@include vw(line-height,34px);
-				font-family:$font-notoSerifKr;
+				@include vw(font-size,24px);
+				@include vw(line-height,36px);
+				font-family:$font-Wemakeprice;
                 color:$color-black;
 			}
 			&.desc{
@@ -32,9 +32,9 @@
 			width:100%;
 
 			a{
-				display:block;color:$color-black;@include vw(font-size,18px);
-				font-weight:400;
-				@include vw(line-height,27px);
+				display:block;color:$color-black;@include vw(font-size,20px);
+				font-weight:300;
+				@include vw(line-height,30px);
 				@include vw(padding,16px);
 				background-color:$color-light-brown2;
 				@include boxSizing(border-box);
@@ -53,23 +53,28 @@
 			.main-banner-bottom{
 				@include vw(margin-top,8px);
 				display:flex;
-				.banner-left{
-                    //@include vw(width,163.5px);
+				
+				.banner-one{
+                    @include vw(margin-left,8px);
 					width:50%;
 					a{
 						width:100%;
 						@include vw(height,232px);
+						background-color:rgba(221, 219, 216, 1);
+						color:rgba(36, 35, 33, 1);
 					}
 				}
-				.banner-right{
+
+				.banner-two{
 					//@include vw(width,163.5px);
 					width:50%;
-					@include vw(margin-left,8px);
+					
 					a{
 						@include vw(height,112px);
+						background-color:rgba(242, 239, 231, 1);
+						color:rgba(80, 75, 66, 1);
+						
 						&:first-child{
-							background-color:$color-gray;
-							color:$color-light-beige;
 							@include vw(margin-bottom,8px);
 						}
 					}
@@ -85,7 +90,7 @@
         @include vw(line-height,40.8px);
 		@include vw(margin-bottom,24px);
 		color:$color-white;
-		font-family:$font-notoSerifKr;
+		font-family:$font-Wemakeprice;
 		strong{
 			font-weight:600;
 		}
@@ -170,7 +175,7 @@
 			}
 			.video-title{
 				//@extend %textEllipsis;
-				color:$color-white;@include vw(margin-top,12px);
+				color:$color-white;@include vw(margin-top,8px);
 				@include vw(font-size,18px);@include vw(line-height,27px);font-weight:500;
 			}
 		}
@@ -199,6 +204,10 @@
 			.video-text{
 				margin:0;
 				@include vw(margin-top,16px);
+				@media screen and (min-width: 600px) {
+					margin-top:0;
+					@include vw(margin-left,16px);
+				}
 				.video-desc{
 					span{
 						@include vw(font-size,13px);
@@ -311,13 +320,13 @@
 			.text-box{
 				@include vw(margin-top,24px);
 				.subject{
-					font-weight:600;
-					@include vw(font-size,20px);
-					@include vw(line-height,30px);
+					font-weight:400;
+					@include vw(font-size,24px);
+					@include vw(line-height,36px);
 					color:$color-white;
 				}
 				.desc{
-					@include vw(margin-top,8px);
+					@include vw(margin-top,16px);
 					color:$color-white;
 					@include vw(font-size,14px);
 					font-weight:400;

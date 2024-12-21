@@ -8923,21 +8923,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-slogan p.subject {
   font-weight: 400;
-  font-size: 5.33333vw;
-  line-height: 9.06667vw;
-  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-size: 6.4vw;
+  line-height: 9.6vw;
+  font-family: "Wemakeprice", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   color: #2C2923;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-main-slogan p.subject {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-main-slogan p.subject {
-    line-height: 34px;
+    line-height: 36px;
   }
 }
 
@@ -8984,9 +8984,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-main-banner .main-banner-list a {
   display: block;
   color: #2C2923;
-  font-size: 4.8vw;
-  font-weight: 400;
-  line-height: 7.2vw;
+  font-size: 5.33333vw;
+  font-weight: 300;
+  line-height: 8vw;
   padding: 4.26667vw;
   background-color: #F2EFE7;
   -webkit-box-sizing: border-box;
@@ -8995,13 +8995,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list a {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list a {
-    line-height: 27px;
+    line-height: 30px;
   }
 }
 
@@ -9037,50 +9037,52 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left {
-  width: 50%;
-}
-
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left a {
-  width: 100%;
-  height: 61.86667vw;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-left a {
-    height: 232px;
-  }
-}
-
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right {
-  width: 50%;
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one {
   margin-left: 2.13333vw;
+  width: 50%;
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right {
+  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one {
     margin-left: 8px;
   }
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right a {
-  height: 29.86667vw;
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one a {
+  width: 100%;
+  height: 61.86667vw;
+  background-color: #dddbd8;
+  color: #242321;
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right a {
+  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one a {
+    height: 232px;
+  }
+}
+
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two {
+  width: 50%;
+}
+
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a {
+  height: 29.86667vw;
+  background-color: #f2efe7;
+  color: #504b42;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a {
     height: 112px;
   }
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right a:first-child {
-  background-color: #7A746A;
-  color: #FBFAF6;
+#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a:first-child {
   margin-bottom: 2.13333vw;
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-right a:first-child {
+  #wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a:first-child {
     margin-bottom: 8px;
   }
 }
@@ -9091,7 +9093,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 10.88vw;
   margin-bottom: 6.4vw;
   color: #FFFFFC;
-  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  font-family: "Wemakeprice", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 375px) {
@@ -9281,7 +9283,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-curriculum .video-text .video-title {
   color: #FFFFFC;
-  margin-top: 3.2vw;
+  margin-top: 2.13333vw;
   font-size: 4.8vw;
   line-height: 7.2vw;
   font-weight: 500;
@@ -9289,7 +9291,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 @media screen and (min-width: 375px) {
   #wrap .section-main-curriculum .video-text .video-title {
-    margin-top: 12px;
+    margin-top: 8px;
   }
 }
 
@@ -9371,6 +9373,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .section-main-curriculum .curriculum-main .video-text {
     margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #wrap .section-main-curriculum .curriculum-main .video-text {
+    margin-top: 0;
+    margin-left: 4.26667vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (min-width: 375px) {
+  #wrap .section-main-curriculum .curriculum-main .video-text {
+    margin-left: 16px;
   }
 }
 
@@ -9699,26 +9714,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-special-banner .special-banner-box .text-box .subject {
-  font-weight: 600;
-  font-size: 5.33333vw;
-  line-height: 8vw;
+  font-weight: 400;
+  font-size: 6.4vw;
+  line-height: 9.6vw;
   color: #FFFFFC;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-special-banner .special-banner-box .text-box .subject {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-special-banner .special-banner-box .text-box .subject {
-    line-height: 30px;
+    line-height: 36px;
   }
 }
 
 #wrap .section-special-banner .special-banner-box .text-box .desc {
-  margin-top: 2.13333vw;
+  margin-top: 4.26667vw;
   color: #FFFFFC;
   font-size: 3.73333vw;
   font-weight: 400;
@@ -9727,7 +9742,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 @media screen and (min-width: 375px) {
   #wrap .section-special-banner .special-banner-box .text-box .desc {
-    margin-top: 8px;
+    margin-top: 16px;
   }
 }
 
