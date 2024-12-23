@@ -2436,24 +2436,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .price-box .price-subject {
   color: #2C2923;
-  font-size: 3.7333333333vw;
+  font-size: 3.2vw;
   font-weight: 600;
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-subject {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 #wrap .price-box .price-before {
   color: #BEBEBC;
-  font-size: 3.4666666667vw;
+  font-size: 3.2vw;
   font-weight: 400;
   text-decoration: line-through;
   margin-right: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-before {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -2463,18 +2463,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .price-box .price-after {
   color: #2C2923;
-  font-size: 3.7333333333vw;
+  font-size: 3.2vw;
   font-weight: 600;
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-after {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 #wrap .price-box .price-sale {
   margin-right: 2.1333333333vw;
   color: #A07D3B;
-  font-size: 3.7333333333vw;
+  font-size: 3.2vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-sale {
@@ -2483,7 +2483,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 375px) {
   #wrap .price-box .price-sale {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 #wrap .price-box.total .price-before {

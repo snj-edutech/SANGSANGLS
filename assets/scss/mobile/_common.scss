@@ -193,10 +193,10 @@
 	.price-box{
 		display:flex;
 		align-items: center;
-		.price-subject{color:$color-black;@include vw(font-size,14px);font-weight:600;}
-		.price-before{color:$color-light-gray;@include vw(font-size,13px);font-weight:400;text-decoration: line-through;@include vw(margin-right,8px);}
-		.price-after{color:$color-black;@include vw(font-size,14px);font-weight:600;}
-		.price-sale{@include vw(margin-right,8px);color:$color-brown;@include vw(font-size,14px);}
+		.price-subject{color:$color-black;@include vw(font-size,12px);font-weight:600;}
+		.price-before{color:$color-light-gray;@include vw(font-size,12px);font-weight:400;text-decoration: line-through;@include vw(margin-right,8px);}
+		.price-after{color:$color-black;@include vw(font-size,12px);font-weight:600;}
+		.price-sale{@include vw(margin-right,8px);color:$color-brown;@include vw(font-size,12px);}
 		&.total{
 			.price-before{@include vw(font-size,14px);}
 			.price-after{@include vw(font-size,20px);}
