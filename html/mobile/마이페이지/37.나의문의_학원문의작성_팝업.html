@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+	<link rel="stylesheet" href="../../../assets/css/mobile.css" />
+
+	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+	<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="container">
+		<div id="contents" class="">
+			
+		</div>
+	</div>
+
+	<!-- 팝업 -->
+	<div class="popup popup-inquiry" id="popupAcademyInquiry">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupAcademyInquiry');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				학원 문의 작성
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="lecture-data-input">
+					<dl>
+						<dt>제목</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="문의 제목을 입력하세요" value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>답변 알림</dt>
+						<dd>
+							<div class="input-check-box">
+								<div class="form-control">
+									<input type="text" class="text " placeholder="이메일을 입력하세요" />
+								</div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="checkAnswer1" class="checkbox" checked="">
+										<label for="checkAnswer1">받기</label>
+									</div>
+								</div>
+							</div>
+							<div class="input-check-box">
+								<div class="form-control">
+									<input type="text" class="text " placeholder="휴대폰 번호를 ‘-’ 없이 입력하세요" />
+								</div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="checkAnswer2" class="checkbox" checked="">
+										<label for="checkAnswer2">받기</label>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>문의내용</dt>
+						<dd>
+							<div class="form-control">
+								<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요."></textarea>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>파일첨부</dt>
+						<dd>
+							<div class="file-box">
+								<div class="form-control">
+									<div class="fake-file-box">
+										<input type="text" class="text fake-file-name"placeholder="첨부파일" readonly="">
+										<div class="fake-file">
+											<input type="file" id="fileUpload" name="file" >
+											<label for="fileUpload">찾아보기</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-text"> * 10MB 이하 이미지 파일만 등록 가능합니다. (jpg, png, gif)</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="popup-btn">
+					<a href="javascript:popupClose('#popupAcademyInquiry');" class="btn btn-brown full">등록</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="../../../assets/js/m.script.js"></script>
+<script>
+	$(function(){
+		popupOpen('#popupAcademyInquiry');
+	});
+</script>
+</body>
+</html>

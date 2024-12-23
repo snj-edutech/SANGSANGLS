@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+	<link rel="stylesheet" href="../../../assets/css/mobile.css" />
+
+	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+	<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="container">
+		<div id="contents" class="">
+			
+		</div>
+	</div>
+
+	<!-- 팝업 -->
+	<div class="popup popup-inquiry" id="popupProfessorInquiry">
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupProfessorInquiry');"  class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				교수 문의 작성
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="lecture-data-input">
+					<dl>
+						<dt>교수</dt>
+						<dd>
+							<div class="input-box">
+								<div class="form-control">
+									<div class="select">
+										<select name="" id="">
+											<option value="">과목선택</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-control">
+									<div class="select">
+										<select name="" id="">
+											<option value="">교수선택</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>구분</dt>
+						<dd>
+							<div class="form-control">
+								<span class="fake-radio">
+									<input type="radio" id="radioType1" class="radio" name="radioSelect" checked="">
+									<label for="radioType1">인강</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType2" class="radio" name="radioSelect">
+									<label for="radioType2">교재</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType3" class="radio" name="radioSelect">
+									<label for="radioType3">학원강좌</label>
+								</span>
+								<span class="fake-radio">
+									<input type="radio" id="radioType4" class="radio" name="radioSelect">
+									<label for="radioType4">기타</label>
+								</span>
+							</div>
+
+							<div class="form-text">* 강좌, 교재 문의는 수강중인 강좌에 대해서만 가능합니다.</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>강좌</dt>
+						<dd>
+							<div class="form-control">
+								<div class="select">
+									<select name="" id="">
+										<option value="">문의하실 수강중인 강좌를 선택하세요</option>
+									</select>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>강의</dt>
+						<dd>
+							<div class="form-control">
+								<div class="select">
+									<select name="" id="">
+										<option value="">문의하실 수강중인 강의를 선택하세요</option>
+									</select>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>제목</dt>
+						<dd>
+							<div class="form-control">
+								<input type="text" class="text" placeholder="문의 제목을 입력하세요" value="" />
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>답변 알림</dt>
+						<dd>
+							<div class="input-check-box">
+								<div class="form-control">
+									<input type="text" class="text " placeholder="이메일을 입력하세요" />
+								</div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="checkAnswer1" class="checkbox" checked="">
+										<label for="checkAnswer1">받기</label>
+									</div>
+								</div>
+							</div>
+							<div class="input-check-box">
+								<div class="form-control">
+									<input type="text" class="text " placeholder="휴대폰 번호를 ‘-’ 없이 입력하세요" />
+								</div>
+								<div class="form-control">
+									<div class="fake-checkbox">
+										<input type="checkbox" id="checkAnswer2" class="checkbox" checked="">
+										<label for="checkAnswer2">받기</label>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>문의내용</dt>
+						<dd>
+							<div class="form-control">
+								<textarea class="textarea" cols="100" rows="100" placeholder="내용을 입력해 주세요."></textarea>
+							</div>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt>파일첨부</dt>
+						<dd>
+							<div class="file-box">
+								<div class="form-control">
+									<div class="fake-file-box">
+										<input type="text" class="text fake-file-name"placeholder="첨부파일" readonly="">
+										<div class="fake-file">
+											<input type="file" id="fileUpload" name="file" >
+											<label for="fileUpload">찾아보기</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-text"> * 10MB 이하 이미지 파일만 등록 가능합니다. (jpg, png, gif)</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="popup-btn">
+					<a href="javascript:popupClose('#popupProfessorInquiry');" class="btn btn-brown full">등록</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="../../../assets/js/m.script.js"></script>
+<script>
+	$(function(){
+		popupOpen('#popupProfessorInquiry');
+	});
+</script>
+</body>
+</html>

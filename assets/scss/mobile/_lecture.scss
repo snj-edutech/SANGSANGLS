@@ -49,6 +49,10 @@
         
                                 }
                             }
+
+							span{
+								color:$color-gray;
+							}
 						}
 					}
 
@@ -277,7 +281,6 @@
 			@include vw(line-height,22.1px);
 			p{
 				@include vw(font-size,13px);
-				color:$color-black;
 				@include vw(line-height,22.1px);
 				position:relative;
 				display:inline-block;
@@ -358,6 +361,14 @@
 			.lecture-text{
 				@include vw(margin-top,8px);
 			}
+		}
+
+		.lecture-desc{
+			@include vw(margin-top,20px);
+			font-weight:400;
+			@include vw(font-size,14px);
+			color:$color-black;
+			@include vw(line-height,23.8px);
 		}
 		
 	}
