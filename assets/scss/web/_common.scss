@@ -1183,6 +1183,36 @@
         }
     }
 
+    .report-table{
+        @include vw(margin-bottom, 20px);
+        .table-row{
+           
+            tr{
+                th,td{
+                    @include vw(font-size, 16px);
+                    @include vw(padding, 12px 0);
+                    border-right:1px solid $color-light-brown;
+                    &:last-child{
+                        border-right:0;
+                    }
+                }
+            }
+        }
+        .action{
+            margin-top:0;
+            .btn-check{
+                @include vw(width, 71px);
+                margin:0 auto;
+                @include vw(padding,0 16px);@include vw(height, 38px);@include vw(line-height, 38px);
+            }
+        }
+
+        .nodata-box{
+            @include vw(height, 267px);
+            background-color:transparent;
+        }
+    }
+
 	.border-left-line{
 		border-left:1px solid $color-light-brown;
 	}
