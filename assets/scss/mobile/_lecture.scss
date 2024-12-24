@@ -1,15 +1,375 @@
 #wrap{
+	.lecture-data-list{
+		border-top: 1px solid $color-light-brown;
+        .list{
+            @include vw(padding,24px 0);
+            border-bottom:1px solid $color-light-brown;
+            .desc-box{
+				position:relative;
+               display:flex;
+			   //width:100%;
+				.t-img{
+					background-color:$color-light-brown2;
+					@include vw(min-width, 48px);@include vw(height, 48px);
+					overflow:hidden;
+					
+					img{
+						width:100%;
+						height:100%;
+					}
+
+					&+.t-desc{@include vw(margin-left,16px);}
+				}
+
+				.t-desc{
+					text-align:left;
+                    width:100%;
+					.desc-more + .desc-info{
+						@include vw(margin-bottom,10px);
+					}
+                    .desc-info{
+                        display:flex;
+						align-items: center;
+						@include vw(margin-bottom,4px);
+						p{
+                            position:relative;
+							@include vw(font-size,12px);
+                            color:$color-black;
+                            @include vw(line-height,20.4px);
+							font-weight:400;
+                            &+p{
+                                @include vw(margin-left,8px);
+                                @include vw(padding-left,8px);
+                                &:before{
+                                    content:'';
+                                    width:1px;
+                                    @include vw(height,12px);
+                                    background-color:$color-light-brown;
+                                    position:absolute;left:0;top:50%;@include vw(margin-top,-6px);
+        
+                                }
+                            }
+
+							span{
+								color:$color-gray;
+							}
+						}
+					}
+
+					.desc-title{
+                       
+						color:$color-black;
+						font-weight:600;
+                        @include vw(font-size,14px);
+                        @include vw(line-height,23.8px);
+                        @include multipleEllipsis(2);
+						a{display:block;}
+
+						strong{
+							@include vw(font-size,16px);
+							@include vw(line-height,27.2px);
+						}
+					}
+
+					.desc-text{
+                        @include vw(margin-top,4px);
+						display:flex;
+						@include vw(font-size,12px);
+						color:$color-black;
+						@include vw(line-height,20.4px);
+						p{
+							@include vw(font-size,12px);
+							color:$color-black;
+							@include vw(line-height,20.4px);
+							position:relative;
+							display:inline-block;
+							vertical-align:middle;
+                            color:$color-gray;
+                            font-weight:400;
+							span{
+								display:inline-block;
+								@include vw(margin-left,4px);
+								color:$color-black;
+							}
+							strong{
+								display:inline-block;
+								font-weight:600;
+								color:$color-brown;
+								@include vw(margin-left,4px);
+							}
+                            &+p{
+                                @include vw(padding-left,8px);
+                                @include vw(margin-left,8px);
+                                &:before{
+                                    content:'';
+                                    width:1px;
+                                    @include vw(height,12px);
+                                    background-color:$color-light-brown;
+                                    position:absolute;left:0;top:50%;@include vw(margin-top,-6px);
+        
+                                }
+                            }
+							
+					
+						}
+					}
+
+					.desc-num{
+						color:$color-brown;@include vw(font-size,14px);font-weight:600;
+					}
+
+					.desc-price, .desc-point{
+						display:flex;
+						justify-content: space-between;
+						align-items: center;
+						@include vw(margin-top,6px);
+						.count{
+							@include vw(font-size,12px);
+							color:$color-gray;
+							strong{
+								color:$color-black;
+								display:inline-block;
+								@include vw(margin-left,5px);
+							}
+						}
+
+						.price{
+							display:flex;
+							justify-content: flex-end;
+							align-items: center;
+							>div{@include vw(margin-left,12px);}
+							.price-before{color:$color-light-brown;@include vw(font-size,13px);font-weight:400;text-decoration: line-through;}
+							.price-after{color:$color-brown;@include vw(font-size,14px);font-weight:600;}
+							.price-sale{color: #E50000;;@include vw(font-size,14px);font-weight:600;}
+						}
 
 
+					}
+				}
 
+				.t-more, .desc-more{
+					position:absolute;right:0;@include vw(top,-6px);
+					display:flex;font-size:0;
+					.btn-star{
+						background:url('../images/mobile/btn_star_off.svg') no-repeat 0 0;
+						background-size:cover;
+						@include vw(width,32px);@include vw(height,32px);
+						display:block;
+						img{
+							display:none;
+						}
+						&.active{
+							img{display:block;}
+						}
+					}
+				}
+            }
 
+            .action{
+                @include vw(margin-top,12px);
+                .btn{
+                    @include vw(margin-left,8px);
+                }
+            }
+        }
+    }
 
+	.lecture-notice-list{
+		border-top:1px solid $color-light-brown;
+		.list{
+			border-bottom:1px solid $color-light-brown;
+			@include vw(padding,16px 0);
 
+			.info-box{
+				display:flex;
+				justify-content: space-between;
+				@include vw(padding,0 16px);
+				.info-list{
+					.info-text{
+						display:flex;
+						p{
+							position:relative;
+							@include vw(font-size,12px);
+							color:$color-gray;
+							@include vw(line-height,20.4px);
+							font-weight:400;
+							&+p{
+								@include vw(margin-left,8px);
+								@include vw(padding-left,8px);
+								&:before{
+									content:'';
+									width:1px;
+									@include vw(height,12px);
+									background-color:$color-light-brown;
+									position:absolute;left:0;top:50%;@include vw(margin-top,-6px);
+		
+								}
+							}
+						}
+					}
 
+					.info-subject{
+						color:$color-black;
+						@include vw(font-size,13px);
+						@include vw(line-height,22.1px);
+						font-weight:600;
 
+					}
+				}
 
+				.info-time{
+					color:$color-gray;
+					@include vw(font-size,12px);
+					@include vw(line-height,20.4px);
+					font-weight:400;
+				}
 
+			}
 
+			.action-box{
+				@include vw(margin-top,16px);
+				display:none;
+				justify-content: center;
+				.btn{
+					@include vw(margin-left,4px);
+					&:first-child{margin-left:0;}
+					
+				}
+			}
 
+			&.open{
+				background-color:$color-light-brown2;
+				.action-box{
+					display:flex;
+				}
+			}
+		}
+	}
 
+	.lecture-data-input{
+		dl{
+			@include vw(margin-top,24px);
+			&:first-child{@include vw(margin-top,20px);}
+			dt,dd{}
+			dt{font-weight:600;@include vw(font-size,13px);@include vw(line-height,22.1px);}
+			dd{position:relative;@include vw(margin-top,8px);}
+		}
+
+		.btn-map{@include vw(margin-left,20px);}
+		.btn-address{
+			position:absolute;top:50%;transform:translateY(-50%);
+			@include vw(right,12px);@include vw(height,26px);
+		}
+	}
+
+	.lecture-data-view{
+
+		.lecture-line-box{
+			border-top:1px solid $color-light-brown;
+			@include vw(padding,16px 0);
+		}
+		.lecture-subject{
+			font-weight:600;@include vw(font-size,18px);@include vw(line-height,27px);
+			color:$color-black;
+		}
+
+		.lecture-text{
+			@include vw(margin-top,4px);
+			display:flex;
+			@include vw(font-size,13px);
+			color:$color-black;
+			@include vw(line-height,22.1px);
+			p{
+				@include vw(font-size,13px);
+				@include vw(line-height,22.1px);
+				position:relative;
+				display:inline-block;
+				vertical-align:middle;
+				color:$color-gray;
+				font-weight:400;
+				span{
+					display:inline-block;
+					@include vw(margin-left,4px);
+					color:$color-black;
+				}
+				strong{
+					display:inline-block;
+					font-weight:600;
+					color:$color-brown;
+					@include vw(margin-left,4px);
+				}
+				&+p{
+					@include vw(padding-left,8px);
+					@include vw(margin-left,8px);
+					&:before{
+						content:'';
+						width:1px;
+						@include vw(height,12px);
+						background-color:$color-light-brown;
+						position:absolute;left:0;top:50%;@include vw(margin-top,-6px);
+
+					}
+				}
+				
+		
+			}
+		}
+
+		.lecture-category{
+			display:flex;
+			@include vw(font-size,12px);
+			color:$color-black;
+			@include vw(line-height,20.4px);
+			p{
+				@include vw(font-size,12px);
+				color:$color-black;
+				@include vw(line-height,20.4px);
+				position:relative;
+				display:inline-block;
+				vertical-align:middle;
+				color:$color-gray;
+				font-weight:400;
+				span{
+					display:inline-block;
+					@include vw(margin-left,4px);
+					color:$color-black;
+				}
+				strong{
+					display:inline-block;
+					font-weight:600;
+					@include vw(margin-left,4px);
+				}
+				&+p{
+					@include vw(padding-left,8px);
+					@include vw(margin-left,8px);
+					&:before{
+						content:'';
+						width:1px;
+						@include vw(height,12px);
+						background-color:$color-light-brown;
+						position:absolute;left:0;top:50%;@include vw(margin-top,-6px);
+
+					}
+				}
+				
+		
+			}
+		}
+
+		.lecture-title{
+			@include vw(padding-bottom,20px);
+			.lecture-text{
+				@include vw(margin-top,8px);
+			}
+		}
+
+		.lecture-desc{
+			@include vw(margin-top,20px);
+			font-weight:400;
+			@include vw(font-size,14px);
+			color:$color-black;
+			@include vw(line-height,23.8px);
+		}
+		
+	}
 }

@@ -763,6 +763,28 @@
 		}
 	}
 
+	.popup-inquiry{
+		.lecture-data-input dl:first-child {
+			margin-top: 0px;
+		}
+
+		.input-check-box{
+			.text{
+				@include vw(width, 265px);
+			}
+		}
+
+		.form-control .textarea{
+			@include vw(height, 280px);
+		}
+	}
+
+	#popupMessage{
+		.popup-layer-content{
+			@include vw(padding, 20px);
+		}
+	}
+
 
 
 }

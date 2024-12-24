@@ -289,7 +289,7 @@
 		.select {
             display: inline-block;
             font-size: 0;
-            background: url('../images/icon_select_arrow.svg') no-repeat 98% center;
+            background: url('../images/icon_select_arrow.svg') no-repeat 99% center;
             @include vw(background-size, 20px 20px);
 			width:100%;
             select {
@@ -351,6 +351,36 @@
             font-family:$font-pretendard;
             &::placeholder { color: $color-light-gray;@include vw(font-size,14px);font-weight:400; }
            
+        }
+
+		.fake-file-box {
+            @extend %clearfix;
+			position:relative;
+			width:100%;
+            .fake-file-name {
+				width:100%;
+				border:1px solid $color-light-brown;
+				@include vw(padding, 9px 80px 9px 16px);
+            }
+            .fake-file {
+				position:absolute;right:16px;
+				top: 50%;
+				transform: translateY(-45%);
+                input[type="file"] { @extend .sr-only; }
+                label {
+					display:inline-block;
+                    @include vw(padding,5.5px 5px);
+                    text-align: center;
+                    @include vw(font-size,13px);
+                    color: $color-black;
+					border:1px solid $color-light-brown;
+                    cursor: pointer;
+					font-weight:400;
+					border-radius:2px;
+					line-height:1;
+                   
+                }
+            }
         }
 
         .fake-save-box{
@@ -566,10 +596,17 @@
 
 		.open+.layer-box{display:block;}
 	}
+	.input-check-box{
+		display:flex;align-items:center;
+		.form-control + .form-control{@include vw(margin-left,8px);}
 
+		&+.input-check-box{margin-top:10px;}
+	}
 	.input-box{
 		display:flex;align-items:center;
-		
+		.form-control{
+			@extend %variable;
+		}
 		.form-control + .form-control{@include vw(margin-left,8px);}
 		&+.input-box{margin-top:10px;}
 		
