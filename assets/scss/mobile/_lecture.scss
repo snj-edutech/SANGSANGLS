@@ -263,7 +263,10 @@
 			dd{position:relative;@include vw(margin-top,8px);}
 		}
 
-		.btn-map{@include vw(margin-left,20px);}
+		.btn-map{
+			//@include vw(margin-left,20px);
+			margin-left:auto;
+		}
 		.btn-address{
 			position:absolute;top:50%;transform:translateY(-50%);
 			@include vw(right,12px);@include vw(height,26px);

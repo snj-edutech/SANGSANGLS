@@ -218,23 +218,7 @@
 
 	}
 
-	.section-action{
-		@include vw(padding, 20px 20px);
-		display:flex;justify-content: center;
-		a{
-			&:only-child,
-			&:nth-child(1):nth-last-child(1) { width: 100%; }
-		
-			&:nth-child(1):nth-last-child(2),
-			&:nth-child(2):nth-last-child(1) { 
-				width:50%;
-				@include vw(margin-left, 8px);
-				&:first-child{
-					margin-left:0;
-				}
-			}
-		}
-	}
+
 	.section-lecture-list +.section-action{@include vw(padding, 0 20px 20px);}
 
 
@@ -483,6 +467,70 @@
 
 	.section-answer{
 		@include vw(padding-top, 32px);
+	}
+
+	.section-password{
+		@include vw(padding-top, 80px);
+		.text-box{
+			text-align:center;
+			p{}
+		}
+		.password-input-box{
+			@include vw(width, 232px);
+			margin:0 auto;
+			@include vw(margin-top, 40px);
+			.action{
+				@include vw(margin-top, 40px);
+				
+			}
+		}
+	}
+	
+	.section-mypage-info{
+		@include vw(padding-bottom,32px);
+
+		.holder{
+			&:last-child{padding-bottom:0;}
+		}
+		
+		.lecture-data-input{
+			dl {
+				@include vw(margin-top, 32px);
+			}
+
+			.input-box{
+				.input-text-start{@include vw(width, 48px);}
+				.form-control{width:100%;}
+
+			}
+
+			.average-box{
+				display:flex;
+				align-items:center;
+				.text{@include vw(width, 54px);}
+				.space{
+					display: inline-block;@include vw(padding,0 8px);
+					@include vw(font-size,14px);font-weight:400;color:$color-black;@include vw(line-height,23.8px);
+					&.first{
+						padding-right:0;
+					}
+				}
+
+				.form-text{margin-top:0;}
+			}
+		}
+
+		.notice-list{
+			@include vw(margin-top, 32px);
+		}
+
+		.form-control .textarea{
+			@include vw(height, 140px);
+		}
+
+		.checkbox-box{
+			.form-control{width:50%;}
+		}
 	}
 
 

@@ -119,7 +119,7 @@
 				
 				
 				a{
-					display:inline-block;
+					display:block;
 					font-weight:400;@include vw(font-size,15px);
 					color:#504B42;
 					
@@ -599,6 +599,13 @@
 
 	}
 
+	.checkbox-box{
+		display:flex;align-items:center;
+		flex-wrap:wrap;
+		.fake-checkbox{margin-top:0; @include vw(margin-right, 20px);}
+	}
+
+
 	.date-box{
 		position:relative;
        // display:flex;
@@ -687,21 +694,21 @@
 		display:flex;align-items:center;
 		.form-control + .form-control{@include vw(margin-left,8px);}
 
-		&+.input-check-box{margin-top:10px;}
+		&+.input-check-box{@include vw(margin-top,10px);}
 	}
 	.input-box{
 		display:flex;align-items:center;
 		.form-control{
-			@extend %variable;
+			//@extend %variable;
 		}
 		.form-control + .form-control{@include vw(margin-left,8px);}
-		&+.input-box{margin-top:10px;}
+		&+.input-box{@include vw(margin-top,10px);}
 		
 		.input-text-start{
 			@include vw(font-size,14px);
 			font-weight:400;
 			color:$color-black;
-			margin-right:20px;
+			@include vw(margin-right,8px);
             strong{font-weight:600;}
 		}
 
@@ -896,6 +903,12 @@
 		}
 	}
 
+	.notice-list{
+        li{
+            @include vw(font-size,14px);font-weight:400;color:$color-gray;@include vw(line-height,23.8px);
+        }
+    }
+
 	.category-list{
 		display:flex;
 
@@ -936,5 +949,41 @@
 		&.flex-center{justify-content: center;}
 		&.flex-end{justify-content: flex-end;}
         &.flex-between{justify-content: space-between;}
+	}
+
+	.section-action{
+		@include vw(padding, 20px 20px);
+		display:flex;justify-content: center;
+		a{
+			&:only-child,
+			&:nth-child(1):nth-last-child(1) { width: 100%; }
+		
+			&:nth-child(1):nth-last-child(2),
+			&:nth-child(2):nth-last-child(1) { 
+				width:50%;
+				@include vw(margin-left, 8px);
+				&:first-child{
+					margin-left:0;
+				}
+			}
+		}
+	}
+
+	.text-box{
+		p{
+			@include vw(font-size,14px);
+			@include vw(line-height,23.8px);
+			color:$color-gray;
+			font-weight:400;
+			strong{
+				display:block;
+				@include vw(margin-bottom,4px);
+				color:$color-black;
+				font-weight:600;
+				@include vw(font-size,16px);
+				@include vw(line-height,27.2px);
+
+			}
+		}
 	}
 }

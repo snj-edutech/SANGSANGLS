@@ -17,14 +17,7 @@
 			background-color:$color-light-brown2;
 			@include vw(margin-bottom,20px);
 		}
-		.text-box{
-			p{
-				@include vw(font-size,14px);
-				@include vw(line-height,23.8px);
-				color:$color-gray;
-				font-weight:400;
-			}
-		}
+		
 
 		.action{
 			@include vw(margin-top,20px);
