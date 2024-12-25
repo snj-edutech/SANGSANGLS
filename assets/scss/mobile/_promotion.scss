@@ -31,6 +31,9 @@
 		@include vw(padding-bottom,90px);
 		.img-box{
 			img{width:100%;}
+			+ .img-box {
+				@include vw(margin-top, 24px);
+			}
 		}
 
 		.profile-box{
@@ -78,6 +81,9 @@
 				@include vw(padding-top,40px);
 			}
 			@include vw(padding-bottom,80px);
+			&.pb-0 {
+				padding-bottom: 0;
+			}
 			.curriculum-title{
 				color:$color-black;
 				@include vw(font-size,20px);
@@ -194,6 +200,87 @@
 								
 								&.empty{
 									background-color:$color-light-beige;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.history {
+				text-align: center;
+				@include vw(padding-top, 16px);
+				@include vw(padding-bottom, 40px);
+				p {
+					margin-bottom: 0
+				}
+				
+				ul {
+					li {
+						@include vw(margin-bottom, 36px);
+						&:last-child {
+							margin-bottom: 0
+						}
+					}
+				}
+				&-text {
+					p {
+						@include vw(font-size, 16px);
+						@include vw(margin-bottom, 8px);
+					}
+				}
+				&-logo {
+					@include vw(width, 64px);
+					margin: 0 auto;
+					img {
+						width: 100%;
+					}
+				}
+				&-content {
+					span {
+						@include vw(font-size, 16px);
+					}
+					p {
+						font-family: $font-notoSerifKr;
+						@include vw(font-size, 24px);
+						font-weight: 600
+					}
+					small {
+						@include vw(font-size, 14px);
+					}
+				}
+			}
+
+			.number-list {
+				.list {
+					@include vw(padding, 24px 0 0);
+					> ul {
+
+						> li {
+							position: relative;
+							@include vw(font-size, 16px);
+							font-weight: 700;
+							line-height: 1.5;
+							@include vw(padding, 24px 20px);
+							border-bottom: 1px solid #E4DED3;
+							&:first-child {
+								padding-top: 0;
+							}
+							&:last-child {
+								border-bottom: none;
+								padding-bottom: 0;
+							}
+							span {
+								position: absolute;
+								left: 0
+							}
+						}
+						.sub-list {
+							@include vw(margin-top, 12px);
+							ul {
+								list-style: disc;
+								li {
+									font-weight: 400
 								}
 							}
 						}

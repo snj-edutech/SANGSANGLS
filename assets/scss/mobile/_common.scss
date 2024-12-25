@@ -117,8 +117,10 @@
 
 
 	h3{
-		font-weight:600;
-		color:$color-brown;
+		//font-weight:600;
+		//color:$color-brown;
+		color:$color-black;
+		font-weight:300;
 		@include vw(font-size,16px);
 		@include vw(line-height,27.2px);
 		@include vw(margin-bottom,8px);

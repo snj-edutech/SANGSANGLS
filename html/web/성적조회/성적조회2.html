@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+	<link rel="stylesheet" href="../../../assets/css/web.css" />
+
+	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+	<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="container">
+		<header id="header" class="header">
+			<div class="header-gnb">
+				<h1 class="header-logo">
+					<a href="javascript:;"><img src="../../../assets/images/logo_sdij.svg" alt="시대인재로스쿨" /></a>
+				</h1>
+	
+				<div class="header-util">
+					<div class="logout">
+						<a href="javascript:;">로그인</a>
+						<a href="javascript:;">회원가입</a>
+					</div>
+					<div class="login">
+						<a href="javascript:;" data-header-layer="toggle">홍길동님<span class="icon-arrow"><img src="../../../assets/images/btn_arrow_down_white.svg" alt="로그인 레이어 오픈" /></span></a>
+						<div class="header-layer">
+							<ul class="util-list">
+								<li><a href="javascript:;">받은쪽지<span>14</span>개</a></li>
+								<li><a href="javascript:;">장바구니<span>0</span>개</a></li>
+								<li><a href="javascript:;">개인정보수정</a></li>
+								<li><a href="javascript:;">로그아웃</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:;">마이페이지</a>
+				</div>
+			</div>
+
+			<div class="header-menu">
+				<ul class="gnb-list">
+					<li>
+						<a href="javascript:;"><span>LEET 패스</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>교수소개</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>전체강좌</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>수험정보</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>전국모의고사</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>강남캠퍼스</span></a>
+					</li>
+				</ul>
+			</div>
+
+		</header>
+
+		<div id="contents" >
+			<div class="section-report-home">
+				<div class="wrap">
+					<div class="report-title">
+						<img src="../../../assets/images/survival.svg" alt="" />
+					</div>
+					<div class="report-input-box">
+						<div class="report-input-title">
+							응시자 성적조회
+						</div>
+
+						<div class="report-input-content">
+							<div class="report-input">
+								<dl>
+									<dt>성명</dt>
+									<dd>
+										<div class="form-control">
+											<input type="text" class="text" placeholder="이름을 입력하세요">
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>수험번호</dt>
+									<dd>
+										<div class="form-control">
+											<input type="text" class="text" placeholder="수험번호를 입력하세요">
+										</div>
+									</dd>
+								</dl>
+								<ul class="notice-list">
+									<li>* 수험번호는 구분자(-)없이 입력하세요. (예:000241212)</li>
+									<li>* 조회 시, 출력 또는 다운로드가 가능합니다.</li>
+								</ul>
+							</div>
+							<div class="action">
+								<a href="javascript:;" class="btn btn-brown large">확인</a>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+			<div class="section-report-list">
+				<div class="wrap">
+					<h3>응시내역</h3>
+					<div class="report-table">
+						<table class="table-row">
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>시험명</th>
+									<th>신청일자</th>
+									<th>시험일자</th>
+									<th>응시장소</th>
+									<th>성적결과</th>
+								</tr>
+								<tr>
+									<td colspan="5">
+										<div class="nodata-box">
+											응시 내역이 없습니다.
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="report-table">
+						<table class="table-row">
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>시험명</th>
+									<th>신청일자</th>
+									<th>시험일자</th>
+									<th>응시장소</th>
+									<th>성적결과</th>
+								</tr>
+								<tr>
+									<td>LEET 서바이벌 제로</td>
+									<td>2024.12.13</td>
+									<td>2024.12.13</td>
+									<td>서초고등학교</td>
+									<td>분석중</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					
+					<div class="report-table">
+						<table class="table-row">
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+								<col style="width:20%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>시험명</th>
+									<th>신청일자</th>
+									<th>시험일자</th>
+									<th>응시장소</th>
+									<th>성적결과</th>
+								</tr>
+								<tr>
+									<td>LEET 서바이벌 제로</td>
+									<td>2024.12.13</td>
+									<td>2024.12.13</td>
+									<td>서초고등학교</td>
+									<td>
+										<div class="action">
+											<a href="javascript:popupOpen('#popupReport');" class="btn btn-brown btn-check">확인</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>LEET 서바이벌 제로</td>
+									<td>2024.12.13</td>
+									<td>2024.12.13</td>
+									<td>서초고등학교</td>
+									<td>
+										<div class="action">
+											<a href="javascript:popupOpen('#popupReport');" class="btn btn-brown btn-check">확인</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>LEET 서바이벌 제로</td>
+									<td>2024.12.13</td>
+									<td>2024.12.13</td>
+									<td>서초고등학교</td>
+									<td>
+										<div class="action">
+											<a href="javascript:popupOpen('#popupReport');" class="btn btn-brown btn-check">확인</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>LEET 서바이벌 제로</td>
+									<td>2024.12.13</td>
+									<td>2024.12.13</td>
+									<td>서초고등학교</td>
+									<td>
+										<div class="action">
+											<a href="javascript:popupOpen('#popupReport');" class="btn btn-brown btn-check">확인</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>LEET 서바이벌 제로</td>
+									<td>2024.12.13</td>
+									<td>2024.12.13</td>
+									<td>서초고등학교</td>
+									<td>
+										<div class="action">
+											<a href="javascript:popupOpen('#popupReport');" class="btn btn-brown btn-check">확인</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer">
+			<div class="footer-top">
+				<div class="wrap">
+					<div class="footer-menu">
+						<div>
+							<p class="footer-menu-title"><a href="javascript:;"><img src="../../../assets/images/f_logo_sdij.svg" alt="시대인재로스쿨" /></a></p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">LEET PASS</a></li>
+								<li><a href="https://sdijleet.com/professor" target="_blank">교수소개</a></li>
+								<li><a href="https://sdijleet.com/lecture/list?search_mode=subject" target="_blank">전체강좌</a></li>
+								<li><a href="https://sdijleet.com/lawinfo/leetinfo" target="_blank">수험정보</a></li>
+								<li><a href="javascript:;">전국모의고사</a></li>
+								<li><a href="https://sdijleet.com/campus/lecture/all"target="_blank">강남캠퍼스</a></li>
+							</ul>
+						</div>
+						<div>
+							<p class="footer-menu-title">Service Policies</p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">고객센터</a></li>
+								<li><a href="javascript:popupOpen('#popupTerms');">이용약관</a></li>
+								<li><a href="javascript:popupOpen('#popupPrivacy');"><strong>개인정보 처리방침</strong></a></li>
+							</ul>
+						</div>
+						<div>
+							<p class="footer-menu-title">Contact</p>
+							<ul class="footer-menu-list">
+								<li><a href="javascript:;">1:1 문의</a></li>
+								<li><a href="javascript:;">FAQ</a></li>
+							</ul>
+						</div>
+					</div>
+					
+
+					<div class="footer-info">
+						<p class="footer-customer">고객센터  02-582-3359</p>
+						<dl class="footer-info-list">
+							<dt>동영상 강의/교재 및 제휴 문의</dt>
+							<dd>
+								<div>
+									<strong>평일</strong>
+									<p>
+										09:30 ~ 18:30<br/>(점심시간 12:30 ~ 13:30
+									</p>
+								</div>
+								<div>
+									<strong>주말/공휴일</strong>
+									<p>
+										나의 문의 게시판 이용
+									</p>
+								</div>
+							</dd>
+						</dl>
+						<dl class="footer-info-list">
+							<dt>학원 수강/상담 문의</dt>
+							<dd>
+								<div>
+									<strong>평일</strong>
+									<p>
+										08:00 ~ 22:00
+									</p>
+								</div>
+								<div>
+									<strong>주말/공휴일</strong>
+									<p>
+										09:00 ~ 22:00
+									</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="wrap">
+					<div class="company-info">
+						<p><strong>㈜이매진PNM </strong>대표 강 상 희</p>
+						<p>
+							<span>사업자등록번호 371-87-01877</span>
+							<span>통신판매신고번호 제 2023-서울강남-05461호</span>
+							<span>신고기관명 서울특별시 강남구청</span>
+							<span>주 소 서울시 강남구 논현로 524 청파빌딩 2층</span>
+						</p>
+						<p>
+							<span>상상로스쿨 원격평생교육시설(제 원-777호)</span>
+							<span>전화번호 02-582-3359</span>
+							<span>FAX 02-6243-3881</span>
+							<span>E-mail imagine@imaginepnm.com</span>
+							<span>개인정보관리책임자 우민균</span>
+						</p>
+						<p class="copyright">
+							COPYRIGHT &copy; IMAGINE PNM CORP. ALL RIGHT RESERVED.
+						</p>
+					</div>
+					<div class="sns-list">
+						<a href="javascript:;" ><img src="../../../assets/images/btn_youtube_white.svg" alt="유튜브" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_blog_white.svg" alt="네이버블로그" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_instagram_white.svg" alt="인스타그램" /></a>
+						<a href="javascript:;" ><img src="../../../assets/images/btn_kakao_white.svg" alt="카카오" /></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<a href="javascript:pageTopMove();" class="btn-top"><img src="../../../assets/images/btn_top.svg" alt="top" /></a>
+	</div>
+
+	<!-- 팝업 -->
+	<div class="popup" id="popupReport" >
+		<div class="popup-wrap">
+			<a href="javascript:popupClose('#popupReport');" class="popup-close">팝업닫기</a>
+			<div class="popup-title">
+				성적결과
+			</div>
+			<div class="popup-cont popup-scroll">
+				<div class="report-box">
+					<div class="report-title">
+						2025학년도 상상로스쿨 제4회 LEET 전국 모의고사 경원중학 성적 분석표
+					</div>
+					<div class="report-table">
+						<table class="table-row">
+							<colgroup>
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+							</colgroup>
+							<tbody><tr>
+								<th>시험일자</th>
+								<th>응시유횽</th>
+								<th>응시번호</th>
+								<th>이름</th>
+							</tr>
+							<tr>
+								<td>2024-00-00</td>
+								<td>오프라인</td>
+								<td>12345678</td>
+								<td>김은지</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+				<div class="report-box">
+					<div class="report-title">
+						모의고사 성적 통계
+					</div>
+					<div class="report-table">
+						<table class="table-row">
+
+							<tbody>
+								<tr>
+									<th rowspan="2"></th>
+									<th colspan="3"><strong>나의성적</strong></th>
+									<th colspan="4"><strong>원점수(맞힌 개수)</strong></th>
+									<th colspan="3"><strong>표준점수</strong></th>
+								</tr>
+							<tr>
+								<th><strong>원점수</strong></th>
+								<th><strong>표준점수</strong></th>
+								<th><strong>백분위</strong></th>
+								<th><strong>최고득점</strong></th>
+								<th><strong>전체평균</strong></th>
+								<th><strong>상위10%</strong></th>
+								<th><strong>상위30%</strong></th>
+								<th><strong>최고득점</strong></th>
+								<th><strong>상위10%</strong></th>
+								<th><strong>상위30%</strong></th>
+							</tr>
+							<tr>
+								<td>언어이해</td>
+								<td>6.0</td>
+								<td>9.8</td>
+								<td>99.3</td>
+								<td>30.0</td>
+								<td>16.1</td>
+								<td>20.0</td>
+								<td>18.0</td>
+								<td>80.0</td>
+								<td>80.0</td>
+								<td>80.0</td>
+							</tr>
+							<tr>
+								<td>추리논증</td>
+								<td>6.0</td>
+								<td>9.8</td>
+								<td>99.3</td>
+								<td>30.0</td>
+								<td>16.1</td>
+								<td>20.0</td>
+								<td>18.0</td>
+								<td>80.0</td>
+								<td>80.0</td>
+								<td>80.0</td>
+							</tr>
+							<tr>
+								<td><strong>총점</strong></td>
+								<td><strong>26.0</strong></td>
+								<td><strong>69.8</strong></td>
+								<td><strong>99.3</strong></td>
+								<td><strong>30.0</strong></td>
+								<td><strong>16.1</strong></td>
+								<td><strong>20.0</strong></td>
+								<td><strong>18.0</strong></td>
+								<td><strong>80.0</strong></td>
+								<td><strong>80.0</strong></td>
+								<td><strong>80.0</strong></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+				<div class="report-box">
+					<div class="report-title">
+						나의위치
+					</div>
+					<div class="report-graph">
+						
+					</div>
+				</div>
+
+				<div class="action">
+					<a href="javascript:;" class="btn btn-brown large">다운로드</a>
+					<a href="javascript:;" class="btn btn-brown large">인쇄</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="../../../assets/js/script.js"></script>
+<script>
+	$(function(){
+
+		
+	});
+
+</script>
+</body>
+</html>
