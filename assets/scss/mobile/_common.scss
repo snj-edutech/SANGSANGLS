@@ -227,6 +227,14 @@
 		}
 	}
 
+	h5{
+		font-weight:400;
+		color:$color-black;
+		@include vw(font-size,20px);
+		@include vw(line-height,30px);
+		@include vw(margin-bottom,8px);
+	}
+
 
 
 

@@ -220,6 +220,20 @@
 
 	.section-action{
 		@include vw(padding, 20px 20px);
+		display:flex;justify-content: center;
+		a{
+			&:only-child,
+			&:nth-child(1):nth-last-child(1) { width: 100%; }
+		
+			&:nth-child(1):nth-last-child(2),
+			&:nth-child(2):nth-last-child(1) { 
+				width:50%;
+				@include vw(margin-left, 8px);
+				&:first-child{
+					margin-left:0;
+				}
+			}
+		}
 	}
 	.section-lecture-list +.section-action{@include vw(padding, 0 20px 20px);}
 
