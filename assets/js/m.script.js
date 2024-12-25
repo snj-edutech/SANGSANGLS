@@ -112,6 +112,44 @@ function pageMove($selector, $position){
 	});
 }
 
+function popupCenterOpen($selector){
+	popupCenterReset();
+
+	$($selector).show();
+
+	// if($selector == "#popupSchedule"){
+	// 	$('.slider').slick('setPosition');
+	// }
+
+	if($(window).height() <= $($selector).find(".popup-wrap").outerHeight()){
+		// 팝업이클때는 
+		var st = $(window).scrollTop()+50;
+		$($selector).addClass("wide").css({top:st});
+		$("body").append('<div class="popup-dim"></div>');
+	}else{
+		// 팝업이 작을때는
+		$($selector).removeClass("wide");
+		$($selector).css({display:"flex"});
+	}
+}
+
+function popupCenterReset(){
+	$('.popup').hide();
+	if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
+	}
+}
+
+// popupClose('#brandLayerEvent');
+function popupCenterClose($selector){
+    //$('.slide-container').slick("unslick");
+	$($selector).hide();
+
+	if($(".popup-dim").is(':visible')){
+		$(".popup-dim").remove();
+	}
+}
+
 function popupBottomOpen($selector){
 	$($selector).addClass('active');
 	$("body").append('<div class="popup-dim"></div>');
