@@ -17,4 +17,234 @@
 	
 		
 	}
+	.section-teacher-gate {
+		@include vw(margin-top, 24px);
+		.teacher-gate-list {
+			.list {
+				@include vw(margin-bottom, 80px);
+				&:last-child {
+					margin-bottom: 0
+				}
+				.t {
+					&-thumb {
+						@include vw(min-width, 96px);
+						@include vw(max-width, 96px);
+						@include vw(margin-right, 24px);
+						img {
+							width: 100%;
+						}
+					}
+					&-text {
+						p {
+							@include vw(font-size, 24px);
+							line-height: 1.5;
+							font-weight: 200;
+						}
+						span {
+							display: block;
+							@include vw(font-size, 14px);
+							line-height: 1.2;
+							font-weight: 400;
+						}
+					}
+				}
+				.teacher-top {
+					display: flex;
+				}
+				.teacher-curriculum {
+					@include vw(margin-top, 16px);
+					ul {
+						@include vw(padding, 16px 0);
+						border: 1px solid #E6E9EB;
+						border-width: 1px 0 1px;
+						li {
+							@include vw(margin-bottom, 16px);
+							&:last-child {
+								margin-bottom: 0;
+							}
+							a {
+								display: flex;
+								align-items: center;
+								p {
+									@include vw(font-size, 14px);
+									font-weight: 600;
+								}
+								span {
+									@include vw(font-size, 12px);
+									font-weight: 400;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-teacher-curriculum {
+		@include vw(margin-bottom, 100px);
+		.curriculum {
+			&-title {
+				display: flex;
+				align-items: center;
+				@include vw(padding, 24px 0);
+				&-label {
+					@include vw(padding, 16px 20px);
+					border: 1px solid #504b42;
+					p {
+						@include vw(font-size, 22px);
+						font-weight: 300;
+					}
+				}
+				&-text {
+					@include vw(padding, 0 24px);
+					p {
+						@include vw(font-size, 26px);
+						font-weight: 300;
+					}
+				}
+
+			}
+
+			&-notice {
+				@include vw(margin, 48px 0 16px);
+				border: 1px solid #F2EFE7;
+				border-width: 1px 0;
+				ul {
+					li {
+						a {
+							display: block;
+							border-bottom: 1px solid #F2EFE7;
+							@include vw(padding, 20px 0);
+							p {
+								position: relative;
+								width: 100%;
+								@include vw(font-size, 15px);
+								font-weight: 400;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								word-break: break-all;
+								@include vw(padding-right, 20px);
+								@include boxSizing(border-box);
+							}
+							span {
+								@include vw(font-size, 12px);
+								font-weight: 400;
+								@include vw(margin-top, 4px);
+							}
+						}
+						&.new {
+							a {
+								p {
+									&:after {
+										content: "N";
+										position: absolute;
+										right: 0;
+									}
+								}
+							}
+						}
+						&:last-child {
+							a {
+								border-bottom: none;
+							}
+						}
+					}
+				}
+			}
+
+			&-list {
+				@include vw(padding, 16px 0);
+				border-bottom: 1px solid #F2EFE7;
+				ul {
+					li {
+						@include vw(margin-bottom, 16px);
+						&:last-child {
+							margin-bottom: 0;
+						}
+						a {
+							display: flex;
+							align-items: center;
+						}
+					}
+				}
+				&-thumb {
+					@include vw(max-width, 96px);
+					@include vw(min-width, 96px);
+					@include vw(margin-right, 16px);
+					img {
+						width: 100%;
+					}
+				}
+				&-text {
+					p {
+						@include vw(font-size, 14px);
+						line-height: 1.5;
+						font-weight: 600;
+					}
+					span {
+						display: block;
+						@include vw(font-size, 12px);
+						line-height: 1.5;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+	.section-curriculum {
+		@include vw(margin-bottom, 100px);
+		.curriculum {
+			&-video-thumb {
+				position: relative;
+				@include vw(height, 188px);
+				@include vw(margin-bottom, 24px);
+				.btn-play {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: rgba(0, 0, 0, 0.6);
+					img {
+						@include vw(width, 60px);
+					}
+				}
+			}
+		}
+	}
+	.section-leet {
+		@include vw(margin-bottom, 100px);
+		@include vw(padding, 48px 0);
+		background: #222;
+		.list {
+			@include vw(width, 308px);
+			@include vw(margin-right, 18px);
+			.video-desc {
+				@include vw(margin, 16px 0 4px);
+				a {
+					@include vw(font-size, 15px);
+					font-weight: 600;
+					color: #fff;
+				}
+			}
+			.video-title {
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				word-break: keep-all;
+				white-space: normal;
+				@include vw(font-size, 12px);
+				line-height: 1.5;
+				font-weight: 400;
+				color: #aaa;
+			}
+		}
+	}
 }
