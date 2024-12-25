@@ -71,6 +71,14 @@
 						}
 					}
 
+					.desc-desc{
+                       
+						color:$color-black;
+						font-weight:400;
+                        @include vw(font-size,14px);
+                        @include vw(line-height,23.8px);
+					}
+
 					.desc-text{
                         @include vw(margin-top,4px);
 						display:flex;

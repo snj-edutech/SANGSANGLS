@@ -977,6 +977,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   overflow-y: auto;
 }
 
+#wrap .popup .search-input-box {
+  margin-bottom: 4.26667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .popup .search-input-box {
+    margin-bottom: 16px;
+  }
+}
+
 #wrap .popup .title-box {
   color: #2C2923;
   margin-bottom: 5.33333vw;
@@ -2143,16 +2153,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-bottom: 0px;
 }
 
-#wrap .search-input-box {
-  margin-bottom: 4.26667vw;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .search-input-box {
-    margin-bottom: 16px;
-  }
-}
-
 #wrap #popupMypageBookInfo .popup-cont {
   padding: 6.4vw 5.33333vw 21.06667vw;
 }
@@ -3267,7 +3267,125 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap .tab-menu {
+  padding: 5.33333vw 5.33333vw 5.33333vw 5.33333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .tab-menu {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+#wrap .tab-menu.scroll {
+  padding: 6.4vw 0px 6.4vw 5.33333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .tab-menu.scroll {
+    padding: 24px 0px 24px 20px;
+  }
+}
+
+#wrap .tab-menu.scroll ul li:last-child {
+  margin-right: 5.33333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .tab-menu.scroll ul li:last-child {
+    margin-right: 20px;
+  }
+}
+
 #wrap .tab-menu ul {
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-align: center;
+  width: 100%;
+  height: 15.46667vw;
+  line-height: 15.46667vw;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .tab-menu ul {
+    height: 58px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .tab-menu ul {
+    line-height: 58px;
+  }
+}
+
+#wrap .tab-menu ul::-webkit-scrollbar {
+  display: none;
+}
+
+#wrap .tab-menu ul li {
+  position: relative;
+  display: inline-block;
+  width: 25.6vw;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FBFAF6;
+  border: 1px solid #E4DED3;
+  border-left: 0;
+  text-align: center;
+}
+
+#wrap .tab-menu ul li:only-child, #wrap .tab-menu ul li:nth-child(1):nth-last-child(1) {
+  width: 100%;
+}
+
+#wrap .tab-menu ul li:nth-child(1):nth-last-child(2), #wrap .tab-menu ul li:nth-child(2):nth-last-child(1) {
+  width: 50%;
+}
+
+#wrap .tab-menu ul li:nth-child(1):nth-last-child(3), #wrap .tab-menu ul li:nth-child(2):nth-last-child(2), #wrap .tab-menu ul li:nth-child(3):nth-last-child(1) {
+  width: 33.333%;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .tab-menu ul li {
+    width: 96px;
+  }
+}
+
+#wrap .tab-menu ul li:first-child {
+  border-left: 1px solid #E4DED3;
+}
+
+#wrap .tab-menu ul li a {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 4vw;
+  color: #504B42;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .tab-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+#wrap .tab-menu ul li.active {
+  background-color: #FFFFFC;
+  border-bottom: 0;
+}
+
+#wrap .tab-menu ul li.active a {
+  color: #2C2923;
+  font-weight: 600;
+}
+
+#wrap .tab-small-menu ul {
   overflow: hidden;
   white-space: nowrap;
   overflow-x: auto;
@@ -3286,16 +3404,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .tab-menu ul {
+  #wrap .tab-small-menu ul {
     height: 50px;
   }
 }
 
-#wrap .tab-menu ul::-webkit-scrollbar {
+#wrap .tab-small-menu ul::-webkit-scrollbar {
   display: none;
 }
 
-#wrap .tab-menu ul li {
+#wrap .tab-small-menu ul li {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3308,22 +3426,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .tab-menu ul li {
+  #wrap .tab-small-menu ul li {
     margin-right: 20px;
   }
 }
 
-#wrap .tab-menu ul li:first-child {
+#wrap .tab-small-menu ul li:first-child {
   margin-left: 5.33333vw;
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .tab-menu ul li:first-child {
+  #wrap .tab-small-menu ul li:first-child {
     margin-left: 20px;
   }
 }
 
-#wrap .tab-menu ul li a {
+#wrap .tab-small-menu ul li a {
   display: inline-block;
   font-weight: 400;
   font-size: 4vw;
@@ -3332,18 +3450,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .tab-menu ul li a {
+  #wrap .tab-small-menu ul li a {
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .tab-menu ul li a {
+  #wrap .tab-small-menu ul li a {
     line-height: 25.5px;
   }
 }
 
-#wrap .tab-menu ul li.active:after {
+#wrap .tab-small-menu ul li.active:after {
   content: '';
   display: block;
   width: 100%;
@@ -3355,12 +3473,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .tab-menu ul li.active:after {
+  #wrap .tab-small-menu ul li.active:after {
     height: 2px;
   }
 }
 
-#wrap .tab-menu ul li.active a {
+#wrap .tab-small-menu ul li.active a {
   color: #2C2923;
   font-weight: 600;
 }
@@ -7375,6 +7493,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap .lecture-data-list .list .desc-box .t-desc .desc-desc {
+  color: #2C2923;
+  font-weight: 400;
+  font-size: 3.73333vw;
+  line-height: 6.34667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .lecture-data-list .list .desc-box .t-desc .desc-desc {
+    line-height: 23.8px;
+  }
+}
+
 #wrap .lecture-data-list .list .desc-box .t-desc .desc-text {
   margin-top: 1.06667vw;
   display: -webkit-box;
@@ -8218,6 +8355,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .lecture-data-view .lecture-desc {
     line-height: 23.8px;
   }
+}
+
+#wrap .section-tab + .section-notice-list {
+  margin-top: 6.4vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-tab + .section-notice-list {
+    margin-top: 24px;
+  }
+}
+
+#wrap .section-notice-list .search-input-box + .lecture-data-list {
+  border-top: 0;
 }
 
 #wrap .btn-write {

@@ -1,0 +1,16 @@
+#wrap{
+	.section-tab{
+		&+.section-notice-list{
+			@include vw(margin-top,24px);
+		}
+		
+	}
+	.section-notice-list{
+		.search-input-box{
+			&+.lecture-data-list{
+				border-top:0;
+			}
+		}
+		
+	}
+}

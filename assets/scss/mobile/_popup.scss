@@ -173,6 +173,10 @@
 			
 		}
 
+		.search-input-box{
+			@include vw(margin-bottom,16px);
+		}
+
 		.title-box{
 			color:$color-black;
 			@include vw(margin-bottom,20px);
@@ -626,9 +630,7 @@
 		}
 	}
 
-	.search-input-box{
-		@include vw(margin-bottom,16px);
-	}
+
 
 	#popupMypageBookInfo{
 		.popup-cont{
