@@ -1,0 +1,66 @@
+#wrap{
+    .section-tab-menu{
+        @include vw(padding-bottom, 24px);
+        .tab-menu{
+            @include vw(padding, 24px 20px 16px 20px);
+        }
+    }
+
+	.section-customer-title{
+        background-color:$color-light-brown2;
+        @include vw(padding, 32px);
+        .service-box{
+            .service-title{
+                color:$color-black;
+                font-weight:600;
+                @include vw(font-size,16px);
+                @include vw(line-height,27.2px);
+            }
+            .service-desc{
+                @include vw(margin-top,16px);
+                dl{
+                    @include vw(margin-top,8px);
+                    &:first-child{
+                        margin-top:0;
+                    }
+                    display:flex;
+                    dt{}
+                    dd{@include vw(margin-left,12px);}
+                }
+                .tel{
+                    color:$color-black;
+                    font-weight:600;
+                    @include vw(font-size,18px);
+                    @include vw(line-height,27px);
+                }
+                .time{
+                    color:$color-black;
+                    font-weight:400;
+                    @include vw(font-size,12px);
+                    @include vw(line-height,20px);
+                }
+
+                .email{
+                    color:$color-black;
+                    font-weight:600;
+                    @include vw(font-size,18px);
+                    @include vw(line-height,27px);
+                }
+
+            }
+
+            .service-btn{
+                display:flex;
+                @include vw(margin-top,20px);
+                .btn{
+                    width:50%;
+                    @include vw(margin-left,8px);
+                    &:first-child{
+                        margin-left:0;
+                    }
+                }
+            }
+
+        }
+    }
+}

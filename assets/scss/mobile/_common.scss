@@ -65,17 +65,21 @@
 
 	.tab-menu{
 		@include vw(padding, 20px 20px 20px 20px);
-		&.scroll{
-			@include vw(padding, 24px 0px 24px 20px);
 
-			ul{
-				li{
-					&:last-child{
-						@include vw(margin-right,20px);
+		@media screen and (max-width: 600px) {
+			&.three-or-more {
+				@include vw(padding, 24px 0px 24px 20px);
+
+				ul{
+					li{
+						&:last-child{
+							@include vw(margin-right,20px);
+						}
 					}
 				}
 			}
 		}
+
 		ul{
 			overflow: hidden;
 			white-space: nowrap;
@@ -94,19 +98,13 @@
 			}
 
 			li{
-				&:only-child,
-				&:nth-child(1):nth-last-child(1) { width: 100%; }
-			
-				&:nth-child(1):nth-last-child(2),
-				&:nth-child(2):nth-last-child(1) { width: 50%; }
-			
-				&:nth-child(1):nth-last-child(3),
-				&:nth-child(2):nth-last-child(2),
-				&:nth-child(3):nth-last-child(1) { width: 33.333%;}
+				@extend %variable;
 
 				position:relative;
 				display:inline-block;
-				@include vw(width, 96px);
+				@media screen and (max-width: 600px) {
+					@include vw(min-width, 96px);
+				}
 				height:100%;
 				@include boxSizing(border-box);
 				background-color:$color-light-beige;
@@ -148,11 +146,11 @@
 			overflow-x: auto;
 			display: flex;
 			align-items:center;
-			width: 100%;
-			@include vw(height, 50px);
+			@include vw(height, 46px);
 			margin: 0 auto;
 			box-sizing: border-box;
 			border-bottom:1px solid $color-light-brown;
+			@include vw(margin-left,20px);
 			&::-webkit-scrollbar {
 				display: none;
 			}
@@ -162,15 +160,14 @@
 				display: flex;
 				align-items:center;
 				height:100%;
-				@include vw(margin-right,20px);
-				&:first-child{
-					@include vw(margin-left,20px);
-				}
+				@include vw(margin-right,8px);
+				
 				a{
 					display:inline-block;
 					font-weight:400;@include vw(font-size,15px);
 					@include vw(line-height,25.5px);
 					color:rgba(80, 75, 66, 1); //#504b42;
+					@include vw(padding,0 16px);
 				}
 
 				&.active{
@@ -201,6 +198,9 @@
 		@include vw(font-size,16px);
 		@include vw(line-height,27.2px);
 		@include vw(margin-bottom,8px);
+		strong{
+			font-weight:600;
+		}
 	}
 
 	h4{
@@ -724,6 +724,7 @@
 	}
 
 	.search-input-box{
+		@include vw(margin-top,24px);
         .search-text{
             position:relative;
             input[type=text]{
@@ -983,6 +984,41 @@
 				@include vw(font-size,16px);
 				@include vw(line-height,27.2px);
 
+			}
+		}
+	}
+
+	.toggle-box{
+		@include vw(margin-top,20px);
+        border-top:1px solid $color-light-brown;
+		dl{
+			text-align:left;
+            dt,dd{@include vw(padding,20px 0px);}
+			dt{
+                cursor:pointer;position:relative;z-index:2;border-bottom:1px solid $color-light-brown;
+                p{
+					width:90%;
+                    color:$color-black;font-weight:600;@include vw(font-size,14px);@include vw(line-height,23.8px);
+                    .subject{display:block;@include vw(margin-bottom,4px);font-weight:400;@include vw(font-size,13px);color:$color-gray;}
+                }
+
+                .icon-arrow{position:absolute;@include vw(right,0px);top:50%;@include vw(margin-top,-12px);}
+            }
+
+			dd{
+                display:none;
+                background-color:$color-light-brown2;
+                @include vw(padding,20px);
+				@include vw(font-size,14px);@include vw(line-height,23.8px);
+                font-weight:400;
+                color:$color-black;
+
+            }
+			&.unfold{
+				dt{
+                    .icon-arrow{transform:rotateZ(180deg);}
+                }
+				dd{display:block;}
 			}
 		}
 	}

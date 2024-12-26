@@ -1,0 +1,14 @@
+#wrap{
+	.section-notice-list{
+		.search-input-box{
+			&+.lecture-data-list{
+				border-top:0;
+			}
+		}
+
+		.icon-lock{@include vw(margin-right, 8px);}
+
+	
+		
+	}
+}

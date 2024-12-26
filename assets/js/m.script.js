@@ -44,12 +44,19 @@ function addEvent(){
 	
 	$(window).on("scroll", scrollMenuEvent);
 	scrollMenuEvent();
+
+	// 탭이 3개 이상일경우 클래스 추가
+	const tabMenu = document.querySelector(".tab-menu ul");
+    if (tabMenu && tabMenu.children.length >= 3) {
+        tabMenu.classList.add("three-or-more");
+    }
 	
+	toggleEvent();
 
 	/*
 	headerEvent();
 	fileUploadEvent();
-	toggleEvent();
+	
 
 	selectEvent();
 
@@ -59,6 +66,13 @@ function addEvent(){
 	*/
 }
 
+function toggleEvent(){
+    $('[data-toggle]').on('click', function(){
+        var $this = $(this);
+
+        $this.parents('dl').toggleClass('unfold').siblings().removeClass('unfold');
+    });
+}
 
 function menuEvent(){
     $(this).toggleClass("active");
@@ -679,13 +693,7 @@ function fileUploadEvent(){
 }
 
 
-function toggleEvent(){
-    $('[data-toggle]').on('click', function(){
-        var $this = $(this);
 
-        $this.parents('dl').toggleClass('unfold').siblings().removeClass('unfold');
-    });
-}
 
 
 function selectEvent(){
