@@ -224,51 +224,27 @@
   }
 }
 
-<<<<<<< HEAD
-#wrap .popup-page .popup-scroll, #wrap .popup-page .line-box.scroll, #wrap .popup-layer-bottom .popup-layer-content .lecture-list, #wrap .popup .popup-scroll {
-=======
-#wrap .popup-layer-center .popup-scroll, #wrap .popup-layer-bottom .popup-layer-content .lecture-list, #wrap .popup .line-box.scroll, #wrap .popup .popup-scroll {
->>>>>>> dnsgk4983/branch
+#wrap .popup .popup-scroll, #wrap .popup-layer-bottom .popup-layer-content .lecture-list, #wrap .popup-page .line-box.scroll, #wrap .popup-page .popup-scroll {
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
-<<<<<<< HEAD
-
-#wrap .popup-page .popup-scroll::-webkit-scrollbar, #wrap .popup-page .line-box.scroll::-webkit-scrollbar, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar, #wrap .popup .popup-scroll::-webkit-scrollbar {
+#wrap .popup .popup-scroll::-webkit-scrollbar, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar, #wrap .popup-page .line-box.scroll::-webkit-scrollbar, #wrap .popup-page .popup-scroll::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-
-#wrap .popup-page .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-button:start:decrement, #wrap .popup .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-page .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-button:end:increment, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-button:end:increment, #wrap .popup .popup-scroll::-webkit-scrollbar-button:end:increment {
-=======
-#wrap .popup-layer-center .popup-scroll::-webkit-scrollbar, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar, #wrap .popup .line-box.scroll::-webkit-scrollbar, #wrap .popup .popup-scroll::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-#wrap .popup-layer-center .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-button:start:decrement, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-layer-center .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-button:end:increment, #wrap .popup .line-box.scroll::-webkit-scrollbar-button:end:increment, #wrap .popup .popup-scroll::-webkit-scrollbar-button:end:increment {
->>>>>>> dnsgk4983/branch
+#wrap .popup .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-button:start:decrement, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup-page .popup-scroll::-webkit-scrollbar-button:start:decrement, #wrap .popup .popup-scroll::-webkit-scrollbar-button:end:increment, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-button:end:increment, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-button:end:increment, #wrap .popup-page .popup-scroll::-webkit-scrollbar-button:end:increment {
   display: block;
   width: 0;
   height: 0;
   background-color: #F2EFE7;
 }
-<<<<<<< HEAD
-
-#wrap .popup-page .popup-scroll::-webkit-scrollbar-track, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-track, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-track, #wrap .popup .popup-scroll::-webkit-scrollbar-track {
+#wrap .popup .popup-scroll::-webkit-scrollbar-track, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-track, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-track, #wrap .popup-page .popup-scroll::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 4px;
 }
-
-#wrap .popup-page .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-thumb, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-thumb, #wrap .popup .popup-scroll::-webkit-scrollbar-thumb {
-=======
-#wrap .popup-layer-center .popup-scroll::-webkit-scrollbar-track, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-track, #wrap .popup .line-box.scroll::-webkit-scrollbar-track, #wrap .popup .popup-scroll::-webkit-scrollbar-track {
-  background: #fff;
-  border-radius: 4px;
-}
-#wrap .popup-layer-center .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-thumb, #wrap .popup .line-box.scroll::-webkit-scrollbar-thumb, #wrap .popup .popup-scroll::-webkit-scrollbar-thumb {
->>>>>>> dnsgk4983/branch
+#wrap .popup .popup-scroll::-webkit-scrollbar-thumb, #wrap .popup-layer-bottom .popup-layer-content .lecture-list::-webkit-scrollbar-thumb, #wrap .popup-page .line-box.scroll::-webkit-scrollbar-thumb, #wrap .popup-page .popup-scroll::-webkit-scrollbar-thumb {
   background-color: #F2EFE7;
   border-radius: 4px;
 }
@@ -503,12 +479,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   z-index: 1003;
   font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-wrap {
-=======
-#wrap .popup .popup-wrap {
->>>>>>> dnsgk4983/branch
   position: absolute;
   top: 0;
   right: 0;
@@ -517,12 +488,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #FFFFFC;
   width: 100%;
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-close {
-=======
-#wrap .popup .popup-close {
->>>>>>> dnsgk4983/branch
   position: absolute;
   top: 0;
   right: 0;
@@ -544,14 +510,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     height: 50px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-close::before, #wrap .popup-page .popup-close::after {
-  content: '';
-=======
-#wrap .popup .popup-close::before, #wrap .popup .popup-close::after {
   content: "";
->>>>>>> dnsgk4983/branch
   position: absolute;
   top: 50%;
   left: 50%;
@@ -561,30 +521,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: -12.5px;
   background-color: #2C2923;
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-close::before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 #wrap .popup-page .popup-close::after {
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
 }
-
 #wrap .popup-page .popup-close span {
-=======
-#wrap .popup .popup-close::before {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-#wrap .popup .popup-close::after {
-  -webkit-transform: rotate(315deg);
-  transform: rotate(315deg);
-}
-#wrap .popup .popup-close span {
->>>>>>> dnsgk4983/branch
   position: absolute;
   display: inline-block;
   overflow: hidden;
@@ -609,21 +554,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     left: 10px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-close.white:before, #wrap .popup-page .popup-close.white:after {
   background-color: #fff;
 }
-
 #wrap .popup-page .popup-title {
-  padding: 4.26667vw 3.73333vw;
-=======
-#wrap .popup .popup-close.white:before, #wrap .popup .popup-close.white:after {
-  background-color: #fff;
-}
-#wrap .popup .popup-title {
   padding: 4.2666666667vw 3.7333333333vw;
->>>>>>> dnsgk4983/branch
   color: #2C2923;
   font-size: 4.8vw;
   line-height: 7.2vw;
@@ -647,26 +582,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 27px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-title dl {
-=======
-#wrap .popup .popup-title dl {
->>>>>>> dnsgk4983/branch
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-title dl dt, #wrap .popup-page .popup-title dl dd {
-  font-size: 3.73333vw;
-  line-height: 6.34667vw;
-=======
-#wrap .popup .popup-title dl dt, #wrap .popup .popup-title dl dd {
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
->>>>>>> dnsgk4983/branch
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
@@ -679,12 +602,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-title dl dt {
-=======
-#wrap .popup .popup-title dl dt {
->>>>>>> dnsgk4983/branch
   width: 12.8vw;
   font-weight: 600;
 }
@@ -693,40 +611,23 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     width: 48px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-title dl dd {
-  margin-left: 5.33333vw;
-=======
-#wrap .popup .popup-title dl dd {
   margin-left: 5.3333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-title dl dd {
     margin-left: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont {
-  padding: 5.33333vw 5.33333vw;
-=======
-#wrap .popup .popup-cont {
   padding: 5.3333333333vw 5.3333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-cont {
     padding: 20px 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont p {
-=======
-#wrap .popup .popup-cont p {
->>>>>>> dnsgk4983/branch
   color: #2C2923;
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
@@ -744,19 +645,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont p strong {
   font-weight: 600;
 }
-
 #wrap .popup-page .popup-cont .box {
-=======
-#wrap .popup .popup-cont p strong {
-  font-weight: 600;
-}
-#wrap .popup .popup-cont .box {
->>>>>>> dnsgk4983/branch
   margin-bottom: 16vw;
 }
 @media screen and (min-width: 375px) {
@@ -764,39 +656,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 60px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont .box:last-child {
   margin-bottom: 0;
 }
-
 #wrap .popup-page .popup-cont .box .table-row {
-  margin-top: 5.33333vw;
-=======
-#wrap .popup .popup-cont .box:last-child {
-  margin-bottom: 0;
-}
-#wrap .popup .popup-cont .box .table-row {
   margin-top: 5.3333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-cont .box .table-row {
     margin-top: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont .box .table-row th, #wrap .popup-page .popup-cont .box .table-row td {
-  padding: 2.13333vw 3.2vw;
-  font-size: 3.46667vw;
-  line-height: 5.89333vw;
-=======
-#wrap .popup .popup-cont .box .table-row th, #wrap .popup .popup-cont .box .table-row td {
   padding: 2.1333333333vw 3.2vw;
   font-size: 3.4666666667vw;
   line-height: 5.8933333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-cont .box .table-row th, #wrap .popup-page .popup-cont .box .table-row td {
@@ -813,30 +687,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 22.1px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont .box .table-row + p {
-  margin-top: 5.33333vw;
-=======
-#wrap .popup .popup-cont .box .table-row + p {
   margin-top: 5.3333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-cont .box .table-row + p {
     margin-top: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont .box .upload-img {
-  margin-top: 5.33333vw;
-  margin-bottom: 5.33333vw;
-=======
-#wrap .popup .popup-cont .box .upload-img {
   margin-top: 5.3333333333vw;
   margin-bottom: 5.3333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-cont .box .upload-img {
@@ -848,23 +709,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont .box .upload-img img {
   width: 100%;
 }
-
 #wrap .popup-page .popup-cont .heading {
-  margin-bottom: 5.33333vw;
-  font-size: 4.26667vw;
-=======
-#wrap .popup .popup-cont .box .upload-img img {
-  width: 100%;
-}
-#wrap .popup .popup-cont .heading {
   margin-bottom: 5.3333333333vw;
   font-size: 4.2666666667vw;
->>>>>>> dnsgk4983/branch
   font-weight: 600;
   line-height: 7.2533333333vw;
   padding-left: 5.3333333333vw;
@@ -895,16 +745,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     text-indent: -20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont .border-line {
-  padding-bottom: 5.33333vw;
-  margin-bottom: 10.66667vw;
-=======
-#wrap .popup .popup-cont .border-line {
   padding-bottom: 5.3333333333vw;
   margin-bottom: 10.6666666667vw;
->>>>>>> dnsgk4983/branch
   border-bottom: 1px solid #E4DED3;
 }
 @media screen and (min-width: 375px) {
@@ -917,12 +760,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 40px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-cont .notice {
-=======
-#wrap .popup .popup-cont .notice {
->>>>>>> dnsgk4983/branch
   color: #7A746A;
   font-size: 3.7333333333vw;
   font-weight: 400;
@@ -938,12 +776,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-text p {
-=======
-#wrap .popup .popup-text p {
->>>>>>> dnsgk4983/branch
   text-align: left;
   color: #7A746A;
   font-size: 3.7333333333vw;
@@ -963,19 +796,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-text strong {
   font-weight: 600;
 }
-
 #wrap .popup-page .popup-notice {
-=======
-#wrap .popup .popup-text strong {
-  font-weight: 600;
-}
-#wrap .popup .popup-notice {
->>>>>>> dnsgk4983/branch
   text-align: left;
   color: #2C2923;
   font-size: 3.7333333333vw;
@@ -992,12 +816,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-btn {
-=======
-#wrap .popup .popup-btn {
->>>>>>> dnsgk4983/branch
   width: 100%;
   background-color: #FFFFFC;
   padding: 5.3333333333vw 0vw;
@@ -1009,16 +828,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 20px 0px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-btn .btn {
-  height: 14.93333vw;
-  font-size: 3.73333vw;
-=======
-#wrap .popup .popup-btn .btn {
   height: 14.9333333333vw;
   font-size: 3.7333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-btn .btn {
@@ -1030,12 +842,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 14px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-action {
-=======
-#wrap .popup .popup-action {
->>>>>>> dnsgk4983/branch
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1050,51 +857,29 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 20px 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-action .btn {
-  height: 14.93333vw;
-=======
-#wrap .popup .popup-action .btn {
   height: 14.9333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .popup-action .btn {
     height: 56px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .popup-scroll {
-=======
-#wrap .popup .popup-scroll {
->>>>>>> dnsgk4983/branch
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: calc(100vh - 56px);
   overflow-y: auto;
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .search-input-box {
-  margin-bottom: 4.26667vw;
-=======
-#wrap .popup .search-input-box {
   margin-bottom: 4.2666666667vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .search-input-box {
     margin-bottom: 16px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .title-box {
-=======
-#wrap .popup .title-box {
->>>>>>> dnsgk4983/branch
   color: #2C2923;
   margin-bottom: 5.3333333333vw;
   text-align: left;
@@ -1104,16 +889,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .title-box p {
-  font-size: 3.73333vw;
-  line-height: 6.34667vw;
-=======
-#wrap .popup .title-box p {
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
->>>>>>> dnsgk4983/branch
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
@@ -1126,12 +904,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .title-box p strong {
-=======
-#wrap .popup .title-box p strong {
->>>>>>> dnsgk4983/branch
   font-size: 4.8vw;
   font-weight: 600;
   line-height: 7.2vw;
@@ -1146,14 +919,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 27px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .remain-count {
-  margin-bottom: 4.26667vw;
-=======
-#wrap .popup .remain-count {
   margin-bottom: 4.2666666667vw;
->>>>>>> dnsgk4983/branch
   line-height: 1;
   font-weight: 400;
   font-size: 3.7333333333vw;
@@ -1175,12 +942,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 16px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .remain-count strong {
-=======
-#wrap .popup .remain-count strong {
->>>>>>> dnsgk4983/branch
   color: #A07D3B;
   display: inline-block;
   margin-left: 2.1333333333vw;
@@ -1191,14 +953,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-left: 8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .list-box {
-  margin-top: 4.26667vw;
-=======
-#wrap .popup .list-box {
   margin-top: 4.2666666667vw;
->>>>>>> dnsgk4983/branch
   color: #2C2923;
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
@@ -1222,14 +978,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .line-box {
-  margin-bottom: 4.26667vw;
-=======
-#wrap .popup .line-box {
   margin-bottom: 4.2666666667vw;
->>>>>>> dnsgk4983/branch
   border: 1px solid #E4DED3;
   padding: 4.2666666667vw;
   -webkit-box-sizing: border-box;
@@ -1245,12 +995,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 16px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .line-box.scroll {
-=======
-#wrap .popup .line-box.scroll {
->>>>>>> dnsgk4983/branch
   max-height: 96vw;
   overflow-y: auto;
 }
@@ -1259,33 +1004,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     max-height: 360px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .line-box.scroll.min {
-  max-height: 36.26667vw;
-=======
-#wrap .popup .line-box.scroll.min {
   max-height: 36.2666666667vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup-page .line-box.scroll.min {
     max-height: 136px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .line-box dl + dl {
   margin-top: 20px;
 }
-
 #wrap .popup-page .line-box dl dt, #wrap .popup-page .line-box dl dd {
-=======
-#wrap .popup .line-box dl + dl {
-  margin-top: 20px;
-}
-#wrap .popup .line-box dl dt, #wrap .popup .line-box dl dd {
->>>>>>> dnsgk4983/branch
   color: #2C2923;
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
@@ -1305,12 +1035,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .line-box dl dt {
-=======
-#wrap .popup .line-box dl dt {
->>>>>>> dnsgk4983/branch
   font-weight: 600;
   margin-bottom: 2.1333333333vw;
 }
@@ -1319,12 +1044,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup-page .line-box dl.bg-box {
-=======
-#wrap .popup .line-box dl.bg-box {
->>>>>>> dnsgk4983/branch
   background-color: #FBFAF6;
   padding: 3.7333333333vw;
 }
@@ -2496,12 +2216,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup {
-=======
-#wrap .popup-layer-center {
->>>>>>> dnsgk4983/branch
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2518,22 +2233,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   z-index: 1003;
   font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
-<<<<<<< HEAD
-
 #wrap .popup.show {
-=======
-#wrap .popup-layer-center.show {
->>>>>>> dnsgk4983/branch
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-wrap {
-=======
-#wrap .popup-layer-center .popup-wrap {
->>>>>>> dnsgk4983/branch
   position: relative;
   background-color: #FFFFFC;
   width: 160vw;
@@ -2543,12 +2248,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     width: 600px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-close {
-=======
-#wrap .popup-layer-center .popup-close {
->>>>>>> dnsgk4983/branch
   position: absolute;
   top: 0;
   right: 0;
@@ -2570,14 +2270,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     height: 40px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-close::before, #wrap .popup .popup-close::after {
-  content: '';
-=======
-#wrap .popup-layer-center .popup-close::before, #wrap .popup-layer-center .popup-close::after {
   content: "";
->>>>>>> dnsgk4983/branch
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2587,30 +2281,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-left: -10px;
   background-color: #2C2923;
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-close::before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 #wrap .popup .popup-close::after {
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
 }
-
 #wrap .popup .popup-close span {
-=======
-#wrap .popup-layer-center .popup-close::before {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-#wrap .popup-layer-center .popup-close::after {
-  -webkit-transform: rotate(315deg);
-  transform: rotate(315deg);
-}
-#wrap .popup-layer-center .popup-close span {
->>>>>>> dnsgk4983/branch
   position: absolute;
   display: inline-block;
   overflow: hidden;
@@ -2635,19 +2314,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     right: 10px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-close.white:before, #wrap .popup .popup-close.white:after {
   background-color: #fff;
 }
-
 #wrap .popup.wide {
-=======
-#wrap .popup-layer-center .popup-close.white:before, #wrap .popup-layer-center .popup-close.white:after {
-  background-color: #fff;
-}
-#wrap .popup-layer-center.wide {
->>>>>>> dnsgk4983/branch
   display: none;
   position: absolute;
   right: auto;
@@ -2673,12 +2343,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     border-radius: 38px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-btn {
-=======
-#wrap .popup-layer-center .popup-btn {
->>>>>>> dnsgk4983/branch
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2695,12 +2360,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-title {
-=======
-#wrap .popup-layer-center .popup-title {
->>>>>>> dnsgk4983/branch
   padding: 3.2vw 6.4vw;
   color: #2C2923;
   font-size: 4.2666666667vw;
@@ -2725,26 +2385,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 27.2px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-title dl {
-=======
-#wrap .popup-layer-center .popup-title dl {
->>>>>>> dnsgk4983/branch
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-title dl dt, #wrap .popup .popup-title dl dd {
-  font-size: 3.73333vw;
-  line-height: 6.34667vw;
-=======
-#wrap .popup-layer-center .popup-title dl dt, #wrap .popup-layer-center .popup-title dl dd {
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
->>>>>>> dnsgk4983/branch
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
@@ -2757,12 +2405,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-title dl dt {
-=======
-#wrap .popup-layer-center .popup-title dl dt {
->>>>>>> dnsgk4983/branch
   width: 12.8vw;
   font-weight: 600;
 }
@@ -2771,26 +2414,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     width: 48px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-title dl dd {
-  margin-left: 5.33333vw;
-=======
-#wrap .popup-layer-center .popup-title dl dd {
   margin-left: 5.3333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup .popup-title dl dd {
     margin-left: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont {
-=======
-#wrap .popup-layer-center .popup-cont {
->>>>>>> dnsgk4983/branch
   padding: 6.4vw;
 }
 @media screen and (min-width: 375px) {
@@ -2798,12 +2430,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 24px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont p {
-=======
-#wrap .popup-layer-center .popup-cont p {
->>>>>>> dnsgk4983/branch
   color: #2C2923;
   font-size: 3.7333333333vw;
   line-height: 6.3466666667vw;
@@ -2821,19 +2448,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont p strong {
   font-weight: 600;
 }
-
 #wrap .popup .popup-cont .box {
-=======
-#wrap .popup-layer-center .popup-cont p strong {
-  font-weight: 600;
-}
-#wrap .popup-layer-center .popup-cont .box {
->>>>>>> dnsgk4983/branch
   margin-bottom: 16vw;
 }
 @media screen and (min-width: 375px) {
@@ -2841,26 +2459,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 60px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont .box:last-child {
   margin-bottom: 0;
 }
-
 #wrap .popup .popup-cont .box .table-row {
   margin-top: 20px;
 }
-
 #wrap .popup .popup-cont .box .table-row th, #wrap .popup .popup-cont .box .table-row td {
-=======
-#wrap .popup-layer-center .popup-cont .box:last-child {
-  margin-bottom: 0;
-}
-#wrap .popup-layer-center .popup-cont .box .table-row {
-  margin-top: 20px;
-}
-#wrap .popup-layer-center .popup-cont .box .table-row th, #wrap .popup-layer-center .popup-cont .box .table-row td {
->>>>>>> dnsgk4983/branch
   padding: 8px 12px;
   font-size: 3.4666666667vw;
   line-height: 5.8933333333vw;
@@ -2875,46 +2480,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 22.1px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont .box .table-row + p {
-  margin-top: 5.33333vw;
-=======
-#wrap .popup-layer-center .popup-cont .box .table-row + p {
   margin-top: 5.3333333333vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .popup .popup-cont .box .table-row + p {
     margin-top: 20px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont .box .upload-img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 #wrap .popup .popup-cont .box .upload-img img {
   width: 100%;
 }
-
 #wrap .popup .popup-cont .heading {
-  margin-bottom: 5.33333vw;
-  font-size: 4.26667vw;
-=======
-#wrap .popup-layer-center .popup-cont .box .upload-img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#wrap .popup-layer-center .popup-cont .box .upload-img img {
-  width: 100%;
-}
-#wrap .popup-layer-center .popup-cont .heading {
   margin-bottom: 5.3333333333vw;
   font-size: 4.2666666667vw;
->>>>>>> dnsgk4983/branch
   font-weight: 600;
   line-height: 1;
 }
@@ -2928,16 +2511,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 16px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont .border-line {
-  padding-bottom: 5.33333vw;
-  margin-bottom: 10.66667vw;
-=======
-#wrap .popup-layer-center .popup-cont .border-line {
   padding-bottom: 5.3333333333vw;
   margin-bottom: 10.6666666667vw;
->>>>>>> dnsgk4983/branch
   border-bottom: 1px solid #E4DED3;
 }
 @media screen and (min-width: 375px) {
@@ -2950,23 +2526,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-bottom: 40px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-cont .notice {
-=======
-#wrap .popup-layer-center .popup-cont .notice {
->>>>>>> dnsgk4983/branch
   color: #7A746A;
   font-size: 14px;
   font-weight: 400;
   margin-top: 8px;
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-text p {
-=======
-#wrap .popup-layer-center .popup-text p {
->>>>>>> dnsgk4983/branch
   text-align: left;
   color: #7A746A;
   font-size: 3.7333333333vw;
@@ -2987,19 +2553,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-text strong {
   font-weight: 600;
 }
-
 #wrap .popup .popup-scroll {
-=======
-#wrap .popup-layer-center .popup-text strong {
-  font-weight: 600;
-}
-#wrap .popup-layer-center .popup-scroll {
->>>>>>> dnsgk4983/branch
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-height: 160vw;
@@ -3010,12 +2567,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     max-height: 600px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-action {
-=======
-#wrap .popup-layer-center .popup-action {
->>>>>>> dnsgk4983/branch
   margin-top: 6.4vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -3029,12 +2581,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 24px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-action a {
-=======
-#wrap .popup-layer-center .popup-action a {
->>>>>>> dnsgk4983/branch
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3077,12 +2624,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin: 0 4px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .popup .popup-action a.popup-cancel {
-=======
-#wrap .popup-layer-center .popup-action a.popup-cancel {
->>>>>>> dnsgk4983/branch
   background-color: #BEBEBC;
 }
 #wrap #popupReport .popup-wrap .popup-cont {
@@ -7983,16 +7525,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: -ms-flexbox;
   display: flex;
 }
-<<<<<<< HEAD
-
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-top a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-=======
->>>>>>> dnsgk4983/branch
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum {
   margin-top: 4.2666666667vw;
 }
@@ -8012,17 +7549,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 4.26667vw;
-=======
   margin-bottom: 4.2666666667vw;
->>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
@@ -8032,22 +7565,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li:last-child {
   margin-bottom: 0;
 }
-<<<<<<< HEAD
-
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li p {
-  font-size: 3.73333vw;
-=======
-#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li a p {
   font-size: 3.7333333333vw;
->>>>>>> dnsgk4983/branch
   font-weight: 600;
 }
 @media screen and (min-width: 375px) {
@@ -8055,12 +7574,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 14px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li span {
-=======
-#wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li a span {
->>>>>>> dnsgk4983/branch
   font-size: 3.2vw;
   font-weight: 400;
 }
@@ -9952,63 +9466,50 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 16px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .section-main-banner .main-banner-list .banner-list {
-  margin-top: 2.13333vw;
+  margin-top: 2.1333333333vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .banner-list {
     margin-top: 8px;
   }
 }
-
 #wrap .section-main-banner .main-banner-list .banner-list:first-child {
   margin-top: 0;
 }
-
 #wrap .section-main-banner .main-banner-list .banner-list a {
   width: 100%;
   background-color: #F2EFE7;
   color: #504B42;
-  height: 29.86667vw;
+  height: 29.8666666667vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .banner-list a {
     height: 112px;
   }
 }
-
 #wrap .section-main-banner .main-banner-list .banner-list3 a {
   width: 100%;
   background-color: #DDDBD8;
   color: #2C2923;
-  height: 21.33333vw;
+  height: 21.3333333333vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .banner-list3 a {
     height: 80px;
   }
 }
-
 #wrap .section-main-banner .main-banner-list .banner-list4 a {
   width: 100%;
   background-color: #7A746A;
   color: #FBFAF6;
-  height: 26.66667vw;
+  height: 26.6666666667vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-main-banner .main-banner-list .banner-list4 a {
     height: 100px;
   }
 }
-
-=======
->>>>>>> dnsgk4983/branch
 #wrap .section-main-banner .main-banner-list .main-banner-top a {
   width: 100%;
   background-color: #504b42;
@@ -11333,11 +10834,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-report-home .report-table {
-<<<<<<< HEAD
-  margin-top: 8.53333vw;
-=======
-  margin-top: 17.0666666667vw;
->>>>>>> dnsgk4983/branch
+  margin-top: 8.5333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-report-home .report-table {
@@ -11369,11 +10866,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   text-align: left;
 }
 #wrap .section-report-home .report-input-box {
-<<<<<<< HEAD
-  margin-top: 8.53333vw;
-=======
-  margin-top: 17.0666666667vw;
->>>>>>> dnsgk4983/branch
+  margin-top: 8.5333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-report-home .report-input-box {
@@ -11381,13 +10874,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .section-report-home .report-input-box .report-input-title {
-<<<<<<< HEAD
-  font-size: 4.26667vw;
-  line-height: 7.25333vw;
-=======
-  font-size: 3.4666666667vw;
-  line-height: 5.8933333333vw;
->>>>>>> dnsgk4983/branch
+  font-size: 4.2666666667vw;
+  line-height: 7.2533333333vw;
   font-weight: 600;
   margin-bottom: 2.1333333333vw;
 }
@@ -11439,21 +10927,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     line-height: 23.8px;
   }
 }
-<<<<<<< HEAD
-
 #wrap .section-report-home .report-input-box .report-input-content dl dt .space {
   display: inline-block;
   padding-left: 6.4vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-report-home .report-input-box .report-input-content dl dt .space {
     padding-left: 24px;
   }
 }
-
-=======
->>>>>>> dnsgk4983/branch
 #wrap .section-report-home .report-input-box .report-input-content dl dd {
   width: 80%;
 }
@@ -11482,7 +10964,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #504B42;
 }
 #wrap .section-report-home .action {
-  margin-top: 8.53333vw;
+  margin-top: 8.5333333333vw;
 }
 @media screen and (min-width: 375px) {
   #wrap .section-report-home .action {
