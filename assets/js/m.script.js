@@ -126,8 +126,8 @@ function pageMove($selector, $position){
 	});
 }
 
-function popupCenterOpen($selector){
-	popupCenterReset();
+function popupOpen($selector){
+	popupReset();
 
 	$($selector).show();
 
@@ -147,7 +147,7 @@ function popupCenterOpen($selector){
 	}
 }
 
-function popupCenterReset(){
+function popupReset(){
 	$('.popup').hide();
 	if($(".popup-dim").is(':visible')){
 		$(".popup-dim").remove();
@@ -155,7 +155,7 @@ function popupCenterReset(){
 }
 
 // popupClose('#brandLayerEvent');
-function popupCenterClose($selector){
+function popupClose($selector){
     //$('.slide-container').slick("unslick");
 	$($selector).hide();
 
@@ -179,7 +179,7 @@ function popupBottomClose($selector){
 }
 
 
-function popupOpen($selector){
+function popupPageOpen($selector){
 	//popupReset();
 
 	$($selector).show();
@@ -197,15 +197,10 @@ function popupOpen($selector){
 	// }
 }
 
-function popupReset(){
-	$('.popup').hide();
-	if($(".popup-dim").is(':visible')){
-		$(".popup-dim").remove();
-	}
-}
+
 
 // popupClose('#brandLayerEvent');
-function popupClose($selector){
+function popupPageClose($selector){
     //$('.slide-container').slick("unslick");
 	$($selector).hide();
 	$("html, body").css({'overflow-y':'auto'});

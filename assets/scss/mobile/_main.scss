@@ -39,6 +39,38 @@
 				@include boxSizing(border-box);
 			}
 
+			.banner-list{
+				@include vw(margin-top,8px);
+				&:first-child{margin-top:0;}
+				a{
+                    //@include vw(width,335px);
+					width:100%;
+					background-color:$color-light-brown2;
+					color:#504B42;
+					@include vw(height,112px);
+				}
+			}
+
+			.banner-list3{
+				a{
+                    //@include vw(width,335px);
+					width:100%;
+					background-color:#DDDBD8;
+					color:$color-black;
+					@include vw(height,80px);
+				}
+			}
+
+			.banner-list4{
+				a{
+                    //@include vw(width,335px);
+					width:100%;
+					background-color:$color-gray;
+					color:$color-light-beige;
+					@include vw(height,100px);
+				}
+			}
+
 			.main-banner-top{
 				a{
                     //@include vw(width,335px);

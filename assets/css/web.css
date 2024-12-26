@@ -3540,58 +3540,90 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom: 1px solid #FFFFFC;
 }
 
+#wrap .tab-box.tab-slide {
+  /*
+            .tab-menu-slide{
+                margin-top:56px;
+                margin-bottom:20px;
+                ul{
+                    display:flex;
+                    justify-content: flex-start;
+                    li {
+                        a { 
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight:600;
+                            font-size:24px;
+                            color:$color-light-gray;
+                            
+                        }
+
+                        position:relative;
+                        margin-right:20px;padding-right:20px;
+                        &:after{
+                            content:'';
+                            width:1px;
+                            height:24px;
+                            background-color:$color-light-brown;
+                            position:absolute;right:0;top:50%;margin-top:-12px;
+
+                        }
+                        
+                        &:last-child{
+                            &:after{display:none;}
+                        }
+    
+                        &.active{
+                            a{
+                                color:$color-brown;
+                            }
+                        }
+                    }
+                }
+            }
+            */
+}
+
 #wrap .tab-box.tab-slide .tab-menu-slide {
-  margin-top: 56px;
   margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #E4DED3;
 }
 
 #wrap .tab-box.tab-slide .tab-menu-slide ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  position: relative;
+  top: 1px;
 }
 
 #wrap .tab-box.tab-slide .tab-menu-slide ul li {
-  position: relative;
-  margin-right: 20px;
-  padding-right: 20px;
+  margin-right: 8px;
+  width: auto !important;
 }
 
 #wrap .tab-box.tab-slide .tab-menu-slide ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 600;
-  font-size: 24px;
-  color: #BEBEBC;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 4px 16px 16px;
+  height: 43px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  border: none;
+  background-color: transparent;
 }
 
-#wrap .tab-box.tab-slide .tab-menu-slide ul li:after {
-  content: '';
-  width: 1px;
-  height: 24px;
-  background-color: #E4DED3;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -12px;
+#wrap .tab-box.tab-slide .tab-menu-slide ul li.active a, #wrap .tab-box.tab-slide .tab-menu-slide ul li:hover a {
+  background-color: #FFFFFC;
+  border-bottom: 2px solid #2C2923;
 }
 
-#wrap .tab-box.tab-slide .tab-menu-slide ul li:last-child:after {
-  display: none;
-}
-
-#wrap .tab-box.tab-slide .tab-menu-slide ul li.active a {
-  color: #A07D3B;
+#wrap .tab-box.tab-slide .tab-menu-slide ul li:first-child a {
+  border-left: 0;
 }
 
 #wrap .category-box {
@@ -12061,9 +12093,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-banner .main-banner-list a {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 36px;
+  line-height: 30px;
   padding: 24px;
   height: 124px;
   background-color: #dddbd8;
@@ -12072,40 +12104,43 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-top a {
+#wrap .section-main-banner .main-banner-list .main-banner-one {
+  margin-top: 12px;
+}
+
+#wrap .section-main-banner .main-banner-list .main-banner-one a {
   background-color: #504b42;
   color: #FBFAF6;
   height: 140px;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom {
-  margin-top: 12px;
+#wrap .section-main-banner .main-banner-list .main-banner-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one {
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-one {
   width: 281px;
   margin-left: 12px;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-one a {
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-one a {
   width: 100%;
   height: 260px;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two {
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-two {
   width: 487px;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a {
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a {
   height: 124px;
   background-color: #f2efe7;
   color: #504b42;
 }
 
-#wrap .section-main-banner .main-banner-list .main-banner-bottom .banner-two a:first-child {
+#wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a:first-child {
   margin-bottom: 12px;
 }
 
@@ -14401,6 +14436,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
+#wrap .section-teacher-home .wrap {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 #wrap .section-teacher-home .teacher-home-detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14512,7 +14552,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-curriculum-list ul li a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-curriculum-list ul li a:hover {
@@ -14535,25 +14577,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
-#wrap .section-teacher-home .tab-menu {
+#wrap .section-teacher-curriculum .tab-menu {
   width: 100%;
   border-bottom: 1px solid #E4DED3;
   height: 43px;
   margin-top: 40px;
 }
 
-#wrap .section-teacher-home .tab-menu ul {
+#wrap .section-teacher-curriculum .tab-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#wrap .section-teacher-home .tab-menu ul li {
+#wrap .section-teacher-curriculum .tab-menu ul li {
   margin-right: 8px;
   width: auto !important;
 }
 
-#wrap .section-teacher-home .tab-menu ul li a {
+#wrap .section-teacher-curriculum .tab-menu ul li a {
   display: inline-block;
   padding: 4px 16px 16px;
   height: 43px;
@@ -14564,24 +14606,24 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: transparent;
 }
 
-#wrap .section-teacher-home .tab-menu ul li.active a {
+#wrap .section-teacher-curriculum .tab-menu ul li.active a {
   background-color: #FFFFFC;
   border-bottom: 2px solid #2C2923;
 }
 
-#wrap .section-teacher-home .curriculum-video-thumb {
+#wrap .section-teacher-curriculum .curriculum-video-thumb {
   position: relative;
   margin: 80px 0 48px;
   width: 1200px;
   height: 675px;
 }
 
-#wrap .section-teacher-home .curriculum-video-thumb iframe, #wrap .section-teacher-home .curriculum-video-thumb video {
+#wrap .section-teacher-curriculum .curriculum-video-thumb iframe, #wrap .section-teacher-curriculum .curriculum-video-thumb video {
   width: 100%;
   height: 100%;
 }
 
-#wrap .section-teacher-home .curriculum-video-thumb .btn-play {
+#wrap .section-teacher-curriculum .curriculum-video-thumb .btn-play {
   position: absolute;
   left: 0;
   top: 0;
@@ -14599,90 +14641,90 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#wrap .section-teacher-home .curriculum-video-thumb .btn-play img {
+#wrap .section-teacher-curriculum .curriculum-video-thumb .btn-play img {
   position: relative;
   z-index: 2;
 }
 
-#wrap .section-teacher-home .curriculum-step {
+#wrap .section-teacher-curriculum .curriculum-step {
   margin-bottom: 160px;
 }
 
-#wrap .section-teacher-home .curriculum-table {
+#wrap .section-teacher-curriculum .curriculum-table {
   margin: 80px 0 160px;
 }
 
-#wrap .section-teacher-home .curriculum-table table {
+#wrap .section-teacher-curriculum .curriculum-table table {
   width: 100%;
   font-size: 15px;
   font-weight: 600;
 }
 
-#wrap .section-teacher-home .curriculum-table table thead tr {
+#wrap .section-teacher-curriculum .curriculum-table table thead tr {
   border-bottom: 1px solid #E4DED3;
 }
 
-#wrap .section-teacher-home .curriculum-table table thead th {
+#wrap .section-teacher-curriculum .curriculum-table table thead th {
   padding: 12px 0;
   border-right: 1px solid #E4DED3;
   background: #F2EFE7;
 }
 
-#wrap .section-teacher-home .curriculum-table table thead th:last-child {
+#wrap .section-teacher-curriculum .curriculum-table table thead th:last-child {
   border-right: 0;
 }
 
-#wrap .section-teacher-home .curriculum-table table tbody tr {
+#wrap .section-teacher-curriculum .curriculum-table table tbody tr {
   border-bottom: 1px solid #E4DED3;
 }
 
-#wrap .section-teacher-home .curriculum-table table tbody th {
+#wrap .section-teacher-curriculum .curriculum-table table tbody th {
   text-align: left;
   padding: 24px;
   border-right: 1px solid #E4DED3;
   background: #FBF9F4;
 }
 
-#wrap .section-teacher-home .curriculum-table table tbody td {
+#wrap .section-teacher-curriculum .curriculum-table table tbody td {
   padding: 24px 16px;
   border-right: 1px solid #E4DED3;
 }
 
-#wrap .section-teacher-home .curriculum-table table tbody td:last-child {
+#wrap .section-teacher-curriculum .curriculum-table table tbody td:last-child {
   border-right: none;
 }
 
-#wrap .section-teacher-home .curriculum-table table tbody td a:hover {
+#wrap .section-teacher-curriculum .curriculum-table table tbody td a:hover {
   text-decoration: underline;
 }
 
-#wrap .section-teacher-home .curriculum-book {
+#wrap .section-teacher-curriculum .curriculum-book {
   margin: 80px 0 160px;
 }
 
-#wrap .section-teacher-home .curriculum-book .list {
+#wrap .section-teacher-curriculum .curriculum-book .list {
   margin-bottom: 80px;
 }
 
-#wrap .section-teacher-home .curriculum-book .list:last-child {
+#wrap .section-teacher-curriculum .curriculum-book .list:last-child {
   margin-bottom: 0;
 }
 
-#wrap .section-teacher-home .curriculum-book .book-title {
+#wrap .section-teacher-curriculum .curriculum-book .book-title {
   font-size: 28px;
   font-weight: 300;
   color: #2c2923;
   margin-bottom: 16px;
 }
 
-#wrap .section-teacher-home .curriculum-book ul {
+#wrap .section-teacher-curriculum .curriculum-book ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 
-#wrap .section-teacher-home .curriculum-book ul li {
+#wrap .section-teacher-curriculum .curriculum-book ul li {
   width: 224px;
   padding: 32px 24px;
   background: #FBFAF6;
@@ -14690,7 +14732,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
           box-sizing: border-box;
 }
 
-#wrap .section-teacher-home .curriculum-book ul li .book-thumb {
+#wrap .section-teacher-curriculum .curriculum-book ul li .book-thumb {
   max-width: 122px;
   min-width: 122px;
   margin: 0 auto;
@@ -14698,54 +14740,54 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   transition: all .5s;
 }
 
-#wrap .section-teacher-home .curriculum-book ul li .book-thumb img {
+#wrap .section-teacher-curriculum .curriculum-book ul li .book-thumb img {
   width: 100%;
 }
 
-#wrap .section-teacher-home .curriculum-book ul li .book-text {
+#wrap .section-teacher-curriculum .curriculum-book ul li .book-text {
   font-size: 15px;
   font-weight: 600;
   text-align: center;
   margin-top: 16px;
 }
 
-#wrap .section-teacher-home .curriculum-book ul li:hover .book-thumb {
+#wrap .section-teacher-curriculum .curriculum-book ul li:hover .book-thumb {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
 }
 
-#wrap .section-teacher-home .curriculum-list {
+#wrap .section-teacher-curriculum .curriculum-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0 15px;
 }
 
-#wrap .section-teacher-home .curriculum-list-wrap {
+#wrap .section-teacher-curriculum .curriculum-list-wrap {
   padding: 120px 0;
   background: #242321;
 }
 
-#wrap .section-teacher-home .curriculum-list .list {
+#wrap .section-teacher-curriculum .curriculum-list .list {
   min-width: 390px;
   max-width: 390px;
 }
 
-#wrap .section-teacher-home .curriculum-list .list img {
+#wrap .section-teacher-curriculum .curriculum-list .list img {
   width: 100%;
 }
 
-#wrap .section-teacher-home .curriculum-list .list .video-text {
+#wrap .section-teacher-curriculum .curriculum-list .list .video-text {
   color: #fff;
 }
 
-#wrap .section-teacher-home .curriculum-list .list .video-desc {
+#wrap .section-teacher-curriculum .curriculum-list .list .video-desc {
   font-size: 18px;
   font-weight: 600;
   margin: 16px 0 4px;
 }
 
-#wrap .section-teacher-home .curriculum-list .list .video-title {
+#wrap .section-teacher-curriculum .curriculum-list .list .video-title {
   display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -14779,12 +14821,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-report-home .report-table {
-  margin-top: 26.66667vw;
+  margin-top: 13.33333vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-report-home .report-table {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
@@ -14814,30 +14856,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-report-home .report-table .table-row tr td {
-  padding: 8vw 17.33333vw;
+  padding: 8vw 0;
   background-color: #FFFFFC;
-  text-align: left;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-report-home .report-table .table-row tr td {
-    padding: 30px 65px;
-  }
-}
-
-#wrap .section-report-home .report-table .table-row tr td:last-child {
-  padding: 8vw 5.06667vw;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-report-home .report-table .table-row tr td:last-child {
-    padding: 30px 19px;
+    padding: 30px 0;
   }
 }
 
 #wrap .section-report-home .report-input-box {
   width: 519px;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
 }
 
 #wrap .section-report-home .report-input-box .report-input-title {
@@ -14880,6 +14911,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 23.8px;
 }
 
+#wrap .section-report-home .report-input-box .report-input-content dl dt .space {
+  display: inline-block;
+  padding-left: 22.5px;
+}
+
 #wrap .section-report-home .report-input-box .report-input-content dl dd .text {
   width: 320px;
 }
@@ -14899,6 +14935,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-report-home .report-input-box .report-input-content .action .btn {
   height: 90px;
+}
+
+#wrap .section-report-home .action {
+  margin-top: 50px;
 }
 
 #wrap .section-report-home .action .btn {

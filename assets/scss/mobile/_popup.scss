@@ -11,7 +11,7 @@
 }
 
 #wrap{
-	.popup{
+	.popup-page{
 		display:none;
 		background-color:$color-white;
 		position: fixed;
@@ -788,7 +788,7 @@
 	}
 
 
-	.popup-layer-center{
+	.popup{
 		display:none;
 		justify-content: center;
 		align-items: center;

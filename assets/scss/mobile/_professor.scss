@@ -39,30 +39,34 @@
 				}
 				.teacher-top {
 					display: flex;
+					a{
+						display: flex;
+					}
 				}
 				.teacher-curriculum {
 					@include vw(margin-top, 16px);
+
 					ul {
 						@include vw(padding, 16px 0);
 						border: 1px solid #E6E9EB;
 						border-width: 1px 0 1px;
 						li {
+							display:flex;
+							align-items:center;
 							@include vw(margin-bottom, 16px);
 							&:last-child {
 								margin-bottom: 0;
 							}
-							a {
-								display: flex;
-								align-items: center;
-								p {
-									@include vw(font-size, 14px);
-									font-weight: 600;
-								}
-								span {
-									@include vw(font-size, 12px);
-									font-weight: 400;
-								}
+						
+							p {
+								@include vw(font-size, 14px);
+								font-weight: 600;
 							}
+							span {
+								@include vw(font-size, 12px);
+								font-weight: 400;
+							}
+							
 						}
 					}
 				}
