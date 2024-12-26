@@ -494,11 +494,20 @@
         }
 
         .tab-menu-small{
-          
+            position:relative;
+            height:55px;
             .menu-title{ margin-left:40px;margin-right:16px;color:$color-brown;font-size:20px;font-weight:600;}
             ul{
+                background-color:transparent;
+                position:absolute;left:50%;right:0;top:0;z-index:10;
+                transform:translateX(-50%); width:1200px;
                 text-align:center;
                 display:flex;justify-content: center;align-items:center;
+                &.fixed{
+                    position:fixed;
+					background-color:$color-white;
+         
+                }
                 li {
                     @extend %variable;
                     border:1px solid $color-light-brown;

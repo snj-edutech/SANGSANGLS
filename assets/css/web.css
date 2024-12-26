@@ -3485,6 +3485,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: block;
 }
 
+#wrap .tab-box .tab-menu-small {
+  position: relative;
+  height: 55px;
+}
+
 #wrap .tab-box .tab-menu-small .menu-title {
   margin-left: 40px;
   margin-right: 16px;
@@ -3494,6 +3499,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .tab-box .tab-menu-small ul {
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1200px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3504,6 +3518,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#wrap .tab-box .tab-menu-small ul.fixed {
+  position: fixed;
+  background-color: #FFFFFC;
 }
 
 #wrap .tab-box .tab-menu-small ul li {
@@ -7582,8 +7601,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 0px;
 }
 
-#wrap .section-online-slide .season-slider .slick-slide {
+#wrap .section-online-slide .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .section-online-slide .season-slider {
+  width: 588px;
   margin-left: 24px;
+}
+
+#wrap .section-online-slide .season-slider .slick-slide {
   width: 588px;
 }
 
