@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eskorte:wght@400;700&display=swap');
 
 @font-face {
   font-family: 'Wemakeprice';
@@ -133,4 +134,17 @@
     url("../fonts/NotoSansKR-Black.eot?#iefix") format("embedded-opentype"),
     url("../fonts/NotoSansKR-Black.woff2") format("woff2"),
     url("../fonts/NotoSansKR-Black.woff") format("woff")
+}
+
+@font-face {
+  font-family: 'Eskorte';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/eskorte/v1/a.woff2') format('woff2'); /* 실제 폰트 경로는 Google Fonts에서 확인 */
+}
+@font-face {
+  font-family: 'Eskorte';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.gstatic.com/s/eskorte/v1/b.woff2') format('woff2'); /* 볼드 폰트 */
 }
