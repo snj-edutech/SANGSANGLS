@@ -385,5 +385,17 @@
 		}
 	}
 
+	.section-special-lecture{
+		.special-lecture-title{font-size:36px;line-height:50.4px;font-weight:400;color:$color-black;padding-bottom:97px;}
+
+		.navigation-box{
+			margin:40px 0;
+			display:flex;
+			justify-content: space-between;
+			align-items:flex-end;
+			.navigation{padding-top:0;}
+		}
+	}
+
 
 }

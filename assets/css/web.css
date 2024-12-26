@@ -7490,6 +7490,31 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 60px;
 }
 
+#wrap .section-special-lecture .special-lecture-title {
+  font-size: 36px;
+  line-height: 50.4px;
+  font-weight: 400;
+  color: #2C2923;
+  padding-bottom: 97px;
+}
+
+#wrap .section-special-lecture .navigation-box {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#wrap .section-special-lecture .navigation-box .navigation {
+  padding-top: 0;
+}
+
 #wrap .section-online-content {
   margin-top: 120px;
 }
