@@ -13,7 +13,7 @@
             letter-spacing:10px;
         }
         .report-table{
-            @include vw(margin-top, 100px);
+            @include vw(margin-top, 50px);
             .table-row{
                 tr{
                     th,td{
@@ -30,11 +30,12 @@
                     }
 
                     td{
-                        @include vw(padding, 30px 65px);
+                        @include vw(padding, 30px 0);
+                       // @include vw(padding, 30px 65px);
                         background-color:$color-white;
-                        text-align:left;
+                        //text-align:left;
                         &:last-child{
-                            @include vw(padding, 30px 19px);
+                          //  @include vw(padding, 30px 19px);
                         }
                     }
                 }
@@ -43,7 +44,7 @@
 
         .report-input-box{
             width:519px;
-            margin:100px auto 0;
+            margin:50px auto 0;
             .report-input-title{
                 font-size:20px;
                 font-weight:600;
@@ -55,12 +56,16 @@
                 display:flex;
                 justify-content: space-between;
                 align-items:flex-start;
+                
                 dl{
                     display:flex;
                     align-items:center;
                     margin-top:10px;
                     &:first-child{margin-top:0;}
-                    dt{width:84px;font-weight:600;font-size:13px;line-height:23.8px;}
+                    dt{
+                        width:84px;font-weight:600;font-size:13px;line-height:23.8px;
+                        .space{display:inline-block;padding-left:22.5px;}
+                    }
                     dd{
                         .text{width:320px;}
                     }
@@ -83,6 +88,7 @@
 
 
         .action{
+            margin-top:50px;
             .btn{
                 width:100%;
             }

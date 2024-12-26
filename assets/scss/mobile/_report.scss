@@ -14,7 +14,7 @@
             }
         }
         .report-table{
-            @include vw(margin-top, 64px);
+            @include vw(margin-top, 32px);
             .table-row{
                 tr{
                     th,td{
@@ -37,47 +37,44 @@
         }
 
         .report-input-box{
-            @include vw(margin-top, 64px);
+            @include vw(margin-top, 32px);
             .report-input-title{
-                @include vw(font-size, 13px);
-                @include vw(line-height, 22.1px);
+                @include vw(font-size, 16px);
+                @include vw(line-height, 27.2px);
                 font-weight:600;
                 @include vw(margin-bottom, 8px);
             }
 
             .report-input-content{
-                display:flex;
-                justify-content: space-between;
-                align-items:flex-start;
+
                 dl{
                     display:flex;
                     align-items:center;
                     @include vw(margin-top,10px);
                     &:first-child{margin-top:0;}
-                    dt{width:84px;font-weight:600;font-size:13px;line-height:23.8px;}
+                    dt{
+                        width:20%;font-weight:400; @include vw(font-size, 14px);@include vw(line-height, 23.8px);
+                        .space{display:inline-block; @include vw(padding-left,24px);}
+                    }
                     dd{
-                        .text{width:320px;}
+                        width:80%;
+                        .text{}
                     }
                 }
 
                 .notice-list{
-                    margin-top:12px;margin-left:84px;
+                    @include vw(margin-top, 8px);margin-left:20%;@include vw(font-size, 12px);@include vw(line-height, 20.4px);
                     li{color:#504B42;}
                 }
 
-                .action{
-                    margin:0;
-                    .btn{
-                        height:90px
-                    }
-                }
+              
             }
         }
 
 
 
         .action{
-            @include vw(margin-top, 24px);
+            @include vw(margin-top, 32px);
             .btn{
                 width:100%;
             }
@@ -95,26 +92,28 @@
         }
 
         .report-table{
-            @include vw(margin-bottom, 20px);
+            @include vw(margin-top, 8px);
             .table-row{
                 tr{
                     th,td{
-                        @include vw(font-size, 16px);
-                        @include vw(padding, 12px 0);
+                        @include vw(font-size, 13px);
+                        @include vw(padding, 8px 14px);
                         border-right:1px solid $color-light-brown;
+                        text-align:left;
                         &:last-child{
                             border-right:0;
                         }
                     }
                 }
+
+               
             }
 
             .action{
                 margin-top:0;
                 .btn-check{
-                    @include vw(width, 71px);
-                    margin:0 auto;
-                    @include vw(padding,0 16px);@include vw(height, 38px);@include vw(line-height, 38px);
+
+                   // @include vw(padding,0 16px);
                 }
             }
     

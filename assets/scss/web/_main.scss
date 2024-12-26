@@ -94,16 +94,17 @@
 			padding-bottom:120px;
 
 			a{
-				display:block;font-size:24px;
+				display:block;font-size:20px;
 				font-weight:300;
-				line-height:36px;
+				line-height:30px;
 				padding:24px;height:124px;
 				background-color:rgba(221, 219, 216, 1);
 				color:rgba(36, 35, 33, 1);
 				@include boxSizing(border-box);
 			}
 
-			.main-banner-top{
+			.main-banner-one{
+				margin-top:12px;
 				a{
 					background-color:#504b42;
 					color:$color-light-beige;
@@ -111,8 +112,7 @@
 				}
 			}
 
-			.main-banner-bottom{
-				margin-top:12px;
+			.main-banner-more{
 				display:flex;
 				.banner-one{
 					width:281px;

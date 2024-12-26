@@ -81,7 +81,20 @@
 		<div id="contents">
 			<div class="section-online-slide">
 				<div class="wrap">
-					<div class="slider season-slider" data-slide="seasonSlider">
+					<div class="slider season-slider" data-slide="oneBannerSlider">
+						<div class="list">
+							<a href="javascript:;">
+								<img src="../../../assets/images/temp/banner1_588x140.png" alt="" />
+							</a>
+						</div>
+						<div class="list">
+							<a href="javascript:;">
+								<img src="../../../assets/images/temp/banner2_588x140.png" alt="" />
+							</a>
+						</div>
+					</div>
+
+					<div class="slider season-slider" data-slide="oneBannerSlider">
 						<div class="list">
 							<a href="javascript:;">
 								<img src="../../../assets/images/temp/banner1_588x140.png" alt="" />
@@ -96,7 +109,7 @@
 				</div>
 			</div>
 
-			<div class="section-online-content">
+			<div class="section-online-content" id="sectionMenu">
 				<div class="wrap">
 					<div class="tab-box">
 						<div class="tab-menu-small">
@@ -1686,6 +1699,9 @@
 		tabMenuClickEvent('.section-online-title');
 
 		slideEvent();
+
+		$(window).on("scroll", scrollMenuEvent);
+		scrollMenuEvent();
 	});
 </script>
 </body>

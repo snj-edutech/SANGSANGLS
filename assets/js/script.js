@@ -83,14 +83,14 @@ function scrollMenuEvent(){
 	var scrollTop = $('#sectionMenu').offset().top;
 
 	if( wt >= scrollTop ){
-		$('#sectionMenu .tab-menu ul').addClass('fixed');
+		$('#sectionMenu .tab-menu-small ul').addClass('fixed');
 	} else {
-		$('#sectionMenu .tab-menu ul').removeClass('fixed');
+		$('#sectionMenu .tab-menu-small ul').removeClass('fixed');
 	}
 
 	$('#sectionMenu .lecture-content').each(function (index, value) {
 		if ($(window).scrollTop() > ($('#' + value.id).offset().top) - 200) {
-			$('#sectionMenu .tab-menu li').eq(index).addClass('active').siblings('li').removeClass('active');
+			$('#sectionMenu .tab-menu-small li').eq(index).addClass('active').siblings('li').removeClass('active');
 		}
 	});
 }
@@ -371,6 +371,19 @@ function slideEvent() {
                 };
                 break;
 
+			case 'oneBannerSlider':
+				options = {
+					autoplay: autoplay,
+					autoplaySpeed: autoplaySpeed,
+					dots: false,
+					arrows: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					centerMode: false,
+					variableWidth: true,
+				};
+				break;
             default:
                 options = {
 					autoplay: autoplay,

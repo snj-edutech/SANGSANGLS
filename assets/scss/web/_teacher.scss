@@ -78,6 +78,10 @@
         }
     }
     .section-teacher-home{
+        .wrap{
+            width:1160px;
+            margin:0 auto;
+        }
         .teacher-home-detail {
             display: flex;
             margin-bottom: 160px;
@@ -164,7 +168,7 @@
                                 align-items: center;
                                 margin-bottom: 8px;
                                 a {
-                                    display: block;
+                                    display: flex;
                                     &:hover {
                                         text-decoration: underline;
                                     }
@@ -191,6 +195,10 @@
             }
         }
 
+
+    }
+
+    .section-teacher-curriculum{
         .tab-menu{
 			width:100%;
 			border-bottom:1px solid $color-light-brown;

@@ -44,12 +44,19 @@ function addEvent(){
 	
 	$(window).on("scroll", scrollMenuEvent);
 	scrollMenuEvent();
+
+	// 탭이 3개 이상일경우 클래스 추가
+	const tabMenu = document.querySelector(".tab-menu ul");
+    if (tabMenu && tabMenu.children.length >= 3) {
+        tabMenu.classList.add("three-or-more");
+    }
 	
+	toggleEvent();
 
 	/*
 	headerEvent();
 	fileUploadEvent();
-	toggleEvent();
+	
 
 	selectEvent();
 
@@ -59,6 +66,13 @@ function addEvent(){
 	*/
 }
 
+function toggleEvent(){
+    $('[data-toggle]').on('click', function(){
+        var $this = $(this);
+
+        $this.parents('dl').toggleClass('unfold').siblings().removeClass('unfold');
+    });
+}
 
 function menuEvent(){
     $(this).toggleClass("active");
@@ -112,8 +126,8 @@ function pageMove($selector, $position){
 	});
 }
 
-function popupCenterOpen($selector){
-	popupCenterReset();
+function popupOpen($selector){
+	popupReset();
 
 	$($selector).show();
 
@@ -133,7 +147,7 @@ function popupCenterOpen($selector){
 	}
 }
 
-function popupCenterReset(){
+function popupReset(){
 	$('.popup').hide();
 	if($(".popup-dim").is(':visible')){
 		$(".popup-dim").remove();
@@ -141,7 +155,7 @@ function popupCenterReset(){
 }
 
 // popupClose('#brandLayerEvent');
-function popupCenterClose($selector){
+function popupClose($selector){
     //$('.slide-container').slick("unslick");
 	$($selector).hide();
 
@@ -165,7 +179,7 @@ function popupBottomClose($selector){
 }
 
 
-function popupOpen($selector){
+function popupPageOpen($selector){
 	//popupReset();
 
 	$($selector).show();
@@ -183,15 +197,10 @@ function popupOpen($selector){
 	// }
 }
 
-function popupReset(){
-	$('.popup').hide();
-	if($(".popup-dim").is(':visible')){
-		$(".popup-dim").remove();
-	}
-}
+
 
 // popupClose('#brandLayerEvent');
-function popupClose($selector){
+function popupPageClose($selector){
     //$('.slide-container').slick("unslick");
 	$($selector).hide();
 	$("html, body").css({'overflow-y':'auto'});
@@ -679,13 +688,7 @@ function fileUploadEvent(){
 }
 
 
-function toggleEvent(){
-    $('[data-toggle]').on('click', function(){
-        var $this = $(this);
 
-        $this.parents('dl').toggleClass('unfold').siblings().removeClass('unfold');
-    });
-}
 
 
 function selectEvent(){

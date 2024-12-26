@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상상로스쿨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="상상로스쿨">
+    <meta property="og:image" content="../../../assets/images/og.png">
+    <meta property="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta name="google-site-verification" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+    <meta name="keyword" content="상상로스쿨">
+    <meta name="title" content="상상로스쿨">
+    <meta name="description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+    <meta property="WT.ti" content="">
+    <meta name="DCS.dcsuri" content="">
+    <meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="../../../assets/libs/slick/slick.css" />
+	<link rel="stylesheet" href="../../../assets/css/mobile.css" />
+
+	<script src="../../../assets/libs/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/libs/slick/slick-1.6.0.min.js"></script>
+	<script src="../../../assets/libs/masonry/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="container">
+		<div id="contents" class="">
+			<div class="section-header">
+				<div class="header-title">
+					<a href="javascript:;" class="btn-back"><img src="../../../assets/images/mobile/btn_back_large.svg" alt="back" /></a>
+					<h2><a href="javascript:;">개인정보 수정</a></h2>
+				</div>
+			</div>
+
+			<div class="section-mypage-info">
+				<div class="holder">
+					<h4>기본 정보</h4>
+					<div class="lecture-data-input">
+						<dl>
+							<dt>이메일 ID</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text disabled" disabled placeholder="" value="sangsang@naver.com" />
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>아이디</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text disabled" disabled placeholder="" value="abcdefg123456" />
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>이름</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text disabled" disabled placeholder="" value="홍길동" />
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>성별</dt>
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType1" class="radio" name="radioSelectA" checked="">
+										<label for="radioType1">남</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType2" class="radio" name="radioSelectA">
+										<label for="radioType2">여</label>
+									</span>
+									
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>비밀번호</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="비밀번호를 입력하세요" value="" />
+								</div>
+							</dd>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="비밀번호를 한 번 더 입력하세요" value="" />
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>휴대폰번호</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="01012345678">
+									<a href="javascript:;" class="btn small btn-address">인증번호 발송</a>
+								</div>
+							</dd>
+						</dl>
+
+						
+						<dl>
+							<dt>생년월일</dt>
+							<dd>
+								<div class="input-box">
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">2000</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">3</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">1</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>정보 수신 이메일</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="sangsang@naver.com" />
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>수신여부</dt>
+							<dd>
+								<div class="checkbox-box">
+									<div class="form-control">
+										<span class="fake-checkbox">
+											<input type="checkbox" id="privacyCheck1" class="checkbox" checked="">
+											<label for="privacyCheck1">SMS</label>
+										</span>
+										<span class="fake-checkbox">
+											<input type="checkbox" id="privacyCheck2" class="checkbox">
+											<label for="privacyCheck2">Email</label>
+										</span>
+									</div>
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>주소</dt>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="00012345678">
+									<a href="javascript:;" class="btn small btn-address">주소검색</a>
+								</div>
+							</dd>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="서울시 강남구 논현로 524" />
+								</div>
+							</dd>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="청파빌딩 2층" />
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>학사정보</dt>
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType3" class="radio" name="radioSelectB" checked="">
+										<label for="radioType3">국내</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType4" class="radio" name="radioSelectB">
+										<label for="radioType4">해외</label>
+									</span>
+									
+								</div>
+							</dd>
+							<dd>
+								<div class="form-control">
+									<input type="text" class="text" placeholder="" value="상상대학교 제1캠퍼스" />
+								</div>
+							</dd>
+							<dd>
+								<div class="input-box">
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">전공계열선택</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-control">
+										<input type="text" class="text" placeholder="" value="법학과" />
+									</div>
+								</div>
+							</dd>
+							<dd>
+								<div class="input-box">
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">졸업여부</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">학년선택</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">졸업년도</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-text">* 기본정보 수정 시 이매진피앤엠 모든 홈페이지(상상로스쿨, 상상모의고사)의 회원 정보가 수정됩니다.</div>
+							</dd>
+						</dl>
+					</div>
+
+				</div>
+
+				<div class="hr"></div>
+				<div class="holder">
+					<h4>선택 항목</h4>
+					<div class="lecture-data-input">
+						<dl>
+							<dt>학부평점</dt>
+							<dd>
+								<div class="average-box">
+									<div class="form-control">
+										<input type="text" class="text " placeholder="" value="100">
+									</div>
+									<div class="space first">/100</div>
+									<div class="space">(</div>
+									<div class="form-control">
+										<input type="text" class="text " placeholder="" value="4.5">
+									</div>
+									<div class="space">/</div>
+									<div class="form-control">
+										<input type="text" class="text " placeholder="" value="4.5">
+									</div>
+									<div class="space">)</div>
+									<div class="form-text">예시  3.8 / 4.5</div>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>공인영어성적</dt>
+							<dd>
+								<div class="input-box">
+									<div class="input-text-start">TOEIC</div>
+									<div class="form-control">
+										<input type="text" class="text" placeholder="" value="100" />
+									</div>
+									<div class="input-text-end">점</div>
+								</div>
+							</dd>
+							<dd>
+								<div class="input-box">
+									<div class="input-text-start">TOEFL</div>
+									<div class="form-control">
+										<input type="text" class="text" placeholder="" value="100" />
+									</div>
+									<div class="input-text-end">점</div>
+								</div>
+							</dd>
+							<dd>
+								<div class="input-box">
+									<div class="input-text-start">TEPS</div>
+									<div class="form-control">
+										<input type="text" class="text" placeholder="" value="100" />
+									</div>
+									<div class="input-text-end">점</div>
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>법학 학습 경력</dt>
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType5" class="radio" name="radioSelectC" checked="">
+										<label for="radioType5">YES</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType6" class="radio" name="radioSelectC">
+										<label for="radioType6">NO</label>
+									</span>
+									
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>희망 로스쿨</dt>
+							<dd>
+								<div class="input-box">
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">1순위</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">2순위</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-control">
+										<div class="select">
+											<select name="" id="">
+												<option value="">3순위</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>LEET 응시 경험</dt>
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType7" class="radio" name="radioSelectD" checked="">
+										<label for="radioType7">초시</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType8" class="radio" name="radioSelectD">
+										<label for="radioType8">재시</label>
+									</span>
+									
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>선호하는 학습 방법</dt>
+							<dd>
+								<div class="form-control">
+									<span class="fake-radio">
+										<input type="radio" id="radioType9" class="radio" name="radioSelectE" checked="">
+										<label for="radioType9">학원</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType10" class="radio" name="radioSelectE">
+										<label for="radioType10">온라인</label>
+									</span>
+									<span class="fake-radio">
+										<input type="radio" id="radioType11" class="radio" name="radioSelectE">
+										<label for="radioType11">독학(스터디)</label>
+									</span>
+								</div>
+							</dd>
+						</dl>
+
+						<dl>
+							<dt>로스쿨 정보 획득 경로</dt>
+							<dd>
+								<div class="form-control">
+									<div class="select">
+										<select name="" id="">
+											<option value="">정보 획득 경로 선택 </option>
+										</select>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>상상로스쿨 인지 경로</dt>
+							<dd>
+								<div class="form-control">
+									<div class="select">
+										<select name="" id="">
+											<option value="">인지 경로 선택</option>
+										</select>
+									</div>
+								</div>
+							</dd>
+						</dl>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="section-action">
+				<a href="javascript:;" class="btn btn-brown full large"><strong>수정</strong></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업 -->
+
+
+</div>
+
+<script src="../../../assets/js/m.script.js"></script>
+<script>
+	$(function(){
+
+	});
+</script>
+</body>
+</html>
