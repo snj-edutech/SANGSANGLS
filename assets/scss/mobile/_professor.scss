@@ -83,6 +83,10 @@
 
 	.section-teacher-curriculum {
 		@include vw(margin-bottom, 100px);
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
 		.curriculum {
 			&-title {
 				display: flex;
@@ -195,10 +199,16 @@
 	}
 	.section-curriculum {
 		@include vw(margin-bottom, 100px);
+		.wrap{
+			max-width:600px;
+			margin:0 auto;
+		}
 		.curriculum {
 			&-video-thumb {
 				position: relative;
+				@include vw(width, 335px);
 				@include vw(height, 188px);
+				margin: 0 auto;
 				@include vw(margin-bottom, 24px);
 				.btn-play {
 					position: absolute;
