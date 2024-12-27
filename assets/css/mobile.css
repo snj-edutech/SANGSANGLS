@@ -11030,6 +11030,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap [class^=section-pass] img {
   max-width: 100%;
 }
+#wrap [class^=section-pass] .text-box p {
+  color: #2C2923;
+}
 #wrap .pass-title {
   text-align: center;
   padding: 21.3333333333vw 0 12.8vw;
