@@ -2,6 +2,7 @@
     [class^="section-pass"] {
         word-break: keep-all;
         color: #2C2923;
+		.wrap{max-width:600px;margin:0 auto;}
         img {
             max-width: 100%;
         }
@@ -158,6 +159,7 @@
 
         &-schedule {
             @include vw(margin-top, 80px);
+			@include vw(padding-bottom, 32px);
             background: #F2EFE7;
             .schedule-calender {
                 @include vw(margin-top, 16px);
