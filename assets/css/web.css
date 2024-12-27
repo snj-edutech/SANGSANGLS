@@ -6003,10 +6003,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-online-slide .wrap {
   display: flex;
+  justify-content: space-between;
 }
 #wrap .section-online-slide .season-slider {
   width: 588px;
-  margin-left: 24px;
 }
 #wrap .section-online-slide .season-slider .slick-slide {
   width: 588px;

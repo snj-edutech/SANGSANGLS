@@ -77,10 +77,11 @@
 		margin-top:0px;
 		.wrap{
 			display:flex;
+			justify-content: space-between;
 		}
 		.season-slider{
 			width:588px;
-			margin-left:24px;
+			//margin-left:24px;
 			.slick-slide{
 				width:588px;
 				img{width:100%;}
