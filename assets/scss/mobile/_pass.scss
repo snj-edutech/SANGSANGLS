@@ -1,7 +1,6 @@
 #wrap {
     [class^="section-pass"] {
         word-break: keep-all;
-        color: #2C2923;
 		.wrap{max-width:600px;margin:0 auto;}
         img {
             max-width: 100%;
@@ -9,7 +8,7 @@
     }
     .pass-title {
         text-align: center;
-        @include vw(padding, 37px 0 32px);
+        @include vw(padding, 80px 0 48px);
         p {
             font-family: $font-eskorte;
             @include vw(font-size, 16px);
@@ -32,7 +31,9 @@
                         @include vw(margin, 32px 0 24px);
                         p {
                             @include vw(font-size, 24px);
-                            font-weight: 400;
+                            font-weight: 800;
+                            line-height: 1.5;
+                            color: #2C2923;
                             @include vw(margin-bottom, 8px);
                         }
                         span {
@@ -47,7 +48,7 @@
                             display: block;
                             @include vw(font-size, 20px);
                             line-height: 1.5;
-                            font-weight: 500;
+                            font-weight: 700;
                             color: #0084FF;
                             @include vw(margin-bottom, 32px);
                         }
@@ -88,6 +89,7 @@
                             img {height: 100%;}
                         }
                         .small-title {
+                            color: #2C2923;
                             @include vw(margin, 24px 0 32px);
                             span {
                                 @include vw(font-size, 20px);
@@ -95,7 +97,9 @@
                             }
                             p {
                                 @include vw(font-size, 24px);
+                                line-height: 1.5;
                                 font-weight: 700;
+                                color: #2C2923;
                                 @include vw(margin-top, 8px);
                             }
                         }
@@ -103,8 +107,8 @@
                             @include vw(font-size, 16px);
                             strong {
                                 color: #0084FF;
-                                line-height: 1.4;
-                                font-weight: 400;
+                                line-height: 1.75;
+                                font-weight: 800;
                             }
                         }
                         .small-period {
@@ -112,6 +116,7 @@
                             p {
                                 @include vw(font-size, 20px);
                                 font-weight: 600;
+                                color: #2C2923;
                             }
                         }
                     }
@@ -119,7 +124,7 @@
             }
             .pass-exam {
                 text-align: center;
-                @include vw(padding, 40px 64px);
+                @include vw(padding, 40px 24px);
                 background: #302F4C;
                 .img-box {
                     @include vw(height, 200px);
@@ -128,11 +133,12 @@
                 }
                 .text-box {
                     p {
-                        @include vw(font-size, 24px);
+                        @include vw(font-size, 22px);
                         font-weight: 800;
                         color: #FFFFFC;
-                        line-height: 1.7;
+                        line-height: 1.8;
                         @include vw(margin, 32px 0);
+                        letter-spacing: -0.03em
                     }
                     strong {
                         @include vw(font-size, 20px);
@@ -162,7 +168,6 @@
 			@include vw(padding-bottom, 32px);
             background: #F2EFE7;
             .schedule-calender {
-                @include vw(margin-top, 16px);
                 .list {
                     @include vw(margin-bottom, 20px);
                     &:last-child {
@@ -174,6 +179,7 @@
                             border-width: 1px;
                             p {
                                 @include vw(font-size, 20px);
+                                line-height: 2;
                                 font-weight: 800;
                             }
                         }
@@ -201,11 +207,8 @@
                         align-content: center;
                         justify-content: space-between;
                         @include vw(font-size, 20px);
+                        line-height: 2;
                         font-weight: 500;
-                        @include vw(margin-bottom, 8px);
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
                         span {
                             color: #0084FF;
                         }
@@ -242,14 +245,16 @@
                         p {
                             @include vw(font-size, 28px);
                             font-weight: 700;
+                            color: #2C2923;
                             @include vw(margin-top, 8px);
                         }
                     }
                     &-text {
                         strong {
                             display: block;
-                            @include vw(font-size, 16px);
-                            font-weight: 500;
+                            @include vw(font-size, 20px);
+                            line-height: 1.4;
+                            font-weight: 800;
                             color: #0084FF;
                             @include vw(margin-bottom, 16px);
                         }
@@ -259,7 +264,7 @@
                                 @include vw(font-size, 16px);
                                 font-weight: 500;
                                 @include vw(margin-bottom, 16px);
-                                @include vw(padding-left, 16px);
+                                @include vw(padding-left, 12px);
                                 &:before {
                                     content: "";
                                     position: absolute;
@@ -326,8 +331,9 @@
                                 .text-box {
                                     p {
                                         @include vw(font-size, 12px);
-                                        line-height: 1.3;
-                                        font-weight: 500;
+                                        line-height: 1.6;
+                                        font-weight: 900;
+                                        color: #2C2923;
                                         @include vw(margin-bottom, 8px);
                                     }
                                     span {
