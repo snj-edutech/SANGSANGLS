@@ -201,6 +201,14 @@
 		strong{
 			font-weight:600;
 		}
+
+		.info-text{
+			font-weight:400;
+			@include vw(font-size,13px);
+			@include vw(line-height,22.1px);
+			color:$color-gray;
+
+		}
 	}
 
 	h4{
