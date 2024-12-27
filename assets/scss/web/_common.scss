@@ -1488,4 +1488,16 @@
         &.flex-between{justify-content: space-between;}
 	}
 
+    .table-bordered {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+        border-collapse: collapse;
+        table-layout: auto !important;
+
+        tr td {
+            border: 1px solid #b6b6b6;
+            padding: 5px;
+        }
+    }
+
 }
