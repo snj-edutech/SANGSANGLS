@@ -831,8 +831,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup-action a {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   font-size: 3.7333333333vw;
   border-radius: 0.5333333333vw;
   width: 19.4666666667vw;
@@ -2753,6 +2762,29 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 14px;
   font-weight: 600;
 }
+<<<<<<< HEAD
+=======
+#wrap .search-input-box .search-text input[type=text]::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap .search-input-box .search-text input[type=text]::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap .search-input-box .search-text input[type=text]:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap .search-input-box .search-text input[type=text]::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 14px;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .search-input-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 14px;
@@ -3143,6 +3175,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .select select::-ms-expand {
   display: none;
 }
+<<<<<<< HEAD
+=======
+#wrap .form-control .select select::-webkit-input-placeholder {
+  color: #2C2923;
+}
+#wrap .form-control .select select::-moz-placeholder {
+  color: #2C2923;
+}
+#wrap .form-control .select select:-ms-input-placeholder {
+  color: #2C2923;
+}
+#wrap .form-control .select select::-ms-input-placeholder {
+  color: #2C2923;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .form-control .select select::placeholder {
   color: #2C2923;
 }
@@ -3168,6 +3215,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .form-control .text::-webkit-input-placeholder {
+  color: #BEBEBC;
+}
+#wrap .form-control .text::-moz-placeholder {
+  color: #BEBEBC;
+}
+#wrap .form-control .text:-ms-input-placeholder {
+  color: #BEBEBC;
+}
+#wrap .form-control .text::-ms-input-placeholder {
+  color: #BEBEBC;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .form-control .text::placeholder {
   color: #BEBEBC;
 }
@@ -3216,12 +3278,50 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     border-width: 1px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .form-control .textarea::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .form-control .textarea::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .form-control .textarea:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .form-control .textarea::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .form-control .textarea::placeholder {
   color: #BEBEBC;
   font-size: 3.7333333333vw;
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
+=======
+  #wrap .form-control .textarea::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .textarea:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .textarea::-ms-input-placeholder {
+    font-size: 14px;
+  }
+>>>>>>> dnsgk4983/branch
   #wrap .form-control .textarea::placeholder {
     font-size: 14px;
   }
@@ -3320,8 +3420,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .custom-select .selected {
   border: 1px solid #E4DED3;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
   align-items: center;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   padding: 2.1333333333vw 4.2666666667vw 2.1333333333vw 4.2666666667vw;
   font-size: 3.7333333333vw;
   font-weight: 400;
@@ -3453,6 +3562,29 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 154px;
   color: #BEBEBC;
 }
+<<<<<<< HEAD
+=======
+#wrap .date-box .date::-webkit-input-placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap .date-box .date::-moz-placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap .date-box .date:-ms-input-placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
+}
+#wrap .date-box .date::-ms-input-placeholder {
+  color: #2C2923;
+  font-size: 14px;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .date-box .date::placeholder {
   color: #2C2923;
   font-size: 14px;
@@ -4512,6 +4644,29 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 24px;
   font-weight: 600;
 }
+<<<<<<< HEAD
+=======
+#wrap #header .header-search .search-box .search-text input[type=text]::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+#wrap #header .header-search .search-box .search-text input[type=text]::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+#wrap #header .header-search .search-box .search-text input[type=text]:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+#wrap #header .header-search .search-box .search-text input[type=text]::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap #header .header-search .search-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 24px;
@@ -4901,6 +5056,29 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 24px;
   font-weight: 600;
 }
+<<<<<<< HEAD
+=======
+#wrap .section-search .search-box .search-text input[type=text]::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+#wrap .section-search .search-box .search-text input[type=text]::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+#wrap .section-search .search-box .search-text input[type=text]:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+#wrap .section-search .search-box .search-text input[type=text]::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 24px;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .section-search .search-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 24px;
@@ -10546,7 +10724,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 72.2666666667vw;
+<<<<<<< HEAD
   justify-content: flex-start;
+=======
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+>>>>>>> dnsgk4983/branch
   margin-left: 16px;
   padding: 0 24px;
   height: 80px;
@@ -11604,6 +11788,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   max-width: 122px;
   min-width: 122px;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+  -webkit-transition: all 0.5s;
+>>>>>>> dnsgk4983/branch
   transition: all 0.5s;
 }
 #wrap .section-teacher-curriculum .curriculum-book ul li .book-thumb img {
@@ -11885,9 +12073,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin: 40px 0;
 }
 #wrap .section-pass-content .pass-books .book-text strong {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 135px;
   color: #0084FF;
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 #wrap .section-pass-content .pass-books .book-text b {
   line-height: 1.5;
@@ -11926,16 +12120,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-pass-content .pass-small ul li .img-box {
   height: 185px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 32px;
 }
 #wrap .section-pass-content .pass-small ul li .img-box img {
   height: 100%;
 }
 #wrap .section-pass-content .pass-small ul li .text-box {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   align-items: center;
   height: calc(100% - 185px);
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100% - 217px);
+>>>>>>> dnsgk4983/branch
   text-align: center;
 }
 #wrap .section-pass-content .pass-small ul li .text-box .small-title span {
@@ -11985,9 +12190,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 28px;
   font-weight: 700;
   color: #0084FF;
-  margin: 40px 0 120px;
+  margin: 42px 0;
 }
 #wrap .section-pass-content .pass-exam .text-box span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 100px;
   font-size: 28px;
   font-weight: 600;
   color: #BEBEBC;
@@ -12026,15 +12238,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-pass-schedule table tbody td ul li {
   font-size: 22px;
+  line-height: 2;
   font-weight: 800;
   color: #2C2923;
-  margin-bottom: 8px;
 }
 #wrap .section-pass-schedule table tbody td ul li:last-child {
   margin-bottom: 0;
 }
 #wrap .section-pass-schedule table tbody td ul li strong {
   color: #0084FF;
+  margin-left: 4px;
 }
 #wrap .section-pass-schedule table tbody td.archive {
   height: 120px;
@@ -12081,14 +12294,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 #wrap .section-pass-schedule .schedule-list .list-text {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.7;
   margin: 40px 0 80px;
 }
 #wrap .section-pass-schedule .schedule-list .list-text strong {
   position: relative;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
   color: #0084FF;
 }
@@ -12097,6 +12310,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: inline-block;
   vertical-align: middle;
   color: #BEBEBC;
+  margin-top: 4px;
 }
 #wrap .section-pass-schedule .schedule-list .list-text .img-box {
   margin-top: 24px;
@@ -12283,4 +12497,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 1px solid #2C2923;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+<<<<<<< HEAD
 }/*# sourceMappingURL=web.css.map */
+=======
+}
+>>>>>>> dnsgk4983/branch

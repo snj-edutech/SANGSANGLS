@@ -1491,7 +1491,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup-layer-bottom .popup-layer-content .lecture-list .check-list .check-control {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> dnsgk4983/branch
   margin-top: 4.2666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -1571,7 +1577,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup-layer-bottom .popup-layer-action {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> dnsgk4983/branch
   padding: 5.3333333333vw;
 }
 @media screen and (min-width: 375px) {
@@ -1789,8 +1801,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #popupCalendar .calender-box .calender-table .table-row tr td span {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   width: 10.6666666667vw;
   height: 10.6666666667vw;
   border-radius: 50%;
@@ -1847,6 +1868,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #popupMypageBookInfo .book-list-box .book-list {
   border-bottom: 1px solid #E4DED3;
   padding: 5.3333333333vw 0;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
   align-items: flex-start;
 }
@@ -2049,6 +2075,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #popupOrderView .order-data-box dl {
   margin-top: 1.0666666667vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
 }
 @media screen and (min-width: 375px) {
@@ -2504,8 +2535,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .popup .popup-action a {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   font-size: 3.7333333333vw;
   border-radius: 0.5333333333vw;
   width: 19.4666666667vw;
@@ -2836,7 +2876,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   white-space: nowrap;
   overflow-x: auto;
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   height: 12.2666666667vw;
   margin: 0 auto;
   box-sizing: border-box;
@@ -3430,6 +3476,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .select select::-ms-expand {
   display: none;
 }
+<<<<<<< HEAD
+=======
+#wrap .form-control .select select::-webkit-input-placeholder {
+  color: #2C2923;
+}
+#wrap .form-control .select select::-moz-placeholder {
+  color: #2C2923;
+}
+#wrap .form-control .select select:-ms-input-placeholder {
+  color: #2C2923;
+}
+#wrap .form-control .select select::-ms-input-placeholder {
+  color: #2C2923;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .form-control .select select::placeholder {
   color: #2C2923;
 }
@@ -3463,11 +3524,45 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     height: 48px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .form-control .text::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+}
+#wrap .form-control .text::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+}
+#wrap .form-control .text:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+}
+#wrap .form-control .text::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .form-control .text::placeholder {
   color: #BEBEBC;
   font-size: 3.7333333333vw;
 }
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
+=======
+  #wrap .form-control .text::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .text::-moz-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .text:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .text::-ms-input-placeholder {
+    font-size: 14px;
+  }
+>>>>>>> dnsgk4983/branch
   #wrap .form-control .text::placeholder {
     font-size: 14px;
   }
@@ -3517,12 +3612,50 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     border-width: 1px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .form-control .textarea::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .form-control .textarea::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .form-control .textarea:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .form-control .textarea::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .form-control .textarea::placeholder {
   color: #BEBEBC;
   font-size: 3.7333333333vw;
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
+=======
+  #wrap .form-control .textarea::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .textarea:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .form-control .textarea::-ms-input-placeholder {
+    font-size: 14px;
+  }
+>>>>>>> dnsgk4983/branch
   #wrap .form-control .textarea::placeholder {
     font-size: 14px;
   }
@@ -3582,6 +3715,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding: 12px 54px 12px 8px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .form-control .fake-save-box .fake-input::-webkit-input-placeholder {
+  color: #BEBEBC;
+}
+#wrap .form-control .fake-save-box .fake-input::-moz-placeholder {
+  color: #BEBEBC;
+}
+#wrap .form-control .fake-save-box .fake-input:-ms-input-placeholder {
+  color: #BEBEBC;
+}
+#wrap .form-control .fake-save-box .fake-input::-ms-input-placeholder {
+  color: #BEBEBC;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .form-control .fake-save-box .fake-input::placeholder {
   color: #BEBEBC;
 }
@@ -3598,8 +3746,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .form-control .fake-save-box .fake-btn label {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   width: 9.3333333333vw;
   height: 6.9333333333vw;
   text-align: center;
@@ -3905,12 +4062,50 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     width: 145px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .date-box .date::-webkit-input-placeholder {
+  color: #2C2923;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .date-box .date::-moz-placeholder {
+  color: #2C2923;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .date-box .date:-ms-input-placeholder {
+  color: #2C2923;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+#wrap .date-box .date::-ms-input-placeholder {
+  color: #2C2923;
+  font-size: 3.7333333333vw;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .date-box .date::placeholder {
   color: #2C2923;
   font-size: 3.7333333333vw;
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
+=======
+  #wrap .date-box .date::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .date-box .date::-moz-placeholder {
+    font-size: 14px;
+  }
+  #wrap .date-box .date:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  #wrap .date-box .date::-ms-input-placeholder {
+    font-size: 14px;
+  }
+>>>>>>> dnsgk4983/branch
   #wrap .date-box .date::placeholder {
     font-size: 14px;
   }
@@ -4144,6 +4339,33 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 13px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .search-input-box .search-text input[type=text]::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.4666666667vw;
+  font-weight: 600;
+  line-height: 1;
+}
+#wrap .search-input-box .search-text input[type=text]::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 3.4666666667vw;
+  font-weight: 600;
+  line-height: 1;
+}
+#wrap .search-input-box .search-text input[type=text]:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.4666666667vw;
+  font-weight: 600;
+  line-height: 1;
+}
+#wrap .search-input-box .search-text input[type=text]::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 3.4666666667vw;
+  font-weight: 600;
+  line-height: 1;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .search-input-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 3.4666666667vw;
@@ -4151,6 +4373,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 1;
 }
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
+=======
+  #wrap .search-input-box .search-text input[type=text]::-webkit-input-placeholder {
+    font-size: 13px;
+  }
+  #wrap .search-input-box .search-text input[type=text]::-moz-placeholder {
+    font-size: 13px;
+  }
+  #wrap .search-input-box .search-text input[type=text]:-ms-input-placeholder {
+    font-size: 13px;
+  }
+  #wrap .search-input-box .search-text input[type=text]::-ms-input-placeholder {
+    font-size: 13px;
+  }
+>>>>>>> dnsgk4983/branch
   #wrap .search-input-box .search-text input[type=text]::placeholder {
     font-size: 13px;
   }
@@ -4259,8 +4496,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .btn {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   height: 10.1333333333vw;
   padding: 0 4.2666666667vw;
   font-weight: 400;
@@ -4478,7 +4724,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   top: 50%;
   right: 2.4vw;
+<<<<<<< HEAD
   transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> dnsgk4983/branch
   margin-left: 1.0666666667vw;
   line-height: 1;
 }
@@ -4580,6 +4831,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-action {
   padding: 5.3333333333vw 5.3333333333vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
   justify-content: center;
 }
@@ -4846,7 +5102,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #header .header-main .wrap {
   display: flex;
   height: 18.1333333333vw;
+<<<<<<< HEAD
   align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
 }
 @media screen and (min-width: 375px) {
   #wrap #header .header-main .wrap {
@@ -4884,8 +5146,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 1px;
   background-color: #FBFAF6;
   display: inline-block;
+<<<<<<< HEAD
   transition: all 0.4s;
   box-sizing: border-box;
+=======
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+>>>>>>> dnsgk4983/branch
 }
 #wrap #header .header-main .header-util #menu .menu-icon span:nth-of-type(1) {
   top: 0px;
@@ -5042,6 +5311,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #header .header-layer-gnb .header-myInfo {
   padding: 0vw 6.4vw 8.5333333333vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
 }
 @media screen and (min-width: 375px) {
@@ -5321,6 +5595,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #header .header-layer-mypage .header-myInfo {
   padding: 0vw 6.4vw 8.5333333333vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
 }
 @media screen and (min-width: 375px) {
@@ -5690,12 +5969,50 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 16px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap #header .header-search .search-box .search-text input[type=text]::-webkit-input-placeholder {
+  color: #BEBEBC;
+  font-size: 4.2666666667vw;
+  font-weight: 400;
+}
+#wrap #header .header-search .search-box .search-text input[type=text]::-moz-placeholder {
+  color: #BEBEBC;
+  font-size: 4.2666666667vw;
+  font-weight: 400;
+}
+#wrap #header .header-search .search-box .search-text input[type=text]:-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 4.2666666667vw;
+  font-weight: 400;
+}
+#wrap #header .header-search .search-box .search-text input[type=text]::-ms-input-placeholder {
+  color: #BEBEBC;
+  font-size: 4.2666666667vw;
+  font-weight: 400;
+}
+>>>>>>> dnsgk4983/branch
 #wrap #header .header-search .search-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 4.2666666667vw;
   font-weight: 400;
 }
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
+=======
+  #wrap #header .header-search .search-box .search-text input[type=text]::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  #wrap #header .header-search .search-box .search-text input[type=text]::-moz-placeholder {
+    font-size: 16px;
+  }
+  #wrap #header .header-search .search-box .search-text input[type=text]:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  #wrap #header .header-search .search-box .search-text input[type=text]::-ms-input-placeholder {
+    font-size: 16px;
+  }
+>>>>>>> dnsgk4983/branch
   #wrap #header .header-search .search-box .search-text input[type=text]::placeholder {
     font-size: 16px;
   }
@@ -5704,7 +6021,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: none;
   position: absolute;
   top: 50%;
+<<<<<<< HEAD
   transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> dnsgk4983/branch
   right: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
@@ -5818,7 +6140,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents .section-header .header-title .btn-back {
   position: absolute;
   top: 50%;
+<<<<<<< HEAD
   transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> dnsgk4983/branch
   left: 3.7333333333vw;
 }
 @media screen and (min-width: 375px) {
@@ -6160,7 +6487,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .lecture-data-list .list .desc-box .t-desc .desc-info {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   margin-bottom: 1.0666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -6282,6 +6615,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .lecture-data-list .list .desc-box .t-desc .desc-text {
   margin-top: 1.0666666667vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
   font-size: 3.2vw;
   color: #2C2923;
@@ -6526,7 +6864,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .lecture-notice-list .list .info-box {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> dnsgk4983/branch
   padding: 0 4.2666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -6734,6 +7078,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .lecture-data-view .lecture-text {
   margin-top: 1.0666666667vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
   font-size: 3.4666666667vw;
   color: #2C2923;
@@ -7054,7 +7403,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-teacher-gate .teacher-gate-list .list .teacher-curriculum ul li {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   margin-bottom: 4.2666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -7444,6 +7799,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-customer-title .service-box .service-desc dl {
   margin-top: 2.1333333333vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
 }
 @media screen and (min-width: 375px) {
@@ -7550,8 +7910,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .total-number-box {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
   align-items: flex-end;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+>>>>>>> dnsgk4983/branch
   padding: 1.0666666667vw 0 2.6666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -7649,8 +8018,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .select-search-box {
   display: flex;
+<<<<<<< HEAD
   align-items: flex-end;
   justify-content: space-between;
+=======
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> dnsgk4983/branch
   margin-bottom: 4.2666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -7868,8 +8246,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .total-price-box > div {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
   align-items: center;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   margin-top: 1.0666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -7939,8 +8326,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .order-list dl {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
   align-items: center;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   margin-top: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
@@ -8080,6 +8476,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .order-data-list .list .price-box {
   margin-top: 2.1333333333vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8427,10 +8828,40 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 13px;
   }
 }
+<<<<<<< HEAD
+=======
+#wrap .section-period .date-box .date::-webkit-input-placeholder {
+  font-size: 3.4666666667vw;
+}
+#wrap .section-period .date-box .date::-moz-placeholder {
+  font-size: 3.4666666667vw;
+}
+#wrap .section-period .date-box .date:-ms-input-placeholder {
+  font-size: 3.4666666667vw;
+}
+#wrap .section-period .date-box .date::-ms-input-placeholder {
+  font-size: 3.4666666667vw;
+}
+>>>>>>> dnsgk4983/branch
 #wrap .section-period .date-box .date::placeholder {
   font-size: 3.4666666667vw;
 }
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
+=======
+  #wrap .section-period .date-box .date::-webkit-input-placeholder {
+    font-size: 13px;
+  }
+  #wrap .section-period .date-box .date::-moz-placeholder {
+    font-size: 13px;
+  }
+  #wrap .section-period .date-box .date:-ms-input-placeholder {
+    font-size: 13px;
+  }
+  #wrap .section-period .date-box .date::-ms-input-placeholder {
+    font-size: 13px;
+  }
+>>>>>>> dnsgk4983/branch
   #wrap .section-period .date-box .date::placeholder {
     font-size: 13px;
   }
@@ -8907,6 +9338,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-main-banner .main-banner-list .main-banner-bottom {
   margin-top: 2.1333333333vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
 }
 @media screen and (min-width: 375px) {
@@ -9569,8 +10005,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-error .action a {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   font-size: 3.7333333333vw;
   font-weight: 400;
   width: 100%;
@@ -9691,6 +10136,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-promotion-profile .profile-box .menu-box {
   margin-top: 10.6666666667vw;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> dnsgk4983/branch
   display: flex;
   justify-content: space-between;
 }
@@ -10245,7 +10695,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-report-home .report-input-box .report-input-content dl {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> dnsgk4983/branch
   margin-top: 2.6666666667vw;
 }
 @media screen and (min-width: 375px) {
@@ -10771,8 +11227,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-pass-schedule .schedule-text ul li {
   position: relative;
   display: flex;
+<<<<<<< HEAD
   align-content: center;
   justify-content: space-between;
+=======
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> dnsgk4983/branch
   font-size: 5.3333333333vw;
   font-weight: 500;
   margin-bottom: 2.1333333333vw;
@@ -10958,8 +11422,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-pass-schedule .schedule-list .list-text .slider .slick-dots {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> dnsgk4983/branch
   margin-top: 2.1333333333vw;
 }
 @media screen and (min-width: 375px) {
@@ -11313,4 +11786,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .section-pass-apply .action a {
     padding: 12px 0;
   }
+<<<<<<< HEAD
 }/*# sourceMappingURL=mobile.css.map */
+=======
+}
+>>>>>>> dnsgk4983/branch
