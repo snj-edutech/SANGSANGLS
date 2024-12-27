@@ -34,9 +34,9 @@
 	</div>
 
 	<!-- 팝업 -->
-	<div class="popup popup-inquiry" id="popupProfessorInquiry">
+	<div class="popup-page popup-inquiry" id="popupProfessorInquiry">
 		<div class="popup-wrap">
-			<a href="javascript:popupClose('#popupProfessorInquiry');"  class="popup-close">팝업닫기</a>
+			<a href="javascript:popupPageClose('#popupProfessorInquiry');"  class="popup-close">팝업닫기</a>
 			<div class="popup-title">
 				교수 문의 작성
 			</div>
@@ -179,7 +179,7 @@
 					</dl>
 				</div>
 				<div class="popup-btn">
-					<a href="javascript:popupClose('#popupProfessorInquiry');" class="btn btn-brown full">등록</a>
+					<a href="javascript:popupPageClose('#popupProfessorInquiry');" class="btn btn-brown full">등록</a>
 				</div>
 				
 			</div>
@@ -191,7 +191,7 @@
 <script src="../../../assets/js/m.script.js"></script>
 <script>
 	$(function(){
-		popupOpen('#popupProfessorInquiry');
+		popupPageOpen('#popupProfessorInquiry');
 	});
 </script>
 </body>

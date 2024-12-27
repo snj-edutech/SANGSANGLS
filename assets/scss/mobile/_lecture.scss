@@ -37,6 +37,7 @@
                             color:$color-black;
                             @include vw(line-height,20.4px);
 							font-weight:400;
+							strong{font-weight:600;}
                             &+p{
                                 @include vw(margin-left,8px);
                                 @include vw(padding-left,8px);
@@ -282,6 +283,19 @@
 		.lecture-subject{
 			font-weight:600;@include vw(font-size,18px);@include vw(line-height,27px);
 			color:$color-black;
+		}
+
+		.lecture-info{
+			@include vw(margin-bottom,4px);
+			p{
+				@include vw(font-size,13px);
+				@include vw(line-height,22.1px);
+				font-weight:400;
+				color:$color-gray;
+				strong{
+					font-weight:700;
+				}
+			}
 		}
 
 		.lecture-text{
