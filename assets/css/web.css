@@ -9872,7 +9872,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: flex;
 }
 #wrap .section-main-platform .platform-list a {
-  display: block;
+  display: flex;
 }
 #wrap .section-main-platform .platform-list .img-box img {
   width: 100%;
@@ -11374,7 +11374,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 #wrap .section-teacher-home .wrap {
-  width: 1160px;
+  width: 1060px;
   margin: 0 auto;
 }
 #wrap .section-teacher-home .teacher-home-detail {

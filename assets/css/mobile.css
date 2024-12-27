@@ -2298,7 +2298,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 #wrap .popup .popup-title {
-  padding: 3.2vw 6.4vw;
+  padding: 3.2vw 6.4vw 3.2vw 6.4vw;
   color: #2C2923;
   font-size: 4.2666666667vw;
   line-height: 7.2533333333vw;
@@ -2309,7 +2309,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 @media screen and (min-width: 375px) {
   #wrap .popup .popup-title {
-    padding: 12px 24px;
+    padding: 12px 24px 12px 24px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -2341,21 +2341,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 #wrap .popup .popup-title dl dt {
-  width: 12.8vw;
+  width: 15%;
   font-weight: 600;
 }
-@media screen and (min-width: 375px) {
-  #wrap .popup .popup-title dl dt {
-    width: 48px;
-  }
-}
 #wrap .popup .popup-title dl dd {
-  margin-left: 5.3333333333vw;
-}
-@media screen and (min-width: 375px) {
-  #wrap .popup .popup-title dl dd {
-    margin-left: 20px;
-  }
+  width: 80%;
 }
 #wrap .popup .popup-cont {
   padding: 6.4vw;
