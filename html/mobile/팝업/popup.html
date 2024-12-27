@@ -88,7 +88,7 @@
 						<button type="button" class="btn small primary" onclick="popupPageOpen('#popupMypageLectureInfo')">확인</button>
 					</div>
 
-
+<!--
 					<div class="list-row">
 						<div class="name">공지사항 리스트</div>
 						<button type="button" class="btn small primary" onclick="popupPageOpen('#popupNoticeList')">확인</button>
@@ -107,7 +107,7 @@
 						<div class="name">쪽지확인</div>
 						<button type="button" class="btn small primary" onclick="popupPageOpen('#popupMessageView')">확인</button>
 					</div>
-
+-->
 				</div>
 
 				<div class="list-item">
@@ -125,13 +125,24 @@
 						<button type="button" class="btn small primary" onclick="popupOpen('#popupLectureView');">확인</button>
 					</div>
 				</div>
+				<div class="list-item">
+					<div class="list-type">패스상품</div>
+					<div class="list-row">
+						<div class="name">상품안내및환불안내 팝업</div>
+						<button type="button" class="btn small primary" onclick="popupPageOpen('#popupGuideInfo')">확인</button>
+					</div>
+					<div class="list-row">
+						<div class="name">MASTER-KEY PASS 동의 팝업</div>
+						<button type="button" class="btn small primary" onclick="popupOpen('#popupAgreeCheck')">확인</button>
+					</div>
+					
+				</div>
 			
 
 				
 			</div>
 		</div>
-	
-	
+
 		<div class="popup-page" id="popupTerms">
 			<div class="popup-wrap">
 				<a href="javascript:popupPageClose('#popupTerms');" class="popup-close">팝업닫기</a>
@@ -1473,6 +1484,137 @@
 						</p>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="popup-page" id="popupGuideInfo">
+			<div class="popup-wrap">
+				<a href="javascript:popupPageClose('#popupGuideInfo');" class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					상품 안내 및 유의사항
+				</div>
+				<div class="popup-cont popup-scroll">
+					<div class="heading">상품안내</div>
+					<div class="box">
+						<p>
+							<strong>대상강좌</strong><br/>
+							구매한 영역에 해당하는 판매중인 전 강좌 및 수강기간 내 개설 예정 강좌<br/>
+							- 대상영역과 학습단계에 해당하는 판매중인 전 강좌 및 개설 예정 강좌<br/>
+							- 대상영역 : 언어이해, 추리논증<br/>
+							- 학습단계 : 시즌1, 시즌2, 시즌3 강좌 및 특강(유료 포함)<br/>
+							※ 논술, 자기소개서, 면접 강좌는 제외 됩니다<br/>
+							<br/>
+
+							<strong>강좌선택</strong><br/>
+							구매한 영역에 대한 전 강좌 개수 제한 없이 선택 가능<br/>
+							<br/>
+
+							<strong>수강기간</strong><br/>
+							구매일로부터 2026학년도 LEET 본고사일까지, 수강 배수 제한 없음<br/>
+							<br/>
+
+							<strong>교재구매</strong><br/>
+							마이페이지에서 수강 선택한 강좌에 한해 교재 구매 가능<br/>
+							* 시대인재 콘텐츠(브릿지, 익스텐션, 엣지, 뤼트, 온톨로지, 서바이벌 모의고사 등)의 경우 사전 공지 후 일정에 맞춰 배송될 예정이며, 
+							교수 교재를 포함한 그 외 교재는 별도 구매해야 합니다.<br/>
+							<br/>
+
+							<strong>수강방법</strong><br/>
+							- 상품 구매 후, 마이페이지 > 수강중인 강좌 > 수강 신청한 패스에서 강좌 선택 후 수강 가능<br/>
+							※ PC/모바일 구분없이 스트리밍 3대 + 다운로드 기기 1대 수강가능<br/>
+							※ PC/모바일 수강가능하며 강좌선택은 PC에서만 가능<br/>
+							※ 한 번 모바일 다운로드한 강의는 모바일로만 수강이 가능<br/>
+							<br/>
+
+							<strong>구매혜택 안내</strong><br/>
+							[배송비 무료]<br/>
+							- 시대인재 콘텐츠(브릿지, 익스텐션, 엣지, 뤼트, 온톨로지, 서바이벌 모의고사 등)의 경우, 제작 일정에 따라 정기 배송 진행 됩니다.<br/>
+							- 상세한 배송 일정 등은 사전 공지 후 별도 안내 예정 입니다.<br/>
+							<br/>
+							[LEET본고사 후 배치 상담권 1회 무료]<br/>
+							- 배치 상담은 2026년도 LEET 시험 이후 진행 되며, 상세 진행 일정 등은 추후 별도 공지 예정 입니다.<br/>
+							- 신청 페이지는 별도 오픈될 예정이며, 추후 안내 됩니다.<br/>
+							<br/>
+
+							<strong>유의사항</strong><br/>
+							- 구매한 영역 내 교수의 강좌가 중도 판매 중지될 경우 환불 규정을 적용한 환불이 가능 합니다.<br/>
+							- 패스 내에서 선택한 개별 강좌의 수강기간은 상품의 수강기간과 동일하게 2026학년도 LEET 본고사일까지 입니다.<br/>
+							- 본 상품은 판매 중인 LEET 강좌 중 본인이 구매한 영역의 판매 중인 강좌에 대해서만 수강 가능 합니다.<br/>
+							- 대상 강좌는 사전 공지 없이 판매 종료 될 수 있으며, 이미 판매 종료된 강좌는 선택할 수 없습니다.<br/>
+							- PC/모바일 동시 수강은 불가합니다.<br/>
+							- 본 상품은 할인이 적용된 상품으로 포인트, 할인쿠폰 적용이 불가합니다.<br/>
+							- 본 상품은 별도의 수강기간 연장 및 일시 정지가 불가합니다<br/>
+							※ 아이디 공유, 중복 사용, 양도, 재판매, 단체수강 등 불법 사용자로 간주 적발시 회원 자격 박탈되며 관련법에 의해 민,형사상 불이익을 받을 수 있습니다.						</p>
+					</div>
+
+					<div class="heading">환불규정</div>
+					<div class="box">
+						<p>
+							<strong>전체환불</strong><br/>
+							결제 승인일로부터 7일 이내, 등록된 강좌 모두 맛보기를 제외한 1강 이하 수강 시<br/>
+							※ 10강 이상 구성 강좌 : 맛보기를 제외한 1강 이하 수강시 전액 환불 가능<br/>
+							※ 10강 미만 구성 강좌 : 맛보기만 수강 시 전액 환불 가능<br/>
+							(단, 3강 이하 구성 강좌는 1강 이상 수강 시 전액 환불 불가)<br/>
+							<br/>
+							[환불액]<br/>
+							환불액=결제금액 - 콘텐츠 정가 및 배송비 - 기타 사용 혜택 비용<br/>
+							<br/>
+							- 콘텐츠 정가 및 배송비 : 수령 받은 콘텐츠(브릿지, 익스텐션, 엣지, 뤼트, 온톨로지, 서바이벌 모의고사 등 시대인재 콘텐츠)에 대한 정가 및 배송비<br/>
+							※ 배송비 : 1회당 3,000원 <br/>
+							- 기타 사용 혜택 : LEET본고사 후 배치 상담권 1회 정가<br/>
+							<br/>
+
+							<strong>부분환불</strong><br/>
+							- 결제 승인일로부터 7일~60일 이내 시 <br/>
+							<br/>
+							환불액=결제금액 - 위약금 - 학습 수수료 - 콘텐츠 정가 및 배송비 - 기타 사용 혜택 비용 <br/>
+							<br/>
+							[위약금] <br/>
+							- 본인이 구매한 상품 가격을 기준으로 처리 <br/>
+							- 결제 승인일로부터 7일 초과 : 위약금 10% (상품 결제 금액 X 0.1) <br/>
+							<br/>
+							[학습 수수료] <br/>
+							- 단과강좌 수강료를 기준으로 신청한 강좌 각각의 학습 수수료 차감 <br/>
+							※ 수강취소 강좌도 동일하게 학습 수수료 적용 <br/>
+							※ 학습 수수료 : (강좌 정가 수강료/총 강의수) X 수강 강의수 <br/>
+							<br/>
+							[콘텐츠] <br/>
+							- 시대인재 콘텐츠 : 시대인재 콘텐츠(브릿지, 익스텐션, 엣지, 뤼트, 온톨로지, 서바이벌 모의고사 등 <br/>
+							- 각 콘텐츠 제공된 회차 및 교재 환불 신청 시 : 콘텐츠 사용 여부와 무관 정가 공제 <br/>
+							<br/>
+							[배송비]  <br/>
+							- 콘텐츠 배송비 전액 무료 혜택 제공 이후 환불 신청 시 : 발송된 배송 회차별 배송비 공제  <br/>
+							※ 배송비 : 1회당 3,000원 <br/>
+							<br/>
+
+							<strong>환불불가</strong><br/>
+							- 신청한 강좌 각각의 학습 수수료(혜택, 위약금 포함)의 총합이 결제 금액을 초과할 시<br/>
+							- 결제 승인일로부터 60일이 초과한 경우<br/>
+							※ 공지된 수강기간 기준으로 연장 or 이벤트로 무료연장이 제공되었을 경우 수강기간 제외 
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="popupAgreeCheck">
+			<div class="popup-wrap">
+				<a href="javascript:popupClose('#popupAgreeCheck');"  class="popup-close">팝업닫기</a>
+				<div class="popup-title">
+					MASTER-KEY PASS 신청하기
+				</div>
+				<div class="popup-cont">
+					<div class="popup-text">
+						<p>
+							상품 안내 및 유의사항을 모두 확인하였고 이에 동의합니다.
+						</p>
+					</div>
+					<div class="popup-action">
+						<a href="javascript:popupClose('#popupAgreeCheck');" class="btn large btn-brown"><strong>신청하기</strong></a>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
