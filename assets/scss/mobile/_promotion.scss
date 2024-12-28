@@ -15,15 +15,24 @@
 			color:$color-gray;
 			@include vw(font-size,16px);
 			font-weight:600;
-			line-height:1.7;
+			@include vw(line-height,27.2px);
 			@include vw(margin-bottom,18px);
 		}
 		.main-copy{
+			position: relative;
 			color:$color-black;
 			@include vw(font-size,27px);
 			font-family:$font-notoSerifKr;
-			font-weight:200;
-			line-height:1.5;
+			font-weight:250;
+			@include vw(line-height, 40.5px);
+			small {
+				position: absolute;
+				@include vw(top, -7px);
+				right: 0;
+				@include vw(font-size, 10px);
+				font-weight: 400;
+				color: #888;
+			}
 		}
 	}
 
@@ -48,7 +57,13 @@
 				font-family:$font-notoSerifKr;
 			}
 
-			.notice{color:#888;@include vw(font-size,10px);font-family: $font-pretendard;	letter-spacing:0px;}
+			.notice{
+				color:$color-light-gray;
+				@include vw(font-size,14px);
+				line-height: 1.5;
+				font-family: $font-pretendard;
+				letter-spacing:0px;
+			}
 			.menu-box{
 				@include vw(margin-top,40px);
 				display:flex;
@@ -78,9 +93,14 @@
 		.curriculum-list{
 			&:first-child{
 				border-top:1px solid #DCDCDB;
-				@include vw(padding-top,40px);
+				@include vw(padding-top, 40px);
 			}
-			@include vw(padding-bottom,80px);
+			&.border-none {
+				border: none;
+			}
+			&:not(:first-child) {
+				@include vw(padding-top, 24px);
+			}
 			&.pb-0 {
 				padding-bottom: 0;
 			}
@@ -88,12 +108,41 @@
 				color:$color-black;
 				@include vw(font-size,20px);
 				font-weight:600;
-				line-height:1.7;
+				@include vw(line-height,34px);
+				@include vw(margin-bottom,40px);
+				span {
+					display: block;
+					@include vw(font-size, 11px);
+					color: #000;
+					@include vw(margin-top, 10px);
+				}
 			}
 			.curriculum-content{
 
 				.img-box{
+					@include vw(margin-bottom,40px);
 					img{width:100%;}
+				}
+
+				.review-list{
+					li{
+						@include vw(margin-top,20px);
+						&:first-child{
+							margin-top:0;
+						}
+					}
+				}
+
+				.banner-slider{
+					display:flex;
+					.list{
+						@include vw(width,264px);
+						@include vw(margin-left,16px);
+						&:first-child{margin-left:0;}
+
+						img{width:100%;}
+					
+					}
 				}
 
 				.list{
@@ -153,105 +202,15 @@
 							background:rgba(0,0,0,0.4) url(../images/promotion/btn_play.svg) no-repeat 50% 50%;
 							@include vw(background-size,40px 40px);
 						}
-
-						.video-text{
-							position:absolute;left:0;@include vw(bottom,22px);
-							width:100%;
-							text-align:center;
-							color:#fff;
-							@include vw(font-size,16px);
-							line-height:1.7;
-							font-weight:500;
-						}
 					}
-				}
-
-				.table-box{
-					@include vw(margin-top,24px);
-					table{
-						width:100%;
-						thead{
-							th{
-								background-color:$color-light-brown;
-								border-left:1px solid $color-light-beige;
-								color:$color-black;
-								font-weight:600;
-								@include vw(font-size,13px);
-								@include vw(padding,8px 0);
-								vertical-align:center;
-							}
-						}
-
-						tbody{
-							th,td{text-align:center;@include vw(padding,14px 0);vertical-align:center;}
-							th{
-								border-bottom:1px solid $color-light-brown;
-								color:$color-black;
-								font-weight:600;
-								@include vw(font-size,13px);
-								background-color:$color-light-brown2;
-							}
-							td{
-								border-left:1px solid $color-light-brown;
-								border-bottom:1px solid $color-light-brown;
-								color:$color-black;
-								@include vw(font-size,13px);
-								font-weight:600;
-								
-								&.empty{
-									background-color:$color-light-beige;
-								}
-							}
-						}
-					}
-				}
-			}
-
-			.history {
-				text-align: center;
-				@include vw(padding-top, 16px);
-				@include vw(padding-bottom, 40px);
-				p {
-					margin-bottom: 0
-				}
-				
-				ul {
-					li {
-						@include vw(margin-bottom, 36px);
-						&:last-child {
-							margin-bottom: 0
-						}
-					}
-				}
-				&-text {
-					p {
-						@include vw(font-size, 16px);
-						@include vw(margin-bottom, 8px);
-					}
-				}
-				&-logo {
-					@include vw(width, 64px);
-					margin: 0 auto;
-					img {
-						width: 100%;
-					}
-				}
-				&-content {
-					span {
-						@include vw(font-size, 16px);
-					}
-					p {
-						font-family: $font-notoSerifKr;
-						@include vw(font-size, 24px);
-						font-weight: 600
-					}
-					small {
-						@include vw(font-size, 14px);
+					+ p {
+						@include vw(margin-top, 24px);
 					}
 				}
 			}
 
 			.number-list {
+				@include vw(margin-bottom, 40px);
 				.list {
 					@include vw(padding, 24px 0 0);
 					> ul {
@@ -287,10 +246,180 @@
 					}
 				}
 			}
+
+			.step {
+				&-list {
+					@include vw(margin-bottom, 24px);
+					&:last-child {
+						margin-bottom: 0
+					}
+				}
+				&-title {
+					color: #69433F;
+					@include vw(padding, 24px);
+					background: #EECAC6;
+					p {
+						@include vw(font-size, 18px);
+						font-weight: 500;
+						line-height: 1.4;
+						@include vw(margin-bottom, 8px);
+					}
+					span {
+						@include vw(font-size, 24px);
+						font-weight: 700;
+						line-height: 1.4
+					}
+				}
+				&-text {
+					@include vw(padding, 24px);
+					background: #E8E8E8;
+					p {
+						@include vw(font-size, 18px);
+						line-height: 1.7;
+						margin: 0;
+					}
+				}
+			}
+
+			.recommend {
+				p {
+					margin: 0;
+				}
+				&-table {
+					border-top: 1px solid $color-light-brown;
+					.list {
+						display: flex;
+						align-items: center;
+						@include vw(font-size, 14px);
+						border-bottom: 1px solid $color-light-brown;
+						&-title {
+							@include vw(padding, 24px 0);
+							p {
+								@include vw(width, 180px);
+								font-weight: 700;
+								line-height: 1.8;
+								@include vw(margin-right, 40px);
+							}
+						}
+						&-text {
+							span {
+								display: block;
+								@include vw(font-size, 14px);
+								font-weight: 400;
+								line-height: 1.7
+							}
+						}
+						&-depth {
+							.list-title {
+								@include vw(width, 87px);
+								margin-right: 0
+							}
+							.list-text {
+								@include vw(padding, 24px 16px);
+								border-left: 1px solid $color-light-brown;
+								li {
+									display: flex;
+									align-items: center;
+									line-height: 1.7;
+									@include vw(font-size, 14px);
+									@include vw(margin-bottom, 24px);
+									&:last-child {
+										margin-bottom: 0
+									}
+									p {
+										@include vw(width,80px);
+										@include vw(margin-right, 24px);
+										font-weight: 700;
+									}
+								}
+							}
+						}
+					}
+				}
+				&-type {
+					@include vw(margin-top, 24px);
+					li {
+						position: relative;
+						@include vw(font-size, 12px);
+						line-height: 2;
+						font-weight: 400;
+						@include vw(padding-left, 12px);
+						&:before {
+							content: "·";
+							position: absolute;
+							left: 0;
+						}
+					}
+				}
+			}
 		}
 		
 	}
+	
+	.section-promotion-study {
+		.slider {
+			@include vw(padding, 20px);
+			padding-right: 0 !important;
+			background: #2C2923;
+			.list {
+				@include vw(width, 280px);
+				@include vw(margin-right, 24px);
+			}
+		}
+	}
+	.section-promotion-schedule {
+		@include vw(margin-top, 56px);
+		.wrap {
+			overflow: auto;
+			padding: 0;
+			img {
+				max-width: none;
+				@include vw(width, 891px);
+			}
+		}
+	}
 
+	.section-promotion-solution {
+		@include vw(padding-top, 40px);
+		.wrap {
+			padding: 0
+		}
+		.solution {
+			@include vw(padding-bottom, 40px);
+			@include vw(margin-bottom, 64px);
+			&:last-child {
+				@include vw(margin-bottom, 40px);
+			}
+			border-bottom: 1px solid #000;
+			&-title {
+				@include vw(padding, 12px 16px);
+				p {
+					@include vw(font-size, 20px);
+					font-weight: 700;
+					color: #390040;
+					line-height: 1.7
+				}
+			}
+			&-label {
+				@include vw(margin-bottom, 24px);
+				@include vw(padding, 8px 16px);
+				background: #390040;
+				p {
+					@include vw(font-size, 24px);
+					font-weight: 700;
+					color: #fff;
+					line-height: 1.7
+				}
+			}
+			.slider {
+				@include vw(padding-left, 16px);
+				.list {
+					@include vw(width, 273px);
+					@include vw(margin-right, 36px);
+				}
+			}
+		}
+	}
 
 	.section-promotion-story{
 		.wrap{

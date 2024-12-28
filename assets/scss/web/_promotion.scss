@@ -1,7 +1,6 @@
 #wrap{
 	.section-promotion-title{
-		padding-top:40px;
-		padding-bottom:60px;
+		padding: 20px 0 60px;
 		text-align:center;
 		.head-copy{
 			color:$color-gray;
@@ -21,12 +20,11 @@
 	.section-promotion-curriculum{
 		.wrap{
 			border-top:1px solid #DCDCDB;
-			padding-top:80px;
-		
+			padding-top:70px;
 		}
 		.curriculum-list{
 			display:flex;
-			padding-bottom:120px;
+			padding-bottom:100px;
 			&.pb-0 {
 				padding-bottom: 0;
 			}
@@ -36,22 +34,28 @@
 				font-size:20px;
 				font-weight:600;
 				line-height:1.7;
+				span {
+					display: block;
+					font-size: 11px;
+					margin-top: 16px;
+				}
 			}
 			.curriculum-content{
 				width:892px;
 				margin-left:36px;
 				.img-box{
 					img{width:100%;}
-					+ .img-box {
+					+ .img-box,
+					+ p {
 						margin-top: 20px;
 					}
 				}
 				p{
 					color:$color-black;
-					font-size:18px;
-					font-weight:400;
+					font-size:24px;
+					font-weight: 400;
 					line-height:1.7;
-					margin-bottom:20px;
+					margin-bottom: 48px;
 					strong{
 						font-weight:600;
 					}
@@ -85,6 +89,7 @@
 					position:relative;
 					width:100%;
 					height:447px;
+					margin-bottom: 40px;
 					a{
 						display:block;
 						position:relative;
@@ -92,7 +97,7 @@
 						&:after{
 							content:'';
 							position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;z-index:1;
-							background:rgba(0,0,0,0.4) url(../images/promotion/btn_play.svg) no-repeat 50% 50%;
+							background: url(../images/promotion/btn_play.svg) no-repeat 50% 50%;
 							background-size:100px 100px;
 						}
 
@@ -208,36 +213,126 @@
 						}
 					}
 				}
+
+				.step {
+					span {
+						font-size: 18px;
+						font-weight: 700;
+						line-height: 1.7;
+					}
+					ul {
+						margin-top: 12px;
+						margin-bottom: 24px;
+						padding-bottom: 24px;
+						border-bottom: 1px solid #E4DED3;
+						&:last-child {
+							margin-bottom: 0;
+							border: none;
+						}
+						li {
+							position: relative;
+							font-size: 16px;
+							line-height: 2;
+							font-weight: 400;
+							padding-left: 12px;
+							&:before {
+								content: "·";							
+								position: absolute;
+								left: 0;
+							}
+						}
+					}
+				}
+
+				.recommend {
+					&-table {
+						border-top: 1px solid $color-light-brown;
+						.list {
+							display: flex;
+							line-height: 2;
+							border-bottom: 1px solid $color-light-brown;
+							&-title {
+								padding: 24px 0;
+								p {
+									width: 224px;
+									font-size: 16px;
+									line-height: 2;
+									font-weight: 700;
+									margin-right: 40px;
+									margin-bottom: 0;
+								}
+							} 
+							&-text {
+								padding: 24px 0;
+								span {
+									font-size: 16px;
+									line-height: 2;
+								}
+							}
+							&-depth {
+								.list-text {
+									padding: 24px 40px;
+									border-left: 1px solid $color-light-brown;
+									ul {
+										li {
+											display: flex;
+											align-items: center;
+											margin-bottom: 24px;
+											&:last-child {
+												margin-bottom: 0;
+											}
+											p {
+												width: 80px;
+												font-size: 16px;
+												font-weight: 700;
+												line-height: 2;
+												margin-right: 24px;
+												margin-bottom: 0;
+											}
+											span {
+												font-size: 16px;
+												line-height: 2;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					&-type {
+						margin-top: 40px;
+						ul {
+							li {
+								position: relative;
+								font-size: 18px;
+								font-weight: 400;
+								line-height: 2;
+								padding-left: 12px;
+								&:before {
+									content: "·";
+									position: absolute;
+									left: 0;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		
 	}
 	.section-promotion-profile{
-		padding-bottom:60px;
+		padding-bottom:70px;
 		.img-box{
-			height: 487px;
-			text-align: center;
-			margin: 0 auto;
-			img{max-width:100%; height: 100%;}
+			img{max-width:100%;}
 		}
 
 		.profile-box{
+			position: relative;
 			padding-top:80px;
-			display:flex;
-
-			.text-box{
-				width:582px;
-				margin-left:456px;
-				font-size:18px;
-				line-height:2;
-				color:$color-black;
-				font-weight:400;
-				letter-spacing:-1px;
-				font-family:$font-notoSerifKr;
-
-				.notice{color:#888;font-size:12px;font-family: $font-pretendard;	letter-spacing:0px;}
-			}
 			.menu-box{
+				position: absolute;
+				left: 0;
 				width:162px;
 				.menu-title{
 					border-bottom:1px solid $color-light-brown;

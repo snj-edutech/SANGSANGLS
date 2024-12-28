@@ -293,7 +293,7 @@
 						.t-img + .t-desc{
 							margin-left:24px;
 							.desc-title{
-								width:519px;
+								width:509px;
 								@include boxSizing(border-box);
 								@include multipleEllipsis(2);
 								.badge{margin-right:8px;}
@@ -327,10 +327,10 @@
 					}
 
 					.subject{
-						width:80px;
+						width:90px;
 
 						&+.desc-box{
-							width:663px;
+							width:653px;
 							padding: 20px 24px;
 							
 						}
@@ -694,7 +694,7 @@
 					td{
 						&.order{
 							strong{font-weight:600;font-size:16px;}
-							.btn-view{width:57px;margin: 4px auto 0;}
+							.btn-view{margin: 4px auto 0;display:inline-block;line-height:26px;}
 						}
 						
 						&.price{
