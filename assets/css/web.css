@@ -16045,10 +16045,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-introduction-content .holder {
-  margin-top: 300px;
+  padding-top: 200px;
+  margin-top: 100px;
 }
 
 #wrap .section-introduction-content .holder:first-child, #wrap .section-introduction-content .holder:last-child {
-  margin-top: 200px;
+  padding-top: 100px;
 }
 /*# sourceMappingURL=web.css.map */

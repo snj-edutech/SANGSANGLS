@@ -15741,13 +15741,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-introduction-content .wrap .holder {
-  margin-top: 64vw;
+  margin-top: 26.66667vw;
+  padding-top: 37.33333vw;
   padding: 0;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-introduction-content .wrap .holder {
-    margin-top: 240px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-introduction-content .wrap .holder {
+    padding-top: 140px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */

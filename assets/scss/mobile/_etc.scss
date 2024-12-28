@@ -156,7 +156,8 @@
                 max-width:600px;
                 margin:0 auto;
                 .holder {
-                    @include vw(margin-top, 240px);
+                    @include vw(margin-top, 100px);
+                    @include vw(padding-top, 140px);
                     padding: 0;
                 }
             }
