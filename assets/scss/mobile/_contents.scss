@@ -1,0 +1,121 @@
+#wrap{
+    .section-presentation-title{
+        @include vw(padding, 60px 0);
+		text-align:center;
+		.head-copy{
+			color:#504B42;
+            font-weight:600;
+			@include vw(font-size, 16px);
+			@include vw(line-height,27.2px);
+            @include vw(margin-bottom,18px);
+		}
+		.main-copy{
+			color:$color-black;
+            font-weight:200;
+			@include vw(font-size,60px);
+			@include vw(line-height,72px);
+           
+		}
+
+        .sub-copy{
+            color:$color-black;
+            font-weight:400;
+			@include vw(font-size,16px);
+			@include vw(line-height,27.2px);
+            @include vw(margin-top,36px);
+        }
+	}
+	.section-presentation-content{
+        .wrap{
+            max-width:600px;
+            margin:0 auto;
+        }
+
+        .visual{
+            img{width:100%;}
+        }
+
+        .apply-box{
+            background-color:#070707;
+            text-align:center;
+            @include vw(padding,48px 0 64px);
+            .apply-date{
+                color:$color-white;
+                @include vw(font-size,16px);
+                @include vw(line-height,27.2px);
+                font-weight:500;
+                p{
+                    display:block;
+                    color:#E3CDA2;
+                    @include vw(font-size,24px);
+                    @include vw(line-height,36px);
+                    font-weight:600;
+                    @include vw(margin-bottom,16px);
+                }
+               
+            }
+
+            .apply-btn{
+                @include vw(margin-top,32px);
+                display:flex;
+                justify-content: center;
+                a{
+                    display:flex;
+                    justify-content: center;
+                    align-items:center;
+                    background-color:$color-white;
+                    @include vw(font-size,16px);
+                    @include vw(line-height,27.2px);
+                    font-weight:600;
+                    @include vw(width,261px);
+                    @include vw(height,59px);
+                }
+            }
+        }
+        .banner{
+            @include vw(margin-top,20px);
+            img{width:100%;}
+        }
+        .program{
+            @include vw(margin-top,80px);
+            h3{
+                @include vw(margin-bottom,20px);
+            }
+            img{width:100%;}
+        }
+
+        .qna{
+            background-color:#735E5A;
+            @include vw(margin-top,20px);
+            text-align:center;
+            @include vw(padding,60px 33px);
+            p{
+                strong{
+                   display:block;
+                   @include vw(margin-bottom,8px);
+                    font-weight:600;
+                    @include vw(font-size,16px);
+                    @include vw(line-height,27.2px);
+                }
+                color:$color-white;
+                @include vw(font-size,18px);
+                @include vw(line-height,27.2px);
+                font-weight:400;
+            }
+        }
+
+        .info-box{
+            @include vw(margin-top,80px);
+            text-align:center;
+            p{
+                color:$color-black;
+                font-weight:600;
+                @include vw(font-size, 16px);
+                @include vw(line-height,27px);
+                &+p{
+                    @include vw(margin-top,8px);
+                }
+            }
+        }
+    }
+}
