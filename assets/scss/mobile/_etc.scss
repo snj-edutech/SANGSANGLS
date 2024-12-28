@@ -122,4 +122,45 @@
             }
         }
     }
+
+    .section-introduction {
+        &-visual {
+            .wrap {
+                padding: 0;
+                max-width:600px;
+                margin:0 auto;
+            }
+        }
+        &-title {
+            @include vw(padding, 64px 0);
+            .wrap{
+                max-width:600px;
+                margin:0 auto;
+            }
+            p {
+                @include vw(font-size, 24px);
+                font-weight: 600;
+                line-height: 1.7;
+            }
+        }
+        &-system {
+            .wrap {
+                padding: 0;
+                max-width:600px;
+                margin:0 auto;
+            }
+        }
+        &-content {
+            .wrap {
+                padding: 0;
+                max-width:600px;
+                margin:0 auto;
+                .holder {
+                    @include vw(margin-top, 100px);
+                    @include vw(padding-top, 140px);
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
