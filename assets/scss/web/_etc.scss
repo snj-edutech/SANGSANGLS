@@ -73,7 +73,7 @@
         }
 
         .program{
-            margin-top:196px;
+            margin-top:160px;
             .program-title{
                 @include vw(margin-bottom,40px);
                 font-weight:200;
@@ -86,7 +86,7 @@
 
         .qna{
             background-color:#735E5A;
-            @include vw(margin-top,20px);
+            @include vw(margin-top,40px);
             text-align:center;
             @include vw(padding,100px 0);
             p{
@@ -107,14 +107,13 @@
         .info-box{
             @include vw(margin-top,80px);
             text-align:center;
+            display:flex;
+            justify-content: space-between;
             p{
                 color:$color-black;
                 font-weight:600;
                 @include vw(font-size, 16px);
                 @include vw(line-height,27px);
-                &+p{
-                    @include vw(margin-top,8px);
-                }
             }
         }
 

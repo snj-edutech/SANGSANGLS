@@ -15239,10 +15239,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-presentation-content .qna {
-  background-color: #735E5A;
   margin-top: 5.33333vw;
-  text-align: center;
-  padding: 16vw 8.8vw;
+  /*
+            background-color:#735E5A;
+           
+            text-align:center;
+            @include vw(padding,60px 33px);
+            p{
+                strong{
+                   display:block;
+                   @include vw(margin-bottom,8px);
+                    font-weight:600;
+                    @include vw(font-size,16px);
+                    @include vw(line-height,27.2px);
+                }
+                color:$color-white;
+                @include vw(font-size,18px);
+                @include vw(line-height,27.2px);
+                font-weight:400;
+            }
+            */
 }
 
 @media screen and (min-width: 375px) {
@@ -15251,60 +15267,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna {
-    padding: 60px 33px;
-  }
-}
-
-#wrap .section-presentation-content .qna p {
-  color: #FFFFFC;
-  font-size: 4.8vw;
-  line-height: 7.25333vw;
-  font-weight: 400;
-}
-
-#wrap .section-presentation-content .qna p strong {
-  display: block;
-  margin-bottom: 2.13333vw;
-  font-weight: 600;
-  font-size: 4.26667vw;
-  line-height: 7.25333vw;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p strong {
-    margin-bottom: 8px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p strong {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p strong {
-    line-height: 27.2px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p {
-    line-height: 27.2px;
-  }
-}
-
 #wrap .section-presentation-content .info-box {
+  margin-bottom: 13.33333vw;
   margin-top: 21.33333vw;
   text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-presentation-content .info-box {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 375px) {

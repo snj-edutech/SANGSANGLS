@@ -85,8 +85,10 @@
         }
 
         .qna{
-            background-color:#735E5A;
             @include vw(margin-top,20px);
+            /*
+            background-color:#735E5A;
+           
             text-align:center;
             @include vw(padding,60px 33px);
             p{
@@ -102,9 +104,11 @@
                 @include vw(line-height,27.2px);
                 font-weight:400;
             }
+            */
         }
 
         .info-box{
+            @include vw(margin-bottom,50px);
             @include vw(margin-top,80px);
             text-align:center;
             p{
