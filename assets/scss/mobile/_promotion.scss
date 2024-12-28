@@ -15,15 +15,15 @@
 			color:$color-gray;
 			@include vw(font-size,16px);
 			font-weight:600;
-			line-height:1.7;
+			@include vw(line-height,27.2px);
 			@include vw(margin-bottom,18px);
 		}
 		.main-copy{
 			color:$color-black;
 			@include vw(font-size,27px);
 			font-family:$font-notoSerifKr;
-			font-weight:200;
-			line-height:1.5;
+			font-weight:250;
+			@include vw(line-height,48.6px);
 		}
 	}
 
@@ -88,12 +88,35 @@
 				color:$color-black;
 				@include vw(font-size,20px);
 				font-weight:600;
-				line-height:1.7;
+				@include vw(line-height,34px);
+				@include vw(margin-bottom,40px);
 			}
 			.curriculum-content{
 
 				.img-box{
+					@include vw(margin-bottom,40px);
 					img{width:100%;}
+				}
+
+				.review-list{
+					li{
+						@include vw(margin-top,20px);
+						&:first-child{
+							margin-top:0;
+						}
+					}
+				}
+
+				.banner-slider{
+					display:flex;
+					.list{
+						@include vw(width,264px);
+						@include vw(margin-left,16px);
+						&:first-child{margin-left:0;}
+
+						img{width:100%;}
+					
+					}
 				}
 
 				.list{

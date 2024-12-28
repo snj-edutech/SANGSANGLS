@@ -12842,13 +12842,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #7A746A;
   font-size: 4.26667vw;
   font-weight: 600;
-  line-height: 1.7;
+  line-height: 7.25333vw;
   margin-bottom: 4.8vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-title .head-copy {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-title .head-copy {
+    line-height: 27.2px;
   }
 }
 
@@ -12862,13 +12868,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
   font-size: 7.2vw;
   font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
-  font-weight: 200;
-  line-height: 1.5;
+  font-weight: 250;
+  line-height: 12.96vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-title .main-copy {
     font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-title .main-copy {
+    line-height: 48.6px;
   }
 }
 
@@ -13023,7 +13035,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
   font-size: 5.33333vw;
   font-weight: 600;
-  line-height: 1.7;
+  line-height: 9.06667vw;
+  margin-bottom: 10.66667vw;
 }
 
 @media screen and (min-width: 375px) {
@@ -13032,7 +13045,74 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
+    margin-bottom: 40px;
+  }
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .img-box {
+  margin-bottom: 10.66667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .img-box {
+    margin-bottom: 40px;
+  }
+}
+
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .img-box img {
+  width: 100%;
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .review-list li {
+  margin-top: 5.33333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .review-list li {
+    margin-top: 20px;
+  }
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .review-list li:first-child {
+  margin-top: 0;
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .banner-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .banner-slider .list {
+  width: 70.4vw;
+  margin-left: 4.26667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .banner-slider .list {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .banner-slider .list {
+    margin-left: 16px;
+  }
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .banner-slider .list:first-child {
+  margin-left: 0;
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .banner-slider .list img {
   width: 100%;
 }
 
