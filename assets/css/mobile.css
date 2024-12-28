@@ -13308,3 +13308,39 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 8px;
   }
 }
+#wrap .section-introduction-visual .wrap {
+  padding: 0;
+}
+#wrap .section-introduction-title {
+  padding: 17.0666666667vw 0;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-introduction-title {
+    padding: 64px 0;
+  }
+}
+#wrap .section-introduction-title p {
+  font-size: 6.4vw;
+  font-weight: 600;
+  line-height: 1.7;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-introduction-title p {
+    font-size: 24px;
+  }
+}
+#wrap .section-introduction-system .wrap {
+  padding: 0;
+}
+#wrap .section-introduction-content .wrap {
+  padding: 0;
+}
+#wrap .section-introduction-content .wrap .holder {
+  margin-top: 64vw;
+  padding: 0;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-introduction-content .wrap .holder {
+    margin-top: 240px;
+  }
+}
