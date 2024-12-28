@@ -10715,8 +10715,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .order-list-table .table-row td.order .btn-view {
-  width: 57px;
   margin: 4px auto 0;
+  display: inline-block;
+  line-height: 26px;
 }
 
 #wrap .section-mypage-wrap .content .order-list-table .table-row td.price {
@@ -14961,6 +14962,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-curriculum .curriculum-list-wrap {
   padding: 120px 0;
   background: #242321;
+  margin-bottom: 80px;
 }
 
 #wrap .section-teacher-curriculum .curriculum-list .list {
