@@ -15697,6 +15697,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-introduction-visual .wrap {
   padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #wrap .section-introduction-title {
@@ -15707,6 +15709,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .section-introduction-title {
     padding: 64px 0;
   }
+}
+
+#wrap .section-introduction-title .wrap {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #wrap .section-introduction-title p {
@@ -15723,10 +15730,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-introduction-system .wrap {
   padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #wrap .section-introduction-content .wrap {
   padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #wrap .section-introduction-content .wrap .holder {

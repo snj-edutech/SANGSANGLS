@@ -127,10 +127,16 @@
         &-visual {
             .wrap {
                 padding: 0;
+                max-width:600px;
+                margin:0 auto;
             }
         }
         &-title {
             @include vw(padding, 64px 0);
+            .wrap{
+                max-width:600px;
+                margin:0 auto;
+            }
             p {
                 @include vw(font-size, 24px);
                 font-weight: 600;
@@ -140,11 +146,15 @@
         &-system {
             .wrap {
                 padding: 0;
+                max-width:600px;
+                margin:0 auto;
             }
         }
         &-content {
             .wrap {
                 padding: 0;
+                max-width:600px;
+                margin:0 auto;
                 .holder {
                     @include vw(margin-top, 240px);
                     padding: 0;
