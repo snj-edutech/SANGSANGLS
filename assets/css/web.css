@@ -16019,6 +16019,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 600px;
 }
 
+#wrap .section-introduction-visual img {
+  width: 100%;
+}
+
 #wrap .section-introduction-title {
   margin: 160px 0 200px;
 }
