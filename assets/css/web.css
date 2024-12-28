@@ -15932,10 +15932,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-presentation-content .qna {
-  background-color: #735E5A;
   margin-top: 10.66667vw;
-  text-align: center;
-  padding: 26.66667vw 0;
+  /*
+            background-color:#735E5A;
+            text-align:center;
+            @include vw(padding,100px 0);
+            p{
+                strong{
+                   display:block;
+                   @include vw(margin-bottom,16px);
+                    font-weight:300;
+                    @include vw(font-size,24px);
+                    @include vw(line-height,36px);
+                }
+                color:$color-white;
+                @include vw(font-size,32px);
+                @include vw(line-height,48px);
+                font-weight:200;
+            }
+            */
 }
 
 @media screen and (min-width: 375px) {
@@ -15944,55 +15959,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna {
-    padding: 100px 0;
-  }
-}
-
-#wrap .section-presentation-content .qna p {
-  color: #FFFFFC;
-  font-size: 8.53333vw;
-  line-height: 12.8vw;
-  font-weight: 200;
-}
-
-#wrap .section-presentation-content .qna p strong {
-  display: block;
-  margin-bottom: 4.26667vw;
-  font-weight: 300;
-  font-size: 6.4vw;
-  line-height: 9.6vw;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p strong {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p strong {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p strong {
-    line-height: 36px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-presentation-content .qna p {
-    line-height: 48px;
-  }
+#wrap .section-presentation-content .qna img {
+  max-width: 100%;
 }
 
 #wrap .section-presentation-content .info-box {
