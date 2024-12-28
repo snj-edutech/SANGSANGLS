@@ -12644,9 +12644,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-platform .platform-list a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 #wrap .section-main-platform .platform-list .img-box img {
