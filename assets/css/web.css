@@ -11843,6 +11843,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 100%;
 }
 
+#wrap .section-player .player-content .player-video .video-box iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 #wrap .section-player .player-content .player-tab {
   border-left: 1px solid #E4DED3;
   width: 320px;
