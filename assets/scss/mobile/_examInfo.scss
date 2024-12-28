@@ -29,10 +29,6 @@
 					background-color:$color-white;
 					border:1px solid $color-light-brown;
 					border-left:0;
-					&:hover{
-						background-color:$color-light-brown2;
-						border-color:$color-brown;
-					}
 				}
 				.univ-name{
 					text-align:center;
@@ -52,55 +48,28 @@
 			}
 		}
 
-		
-		.select-pass-box{
-			display:flex;
-			justify-content: space-between;
-			align-items:flex-end;
-			margin-bottom:40px;
-			
-			.select-text{
-				color:$color-gray;
-				font-size:16px;
-				line-height:27.2px;
-				font-weight:400;
-			}
-	
-			.form-control{
-				padding-bottom:5px;
-				.select{
-					&.year{width:105px;}
-					&.univ{margin-left:8px;width:133px;}
-				}
-			}
-
-			.custom-select{
-				&.year{width:105px;}
-				&.univ{margin-left:8px;width:133px;}
-			}
-		}	
-
 		.examInfo-univ-title{
-			margin-bottom:80px;
 			text-align:center;
-			border:1px solid $color-light-brown;
-			padding:64px;
+			background-color:$color-light-brown2;
+			@include vw(padding,40px 0);
 			.logo-box{
-				margin-bottom:20px;
+				@include vw(margin-bottom,16px);
 				.univ-logo{
 					display:inline-block;
-					width:80px;
-					height:80px;
+					@include vw(width,64px);
+					@include vw(height,64px);
 					img{width:100%;}
 				}
 			}
 			p{
-				font-size:40px;font-weight:600;line-height:1;
+				@include vw(font-size,18px);font-weight:600;@include vw(line-height,27px);
 			}
 		}
 		
 		.examInfo-univ-view{
-			
+			.holder{
+				@include vw(padding,20px 20px 60px 20px );
+			}
 			.notice-view-table{
 				.table-row{
 					th{
@@ -148,6 +117,38 @@
 	
 			&+.examInfo-univ-view{margin-top:80px;}
 		}
+
+
+
+		
+		.select-pass-box{
+			display:flex;
+			justify-content: space-between;
+			align-items:flex-end;
+			margin-bottom:40px;
+			
+			.select-text{
+				color:$color-gray;
+				font-size:16px;
+				line-height:27.2px;
+				font-weight:400;
+			}
+	
+			.form-control{
+				padding-bottom:5px;
+				.select{
+					&.year{width:105px;}
+					&.univ{margin-left:8px;width:133px;}
+				}
+			}
+
+			.custom-select{
+				&.year{width:105px;}
+				&.univ{margin-left:8px;width:133px;}
+			}
+		}	
+
+
 
 		.examInfo-pass-list{
 			display:flex;
