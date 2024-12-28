@@ -67,55 +67,41 @@
 		}
 		
 		.examInfo-univ-view{
-			.holder{
-				@include vw(padding,20px 20px 60px 20px );
-			}
-			.notice-view-table{
-				.table-row{
-					th{
-						font-weight:600;
-						font-size:16px;
-						color:$color-black;
-					}
-	
-					td{
-						font-size:16px;
-						font-weight:400;
+			@include vw(padding,20px 20px 60px 20px );
 
-						.type{
-							font-weight:600;margin-right:10px;margin-left:20px;
-							&:first-child{margin-left:0;}
-						}
+			h3{
+				@include vw(padding-top,0px);
+				@include vw(padding-bottom,8px);
+				margin-bottom:0;
+			}
+
+			.btn.btn-file{margin-top:0;}
+
+			.icon-home{
+				display:inline-block;
+				@include vw(margin-left,4px);
+			}
+
+			dl{
+				display:flex;
+				align-items: center;
+				@include vw(margin-top,16px);
+				dt,dd{}
+				dt{
+					@include vw(width,90px);
+					@include vw(font-size,12px);font-weight:400;
+					@include vw(line-height,20.4px);color:$color-gray;
+				}
+				dd{
+					@include vw(margin-left,8px);
+					@include vw(font-size,14px);font-weight:400;
+					@include vw(line-height,23.8px);color:$color-black;
+					a{
+						text-decoration: underline;
 					}
 				}
 			}
-	
-			.tab-box{
-				.tab-menu{
-					margin-top:0;
-					height:27px;
-					ul li{
-						a{font-weight:400;font-size:16px;height:27px;}
-						&.active{
-							a{font-weight:600;}
-						}
-					}
-				}
-	
-				.tab-view{
-					padding-top:40px;
-	
-					.holder{
-						&+.holder{margin-top:80px;}
-					}
-	
-					.notice-view-table + .notice-text,
-					.notice-text + .notice-view-table{margin-top:10px;}
-				}
-	
-			}
-	
-			&+.examInfo-univ-view{margin-top:80px;}
+
 		}
 
 

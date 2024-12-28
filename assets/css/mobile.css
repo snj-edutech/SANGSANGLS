@@ -3240,6 +3240,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap .border-bottom-line {
+  border-bottom: 1px solid #E4DED3;
+}
+
 #wrap .holder {
   padding: 6.4vw 5.33333vw 8.53333vw;
 }
@@ -9635,67 +9639,113 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-#wrap .section-examInfo-content .examInfo-univ-view .holder {
+#wrap .section-examInfo-content .examInfo-univ-view {
   padding: 5.33333vw 5.33333vw 16vw 5.33333vw;
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .section-examInfo-content .examInfo-univ-view .holder {
+  #wrap .section-examInfo-content .examInfo-univ-view {
     padding: 20px 20px 60px 20px;
   }
 }
 
-#wrap .section-examInfo-content .examInfo-univ-view .notice-view-table .table-row th {
-  font-weight: 600;
-  font-size: 16px;
+#wrap .section-examInfo-content .examInfo-univ-view h3 {
+  padding-top: 0px;
+  padding-bottom: 2.13333vw;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view h3 {
+    padding-bottom: 8px;
+  }
+}
+
+#wrap .section-examInfo-content .examInfo-univ-view .btn.btn-file {
+  margin-top: 0;
+}
+
+#wrap .section-examInfo-content .examInfo-univ-view .icon-home {
+  display: inline-block;
+  margin-left: 1.06667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view .icon-home {
+    margin-left: 4px;
+  }
+}
+
+#wrap .section-examInfo-content .examInfo-univ-view dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4.26667vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view dl {
+    margin-top: 16px;
+  }
+}
+
+#wrap .section-examInfo-content .examInfo-univ-view dl dt {
+  width: 24vw;
+  font-size: 3.2vw;
+  font-weight: 400;
+  line-height: 5.44vw;
+  color: #7A746A;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view dl dt {
+    width: 90px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view dl dt {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view dl dt {
+    line-height: 20.4px;
+  }
+}
+
+#wrap .section-examInfo-content .examInfo-univ-view dl dd {
+  margin-left: 2.13333vw;
+  font-size: 3.73333vw;
+  font-weight: 400;
+  line-height: 6.34667vw;
   color: #2C2923;
 }
 
-#wrap .section-examInfo-content .examInfo-univ-view .notice-view-table .table-row td {
-  font-size: 16px;
-  font-weight: 400;
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view dl dd {
+    margin-left: 8px;
+  }
 }
 
-#wrap .section-examInfo-content .examInfo-univ-view .notice-view-table .table-row td .type {
-  font-weight: 600;
-  margin-right: 10px;
-  margin-left: 20px;
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view dl dd {
+    font-size: 14px;
+  }
 }
 
-#wrap .section-examInfo-content .examInfo-univ-view .notice-view-table .table-row td .type:first-child {
-  margin-left: 0;
+@media screen and (min-width: 375px) {
+  #wrap .section-examInfo-content .examInfo-univ-view dl dd {
+    line-height: 23.8px;
+  }
 }
 
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-menu {
-  margin-top: 0;
-  height: 27px;
-}
-
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-menu ul li a {
-  font-weight: 400;
-  font-size: 16px;
-  height: 27px;
-}
-
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-menu ul li.active a {
-  font-weight: 600;
-}
-
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view {
-  padding-top: 40px;
-}
-
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view .holder + .holder {
-  margin-top: 80px;
-}
-
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view .notice-view-table + .notice-text,
-#wrap .section-examInfo-content .examInfo-univ-view .tab-box .tab-view .notice-text + .notice-view-table {
-  margin-top: 10px;
-}
-
-#wrap .section-examInfo-content .examInfo-univ-view + .examInfo-univ-view {
-  margin-top: 80px;
+#wrap .section-examInfo-content .examInfo-univ-view dl dd a {
+  text-decoration: underline;
 }
 
 #wrap .section-examInfo-content .select-pass-box {
@@ -11604,7 +11654,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-#wrap .qna-box dl dt {
+#wrap .file-box dl dt {
   margin-bottom: 4.26667vw;
   font-weight: 600;
   font-size: 3.46667vw;
@@ -11613,19 +11663,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .qna-box dl dt {
+  #wrap .file-box dl dt {
     margin-bottom: 16px;
   }
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .qna-box dl dt {
+  #wrap .file-box dl dt {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .qna-box dl dt {
+  #wrap .file-box dl dt {
     line-height: 22.1px;
   }
 }

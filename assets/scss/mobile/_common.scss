@@ -45,6 +45,10 @@
 		@include vw(padding-top,20px);
 	}
 
+	.border-bottom-line{
+		border-bottom:1px solid $color-light-brown;
+	}
+
 	.holder{
 		@include vw(padding,24px 20px 32px);
 	}
