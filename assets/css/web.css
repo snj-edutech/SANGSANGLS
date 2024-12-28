@@ -5064,14 +5064,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents.main {
   padding: 0;
 }
-<<<<<<< HEAD
-
 #wrap #contents.introduction {
   padding-top: 0;
 }
-
-=======
->>>>>>> dnsgk4983/branch
 #wrap #footer .footer-top {
   border-top: 1px solid #E4DED3;
   padding: 16px 0;
@@ -13407,7 +13402,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 1px solid #2C2923;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-<<<<<<< HEAD
 }
 
 #wrap .section-presentation-title {
@@ -13415,7 +13409,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-bottom: 140px;
   text-align: center;
 }
-
 #wrap .section-presentation-title .head-copy {
   color: #504B42;
   font-size: 20px;
@@ -13423,14 +13416,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 34px;
   margin-bottom: 12px;
 }
-
 #wrap .section-presentation-title .main-copy {
   color: #2C2923;
   font-size: 100px;
   font-weight: 100;
   line-height: 120px;
 }
-
 #wrap .section-presentation-title .sub-copy {
   color: #2C2923;
   font-size: 16px;
@@ -13438,24 +13429,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 27px;
   margin-top: 40px;
 }
-
 #wrap .section-presentation-content .visual img {
   width: 100%;
 }
-
 #wrap .section-presentation-content .apply-box {
   background-color: #070707;
   text-align: center;
   padding: 40px 0 60px;
 }
-
 #wrap .section-presentation-content .apply-box .apply-date {
   color: #FFFFFC;
   font-size: 16px;
   line-height: 27px;
   font-weight: 500;
 }
-
 #wrap .section-presentation-content .apply-box .apply-date p {
   display: block;
   color: #E3CDA2;
@@ -13463,7 +13450,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 42px;
   font-weight: 600;
 }
-
 #wrap .section-presentation-content .apply-box .apply-btn {
   margin-top: 36px;
   display: -webkit-box;
@@ -13473,7 +13459,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 #wrap .section-presentation-content .apply-box .apply-btn a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13491,163 +13476,135 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 341px;
   height: 75px;
 }
-
 #wrap .section-presentation-content .banner {
   margin-top: 20px;
 }
-
 #wrap .section-presentation-content .banner img {
   width: 100%;
 }
-
 #wrap .section-presentation-content .program {
   margin-top: 196px;
 }
-
 #wrap .section-presentation-content .program .program-title {
-  margin-bottom: 10.66667vw;
+  margin-bottom: 10.6666666667vw;
   font-weight: 200;
-  font-size: 8.53333vw;
+  font-size: 8.5333333333vw;
   line-height: 12.8vw;
   color: #2C2923;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .program .program-title {
     margin-bottom: 40px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .program .program-title {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .program .program-title {
     line-height: 48px;
   }
 }
-
 #wrap .section-presentation-content .program img {
   width: 100%;
 }
-
 #wrap .section-presentation-content .qna {
   background-color: #735E5A;
-  margin-top: 5.33333vw;
+  margin-top: 5.3333333333vw;
   text-align: center;
-  padding: 26.66667vw 0;
+  padding: 26.6666666667vw 0;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna {
     margin-top: 20px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna {
     padding: 100px 0;
   }
 }
-
 #wrap .section-presentation-content .qna p {
   color: #FFFFFC;
-  font-size: 8.53333vw;
+  font-size: 8.5333333333vw;
   line-height: 12.8vw;
   font-weight: 200;
 }
-
 #wrap .section-presentation-content .qna p strong {
   display: block;
-  margin-bottom: 4.26667vw;
+  margin-bottom: 4.2666666667vw;
   font-weight: 300;
   font-size: 6.4vw;
   line-height: 9.6vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna p strong {
     margin-bottom: 16px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna p strong {
     font-size: 24px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna p strong {
     line-height: 36px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna p {
     font-size: 32px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .qna p {
     line-height: 48px;
   }
 }
-
 #wrap .section-presentation-content .info-box {
-  margin-top: 21.33333vw;
+  margin-top: 21.3333333333vw;
   text-align: center;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .info-box {
     margin-top: 80px;
   }
 }
-
 #wrap .section-presentation-content .info-box p {
   color: #2C2923;
   font-weight: 600;
-  font-size: 4.26667vw;
+  font-size: 4.2666666667vw;
   line-height: 7.2vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .info-box p {
     font-size: 16px;
   }
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .info-box p {
     line-height: 27px;
   }
 }
-
 #wrap .section-presentation-content .info-box p + p {
-  margin-top: 2.13333vw;
+  margin-top: 2.1333333333vw;
 }
-
 @media screen and (min-width: 375px) {
   #wrap .section-presentation-content .info-box p + p {
     margin-top: 8px;
   }
 }
-
 #wrap .section-introduction-visual {
   background: url("../images/etc/bg_visual.png") no-repeat center top;
   background-size: auto 100%;
   height: 600px;
 }
-
 #wrap .section-introduction-title {
   margin: 160px 0 200px;
 }
-
 #wrap .section-introduction-title p {
   color: #2C2923;
   font-size: 40px;
@@ -13655,28 +13612,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 60px;
   text-align: center;
 }
-
 #wrap .section-introduction-system {
   max-width: 1680px;
   margin: 0 auto;
 }
-
 #wrap .section-introduction-system img {
   max-width: 100%;
 }
-
 #wrap .section-introduction-content .wrap img {
   width: 100%;
 }
-
 #wrap .section-introduction-content .holder {
   margin-top: 300px;
 }
-
 #wrap .section-introduction-content .holder:first-child, #wrap .section-introduction-content .holder:last-child {
   margin-top: 200px;
 }
-/*# sourceMappingURL=web.css.map */
-=======
-}
->>>>>>> dnsgk4983/branch
