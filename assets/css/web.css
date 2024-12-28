@@ -10112,7 +10112,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .desc-box .t-img + .t-desc .desc-title {
-  width: 519px;
+  width: 509px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -10170,11 +10170,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject {
-  width: 80px;
+  width: 90px;
 }
 
 #wrap .section-mypage-wrap .content .lecture-data-list .course-list .subject + .desc-box {
-  width: 663px;
+  width: 653px;
   padding: 20px 24px;
 }
 

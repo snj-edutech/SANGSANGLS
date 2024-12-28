@@ -293,7 +293,7 @@
 						.t-img + .t-desc{
 							margin-left:24px;
 							.desc-title{
-								width:519px;
+								width:509px;
 								@include boxSizing(border-box);
 								@include multipleEllipsis(2);
 								.badge{margin-right:8px;}
@@ -327,10 +327,10 @@
 					}
 
 					.subject{
-						width:80px;
+						width:90px;
 
 						&+.desc-box{
-							width:663px;
+							width:653px;
 							padding: 20px 24px;
 							
 						}
