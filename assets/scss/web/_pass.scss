@@ -227,7 +227,7 @@
                             font-weight: 800;
                             color: #2C2923;
                             text-align: center;
-                            background: #fff;
+                            background: #FBFAF6;
                         }
                     }
                 }
@@ -263,10 +263,13 @@
                         p {
                             font-size: 28px;
                             font-weight: 800;
+                            line-height: 1.5;
                             margin-bottom: 8px;
                         }
                         span {
-                            font-size: 18px;
+                            display: block;
+                            font-size: 24px;
+                            line-height: 1.5;
                             font-weight: 400;
                         }
                     }
@@ -280,8 +283,7 @@
                             font-size: 32px;
                             font-weight: 700;
                             color: #0084FF;
-                            &:after {
-                                content: "*";
+                            span {
                                 display: inline-block;
                                 vertical-align: middle;
                                 color: #BEBEBC;
@@ -312,6 +314,7 @@
                                     } 
                                     .text-box {
                                         font-size: 24px;
+                                        line-height: 1.5;
                                         font-weight: 600;
                                     }
                                     &:hover {
