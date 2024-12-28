@@ -5874,6 +5874,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 0;
 }
 
+#wrap #contents.introduction {
+  padding-top: 0;
+}
+
 #wrap #footer .footer-top {
   border-top: 1px solid #E4DED3;
   padding: 16px 0;
@@ -15930,5 +15934,44 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .section-presentation-content .info-box p + p {
     margin-top: 8px;
   }
+}
+
+#wrap .section-introduction-visual {
+  background: url("../images/etc/bg_visual.png") no-repeat center top;
+  background-size: auto 100%;
+  height: 600px;
+}
+
+#wrap .section-introduction-title {
+  margin: 160px 0 200px;
+}
+
+#wrap .section-introduction-title p {
+  color: #2C2923;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+
+#wrap .section-introduction-system {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+#wrap .section-introduction-system img {
+  max-width: 100%;
+}
+
+#wrap .section-introduction-content .wrap img {
+  width: 100%;
+}
+
+#wrap .section-introduction-content .holder {
+  margin-top: 300px;
+}
+
+#wrap .section-introduction-content .holder:first-child, #wrap .section-introduction-content .holder:last-child {
+  margin-top: 200px;
 }
 /*# sourceMappingURL=web.css.map */

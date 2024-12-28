@@ -24,7 +24,7 @@
         "../scss/mobile/_promotion.scss",
         "../scss/mobile/_report.scss",
         "../scss/mobile/_pass.scss",
-        "../scss/mobile/_contents.scss"
+        "../scss/mobile/_etc.scss"
     ],
     "names": [],
     "file": "mobile.css"

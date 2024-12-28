@@ -119,4 +119,35 @@
         }
 
     }
+    .section-introduction-visual{
+        background: url('../images/etc/bg_visual.png') no-repeat center top;
+        background-size: auto 100%;
+        height:600px;
+    }
+    .section-introduction-title{
+        margin: 160px 0 200px;
+        p{
+            color:$color-black;
+            font-size:40px;
+            font-weight:600;
+            line-height:60px;
+            text-align:center;
+        }
+    }
+    .section-introduction-system{
+        max-width:1680px;
+        margin:0 auto;
+
+        img{max-width:100%;}
+    }
+    .section-introduction-content{
+        .wrap{
+            img{width:100%;}
+        }
+        .holder{
+            margin-top:300px;
+            &:first-child,
+            &:last-child{margin-top:200px;}
+        }
+    }
 }
