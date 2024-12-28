@@ -122,4 +122,34 @@
             }
         }
     }
+
+    .section-introduction {
+        &-visual {
+            .wrap {
+                padding: 0;
+            }
+        }
+        &-title {
+            @include vw(padding, 64px 0);
+            p {
+                @include vw(font-size, 24px);
+                font-weight: 600;
+                line-height: 1.7;
+            }
+        }
+        &-system {
+            .wrap {
+                padding: 0;
+            }
+        }
+        &-content {
+            .wrap {
+                padding: 0;
+                .holder {
+                    @include vw(margin-top, 240px);
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
