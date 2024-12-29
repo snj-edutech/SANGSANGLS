@@ -10385,15 +10385,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 540px;
 }
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a {
-<<<<<<< HEAD
   height: 144px;
-  background-color: #f2efe7;
-  color: #504b42;
-=======
-  height: 124px;
   background-color: rgb(242, 239, 231);
   color: rgb(80, 75, 66);
->>>>>>> dnsgk4983/branch
 }
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a:first-child {
   margin-bottom: 12px;
@@ -10411,7 +10405,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
           justify-content: center;
   width: 780px;
 }
-
 #wrap .section-main-slogan .wrap img {
   width: 100%;
 }
@@ -13619,9 +13612,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-introduction-content .holder:first-child, #wrap .section-introduction-content .holder:last-child {
   padding-top: 100px;
-<<<<<<< HEAD
 }
-
 #wrap .section-benefit-visual {
   background-size: cover;
   background-repeat: no-repeat;
@@ -13631,19 +13622,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 #wrap .section-benefit-visual img {
   width: 100%;
 }
-
 #wrap .section-benefit-content {
   margin-top: 100px;
 }
-
 #wrap .section-benefit-content img {
   width: 100%;
 }
-/*# sourceMappingURL=web.css.map */
-=======
-}
->>>>>>> dnsgk4983/branch
