@@ -240,7 +240,7 @@
 
             .schedule-list {
                 .list {
-                    @include vw(padding, 24px);
+                    @include vw(padding, 24px 18px 24px 24px);
                     background: #FBFAF6;
                     &:last-child {
                         margin-bottom: 0
@@ -257,6 +257,7 @@
                             color: #B5AD98;
                         }
                         p {
+                            @include vw(line-height, 40px);
                             @include vw(font-size, 28px);
                             font-weight: 700;
                             color: #2C2923;
@@ -276,9 +277,10 @@
                         ul {
                             li {
                                 position: relative;
-                                @include vw(font-size, 16px);
-                                @include vw(line-height, 28px);
-                                font-weight: 500;
+                                @include vw(font-size, 14px);
+                                @include vw(line-height, 25.2px);
+                                font-weight: 700;
+                               /*
                                 @include vw(margin-bottom, 16px);
                                 @include vw(padding-left, 12px);
                                 &:before {
@@ -290,7 +292,7 @@
                                     @include vw(height, 5px);
                                     border-radius: 50%;
                                     background: #2C2923;
-                                }
+                                }*/
                                 &:last-child {
                                     margin-bottom: 0;
                                 }
@@ -408,6 +410,9 @@
                         &-list {
                             @include vw(margin-top, 12px);
                             ul {
+                                &.best-list{
+                                    @include vw(margin-bottom, 12px);
+                                }
                                 li {
                                     position: relative;
                                     @include vw(font-size, 16px);
@@ -431,7 +436,7 @@
                                             background: #DABF99;
                                         }
                                         + li {
-                                            @include vw(margin-top, 12px);
+                                           // @include vw(margin-bottom, 12px);
                                         }
                                     }
                                 }

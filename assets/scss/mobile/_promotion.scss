@@ -22,8 +22,7 @@
 			position: relative;
 			color:$color-black;
 			@include vw(font-size,27px);
-			font-family:$font-notoSerifKr;
-			font-weight:250;
+			font-weight:400;
 			@include vw(line-height, 40.5px);
 			letter-spacing:-1px;
 			small {
@@ -92,25 +91,26 @@
 
 	.section-promotion-curriculum{
 		.curriculum-list{
+			@include vw(padding-top, 80px);
 			&:first-child{
 				border-top:1px solid #DCDCDB;
-				@include vw(padding-top, 80px);
+				//@include vw(padding-top, 80px);
 			}
 			&.border-none {
 				border: none;
 			}
 			&:not(:first-child) {
-				@include vw(padding-top, 24px);
+				//@include vw(padding-top, 24px);
 			}
 			&.pb-0 {
 				padding-bottom: 0;
 			}
 			.curriculum-title{
 				color:$color-black;
-				@include vw(font-size,24px);
+				@include vw(font-size,20px);
 				font-weight:600;
-				@include vw(line-height,40.8px);
-				@include vw(margin-bottom,16px);
+				@include vw(line-height,34px);
+				@include vw(margin-bottom,24px);
 				span {
 					display: block;
 					@include vw(font-size, 11px);

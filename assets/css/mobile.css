@@ -12958,8 +12958,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: relative;
   color: #2C2923;
   font-size: 7.2vw;
-  font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
-  font-weight: 250;
+  font-weight: 400;
   line-height: 10.8vw;
   letter-spacing: -1px;
 }
@@ -13119,29 +13118,22 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
-#wrap .section-promotion-curriculum .curriculum-list:first-child {
-  border-top: 1px solid #DCDCDB;
+#wrap .section-promotion-curriculum .curriculum-list {
   padding-top: 21.33333vw;
 }
 
 @media screen and (min-width: 375px) {
-  #wrap .section-promotion-curriculum .curriculum-list:first-child {
+  #wrap .section-promotion-curriculum .curriculum-list {
     padding-top: 80px;
   }
 }
 
+#wrap .section-promotion-curriculum .curriculum-list:first-child {
+  border-top: 1px solid #DCDCDB;
+}
+
 #wrap .section-promotion-curriculum .curriculum-list.border-none {
   border: none;
-}
-
-#wrap .section-promotion-curriculum .curriculum-list:not(:first-child) {
-  padding-top: 6.4vw;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-promotion-curriculum .curriculum-list:not(:first-child) {
-    padding-top: 24px;
-  }
 }
 
 #wrap .section-promotion-curriculum .curriculum-list.pb-0 {
@@ -13150,27 +13142,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
   color: #2C2923;
-  font-size: 6.4vw;
+  font-size: 5.33333vw;
   font-weight: 600;
-  line-height: 10.88vw;
-  margin-bottom: 4.26667vw;
+  line-height: 9.06667vw;
+  margin-bottom: 6.4vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
-    line-height: 40.8px;
+    line-height: 34px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 }
 
@@ -14824,13 +14816,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-schedule .schedule-list .list {
-  padding: 6.4vw;
+  padding: 6.4vw 4.8vw 6.4vw 6.4vw;
   background: #FBFAF6;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-pass-schedule .schedule-list .list {
-    padding: 24px;
+    padding: 24px 18px 24px 24px;
   }
 }
 
@@ -14875,10 +14867,17 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-schedule .schedule-list .list-title p {
+  line-height: 10.66667vw;
   font-size: 7.46667vw;
   font-weight: 700;
   color: #2C2923;
   margin-top: 2.13333vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-pass-schedule .schedule-list .list-title p {
+    line-height: 40px;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -14916,63 +14915,33 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-pass-schedule .schedule-list .list-text ul li {
   position: relative;
-  font-size: 4.26667vw;
-  line-height: 7.46667vw;
-  font-weight: 500;
-  margin-bottom: 4.26667vw;
-  padding-left: 3.2vw;
+  font-size: 3.73333vw;
+  line-height: 6.72vw;
+  font-weight: 700;
+  /*
+                                @include vw(margin-bottom, 16px);
+                                @include vw(padding-left, 12px);
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    @include vw(top, 11px);
+                                    @include vw(width, 5px);
+                                    @include vw(height, 5px);
+                                    border-radius: 50%;
+                                    background: #2C2923;
+                                }*/
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-pass-schedule .schedule-list .list-text ul li {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-pass-schedule .schedule-list .list-text ul li {
-    line-height: 28px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-pass-schedule .schedule-list .list-text ul li {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-pass-schedule .schedule-list .list-text ul li {
-    padding-left: 12px;
-  }
-}
-
-#wrap .section-pass-schedule .schedule-list .list-text ul li:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 2.93333vw;
-  width: 1.33333vw;
-  height: 1.33333vw;
-  border-radius: 50%;
-  background: #2C2923;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-pass-schedule .schedule-list .list-text ul li:before {
-    top: 11px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-pass-schedule .schedule-list .list-text ul li:before {
-    width: 5px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-pass-schedule .schedule-list .list-text ul li:before {
-    height: 5px;
+    line-height: 25.2px;
   }
 }
 
@@ -15297,6 +15266,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   }
 }
 
+#wrap .section-pass-apply .list .apply-benefit-list ul.best-list {
+  margin-bottom: 3.2vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-pass-apply .list .apply-benefit-list ul.best-list {
+    margin-bottom: 12px;
+  }
+}
+
 #wrap .section-pass-apply .list .apply-benefit-list ul li {
   position: relative;
   font-size: 4.26667vw;
@@ -15359,16 +15338,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-pass-apply .list .apply-benefit-list ul li.best:before {
   background: #DABF99;
-}
-
-#wrap .section-pass-apply .list .apply-benefit-list ul li.best + li {
-  margin-top: 3.2vw;
-}
-
-@media screen and (min-width: 375px) {
-  #wrap .section-pass-apply .list .apply-benefit-list ul li.best + li {
-    margin-top: 12px;
-  }
 }
 
 #wrap .section-pass-apply .list .apply-benefit-list .desc {
