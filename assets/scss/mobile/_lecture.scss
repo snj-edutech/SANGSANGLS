@@ -409,6 +409,7 @@
 			}
 			&-text {
 				ul {
+					@include vw(padding-bottom, 20px);
 					li {
 						position: relative;
 						@include vw(font-size, 14px);
@@ -424,6 +425,10 @@
 					}
 				}
 			}
+		}
+
+		&+.section-promotion-lecture{
+			padding-top:0;
 		}
 	}
 }
