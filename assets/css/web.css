@@ -12696,7 +12696,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #eeeeee;
 }
 #wrap #contents.contents-teaser .content-layout .list-tit li .txt {
-  flex: w;
+  flex: 1;
 }
 #wrap #contents.contents-teaser .content-layout .list-tit li:not(:first-child) {
   margin-top: 16px;
