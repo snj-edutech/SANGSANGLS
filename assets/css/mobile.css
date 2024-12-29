@@ -13486,7 +13486,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     margin-top: 24px;
   }
 }
+<<<<<<< HEAD
 
+=======
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-content .notice {
+  font-size: 3.7333333333vw;
+  line-height: 1.5;
+  color: #BEBEBC;
+  margin-top: -8.5333333333vw;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .notice {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .notice {
+    margin-top: -32px;
+  }
+}
+>>>>>>> dnsgk4983/branch
 #wrap .section-promotion-curriculum .curriculum-list .number-list {
   margin-bottom: 10.66667vw;
 }
