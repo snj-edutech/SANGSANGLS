@@ -12653,7 +12653,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 100%;
 }
 #wrap #contents.contents-teaser .content-layout {
-  padding-top: 120px;
+  width: 1100px;
+  padding-top: 140px;
   line-height: 1.8;
   font-size: 20px;
   color: #fff;
@@ -12673,6 +12674,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   justify-content: center;
   align-items: center;
 }
+#wrap #contents.contents-teaser .content-layout .img-area {
+  width: 597px;
+}
+#wrap #contents.contents-teaser .content-layout .img-area img {
+  width: 100%;
+}
 #wrap #contents.contents-teaser .content-layout .text-area {
   margin-top: 16px;
 }
@@ -12687,6 +12694,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents.contents-teaser .content-layout .list-tit li .tit {
   width: 110px;
   color: #eeeeee;
+}
+#wrap #contents.contents-teaser .content-layout .list-tit li .txt {
+  flex: 1;
 }
 #wrap #contents.contents-teaser .content-layout .list-tit li:not(:first-child) {
   margin-top: 16px;
