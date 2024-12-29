@@ -16094,4 +16094,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-introduction-content .holder:first-child, #wrap .section-introduction-content .holder:last-child {
   padding-top: 100px;
 }
+
+#wrap .section-benefit-visual {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding: 297px 0 197px;
+  height: 860px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrap .section-benefit-visual img {
+  width: 100%;
+}
+
+#wrap .section-benefit-content {
+  margin-top: 100px;
+}
+
+#wrap .section-benefit-content img {
+  width: 100%;
+}
 /*# sourceMappingURL=web.css.map */
