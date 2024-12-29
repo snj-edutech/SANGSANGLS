@@ -12961,6 +12961,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-family: "Noto Serif KR", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   font-weight: 250;
   line-height: 10.8vw;
+  letter-spacing: -1px;
 }
 
 @media screen and (min-width: 375px) {
@@ -12976,9 +12977,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-promotion-title .main-copy small {
-  position: absolute;
-  top: -1.86667vw;
-  right: 0;
+  position: relative;
+  top: -4vw;
   font-size: 2.66667vw;
   font-weight: 400;
   color: #888;
@@ -12986,7 +12986,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-title .main-copy small {
-    top: -7px;
+    top: -15px;
   }
 }
 
@@ -13121,12 +13121,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-promotion-curriculum .curriculum-list:first-child {
   border-top: 1px solid #DCDCDB;
-  padding-top: 10.66667vw;
+  padding-top: 21.33333vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list:first-child {
-    padding-top: 40px;
+    padding-top: 80px;
   }
 }
 
@@ -13150,27 +13150,27 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
   color: #2C2923;
-  font-size: 5.33333vw;
+  font-size: 6.4vw;
   font-weight: 600;
-  line-height: 9.06667vw;
-  margin-bottom: 10.66667vw;
+  line-height: 10.88vw;
+  margin-bottom: 4.26667vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
-    line-height: 34px;
+    line-height: 40.8px;
   }
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-title {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
 }
 
@@ -13190,6 +13190,36 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-title span {
     margin-top: 10px;
+  }
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-title strong {
+  color: #0084FF;
+}
+
+#wrap .section-promotion-curriculum .curriculum-list .curriculum-text {
+  color: #2C2923;
+  font-size: 5.33333vw;
+  font-weight: 600;
+  line-height: 9.06667vw;
+  margin-bottom: 6.4vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-text {
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-text {
+    margin-bottom: 24px;
   }
 }
 
@@ -13267,15 +13297,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content p {
   color: #2C2923;
-  font-size: 4.26667vw;
-  font-weight: 400;
-  line-height: 1.7;
+  font-size: 4.8vw;
+  font-weight: 600;
+  line-height: 8.16vw;
   margin-bottom: 6.4vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-curriculum .curriculum-list .curriculum-content p {
-    font-size: 16px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-promotion-curriculum .curriculum-list .curriculum-content p {
+    line-height: 30.6px;
   }
 }
 
@@ -13768,17 +13804,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-promotion-solution {
-  padding-top: 10.66667vw;
+  padding-top: 17.06667vw;
 }
 
 @media screen and (min-width: 375px) {
   #wrap .section-promotion-solution {
-    padding-top: 40px;
+    padding-top: 64px;
   }
-}
-
-#wrap .section-promotion-solution .wrap {
-  padding: 0;
 }
 
 #wrap .section-promotion-solution .solution {

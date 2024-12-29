@@ -25,10 +25,11 @@
 			font-family:$font-notoSerifKr;
 			font-weight:250;
 			@include vw(line-height, 40.5px);
+			letter-spacing:-1px;
 			small {
-				position: absolute;
-				@include vw(top, -7px);
-				right: 0;
+				position: relative;
+				@include vw(top, -15px);
+				// right: 0;
 				@include vw(font-size, 10px);
 				font-weight: 400;
 				color: #888;
@@ -93,7 +94,7 @@
 		.curriculum-list{
 			&:first-child{
 				border-top:1px solid #DCDCDB;
-				@include vw(padding-top, 40px);
+				@include vw(padding-top, 80px);
 			}
 			&.border-none {
 				border: none;
@@ -106,17 +107,30 @@
 			}
 			.curriculum-title{
 				color:$color-black;
-				@include vw(font-size,20px);
+				@include vw(font-size,24px);
 				font-weight:600;
-				@include vw(line-height,34px);
-				@include vw(margin-bottom,40px);
+				@include vw(line-height,40.8px);
+				@include vw(margin-bottom,16px);
 				span {
 					display: block;
 					@include vw(font-size, 11px);
 					color: #000;
 					@include vw(margin-top, 10px);
 				}
+
+				strong{
+					color:#0084FF;
+				}
 			}
+
+			.curriculum-text{
+				color:$color-black;
+				@include vw(font-size,20px);
+				font-weight:600;
+				@include vw(line-height,34px);
+				@include vw(margin-bottom,24px);
+			}
+
 			.curriculum-content{
 
 				.img-box{
@@ -153,11 +167,12 @@
 						line-height:1.7;
 					}
 				}
+
 				p{
 					color:$color-black;
-					@include vw(font-size,16px);
-					font-weight:400;
-					line-height:1.7;
+					@include vw(font-size,18px);
+					font-weight:600;
+					@include vw(line-height,30.6px);
 					@include vw(margin-bottom,24px);
 					strong{
 						font-weight:600;
@@ -380,10 +395,8 @@
 	}
 
 	.section-promotion-solution {
-		@include vw(padding-top, 40px);
-		.wrap {
-			padding: 0
-		}
+		@include vw(padding-top, 64px);
+
 		.solution {
 			@include vw(padding-bottom, 40px);
 			@include vw(margin-bottom, 64px);
