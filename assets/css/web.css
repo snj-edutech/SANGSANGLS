@@ -14607,10 +14607,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   margin-top: 160px;
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list:first-child {
+=======
+>>>>>>> 9a1b5ee8aa4c4e34d8c2fc5ec48a59d55e91a3b6
   margin-top: 120px;
 }
 
