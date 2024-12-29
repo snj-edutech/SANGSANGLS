@@ -2571,6 +2571,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-top: 40px;
 }
 
+#wrap .pt-0 {
+  padding-top: 0 !important;
+}
+
 #wrap h3 {
   position: relative;
   min-height: 48px;
@@ -15846,6 +15850,42 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
   line-height: 27px;
   margin-top: 40px;
+}
+
+#wrap .section-presentation-visual {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding: 120px 0 140px;
+}
+
+#wrap .section-presentation-visual img {
+  width: 100%;
+}
+
+#wrap .section-presentation-visual .apply-btn {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .section-presentation-visual .apply-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFC;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 600;
+  width: 473px;
+  height: 90px;
 }
 
 #wrap .section-presentation-content .visual img {

@@ -25,6 +25,35 @@
             @include vw(margin-top,36px);
         }
 	}
+
+    .section-presentation-visual{
+        background-size: cover;background-repeat: no-repeat;
+        background-position: 50% 0;
+        max-width:600px;
+        margin:0 auto;
+        @include vw(padding,80px 0);
+   
+        img{width:100%;}
+
+        .apply-btn{
+            @include vw(margin-top,80px);
+            display:flex;
+            justify-content: center;
+            a{
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                background-color:$color-white;
+                @include vw(font-size,16px);
+                @include vw(line-height,27.2px);
+                font-weight:600;
+                //@include vw(width,335px);
+                width:100%;
+                @include vw(height,91px);
+            }
+        }
+
+    }
 	.section-presentation-content{
         .wrap{
             max-width:600px;
