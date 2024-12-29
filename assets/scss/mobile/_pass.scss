@@ -13,11 +13,11 @@
     }
     .pass-title {
         text-align: center;
-        @include vw(padding, 80px 0 48px);
+        @include vw(padding, 38px 0);
         p {
-            font-family: $font-eskorte;
             @include vw(font-size, 16px);
-            font-weight: 600;
+            font-weight: 800;
+            @include vw(line-height, 19.2px);
         }
     }
     .section-pass {
@@ -28,6 +28,8 @@
         }
         &-content {
             .pass-books {
+                max-width:600px;
+                margin:0 auto;
                 border-bottom: 1px solid #BEBEBC;
                 .book {
                     @include vw(padding, 24px);
@@ -80,7 +82,7 @@
                 text-align: center;
                 @include vw(padding, 80px 0);
                 ul {
-                    @include vw(padding, 20px);
+                    @include vw(padding, 20px 0);
                     li {
                         @include vw(margin-bottom, 20px);
                         @include vw(padding, 32px 45px);
@@ -93,6 +95,12 @@
                             @include vw(height, 145px);
                             img {height: 100%;}
                         }
+
+                        .text-box{
+                            @include vw(height, 274px);
+                            
+                        }
+
                         .small-title {
                             color: #2C2923;
                             @include vw(margin, 24px 0 32px);
@@ -143,7 +151,7 @@
                         color: #FFFFFC;
                         line-height: 1.8;
                         @include vw(margin, 32px 0);
-                        letter-spacing: -0.03em
+                        letter-spacing: -1px;
                     }
                     strong {
                         @include vw(font-size, 20px);
@@ -170,7 +178,7 @@
 
         &-schedule {
             @include vw(margin-top, 80px);
-			@include vw(padding-bottom, 32px);
+			@include vw(padding-bottom, 48px);
             background: #F2EFE7;
             .schedule-calender {
                 .list {
@@ -240,6 +248,7 @@
                     &-wrap {
                         position: relative;
                         @include vw(margin-bottom, 48px);
+                        &:last-child{margin-bottom:0;}
                     }
                     &-title {
                         @include vw(margin, 24px 0);
@@ -257,16 +266,18 @@
                     &-text {
                         strong {
                             display: block;
-                            @include vw(font-size, 20px);
+                            @include vw(font-size, 19px);
                             line-height: 1.4;
                             font-weight: 800;
                             color: #0084FF;
                             @include vw(margin-bottom, 16px);
+                          
                         }
                         ul {
                             li {
                                 position: relative;
                                 @include vw(font-size, 16px);
+                                @include vw(line-height, 28px);
                                 font-weight: 500;
                                 @include vw(margin-bottom, 16px);
                                 @include vw(padding-left, 12px);
@@ -274,7 +285,7 @@
                                     content: "";
                                     position: absolute;
                                     left: 0;
-                                    @include vw(top, 7px);
+                                    @include vw(top, 11px);
                                     @include vw(width, 5px);
                                     @include vw(height, 5px);
                                     border-radius: 50%;
@@ -389,7 +400,7 @@
                         @include vw(padding-top, 24px);
                         &-label {
                             p {
-                                @include vw(font-size, 20px);
+                                @include vw(font-size, 14px);
                                 font-weight: 700;
                                 color: #F2EFE7;
                             }
