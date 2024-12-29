@@ -1,5 +1,13 @@
 #wrap{
     .section-teacher-gate{
+        .teacher-gate-title {
+            margin-bottom: 80px;
+            p {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 1.5;
+            }
+        }
         .teacher-gate-list{
             .list{
                 display: flex;
@@ -70,6 +78,15 @@
                             span {
                                 font-size: 15px;
                                 font-weight: 400;
+                            }
+                        }
+                        &-desc {
+                            margin-top: 64px;
+                            p {
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 1.5;
+                                color: #BEBEBC;
                             }
                         }
                     }
