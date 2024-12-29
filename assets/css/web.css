@@ -10488,11 +10488,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 6.4vw;
   border-width: 0;
   border-style: solid;
-<<<<<<< HEAD
   border-color: #E4DED3;
-=======
-  border-color: rgb(80, 75, 66);
->>>>>>> dnsgk4983/branch
   border-bottom-width: 2px;
   border-left-width: 2px;
   -webkit-transform: translate(-25%, -50%) rotate(45deg);
@@ -10554,11 +10550,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 6.4vw;
   border-width: 0;
   border-style: solid;
-<<<<<<< HEAD
   border-color: #E4DED3;
-=======
-  border-color: rgb(80, 75, 66);
->>>>>>> dnsgk4983/branch
   border-top-width: 2px;
   border-right-width: 2px;
   -webkit-transform: translate(-75%, -50%) rotate(45deg);
@@ -13671,12 +13663,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-benefit-content img {
   width: 100%;
 }
-
 #wrap .section-benefit2-content .wrap {
   width: 876px;
   margin: 0 auto;
 }
-
 #wrap .section-benefit2-content img {
   width: 100%;
 }
