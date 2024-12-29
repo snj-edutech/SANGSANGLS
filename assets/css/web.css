@@ -7572,10 +7572,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-top: 0;
 }
 
-#wrap .section-online-content {
-  margin-top: 120px;
-}
-
 #wrap .section-online-content .select-box {
   background-color: #FFFFFC;
   padding-top: 68px;
@@ -7637,6 +7633,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-online-slide {
   margin-top: 0px;
+}
+
+#wrap .section-online-slide + .section-online-content {
+  margin-top: 120px;
 }
 
 #wrap .section-online-slide .wrap {

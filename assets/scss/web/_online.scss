@@ -1,7 +1,6 @@
 #wrap{
     // LEFT 인강
 	.section-online-content{
-		margin-top:120px;
 		.select-box{
 			background-color:$color-white;
 			padding-top:68px;
@@ -75,6 +74,11 @@
 
 	.section-online-slide{
 		margin-top:0px;
+
+		&+.section-online-content{
+			margin-top:120px;
+		}
+		
 		.wrap{
 			display:flex;
 			justify-content: space-between;
