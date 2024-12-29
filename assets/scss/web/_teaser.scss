@@ -18,7 +18,8 @@
       }
     }
     .content-layout {
-      padding-top: 120px;
+      width: 1100px;
+      padding-top: 140px;
       line-height: 1.8;
       font-size: 20px;
       color: #fff;
@@ -39,6 +40,14 @@
         align-items: center;
       }
 
+      .img-area {
+        width: 597px;
+
+        img {
+          width: 100%;
+        }
+      }
+
       .text-area {
         margin-top: 16px;
       }
@@ -54,6 +63,10 @@
           .tit {
             width: 110px;
             color: #eeeeee;
+          }
+
+          .txt {
+            flex: 1;
           }
         }
 

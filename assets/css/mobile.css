@@ -12716,6 +12716,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding-bottom: 0;
 }
 #wrap #contents.contents-teaser .wrap {
+  max-width: 520px;
   background: url(../images/teaser/m_bg.png) 50% 100% no-repeat;
   background-size: auto 100%;
 }
@@ -12745,6 +12746,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #contents.contents-teaser .wrap .content-layout .list-tit li .tit {
   width: 110px;
   color: #eeeeee;
+}
+#wrap #contents.contents-teaser .wrap .content-layout .list-tit li .txt {
+  flex: 1;
+  word-break: keep-all;
 }
 #wrap #contents.contents-teaser .wrap .content-layout .list-tit li:not(:first-child) {
   margin-top: 12px;

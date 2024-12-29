@@ -2,6 +2,7 @@
   #contents.contents-teaser {
     padding-bottom: 0;
     .wrap {
+      max-width: 520px;
       background: url(../images/teaser/m_bg.png) 50% 100% no-repeat;
       background-size: auto 100%;
 
@@ -34,6 +35,11 @@
             .tit {
               width: 110px;
               color: #eeeeee;
+            }
+
+            .txt {
+              flex: 1;
+              word-break: keep-all;
             }
           }
 
