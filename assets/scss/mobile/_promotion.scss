@@ -56,14 +56,6 @@
 				letter-spacing:-1px;
 				font-family:$font-notoSerifKr;
 			}
-
-			.notice{
-				color:$color-light-gray;
-				@include vw(font-size,14px);
-				line-height: 1.5;
-				font-family: $font-pretendard;
-				letter-spacing:0px;
-			}
 			.menu-box{
 				@include vw(margin-top,40px);
 				display:flex;
@@ -86,6 +78,13 @@
 					}
 				}
 			}
+		}
+		.notice{
+			color:$color-light-gray;
+			@include vw(font-size,14px);
+			line-height: 1.5;
+			font-family: $font-pretendard;
+			letter-spacing:0px;
 		}
 	}
 
