@@ -12717,7 +12717,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #contents.contents-teaser .wrap {
   background: url(../images/teaser/m_bg.png) 50% 100% no-repeat;
-  background-size: 100% 100%;
+  background-size: auto 100%;
 }
 #wrap #contents.contents-teaser .wrap .content-layout {
   padding: 72px 0 334px;
