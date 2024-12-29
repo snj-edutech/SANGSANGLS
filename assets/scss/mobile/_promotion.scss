@@ -22,13 +22,13 @@
 			position: relative;
 			color:$color-black;
 			@include vw(font-size,27px);
-			font-family:$font-notoSerifKr;
-			font-weight:250;
+			font-weight:400;
 			@include vw(line-height, 40.5px);
+			letter-spacing:-1px;
 			small {
-				position: absolute;
-				@include vw(top, -7px);
-				right: 0;
+				position: relative;
+				@include vw(top, -15px);
+				// right: 0;
 				@include vw(font-size, 10px);
 				font-weight: 400;
 				color: #888;
@@ -56,14 +56,6 @@
 				letter-spacing:-1px;
 				font-family:$font-notoSerifKr;
 			}
-
-			.notice{
-				color:$color-light-gray;
-				@include vw(font-size,14px);
-				line-height: 1.5;
-				font-family: $font-pretendard;
-				letter-spacing:0px;
-			}
 			.menu-box{
 				@include vw(margin-top,40px);
 				display:flex;
@@ -87,19 +79,27 @@
 				}
 			}
 		}
+		.notice{
+			color:$color-light-gray;
+			@include vw(font-size,14px);
+			line-height: 1.5;
+			font-family: $font-pretendard;
+			letter-spacing:0px;
+		}
 	}
 
 	.section-promotion-curriculum{
 		.curriculum-list{
+			@include vw(padding-top, 80px);
 			&:first-child{
 				border-top:1px solid #DCDCDB;
-				@include vw(padding-top, 40px);
+				//@include vw(padding-top, 80px);
 			}
 			&.border-none {
 				border: none;
 			}
 			&:not(:first-child) {
-				@include vw(padding-top, 24px);
+				//@include vw(padding-top, 24px);
 			}
 			&.pb-0 {
 				padding-bottom: 0;
@@ -109,14 +109,27 @@
 				@include vw(font-size,20px);
 				font-weight:600;
 				@include vw(line-height,34px);
-				@include vw(margin-bottom,40px);
+				@include vw(margin-bottom,24px);
 				span {
 					display: block;
 					@include vw(font-size, 11px);
 					color: #000;
 					@include vw(margin-top, 10px);
 				}
+
+				strong{
+					color:#0084FF;
+				}
 			}
+
+			.curriculum-text{
+				color:$color-black;
+				@include vw(font-size,20px);
+				font-weight:600;
+				@include vw(line-height,34px);
+				@include vw(margin-bottom,24px);
+			}
+
 			.curriculum-content{
 
 				.img-box{
@@ -153,11 +166,12 @@
 						line-height:1.7;
 					}
 				}
+
 				p{
 					color:$color-black;
-					@include vw(font-size,16px);
-					font-weight:400;
-					line-height:1.7;
+					@include vw(font-size,18px);
+					font-weight:600;
+					@include vw(line-height,30.6px);
 					@include vw(margin-bottom,24px);
 					strong{
 						font-weight:600;
@@ -206,6 +220,14 @@
 					+ p {
 						@include vw(margin-top, 24px);
 					}
+				}
+
+				.notice {
+					@include vw(font-size, 14px);
+					line-height: 1.5;
+					color: $color-light-gray;
+					@include vw(margin-top, -32px);
+					margin-bottom: 0;
 				}
 			}
 
@@ -380,10 +402,8 @@
 	}
 
 	.section-promotion-solution {
-		@include vw(padding-top, 40px);
-		.wrap {
-			padding: 0
-		}
+		@include vw(padding-top, 64px);
+
 		.solution {
 			@include vw(padding-bottom, 40px);
 			@include vw(margin-bottom, 64px);

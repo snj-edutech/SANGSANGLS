@@ -397,4 +397,38 @@
 		}
 		
 	}
+
+	.section-special-lecture {
+		.special-lecture {
+			&-title {
+				@include vw(font-size, 32px);
+				font-weight: 300;
+				line-height: 1.4;
+				@include vw(padding-top, 80px);
+				@include vw(padding-bottom, 60px);
+			}
+			&-text {
+				ul {
+					@include vw(padding-bottom, 20px);
+					li {
+						position: relative;
+						@include vw(font-size, 14px);
+						font-weight: 400;
+						line-height: 1.7;
+						@include vw(padding-left, 12px);
+						&:before {
+							content: "-";
+							position: absolute;
+							left: 0;
+							font-weight: 400;
+						}
+					}
+				}
+			}
+		}
+
+		&+.section-promotion-lecture{
+			padding-top:0;
+		}
+	}
 }

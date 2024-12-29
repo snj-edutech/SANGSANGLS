@@ -191,10 +191,10 @@
 			@extend %slick-arrow;
 	
 			&.slick-prev{
-				@include slideArrow(left, 96px, 96px, 2px, rgba(80, 75, 66, 1),  $margin: 697px);
+				@include slideArrow(left, 96px, 96px, 2px, $color-light-brown,  $margin: 697px);
 			}
 			&.slick-next{
-			   @include slideArrow(right, 96px, 96px, 2px, rgba(80, 75, 66, 1), $margin: 697px);
+			   @include slideArrow(right, 96px, 96px, 2px, $color-light-brown, $margin: 697px);
 			}
 		}
 
