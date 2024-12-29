@@ -26,10 +26,38 @@
             margin-top:40px;
         }
 	}
+
+    .section-presentation-visual{
+        background-size: cover;background-repeat: no-repeat;
+        background-position: 50% 0;
+        padding:120px 0 140px;
+
+        img{width:100%;}
+
+        .apply-btn{
+            margin-top:80px;
+            display:flex;
+            a{
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                background-color:$color-white;
+                font-size:16px;
+                line-height:27px;
+                font-weight:600;
+                width:473px;
+                height:90px;
+            }
+        }
+
+
+    }
+
 	.section-presentation-content{
         .visual{
             img{width:100%;}
         }
+
 
         .apply-box{
             background-color:#070707;
