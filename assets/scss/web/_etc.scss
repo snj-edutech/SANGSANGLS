@@ -182,4 +182,18 @@
             &:last-child{padding-top:100px;}
         }
     }
+
+    .section-benefit-visual{
+        background-size: cover;background-repeat: no-repeat;
+        background-position: 50% 0;
+        padding:297px 0 197px;
+        height:860px;
+        @include boxSizing(border-box);
+
+        img{width:100%;}
+    }
+    .section-benefit-content{
+        margin-top:100px;
+        img{width:100%;}
+    }
 }

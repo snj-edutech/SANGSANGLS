@@ -192,4 +192,21 @@
             }
         }
     }
+
+    .section-benefit{
+        max-width:600px;
+        margin:0 auto;
+        &.section-benefit-visual{
+            background-size: cover;background-repeat: no-repeat;
+            background-position: 50% 0;
+            @include vw(padding,160px 0 140px);
+            @include boxSizing(border-box);
+
+
+        }
+        &.section-benefit-content{
+
+            @include vw(margin-top,60px);
+        }
+    }
 }

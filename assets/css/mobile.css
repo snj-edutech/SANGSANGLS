@@ -15828,4 +15828,34 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     padding-top: 140px;
   }
 }
+
+#wrap .section-benefit {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#wrap .section-benefit.section-benefit-visual {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding: 42.66667vw 0 37.33333vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-benefit.section-benefit-visual {
+    padding: 160px 0 140px;
+  }
+}
+
+#wrap .section-benefit.section-benefit-content {
+  margin-top: 16vw;
+}
+
+@media screen and (min-width: 375px) {
+  #wrap .section-benefit.section-benefit-content {
+    margin-top: 60px;
+  }
+}
 /*# sourceMappingURL=mobile.css.map */
