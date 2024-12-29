@@ -12219,7 +12219,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-main-banner .main-banner-list .main-banner-one a {
   background-color: #504b42;
   color: #FBFAF6;
-  height: 140px;
+  height: 120px;
 }
 
 #wrap .section-main-banner .main-banner-list .main-banner-more {
@@ -12229,21 +12229,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one {
-  width: 281px;
+  width: 228px;
   margin-left: 12px;
 }
 
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-one a {
   width: 100%;
-  height: 260px;
+  height: 300px;
 }
 
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two {
-  width: 487px;
+  width: 540px;
 }
 
 #wrap .section-main-banner .main-banner-list .main-banner-more .banner-two a {
-  height: 124px;
+  height: 144px;
   background-color: #f2efe7;
   color: #504b42;
 }
@@ -12264,6 +12264,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 780px;
+}
+
+#wrap .section-main-slogan .wrap img {
+  width: 100%;
 }
 
 #wrap .section-main-slogan p {
