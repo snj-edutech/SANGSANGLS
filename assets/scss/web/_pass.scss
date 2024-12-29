@@ -163,7 +163,7 @@
                         }
                         strong {
                             display: block;
-                            font-size: 28px;   
+                            font-size: 34px;   
                             font-weight: 700;
                             color: #0084FF;
                             margin: 42px 0;
@@ -171,7 +171,7 @@
                         span {
                             display: flex;
                             align-items: flex-end;
-                            min-height: 62px;
+                            min-height: 45px;
                             font-size: 28px;
                             font-weight: 600;
                             color: #FFFFFC;
@@ -287,9 +287,11 @@
                         margin: 84px 0 80px;
                         strong {
                             position: relative;
+                            display: block;
                             font-size: 24px;
                             font-weight: 700;
                             color: #0084FF;
+                            margin-bottom: 16px;
                             span {
                                 display: inline-block;
                                 vertical-align: middle;

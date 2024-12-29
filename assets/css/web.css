@@ -12280,10 +12280,18 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   left: 0;
 }
 #wrap .section-promotion-profile {
-  padding-bottom: 70px;
+  padding-bottom: 200px;
 }
 #wrap .section-promotion-profile .img-box img {
   max-width: 100%;
+}
+#wrap .section-promotion-profile .profile-title {
+  margin-top: 100px;
+}
+#wrap .section-promotion-profile .profile-title p {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 #wrap .section-promotion-profile .profile-box {
   position: relative;
@@ -13114,7 +13122,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-pass-content .pass-exam .text-box strong {
   display: block;
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
   color: #0084FF;
   margin: 42px 0;
@@ -13126,7 +13134,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  min-height: 62px;
+  min-height: 45px;
   font-size: 28px;
   font-weight: 600;
   color: #FFFFFC;
@@ -13234,9 +13242,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap .section-pass-schedule .schedule-list .list-text strong {
   position: relative;
+  display: block;
   font-size: 24px;
   font-weight: 700;
   color: #0084FF;
+  margin-bottom: 16px;
 }
 #wrap .section-pass-schedule .schedule-list .list-text strong span {
   display: inline-block;
