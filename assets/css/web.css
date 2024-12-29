@@ -14659,7 +14659,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li:last-child {
