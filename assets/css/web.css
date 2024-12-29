@@ -83,6 +83,7 @@
   background: none;
   outline: none;
   -webkit-transform: rotate(45deg) translateY(-50%);
+  -ms-transform: rotate(45deg) translateY(-50%);
   transform: rotate(45deg) translateY(-50%);
 }
 
@@ -127,25 +128,22 @@
 }
 
 .effect-bounce-diagonal {
-  -webkit-animation-name: effectBounceDiagonal;
-          animation-name: effectBounceDiagonal;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation-name: effectBounceDiagonal;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: normal;
 }
 
 @-webkit-keyframes effectBounceDiagonal {
   0%, 100% {
     -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   50% {
     -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
   }
 }
@@ -153,34 +151,33 @@
 @keyframes effectBounceDiagonal {
   0%, 100% {
     -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   50% {
     -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
   }
 }
 
 .effect-bounce-updown {
-  -webkit-animation-name: effectBounceUpDown;
-          animation-name: effectBounceUpDown;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation-name: effectBounceUpDown;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: normal;
 }
 
 @-webkit-keyframes effectBounceUpDown {
   0%, 100% {
     -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   50% {
     -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 }
@@ -188,34 +185,33 @@
 @keyframes effectBounceUpDown {
   0%, 100% {
     -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   50% {
     -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 }
 
 .effect-extend {
-  -webkit-animation-name: effectExtend;
-          animation-name: effectExtend;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation-name: effectExtend;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: normal;
 }
 
 @-webkit-keyframes effectExtend {
   0%, 100% {
     -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     transform: scale(1, 1);
   }
   50% {
     -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
   }
 }
@@ -223,25 +219,22 @@
 @keyframes effectExtend {
   0%, 100% {
     -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     transform: scale(1, 1);
   }
   50% {
     -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
   }
 }
 
 .effect-blink {
-  -webkit-animation-name: effectBlink;
-          animation-name: effectBlink;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: step-end;
-          animation-timing-function: step-end;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  animation-name: effectBlink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+  animation-direction: normal;
 }
 
 @-webkit-keyframes effectBlink {
@@ -535,12 +528,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .popup {
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
@@ -552,8 +541,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -608,11 +595,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .popup-close::before {
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 #wrap .popup-close::after {
   -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
@@ -661,6 +650,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin: 0 auto;
   font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -683,12 +673,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 100%;
   border-top: 1px solid #E4DED3;
   background-color: #FFFFFC;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 24px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -724,8 +710,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-title dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -945,11 +929,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .popup-action {
   margin-top: 6.4vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
 }
 
@@ -960,6 +940,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-action a {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,6 +954,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-radius: 0.53333vw;
   width: 19.46667vw;
   height: 10.66667vw;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.7333333333vw;
+  border-radius: 0.5333333333vw;
+  width: 19.4666666667vw;
+  height: 10.6666666667vw;
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
   color: #FFFFFC;
   background-color: #A07D3B;
   margin: 0 1.06667vw;
@@ -1209,11 +1199,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #popupLayerVideo .popup-close::before {
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 #wrap #popupLayerVideo .popup-close::after {
   -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
@@ -1254,8 +1246,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: inherit;
-     object-fit: inherit;
+  object-fit: inherit;
 }
 
 @media screen and (min-width: 720px) {
@@ -1315,25 +1306,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-bookInfo .desc-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 #wrap .popup-bookInfo .desc-box .book-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F2EFE7;
   width: 44.8vw;
   height: 44.8vw;
@@ -1413,12 +1394,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-bookInfo .desc-box .book-desc .desc-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 24px;
 }
 
@@ -1502,8 +1479,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #popupSchedule .step-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1591,6 +1566,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #A07D3B;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 5.33333vw;
   border-bottom-width: 1.5px;
@@ -1643,6 +1619,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #A07D3B;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   right: 5.33333vw;
   border-top-width: 1.5px;
@@ -1733,15 +1710,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-nodata {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #FBFAF6;
   height: 429px;
   text-align: center;
@@ -1785,15 +1756,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li a {
   padding: 10px 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: cneter;
-      -ms-flex-align: cneter;
-          align-items: cneter;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: cneter;
+  justify-content: space-between;
 }
 
 #wrap #popupSchedule .step-box .step.step-2 .timetable-box .timetable-list ul li a .time {
@@ -1815,15 +1780,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #popupDevice .device-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 20px;
 }
 
@@ -1870,12 +1829,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .popup-coursePeriod .lecture-box dl, #wrap .popup-coursePause .lecture-box dl {
   margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .popup-coursePeriod .lecture-box dl:first-child, #wrap .popup-coursePause .lecture-box dl:first-child {
@@ -1944,22 +1899,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #FFFFFC;
-  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 #wrap .popup-coursePause .calender-box .month-box {
   position: relative;
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   line-height: 1;
 }
 
@@ -1994,6 +1942,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 4.26667vw;
   border-bottom-width: 1.5px;
@@ -2045,6 +1994,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   right: 4.26667vw;
   border-top-width: 1.5px;
@@ -2204,15 +2154,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .popup-lecture .popup-cont .notice-list-nodata {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #E4DED3;
 }
 
@@ -2239,9 +2183,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #popupMypageBookInfo .desc-box {
   border-top: 1px solid #E4DED3;
   padding: 20px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
   margin-bottom: 0;
 }
 
@@ -2268,12 +2210,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #popupMypageBookInfo .desc-box .book-desc .desc-info {
   margin-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap #popupMypageBookInfo .desc-box .book-desc .desc-info p {
@@ -2346,15 +2284,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #popupLogin .popup-cont .btn-login {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFC;
   height: 56px;
   background-color: #2C2923;
@@ -2385,8 +2317,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #popupLayerMain .popup-wrap .popup-cont .popup-banner-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2618,12 +2548,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap h4 .device a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 13px;
   font-weight: 400;
   color: #2C2923;
@@ -2646,15 +2572,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .navigation {
   padding-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #wrap .navigation a {
@@ -2822,14 +2742,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
   background: #FFFFFC;
   left: auto;
   right: 23px;
   top: -44px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   border: 1px solid #E4DED3;
 }
 
@@ -2859,6 +2779,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom-width: 1.5px;
   border-left-width: 1.5px;
   -webkit-transform: translate(-25%, -50%) rotate(45deg);
+  -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
 
@@ -2895,13 +2816,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
   background: #FFFFFC;
   top: -44px;
   right: 0;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   border: 1px solid #E4DED3;
 }
 
@@ -2931,6 +2852,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-top-width: 1.5px;
   border-right-width: 1.5px;
   -webkit-transform: translate(-75%, -50%) rotate(45deg);
+  -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
 
@@ -3054,12 +2976,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .pagination {
   margin-top: 16vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 375px) {
@@ -3153,6 +3071,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 5.33333vw;
   border-bottom-width: 1.5px;
@@ -3204,6 +3123,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   right: 5.33333vw;
   border-top-width: 1.5px;
@@ -3235,8 +3155,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .count-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 102px;
   overflow: hidden;
@@ -3276,15 +3194,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .nodata-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #FBFAF6;
   height: 480px;
   text-align: center;
@@ -3303,12 +3215,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .nodata-box + .action.fly {
   position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #wrap .search-input-box {
@@ -3330,6 +3238,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 14px;
   font-weight: 600;
 }
+<<<<<<< HEAD
 
 #wrap .search-input-box .search-text input[type=text]::-webkit-input-placeholder {
   color: #BEBEBC;
@@ -3349,6 +3258,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 #wrap .search-input-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 14px;
@@ -3393,15 +3304,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .price-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #wrap .price-box .price-subject {
@@ -3430,21 +3335,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .tab-box .tab-list ul, #wrap .tab-box .tab-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #wrap .tab-box .tab-list ul li a, #wrap .tab-box .tab-menu ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 67px;
   border: 1px solid #E4DED3;
   background-color: #FFFFFC;
@@ -3477,8 +3374,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   right: 0;
   top: 0;
   z-index: 10;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 1200px;
 }
 
@@ -3534,19 +3430,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   right: 0;
   top: 0;
   z-index: 10;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 1200px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #wrap .tab-box .tab-menu-small ul.fixed {
@@ -3566,15 +3455,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .tab-box .tab-menu-small ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   font-weight: 400;
   font-size: 15px;
@@ -3640,8 +3523,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .tab-box.tab-slide .tab-menu-slide ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   top: 1px;
@@ -3680,11 +3561,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .category-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .category-list ul li {
@@ -3695,15 +3573,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .category-list ul li a {
   padding: 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #E4DED3;
   background-color: #FFFFFC;
   color: #2C2923;
@@ -3821,8 +3693,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 1px solid #e4ded3;
   color: #2C2923;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3843,6 +3714,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .form-control .select select::-ms-expand {
   display: none;
 }
+<<<<<<< HEAD
 
 #wrap .form-control .select select::-webkit-input-placeholder {
   color: #2C2923;
@@ -3856,6 +3728,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
 }
 
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 #wrap .form-control .select select::placeholder {
   color: #2C2923;
 }
@@ -3884,6 +3758,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
 
 #wrap .form-control .text::-webkit-input-placeholder {
   color: #BEBEBC;
@@ -3897,6 +3772,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #BEBEBC;
 }
 
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 #wrap .form-control .text::placeholder {
   color: #BEBEBC;
 }
@@ -3952,6 +3829,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     border-width: 1px;
   }
 }
+<<<<<<< HEAD
 
 #wrap .form-control .textarea::-webkit-input-placeholder {
   color: #BEBEBC;
@@ -3971,6 +3849,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 #wrap .form-control .textarea::placeholder {
   color: #BEBEBC;
   font-size: 3.73333vw;
@@ -3978,6 +3858,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 @media screen and (min-width: 375px) {
+<<<<<<< HEAD
   #wrap .form-control .textarea::-webkit-input-placeholder {
     font-size: 14px;
   }
@@ -3987,6 +3868,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   #wrap .form-control .textarea::-ms-input-placeholder {
     font-size: 14px;
   }
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
   #wrap .form-control .textarea::placeholder {
     font-size: 14px;
   }
@@ -4013,8 +3896,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   right: 16px;
   top: 50%;
-  -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  transform: translateY(-45%);
 }
 
 #wrap .form-control .fake-file-box .fake-file label {
@@ -4062,8 +3944,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   right: 8px;
   top: 50%;
-  -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  transform: translateY(-45%);
 }
 
 #wrap .form-control .fake-save-box .fake-btn label {
@@ -4102,6 +3983,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .custom-select .selected {
   border: 1px solid #E4DED3;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4113,6 +3995,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
           align-items: center;
   padding: 2.13333vw 4.26667vw 2.13333vw 4.26667vw;
   font-size: 3.73333vw;
+=======
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.1333333333vw 4.2666666667vw 2.1333333333vw 4.2666666667vw;
+  font-size: 3.7333333333vw;
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
   font-weight: 400;
   color: #2C2923;
   font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
@@ -4208,12 +4097,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .file-list-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .file-list-box .btn.btn-file {
@@ -4267,6 +4152,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 154px;
   color: #BEBEBC;
 }
+<<<<<<< HEAD
 
 #wrap .date-box .date::-webkit-input-placeholder {
   color: #2C2923;
@@ -4286,6 +4172,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 #wrap .date-box .date::placeholder {
   color: #2C2923;
   font-size: 14px;
@@ -4306,15 +4194,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .select-box {
   background-color: #FBFAF6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 40px 40px 40px;
 }
 
@@ -4367,27 +4249,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .select-box.flex-end {
   padding: 20px 0;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   background-color: transparent;
 }
 
 #wrap .select-box.flex-start {
   padding: 0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   background-color: transparent;
 }
 
 #wrap .input-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .input-box .text {
@@ -4425,12 +4299,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .timer-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .timer-box .form-control {
@@ -4448,17 +4318,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute;
   right: 16px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #wrap .file-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .file-box .form-text {
@@ -4470,21 +4335,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .box-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .radio-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .radio-box + .form-text {
@@ -4492,12 +4349,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .flex-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .agree-check-box {
@@ -4544,12 +4397,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .checkbox-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .checkbox-box .fake-checkbox {
@@ -4614,8 +4463,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .toggle-box dl.unfold dt .icon-arrow {
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 
 #wrap .toggle-box dl.unfold dd {
@@ -4702,8 +4550,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .table-row tr td.link a:hover {
   text-underline-offset: 5px;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
+  text-decoration: underline solid 2px;
 }
 
 #wrap .notice-list li {
@@ -4817,8 +4664,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .notice-view-table .table-row td.editor .study-info dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
 }
@@ -4900,15 +4745,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .grid {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   border-bottom: 1px solid #E4DED3;
 }
 
@@ -4962,21 +4801,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: absolute !important;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 #wrap .btn {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: auto;
   padding: 0 1.33333vw;
   height: 6.93333vw;
@@ -5293,40 +5125,26 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .action {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   margin-top: 20px;
 }
 
 #wrap .action.flex-start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 #wrap .action.flex-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #wrap .action.flex-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #wrap .action.flex-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #wrap .action.fly {
@@ -5338,39 +5156,25 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #wrap .flex.flex-start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 #wrap .flex.flex-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #wrap .flex.flex-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #wrap .flex.flex-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #wrap .table-bordered {
@@ -5455,11 +5259,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .header-top-banner .banner-close::before {
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 #wrap .header-top-banner .banner-close::after {
   -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
@@ -5486,15 +5292,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #header .header-util .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   padding-top: 8px;
   height: 32px;
 }
@@ -5575,8 +5375,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #header .header-util .login.active .icon-arrow img {
-  -webkit-transform: rotateZ(-180deg);
-          transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
 }
 
 #wrap #header .header-gnb {
@@ -5584,15 +5383,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #header .header-gnb .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   height: 48px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   padding-bottom: 24px;
   border-bottom: 1px solid #E4DED3;
 }
@@ -5603,8 +5397,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #header .header-gnb .header-menu {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -5614,8 +5406,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #header .header-gnb .header-menu .gnb-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -5662,6 +5452,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 24px;
   font-weight: 600;
 }
+<<<<<<< HEAD
 
 #wrap #header .header-search .search-box .search-text input[type=text]::-webkit-input-placeholder {
   color: #BEBEBC;
@@ -5681,6 +5472,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 #wrap #header .header-search .search-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 24px;
@@ -5699,8 +5492,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   right: 0;
   top: 50%;
   z-index: 9;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: none;
 }
 
@@ -5762,11 +5554,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #header .header-search .header-search-close::before {
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 #wrap #header .header-search .header-search-close::after {
   -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
@@ -5799,8 +5593,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap #header.header .header-gnb .header-logo {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 35px;
 }
 
@@ -5811,15 +5604,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #header.header .header-gnb .header-util {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #wrap #header.header .header-gnb .header-util a {
@@ -5838,15 +5625,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #header.header .header-menu .gnb-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #wrap #header.header .header-menu .gnb-list li {
@@ -5888,20 +5669,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #footer .footer-top .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #wrap #footer .footer-top .footer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -5931,12 +5704,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #footer .footer-top .footer-site {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap #footer .footer-top .footer-site a {
@@ -6001,8 +5770,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap #footer .footer-bottom .sns-list {
   margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -6022,17 +5789,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #footer.footer .footer-top .wrap {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #wrap #footer.footer .footer-top .footer-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-right: 1px solid #3b3b3b;
 }
@@ -6085,8 +5846,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #footer.footer .footer-top .footer-info .footer-info-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 24px;
 }
@@ -6105,11 +5864,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap #footer.footer .footer-top .footer-info .footer-info-list dd > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap #footer.footer .footer-top .footer-info .footer-info-list dd > div strong {
@@ -6185,6 +5941,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 24px;
   font-weight: 600;
 }
+<<<<<<< HEAD
 
 #wrap .section-search .search-box .search-text input[type=text]::-webkit-input-placeholder {
   color: #BEBEBC;
@@ -6204,6 +5961,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 400;
 }
 
+=======
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 #wrap .section-search .search-box .search-text input[type=text]::placeholder {
   color: #BEBEBC;
   font-size: 24px;
@@ -6222,8 +5981,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   right: 0;
   top: 50%;
   z-index: 9;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: none;
 }
 
@@ -6285,11 +6043,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-search .search-close::before {
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 #wrap .section-search .search-close::after {
   -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
@@ -6379,6 +6139,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #A07D3B;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   right: 5.33333vw;
   border-top-width: 1px;
@@ -6426,28 +6187,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-search-content .search-data-list .search-list .desc-box, #wrap .section-search-content .search-data-list .book-list .desc-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 910px;
 }
 
 #wrap .section-search-content .search-data-list .search-list .desc-box .t-img, #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F2EFE7;
   width: 19.2vw;
   height: 19.2vw;
@@ -6496,8 +6245,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 22.1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -6534,8 +6281,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-search-content .search-data-list .search-list .desc-box .t-desc .desc-btn, #wrap .section-search-content .search-data-list .book-list .desc-box .t-desc .desc-btn {
   margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -6581,9 +6326,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-search-content .search-data-list .book-list .desc-box {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 #wrap .section-search-content .search-data-list .book-list .desc-box .t-img {
@@ -6617,28 +6360,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .lecture-data-list .book-list .desc-box, #wrap .lecture-data-list .course-list .desc-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   width: 880px;
 }
 
 #wrap .lecture-data-list .book-list .desc-box .t-img, #wrap .lecture-data-list .course-list .desc-box .t-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F2EFE7;
   width: 44.8vw;
   height: 44.8vw;
@@ -6716,8 +6447,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 22.1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -6754,8 +6483,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .lecture-data-list .book-list .desc-box .t-desc .desc-btn, #wrap .lecture-data-list .course-list .desc-box .t-desc .desc-btn {
   margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -6798,24 +6525,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .lecture-data-list .book-list .price, #wrap .lecture-data-list .course-list .price {
   width: 340px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #wrap .lecture-data-list .book-list .price > div, #wrap .lecture-data-list .course-list .price > div {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 8px;
 }
 
@@ -6882,11 +6600,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .lecture-review-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .lecture-review-list .review-list {
@@ -6935,8 +6650,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .lecture-review-list .review-list .review-info dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -6967,8 +6680,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 40px;
   border: 1px solid #E4DED3;
   background-color: #F2EFE7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -6996,8 +6707,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 23.8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -7032,8 +6741,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left .lecture-name, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide .lecture-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
@@ -7047,30 +6754,20 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left .lecture-btn, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide .lecture-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left dl, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dt.book-img, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl dt.book-img {
   background-color: #E4DED3;
   width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 200px;
   overflow: hidden;
 }
@@ -7083,15 +6780,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-lecture .lecture-box .lecture-view .lecture-left dl dt.thumbnail, #wrap .section-lecture .lecture-box .lecture-view .lecture-wide dl dt.thumbnail {
   background-color: #E4DED3;
   width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 200px;
   overflow: hidden;
 }
@@ -7125,12 +6816,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-lecture .lecture-box .lecture-view .lecture-right dl {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 16px;
 }
 
@@ -7193,12 +6880,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-lecture .lecture-box .lecture-list .check-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -7216,8 +6899,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-lecture .lecture-box .lecture-list .check-list .check-control {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -7297,28 +6978,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   width: 880px;
 }
 
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F2EFE7;
   width: 44.8vw;
   height: 44.8vw;
@@ -7395,8 +7064,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 22.1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -7433,8 +7100,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-desc .desc-btn, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .desc-box .t-desc .desc-btn {
   margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -7459,12 +7124,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price {
   width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .price .price-subject, #wrap .section-lecture-content .lecture-content .lecture-data-list .course-list .price .price-subject {
@@ -7522,9 +7183,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 #wrap .section-lecture-content .lecture-content .lecture-data-list .book-list .desc-box .t-img {
@@ -7561,15 +7220,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-special-lecture .navigation-box {
   margin: 40px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #wrap .section-special-lecture .navigation-box .navigation {
@@ -7602,8 +7255,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-online-content .category-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -7644,12 +7295,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-online-slide .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #wrap .section-online-slide .season-slider {
@@ -7692,13 +7339,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
   margin-left: -169.33333vw;
   background: #FBFAF6;
   top: 128px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 375px) {
@@ -7733,6 +7380,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom-width: 1px;
   border-left-width: 1px;
   -webkit-transform: translate(-25%, -50%) rotate(45deg);
+  -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
 
@@ -7769,13 +7417,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
   margin-right: -169.33333vw;
   background: #FBFAF6;
   top: 128px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 375px) {
@@ -7810,6 +7458,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-top-width: 1px;
   border-right-width: 1px;
   -webkit-transform: translate(-75%, -50%) rotate(45deg);
+  -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
 
@@ -7863,15 +7512,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-online-bookstore .tab-slide .online-slider .list .book-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F2EFE7;
   width: 273px;
   height: 320px;
@@ -7906,8 +7549,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -7963,11 +7604,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .professor-gate-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .professor-gate-list .list {
@@ -7984,15 +7622,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .professor-gate-list .list .professor-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F2EFE7;
   width: 376px;
   height: 420px;
@@ -8092,15 +7724,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   font-weight: 400;
   height: 38px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #2C2923;
 }
 
@@ -8127,15 +7753,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #wrap .section-professor-home + .section-professor-content .tab-menu {
@@ -8165,8 +7785,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-customer-title .service-box {
   margin-bottom: 40px;
   margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 32px 40px;
   background-color: #FBFAF6;
@@ -8179,12 +7797,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-customer-title .service-box .service-info .service-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 12px;
 }
 
@@ -8219,21 +7833,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-customer-title .service-box .service-btn {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #wrap .section-customer-title .service-box .service-btn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #FFFFFC;
   border: 1px solid #E4DED3;
   font-weight: 400;
@@ -8262,22 +7868,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-customer-content .program-box .program-down-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
 #wrap .section-customer-content .program-box .program-down-list a {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 376px;
   height: 80px;
   -webkit-box-sizing: border-box;
@@ -8320,8 +7919,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-examInfo-content .tab-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   top: 1px;
@@ -8353,15 +7950,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-examInfo-content .select-pass-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 40px;
 }
 
@@ -8395,11 +7986,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-examInfo-content .examInfo-univ-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 8px;
 }
 
@@ -8457,11 +8045,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-examInfo-content .examInfo-univ-list .univ-list .univ-info dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 #wrap .section-examInfo-content .examInfo-univ-list .univ-list .univ-info dl dt {
@@ -8471,8 +8056,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-examInfo-content .examInfo-univ-list .univ-list .univ-info dl dd {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -8577,11 +8160,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-examInfo-content .examInfo-pass-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-examInfo-content .examInfo-pass-list .pass-list, #wrap .section-examInfo-content .examInfo-pass-list .review-list {
@@ -8802,16 +8382,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-examInfo-content .examInfo-guide-view .box {
   padding: 40px 0;
   border-top: 1px solid #E4DED3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-examInfo-content .examInfo-guide-view .box .subject {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 20px;
   font-weight: 600;
@@ -8923,15 +8498,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 1px solid #E4DED3;
   width: 100%;
   height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 32px;
@@ -8957,12 +8526,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-examInfo-content .examInfo-guide-view .box .step-list ul li.half {
   background: transparent;
   border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: auto;
 }
 
@@ -8972,15 +8537,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   height: 139px;
   background-color: #A07D3B;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #wrap .section-examInfo-content .examInfo-guide-view .box .step-list ul li.half > div p {
@@ -9012,8 +8571,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-examInfo-content .examInfo-guide-view .box .holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-top: 60px;
@@ -9054,12 +8611,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-examInfo-content .logo-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #wrap .section-examInfo-content .logo-box .univ-logo {
@@ -9101,8 +8654,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-campus-content .tab-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -9249,12 +8800,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr td .reply {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #wrap .section-campus-content .campus-reservation .notice-list-table .table-row tr td .reply .status {
@@ -9318,11 +8865,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-campus-content .campus-guide-view .box {
   padding: 40px 0 80px;
   border-top: 1px solid #E4DED3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-campus-content .campus-guide-view .box .subject {
@@ -9356,24 +8900,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-campus-content .campus-map .map-info {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #wrap .section-campus-content .campus-map .map-info .transport {
   width: 582px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #wrap .section-campus-content .campus-map .map-info .transport dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 36px;
   padding-right: 34px;
@@ -9409,8 +8945,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-campus-content .campus-map .map-info .transport dl dd > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 14px;
   line-height: 23.8px;
@@ -9488,8 +9022,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-campus-content .campus-notice {
   margin-top: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -9571,9 +9103,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 72.8vw;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   margin-left: 24px;
   padding: 0 24px;
 }
@@ -9597,8 +9127,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -9674,12 +9202,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .mypage-notice-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 40px;
   margin-top: 20px;
 }
@@ -9708,12 +9232,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   padding: 40px;
   border: 1px solid #E4DED3;
   background-color: #F2EFE7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 80px;
@@ -9741,12 +9261,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-mypage-wrap .content .mypage-lecture-box .lecture-right dl {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 12px;
 }
 
@@ -9773,24 +9289,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .mypage-order-info-box {
   border: 1px solid #E4DED3;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 40px;
 }
 
 #wrap .section-mypage-wrap .content .mypage-order-info-box .order-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #wrap .section-mypage-wrap .content .mypage-order-info-box .order-list dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding-right: 20px;
@@ -9826,8 +9334,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .mypage-order-info-box .order-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
 }
@@ -9849,37 +9355,21 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-color: #FBFAF6;
   padding: 20px 40px;
   margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #wrap .section-mypage-wrap .content .mypage-point-box .point-subject {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 400px;
 }
 
 #wrap .section-mypage-wrap .content .mypage-point-box .point-subject .point-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .section-mypage-wrap .content .mypage-point-box .point-subject .point-text .icon-point {
@@ -9893,12 +9383,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .mypage-point-box .point-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 20px;
   background-color: #FFFFFC;
   margin-left: 71px;
@@ -9929,8 +9415,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .tab-box .tab-menu ul {
   position: static;
   width: 100%;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 #wrap .section-mypage-wrap .content .tab-box .tab-menu + .select-group {
@@ -9943,15 +9428,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #A07D3B;
   padding: 60px 0;
   margin-top: 60px;
@@ -9982,21 +9461,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .tab-box .tab-view .total-price-box + .action {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 #wrap .section-mypage-wrap .content .select-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -10051,12 +9522,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .total-number-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -10074,12 +9541,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .total-number-box .device a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 13px;
   font-weight: 400;
   color: #2C2923;
@@ -10126,6 +9589,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: -webkit-box;
   overflow: hidden;
   word-wrap: break-word;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -10170,6 +9634,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: -webkit-box;
   overflow: hidden;
   word-wrap: break-word;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -10234,6 +9699,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: -webkit-box;
   overflow: hidden;
   word-wrap: break-word;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -10256,6 +9722,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: -webkit-box;
   overflow: hidden;
   word-wrap: break-word;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -10267,8 +9734,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 22.1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -10344,8 +9809,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .notice-input-table .checkbox-box {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-mypage-wrap .content .notice-input-table .checkbox-box .form-control {
@@ -10479,8 +9943,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-left {
@@ -10513,11 +9976,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-top: 36px;
   border-top: 1px solid #E4DED3;
   padding-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right dl {
@@ -10530,8 +9990,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .section-lecture .lecture-box .lecture-view .lecture-right dl dd {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: auto;
   margin-left: 20px;
@@ -10577,15 +10035,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-mypage-wrap .content .password-input-box {
   background-color: #FBFAF6;
   height: 480px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -10772,22 +10224,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #FFFFFC;
-  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 #wrap .section-mypage-wrap .content .order-view-table .calender-box .month-box {
   position: relative;
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   line-height: 1;
 }
 
@@ -10822,6 +10267,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 4.26667vw;
   border-bottom-width: 1.5px;
@@ -10873,6 +10319,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-style: solid;
   border-color: #2C2923;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   right: 4.26667vw;
   border-top-width: 1.5px;
@@ -10988,11 +10435,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-mypage-wrap .content .coupon-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-mypage-wrap .content .coupon-list ul li {
@@ -11000,15 +10444,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   margin-bottom: 36px;
   background-color: #FBFAF6;
   border: 1px solid #E4DED3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 273px;
   height: 262px;
   -webkit-box-sizing: border-box;
@@ -11037,8 +10475,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
   color: #A07D3B;
   font-size: 14px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #wrap .section-mypage-wrap .content .coupon-list ul li .coupon-subject {
@@ -11161,15 +10598,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-member-content .member-search-box .radio-select .search-result-box dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #wrap .section-member-content .member-search-box .radio-select .search-result-box dl dt {
@@ -11186,15 +10617,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-member-content .member-search-box .radio-select .search-result-box p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 400;
   color: #2C2923;
@@ -11231,9 +10656,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-login-content .login-box .radio-box {
   margin-top: 16px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #wrap .section-login-content .login-box .btn-idpw {
@@ -11245,15 +10668,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-login-content .login-box .btn-login {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFC;
   height: 56px;
   background-color: #2C2923;
@@ -11312,12 +10729,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-join-title .join-step-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #wrap .section-join-title .join-step-list ul li {
@@ -11345,15 +10758,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-join-title .join-step-list ul li .num {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -11543,8 +10950,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-join-content .agree-check-box .agree-box.type-list dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
 }
@@ -11587,8 +10992,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -11607,8 +11010,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-join-content .agree-check-box .notice-input-table .member-check-box .member-list dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
 }
@@ -11651,8 +11052,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-join-content .notice-input-table .checkbox-box {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-join-content .notice-input-table .checkbox-box .form-control {
@@ -11775,15 +11175,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-join-content .join-result-box {
   height: 480px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #FBFAF6;
 }
 
@@ -11827,8 +11221,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   position: relative;
   width: 100%;
   height: calc(100vh - 44px);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -11874,8 +11266,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-player .player-content .player-tab .tab-box .tab-menu ul {
   position: static;
   width: auto;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 #wrap .section-player .player-content .player-tab .tab-box .tab-menu ul li a {
@@ -11953,8 +11344,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .lectureInfo-list-box .lectureInfo-list dl {
   border-bottom: 1px solid #E4DED3;
   padding: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
 }
@@ -11982,8 +11371,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .lectureInfo-list-box .lectureInfo-list dl:hover dd {
   text-underline-offset: 5px;
-  -webkit-text-decoration: underline solid 0.5px;
-          text-decoration: underline solid 0.5px;
+  text-decoration: underline solid 0.5px;
 }
 
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-btn {
@@ -12018,25 +11406,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .mark-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .mark-box .mark-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .section-player .player-content .player-tab .tab-box .tab-view .bookmark-list li .mark-box .mark-info .mark-time {
@@ -12090,8 +11468,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-banner .main-banner-tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -12143,8 +11519,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-banner .main-banner-slide.half-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
 }
@@ -12223,8 +11597,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-banner .main-banner-list .main-banner-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -12258,12 +11630,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-slogan .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 780px;
 }
 
@@ -12332,6 +11700,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
   margin-left: -185.86667vw;
@@ -12370,6 +11739,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom-width: 2px;
   border-left-width: 2px;
   -webkit-transform: translate(-25%, -50%) rotate(45deg);
+  -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
 
@@ -12401,6 +11771,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
   margin-right: -185.86667vw;
@@ -12439,6 +11810,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-top-width: 2px;
   border-right-width: 2px;
   -webkit-transform: translate(-75%, -50%) rotate(45deg);
+  -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
 
@@ -12465,8 +11837,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-curriculum .video-play:hover a img {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 #wrap .section-main-curriculum .video-play a {
@@ -12477,7 +11848,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-curriculum .video-play a img {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 100%;
   height: 100%;
@@ -12540,8 +11910,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-curriculum .curriculum-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -12578,8 +11946,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-curriculum .curriculum-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 48px;
 }
@@ -12612,15 +11978,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   line-height: 27.2px;
   text-align: center;
   height: 59px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 80px;
 }
 
@@ -12647,8 +12007,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-platform .platform-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -12679,11 +12037,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-platform .platform-list .platform-list-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-main-platform .platform-list .platform-list-left .list {
@@ -12722,11 +12077,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-seasonal-banner .seasonal-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-seasonal-banner .seasonal-slider .slick-track {
@@ -12747,28 +12099,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-seasonal-banner .seasonal-slider .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 62px;
 }
 
 #wrap .section-seasonal-banner .seasonal-slider .slick-dots li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 4px;
 }
 
@@ -12804,14 +12144,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
   margin-left: -13.86667vw;
   background: #FBFAF6;
   top: auto;
   bottom: -88px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 375px) {
@@ -12846,6 +12186,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom-width: 1px;
   border-left-width: 1px;
   -webkit-transform: translate(-25%, -50%) rotate(45deg);
+  -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
 
@@ -12882,14 +12223,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
   margin-right: -13.86667vw;
   background: #FBFAF6;
   top: auto;
   bottom: -88px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 375px) {
@@ -12924,6 +12265,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-top-width: 1px;
   border-right-width: 1px;
   -webkit-transform: translate(-75%, -50%) rotate(45deg);
+  -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
 
@@ -12954,14 +12296,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-special-banner .special-banner-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #wrap .section-special-banner .special-banner-box a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13000,12 +12338,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 16px;
 }
 
@@ -13051,13 +12385,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 50%;
   margin-left: -169.33333vw;
   background: #FBFAF6;
   top: 128px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 375px) {
@@ -13092,6 +12426,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-bottom-width: 1px;
   border-left-width: 1px;
   -webkit-transform: translate(-25%, -50%) rotate(45deg);
+  -ms-transform: translate(-25%, -50%) rotate(45deg);
   transform: translate(-25%, -50%) rotate(45deg);
 }
 
@@ -13128,13 +12463,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   outline: none;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 50%;
   margin-right: -169.33333vw;
   background: #FBFAF6;
   top: 128px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 375px) {
@@ -13169,6 +12504,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border-top-width: 1px;
   border-right-width: 1px;
   -webkit-transform: translate(-75%, -50%) rotate(45deg);
+  -ms-transform: translate(-75%, -50%) rotate(45deg);
   transform: translate(-75%, -50%) rotate(45deg);
 }
 
@@ -13233,11 +12569,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-professor-list .tab-box .tab-view .professor-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-main-content .main-professor-list .tab-box .tab-view .professor-slider .list {
@@ -13301,11 +12634,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-professor-list .tab-box .tab-view .professor-lecture-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #wrap .section-main-content .main-professor-list .tab-box .tab-view .professor-lecture-list .list {
@@ -13331,12 +12661,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-professor-list .tab-box .tab-view .professor-lecture-list .list a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .section-main-content .main-professor-list .tab-box .tab-view .professor-lecture-list .list a .t-img {
@@ -13370,8 +12696,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 22.1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13409,13 +12733,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-content .main-professor-list .tab-box .tab-view .professor-lecture-list .list a:hover .t-desc .desc-title {
   text-underline-offset: 5px;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
+  text-decoration: underline solid 2px;
 }
 
 #wrap .section-main-content .main-lecture-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 120px;
 }
@@ -13475,10 +12796,15 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: #FFFFFC url("../images/icon_arrow_right.svg") no-repeat 95% center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+<<<<<<< HEAD
   width: 72.26667vw;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+=======
+  width: 72.2666666667vw;
+  justify-content: flex-start;
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
   margin-left: 16px;
   padding: 0 24px;
   height: 80px;
@@ -13508,15 +12834,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-lecture-slide .online-slide .online-slider .list .book-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F2EFE7;
   width: 273px;
   height: 351px;
@@ -13551,8 +12871,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   font-size: 13px;
   color: #2C2923;
   line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13642,8 +12960,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-lecture-review .review-slider .review-list .review-info dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13673,9 +12989,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 282px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   margin-left: 24px;
   padding: 0 24px;
   height: 80px;
@@ -13695,8 +13009,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-pass-review .pass-review-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13754,6 +13066,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   display: -webkit-box;
   overflow: hidden;
   word-wrap: break-word;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -13766,8 +13079,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-pass-banner .pass-review-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13789,8 +13100,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-video-list .video-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13817,15 +13126,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -13845,8 +13148,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-main-content .main-video-list .video-list .list:hover {
   cursor: pointer;
   text-underline-offset: 5px;
-  -webkit-text-decoration: underline solid 2px;
-          text-decoration: underline solid 2px;
+  text-decoration: underline solid 2px;
 }
 
 #wrap .section-main-content .main-campus-banner .campus-slider .slick-slide {
@@ -13866,8 +13168,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-notice-customer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -13886,15 +13186,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-main-content .main-notice-customer .main-notice .tab-menu ul {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   left: auto;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   position: static;
 }
 
@@ -13906,15 +13201,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-notice-customer .main-notice .tab-menu ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   font-size: 18px;
   color: #BEBEBC;
@@ -14000,8 +13289,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-main-content .main-notice-customer .main-customer .notice-list-table .table-row tr td dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -14032,9 +13319,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 72.8vw;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   margin-left: 24px;
   padding: 0 24px;
 }
@@ -14052,15 +13337,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-error {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -14123,8 +13402,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-promotion-curriculum .curriculum-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-bottom: 100px;
 }
@@ -14185,8 +13462,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content p .underline {
   font-weight: 600;
   text-underline-offset: 3px;
-  -webkit-text-decoration: underline solid 1px;
-          text-decoration: underline solid 1px;
+  text-decoration: underline solid 1px;
 }
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .list li {
@@ -14301,22 +13577,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .history ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .history ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 12px 40px;
 }
 
@@ -14403,8 +13671,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .recommend-table .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   line-height: 2;
   border-bottom: 1px solid #E4DED3;
@@ -14443,12 +13709,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-promotion-curriculum .curriculum-list .curriculum-content .recommend-table .list-depth .list-text ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 24px;
 }
 
@@ -14552,12 +13814,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-promotion-story .story-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #wrap .section-promotion-story .story-box .text-box {
@@ -14608,8 +13866,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 160px;
 }
@@ -14657,12 +13913,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-gate .teacher-gate-list .list .t-curriculum-list ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 8px;
 }
 
@@ -14715,8 +13967,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-home .teacher-home-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 160px;
 }
@@ -14735,17 +13985,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-teacher-home .teacher-home-detail .t-content {
   width: calc(100% - 344px);
   padding-left: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-content-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-content-title-label {
@@ -14789,8 +14034,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-content-notice ul li a span {
@@ -14799,8 +14043,7 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   right: 0;
   font-size: 12px;
   font-weight: 400;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-content-notice ul li a:hover {
@@ -14815,18 +14058,12 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-curriculum-list ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 8px;
 }
 
 #wrap .section-teacher-home .teacher-home-detail .t-curriculum-list ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -14858,8 +14095,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-curriculum .tab-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -14902,15 +14137,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -14991,8 +14220,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-curriculum .curriculum-book ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -15001,16 +14228,19 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   width: 224px;
   padding: 32px 24px;
   background: #FBFAF6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #wrap .section-teacher-curriculum .curriculum-book ul li .book-thumb {
   max-width: 122px;
   min-width: 122px;
   margin: 0 auto;
+<<<<<<< HEAD
   -webkit-transition: all .5s;
   transition: all .5s;
+=======
+  transition: all 0.5s;
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
 }
 
 #wrap .section-teacher-curriculum .curriculum-book ul li .book-thumb img {
@@ -15025,13 +14255,10 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-teacher-curriculum .curriculum-book ul li:hover .book-thumb {
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 #wrap .section-teacher-curriculum .curriculum-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0 15px;
 }
@@ -15153,24 +14380,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-report-home .report-input-box .report-input-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 #wrap .section-report-home .report-input-box .report-input-content dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -15330,8 +14547,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-content .pass-books .book {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 120px 64px 100px 160px;
   border-bottom: 1px solid #BEBEBC;
@@ -15373,12 +14588,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-content .pass-books .book-text strong {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   min-height: 135px;
   color: #0084FF;
   margin-bottom: 28px;
@@ -15413,8 +14624,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-content .pass-small ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -15439,16 +14648,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-content .pass-small ul li .text-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   height: calc(100% - 217px);
   text-align: center;
 }
@@ -15486,8 +14688,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-content .pass-exam {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 120px 100px 120px 140px;
   background: #302F4C;
@@ -15515,12 +14715,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-content .pass-exam .text-box span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   min-height: 45px;
   font-size: 28px;
   font-weight: 600;
@@ -15608,8 +14804,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-pass-schedule .schedule-list .list {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
   padding: 80px;
@@ -15674,8 +14868,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-schedule .schedule-list .list-curriculum ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -15801,8 +14993,6 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 
 #wrap .section-pass-apply .list.depth {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0 40px;
 }
@@ -15866,21 +15056,13 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-presentation-visual .apply-btn {
   margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #wrap .section-presentation-visual .apply-btn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #FFFFFC;
   font-size: 16px;
   line-height: 27px;
@@ -15916,24 +15098,14 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 
 #wrap .section-presentation-content .apply-box .apply-btn {
   margin-top: 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #wrap .section-presentation-content .apply-box .apply-btn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #FFFFFC;
   font-size: 16px;
   line-height: 27px;
@@ -16019,12 +15191,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-presentation-content .info-box {
   margin-top: 21.33333vw;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 375px) {
@@ -16117,4 +15285,78 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-benefit-content img {
   width: 100%;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=web.css.map */
+=======
+
+#wrap #contents.contents-teaser {
+  height: 1040px;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+#wrap #contents.contents-teaser .normal {
+  font-weight: 400;
+}
+#wrap #contents.contents-teaser .bg-layout {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#wrap #contents.contents-teaser .bg-layout img {
+  height: 100%;
+}
+#wrap #contents.contents-teaser .content-layout {
+  width: 1100px;
+  padding-top: 140px;
+  line-height: 1.8;
+  font-size: 20px;
+  color: #fff;
+}
+#wrap #contents.contents-teaser .content-layout .badge-circle {
+  width: 210px;
+  height: 210px;
+  margin-left: 167px;
+  display: flex;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  background-color: rgba(83, 83, 83, 0.95);
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #contents.contents-teaser .content-layout .img-area {
+  width: 597px;
+}
+#wrap #contents.contents-teaser .content-layout .img-area img {
+  width: 100%;
+}
+#wrap #contents.contents-teaser .content-layout .text-area {
+  margin-top: 16px;
+}
+#wrap #contents.contents-teaser .content-layout .list-tit {
+  line-height: 1.6;
+  margin-top: 80px;
+}
+#wrap #contents.contents-teaser .content-layout .list-tit li {
+  display: flex;
+  gap: 20px;
+}
+#wrap #contents.contents-teaser .content-layout .list-tit li .tit {
+  width: 110px;
+  color: #eeeeee;
+}
+#wrap #contents.contents-teaser .content-layout .list-tit li .txt {
+  flex: 1;
+}
+#wrap #contents.contents-teaser .content-layout .list-tit li:not(:first-child) {
+  margin-top: 16px;
+}
+
+/*# sourceMappingURL=web.css.map */
+>>>>>>> b176c210cb01b6215042c6316604f90252c8408a
