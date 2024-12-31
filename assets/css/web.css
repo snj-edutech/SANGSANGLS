@@ -4078,6 +4078,9 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
     font-size: 14px;
   }
 }
+#wrap .btn.full {
+  width: 100%;
+}
 #wrap .btn.btn-link {
   display: inline-block;
   margin-left: 2.1333333333vw;
@@ -12397,6 +12400,11 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   box-sizing: border-box;
 }
 
+#wrap {
+  /* 설명회 */
+  /* 시대인재콘텐츠  */
+  /* 장학혜택 */
+}
 #wrap .section-presentation-title {
   padding-top: 20px;
   padding-bottom: 140px;
@@ -12701,4 +12709,243 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 }
 #wrap #contents.contents-teaser .content-layout .list-tit li:not(:first-child) {
   margin-top: 16px;
+}
+
+#wrap .section-zero-visual {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  padding: 120px 0;
+  height: 734px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrap .section-zero-visual .flag {
+  position: absolute;
+  left: 50%;
+  top: 116px;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFC;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 28.9px;
+  background: rgba(83, 83, 83, 0.95);
+  border-radius: 50%;
+  text-align: center;
+}
+#wrap .section-zero-title {
+  font-size: 34px;
+  line-height: 51px;
+  font-weight: 200;
+  color: #2C2923;
+  margin-bottom: 40px;
+}
+#wrap .section-zero-notice {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  border-top: 1px solid #2C2923;
+  border-bottom: 1px solid #2C2923;
+  margin-bottom: 60px;
+}
+#wrap .section-zero-input .wrap {
+  width: 640px;
+  margin: 0 auto;
+}
+#wrap .section-zero-input h3 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  min-height: auto;
+  padding-bottom: 40px;
+}
+#wrap .section-zero-input .notice-input-table .table-row {
+  border: none;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr {
+  border: none;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr th, #wrap .section-zero-input .notice-input-table .table-row tr td {
+  padding: 0;
+  padding-bottom: 30px;
+  background-color: transparent;
+  border: none;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr th {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  vertical-align: top;
+  padding-top: 15px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td {
+  padding-left: 10px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .form-control .text {
+  height: 56px;
+  width: 360px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .form-control .text.full {
+  width: 100%;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .form-control .fake-radio {
+  margin-right: 20px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .form-control .fake-radio:last-child {
+  margin-right: 0;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .form-control .timer {
+  color: #2C2923;
+  font-weight: 400;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .form-control + .input-box {
+  margin-top: 10px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .btn.large {
+  padding: 0;
+  width: 120px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .form-text {
+  margin-top: 10px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .custom-select {
+  width: 158px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .custom-select + .custom-select {
+  margin-left: 8px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .custom-select .selected {
+  height: 56px;
+  line-height: 1;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .input-box .custom-select {
+  margin-right: 8px;
+  margin-left: 0;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .input-box .custom-select .selected {
+  width: 100px;
+  padding: 8px 8px 8px 16px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .input-box .form-control {
+  margin-top: 0;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr td .input-box .form-control .text {
+  width: 166px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr.address .form-control {
+  margin-top: 10px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr.address .form-control:first-child {
+  margin-top: 0;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr.university th {
+  padding-top: 0;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr.university .form-control {
+  margin-top: 20px;
+}
+#wrap .section-zero-input .notice-input-table .table-row tr.university .form-control:first-child {
+  margin-top: 0;
+}
+#wrap .section-zero-input .action {
+  margin-top: 100px;
+}
+#wrap .section-zero-input .action .btn {
+  height: 71px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#wrap .section-zero-agree .wrap {
+  width: 640px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 40px;
+}
+#wrap .section-zero-agree dl {
+  display: flex;
+}
+#wrap .section-zero-agree dl dt {
+  width: 140px;
+}
+#wrap .section-zero-agree dl dd {
+  width: 490px;
+  margin-left: 10px;
+}
+#wrap .section-zero-agree dl dd > div {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#wrap .section-zero-agree dl dd > div:last-child {
+  margin-bottom: 0;
+}
+#wrap .section-zero-agree dl dd > div .btn-agree {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#wrap .section-zero-agree dl dd > div .btn-agree span {
+  padding-right: 28px;
+  font-size: 14px;
+  line-height: 23.8px;
+  font-weight: 500;
+  color: #2C2923;
+}
+#wrap .section-zero-agree dl dd > div .btn-agree span {
+  position: relative;
+  display: inline-block;
+}
+#wrap .section-zero-agree dl dd > div .btn-agree span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 1.6vw;
+  height: 1.6vw;
+  margin-top: -0.8vw;
+  border-width: 0;
+  border-style: solid;
+  border-color: #2C2923;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 3.2vw;
+  border-top-width: 1.5px;
+  border-right-width: 1.5px;
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-agree dl dd > div .btn-agree span::before {
+    width: 6px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-agree dl dd > div .btn-agree span::before {
+    height: 6px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-agree dl dd > div .btn-agree span::before {
+    margin-top: -3px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #wrap .section-zero-agree dl dd > div .btn-agree span::before {
+    right: 12px;
+  }
+}
+#wrap .section-zero-agree dl dd > div .btn-agree span:before {
+  right: 6.28px;
+}
+#wrap .section-zero-agree .action {
+  margin-top: 100px;
+}
+#wrap .section-zero-agree .action .btn {
+  height: 71px;
+  font-size: 18px;
+  font-weight: 600;
 }/*# sourceMappingURL=web.css.map */

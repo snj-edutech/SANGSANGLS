@@ -1398,6 +1398,7 @@
         &.btn-light-gray{border-color:$color-light-gray;background-color: $color-light-gray;color:$color-white;}
 		
 		&.large{width:auto;@include vw(padding,0 40px);@include vw(height, 56px); @include vw(font-size,14px);}
+		&.full{width:100%;}
 
 		&.btn-link{
 			display:inline-block;@include vw(margin-left, 8px);

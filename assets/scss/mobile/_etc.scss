@@ -1,4 +1,5 @@
 #wrap{
+	/* 입시설명회 */
     .section-presentation-title{
         @include vw(padding, 60px 0);
 		text-align:center;
@@ -152,6 +153,7 @@
         }
     }
 
+	/* 시대인재 콘텐츠  */
     .section-introduction {
         &-visual {
             .wrap {
@@ -193,6 +195,7 @@
         }
     }
 
+		/* 장학혜택  */
     .section-benefit{
         max-width:600px;
         margin:0 auto;
