@@ -12744,6 +12744,36 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   color: #2C2923;
   margin-bottom: 40px;
 }
+#wrap .section-zero-result .wrap {
+  width: 640px;
+  margin: 0 auto;
+}
+#wrap .section-zero-result .section-zero-title {
+  margin-bottom: 60px;
+}
+#wrap .section-zero-result .notice-box {
+  padding: 32px;
+  background-color: #F6F6F2;
+}
+#wrap .section-zero-result .notice-box dl dt {
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 400;
+  color: #2C2923;
+  margin-bottom: 10px;
+}
+#wrap .section-zero-result .notice-box dl dd {
+  font-size: 16px;
+  line-height: 28.8px;
+  font-weight: 400;
+  color: #2C2923;
+}
+#wrap .section-zero-result .notice-box dl dd strong {
+  font-weight: 700;
+}
+#wrap .section-zero-result .action {
+  margin-top: 60px;
+}
 #wrap .section-zero-notice {
   display: flex;
   justify-content: space-between;

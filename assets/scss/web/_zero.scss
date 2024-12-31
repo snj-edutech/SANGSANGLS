@@ -31,6 +31,41 @@
 
 	  }
 
+	  .section-zero-result{
+		.wrap{
+			width:640px;
+			margin:0 auto;
+		}
+		.section-zero-title{
+			margin-bottom:60px;
+		}
+		
+		.notice-box{
+			padding:32px;
+			background-color:#F6F6F2;
+			dl{
+				dt{
+					font-size:16px;
+					line-height:25.6px;
+					font-weight:400;
+					color:$color-black;
+					margin-bottom:10px;
+				}
+				dd{
+					font-size:16px;
+					line-height:28.8px;
+					font-weight:400;
+					color:$color-black;
+					strong{font-weight:700;}
+				}
+			}
+		}
+
+		.action{
+			margin-top:60px;
+		}
+	  }
+
 	  .section-zero-notice{
 		display:flex;
 		justify-content: space-between;
