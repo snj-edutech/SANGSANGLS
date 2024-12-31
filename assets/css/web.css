@@ -12715,14 +12715,16 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  padding: 120px 0;
+}
+#wrap .section-zero-visual .wrap {
+  padding: 120px 241px 120px 100px;
   height: 734px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 #wrap .section-zero-visual .flag {
   position: absolute;
-  left: 50%;
+  right: 241px;
   top: 116px;
   width: 190px;
   height: 190px;
@@ -12736,6 +12738,44 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   background: rgba(83, 83, 83, 0.95);
   border-radius: 50%;
   text-align: center;
+}
+#wrap .section-zero-visual .title .main-copy {
+  color: #FFFFFC;
+  font-size: 54px;
+  font-weight: 100;
+  line-height: 64.8px;
+}
+#wrap .section-zero-visual .title .sub-copy {
+  margin-top: 20px;
+  color: #FFFFFC;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 28.9px;
+}
+#wrap .section-zero-visual .title .sub-copy strong {
+  font-weight: 700;
+}
+#wrap .section-zero-visual .info-box {
+  margin-top: 80px;
+}
+#wrap .section-zero-visual .info-box dl {
+  display: flex;
+  margin-top: 16px;
+}
+#wrap .section-zero-visual .info-box dl:first-child {
+  margin-top: 0;
+}
+#wrap .section-zero-visual .info-box dl dt, #wrap .section-zero-visual .info-box dl dd {
+  color: #FFFFFC;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 28.9px;
+}
+#wrap .section-zero-visual .info-box dl dt {
+  width: 110px;
+}
+#wrap .section-zero-visual .info-box dl dd {
+  margin-left: 20px;
 }
 #wrap .section-zero-title {
   font-size: 34px;
@@ -12977,5 +13017,41 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
 #wrap .section-zero-agree .action .btn {
   height: 71px;
   font-size: 18px;
+  font-weight: 600;
+}
+#wrap .section-zero-content {
+  margin-top: 120px;
+}
+#wrap .section-zero-content .section-zero-title {
+  text-align: center;
+}
+#wrap .section-zero-content .zero-text-box {
+  display: flex;
+  width: 100%;
+}
+#wrap .section-zero-content .zero-text-box .list {
+  width: 33.33%;
+  border: 1px solid #ddd;
+  border-left: 0;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 22px;
+  line-height: 37.4px;
+  font-weight: 400;
+  color: #2C2923;
+}
+#wrap .section-zero-content .zero-text-box .list:last-child {
+  border-right: 0;
+}
+#wrap .section-zero-content .img-box img {
+  width: 100%;
+}
+#wrap .section-zero-content .action {
+  margin-top: 80px;
+}
+#wrap .section-zero-content .action .btn {
+  height: 95px;
+  font-size: 18px;
+  width: 480px;
   font-weight: 600;
 }/*# sourceMappingURL=web.css.map */

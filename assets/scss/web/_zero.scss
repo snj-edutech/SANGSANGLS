@@ -2,11 +2,13 @@
     .section-zero-visual{
         background-size: auto 100%;background-repeat: no-repeat;
         background-position: 50% 100%;
-        padding:120px 0;
-		height:734px;
-        @include boxSizing(border-box);
+		.wrap{
+			padding:120px 241px 120px 100px;
+			height:734px;
+			@include boxSizing(border-box);
+		}
 		.flag{
-			position:absolute;left:50%;top:116px;
+			position:absolute;right:241px;top:116px;
 			width:190px;
 			height:190px;
 			display:flex;
@@ -20,6 +22,44 @@
 			border-radius:50%;
 			text-align:center;
 		}
+
+		.title{
+			.main-copy{
+				color:$color-white;
+				font-size:54px;
+				font-weight:100;
+				line-height:64.8px;
+			}
+			.sub-copy{
+				margin-top:20px;
+				color:$color-white;
+				font-size:17px;
+				font-weight:300;
+				line-height:28.9px;
+				strong{
+					font-weight:700;
+				}
+			}
+		}
+
+		.info-box{
+			margin-top:80px;
+			dl{
+				display:flex;
+				margin-top:16px;
+				&:first-child{
+					margin-top:0;
+				}
+				dt,dd{
+					color:$color-white;
+					font-size:17px;
+					font-weight:700;
+					line-height:28.9px;
+				}
+				dt{width:110px;}
+				dd{margin-left:20px;}
+			}
+		}
     }
 
 	.section-zero-title{
@@ -31,7 +71,7 @@
 
 	  }
 
-	  .section-zero-result{
+	.section-zero-result{
 		.wrap{
 			width:640px;
 			margin:0 auto;
@@ -39,7 +79,7 @@
 		.section-zero-title{
 			margin-bottom:60px;
 		}
-		
+
 		.notice-box{
 			padding:32px;
 			background-color:#F6F6F2;
@@ -64,9 +104,9 @@
 		.action{
 			margin-top:60px;
 		}
-	  }
+	}
 
-	  .section-zero-notice{
+	.section-zero-notice{
 		display:flex;
 		justify-content: space-between;
 		padding:40px 0;
@@ -221,6 +261,44 @@
 			margin-top:100px;
 			.btn{height:71px;font-size:18px;
 			font-weight:600;}
+		}
+	}
+
+	.section-zero-content{
+		margin-top:120px;
+
+
+		.section-zero-title{
+			text-align:center;
+		}
+
+		.zero-text-box{
+			display:flex;
+			width:100%;
+			.list{
+				width:33.33%;
+				border:1px solid #ddd;
+				border-left:0;
+				text-align:center;
+				padding:40px 0;
+				font-size:22px;
+				line-height:37.4px;
+				font-weight:400;
+				color:$color-black;
+				&:last-child{
+					border-right:0;
+				}
+
+			}
+		}
+
+		.img-box{
+			img{width:100%;}
+		}
+
+		.action{
+			margin-top:80px;
+			.btn{height:95px;font-size:18px;width:480px;font-weight:600;}
 		}
 	}
 
